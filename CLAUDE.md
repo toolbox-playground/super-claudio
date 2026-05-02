@@ -8,15 +8,13 @@ to route them to the right skill before responding.
 
 | User wants to... | Use skill |
 |-----------------|-----------|
-| Create any kind of video (TikTok, Instagram, realistic, animated, WhatsApp) | `video-creation` |
-| Generate speech, voiceover, narration, article summary as audio | `audio-creation` |
-| Generate an image, diagram, graphic, infographic, or animate a photo | `image-generation` |
-| Create ad content, TikTok Shop videos, Instagram ads, ecommerce creatives | `marketing-and-ads` |
-| Design a website or app UI, find design inspiration, use design tools | `design-and-ui` |
-| Write blog posts, social captions, SEO content, ad copy, email newsletters | `content-writing` |
-| Automate workflows, connect apps with n8n/Make/Zapier, schedule scripts | `automation-and-workflows` |
-| Build a backend API, set up a database, deploy a server | `backend-development` |
-| Find a free public API to use in a project | `free-apis` |
+| Create videos, audio, images, voiceovers, graphics, or animate media | `media-content-creation` |
+| Build APIs, databases, automate workflows, write scripts, use free APIs, deploy | `software-development` |
+| Create ads, TikTok Shop content, ecommerce creatives, marketing campaigns | `marketing` |
+| Write blog posts, social captions, SEO content, ad copy, email newsletters | `writing` |
+| Design a website or app UI, find design inspiration, use design tools | `design` |
+| Create documents, presentations, spreadsheets, dashboards, project plans | `productivity` |
+| Use the Claude API, build AI apps, create skills/agents/MCP servers, prompt engineering | `ai-and-agents` |
 | Find a skill or plugin that doesn't exist yet in super-claudio | `discover` |
 
 ## Routing Philosophy

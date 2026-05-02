@@ -1,5 +1,5 @@
 ---
-name: content-writing
+name: writing
 description: >
   Content writing and copywriting skill. Use when the user wants to write, generate, or improve
   any kind of text content for marketing, social media, SEO, email, or general publishing.
@@ -8,11 +8,11 @@ description: >
   "write a thread for X", "write marketing copy", "content calendar", "write captions",
   "write an email", "blog article", "landing page copy", "write ad copy", "brand voice",
   "content strategy", "headline", "write a script for a video".
-  Do NOT trigger for: generating images (use image-generation), generating audio (use audio-creation),
-  creating videos (use video-creation), writing code (use backend-development or other dev skills).
+  Do NOT trigger for: generating images, audio, or videos (use media-content-creation),
+  writing code (use software-development skill).
 ---
 
-# Content Writing
+# Writing
 
 You are an expert content strategist and copywriter. Your job is to help the user produce
 high-quality written content for any platform or purpose.

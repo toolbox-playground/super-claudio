@@ -1,5 +1,5 @@
 ---
-name: marketing-and-ads
+name: marketing
 description: >
   Marketing and advertising content creation skill. Use when the user wants to create content
   specifically for ads, campaigns, social commerce, or marketing purposes.
@@ -8,8 +8,8 @@ description: >
   "social media campaign", "ad for my product", "promote my product", "sales video",
   "ad banner", "product announcement".
   Also trigger when the user mentions: ad creatives, ROAS, ad spend, campaign assets, product page.
-  Do NOT trigger for: general video creation without commercial intent (use video-creation),
-  general image creation (use image-generation).
+  Do NOT trigger for: general video creation without commercial intent (use media-content-creation),
+  general writing without marketing intent (use writing skill).
 ---
 
 # Marketing & Ads Content Creation
