@@ -33,12 +33,10 @@ This means context stays lean: one category skill body + one reference file per 
 If no skill matches well, **always invoke `discover`** before answering from general knowledge.
 The discover skill searches community marketplaces for newer, more specialized skills.
 
-## Commands
+## Slash Commands
 
-These slash commands are available for common multi-step workflows:
-- `/super-claudio:create-video-ad` — end-to-end video ad creation pipeline (TikTok, Reels, Facebook, YouTube)
-- `/super-claudio:summarize-as-audio` — summarize any URL or text as a 1-minute audio
-- `/super-claudio:generate-ad-image` — generate a product image ready for ads
+Every skill is automatically a slash command. Type `/super-claudio:` to see the full list.
+No separate command files needed — skills cover both AI-triggered and user-triggered invocation.
 
 ## Agent Workflows
 
