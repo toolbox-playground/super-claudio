@@ -6,40 +6,69 @@ Sources to search when looking for Claude Code skills and plugins.
 
 | Source | URL | Notes |
 |--------|-----|-------|
-| Claude Code Plugins | code.claude.com/docs/en/discover-plugins | Official plugin directory |
-| Claude.ai Plugins | claude.com/plugins | Claude.ai integrations |
+| Claude Code Plugins (official) | code.claude.com/docs/en/discover-plugins | Official Claude Code plugin directory |
+| Claude.ai Plugins (official) | claude.com/plugins | Claude.ai integrations marketplace |
 
-## Community Sources
+## Community Marketplaces
 
 | Source | URL | Notes |
 |--------|-----|-------|
-| Claude Marketplaces | claudemarketplaces.com | Community-curated skills and plugins |
-| AI Templates | aitmpl.com/plugins | Plugin templates and examples |
-| Awesome Claude | awesomeclaude.ai/code-cheatsheet | Curated resources |
-| GitHub superpowers | github.com/obra/superpowers | The superpowers skill collection |
+| **Claude Marketplaces** | claudemarketplaces.com | Largest community-curated skills and plugins |
+| **There Is A Skill For That** | theresaskillforthat.com | Community directory of Claude skills by use case |
+| **AI Templates** | aitmpl.com/plugins | Plugin and skill templates |
+| **Awesome Claude** | awesomeclaude.ai/code-cheatsheet | Curated Claude Code resources and cheatsheets |
+| **Claude Marketplaces Community** | claudemarketplaces.com/skills | Browse skills by category |
+| **GitHub: superpowers** | github.com/obra/superpowers | The superpowers skill collection — meta-skills for Claude Code |
+| **There's An AI For That** | theresanaiforthat.com | Broader AI tool discovery (not Claude-specific, but useful for research) |
+
+## How to Search Each Source
+
+When the user needs a skill for something super-claudio doesn't cover:
+
+```
+# Search Claude Marketplaces
+WebFetch: https://claudemarketplaces.com/skills?q=[topic]
+
+# Search There Is A Skill For That
+WebFetch: https://theresaskillforthat.com/search?q=[topic]
+
+# GitHub search
+WebSearch: site:github.com "claude code skill" [topic]
+WebSearch: site:github.com ".claude-plugin" [topic]
+
+# General search
+WebSearch: "claude code skill" [topic] plugin
+```
 
 ## Key Skills Already Available
 
 Skills that complement super-claudio (already installed or easily installable):
 
-| Skill | What It Does |
-|-------|-------------|
-| `find-skills` | Searches marketplaces for skills matching a prompt |
-| `superpowers` | Meta-skills for development workflow |
-| `frontend-design` | Production-grade UI code generation |
-| `feature-dev` | Full feature development workflow |
-| `playground` | Interactive HTML experiments |
-| `context7` | Library and framework documentation lookup |
-| `skill-creator` | Create new skills |
+| Skill | What It Does | Source |
+|-------|-------------|--------|
+| `find-skills` | Searches marketplaces for skills matching a prompt | claudemarketplaces.com |
+| `superpowers` | Meta-skills for development workflow (planning, TDD, debugging) | github.com/obra/superpowers |
+| `frontend-design` | Production-grade UI code generation with strong aesthetics | claudemarketplaces.com |
+| `feature-dev` | Full feature development workflow | claudemarketplaces.com |
+| `playground` | Interactive HTML/JS experiments in the browser | claudemarketplaces.com |
+| `context7` | Live library and framework documentation lookup | context7.com |
+| `skill-creator` | Create and iterate on new skills with evals | claudemarketplaces.com |
+| `claude-md-management` | Keep CLAUDE.md files updated | claudemarketplaces.com |
+| `pr-review-toolkit` | Multi-agent PR review pipeline | claudemarketplaces.com |
+| `code-simplifier` | Refactor and simplify code after writing | claudemarketplaces.com |
 
 ## find-skills Integration
 
-The `find-skills` skill from claudemarketplaces.com can also be invoked directly.
-Check: claudemarketplaces.com/skills/vercel-labs/skills/find-skills
+The `find-skills` skill from claudemarketplaces.com searches marketplaces automatically.
+
+Install path: claudemarketplaces.com/skills/vercel-labs/skills/find-skills
+
+Usage: once installed, just say "find a skill for [topic]" and it searches for you.
 
 ## Staying Current
 
 The AI tools landscape changes weekly. When a super-claudio reference feels outdated:
 1. Use WebSearch to check for newer tools in that category
-2. Cross-reference with: theresanaiforthat.com for tool discovery
-3. Suggest an update to the relevant reference file
+2. Cross-reference with theresanaiforthat.com and theresaskillforthat.com
+3. Check claudemarketplaces.com for new skills in that domain
+4. Open a PR to update the relevant `references/*.md` file in this repo
