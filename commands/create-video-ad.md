@@ -1,9 +1,9 @@
 ---
-name: create-tiktok-ad
-description: End-to-end TikTok ad creation pipeline — from product image to finished video ad with voiceover and captions
+name: create-video-ad
+description: End-to-end video ad creation pipeline — from product image to finished video ad with voiceover and captions, for any platform (TikTok, Instagram Reels, Facebook, YouTube Shorts)
 ---
 
-# Create TikTok Ad
+# Create Video Ad
 
 You are running the end-to-end TikTok ad creation pipeline. Guide the user through each step
 in sequence, completing each before moving to the next.
