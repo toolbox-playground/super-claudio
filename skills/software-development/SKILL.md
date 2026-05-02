@@ -14,6 +14,9 @@ description: >
   "real-time data", "open data", "free data source", "API without credit card", "government API".
   Trigger on deployment: "deploy my app", "Docker", "Railway", "GitHub Actions", "CI/CD",
   "hosting", "go live", "containerize", "VPS setup".
+  Trigger on git/GitHub: "create a PR", "open a pull request", "GitHub CLI", "gh pr", "gh issue",
+  "connect Claude to GitHub", "GitHub MCP", "commit message", "git workflow", "manage issues",
+  "review a PR", "GitHub Actions workflow", "release on GitHub".
   Do NOT trigger for: frontend/UI design (use design skill), media generation (use media-content-creation).
 ---
 
@@ -52,6 +55,15 @@ For full-stack features: start with `databases.md` (schema), then `apis.md` (end
 |--------|---------------|
 | Geography, weather, climate, natural events | `references/free-apis-geo.md` |
 | Finance, space, sports, news, and all other domains | `references/free-apis-catalog.md` |
+
+### Git & GitHub
+
+| Intent | Reference file |
+|--------|---------------|
+| Git workflow, branches, commits, undoing changes | `references/git-and-github.md` |
+| GitHub CLI (`gh pr`, `gh issue`, `gh release`) | `references/git-and-github.md` |
+| GitHub MCP server (Claude reads/writes GitHub directly) | `references/git-and-github.md` |
+| GitHub Actions, CI/CD workflows | `references/git-and-github.md` |
 
 ### Testing & Security
 
