@@ -36,7 +36,7 @@ The discover skill searches community marketplaces for newer, more specialized s
 ## Commands
 
 These slash commands are available for common multi-step workflows:
-- `/super-claudio:create-tiktok-ad` — end-to-end TikTok ad creation pipeline
+- `/super-claudio:create-video-ad` — end-to-end video ad creation pipeline (TikTok, Reels, Facebook, YouTube)
 - `/super-claudio:summarize-as-audio` — summarize any URL or text as a 1-minute audio
 - `/super-claudio:generate-ad-image` — generate a product image ready for ads
 
