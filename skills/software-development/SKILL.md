@@ -53,6 +53,13 @@ For full-stack features: start with `databases.md` (schema), then `apis.md` (end
 | Geography, weather, climate, natural events | `references/free-apis-geo.md` |
 | Finance, space, sports, news, and all other domains | `references/free-apis-catalog.md` |
 
+### Testing & Security
+
+| Intent | Reference file |
+|--------|---------------|
+| Unit/integration/E2E tests (pytest, Jest, Playwright) | `references/testing-and-security.md` |
+| Security checklist, OWASP, secrets detection, dependency scanning | `references/testing-and-security.md` |
+
 ### Installed Plugins Reference
 
 For Claude Code plugins already installed that extend development capabilities:
