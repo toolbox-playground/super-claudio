@@ -6,10 +6,10 @@ Tools that generate photorealistic or cinematic video from text prompts or image
 
 | Tool | Input | Best For | Free Tier | URL |
 |------|-------|----------|-----------|-----|
-| **Hailuo AI** (Higssfield) | Text / Image | Cinematic, human motion, product | Limited free | hailuoai.video |
-| **Kling 2.x** (Kuaishou) | Text / Image | Long clips (up to 2 min), high quality | Limited free | klingai.com |
-| **Seedance** (ByteDance) | Text / Image | Fast generation, social content | Limited free | — |
-| **Google Veo 2** | Text / Image | High quality, Google ecosystem | Via AI Studio | aistudio.google.com |
+| **Hailuo 2.3** (MiniMax) | Text / Image | Cinematic, human motion, product | Limited free | hailuoai.video |
+| **Kling 3.0** (Kuaishou) | Text / Image | Long clips (up to 2 min), high quality | Limited free | klingai.com |
+| **Seedance 2.0** (ByteDance) | Text / Image / Audio | Fast generation, multi-shot, native audio | Limited free | seedance.io |
+| **Google Veo 3** | Text / Image | High quality, native audio sync | Via AI Studio | aistudio.google.com |
 | **Runway Gen-3** | Text / Image / Video | Professional, fine control | Limited free | runwayml.com |
 
 ## Recommended Workflow (Hailuo / Kling)
@@ -29,10 +29,10 @@ Tools that generate photorealistic or cinematic video from text prompts or image
 - Add "photorealistic", "8K", "cinematic" for quality
 - For product videos: white/studio background → cleaner results
 
-## Google AI Studio (Veo 2) — Free Access
+## Google AI Studio (Veo 3) — Free Access
 
 1. Go to aistudio.google.com
-2. Create a new prompt → select "Video" model (Veo 2)
+2. Create a new prompt → select "Video" model (Veo 3)
 3. Enter text prompt → generate
 4. Free tier available with Google account; high quality results
 
@@ -40,5 +40,5 @@ Tools that generate photorealistic or cinematic video from text prompts or image
 
 - All tools have usage limits on free tiers; paid plans give more credits
 - Kling has the longest clip duration (up to 2 minutes)
-- Hailuo/Higssfield tends to produce the most cinematic human motion
+- Hailuo 2.3 tends to produce the most cinematic human motion
 - For product ads specifically, see `ads.md`
