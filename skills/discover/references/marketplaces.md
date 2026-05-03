@@ -8,6 +8,7 @@ Sources to search when looking for Claude Code skills and plugins.
 |--------|-----|-------|
 | Claude Code Plugins (official) | code.claude.com/docs/en/discover-plugins | Official Claude Code plugin directory |
 | Claude.ai Plugins (official) | claude.com/plugins | Claude.ai integrations marketplace |
+| **Claude Plugins Official** (Anthropic GitHub) | github.com/anthropics/claude-plugins-official | Anthropic-managed, high-quality plugin directory |
 
 ## Community Marketplaces
 
@@ -19,6 +20,7 @@ Sources to search when looking for Claude Code skills and plugins.
 | **Awesome Claude** | awesomeclaude.ai/code-cheatsheet | Curated Claude Code resources and cheatsheets |
 | **Claude Marketplaces Community** | claudemarketplaces.com/skills | Browse skills by category |
 | **GitHub: superpowers** | github.com/obra/superpowers | The superpowers skill collection — meta-skills for Claude Code |
+| **SkillsMP** | skillsmp.com | Skills for Claude, Codex, and ChatGPT in one marketplace |
 | **There's An AI For That** | theresanaiforthat.com | Broader AI tool discovery (not Claude-specific, but useful for research) |
 
 ## How to Search Each Source
