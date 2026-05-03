@@ -48,7 +48,7 @@ client = ElevenLabs(api_key="your-key")
 audio = client.generate(
     text="Hello! This is a test.",
     voice="Rachel",
-    model="eleven_multilingual_v2"
+    model="eleven_turbo_v2_5"
 )
 with open("output.mp3", "wb") as f:
     f.write(audio)
@@ -58,12 +58,37 @@ with open("output.mp3", "wb") as f:
 **Best for:** High-quality voiceovers for ads or professional content
 **Voice cloning:** Paid feature; clone any voice from a sample
 
+## Chatterbox — Free & Open-Source, No Usage Caps
+
+Chatterbox by Resemble AI is MIT-licensed and outperformed ElevenLabs in blind listener tests (63.8% preference). Zero-shot voice cloning with a few seconds of reference audio.
+
+```bash
+pip install chatterbox-tts
+```
+
+```python
+import torchaudio
+from chatterbox.tts import ChatterboxTTS
+
+model = ChatterboxTTS.from_pretrained(device="cuda")
+wav = model.generate("Hello, this is a test of Chatterbox TTS.")
+torchaudio.save("output.wav", wav, model.sr)
+```
+
+**Models:**
+- `chatterbox-tts` — English, emotion control, voice cloning
+- `chatterbox-tts[multilingual]` — 23+ languages
+- `chatterbox-turbo` — fastest inference
+
+**Homepage:** resemble.ai/chatterbox | **PyPI:** `pip install chatterbox-tts`
+
 ## Choosing Between Tools
 
 | Need | Tool |
 |------|------|
 | Quick article summary, personal use | edge-tts (Azure, free) |
-| Professional ad voiceover | ElevenLabs |
+| Professional ad voiceover | ElevenLabs Turbo v2.5 |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
-| Voice cloning | ElevenLabs (paid) |
-| Bulk generation (many files) | edge-tts (no credit limits) |
+| Voice cloning, no cost, offline | Chatterbox (open-source) |
+| Voice cloning, cloud, easiest | ElevenLabs (paid) |
+| Bulk generation (many files) | edge-tts or Chatterbox (no credit limits) |
