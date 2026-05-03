@@ -4,12 +4,14 @@
 
 | Tool | Access | Best For | Free |
 |------|--------|----------|------|
-| **Nano Banana 2** | nanobanana.ai (verify URL) | Product images, lifestyle scenes, ad creatives — currently one of the best models | Check site |
-| **DALL-E 3** | ChatGPT / API | Accurate prompt following, text in images | Limited (ChatGPT Plus) |
-| **Flux** (Black Forest Labs) | Replicate, fal.ai | Photorealistic, fast | API credits |
+| **Midjourney v8.1** | midjourney.com | Artistic quality, concept art, portraits | Paid (no free tier) |
+| **Recraft V4** | recraft.ai | Logos, SVG vectors, brand assets, text rendering | Free tier |
+| **Nano Banana 2** | nanobanana.ai (verify URL) | Product images, lifestyle scenes, ad creatives | Check site |
+| **GPT Image 1.5** | ChatGPT / API | Complex instructions, text in images | Limited (ChatGPT Plus) |
+| **Flux 2 Pro** (Black Forest Labs) | Replicate, fal.ai | Most photorealistic, product photography | API credits |
 | **Stable Diffusion** | Local / Automatic1111 | Full control, local, free | Yes (local) |
 | **Adobe Firefly** | firefly.adobe.com | Commercial safe, style control | Free tier |
-| **Ideogram** | ideogram.ai | Text in images, posters | Free tier |
+| **Ideogram v3** | ideogram.ai | Text in images, posters, signage | Free tier |
 | **Google Imagen** | AI Studio | High quality | Via AI Studio |
 
 ## Nano Banana 2 — Top Pick for Product & Lifestyle Images
@@ -26,7 +28,16 @@ Particularly strong for:
 3. Generate several variants and pick the best
 4. Use result directly or pass to Weavy AI / Kling for animation (see motion.md)
 
-## Flux via fal.ai — Fast API Access
+## Recraft V4 — Logos, Vectors & Brand Assets
+
+Recraft V4 tops the HuggingFace Text-to-Image Arena leaderboard (2026). Use it when you need:
+- **Logos and icons** — generates editable SVG files (unique among AI image tools)
+- **Typography and signage** — reliably renders legible text in designs
+- **Brand-consistent visuals** — built-in brand styling with color/style locks
+
+Access: recraft.ai (free tier available)
+
+## Flux 2 Pro via fal.ai — Photorealistic API Access
 
 ```bash
 pip install fal-client
@@ -34,7 +45,7 @@ pip install fal-client
 ```python
 import fal_client
 result = fal_client.run(
-    "fal-ai/flux/schnell",
+    "fal-ai/flux-pro/v1.1",
     arguments={"prompt": "professional product photo, white background, studio lighting"}
 )
 print(result["images"][0]["url"])
