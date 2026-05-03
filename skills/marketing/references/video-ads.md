@@ -41,9 +41,19 @@
    - TikTok/Reels: 1080x1920, MP4, H.264
    - Facebook: 1080x1080 (square) or 9:16
 
-## aicreator.co — Automated Ad Video
+## Creatify.ai — URL-to-Ad-Video (Best Single-Tool Solution)
 
-For users who want a single-tool solution:
+Paste a product URL and get a complete 15-30 second TikTok/Instagram ad in minutes:
+1. Go to creatify.ai
+2. Paste your product URL (pulls images + description automatically)
+3. Select platform (TikTok, Instagram, Facebook) and style
+4. Generate → download ad with script, visuals, AI avatar, voiceover, and captions
+
+UGC-native output style consistently outperforms polished brand ads on TikTok.
+
+## aicreator.co — Automated Ad Video (Alternative)
+
+For a lightweight single-tool option:
 1. Go to aicreator.co
 2. Upload product image + describe the product
 3. Select target platform (TikTok, Instagram, general)
