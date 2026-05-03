@@ -34,6 +34,13 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | ip-api.com | IP to location | ip-api.com | None (rate limited) |
 | REST Countries | Country data | restcountries.com | None |
 
+## Images & Media
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| Unsplash | Millions of free high-quality stock photos | api.unsplash.com | Free key |
+| Picsum Photos | Random placeholder images by size | picsum.photos | None |
+
 ## Developer Utilities
 
 | API | What | URL | Auth |
@@ -41,6 +48,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | JSONPlaceholder | Mock REST API for testing | jsonplaceholder.typicode.com | None |
 | RandomUser | Random user data | randomuser.me | None |
 | DummyJSON | Mock data (products, users) | dummyjson.com | None |
+| Open Trivia DB | Trivia questions (50+ categories) | opentdb.com/api_config.php | None |
 
 ## Resources for Finding More
 
