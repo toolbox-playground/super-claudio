@@ -1,5 +1,9 @@
 # AI Music & Background Audio Generation
 
+> **Tool not chosen yet?** Go back to the `media-content-creation` skill — it will invoke
+> `find-ai-tools` to search for current free options and let the user pick.
+> This file is a workflow guide for *after* a tool has been selected.
+
 ## Suno — Text-to-Music
 
 Generate complete songs (vocals + instruments) from a text prompt.

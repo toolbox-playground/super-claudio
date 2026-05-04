@@ -1,5 +1,9 @@
 # Text-to-Speech & Voiceover Generation
 
+> **Tool not chosen yet?** Go back to the `media-content-creation` skill — it will invoke
+> `find-ai-tools` to search for current free options and let the user pick.
+> This file is a workflow guide for *after* a tool has been selected.
+
 ## Azure Neural TTS — Free, High Quality, Multilingual
 
 Microsoft Azure Neural TTS produces natural-sounding speech with no cost for moderate usage.

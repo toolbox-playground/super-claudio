@@ -1,8 +1,13 @@
 # Realistic AI Video Generation
 
-Tools that generate photorealistic or cinematic video from text prompts or images.
+> **Tool not chosen yet?** Go back to the `media-content-creation` skill — it will invoke
+> `find-ai-tools` to search for current free options and let the user pick.
+> This file is a workflow guide for *after* a tool has been selected.
 
-## Tool Comparison
+## Tool Reference (may be outdated — always verify current pricing)
+
+> Tools below are listed for reference. Free tiers change without notice.
+> Use `find-ai-tools` for an up-to-date ranked list with honest free tier info.
 
 | Tool | Input | Best For | Free Tier | URL |
 |------|-------|----------|-----------|-----|
