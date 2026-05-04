@@ -14,7 +14,7 @@
 
 ---
 
-> *Se Claude tivesse nascido no Brasil, chamaria Cláudio.*
+> *If Claude was Brazilian or Hispanic, he would be named Cláudio.*
 
 </div>
 
