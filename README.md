@@ -59,7 +59,8 @@ No slash commands needed (though they work too: `/super-claudio:writing`).
 | [design](#design) | UI/UX inspiration, Figma, v0.dev, prototyping | "design a website", "UI inspiration", "wireframe" |
 | [productivity](#productivity) | Documents, presentations, dashboards, planning | "create a pitch deck", "project plan", "build a dashboard" |
 | [ai-and-agents](#ai-and-agents) | Claude API, prompt engineering, MCP servers, skill creation | "use the Claude API", "build an MCP server", "create a skill" |
-| [discover](#discover) | Find skills not in this plugin | "find a skill for X" |
+| [find-ai-tools](#find-ai-tools) | Find & compare AI web tools with honest free-tier info | "best free video AI", "find tools without credit card" |
+| [discover-skills](#discover-skills) | Find Claude Code skills not in this plugin | "find a skill for X" |
 
 ---
 
@@ -160,9 +161,23 @@ Build AI-powered apps and extend Claude itself.
 
 ---
 
-### discover
+### find-ai-tools
 
-When no skill above matches, `discover` searches community marketplaces automatically:
+Searches the web for AI SaaS tools with an honest assessment of free tiers — because many tools falsely advertise "free trial" when a credit card is required from day one.
+
+| What it does | How |
+|-------------|-----|
+| Searches theresanaiforthat.com + Reddit + ProductHunt in parallel | WebSearch × 3 |
+| Labels each tool: Free / Freemium / Free Trial (card required) / Paid Only | Community-sourced, not vendor marketing |
+| Returns ranked top 5 with exact free limits | e.g. "5 videos/month, no watermark, no card" |
+
+Works for any category: video, image, audio, music, writing, coding, design, presentations, 3D, and more.
+
+---
+
+### discover-skills
+
+When no skill above matches, `discover-skills` searches Claude Code plugin marketplaces:
 - [claudemarketplaces.com](https://claudemarketplaces.com)
 - [theresaskillforthat.com](https://theresaskillforthat.com)
 - [aitmpl.com](https://aitmpl.com)

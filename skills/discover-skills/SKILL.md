@@ -1,14 +1,14 @@
 ---
-name: discover
+name: discover-skills
 description: >
-  Skill discovery fallback. Use when the user wants to do something and no existing super-claudio
-  skill covers it well enough, or when the user explicitly asks to find new skills, tools, or
-  plugins for Claude Code.
+  Claude Code skill and plugin discovery fallback. Use when the user wants to find new Claude Code
+  skills, plugins, or extensions — not general AI SaaS tools.
   Trigger on: "find a skill for X", "is there a skill that can do X", "find me a plugin",
-  "search for a skill", "I need a skill for X", "what tools exist for X", "find Claude skills",
-  "search skill marketplace", or whenever the user's request doesn't match any installed skill.
+  "search for a skill", "I need a skill for X", "find Claude skills", "search skill marketplace",
+  or whenever the user's request doesn't match any installed super-claudio skill.
   Also trigger when the user says they're not satisfied with current skill results and want
-  to find a better or newer option.
+  to find a better or newer Claude Code skill.
+  Do NOT trigger for: finding general AI web tools or SaaS products (use find-ai-tools instead).
 ---
 
 # Skill Discovery

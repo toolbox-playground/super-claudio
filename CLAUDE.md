@@ -15,7 +15,8 @@ to route them to the right skill before responding.
 | Design a website or app UI, find design inspiration, use design tools | `design` |
 | Create documents, presentations, spreadsheets, dashboards, project plans | `productivity` |
 | Use the Claude API, build AI apps, create skills/agents/MCP servers, prompt engineering | `ai-and-agents` |
-| Find a skill or plugin that doesn't exist yet in super-claudio | `discover` |
+| Find the best AI web tools for any category with honest free-tier info | `find-ai-tools` |
+| Find a Claude Code skill or plugin that doesn't exist yet in super-claudio | `discover-skills` |
 
 ## Routing Philosophy
 
@@ -28,8 +29,8 @@ This means context stays lean: one category skill body + one reference file per 
 
 ## Fallback
 
-If no skill matches well, **always invoke `discover`** before answering from general knowledge.
-The discover skill searches community marketplaces for newer, more specialized skills.
+If the user wants to find an **AI web tool** (SaaS product), invoke `find-ai-tools`.
+If no **Claude Code skill** matches, invoke `discover-skills` to search community marketplaces.
 
 ## Slash Commands
 
