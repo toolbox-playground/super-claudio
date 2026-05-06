@@ -1,0 +1,20 @@
+{
+  "name": "super-claudio",
+  "description": "Super Cláudio — curated skills for anything Claude can do",
+  "owner": {
+    "name": "Caio Roscelly",
+    "email": "caioroscelly@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "super-claudio",
+      "description": "Curated skills for anything Claude can do: media creation, software development, marketing, writing, design, productivity, AI/agents, and community skill discovery.",
+      "version": "1.0.0",
+      "source": "./",
+      "author": {
+        "name": "Caio Roscelly",
+        "email": "caioroscelly@gmail.com"
+      }
+    }
+  ]
+}
