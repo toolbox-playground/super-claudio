@@ -1,5 +1,5 @@
 ---
-name: marketing
+name: super-claudio:marketing
 description: >
   Marketing and advertising content creation skill. Use when the user wants to create content
   specifically for ads, campaigns, social commerce, or marketing purposes.

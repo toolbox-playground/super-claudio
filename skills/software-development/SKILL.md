@@ -1,5 +1,5 @@
 ---
-name: software-development
+name: super-claudio:software-development
 description: >
   Software development skill. Use when the user wants to build, code, automate, or deploy anything
   technical. Covers backend APIs, databases, workflow automation, scripts, free public APIs,

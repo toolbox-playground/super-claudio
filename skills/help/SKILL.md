@@ -1,5 +1,5 @@
 ---
-name: help
+name: super-claudio:help
 description: >
   Super Cláudio help and navigation skill. Use when the user types /super-claudio:help,
   wants to know what super-claudio can do, asks "what skills do you have", "what can super-claudio do",

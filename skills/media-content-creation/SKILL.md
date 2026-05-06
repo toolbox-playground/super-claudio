@@ -1,5 +1,5 @@
 ---
-name: media-content-creation
+name: super-claudio:media-content-creation
 description: >
   Media content creation skill. Use when the user wants to create, generate, or produce any kind
   of video, audio, or image. This is the main skill for all media generation tasks.

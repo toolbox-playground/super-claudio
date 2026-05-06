@@ -1,5 +1,5 @@
 ---
-name: ai-and-agents
+name: super-claudio:ai-and-agents
 description: >
   AI integration and agent building skill. Use when the user wants to use the Claude API,
   build AI-powered apps, create Claude Code skills or agents, connect MCP servers, or

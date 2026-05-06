@@ -1,5 +1,5 @@
 ---
-name: design
+name: super-claudio:design
 description: >
   UI/UX and visual design skill. Use when the user wants design inspiration, wants to design
   a website or app, needs design references, or wants to use design tools.

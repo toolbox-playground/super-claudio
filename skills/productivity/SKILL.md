@@ -1,5 +1,5 @@
 ---
-name: productivity
+name: super-claudio:productivity
 description: >
   Productivity and document creation skill. Use when the user wants to create documents,
   presentations, spreadsheets, dashboards, or needs help with planning and organization tools.

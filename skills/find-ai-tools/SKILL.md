@@ -1,5 +1,5 @@
 ---
-name: find-ai-tools
+name: super-claudio:find-ai-tools
 description: >
   AI tool discovery skill. Use when the user wants to find, compare, or evaluate AI-powered
   web tools — especially when they care about whether a tool has a genuinely free tier without

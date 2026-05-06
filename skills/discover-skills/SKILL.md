@@ -1,5 +1,5 @@
 ---
-name: discover-skills
+name: super-claudio:discover-skills
 description: >
   Claude Code skill and plugin discovery fallback. Use when the user wants to find new Claude Code
   skills, plugins, or extensions — not general AI SaaS tools.

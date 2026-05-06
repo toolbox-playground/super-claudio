@@ -1,5 +1,5 @@
 ---
-name: writing
+name: super-claudio:writing
 description: >
   Content writing and copywriting skill. Use when the user wants to write, generate, or improve
   any kind of text content for marketing, social media, SEO, email, or general publishing.
