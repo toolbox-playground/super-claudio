@@ -22,10 +22,11 @@
 
 ## Install
 
-One command. Works immediately after.
+Two commands. Works immediately after.
 
 ```bash
-claude plugin install github.com/toolbox-playground/super-claudio
+claude plugin marketplace add github.com/toolbox-playground/super-claudio
+claude plugin install super-claudio
 ```
 
 > **Requirements:** Claude Code CLI installed. Get it at [claude.ai/code](https://claude.ai/code).
