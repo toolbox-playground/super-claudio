@@ -25,7 +25,7 @@
 Dois comandos. Funciona imediatamente depois.
 
 ```bash
-claude plugin marketplace add github.com/toolbox-playground/super-claudio
+claude plugin marketplace add https://github.com/toolbox-playground/super-claudio
 claude plugin install super-claudio
 ```
 
