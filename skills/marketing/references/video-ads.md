@@ -59,10 +59,31 @@ For a lightweight single-tool option:
 3. Select target platform (TikTok, Instagram, general)
 4. Generate → download complete ad video with music and captions
 
-## Higssfield (Hailuo) for Premium Ads
+## Lapis — Best AI Ad Generator for TikTok (2026)
+
+Lapis is purpose-built for TikTok, auto-sizing creatives for vertical-first placements (9:16, 1:1) with built-in performance forecasting and visuals tuned to TikTok's native aesthetic.
+
+1. Go to trylapis.com
+2. Input product details or URL
+3. Select TikTok ad format
+4. Generate scroll-stopping visuals optimized for the platform algorithm
+
+Best for: high-volume TikTok campaigns with creative performance scoring.
+
+## TikTok Symphony — Native AI Suite (Built-In)
+
+TikTok's own AI toolset inside Creative Center and Ads Manager:
+- **Script Generator** — briefs → ad scripts aligned with trending hooks
+- **Digital Avatars** — AI presenters for UGC-style ads without filming
+- **Video Generation** — text/image to video natively
+- **Multilingual Dubbing** — auto-dub existing videos for new markets
+
+Access: business.tiktok.com → Creative Center → Symphony AI
+
+## Higgsfield (Hailuo) for Premium Ads
 
 When you need the highest realism (luxury products, fashion):
 1. Prepare a high-quality product/lifestyle image
 2. Upload to hailuoai.video
 3. Write a detailed prompt describing the camera movement and mood
-4. Generate — Higssfield produces cinematic results that feel like professional ad shoots
+4. Generate — Higgsfield produces cinematic results that feel like professional ad shoots

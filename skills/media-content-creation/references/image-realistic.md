@@ -10,7 +10,7 @@
 > Use `find-ai-tools` for an up-to-date ranked list with honest free tier info.
 
 | Tool | Access | Best For | Free |
-|------|--------|----------|------|
+|------|--------|----------|
 | **Midjourney v8.1** | midjourney.com | Artistic quality, concept art, portraits | Paid (no free tier) |
 | **Recraft V4** | recraft.ai | Logos, SVG vectors, brand assets, text rendering | Free tier |
 | **Nano Banana 2** | nanobanana.ai (verify URL) | Product images, lifestyle scenes, ad creatives | Check site |
@@ -19,7 +19,7 @@
 | **Stable Diffusion** | Local / Automatic1111 | Full control, local, free | Yes (local) |
 | **Adobe Firefly** | firefly.adobe.com | Commercial safe, style control | Free tier |
 | **Ideogram v3** | ideogram.ai | Text in images, posters, signage | Free tier |
-| **Google Imagen** | AI Studio | High quality | Via AI Studio |
+| **Google Imagen 4** | AI Studio / Gemini API | Photorealism, 2K resolution, text rendering; Ultra variant for max fidelity | Via AI Studio (free tier) |
 
 ## Nano Banana 2 — Top Pick for Product & Lifestyle Images
 
