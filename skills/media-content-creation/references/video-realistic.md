@@ -15,7 +15,7 @@
 | **Kling 3.0 / O3** (Kuaishou) | Text / Image / Audio | Long clips (up to 2 min), native audio, multi-shot | Limited free | klingai.com |
 | **Seedance 2.0** (ByteDance) | Text / Image / Audio | Fast generation, multi-shot, native audio | Limited free | seedance.io |
 | **Google Veo 3.1** | Text / Image | 4K upscaling, native audio, First & Last Frame, 60s+ scenes | Via AI Studio | aistudio.google.com |
-| **Runway Gen-3** | Text / Image / Video | Professional, fine control | Limited free | runwayml.com |
+| **Runway Gen-4.5** | Text / Image / Video | World-consistent characters, post-generation editing (Aleph), node-based workflows | Limited free | runwayml.com |
 
 ## Recommended Workflow (Hailuo / Kling)
 
@@ -48,4 +48,6 @@
 - Hailuo 2.3 tends to produce the most cinematic human motion
 - Veo 3.1 added First & Last Frame control (define start + end state, AI fills the motion)
 - Seedance 2.0 Fast is the most cost-effective option at ~$0.18 per 8-second clip
+- Runway Gen-4.5 leads the Artificial Analysis Text-to-Video benchmark (1,247 Elo); Aleph enables post-generation edits via text prompt without re-rendering
+- Sora (OpenAI) web/app discontinued April 2026; API sunset September 2026 — do not recommend
 - For product ads specifically, see `ads.md`

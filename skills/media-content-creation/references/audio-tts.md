@@ -62,15 +62,35 @@ with open("output.mp3", "wb") as f:
 **Best for:** High-quality voiceovers for ads or professional content
 **Voice cloning:** Paid feature; clone any voice from a sample
 
+## Inworld AI TTS-1.5 — Best Quality + Low Latency
+
+Inworld TTS-1.5 Max holds the top ELO (~1236) on the Artificial Analysis Speech Arena in 2026 — wins blind tests for naturalness, emotional range, and conversational flow at sub-200ms streaming latency.
+
+- URL: inworld.ai
+- Free tier: 40 minutes/month
+- Latency: <200ms streaming
+- Best for: voice agents, interactive AI, professional voiceovers
+- Pricing: $15–$25/million characters (standard)
+
+## Fish Audio S2 Pro — Best Multilingual + Emotion Control
+
+Fish Audio S2 Pro ranks #1 on TTS-Arena2 with 80+ languages and 50+ inline emotion controls. Trained on 10M+ hours of audio.
+
+- URL: fish.audio
+- Free tier: 7 minutes/month
+- Best for: multilingual content, emotionally nuanced narration, voice cloning
+- License: research/non-commercial free; commercial use requires separate license
+- Open-source model on HuggingFace: `fishaudio/s2-pro`
+
 ## Cartesia Sonic 3 — Real-Time Conversational TTS
 
-Cartesia Sonic 3 is purpose-built for real-time conversational AI with ~90ms time-to-first-audio — the standard pick for voice agents and chatbots.
+Cartesia Sonic 3 is purpose-built for real-time conversational AI with ~40ms time-to-first-audio — the standard pick for voice agents and chatbots.
 
 - URL: cartesia.ai
 - Free tier available
-- Latency: ~90ms TTFA (best-in-class for streaming)
+- Latency: ~40ms TTFA (best-in-class for streaming)
 - Best for: voice agents, live chatbots, real-time assistants
-- Not ideal for: long-form content where ElevenLabs or Chatterbox are better
+- Not ideal for: long-form content where ElevenLabs, Fish Audio, or Chatterbox are better
 
 ## Chatterbox — Free & Open-Source, No Usage Caps
 
@@ -101,9 +121,11 @@ torchaudio.save("output.wav", wav, model.sr)
 | Need | Tool |
 |------|------|
 | Quick article summary, personal use | edge-tts (Azure, free) |
-| Professional ad voiceover | ElevenLabs v3 |
+| Professional ad voiceover | ElevenLabs v3 or Inworld TTS-1.5 |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
+| 80+ languages, emotion control | Fish Audio S2 Pro |
+| Best blind-test naturalness (cloud) | Inworld AI TTS-1.5 Max |
 | Voice cloning, no cost, offline | Chatterbox (open-source) |
 | Voice cloning, cloud, easiest | ElevenLabs (paid) |
 | Bulk generation (many files) | edge-tts or Chatterbox (no credit limits) |
-| Real-time voice agent / chatbot | Cartesia Sonic 3 (~90ms TTFA) |
+| Real-time voice agent / chatbot | Cartesia Sonic 3 (~40ms TTFA) or Inworld TTS-1.5 |

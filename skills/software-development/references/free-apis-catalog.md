@@ -61,5 +61,6 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 
 - **Public APIs list:** github.com/public-apis/public-apis — 1000+ APIs organized by category
 - **Public API Lists:** github.com/public-api-lists/public-api-lists — 730+ APIs across 48 categories with a free JSON query API
+- **PublicAPIs.dev:** publicapis.dev — collaborative directory of 1400+ public APIs, searchable by category
 - **Free Public APIs:** freepublicapis.com — community catalog tested daily (shows live status)
 - **RapidAPI free tier:** rapidapi.com — many APIs have free tiers

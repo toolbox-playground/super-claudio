@@ -4,7 +4,7 @@
 
 ### Tools needed
 - Product image (real photo or AI-generated)
-- Kling or Higssfield (animation)
+- Kling or Higgsfield (animation)
 - CapCut or ffmpeg (captions/CTA overlay)
 - ElevenLabs or edge-tts (optional voiceover)
 
@@ -58,6 +58,17 @@ For a lightweight single-tool option:
 2. Upload product image + describe the product
 3. Select target platform (TikTok, Instagram, general)
 4. Generate → download complete ad video with music and captions
+
+## Predis.ai — TikTok Spark Ads & Organic-First Strategy
+
+Predis.ai generates content designed to look like organic posts, then runs them as Spark Ads — a format that achieves 142% higher engagement than standard In-Feed ads on TikTok.
+
+1. Go to predis.ai
+2. Input product or brand details
+3. Generate organic-style content (single posts, carousels, short videos)
+4. Boost top-performing posts as TikTok Spark Ads directly from the platform
+
+Best for: brands wanting native-feel TikTok ads with lower CPM through Spark Ads.
 
 ## Lapis — Best AI Ad Generator for TikTok (2026)
 
