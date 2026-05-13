@@ -50,8 +50,17 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | DummyJSON | Mock data (products, users) | dummyjson.com | None |
 | Open Trivia DB | Trivia questions (50+ categories) | opentdb.com/api_config.php | None |
 
+## AI / Machine Learning
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| Google Gemini API | LLM inference, 1M token context, multimodal | ai.google.dev | Free key (generous limits) |
+| OpenRouter | Access to 100+ free AI models (Claude, GPT, Llama, Gemini) via one API | openrouter.ai | Free key |
+
 ## Resources for Finding More
 
 - **Public APIs list:** github.com/public-apis/public-apis — 1000+ APIs organized by category
+- **Public API Lists:** github.com/public-api-lists/public-api-lists — 730+ APIs across 48 categories with a free JSON query API
+- **PublicAPIs.dev:** publicapis.dev — collaborative directory of 1400+ public APIs, searchable by category
+- **Free Public APIs:** freepublicapis.com — community catalog tested daily (shows live status)
 - **RapidAPI free tier:** rapidapi.com — many APIs have free tiers
-- **Any API:** any-api.com — directory with interactive docs

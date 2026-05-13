@@ -10,24 +10,25 @@
 > Use `find-ai-tools` for an up-to-date ranked list with honest free tier info.
 
 | Tool | Access | Best For | Free |
-|------|--------|----------|------|
+|------|--------|----------|
 | **Midjourney v8.1** | midjourney.com | Artistic quality, concept art, portraits | Paid (no free tier) |
 | **Recraft V4** | recraft.ai | Logos, SVG vectors, brand assets, text rendering | Free tier |
-| **Nano Banana 2** | nanobanana.ai (verify URL) | Product images, lifestyle scenes, ad creatives | Check site |
+| **Nano Banana 2** (Google / Gemini) | gemini.google.com | Product images, lifestyle scenes, ad creatives | Free (Gemini app) |
 | **GPT Image 1.5** | ChatGPT / API | Complex instructions, text in images | Limited (ChatGPT Plus) |
 | **Flux 2 Pro** (Black Forest Labs) | Replicate, fal.ai | Most photorealistic, product photography | API credits |
 | **Stable Diffusion** | Local / Automatic1111 | Full control, local, free | Yes (local) |
 | **Adobe Firefly** | firefly.adobe.com | Commercial safe, style control | Free tier |
 | **Ideogram v3** | ideogram.ai | Text in images, posters, signage | Free tier |
-| **Google Imagen** | AI Studio | High quality | Via AI Studio |
+| **Google Imagen 4** | AI Studio / Gemini API | Photorealism, 2K resolution, text rendering; Ultra variant for max fidelity | Via AI Studio (free tier) |
 
 ## Nano Banana 2 — Top Pick for Product & Lifestyle Images
 
-Currently one of the best models for generating high-quality product images and lifestyle scenes.
-Particularly strong for:
+Google's Nano Banana 2 (Gemini 3.1 Flash Image) is available free in the Gemini app and across Google products (Search, Lens, AI Studio, Vertex AI). Particularly strong for:
 - Placing products in realistic lifestyle contexts ("product on a kitchen counter", "model holding product")
 - Generating ad-ready images with clean composition
 - Ecommerce and social commerce content
+
+**Access:** gemini.google.com (free) or aistudio.google.com
 
 **Workflow:**
 1. Prepare your product image (real photo)
