@@ -81,6 +81,17 @@ Lapis is purpose-built for TikTok, auto-sizing creatives for vertical-first plac
 
 Best for: high-volume TikTok campaigns with creative performance scoring.
 
+## AdCreative.ai — Predictive Scoring for High-Volume Campaigns
+
+AdCreative.ai generates large batches of ad creatives and assigns each a performance prediction score (CTR, conversion probability) before you spend budget testing them — useful for teams running many variants simultaneously.
+
+1. Go to adcreative.ai
+2. Connect your brand assets and product info
+3. Generate ad creative variants (images, carousels, short videos)
+4. Sort by performance score → prioritize top-predicted variants for paid spend
+
+**Pricing:** Starts at $39/month (no permanent free tier; trial available). Best for mid-to-large teams running multi-platform campaigns at scale (TikTok, Meta, Google).
+
 ## TikTok Symphony — Native AI Suite (Built-In)
 
 TikTok's own AI toolset inside Creative Center and Ads Manager:
