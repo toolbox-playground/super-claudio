@@ -16,6 +16,7 @@
 | **Seedance 2.0** (ByteDance) | Text / Image / Audio | Fast generation, multi-shot, native audio | Limited free | seedance.io |
 | **Google Veo 3.1** | Text / Image | 4K upscaling, native audio, First & Last Frame, 60s+ scenes | Via AI Studio | aistudio.google.com |
 | **Runway Gen-4.5** | Text / Image / Video | World-consistent characters, post-generation editing (Aleph), node-based workflows | Limited free | runwayml.com |
+| **Pika 2.5** (Pika Labs) | Text / Image / Video | Creative transformations: Pikaswaps (replace objects/characters), Pikaffects (melt, explode, inflate), Pikadditions (add elements to footage) | Free (80 credits/mo, 480p; watermarked) | pika.art |
 
 ## Recommended Workflow (Hailuo / Kling)
 
@@ -49,5 +50,6 @@
 - Veo 3.1 added First & Last Frame control (define start + end state, AI fills the motion)
 - Seedance 2.0 Fast is the most cost-effective option at ~$0.18 per 8-second clip
 - Runway Gen-4.5 leads the Artificial Analysis Text-to-Video benchmark (1,247 Elo); Aleph enables post-generation edits via text prompt without re-rendering
+- Pika 2.5 is the best pick for creative/destructive transformations on existing footage — not for cinematic realism; commercial use requires paid plan
 - Sora (OpenAI) web/app discontinued April 2026; API sunset September 2026 — do not recommend
 - For product ads specifically, see `ads.md`
