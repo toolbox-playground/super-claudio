@@ -34,6 +34,12 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | ip-api.com | IP to location | ip-api.com | None (rate limited) |
 | REST Countries | Country data | restcountries.com | None |
 
+## Books & Literature
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| Open Library | Books, authors, covers — millions of titles from the Internet Archive | openlibrary.org/api | None |
+
 ## Images & Media
 
 | API | What | URL | Auth |
