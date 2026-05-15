@@ -92,6 +92,17 @@ Cartesia Sonic 3 is purpose-built for real-time conversational AI with ~40ms tim
 - Best for: voice agents, live chatbots, real-time assistants
 - Not ideal for: long-form content where ElevenLabs, Fish Audio, or Chatterbox are better
 
+## Deepgram Aura-2 — Enterprise Production TTS
+
+Deepgram Aura-2 targets enterprises building production voice systems where uptime, transparent pricing, and consistent low latency matter more than theatrical expressiveness. Sub-200ms TTFB (90ms optimized), 40+ English voices, 10+ Spanish voices with regional accents.
+
+- URL: deepgram.com
+- Free start: $200 in free credits (no credit card required)
+- Pricing: $0.030 per 1,000 characters (~$1.80/hour of audio)
+- Languages: 7 (English, Spanish + others)
+- Best for: enterprise voice agents, high-volume production systems, call center bots
+- Not ideal for: artistic/emotional content where ElevenLabs or Fish Audio excel
+
 ## Chatterbox — Free & Open-Source, No Usage Caps
 
 Chatterbox by Resemble AI is MIT-licensed and outperformed ElevenLabs in blind listener tests (63.8% preference). Zero-shot voice cloning with a few seconds of reference audio.
@@ -129,3 +140,4 @@ torchaudio.save("output.wav", wav, model.sr)
 | Voice cloning, cloud, easiest | ElevenLabs (paid) |
 | Bulk generation (many files) | edge-tts or Chatterbox (no credit limits) |
 | Real-time voice agent / chatbot | Cartesia Sonic 3 (~40ms TTFA) or Inworld TTS-1.5 |
+| Enterprise production (uptime + pricing transparency) | Deepgram Aura-2 ($200 free credits to start) |
