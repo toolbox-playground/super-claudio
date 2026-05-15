@@ -15,7 +15,8 @@
 | **Recraft V4** | recraft.ai | Logos, SVG vectors, brand assets, text rendering | Free tier |
 | **Nano Banana 2** (Google / Gemini) | gemini.google.com | Product images, lifestyle scenes, ad creatives | Free (Gemini app) |
 | **GPT Image 1.5** | ChatGPT / API | Complex instructions, text in images | Limited (ChatGPT Plus) |
-| **Flux 2 Pro** (Black Forest Labs) | Replicate, fal.ai | Most photorealistic, product photography | API credits |
+| **FLUX.2 [pro]** (Black Forest Labs) | bfl.ai, fal.ai | Most photorealistic, product photography | API credits |
+| **FLUX.1 Kontext** (Black Forest Labs) | bfl.ai, fal.ai | In-context image editing — provide reference image + text instruction to edit it | API credits (Dev variant: open-weight, non-commercial) |
 | **Stable Diffusion** | Local / Automatic1111 | Full control, local, free | Yes (local) |
 | **Adobe Firefly** | firefly.adobe.com | Commercial safe, style control | Free tier |
 | **Ideogram v3** | ideogram.ai | Text in images, posters, signage | Free tier |
@@ -45,7 +46,7 @@ Recraft V4 tops the HuggingFace Text-to-Image Arena leaderboard (2026). Use it w
 
 Access: recraft.ai (free tier available)
 
-## Flux 2 Pro via fal.ai — Photorealistic API Access
+## FLUX.2 [pro] via fal.ai — Photorealistic API Access
 
 ```bash
 pip install fal-client
@@ -53,11 +54,19 @@ pip install fal-client
 ```python
 import fal_client
 result = fal_client.run(
-    "fal-ai/flux-pro/v1.1",
+    "fal-ai/flux-pro/v1.1",  # check fal.ai for latest FLUX.2 model ID
     arguments={"prompt": "professional product photo, white background, studio lighting"}
 )
 print(result["images"][0]["url"])
 ```
+
+## FLUX.1 Kontext — In-Context Image Editing
+
+FLUX.1 Kontext from Black Forest Labs enables reference-image-guided editing: provide an existing image and a text instruction, and the model performs the edit while preserving context. Unlike inpainting, it understands the full scene. Adobe Photoshop (beta) uses it for generative fill.
+
+- Best for: product image variations, background swaps, style transfer, object replacement
+- Dev variant: open-weight, free for non-commercial use (`black-forest-labs/FLUX.1-Kontext-dev` on HuggingFace)
+- Pro/Max variants: via bfl.ai API or fal.ai
 
 ## Prompt Formula for Realistic Images
 
