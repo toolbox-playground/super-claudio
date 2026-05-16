@@ -11,6 +11,7 @@
 
 | Tool | Input | Best For | Free Tier | URL |
 |------|-------|----------|-----------|-----|
+| **HappyHorse-1.0** (Alibaba / ATH) | Text / Image | Temporal consistency — objects & faces stay identical frame-to-frame; #1 Artificial Analysis Video Arena (April 2026) | API credits | fal.ai |
 | **Hailuo 2.3** (MiniMax) | Text / Image | Cinematic, human motion, product | Limited free | hailuoai.video |
 | **Kling 3.0 / O3** (Kuaishou) | Text / Image / Audio | Long clips (up to 2 min), native audio, multi-shot | Limited free | klingai.com |
 | **Seedance 2.0** (ByteDance) | Text / Image / Audio | Fast generation, multi-shot, native audio | Limited free | seedance.io |
@@ -45,6 +46,7 @@
 ## Notes
 
 - All tools have usage limits on free tiers; paid plans give more credits
+- HappyHorse-1.0 has no standalone consumer site — access via fal.ai API at $0.14/s (720p) or $0.28/s (1080p); it topped Artificial Analysis Video Arena in April 2026 for both Text-to-Video and Image-to-Video
 - Kling 3.0 / O3 has the longest clip duration (up to 2 minutes); O3 (Omni) is the premium variant with native multilingual audio
 - Hailuo 2.3 tends to produce the most cinematic human motion
 - Veo 3.1 added First & Last Frame control (define start + end state, AI fills the motion)
