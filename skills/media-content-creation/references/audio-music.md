@@ -9,9 +9,10 @@
 Generate complete songs (vocals + instruments) from a text prompt.
 
 - URL: suno.com
-- Free tier: ~50 songs/day
+- Free tier: 50 credits/day (~10 songs); non-commercial use only
+- **Important (2026):** Free-tier users can no longer download audio files — tracks can only be streamed/shared within the platform. Download requires a paid plan.
 - Input: genre, mood, lyrics (optional), style description
-- Output: full song MP3
+- Output: full song (streaming on free; downloadable MP3 on paid)
 
 Example prompt: "upbeat Brazilian funk, energetic, no lyrics, good for TikTok ads"
 
@@ -20,8 +21,8 @@ Example prompt: "upbeat Brazilian funk, energetic, no lyrics, good for TikTok ad
 Similar to Suno, strong on musicality and production quality.
 
 - URL: udio.com
-- Free tier available
-- Good for: background music for videos, ads, presentations
+- **Important (2026):** Udio is now a walled garden — users cannot export or download generated music. Tracks stay on the platform; no DAW export, no Spotify upload, no use in video. Only use Udio for in-platform listening/sharing.
+- Good for: previewing and sharing music concepts; not suitable if you need to use the audio outside Udio
 
 ## Free Royalty-Free Music (no generation needed)
 
@@ -33,8 +34,10 @@ For background music without AI generation:
 
 ## When to Use AI vs. Library
 
-| Use AI music (Suno/Udio) | Use library |
+| Use AI music (Suno) | Use library |
 |---|---|
 | Need specific mood/genre | Need something quickly |
 | No matching library track | Any genre fits |
 | Unique branded sound | Speed matters |
+
+> **Note:** As of 2026, Udio no longer allows audio export. For any use case where you need to keep or use the generated audio, use Suno (paid) or a royalty-free library instead.
