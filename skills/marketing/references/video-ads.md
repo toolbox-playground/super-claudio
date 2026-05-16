@@ -53,7 +53,9 @@ UGC-native output style consistently outperforms polished brand ads on TikTok.
 
 ## aicreator.co — Automated Ad Video (Alternative)
 
-For a lightweight single-tool option:
+> **Verify before use (May 2026):** aicreator.co currently presents as an AI tutorials and learning blog, not a product video ad generator. Confirm the tool still offers ad video generation before recommending it to users.
+
+For a lightweight single-tool option (if still operational):
 1. Go to aicreator.co
 2. Upload product image + describe the product
 3. Select target platform (TikTok, Instagram, general)
@@ -91,6 +93,20 @@ AdCreative.ai generates large batches of ad creatives and assigns each a perform
 4. Sort by performance score → prioritize top-predicted variants for paid spend
 
 **Pricing:** Starts at $39/month (no permanent free tier; trial available). Best for mid-to-large teams running multi-platform campaigns at scale (TikTok, Meta, Google).
+
+## AdStellar AI — Full-Stack Creative + Campaign Platform
+
+AdStellar combines ad creative generation, campaign launch, and performance optimization in one platform — eliminating the need to switch between a creative tool and an ads manager.
+
+1. Go to adstellar.ai
+2. Input product URL or clone competitor ads from Meta Ad Library
+3. Generate image ads, video ads, or UGC-style avatar content
+4. Launch directly as a Meta campaign with AI-optimized audiences and copy
+5. Winners Hub surfaces best-performing creatives automatically by ROAS, CPA, and CTR
+
+**Pricing:** $49/month (Hobby), $129/month (Pro), $499/month (Ultra); 7-day free trial, no credit card required.
+
+Best for: performance marketers and agencies who want creative generation, campaign building, and optimization in one place.
 
 ## TikTok Symphony — Native AI Suite (Built-In)
 
