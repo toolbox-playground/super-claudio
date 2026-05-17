@@ -108,6 +108,18 @@ AdStellar combines ad creative generation, campaign launch, and performance opti
 
 Best for: performance marketers and agencies who want creative generation, campaign building, and optimization in one place.
 
+## Arcads — AI UGC Video Actors (1,000+ Actors)
+
+Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors — the largest AI actor library in 2026, purpose-built for Meta and TikTok ad testing.
+
+1. Go to arcads.ai
+2. Write or paste your ad script (15–60 seconds)
+3. Select an AI actor (filter by age, gender, ethnicity, style)
+4. Generate the video — output is virtually indistinguishable from real UGC in scroll tests
+5. Download and deploy directly to Meta/TikTok Ads Manager
+
+**Pricing:** Starts at $77/month for 10 videos; no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
+
 ## TikTok Symphony — Native AI Suite (Built-In)
 
 TikTok's own AI toolset inside Creative Center and Ads Manager:
