@@ -15,7 +15,7 @@
 | **Hailuo 2.3** (MiniMax) | Text / Image | Cinematic, human motion, product | Limited free | hailuoai.video |
 | **Kling 3.0 / O3** (Kuaishou) | Text / Image / Audio | Long clips (up to 2 min), native audio, multi-shot | Limited free | klingai.com |
 | **Seedance 2.0** (ByteDance) | Text / Image / Audio | Fast generation, multi-shot, native audio | Limited free | seedance.io |
-| **Wan 2.6** (Alibaba Cloud) | Text / Image / Reference Video | Multi-shot narrative — consistent characters across cuts, native audio + lip sync; strongest for story-driven scenes | Limited free (wan.video); API via fal.ai | wan.video, fal.ai |
+| **Wan 2.7** (Alibaba Cloud) | Text / Image / First+Last Frame / Video Edit | Multi-shot narrative, first/last frame control (FLF2V), instruction-based video editing, reference-to-video with voice cloning, thinking mode — most complete open-source video stack | Limited free (wan.video); API via fal.ai | wan.video, fal.ai |
 | **Google Veo 3.1** | Text / Image | 4K upscaling, native audio, First & Last Frame, 60s+ scenes | Via AI Studio | aistudio.google.com |
 | **Runway Gen-4.5** | Text / Image / Video | World-consistent characters, post-generation editing (Aleph), node-based workflows | Limited free | runwayml.com |
 | **Pika 2.5** (Pika Labs) | Text / Image / Video | Creative transformations: Pikaswaps (replace objects/characters), Pikaffects (melt, explode, inflate), Pikadditions (add elements to footage) | Free (80 credits/mo, 480p; watermarked) | pika.art |
@@ -54,6 +54,6 @@
 - Seedance 2.0 Fast is the most cost-effective option at ~$0.18 per 8-second clip
 - Runway Gen-4.5 leads the Artificial Analysis Text-to-Video benchmark (1,247 Elo); Aleph enables post-generation edits via text prompt without re-rendering
 - Pika 2.5 is the best pick for creative/destructive transformations on existing footage — not for cinematic realism; commercial use requires paid plan
-- Wan 2.6 (Alibaba Cloud) generates up to 15-second 1080p clips with native audio and lip sync; strongest for multi-shot storytelling where consistent characters across scene cuts matter; API via fal.ai at $0.10/s (720p) or $0.15/s (1080p); limited free tier at wan.video; Wan 2.7 in development
+- Wan 2.7 (Alibaba Cloud) released April 6, 2026 as four models: t2v, i2v, r2v (reference-to-video + voice cloning), and videoedit (instruction-based editing of existing clips); first/last frame control (FLF2V — currently the only major AI video model with this); 9-grid multi-scene generation; thinking mode for complex prompts; 1080p up to 15 seconds; Apache 2.0 open-source (27B params, MoE); API at $0.10/s (720p) or $0.15/s (1080p); limited free tier at wan.video; Wan 3.0 pre-announced (60B params, 4K resolution, 30-second clips, expected mid-2026)
 - Sora (OpenAI) web/app discontinued April 2026; API sunset September 2026 — do not recommend
 - For product ads specifically, see `ads.md`
