@@ -40,4 +40,4 @@ Running paid ads? Create at least 5 different creative variations to test:
 - Different backgrounds/scenes
 - Same product, different contexts
 
-Use aicreator.co or the video-ads workflow to generate variations quickly.
+Use Creatify.ai or the video-ads workflow to generate variations quickly. (Note: aicreator.co may have pivoted — verify it still functions as an ad video generator before use.)
