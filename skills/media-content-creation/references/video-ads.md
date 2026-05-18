@@ -14,9 +14,9 @@ other performance marketing channels.
 - Clean white/studio background works best for product isolation
 
 ### Step 2: Animate the image (add motion)
-- **Weavy AI** (rebranding to Figma Weave after Figma acquisition, Oct 2025) — takes a static image and adds realistic motion (person walks, model poses, fabric moves)
+- **Figma Weave** (formerly Weavy AI; acquired by Figma Oct 2025, rebranded May 2026) — takes a static image and adds realistic motion (person walks, model poses, fabric moves); node-based canvas to chain multiple AI models (image → video → effects) in one workflow
   - Great for: fashion, lifestyle products, showing a model wearing/using your product
-  - URL: weavy.ai (transitioning to weave.figma.com)
+  - URL: weave.figma.com (legacy weavy.ai still accessible)
 - **Kling "Image to Video"** — similar approach, strong motion quality
   - URL: klingai.com → Image to Video
 
