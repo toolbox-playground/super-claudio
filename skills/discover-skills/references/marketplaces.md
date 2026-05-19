@@ -24,6 +24,7 @@ Sources to search when looking for Claude Code skills and plugins.
 | **claude-skills (263+ skills)** | github.com/alirezarezvani/claude-skills | 263+ production-ready skills across 9 domains (engineering, marketing, product, compliance, C-level) — works with Claude Code, Codex, Cursor, Gemini CLI, and 8 more agents |
 | **claude-code-marketplace (Netresearch)** | github.com/netresearch/claude-code-marketplace | Curated Agent Skills collection for AI-assisted development |
 | **claude-code-skills (daymade)** | github.com/daymade/claude-code-skills | Production-ready skills marketplace for enhanced development workflows |
+| **claude-skills-marketplace (mhattingpete)** | github.com/mhattingpete/claude-skills-marketplace | Software engineering workflows: git automation, test fixing, code review, feature planning, visual documentation dashboards |
 | **There's An AI For That** | theresanaiforthat.com | Broader AI tool discovery (not Claude-specific, but useful for research) |
 
 ## How to Search Each Source
