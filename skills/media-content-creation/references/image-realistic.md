@@ -18,7 +18,7 @@
 | **FLUX.2 [pro]** (Black Forest Labs) | bfl.ai, fal.ai | Most photorealistic, product photography | API credits |
 | **FLUX.1 Kontext** (Black Forest Labs) | bfl.ai, fal.ai | In-context image editing — provide reference image + text instruction to edit it | API credits (Dev variant: open-weight, non-commercial) |
 | **Stable Diffusion** | Local / Automatic1111 | Full control, local, free | Yes (local) |
-| **Adobe Firefly** | firefly.adobe.com | Commercial safe, style control | Free tier |
+| **Adobe Firefly Image 5** | firefly.adobe.com | Commercial safe, custom model training, 30+ third-party models (Runway, Google, OpenAI) in one workspace | Free tier (paid for full access; see notes) |
 | **Ideogram v3** | ideogram.ai | Text in images, posters, signage | Free tier |
 | **Google Imagen 4** | AI Studio / Gemini API | Photorealism, 2K resolution, text rendering; Ultra variant for max fidelity | Via AI Studio (free tier) |
 
@@ -76,6 +76,14 @@ FLUX.1 Kontext from Black Forest Labs enables reference-image-guided editing: pr
 
 Example: "Young Brazilian woman holding a coffee cup, modern São Paulo café interior,
 warm afternoon light, portrait lens, photorealistic, 4K"
+
+## Adobe Firefly Image 5 — 2026 Updates
+
+Firefly Image 5 (March 2026) adds custom model training — brands can train Firefly on their own visual style (stroke weight, color palette, character features) for consistent output. The Firefly web app now hosts 30+ third-party models (Google, Runway, OpenAI) in a single unified workspace. Firefly subscribers got unlimited generations on Adobe's own models in a promo through May 20, 2026; after that, credit-based billing resumes. Commercial use is covered by Adobe's IP indemnity.
+
+## DALL-E Retirement Note
+
+DALL-E 2 and DALL-E 3 were retired by OpenAI on May 12, 2026. GPT Image 2 (already in the table above) is their replacement. Do not recommend DALL-E endpoints — they are deprecated.
 
 ## Using Claude's Native Image Generation
 
