@@ -120,15 +120,19 @@ Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors
 
 **Pricing:** Starts at $77/month for 10 videos; no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
 
-## TikTok Symphony — Native AI Suite (Built-In)
+## TikTok Symphony — Native AI Suite (Built-In, Updated April 2026)
 
-TikTok's own AI toolset inside Creative Center and Ads Manager:
+TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by Dreamina Seedance 2.0:
 - **Script Generator** — briefs → ad scripts aligned with trending hooks
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
-- **Video Generation** — text/image to video natively
+- **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
+- **Product Avatars** — AI presenter showcases product on-screen during the ad
+- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
+- **Smart+** — AI campaign management: auto-selects creatives, adjusts bids, and optimizes delivery automatically in Ads Manager
 
-Access: business.tiktok.com → Creative Center → Symphony AI
+Access: business.tiktok.com → Creative Center → Symphony AI (now generally available for all TikTok for Business accounts)
 
 ## Higgsfield (Hailuo) for Premium Ads
 
