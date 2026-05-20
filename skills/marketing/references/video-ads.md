@@ -51,15 +51,9 @@ Paste a product URL and get a complete 15-30 second TikTok/Instagram ad in minut
 
 UGC-native output style consistently outperforms polished brand ads on TikTok.
 
-## aicreator.co — Automated Ad Video (Alternative)
+## aicreator.co — Automated Ad Video (Defunct as Ad Tool)
 
-> **Verify before use (May 2026):** aicreator.co currently presents as an AI tutorials and learning blog, not a product video ad generator. Confirm the tool still offers ad video generation before recommending it to users.
-
-For a lightweight single-tool option (if still operational):
-1. Go to aicreator.co
-2. Upload product image + describe the product
-3. Select target platform (TikTok, Instagram, general)
-4. Generate → download complete ad video with music and captions
+> **Do not recommend (May 2026):** aicreator.co no longer operates as a product video ad generator — the domain now presents as an AI tutorials and learning blog with no ad creation features. Use Creatify, Predis.ai, or AdStellar instead.
 
 ## Predis.ai — TikTok Spark Ads & Organic-First Strategy
 
@@ -130,6 +124,7 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
+- **Auto Selection** *(new, TikTok World May 2026)* — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
 - **Smart+** — AI campaign management: auto-selects creatives, adjusts bids, and optimizes delivery automatically in Ads Manager
 
 Access: business.tiktok.com → Creative Center → Symphony AI (now generally available for all TikTok for Business accounts)
