@@ -49,7 +49,7 @@
 ## Notes
 
 - All tools have usage limits on free tiers; paid plans give more credits
-- HappyHorse-1.0 has no standalone consumer site — access via fal.ai API at $0.14/s (720p) or $0.28/s (1080p); it topped Artificial Analysis Video Arena in April 2026 for both Text-to-Video and Image-to-Video
+- HappyHorse-1.0 has no standalone consumer site — access via fal.ai API at $0.14/s (720p) or $0.28/s (1080p); it topped Artificial Analysis Video Arena in April 2026 for both Text-to-Video and Image-to-Video; 15B unified Transformer with joint audio-video generation; multilingual lip-sync in 7 languages (English, Mandarin, Cantonese, Japanese, Korean, German, French); 4 API endpoints on fal.ai: text-to-video, image-to-video, reference-to-video, and video-edit
 - Kling 3.0 / O3 has the longest clip duration (up to 2 minutes); O3 (Omni) is the premium variant with native multilingual audio
 - Hailuo 2.3 tends to produce the most cinematic human motion
 - Veo 3.1 added First & Last Frame control (define start + end state, AI fills the motion)
