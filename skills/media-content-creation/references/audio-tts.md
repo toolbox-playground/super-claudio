@@ -92,6 +92,18 @@ Cartesia Sonic 3 is purpose-built for real-time conversational AI with ~40ms tim
 - Best for: voice agents, live chatbots, real-time assistants
 - Not ideal for: long-form content where ElevenLabs, Fish Audio, or Chatterbox are better
 
+## Smallest.ai Lightning V3.1 — Conversational TTS, Beats ElevenLabs on MOS
+
+Smallest.ai Lightning V3.1 (launched March 27, 2026) achieves a 3.89 MOS, outperforming ElevenLabs, OpenAI TTS, and Cartesia on conversational naturalness benchmarks. Sub-100ms TTFA. Voice cloning from 3 seconds of audio.
+
+- URL: smallest.ai
+- Free tier: no (pay-as-you-go, no seat licenses, no minimums, non-expiring credits)
+- Latency: <100ms TTFA
+- Languages: 15 (best in English, Spanish, Hindi, Tamil)
+- Voice cloning: 3–15 seconds of audio → production-ready replica
+- Best for: voice agents, enterprise conversational AI (banking, BPO, telecom)
+- Not ideal for: long-form narration or podcast production (use Chatterbox or VibeVoice)
+
 ## Deepgram Aura-2 — Enterprise Production TTS
 
 Deepgram Aura-2 targets enterprises building production voice systems where uptime, transparent pricing, and consistent low latency matter more than theatrical expressiveness. Sub-200ms TTFB (90ms optimized), 40+ English voices, 10+ Spanish voices with regional accents.
@@ -139,5 +151,5 @@ torchaudio.save("output.wav", wav, model.sr)
 | Voice cloning, no cost, offline | Chatterbox (open-source) |
 | Voice cloning, cloud, easiest | ElevenLabs (paid) |
 | Bulk generation (many files) | edge-tts or Chatterbox (no credit limits) |
-| Real-time voice agent / chatbot | Cartesia Sonic 3 (~40ms TTFA) or Inworld TTS-1.5 |
+| Real-time voice agent / chatbot | Cartesia Sonic 3 (~40ms TTFA), Smallest.ai Lightning V3.1 (<100ms), or Inworld TTS-1.5 |
 | Enterprise production (uptime + pricing transparency) | Deepgram Aura-2 ($200 free credits to start) |
