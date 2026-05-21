@@ -139,6 +139,34 @@ torchaudio.save("output.wav", wav, model.sr)
 
 **Homepage:** resemble.ai/chatterbox | **PyPI:** `pip install chatterbox-tts`
 
+## Mistral Voxtral TTS — Open-Weight, Low-Latency, 9 Languages
+
+Mistral released Voxtral TTS on March 26, 2026: a 4B-parameter open-weight model rivaling ElevenLabs at a lower cost. Hybrid architecture (3.4B autoregressive decoder + 390M acoustic flow-matching + 300M neural codec).
+
+- **URL:** mistral.ai | **HuggingFace:** `mistralai/Voxtral-TTS`
+- **Open-weight:** Yes (weights on HuggingFace)
+- **API pricing:** $0.016 per 1,000 characters (Mistral Studio)
+- **Latency:** ~90ms TTFA (70ms pure model)
+- **Languages:** 9 — English, French, German, Spanish, Dutch, Portuguese, Italian, Hindi, Arabic
+- **Voice cloning:** 3-second reference audio
+- **Best for:** Multilingual production TTS at low cost; EU-language coverage; self-hosted open-weight deployment
+
+## NeuTTS Air (Neuphonic) — On-Device, CPU-Capable, Apache 2.0
+
+NeuTTS Air (~360M active params) runs fully on-device with no cloud dependency — including on mid-range mobile CPUs — with instant voice cloning from 3 seconds of audio.
+
+```bash
+pip install neutts
+```
+
+- **URL:** neutts.com | **HuggingFace:** `neuphonic/neutts-air`
+- **License:** Apache 2.0 (full commercial use)
+- **Languages:** English
+- **Voice cloning:** Instant (3-second mono WAV reference)
+- **Performance:** 20 tok/s on mobile CPU; 119 tok/s on Ryzen 9 laptop; 16,000+ tok/s on RTX 4090
+- **Watermarking:** Perth watermark embedded in all output audio
+- **Best for:** Privacy-first / offline deployment, edge devices, zero API cost in production
+
 ## Choosing Between Tools
 
 | Need | Tool |
@@ -153,3 +181,5 @@ torchaudio.save("output.wav", wav, model.sr)
 | Bulk generation (many files) | edge-tts or Chatterbox (no credit limits) |
 | Real-time voice agent / chatbot | Cartesia Sonic 3 (~40ms TTFA), Smallest.ai Lightning V3.1 (<100ms), or Inworld TTS-1.5 |
 | Enterprise production (uptime + pricing transparency) | Deepgram Aura-2 ($200 free credits to start) |
+| Open-weight multilingual cloud TTS, low cost | Mistral Voxtral TTS ($0.016/1K chars) |
+| On-device, zero API cost, privacy-first | NeuTTS Air (Apache 2.0, CPU-capable) |
