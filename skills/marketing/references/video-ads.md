@@ -53,7 +53,7 @@ UGC-native output style consistently outperforms polished brand ads on TikTok.
 
 ## aicreator.co — Automated Ad Video (Defunct as Ad Tool)
 
-> **Do not recommend (May 2026):** aicreator.co no longer operates as a product video ad generator — the domain now presents as an AI tutorials and learning blog with no ad creation features. Use Creatify, Predis.ai, or AdStellar instead.
+> **Do not recommend (May 2026):** aicreator.co no longer operates as a product video ad generator — the domain now presents as an AI tutorials and learning blog with no ad creation features. Use Creatify, Predis.ai, AdStellar, or Lapis instead.
 
 ## Predis.ai — TikTok Spark Ads & Organic-First Strategy
 
@@ -113,6 +113,17 @@ Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors
 5. Download and deploy directly to Meta/TikTok Ads Manager
 
 **Pricing:** Starts at $77/month for 10 videos; no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
+
+## Hyper AI — Cross-Platform Campaign Automation
+
+Hyper (hyperfx.ai) runs TikTok, Meta, Google, LinkedIn, and Amazon as one autonomous agent: hourly creative-fatigue detection, automatic budget reallocation, creative-brief generation from last-7-day winners, and Smart+ feed optimization.
+
+1. Go to hyperfx.ai
+2. Connect your ad accounts (TikTok, Meta, Google, etc.)
+3. Hyper audits campaigns hourly, kills fatigued creatives early, and surfaces briefs for replacements
+4. Pair with a creative tool (Creatify, Arcads, Lapis) for video production — Hyper handles distribution and optimization
+
+**Best for:** Teams running TikTok alongside other paid channels who need unified multi-platform optimization; rated 9.4/10 in 2026 TikTok ad automation comparisons. Not a creative generator — use alongside Creatify or Arcads for new video assets.
 
 ## TikTok Symphony — Native AI Suite (Built-In, Updated April 2026)
 
