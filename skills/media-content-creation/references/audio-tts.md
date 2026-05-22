@@ -117,7 +117,7 @@ Deepgram Aura-2 targets enterprises building production voice systems where upti
 
 ## Chatterbox — Free & Open-Source, No Usage Caps
 
-Chatterbox by Resemble AI is MIT-licensed and outperformed ElevenLabs in blind listener tests (63.8% preference). Zero-shot voice cloning with a few seconds of reference audio.
+Chatterbox by Resemble AI is MIT-licensed and outperformed ElevenLabs in blind listener tests (65.3% preference for Turbo; 63.8% for standard). Zero-shot voice cloning with a few seconds of reference audio.
 
 ```bash
 pip install chatterbox-tts
@@ -135,7 +135,7 @@ torchaudio.save("output.wav", wav, model.sr)
 **Models:**
 - `chatterbox-tts` — English, emotion control, voice cloning
 - `chatterbox-tts[multilingual]` — 23+ languages
-- `chatterbox-turbo` — fastest inference
+- `chatterbox-turbo` — 350M params; up to 6× faster than real-time on GPU; sub-200ms latency; paralinguistic prompting tags (`[laugh]`, `[cough]`, `[chuckle]`) for natural-sounding output; MIT license
 
 **Homepage:** resemble.ai/chatterbox | **PyPI:** `pip install chatterbox-tts`
 
@@ -150,6 +150,22 @@ Mistral released Voxtral TTS on March 26, 2026: a 4B-parameter open-weight model
 - **Languages:** 9 — English, French, German, Spanish, Dutch, Portuguese, Italian, Hindi, Arabic
 - **Voice cloning:** 3-second reference audio
 - **Best for:** Multilingual production TTS at low cost; EU-language coverage; self-hosted open-weight deployment
+
+## Kokoro TTS — Ultra-Lightweight, #1 HuggingFace TTS Arena
+
+Kokoro (82M parameters, Apache 2.0) ranked #1 on the HuggingFace TTS Spaces Arena for single-speaker speech quality, outperforming models 5–15× its size. Runs 96× faster than real-time on a basic cloud GPU. Includes a self-hosted OpenAI-compatible API — a drop-in replacement for OpenAI's TTS endpoint.
+
+```bash
+pip install kokoro
+```
+
+- **URL:** kokorottsai.com | **HuggingFace:** `hexgrad/Kokoro-82M`
+- **License:** Apache 2.0 (commercial use free)
+- **Languages:** 8 (American & British English, French, Korean, Japanese, Mandarin, + more); 48 voices
+- **Voice cloning:** No (fixed voice library)
+- **Latency:** 96× real-time on GPU; runs on CPU
+- **Self-hosted API:** OpenAI-compatible TTS endpoint (drop-in replacement)
+- **Best for:** Ultra-fast batch generation, lightweight local/edge deployment, replacing OpenAI TTS without changing client code
 
 ## NeuTTS Air (Neuphonic) — On-Device, CPU-Capable, Apache 2.0
 
@@ -183,3 +199,4 @@ pip install neutts
 | Enterprise production (uptime + pricing transparency) | Deepgram Aura-2 ($200 free credits to start) |
 | Open-weight multilingual cloud TTS, low cost | Mistral Voxtral TTS ($0.016/1K chars) |
 | On-device, zero API cost, privacy-first | NeuTTS Air (Apache 2.0, CPU-capable) |
+| Ultra-fast batch TTS, drop-in OpenAI TTS replacement | Kokoro TTS (Apache 2.0, 82M params, 96× real-time, fixed voices) |
