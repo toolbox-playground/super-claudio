@@ -11,6 +11,7 @@
 
 | Tool | Input | Best For | Free Tier | URL |
 |------|-------|----------|-----------|-----|
+| **LTX-2 Fast** (Lightricks) | Text / Image / First+Last Frame | Fastest generation; 19B params; native 4K at 50fps; up to 20s; synchronized audio+video in one pass; LTX-2.3 (Mar 2026): sharper VAE + portrait 9:16; #1 llm-stats.com Text-to-Video Arena (May 2026, 2358 Elo) | Free (ltx.studio: 800 one-time credits, personal use; open weights: commercial free for <$10M ARR) | ltx.io, ltx.studio |
 | **HappyHorse-1.0** (Alibaba / ATH) | Text / Image | Temporal consistency — objects & faces stay identical frame-to-frame; #1 Artificial Analysis Video Arena (April 2026) | API credits | fal.ai |
 | **Hailuo 2.3** (MiniMax) | Text / Image | Cinematic, human motion, product | Limited free | hailuoai.video |
 | **Kling 3.0 / O3** (Kuaishou) | Text / Image / Audio | Long clips (up to 2 min), native audio, multi-shot | Limited free | klingai.com |
@@ -59,5 +60,6 @@
 - Luma Ray 3.14 (released January 26, 2026) is the first reasoning video model: it plans composition before rendering; native HDR output; Draft Mode lets you preview at low cost before committing credits to the final 1080p render; 3x lower cost than Ray 3; free tier is non-commercial only
 - Vidu Q3 (released January 30, 2026) by Shengshu Technology (Tsinghua TSAIL) generates up to 16-second clips with fully synchronized native audio and video in one pass — no separate audio stitching needed; Smart Cuts system auto-switches camera angles within a single generation; ranked #1 in China and #2 globally by Artificial Analysis; vidu.com
 - Wan 2.7 (Alibaba Cloud) released April 6, 2026 as four models: t2v, i2v, r2v (reference-to-video + voice cloning), and videoedit (instruction-based editing of existing clips); first/last frame control (FLF2V — currently the only major AI video model with this); 9-grid multi-scene generation; thinking mode for complex prompts; 1080p up to 15 seconds; Apache 2.0 open-source (27B params, MoE); API at $0.10/s (720p) or $0.15/s (1080p); limited free tier at wan.video; Wan 3.0 pre-announced (60B params, 4K resolution, 30-second clips, expected mid-2026)
+- LTX-2 (Lightricks, open-source): 19B-parameter multimodal model ranked #1 on llm-stats.com Text-to-Video Arena (May 2026, 2358 Elo); LTX-2.3 (March 2026) added a new VAE architecture for sharper details, cleaner native audio, and portrait 9:16 support; weights on HuggingFace (Apache 2.0 for companies under $10M ARR, commercial license required above that); LTX Studio at ltx.studio provides a web UI with 800 one-time free credits (personal use only); LTX-2 Fast optimizes for speed, LTX-2.3 Pro for maximum quality
 - Sora (OpenAI) web/app discontinued April 2026; API sunset September 2026 — do not recommend
 - For product ads specifically, see `ads.md`
