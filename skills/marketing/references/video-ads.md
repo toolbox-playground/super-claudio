@@ -125,7 +125,7 @@ Hyper (hyperfx.ai) runs TikTok, Meta, Google, LinkedIn, and Amazon as one autono
 
 **Best for:** Teams running TikTok alongside other paid channels who need unified multi-platform optimization; rated 9.4/10 in 2026 TikTok ad automation comparisons. Not a creative generator — use alongside Creatify or Arcads for new video assets.
 
-## TikTok Symphony — Native AI Suite (Built-In, Updated April 2026)
+## TikTok Symphony & Ad Formats — TikTok World 2026 (May 13, 2026)
 
 TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by Dreamina Seedance 2.0:
 - **Script Generator** — briefs → ad scripts aligned with trending hooks
@@ -135,8 +135,14 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
-- **Auto Selection** *(new, TikTok World May 2026)* — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
+- **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
 - **Smart+** — AI campaign management: auto-selects creatives, adjusts bids, and optimizes delivery automatically in Ads Manager
+
+### New at TikTok World 2026 (May 13)
+
+- **TopReach** — premium placement that bundles TopView (first thing users see when they open TikTok) + TopFeed (first in-feed ad slot in For You) into a single purchase; guarantees one impression per user and 100% of the day's available audience; supports **Creative Sequencing** — tell a continuous narrative across both placements
+- **Branded Buzz** — large-scale creator collaboration tool; brands can generate hundreds of creator videos in a short window, driving millions of views and authentic organic conversations in a managed campaign
+- **TikTok MCP Server** — AI agents (Claude, GPT, etc.) can now launch and manage TikTok ad campaigns directly via the MCP protocol; no manual Ads Manager UI required; announced for developers at TikTok World 2026
 
 Access: business.tiktok.com → Creative Center → Symphony AI (now generally available for all TikTok for Business accounts)
 
