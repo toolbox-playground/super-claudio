@@ -17,6 +17,7 @@
 | **GPT Image 2** | ChatGPT / API | Complex instructions, text in images (99% accuracy), 4K resolution, 2× faster than predecessor; launched April 21, 2026 | Limited (ChatGPT Plus) |
 | **FLUX.2 [pro]** (Black Forest Labs) | bfl.ai, fal.ai | Most photorealistic, product photography | API credits |
 | **FLUX.1 Kontext** (Black Forest Labs) | bfl.ai, fal.ai | In-context image editing — provide reference image + text instruction to edit it | API credits (Dev variant: open-weight, non-commercial) |
+| **FLUX.2 [klein]** (Black Forest Labs) | bfl.ai, fal.ai, HuggingFace | Sub-second generation & editing; unified text-to-image + image editing; 4B and 9B variants; 4-step distilled inference; ~13GB VRAM for 4B — runs on RTX 3090/4070; supports multi-reference composition | 4B: Apache 2.0 (commercial use free); 9B: non-commercial |
 | **Stable Diffusion** | Local / Automatic1111 | Full control, local, free | Yes (local) |
 | **Adobe Firefly Image 5** | firefly.adobe.com | Commercial safe, custom model training, 30+ third-party models (Runway, Google, OpenAI) in one workspace | Free tier (paid for full access; see notes) |
 | **Ideogram v3** | ideogram.ai | Text in images, posters, signage | Free tier |
