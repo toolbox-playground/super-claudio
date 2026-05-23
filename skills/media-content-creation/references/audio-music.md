@@ -35,6 +35,22 @@ Mureka v8 is the go-to for developers and technical producers: native API, stem 
 - Best for: API integration into apps, stem exports for remixing, developers who need programmatic music in their pipeline
 - Commercial rights: full ownership on paid plans (royalty-free, use in ads/videos/streaming)
 
+## Stable Audio 3.0 (Stability AI) — Open-Weight, Commercially Licensed Music & SFX
+
+Released May 20, 2026. Text-to-audio model family covering music, sound effects, and audio editing. Trained entirely on fully licensed data (AudioSparx + Freesound). Up to 380 seconds (6 min 20 sec) per generation. Supports LoRA fine-tuning and inpainting.
+
+| Variant | Params | Open-Weight | Max Length | Notes |
+|---------|--------|-------------|------------|-------|
+| **Small SFX** | 459M | Yes (Apache 2.0) | ~2 min | Sound effects only; CPU-capable, no GPU required |
+| **Small** | 459M | Yes (Apache 2.0) | ~2 min | Short music + SFX; CPU-capable |
+| **Medium** | 1.4B | Yes (Apache 2.0) | 6 min 20 sec | Full compositions; <2s on H200; runs on M4 MacBook |
+| **Large** | 2.7B | API-only | 6 min 20 sec | Highest quality; via stability.ai API or fal.ai |
+
+- **URL:** stability.ai/stable-audio
+- **HuggingFace:** `stability-ai/stable-audio-3-small`, `stability-ai/stable-audio-3-medium`
+- **Licensing:** Community License (you own outputs, commercial use allowed); Enterprise License for >$1M ARR
+- **Best for:** Ad background music, custom SFX, production pipelines where training-data licensing provenance matters
+
 ## Free Royalty-Free Music (no generation needed)
 
 For background music without AI generation:
