@@ -13,7 +13,8 @@
 |------|--------|----------|
 | **Midjourney v8.1** | midjourney.com | Artistic quality, concept art, portraits; v8.1 (Apr 30 2026) — 5× faster than v7, native 2K resolution, improved text rendering, HD mode now affordable as default | Paid (no free tier) |
 | **Recraft V4** | recraft.ai | Logos, SVG vectors, brand assets, text rendering | Free tier |
-| **Nano Banana 2** (Google / Gemini) | gemini.google.com | Product images, lifestyle scenes, ad creatives | Free (Gemini app) |
+| **Nano Banana 2** (Google / Gemini) | gemini.google.com | Product images, lifestyle scenes, ad creatives — default free model (Gemini 3.1 Flash Image) | Free (Gemini app) |
+| **Nano Banana Pro** (Google / Gemini 3 Pro Image) | gemini.google.com, aistudio.google.com | Complex compositions, highest Google image quality, 4K output — premium variant of Nano Banana | Paid (Google AI Pro/Ultra plans; 3 free gens/day for free users; API: $0.134/image) |
 | **GPT Image 2** | ChatGPT / API | Complex instructions, text in images (99% accuracy), 4K resolution, 2× faster than predecessor; launched April 21, 2026 | Limited (ChatGPT Plus) |
 | **FLUX.2 [pro]** (Black Forest Labs) | bfl.ai, fal.ai | Most photorealistic, product photography | API credits |
 | **FLUX.1 Kontext** (Black Forest Labs) | bfl.ai, fal.ai | In-context image editing — provide reference image + text instruction to edit it | API credits (Dev variant: open-weight, non-commercial) |
