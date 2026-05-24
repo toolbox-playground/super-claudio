@@ -146,10 +146,13 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 
 Access: business.tiktok.com → Creative Center → Symphony AI (now generally available for all TikTok for Business accounts)
 
-## Higgsfield (Hailuo) for Premium Ads
+## Higgsfield — Cinema Studio Platform
+
+Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.0, Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace, with Cinema Studio 3.5 adding 70+ cinematic camera presets and Soul ID for cross-shot character consistency.
 
 When you need the highest realism (luxury products, fashion):
 1. Prepare a high-quality product/lifestyle image
-2. Upload to hailuoai.video
+2. Go to higgsfield.ai → Cinema Studio
 3. Write a detailed prompt describing the camera movement and mood
-4. Generate — Higgsfield produces cinematic results that feel like professional ad shoots
+4. Use Soul ID to lock character/product appearance across shots
+5. Generate — Higgsfield produces cinematic results that feel like professional ad shoots
