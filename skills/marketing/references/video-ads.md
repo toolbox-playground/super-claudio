@@ -125,6 +125,19 @@ Hyper (hyperfx.ai) runs TikTok, Meta, Google, LinkedIn, and Amazon as one autono
 
 **Best for:** Teams running TikTok alongside other paid channels who need unified multi-platform optimization; rated 9.4/10 in 2026 TikTok ad automation comparisons. Not a creative generator — use alongside Creatify or Arcads for new video assets.
 
+## Synter — MCP-Native Cross-Platform Ad Generator (14 Platforms in One Workflow)
+
+Synter (syntermedia.ai) emerged in 2026 as the first MCP-native ad platform: Claude and other AI agents can generate a full creative suite (image ad, video ad, landing page) from a single prompt and distribute it across 14 ad platforms in one step — no manual uploading or platform switching.
+
+1. Go to syntermedia.ai (or connect the MCP server at syntermedia.ai/mcp to Claude)
+2. Describe your product and target audience in a prompt
+3. Synter generates image ads, video ads, and a matching landing page via 100+ MCP tools
+4. Approve and distribute to any combination of: Google Ads, Meta, LinkedIn, TikTok, Reddit, Pinterest, Snapchat, Microsoft Ads, X Ads, Amazon DSP, Taboola, Spotify Ads, Trade Desk, StackAdapt
+
+**Pricing:** Starts at $199/month. MCP server is open-source at github.com/Synter-Media-AI/mcp-server.
+
+**Best for:** Agencies and performance marketers running campaigns across 3+ platforms simultaneously who want to eliminate the copy-paste-upload loop. Not a substitute for creative-specific tools (Creatify, Arcads) for pure video UGC production.
+
 ## TikTok Symphony & Ad Formats — TikTok World 2026 (May 13, 2026)
 
 TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by Dreamina Seedance 2.0:
