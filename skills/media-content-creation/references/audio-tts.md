@@ -183,6 +183,18 @@ pip install neutts
 - **Watermarking:** Perth watermark embedded in all output audio
 - **Best for:** Privacy-first / offline deployment, edge devices, zero API cost in production
 
+## Speechmatics TTS — Ultra-Cheap Enterprise TTS, 11–27× Below ElevenLabs
+
+Speechmatics launched its own neural TTS in 2026 alongside its industry-leading STT (55+ languages). At $0.011 per 1,000 characters it is 11–27× cheaper than ElevenLabs while delivering comparable neural quality and sub-150ms streaming latency.
+
+- **URL:** speechmatics.com/text-to-speech
+- **Free start:** free tier available
+- **Pricing:** $0.011/1,000 characters
+- **Languages:** English (US + UK); additional languages in development through 2026
+- **Latency:** ~80–100ms TTFA (streaming)
+- **Best for:** High-volume English voice agents and production pipelines where cost matters most; single-vendor STT+TTS integration
+- **Not ideal for:** Multilingual content or theatrical emotional range (use Fish Audio or ElevenLabs for those)
+
 ## Choosing Between Tools
 
 | Need | Tool |
@@ -197,6 +209,7 @@ pip install neutts
 | Bulk generation (many files) | edge-tts or Chatterbox (no credit limits) |
 | Real-time voice agent / chatbot | Cartesia Sonic 3 (~40ms TTFA), Smallest.ai Lightning V3.1 (<100ms), or Inworld TTS-1.5 |
 | Enterprise production (uptime + pricing transparency) | Deepgram Aura-2 ($200 free credits to start) |
+| Ultra-cheap high-volume English TTS, single-vendor STT+TTS | Speechmatics TTS ($0.011/1K chars, ~80ms TTFA) |
 | Open-weight multilingual cloud TTS, low cost | Mistral Voxtral TTS ($0.016/1K chars) |
 | On-device, zero API cost, privacy-first | NeuTTS Air (Apache 2.0, CPU-capable) |
 | Ultra-fast batch TTS, drop-in OpenAI TTS replacement | Kokoro TTS (Apache 2.0, 82M params, 96× real-time, fixed voices) |
