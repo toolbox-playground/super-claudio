@@ -13,7 +13,7 @@
 
 1. **Create product-in-action video:**
    - If you have the product: film a 30-second demo
-   - AI approach: Nano Banana 2 product scene → Weavy AI animation → ffmpeg voiceover
+   - AI approach: Nano Banana 2 product scene → Figma Weave animation → ffmpeg voiceover
 
 2. **Edit in CapCut:**
    - Auto-captions → font: bold, high contrast
@@ -40,4 +40,4 @@ Running paid ads? Create at least 5 different creative variations to test:
 - Different backgrounds/scenes
 - Same product, different contexts
 
-Use Creatify.ai or the video-ads workflow to generate variations quickly. (Note: aicreator.co may have pivoted — verify it still functions as an ad video generator before use.)
+Use Creatify.ai or the video-ads workflow to generate variations quickly. (Note: aicreator.co is defunct as of May 2026 — do not use.)

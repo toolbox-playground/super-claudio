@@ -20,7 +20,7 @@
 5. Resize for all platforms in one click (Canva Magic Resize)
 6. Export as PNG/JPG
 
-### Prompt for AI-generated ad image (Flux/DALL-E)
+### Prompt for AI-generated ad image (Flux/GPT Image 2)
 
 ```
 Professional product advertisement photo. [Product] centered on [background].
