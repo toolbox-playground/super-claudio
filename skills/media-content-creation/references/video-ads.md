@@ -29,12 +29,9 @@ other performance marketing channels.
 - Use CapCut (free, mobile/desktop) for quick edits and caption overlay
 - Or use the `video-editing` reference for ffmpeg-based automation
 
-## aicreator.co — All-in-One Ad Video
+## aicreator.co — Defunct (May 2026)
 
-aicreator.co generates complete ad videos for Instagram, TikTok, or general ads from a prompt.
-- Input: product description / product image
-- Output: short-form video with music, captions, CTA
-- Good for: fast iteration, testing creatives at scale
+> **Do not use:** aicreator.co no longer operates as an ad video generator. The domain now presents as an AI tutorials blog with no ad creation features. Use Creatify.ai, Predis.ai, or Lapis instead (see marketing skill → video-ads).
 
 ## Nano Banana 2 — Image for Ads
 
@@ -47,7 +44,7 @@ Tool for generating ad-optimized product images:
 ## TikTok Shop Workflow
 
 1. Create product image (real photo or Nano Banana 2 scene)
-2. Animate with Weavy AI (model interacts with product)
+2. Animate with Figma Weave (model interacts with product)
 3. Add music + captions (CapCut or ffmpeg)
 4. Upload to TikTok with Shop product tag
 5. Add affiliate/shop link in description

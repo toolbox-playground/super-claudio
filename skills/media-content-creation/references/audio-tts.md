@@ -52,7 +52,7 @@ client = ElevenLabs(api_key="your-key")
 audio = client.generate(
     text="Hello! This is a test.",
     voice="Rachel",
-    model="eleven_turbo_v2_5"  # check elevenlabs.io/docs for latest model ID
+    model="eleven_v3"  # check elevenlabs.io/docs for latest model ID
 )
 with open("output.mp3", "wb") as f:
     f.write(audio)
