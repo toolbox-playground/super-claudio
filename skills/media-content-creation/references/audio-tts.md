@@ -151,6 +151,38 @@ Mistral released Voxtral TTS on March 26, 2026: a 4B-parameter open-weight model
 - **Voice cloning:** 3-second reference audio
 - **Best for:** Multilingual production TTS at low cost; EU-language coverage; self-hosted open-weight deployment
 
+## Sesame CSM-1B — Conversational Naturalness, Apache 2.0
+
+Sesame CSM-1B (Conversational Speech Model) stands out for human-like conversational realism: natural pauses, "umms", breath sounds, and subtle intonation shifts that traditional TTS models miss. Trained on 1M+ hours of English audio; uses a Llama-3.2 backbone + 300M audio decoder.
+
+```bash
+pip install git+https://github.com/SesameAILabs/csm
+```
+
+- **URL / GitHub:** github.com/SesameAILabs/csm | **HuggingFace:** `sesame/csm-1b`
+- **License:** Apache 2.0 (commercial use permitted; impersonation / deceptive content prohibited)
+- **Parameters:** 1B backbone + 300M audio decoder
+- **Languages:** English primarily (limited other languages via training contamination — not reliable)
+- **Context:** up to 2,048 tokens (~2 minutes of audio) in one pass
+- **Requirements:** CUDA-compatible GPU, Python 3.10+, ffmpeg
+- **Best for:** Conversational AI demos, voice agents needing human-like naturalness, podcast-style dialogue
+- **Not ideal for:** Multilingual content or long-form narration (use VibeVoice or Chatterbox for those)
+
+## VibeVoice (Microsoft) — Long-Form Multi-Speaker TTS, MIT License
+
+Microsoft VibeVoice is an open-source family accepted as an Oral at ICLR 2026 — includes TTS (1.5B), a streaming Realtime variant (0.5B), and a long-form ASR model (7B). The TTS model synthesizes up to 90 minutes with up to 4 distinct speakers in one pass — unique among open-source models.
+
+> **Note:** Microsoft explicitly recommends against production/commercial deployment without further testing. Currently best suited for research and development.
+
+- **URL / GitHub:** github.com/microsoft/VibeVoice | **HuggingFace:** `microsoft/VibeVoice-1.5B`
+- **License:** MIT (research/development use recommended; commercial deployment not advised by Microsoft yet)
+- **Models:** VibeVoice-TTS-1.5B (long-form), VibeVoice-Realtime-0.5B (streaming), VibeVoice-ASR-7B (recognition)
+- **Speakers:** up to 4 simultaneous in one generation
+- **Duration:** up to 90 minutes in a single pass
+- **ASR:** 50+ languages, speaker diarization, timestamps
+- **Best for:** Audiobooks, long-form narration, multi-speaker podcast generation, research
+- **Not ideal for:** Production voice agents or commercial apps (use Cartesia/ElevenLabs for those)
+
 ## Kokoro TTS — Ultra-Lightweight, #1 HuggingFace TTS Arena
 
 Kokoro (82M parameters, Apache 2.0) ranked #1 on the HuggingFace TTS Spaces Arena for single-speaker speech quality, outperforming models 5–15× its size. Runs 96× faster than real-time on a basic cloud GPU. Includes a self-hosted OpenAI-compatible API — a drop-in replacement for OpenAI's TTS endpoint.
@@ -213,3 +245,5 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Open-weight multilingual cloud TTS, low cost | Mistral Voxtral TTS ($0.016/1K chars) |
 | On-device, zero API cost, privacy-first | NeuTTS Air (Apache 2.0, CPU-capable) |
 | Ultra-fast batch TTS, drop-in OpenAI TTS replacement | Kokoro TTS (Apache 2.0, 82M params, 96× real-time, fixed voices) |
+| Human-like conversational naturalness (pauses, ums, breaths) | Sesame CSM-1B (Apache 2.0, English only, CUDA required) |
+| Long-form multi-speaker narration (audiobooks, podcasts) | VibeVoice-TTS-1.5B (MIT, up to 90 min / 4 speakers, research use) |
