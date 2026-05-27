@@ -68,7 +68,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | API | What | URL | Auth |
 |-----|------|-----|------|
 | Google Gemini API | LLM inference, 1M token context, multimodal | ai.google.dev | Free key (generous limits) |
-| Groq | Ultra-fast LLM inference (LPU hardware); Llama 4, Gemma, Mistral and more; 30 RPM / 6K TPM free, no credit card required | groq.com | Free key |
+| Groq | Ultra-fast LLM inference (LPU hardware); Llama 4 Scout (512K ctx, 30 RPM / 6K TPM), Llama 4 Maverick (256K ctx, 15 RPM / 3K TPM), Gemma, Mistral, DeepSeek R1 and more; no credit card required | groq.com | Free key |
 | OpenRouter | Access to 100+ free AI models (Claude, GPT, Llama, Gemini) via one API | openrouter.ai | Free key |
 
 ## Resources for Finding More
