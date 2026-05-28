@@ -17,7 +17,7 @@
 | **Kling 3.0 / O3** (Kuaishou) | Text / Image / Audio | Long clips (up to 2 min), native audio, multi-shot | Limited free | klingai.com |
 | **Seedance 2.0** (ByteDance) | Text / Image / Audio | Fast generation, multi-shot, native audio | Limited free | seedance.io |
 | **Wan 2.7** (Alibaba Cloud) | Text / Image / First+Last Frame / Video Edit | Multi-shot narrative, first/last frame control (FLF2V), instruction-based video editing, reference-to-video with voice cloning, thinking mode — most complete open-source video stack | Limited free (wan.video); API via fal.ai | wan.video, fal.ai |
-| **Google Veo 3.1** | Text / Image | 4K upscaling, native audio, First & Last Frame, 60s+ scenes | Via AI Studio | aistudio.google.com |
+| **Google Veo 3.1** | Text / Image | 4K upscaling, native audio, First & Last Frame, 60s+ scenes | Free (Google Vids, any Google account); AI Studio | aistudio.google.com, vids.google.com |
 | **Runway Gen-4.5** | Text / Image / Video | World-consistent characters, post-generation editing (Aleph), node-based workflows | Limited free | runwayml.com |
 | **Pika 2.5** (Pika Labs) | Text / Image / Video | Creative transformations: Pikaswaps (replace objects/characters), Pikaffects (melt, explode, inflate), Pikadditions (add elements to footage) | Free (80 credits/mo, 480p; watermarked) | pika.art |
 | **Luma Ray 3.14** (Luma AI) | Text / Image / Video | Reasoning model, native HDR, 1080p output, Draft Mode (low-res preview before full render), 4x faster than Ray 3 | Free (8 draft videos, non-commercial); Plus $30/mo | lumalabs.ai |
@@ -40,12 +40,19 @@
 - Add "photorealistic", "8K", "cinematic" for quality
 - For product videos: white/studio background → cleaner results
 
-## Google AI Studio (Veo 3.1) — Free Access
+## Google AI Studio / Google Vids (Veo 3.1) — Free Access
 
+**Option A — Google Vids (easiest, no code):**
+1. Go to vids.google.com — sign in with any Google account
+2. Create a new video project → insert an AI-generated clip
+3. Enter a text or image prompt → generate using Veo 3.1
+4. Free for all Google account holders; AI Pro/Ultra subscribers get up to 1,000 Veo clips/month
+
+**Option B — AI Studio (developer access):**
 1. Go to aistudio.google.com
 2. Create a new prompt → select "Video" model (Veo 3.1)
 3. Enter text prompt → generate
-4. Free tier available with Google account; Veo 3.1 Lite is the most cost-effective variant; Veo 3.1 Fast for speed
+4. Veo 3.1 Lite is the most cost-effective variant (Vertex AI, May 2026: <50% the cost of Veo 3.1 Fast at same quality); Veo 3.1 Fast for speed
 
 ## Notes
 
@@ -53,7 +60,7 @@
 - HappyHorse-1.0 has no standalone consumer site — access via fal.ai API at $0.14/s (720p) or $0.28/s (1080p); it topped Artificial Analysis Video Arena in April 2026 for both Text-to-Video and Image-to-Video; 15B unified Transformer with joint audio-video generation; multilingual lip-sync in 7 languages (English, Mandarin, Cantonese, Japanese, Korean, German, French); 4 API endpoints on fal.ai: text-to-video, image-to-video, reference-to-video, and video-edit
 - Kling 3.0 / O3 has the longest clip duration (up to 2 minutes); O3 (Omni) is the premium variant with native multilingual audio
 - Hailuo 2.3 tends to produce the most cinematic human motion
-- Veo 3.1 added First & Last Frame control (define start + end state, AI fills the motion)
+- Veo 3.1 added First & Last Frame control (define start + end state, AI fills the motion); **Veo 3.1 Lite** (Vertex AI, May 2026) runs at <50% the cost of Veo 3.1 Fast — same quality, optimized for high-volume use; **Google Vids** (vids.google.com) now provides free Veo 3.1 generation to any Google account holder — up to 1,000 videos/month for AI Pro/Ultra subscribers
 - Seedance 2.0 Fast is the most cost-effective option at ~$0.18 per 8-second clip
 - Runway Gen-4.5 leads the Artificial Analysis Text-to-Video benchmark (1,247 Elo); Aleph enables post-generation edits via text prompt without re-rendering
 - Pika 2.5 is the best pick for creative/destructive transformations on existing footage — not for cinematic realism; commercial use requires paid plan
