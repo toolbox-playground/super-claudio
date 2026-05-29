@@ -22,8 +22,9 @@ Example prompt: "upbeat Brazilian funk, energetic, no lyrics, good for TikTok ad
 Similar to Suno, strong on musicality and production quality.
 
 - URL: udio.com
-- **Important (2026):** Udio is now a walled garden — users cannot export or download generated music. Tracks stay on the platform; no DAW export, no Spotify upload, no use in video. Only use Udio for in-platform listening/sharing.
-- Good for: previewing and sharing music concepts; not suitable if you need to use the audio outside Udio
+- **Important (2026):** Udio temporarily disabled all downloads (audio, video, stems) across all plan tiers during a 2025–2026 licensing transition. Tracks can only be streamed/shared on-platform as of May 2026 — no DAW export, no Spotify upload, no use in video.
+- **Licensing deals signed:** Udio reached agreements with Universal Music Group (Oct 2025), Warner Music, Merlin, and Kobalt (Q1 2026). A jointly licensed UMG × Udio platform is scheduled for 2026; downloads may return once the platform launches.
+- Good for: previewing and sharing music concepts; not suitable if you need to use the audio outside Udio today
 
 ## Mureka v8 — Developer-Focused AI Music Generation
 
@@ -34,6 +35,28 @@ Mureka v8 is the go-to for developers and technical producers: native API, stem 
 - Paid: $10/month (400 songs, full commercial rights); $30/month Pro
 - Best for: API integration into apps, stem exports for remixing, developers who need programmatic music in their pipeline
 - Commercial rights: full ownership on paid plans (royalty-free, use in ads/videos/streaming)
+
+
+## ElevenLabs Music (ElevenMusic) — Free Text-to-Music, April 2026
+
+ElevenLabs launched ElevenMusic as an iOS app on April 1, 2026, expanding from voice into generative music. Competes directly with Suno and Udio.
+
+- URL: elevenlabs.io (ElevenMusic iOS app)
+- Free tier: up to 7 songs/day, no credit card required
+- Input: natural language text prompt; control lyrics on/off, song length, writing style
+- Licensing: launched with licensing partnerships and an opt-in creator marketplace
+- Best for: quick free music generation; users already in the ElevenLabs ecosystem for TTS
+
+## Producer.ai (formerly Riffusion) — Google-Owned, Free, Lyria 3 Powered
+
+Riffusion rebranded to Producer.ai in July 2025. Google acquired Producer.ai in February 2026 and moved the team into Google Labs and Google DeepMind. The tool now runs on Google's Lyria 3 music model with Gemini orchestration, Veo for music video generation, and Nano Banana for album art.
+
+- URL: producer.ai
+- Free tier: daily credit top-up; globally available (250+ countries), no waitlist
+- Input: text prompt; also supports image-to-music and audio-to-music inputs
+- Stack: Lyria 3 (audio) + Veo (music video) + Nano Banana (album art) — all Google AI models
+- Best for: free music generation with optional music video output; users in the Google/Gemini ecosystem
+
 
 ## Stable Audio 3.0 (Stability AI) — Open-Weight, Commercially Licensed Music & SFX
 
@@ -50,6 +73,7 @@ Released May 20, 2026. Text-to-audio model family covering music, sound effects,
 - **HuggingFace:** `stability-ai/stable-audio-3-small`, `stability-ai/stable-audio-3-medium`
 - **Licensing:** Community License (you own outputs, commercial use allowed); Enterprise License for >$1M ARR
 - **Best for:** Ad background music, custom SFX, production pipelines where training-data licensing provenance matters
+
 
 ## Free Royalty-Free Music (no generation needed)
 
@@ -68,4 +92,4 @@ For background music without AI generation:
 | Unique branded sound | Speed matters |
 | Need API / stems / MIDI (Mureka) | Budget is zero |
 
-> **Note:** As of 2026, Udio no longer allows audio export. For any use case where you need to keep or use the generated audio, use Suno (paid) or a royalty-free library instead.
+> **Note:** As of May 2026, Udio still does not allow audio export (licensing transition in progress). For any use case where you need to keep or use the generated audio, use Suno (paid), ElevenLabs Music (free), Producer.ai (free, Google), or a royalty-free library instead.
