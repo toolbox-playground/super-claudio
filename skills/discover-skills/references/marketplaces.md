@@ -20,7 +20,7 @@ Sources to search when looking for Claude Code skills and plugins.
 | **Awesome Claude** | awesomeclaude.ai/code-cheatsheet | Curated Claude Code resources and cheatsheets |
 | **Claude Marketplaces Community** | claudemarketplaces.com/skills | Browse skills by category |
 | **GitHub: superpowers** | github.com/obra/superpowers | The superpowers skill collection — meta-skills for Claude Code |
-| **SkillsMP** | skillsmp.com | Skills for Claude, Codex, and ChatGPT in one marketplace |
+| **SkillsMP** | skillsmp.com | 1.2M+ agent skills indexed from GitHub; compatible with Claude Code, Codex CLI, ChatGPT, and other agents |
 | **Tons of Skills** | tonsofskills.com | 425 plugins, 2,810 skills, 200 agents for Claude Code; `ccpi` CLI package manager; catalog updated daily from GitHub; most comprehensive single-site collection (May 2026) |
 | **claude-skills (263+ skills)** | github.com/alirezarezvani/claude-skills | 263+ production-ready skills across 9 domains (engineering, marketing, product, compliance, C-level) — works with Claude Code, Codex, Cursor, Gemini CLI, and 8 more agents |
 | **claude-code-marketplace (Netresearch)** | github.com/netresearch/claude-code-marketplace | Curated Agent Skills collection for AI-assisted development |
