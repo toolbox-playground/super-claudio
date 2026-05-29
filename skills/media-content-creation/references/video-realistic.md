@@ -14,7 +14,7 @@
 | **LTX-2 Fast** (Lightricks) | Text / Image / First+Last Frame | Fastest generation; 19B params; native 4K at 50fps; up to 20s; synchronized audio+video in one pass; LTX-2.3 (Mar 2026): sharper VAE + portrait 9:16; #1 llm-stats.com Text-to-Video Arena (May 2026, 2358 Elo) | Free (ltx.studio: 800 one-time credits, personal use; open weights: commercial free for <$10M ARR) | ltx.io, ltx.studio |
 | **HappyHorse-1.0** (Alibaba / ATH) | Text / Image | Temporal consistency — objects & faces stay identical frame-to-frame; #1 Artificial Analysis Video Arena (April 2026) | API credits | fal.ai |
 | **Hailuo 2.3** (MiniMax) | Text / Image | Cinematic, human motion, product | Limited free | hailuoai.video |
-| **Kling 3.0 / O3** (Kuaishou) | Text / Image / Audio | Long clips (up to 2 min), native audio, multi-shot | Limited free | klingai.com |
+| **Kling 3.0 / O3** (Kuaishou) | Text / Image / Audio | Long clips (up to 2 min), native 4K (not upscaled), native audio, multi-shot | Limited free | klingai.com |
 | **Seedance 2.0** (ByteDance) | Text / Image / Audio | Fast generation, multi-shot, native audio | Limited free | seedance.io |
 | **Wan 2.7** (Alibaba Cloud) | Text / Image / First+Last Frame / Video Edit | Multi-shot narrative, first/last frame control (FLF2V), instruction-based video editing, reference-to-video with voice cloning, thinking mode — most complete open-source video stack | Limited free (wan.video); API via fal.ai | wan.video, fal.ai |
 | **Google Veo 3.1** | Text / Image | 4K upscaling, native audio, First & Last Frame, 60s+ scenes | Free (Google Vids, any Google account); AI Studio | aistudio.google.com, vids.google.com |
@@ -58,7 +58,7 @@
 
 - All tools have usage limits on free tiers; paid plans give more credits
 - HappyHorse-1.0 has no standalone consumer site — access via fal.ai API at $0.14/s (720p) or $0.28/s (1080p); it topped Artificial Analysis Video Arena in April 2026 for both Text-to-Video and Image-to-Video; 15B unified Transformer with joint audio-video generation; multilingual lip-sync in 7 languages (English, Mandarin, Cantonese, Japanese, Korean, German, French); 4 API endpoints on fal.ai: text-to-video, image-to-video, reference-to-video, and video-edit
-- Kling 3.0 / O3 has the longest clip duration (up to 2 minutes); O3 (Omni) is the premium variant with native multilingual audio
+- Kling 3.0 / O3 has the longest clip duration (up to 2 minutes); native 4K output is pixel-perfect (not upscaled) — launched February 4, 2026; O3 (Omni) is the premium variant with native multilingual audio
 - Hailuo 2.3 tends to produce the most cinematic human motion
 - Veo 3.1 added First & Last Frame control (define start + end state, AI fills the motion); **Veo 3.1 Lite** (Vertex AI, May 2026) runs at <50% the cost of Veo 3.1 Fast — same quality, optimized for high-volume use; **Google Vids** (vids.google.com) now provides free Veo 3.1 generation to any Google account holder — up to 1,000 videos/month for AI Pro/Ultra subscribers
 - Seedance 2.0 Fast is the most cost-effective option at ~$0.18 per 8-second clip
