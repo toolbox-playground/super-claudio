@@ -82,6 +82,19 @@ Fish Audio S2 Pro ranks #1 on TTS-Arena2 with 80+ languages and 50+ inline emoti
 - License: research/non-commercial free; commercial use requires separate license
 - Open-source model on HuggingFace: `fishaudio/s2-pro`
 
+## Hume Octave 2 — Emotional TTS with Acting Instructions
+
+Hume Octave 2 is the first TTS model built on a language model backbone that truly understands the emotional context of what it's saying — not just converting text to speech but interpreting tone, subtext, and dramatic intent. Its "acting instructions" feature lets you direct delivery with plain-language prompts: "whisper fearfully", "sound sarcastic", "say this with nervous energy".
+
+- **URL:** hume.ai
+- **Free tier:** 10,000 characters/month (non-commercial only)
+- **Paid:** $3/mo Starter (30K chars); $14/mo Creator (140K chars, **commercial license**); half the price of Octave 1
+- **Latency:** <200ms (streaming); Instant mode starts audio playback as generation begins
+- **Languages:** 11 — Arabic, English, French, German, Hindi, Italian, Japanese, Korean, Portuguese, Russian, Spanish (20+ languages coming)
+- **Voice design:** Prompt a custom voice from scratch ("a warm, elderly British narrator") rather than picking from a fixed library
+- **Best for:** Dramatic narration, character voices, emotionally nuanced dialogue, marketing voiceovers where delivery matters
+- **Not ideal for:** High-volume bulk generation (Kokoro / edge-tts are cheaper at scale); on-device deployment (use NeuTTS Air)
+
 ## Cartesia Sonic 3 — Real-Time Conversational TTS
 
 Cartesia Sonic 3 is purpose-built for real-time conversational AI with ~40ms time-to-first-audio — the standard pick for voice agents and chatbots.
@@ -233,6 +246,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 |------|------|
 | Quick article summary, personal use | edge-tts (Azure, free) |
 | Professional ad voiceover | ElevenLabs v3 or Inworld TTS-1.5 |
+| Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
 | 80+ languages, emotion control | Fish Audio S2 Pro |
 | Best blind-test naturalness (cloud) | Inworld AI TTS-1.5 Max |
