@@ -102,6 +102,22 @@ AdStellar combines ad creative generation, campaign launch, and performance opti
 
 Best for: performance marketers and agencies who want creative generation, campaign building, and optimization in one place.
 
+## HeyGen — AI Avatar Video, 175+ Languages (Avatar V, April 2026)
+
+HeyGen is the leading AI avatar video platform for brand content and UGC-style talking-head ads — ranked #1 for avatar realism in blind scroll tests on TikTok (2026). Avatar V (launched April 8, 2026) is the most photorealistic AI avatar released to date.
+
+1. Go to heygen.com
+2. Select a stock avatar (500+ options, filter by age, gender, ethnicity) or create a custom avatar
+3. Paste your script — HeyGen generates the video with lip-synced speech
+4. Translate and re-lip-sync into any of 175+ languages in one click
+
+**Free tier:** 3 videos/month (720p, watermarked, 30+ languages)
+**Creator:** $29/month — unlimited videos, 200 credits, 175+ languages, commercial license
+**Pro:** $99/month — more credits, custom avatar training
+
+**Best for:** Brand channel content (YouTube Shorts, TikTok, Reels), product demos, multilingual market localization from one source video.
+**Not ideal for:** High-volume ad testing at scale (use Arcads or Creatify for that — HeyGen credits run out faster at volume).
+
 ## Arcads — AI UGC Video Actors (1,000+ Actors)
 
 Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors — the largest AI actor library in 2026, purpose-built for Meta and TikTok ad testing.
