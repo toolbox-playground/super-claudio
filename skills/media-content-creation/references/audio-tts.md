@@ -62,15 +62,30 @@ with open("output.mp3", "wb") as f:
 **Best for:** High-quality voiceovers for ads or professional content
 **Voice cloning:** Paid feature; clone any voice from a sample
 
-## Inworld AI TTS-1.5 — Best Quality + Low Latency
+## Inworld AI TTS-1.5 — High Quality + Low Latency
 
-Inworld TTS-1.5 Max holds the top ELO (~1236) on the Artificial Analysis Speech Arena in 2026 — wins blind tests for naturalness, emotional range, and conversational flow at sub-200ms streaming latency.
+Inworld TTS-1.5 Max ranks in the top 5 on the Artificial Analysis Speech Arena — wins blind tests for naturalness, emotional range, and conversational flow at sub-200ms streaming latency.
 
 - URL: inworld.ai
 - Free tier: 40 minutes/month
 - Latency: <200ms streaming
 - Best for: voice agents, interactive AI, professional voiceovers
 - Pricing: $15–$25/million characters (standard)
+
+## Gemini 3.1 Flash TTS — Free, 70+ Languages, Style-Controllable (NEW Apr 2026)
+
+Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expressive speech with inline audio tags for style and pacing control — and is currently free in AI Studio during preview. Ranked #1 on the Artificial Analysis TTS Arena (Elo 1,211) as of May 2026.
+
+- **URL:** aistudio.google.com | Vertex AI | cloud.google.com/text-to-speech
+- **Free tier:** Yes — free in Google AI Studio (preview; rate limited); also accessible in Google Vids
+- **Paid API:** $1.00/1M input tokens (text); $20.00/1M output tokens (audio); batch API: 50% off
+- **Languages:** 70+ (broadest multilingual coverage among top-ranked models)
+- **Multi-speaker:** Up to 2 speakers per generation, each with independent voice and style
+- **Audio tags:** Inline delivery control — `<laugh>`, `<whisper>`, `<excited>`, pacing adjustments — via natural markup in the prompt
+- **Watermarking:** SynthID — imperceptible watermark embedded in all output audio
+- **Elo:** 1,211 on Artificial Analysis TTS Arena — #1 ranked TTS model (May 2026)
+- **Best for:** Multilingual voiceovers, free developer experimentation, style-directed narration, Google Cloud / Vertex AI workflows
+- **Not ideal for:** Ultra-low-latency real-time voice agents (use Cartesia Sonic 3.5); self-hosted / offline deployment
 
 ## Fish Audio S2 Pro — Best Multilingual + Emotion Control
 
@@ -95,13 +110,14 @@ Hume Octave 2 is the first TTS model built on a language model backbone that tru
 - **Best for:** Dramatic narration, character voices, emotionally nuanced dialogue, marketing voiceovers where delivery matters
 - **Not ideal for:** High-volume bulk generation (Kokoro / edge-tts are cheaper at scale); on-device deployment (use NeuTTS Air)
 
-## Cartesia Sonic 3 — Real-Time Conversational TTS
+## Cartesia Sonic 3.5 — Real-Time Conversational TTS
 
-Cartesia Sonic 3 is purpose-built for real-time conversational AI with ~40ms time-to-first-audio — the standard pick for voice agents and chatbots.
+Cartesia Sonic 3.5 (upgraded May 2026) is purpose-built for real-time conversational AI with ~40ms time-to-first-audio — the standard pick for voice agents and chatbots. Sonic 3.5 improves on Sonic 3 with noticeably more natural voices, better stability through long calls, and more consistent pronunciation of difficult words and names. The upgrade applies automatically to all existing Cartesia integrations.
 
 - URL: cartesia.ai
 - Free tier available
 - Latency: ~40ms TTFA (best-in-class for streaming)
+- Languages: 42
 - Best for: voice agents, live chatbots, real-time assistants
 - Not ideal for: long-form content where ElevenLabs, Fish Audio, or Chatterbox are better
 
@@ -127,6 +143,18 @@ Deepgram Aura-2 targets enterprises building production voice systems where upti
 - Languages: 7 (English, Spanish + others)
 - Best for: enterprise voice agents, high-volume production systems, call center bots
 - Not ideal for: artistic/emotional content where ElevenLabs or Fish Audio excel
+
+## Speechify SIMBA 3.0 — Top-10 Quality at $10/1M Characters (NEW May 2026)
+
+Speechify SIMBA 3.0 (May 2026) broke into the Artificial Analysis TTS global top 10 at #7 (Elo 1,159), ranking above ElevenLabs, OpenAI TTS, and Microsoft at one-tenth their typical price.
+
+- **URL:** speechify.com
+- **Free tier:** No API free tier; Speechify consumer app has a limited free plan
+- **Pricing:** $10/1M characters — cheapest model in the global top 10 by Elo
+- **Latency:** <250ms TTFA (streaming-native architecture)
+- **Features:** Zero-shot voice cloning, emotional expression controls, SSML prosody support
+- **Best for:** Cost-sensitive high-volume production TTS where top-10 quality matters; enterprises evaluating ElevenLabs at 10× lower price
+- **Not ideal for:** Ultra-low-latency (<100ms) conversational agents (use Cartesia Sonic 3.5)
 
 ## Chatterbox — Free & Open-Source, No Usage Caps
 
@@ -249,11 +277,11 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
 | 80+ languages, emotion control | Fish Audio S2 Pro |
-| Best blind-test naturalness (cloud) | Inworld AI TTS-1.5 Max |
+| Best blind-test naturalness (cloud) | Gemini 3.1 Flash TTS (Elo 1,211, #1 May 2026) or Inworld AI TTS-1.5 Max |
 | Voice cloning, no cost, offline | Chatterbox (open-source) |
 | Voice cloning, cloud, easiest | ElevenLabs (paid) |
 | Bulk generation (many files) | edge-tts or Chatterbox (no credit limits) |
-| Real-time voice agent / chatbot | Cartesia Sonic 3 (~40ms TTFA), Smallest.ai Lightning V3.1 (<100ms), or Inworld TTS-1.5 |
+| Real-time voice agent / chatbot | Cartesia Sonic 3.5 (~40ms TTFA), Smallest.ai Lightning V3.1 (<100ms), or Inworld TTS-1.5 |
 | Enterprise production (uptime + pricing transparency) | Deepgram Aura-2 ($200 free credits to start) |
 | Ultra-cheap high-volume English TTS, single-vendor STT+TTS | Speechmatics TTS ($0.011/1K chars, ~80ms TTFA) |
 | Open-weight multilingual cloud TTS, low cost | Mistral Voxtral TTS ($0.016/1K chars) |
@@ -261,3 +289,5 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Ultra-fast batch TTS, drop-in OpenAI TTS replacement | Kokoro TTS (Apache 2.0, 82M params, 96× real-time, fixed voices) |
 | Human-like conversational naturalness (pauses, ums, breaths) | Sesame CSM-1B (Apache 2.0, English only, CUDA required) |
 | Long-form multi-speaker narration (audiobooks, podcasts) | VibeVoice-TTS-1.5B (MIT, up to 90 min / 4 speakers, research use) |
+| Multilingual style-controllable TTS, free for developers | Gemini 3.1 Flash TTS (70+ languages, audio tags, free in AI Studio) |
+| Top-10 quality at minimum cost | Speechify SIMBA 3.0 ($10/1M chars, Elo 1,159, #7 globally) |
