@@ -88,6 +88,22 @@ AdCreative.ai generates large batches of ad creatives and assigns each a perform
 
 **Pricing:** Starts at $39/month (no permanent free tier; trial available). Best for mid-to-large teams running multi-platform campaigns at scale (TikTok, Meta, Google).
 
+## Pencil — Predictive Scoring Trained on $1B+ in Ad Spend
+
+Pencil generates video and image ads and scores every creative against patterns learned from $1B+ in real ad spend across Meta, TikTok, and YouTube — before you spend budget testing. Predicts ROAS quartile and CTR likelihood per variant, with direct export to Meta and TikTok ad accounts.
+
+1. Go to trypencil.com
+2. Connect your Meta or TikTok ad account
+3. Input product details or existing brand assets
+4. Generate variants — each gets a performance prediction score (ROAS quartile, CTR likelihood)
+5. Export top-predicted creatives directly to your ad manager
+
+**Free tier:** 6 ads free (guided creation; no credit card required)
+**Pricing:** ~$99/month (Basic); ~$499/month (Pro — agency seats, unlimited)
+**Platforms:** Facebook, Instagram, TikTok, YouTube, Amazon, Pinterest, Snapchat
+**Best for:** DTC brands and agencies that want statistically validated creatives before launch; teams burned by wasting budget on losers during testing.
+**Not ideal for:** Pure video UGC production at volume (use Arcads or Creatify instead); sub-$1K/month spend where predictive value is limited.
+
 ## AdStellar AI — Full-Stack Creative + Campaign Platform
 
 AdStellar combines ad creative generation, campaign launch, and performance optimization in one platform — eliminating the need to switch between a creative tool and an ads manager.
