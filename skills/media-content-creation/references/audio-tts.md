@@ -62,9 +62,25 @@ with open("output.mp3", "wb") as f:
 **Best for:** High-quality voiceovers for ads or professional content
 **Voice cloning:** Paid feature; clone any voice from a sample
 
+## Inworld Realtime TTS-2 — Closed-Loop Conversational TTS (NEW May 2026)
+
+Inworld Realtime TTS-2 (launched May 5, 2026) is a fundamentally different architecture from TTS-1.5: it takes the actual audio of prior conversation turns as input — not just text — so it understands tone, pacing, and emotional context from everything that was said before. Ranked alongside TTS-1.5 Max at the top of the Artificial Analysis Speech Arena.
+
+- **URL:** inworld.ai
+- **Free tier:** 40 minutes/month (On-Demand plan)
+- **Pricing:** $35/1M characters (On-Demand); $25/1M characters (Growth plan)
+- **Latency:** <200ms median TTFA; sub-250ms P90
+- **Languages:** 100+ with mid-utterance language switching (same voice identity preserved across every language)
+- **Voice direction:** Inline bracket tags — `[speak sadly]`, `[excited, fast-paced]` — passed directly in the text at inference time
+- **Non-verbal markers:** `[laugh]`, `[sigh]`, `[breathe]`, `[cough]` — drop anywhere for natural-sounding output
+- **Conversational awareness:** Takes prior audio turns as input; automatically adapts pacing and tone to match the user's energy
+- **Integrations:** Layercode, LiveKit, NLX, Pipecat, Vapi, Voximplant
+- **Best for:** Real-time conversational voice agents, customer-facing bots, interactive AI experiences where dialogue context matters
+- **Not ideal for:** Offline/on-device deployment or long-form static narration
+
 ## Inworld AI TTS-1.5 — High Quality + Low Latency
 
-Inworld TTS-1.5 Max ranks in the top 5 on the Artificial Analysis Speech Arena — wins blind tests for naturalness, emotional range, and conversational flow at sub-200ms streaming latency.
+Inworld TTS-1.5 Max ranks in the top 5 on the Artificial Analysis Speech Arena — wins blind tests for naturalness, emotional range, and conversational flow at sub-200ms streaming latency. TTS-2 (above) is now available for real-time conversational use; TTS-1.5 remains the recommended pick for non-conversational voiceover production.
 
 - URL: inworld.ai
 - Free tier: 40 minutes/month
@@ -277,11 +293,11 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
 | 80+ languages, emotion control | Fish Audio S2 Pro |
-| Best blind-test naturalness (cloud) | Gemini 3.1 Flash TTS (Elo 1,211, #1 May 2026) or Inworld AI TTS-1.5 Max |
+| Best blind-test naturalness (cloud) | Gemini 3.1 Flash TTS (Elo 1,211, #1 May 2026), Inworld AI TTS-1.5 Max, or Inworld Realtime TTS-2 |
 | Voice cloning, no cost, offline | Chatterbox (open-source) |
 | Voice cloning, cloud, easiest | ElevenLabs (paid) |
 | Bulk generation (many files) | edge-tts or Chatterbox (no credit limits) |
-| Real-time voice agent / chatbot | Cartesia Sonic 3.5 (~40ms TTFA), Smallest.ai Lightning V3.1 (<100ms), or Inworld TTS-1.5 |
+| Real-time voice agent / chatbot | Cartesia Sonic 3.5 (~40ms TTFA), Smallest.ai Lightning V3.1 (<100ms), or Inworld Realtime TTS-2 (<200ms, closed-loop, 100+ langs) |
 | Enterprise production (uptime + pricing transparency) | Deepgram Aura-2 ($200 free credits to start) |
 | Ultra-cheap high-volume English TTS, single-vendor STT+TTS | Speechmatics TTS ($0.011/1K chars, ~80ms TTFA) |
 | Open-weight multilingual cloud TTS, low cost | Mistral Voxtral TTS ($0.016/1K chars) |
@@ -291,3 +307,4 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Long-form multi-speaker narration (audiobooks, podcasts) | VibeVoice-TTS-1.5B (MIT, up to 90 min / 4 speakers, research use) |
 | Multilingual style-controllable TTS, free for developers | Gemini 3.1 Flash TTS (70+ languages, audio tags, free in AI Studio) |
 | Top-10 quality at minimum cost | Speechify SIMBA 3.0 ($10/1M chars, Elo 1,159, #7 globally) |
+| Conversational AI with tone/context awareness across turns | Inworld Realtime TTS-2 (closed-loop, adapts to prior audio, 100+ langs, May 2026) |
