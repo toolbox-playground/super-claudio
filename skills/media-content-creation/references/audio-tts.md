@@ -99,7 +99,7 @@ Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expres
 - **Multi-speaker:** Up to 2 speakers per generation, each with independent voice and style
 - **Audio tags:** Inline delivery control — `<laugh>`, `<whisper>`, `<excited>`, pacing adjustments — via natural markup in the prompt
 - **Watermarking:** SynthID — imperceptible watermark embedded in all output audio
-- **Elo:** 1,211 on Artificial Analysis TTS Arena — #1 ranked TTS model (May 2026)
+- **Elo:** 1,214 on Artificial Analysis TTS Arena — #1 ranked TTS model (June 2026)
 - **Best for:** Multilingual voiceovers, free developer experimentation, style-directed narration, Google Cloud / Vertex AI workflows
 - **Not ideal for:** Ultra-low-latency real-time voice agents (use Cartesia Sonic 3.5); self-hosted / offline deployment
 
@@ -272,6 +272,20 @@ pip install neutts
 - **Watermarking:** Perth watermark embedded in all output audio
 - **Best for:** Privacy-first / offline deployment, edge devices, zero API cost in production
 
+## xAI Grok TTS — 5 Voices, 20+ Languages, #5 TTS Arena (April 2026)
+
+xAI launched its Grok Text-to-Speech API in April 2026, built on the same voice stack powering Grok Voice, Tesla vehicles, and Starlink customer support. Ranked #5 on the Artificial Analysis TTS Arena (Elo 1,194, June 2026).
+
+- **URL:** x.ai/api
+- **Pricing:** $4.20/1M characters
+- **Voices:** Eve, Ara, Leo, Rex, Sal (5 voices with distinct personalities); voice cloning available from a short reference recording
+- **Languages:** 20+ with automatic BCP-47 language detection (or specify explicitly)
+- **Latency:** <1s average TTFA; streaming supported
+- **Output formats:** MP3, WAV, PCM (Linear16), G.711 μ-law, G.711 A-law
+- **Expressive tags:** Inline: `[laugh]`, `[sigh]`, `[breath]`; wrapping: `<whisper>text</whisper>`, `<emphasis>text</emphasis>`
+- **Best for:** Developers already in the xAI/Grok ecosystem; multilingual voice agents; production pipelines needing format flexibility
+- **Not ideal for:** Budget-sensitive high-volume use (use Speechmatics $0.011/1K chars or Kokoro at no cost); theatrical emotional range (use Hume Octave 2)
+
 ## Speechmatics TTS — Ultra-Cheap Enterprise TTS, 11–27× Below ElevenLabs
 
 Speechmatics launched its own neural TTS in 2026 alongside its industry-leading STT (55+ languages). At $0.011 per 1,000 characters it is 11–27× cheaper than ElevenLabs while delivering comparable neural quality and sub-150ms streaming latency.
@@ -293,7 +307,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
 | 80+ languages, emotion control | Fish Audio S2 Pro |
-| Best blind-test naturalness (cloud) | Gemini 3.1 Flash TTS (Elo 1,211, #1 May 2026), Inworld AI TTS-1.5 Max, or Inworld Realtime TTS-2 |
+| Best blind-test naturalness (cloud) | Gemini 3.1 Flash TTS (Elo 1,214, #1 June 2026), Inworld AI TTS-1.5 Max, or Inworld Realtime TTS-2 |
 | Voice cloning, no cost, offline | Chatterbox (open-source) |
 | Voice cloning, cloud, easiest | ElevenLabs (paid) |
 | Bulk generation (many files) | edge-tts or Chatterbox (no credit limits) |
@@ -308,3 +322,4 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Multilingual style-controllable TTS, free for developers | Gemini 3.1 Flash TTS (70+ languages, audio tags, free in AI Studio) |
 | Top-10 quality at minimum cost | Speechify SIMBA 3.0 ($10/1M chars, Elo 1,159, #7 globally) |
 | Conversational AI with tone/context awareness across turns | Inworld Realtime TTS-2 (closed-loop, adapts to prior audio, 100+ langs, May 2026) |
+| Grok/xAI ecosystem, 20+ languages, format flexibility | xAI Grok TTS ($4.20/1M chars, Elo 1,194 #5 globally June 2026, voice cloning) |
