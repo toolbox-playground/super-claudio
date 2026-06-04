@@ -144,7 +144,7 @@ Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors
 4. Generate the video — output is virtually indistinguishable from real UGC in scroll tests
 5. Download and deploy directly to Meta/TikTok Ads Manager
 
-**Pricing:** Starts at $77/month for 10 videos; no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
+**Pricing:** Starts at $110/month (Starter — 10 videos); $220/month (Creator — 20 videos); no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
 
 ## Hyper AI — Cross-Platform Campaign Automation
 
@@ -190,6 +190,17 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **TikTok MCP Server** — AI agents (Claude, GPT, etc.) can now launch and manage TikTok ad campaigns directly via the MCP protocol; no manual Ads Manager UI required; announced for developers at TikTok World 2026
 
 Access: business.tiktok.com → Creative Center → Symphony AI (now generally available for all TikTok for Business accounts)
+
+## Google Ads Asset Studio — Veo 3 Video Generation Inside Google Ads
+
+Google added Veo 3 directly inside Google Ads Asset Studio (March 2026), letting advertisers generate video ad assets from text or image prompts without leaving the Ads Manager workflow:
+
+1. Open Google Ads → Asset Studio
+2. Select "Generate video" → enter a text prompt or upload a reference image
+3. Veo 3 generates a production-ready video clip for use in Performance Max or Video campaigns
+4. No external tool required — assets go directly into your campaign asset library
+
+Best for: Google Ads-first teams who want AI video without a third-party subscription; especially powerful in Performance Max campaigns where Google's system picks the best asset combinations automatically.
 
 ## Higgsfield — Cinema Studio Platform
 
