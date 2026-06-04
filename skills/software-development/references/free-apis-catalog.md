@@ -24,6 +24,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | Open Exchange Rates | Currency exchange rates | openexchangerates.org | Free key |
 | CoinGecko | Crypto prices and data | coingecko.com/api | None (rate limited) |
 | Alpha Vantage | Stock market data | alphavantage.co | Free key |
+| DexScreener | Real-time and historical DEX trading pair data across Solana, ETH, BSC, and 50+ chains; WebSocket push; no key required; covers on-chain prices, volume, and liquidity that CoinGecko doesn't | docs.dexscreener.com/api/reference | None |
 
 ## News & Media
 
@@ -62,15 +63,17 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | RandomUser | Random user data | randomuser.me | None |
 | DummyJSON | Mock data (products, users) | dummyjson.com | None |
 | Open Trivia DB | Trivia questions (50+ categories) | opentdb.com/api_config.php | None |
+| Mockerito | 200+ realistic mock REST endpoints across 9 domains (E-Commerce, Finance, Healthcare, Aviation, Meteorology, etc.); full CRUD + filtering/pagination; more varied than JSONPlaceholder | mockerito.com | None |
 
 ## AI / Machine Learning
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
-| Google Gemini API | LLM inference, 1M token context, multimodal | ai.google.dev | Free key (generous limits) |
-| Groq | Ultra-fast LLM inference (LPU hardware); Llama 4 Scout (512K ctx, 30 RPM / 6K TPM), Llama 4 Maverick (256K ctx, 15 RPM / 3K TPM), Gemma, Mistral, DeepSeek R1 and more; no credit card required | groq.com | Free key |
+| Google Gemini API | LLM inference (Gemini 2.5 Pro free in AI Studio), 1M token context, multimodal | ai.google.dev | Free key (generous limits) |
+| Groq | Ultra-fast LLM inference (LPU hardware); Llama 4 Scout, Llama 4 Maverick, Kimi K2 (1T MoE), Qwen3 235B, Gemma, Mistral, DeepSeek R1 and more; no credit card required | groq.com | Free key |
 | OpenRouter | Access to 100+ free AI models (Claude, GPT, Llama, Gemini) via one API | openrouter.ai | Free key |
 | GitHub Models | 40+ AI models (GPT-4o, Llama, DeepSeek-R1, Mistral, Phi, xAI, Cohere) via OpenAI-compatible API; uses your GitHub account — no separate key or signup; free tier rate-limited (e.g. GPT-4o: 10 RPM / 50 RPD); opt-in paid tier for higher limits | github.com/features/models | GitHub account (free) |
+| Cerebras Inference | Ultra-fast LLM inference on wafer-scale silicon (2,600+ tok/s); Llama 3.3 70B, Qwen3 32B/235B, and more; 1M tokens/day free, no credit card required; 30 RPM on free tier | inference.cerebras.ai | Free key |
 
 ## Resources for Finding More
 
