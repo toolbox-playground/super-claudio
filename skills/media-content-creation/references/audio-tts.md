@@ -108,10 +108,23 @@ Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expres
 Fish Audio S2 Pro ranks #1 on TTS-Arena2 with 80+ languages and 50+ inline emotion controls. Trained on 10M+ hours of audio.
 
 - URL: fish.audio
-- Free tier: 7 minutes/month
+- Free tier: 200 minutes/month
 - Best for: multilingual content, emotionally nuanced narration, voice cloning
 - License: research/non-commercial free; commercial use requires separate license
 - Open-source model on HuggingFace: `fishaudio/s2-pro`
+
+## Hume AI TADA — Open-Source, Long-Context, Zero Content Hallucinations
+
+Hume TADA (Text-Acoustic Dual Alignment, March 2026) is Hume's first open-source TTS release: it aligns text tokens directly to audio tokens, achieving zero content hallucinations across 1,000+ test samples and supporting up to 700 seconds of audio (~12 min) in a single pass — 10× longer than most models. 5× faster inference than comparable LLM-based TTS (real-time factor ~0.09).
+
+- **URL / GitHub:** github.com/HumeAI/tada
+- **License:** Open-source (Apache 2.0)
+- **Languages:** English
+- **Duration:** up to 700 seconds in a single pass
+- **Latency:** Real-time factor ~0.09
+- **Free tier:** Yes (self-host)
+- **Best for:** Long-form narration without content hallucinations; research; self-hosted open-source deployment
+- **Not ideal for:** Multilingual content or emotionally nuanced delivery (use Chatterbox or Hume Octave 2 for those)
 
 ## Hume Octave 2 — Emotional TTS with Acting Instructions
 
@@ -309,6 +322,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | 80+ languages, emotion control | Fish Audio S2 Pro |
 | Best blind-test naturalness (cloud) | Gemini 3.1 Flash TTS (Elo 1,214, #1 June 2026), Inworld AI TTS-1.5 Max, or Inworld Realtime TTS-2 |
 | Voice cloning, no cost, offline | Chatterbox (open-source) |
+| Long-form narration (up to 12 min), zero hallucinations, self-hosted | Hume AI TADA (Apache 2.0, open-source) |
 | Voice cloning, cloud, easiest | ElevenLabs (paid) |
 | Bulk generation (many files) | edge-tts or Chatterbox (no credit limits) |
 | Real-time voice agent / chatbot | Cartesia Sonic 3.5 (~40ms TTFA), Smallest.ai Lightning V3.1 (<100ms), or Inworld Realtime TTS-2 (<200ms, closed-loop, 100+ langs) |
