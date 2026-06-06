@@ -182,6 +182,7 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
 - **Smart+** — AI campaign management: auto-selects creatives, adjusts bids, and optimizes delivery automatically in Ads Manager
+- **Symphony Automation** (Smart+ integration, announced TikTok World May 2026) — two tools for AI-powered creative refresh inside Smart+ campaigns: **Recommended Creatives** (generates video assets complete with scripts, voiceovers, and avatars from your destination URL) and **Automatic Enhancements** (improves quality, reformats to 9:16 vertical, refreshes hooks/music, and dubs existing videos into 50+ languages); available now to all TikTok for Business accounts
 
 ### New at TikTok World 2026 (May 13)
 
