@@ -47,13 +47,13 @@ ElevenLabs launched ElevenMusic as an iOS app on April 1, 2026, expanding from v
 - Licensing: launched with licensing partnerships and an opt-in creator marketplace
 - Best for: quick free music generation; users already in the ElevenLabs ecosystem for TTS
 
-## Producer.ai (formerly Riffusion) — Google-Owned, Free, Lyria 3 Powered
+## Google Flow Music (formerly Producer.ai / Riffusion) — Google-Owned, Free, Lyria 3 Powered
 
-Riffusion rebranded to Producer.ai in July 2025. Google acquired Producer.ai in February 2026 and moved the team into Google Labs and Google DeepMind. The tool now runs on Google's Lyria 3 music model with Gemini orchestration, Veo for music video generation, and Nano Banana for album art.
+Riffusion rebranded to Producer.ai in July 2025. Google acquired Producer.ai in February 2026 and moved the team into Google Labs and Google DeepMind. On April 20, 2026, Google rebranded the tool again to **Google Flow Music**, integrating it into the broader Google Flow ecosystem alongside the video and image tools. Available free at flowmusic.app.
 
-- URL: producer.ai
+- URL: flowmusic.app (old URL producer.ai redirects here)
 - Free tier: daily credit top-up; globally available (250+ countries), no waitlist
-- Input: text prompt; also supports image-to-music and audio-to-music inputs
+- Input: text prompt; also supports image-to-music and audio-to-music inputs; new Replace and Extend features for remixing specific sections of a track
 - Stack: Lyria 3 (audio) + Veo (music video) + Nano Banana (album art) — all Google AI models
 - Best for: free music generation with optional music video output; users in the Google/Gemini ecosystem
 
@@ -92,4 +92,4 @@ For background music without AI generation:
 | Unique branded sound | Speed matters |
 | Need API / stems / MIDI (Mureka) | Budget is zero |
 
-> **Note:** As of May 2026, Udio still does not allow audio export (licensing transition in progress). For any use case where you need to keep or use the generated audio, use Suno (paid), ElevenLabs Music (free), Producer.ai (free, Google), or a royalty-free library instead.
+> **Note:** As of May 2026, Udio still does not allow audio export (licensing transition in progress). For any use case where you need to keep or use the generated audio, use Suno (paid), ElevenLabs Music (free), Google Flow Music / flowmusic.app (free, Google), or a royalty-free library instead.
