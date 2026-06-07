@@ -95,6 +95,7 @@ Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expres
 - **URL:** aistudio.google.com | Vertex AI | cloud.google.com/text-to-speech
 - **Free tier:** Yes — free in Google AI Studio (preview; rate limited); also accessible in Google Vids
 - **Paid API:** $1.00/1M input tokens (text); $20.00/1M output tokens (audio); batch API: 50% off
+- **Also available:** Gemini 3.5 Flash TTS (June 2026) — same API, $6/1M output tokens (70% cheaper than 3.1; feature parity being confirmed)
 - **Languages:** 70+ (broadest multilingual coverage among top-ranked models)
 - **Multi-speaker:** Up to 2 speakers per generation, each with independent voice and style
 - **Audio tags:** Inline delivery control — `<laugh>`, `<whisper>`, `<excited>`, pacing adjustments — via natural markup in the prompt
@@ -333,7 +334,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Ultra-fast batch TTS, drop-in OpenAI TTS replacement | Kokoro TTS (Apache 2.0, 82M params, 96× real-time, fixed voices) |
 | Human-like conversational naturalness (pauses, ums, breaths) | Sesame CSM-1B (Apache 2.0, English only, CUDA required) |
 | Long-form multi-speaker narration (audiobooks, podcasts) | VibeVoice-TTS-1.5B (MIT, up to 90 min / 4 speakers, research use) |
-| Multilingual style-controllable TTS, free for developers | Gemini 3.1 Flash TTS (70+ languages, audio tags, free in AI Studio) |
+| Multilingual style-controllable TTS, free for developers | Gemini 3.1 Flash TTS (70+ languages, audio tags, free in AI Studio); Gemini 3.5 Flash TTS ($6/1M output — cheapest option) |
 | Top-10 quality at minimum cost | Speechify SIMBA 3.0 ($10/1M chars, Elo 1,159, #7 globally) |
 | Conversational AI with tone/context awareness across turns | Inworld Realtime TTS-2 (closed-loop, adapts to prior audio, 100+ langs, May 2026) |
 | Grok/xAI ecosystem, 20+ languages, format flexibility | xAI Grok TTS ($4.20/1M chars, Elo 1,194 #5 globally June 2026, voice cloning) |
