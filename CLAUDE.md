@@ -11,6 +11,7 @@ to route them to the right skill before responding.
 | Create videos, audio, images, voiceovers, graphics, or animate media | `media-content-creation` |
 | Build APIs, databases, automate workflows, write scripts, use free APIs, deploy | `software-development` |
 | Turn a PDF or slide deck into a standalone HTML webpage | `webpage-from-slides` |
+| Transform DevOps Mentoria PPTX slides into Carreira Tech beginner slides | `carreira-tech-slides` |
 | Create ads, TikTok Shop content, ecommerce creatives, marketing campaigns | `marketing` |
 | Write blog posts, social captions, SEO content, ad copy, email newsletters | `writing` |
 | Design a website or app UI, find design inspiration, use design tools | `design` |
