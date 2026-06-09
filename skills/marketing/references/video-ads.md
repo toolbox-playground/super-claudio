@@ -186,6 +186,7 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 
 ### New at TikTok World 2026 (May 13)
 
+- **Creator AI Search** — AI-powered creator discovery inside TikTok One; accepts natural language campaign briefs (e.g., "find fitness creators for a protein bar launch") instead of keyword filters; surfaces creators whose past TikTok ONE campaign performance aligns with your goal — matching on actual ROAS and engagement signals, not just follower size or demographics
 - **TopReach** — premium placement that bundles TopView (first thing users see when they open TikTok) + TopFeed (first in-feed ad slot in For You) into a single purchase; guarantees one impression per user and 100% of the day's available audience; supports **Creative Sequencing** — tell a continuous narrative across both placements
 - **Branded Buzz** — large-scale creator collaboration tool; brands can generate hundreds of creator videos in a short window, driving millions of views and authentic organic conversations in a managed campaign
 - **TikTok MCP Server** — AI agents (Claude, GPT, etc.) can now launch and manage TikTok ad campaigns directly via the MCP protocol; no manual Ads Manager UI required; announced for developers at TikTok World 2026
