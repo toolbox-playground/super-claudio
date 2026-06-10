@@ -186,6 +186,22 @@ Speechify SIMBA 3.0 (May 2026) broke into the Artificial Analysis TTS global top
 - **Best for:** Cost-sensitive high-volume production TTS where top-10 quality matters; enterprises evaluating ElevenLabs at 10× lower price
 - **Not ideal for:** Ultra-low-latency (<100ms) conversational agents (use Cartesia Sonic 3.5)
 
+## StepAudio 2.5 TTS (StepFun) — #3 Global Elo, Contextual Performance TTS (NEW May 2026)
+
+StepAudio 2.5 TTS from StepFun (Shanghai) ranks **#3 on the Artificial Analysis Speech Arena** (Elo ~1,187, May 2026) — above every ElevenLabs model including Eleven v3. The key differentiator: it is the first TTS model to integrate full contextual understanding into the generation pipeline, so it doesn't just read text, it *performs* it.
+
+- **URL:** platform.stepfun.ai | **API:** `https://api.stepfun.ai/v1/audio/speech`
+- **Model ID:** `step-audio-2.5-tts`
+- **Pricing:** Pay-as-you-go API (see platform.stepfun.ai for current rates)
+- **Elo:** ~1,187 on Artificial Analysis Speech Arena — #3 globally (May 2026), above ElevenLabs Eleven v3 (1,178)
+- **Max input:** 1,000 characters per request
+- **Voice control:** Plain natural language — describe delivery in prose: "speak slowly with a warm, reassuring tone" — no tags or preset combos required
+- **Context levels:** Global Context (sets the baseline persona/style for the full clip) + Inline Context (overrides delivery moment-to-moment mid-text)
+- **Voice cloning:** Zero-shot from a short reference recording — full timbre and emotion control preserved
+- **Realtime variant:** StepAudio 2.5 Realtime (May 24, 2026) — end-to-end voice model with roleplay-specific RLHF and paralinguistic comprehension (understanding sighs, hesitations, emphasis); separate endpoint
+- **Best for:** Production TTS needing dramatic delivery control without SSML tags; voice agents with nuanced emotional requirements; multilingual content (Chinese + English strong)
+- **Not ideal for:** Ultra-low-latency real-time agents (<100ms); long-form narration over 1K chars without chunking
+
 ## Chatterbox — Free & Open-Source, No Usage Caps
 
 Chatterbox by Resemble AI is MIT-licensed and outperformed ElevenLabs in blind listener tests (65.3% preference for Turbo; 63.8% for standard). Zero-shot voice cloning with a few seconds of reference audio.
@@ -321,7 +337,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
 | 80+ languages, emotion control | Fish Audio S2 Pro |
-| Best blind-test naturalness (cloud) | Gemini 3.1 Flash TTS (Elo 1,214, #1 June 2026), Inworld AI TTS-1.5 Max, or Inworld Realtime TTS-2 |
+| Best blind-test naturalness (cloud) | Gemini 3.1 Flash TTS (Elo 1,214, #1 June 2026), Inworld AI TTS-1.5 Max, StepAudio 2.5 TTS (Elo ~1,187, #3 May 2026), or Inworld Realtime TTS-2 |
 | Voice cloning, no cost, offline | Chatterbox (open-source) |
 | Long-form narration (up to 12 min), zero hallucinations, self-hosted | Hume AI TADA (Apache 2.0, open-source) |
 | Voice cloning, cloud, easiest | ElevenLabs (paid) |
@@ -338,3 +354,4 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Top-10 quality at minimum cost | Speechify SIMBA 3.0 ($10/1M chars, Elo 1,159, #7 globally) |
 | Conversational AI with tone/context awareness across turns | Inworld Realtime TTS-2 (closed-loop, adapts to prior audio, 100+ langs, May 2026) |
 | Grok/xAI ecosystem, 20+ languages, format flexibility | xAI Grok TTS ($4.20/1M chars, Elo 1,194 #5 globally June 2026, voice cloning) |
+| Contextual performance TTS, dramatic delivery without tags | StepAudio 2.5 TTS (platform.stepfun.ai, Elo ~1,187 #3 globally, plain-language voice direction) |
