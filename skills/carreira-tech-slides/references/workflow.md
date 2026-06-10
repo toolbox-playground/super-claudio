@@ -122,6 +122,45 @@ const imgX = 13.3 - 0.25 - imgW;  // 0.25" right margin
 - For portrait: `fit_w = fit_h * ratio` → must equal `fit_h * ratio`
 - Do NOT eyeball it — a 10% error makes text inside images visibly skewed
 
+**Identify logos by pixel color before assuming order:**
+When multiple images come from the same source slide (e.g., 3 cloud provider logos), their filename index order may not match visual order. Sample center and corner pixels with PIL to confirm which logo is which before assigning to variables:
+```python
+from PIL import Image
+img = Image.open(path).convert('RGB')
+print(img.getpixel((img.width//2, img.height//2)))   # center
+print(img.getpixel((20, 20)))                         # corner
+```
+
+---
+
+## Phase 3B — Layout Safety Rules (CRITICAL)
+
+**NEVER place any element outside slide bounds.** The slide is 13.3" × 7.5". Footer occupies y=7.1–7.38. Every element's bottom edge (`y + h`) must be ≤ 7.0" to leave breathing room above the footer.
+
+### Before building any column of cards, calculate total height:
+
+```
+card_top + logo_h + gap + name_h + gap + (n_rows × row_h) + bottom_pad  ≤  7.0
+```
+
+Example check for 4-service cards starting at y=2.0, logo_h=1.45, row_h=0.60:
+```
+2.0 + 0.15(pad) + 1.45(logo) + 0.12(gap) + 0.35(name) + 0.45(gap) + 4×0.60(rows) + 0.1(pad)
+= 2.0 + 3.02 = 5.02"  → card bottom at y = 5.02 + 2.0 = NO — recalculate from top
+→ actual card height = 3.02, ends at 2.0 + 3.02 = 5.02 ✓
+```
+
+Always verify the last row ends before y=7.0 before writing the code.
+
+### NEVER use images as full-bleed slide backgrounds
+
+Images go in **one designated column** (left or right), sized to correct aspect ratio. NEVER stretch an image to fill the full slide width and layer text on top — it looks terrible and obscures both image and text.
+
+| ✅ Correct | ❌ Wrong |
+|---|---|
+| Left column: text + cards / Right column: image at correct ratio | Image at w=12.4 as background + text boxes floating on top |
+| Image column max w=5.5" (right) or 6.5" (left) | Image sized to slide width (13.3") |
+
 ---
 
 ## Phase 4 — Plan the Deck Structure
@@ -131,7 +170,7 @@ const imgX = 13.3 - 0.25 - imgW;  // 0.25" right margin
 | # | Type | Pattern |
 |---|------|---------|
 | 1 | Cover | Navy, topic logo top-right, 3 value tags |
-| 2 | Combinados | 3 ground-rules callout boxes |
+| 2 | Combinados | **3 tall callout boxes** — see pattern below |
 | 3 | Agenda | 4-column topic grid |
 | 4, 12, 17, 23 | Section dividers | `sectionSlide()` navy with watermark number |
 | 5–11 | Core concepts | `head()` + content + right-column image |
@@ -142,6 +181,26 @@ const imgX = 13.3 - 0.25 - imgW;  // 0.25" right margin
 | 29 | Resources | 4-card learning links grid |
 | 30 | Recap | 6-card summary |
 | 31 | Closing | Navy, 3 contact cards |
+
+### Slide 2 — Combinados (mandatory pattern for Carreira Tech)
+
+**Carreira Tech é curso gravado** (não aula ao vivo). O slide de Combinados é diferente do DevOps Mentoria.
+Use SEMPRE este padrão — 3 caixas altas lado a lado:
+
+```javascript
+// Slide 2 — Combinados (copy verbatim, adapt body text per lesson topic)
+calloutBox(slide, 0.5, 1.1, 3.9, 5.5, "🙋", "Não existe pergunta boba",
+  "Pode pausar, voltar e assistir quantas vezes precisar. Se ficou confuso, anota no chat da comunidade — outros alunos provavelmente têm a mesma dúvida.",
+  "FFF8E1", ORANGE);
+calloutBox(slide, 4.7, 1.1, 3.9, 5.5, "📚", "Faça o dever de casa",
+  "Assistir à aula é só o começo. Abrir o terminal e praticar o que foi mostrado é o que realmente fixa o conhecimento.",
+  "E8F5E9", GREEN);
+calloutBox(slide, 8.9, 1.1, 3.9, 5.5, "💻", "Tudo fica no GitHub",
+  "Cada exercício e projeto do curso fica em github.com/toolbox-playground. Seu histórico no GitHub é seu portfólio para o primeiro emprego.",
+  "E0F7FA", TEAL);
+```
+
+> **Do NOT use** the old DevOps Mentoria 4-box pattern (Câmera ligada / Dúvidas / etc.) — that was designed for synchronous live sessions. Carreira Tech is async/recorded.
 
 ### Image Placement Decision Tree
 
@@ -400,8 +459,12 @@ for i, slide in enumerate(prs.slides):
 [ ] Every section slide uses sectionSlide()
 [ ] All images: pixel dimensions checked → w/h computed from ratio
 [ ] No image forced into wrong dimensions (no stretching, no squashing)
+[ ] No image used as full-bleed background with text on top
 [ ] Portrait images are right-aligned (x = 13.3 - margin - w)
 [ ] Company logo grid: each logo has its own h from pixel ratio
+[ ] Multiple logos from same source slide: verified by pixel color sampling, not assumed by filename order
+[ ] All card/column layouts: total height calculated before coding — bottom edge ≤ y=7.0
+[ ] Slide 2 uses Carreira Tech 3-box Combinados pattern (NOT DevOps Mentoria pattern)
 [ ] Code boxes use CODEBG = "1E2733" background
 [ ] Each concept slide has at least one analogy callout box
 [ ] No DevOps jargon without plain-language explanation
