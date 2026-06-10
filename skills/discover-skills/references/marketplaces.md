@@ -21,6 +21,9 @@ Sources to search when looking for Claude Code skills and plugins.
 | **Awesome Claude** | awesomeclaude.ai/code-cheatsheet | Curated Claude Code resources and cheatsheets |
 | **Claude Marketplaces Community** | claudemarketplaces.com/skills | Browse skills by category |
 | **GitHub: superpowers** | github.com/obra/superpowers | The superpowers skill collection — meta-skills for Claude Code |
+| **ClaudeSkills.info** | claudeskills.info | 658+ free, community-contributed Claude Code skills including official Anthropic skills (PDF, DOCX, XLSX, frontend design, MCP builder); no paid tier, no subscriptions; updated daily |
+| **Skills.sh** (Vercel Labs) | skills.sh | npm-style CLI package manager for agent skills — `npx skills add <repo>`, `npx skills find`; Vercel-backed; launched January 2026; community-driven with versioning and updates; GitHub: vercel-labs/skills; compatible with Claude Code, Cursor, Codex, and 40+ agents |
+| **Agensi** | agensi.io | Security-scanned marketplace — every skill passes an 8-point checklist (prompt injection, data exfiltration, secret detection, dangerous commands, obfuscation, external fetches) before listing; creator payments (80% revenue share); paid and free skills |
 | **SkillsMP** | skillsmp.com | 1.5M+ agent skills indexed from GitHub (public API available); compatible with Claude Code, Codex CLI, ChatGPT, and other agents |
 | **Tons of Skills** | tonsofskills.com | 425 plugins, 2,810 skills, 200 agents for Claude Code; `ccpi` CLI package manager; catalog updated daily from GitHub; most comprehensive single-site collection (May 2026) |
 | **claude-skills (337+ skills)** | github.com/alirezarezvani/claude-skills | 337+ production-ready skills across 13 AI coding agents (Claude Code, Codex CLI, Cursor, Gemini CLI, and more), spanning engineering, marketing, product, compliance, and C-level advisory domains |
