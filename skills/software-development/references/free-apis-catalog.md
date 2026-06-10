@@ -39,6 +39,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | API | What | URL | Auth |
 |-----|------|-----|------|
 | OpenStreetMap / Nominatim | Geocoding, reverse geocoding | nominatim.org | None |
+| Mapbox | Maps, geocoding, directions, static images; 50,000 map loads/month free; JS SDK; DevKit MCP Server available | mapbox.com | Free key |
 | ip-api.com | IP to location | ip-api.com | None (rate limited) |
 | REST Countries | Country data | restcountries.com | None |
 
