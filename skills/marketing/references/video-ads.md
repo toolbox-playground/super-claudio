@@ -155,6 +155,7 @@ Hyper (hyperfx.ai) runs TikTok, Meta, Google, LinkedIn, and Amazon as one autono
 3. Hyper audits campaigns hourly, kills fatigued creatives early, and surfaces briefs for replacements
 4. Pair with a creative tool (Creatify, Arcads, Lapis) for video production — Hyper handles distribution and optimization
 
+**Pricing:** $49/month flat (all connected channels; no per-platform fees)
 **Best for:** Teams running TikTok alongside other paid channels who need unified multi-platform optimization; rated 9.4/10 in 2026 TikTok ad automation comparisons. Not a creative generator — use alongside Creatify or Arcads for new video assets.
 
 ## Synter — MCP-Native Cross-Platform Ad Generator (14 Platforms in One Workflow)
@@ -189,6 +190,8 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Creator AI Search** — AI-powered creator discovery inside TikTok One; accepts natural language campaign briefs (e.g., "find fitness creators for a protein bar launch") instead of keyword filters; surfaces creators whose past TikTok ONE campaign performance aligns with your goal — matching on actual ROAS and engagement signals, not just follower size or demographics
 - **TopReach** — premium placement that bundles TopView (first thing users see when they open TikTok) + TopFeed (first in-feed ad slot in For You) into a single purchase; guarantees one impression per user and 100% of the day's available audience; supports **Creative Sequencing** — tell a continuous narrative across both placements
 - **Branded Buzz** — large-scale creator collaboration tool; brands can generate hundreds of creator videos in a short window, driving millions of views and authentic organic conversations in a managed campaign
+- **TikTok GO Ads** — travel-focused ad format tied to TikTok GO, TikTok's new in-app travel booking platform (hotels, attractions, tours via Booking.com, Expedia, Viator, GetYourGuide, Trip.com); ads surface within travel discovery videos, search results, and location pages; relevant for travel, hospitality, and experiences verticals
+- **Growth Max** — ad product targeting users engaged with TikTok Mini Series and Mini Games; surfaces brand messages inside long-form vertical content and interactive game experiences
 - **TikTok MCP Server** — AI agents (Claude, GPT, etc.) can now launch and manage TikTok ad campaigns directly via the MCP protocol; no manual Ads Manager UI required; announced for developers at TikTok World 2026
 
 Access: business.tiktok.com → Creative Center → Symphony AI (now generally available for all TikTok for Business accounts)
