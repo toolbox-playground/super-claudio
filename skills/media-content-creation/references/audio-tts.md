@@ -238,6 +238,25 @@ Mistral released Voxtral TTS on March 26, 2026: a 4B-parameter open-weight model
 - **Voice cloning:** 3-second reference audio
 - **Best for:** Multilingual production TTS at low cost; EU-language coverage; self-hosted open-weight deployment
 
+## Qwen3-TTS — Open-Source, 10 Languages, 97ms Latency, Apache 2.0
+
+Qwen3-TTS (Alibaba Qwen team, January 22, 2026) is an open-source TTS model family supporting 10 languages with 97ms first-packet streaming latency, voice cloning from 3 seconds of audio, and free-form voice design via natural language description.
+
+```bash
+pip install git+https://github.com/QwenLM/Qwen3-TTS
+```
+
+- **URL / GitHub:** github.com/QwenLM/Qwen3-TTS | **HuggingFace:** `Qwen/Qwen3-TTS-1.7B`
+- **License:** Apache 2.0 (commercial use permitted)
+- **Variants:** 1.7B and 0.6B — each available as CustomVoice (voice cloning) and VoiceDesign (natural-language voice creation) flavors; Base models for fine-tuning
+- **Languages:** 10 — Chinese, English, Japanese, Korean, German, French, Russian, Portuguese, Spanish, Italian
+- **Training data:** 5M+ hours of speech across 10 languages
+- **Latency:** 97ms end-to-end first-packet latency (streaming; dual-track hybrid architecture without heavy diffusion transformers)
+- **Voice cloning:** 3-second reference audio → production-ready replica
+- **Voice design:** Free-form natural language prompting ("a warm, elderly British narrator") — no preset library required
+- **Best for:** Open-source multilingual TTS needing commercial use at zero API cost; CJK + EU-language coverage; self-hosted or on-device deployment
+- **Not ideal for:** Ultra-low-latency real-time agents where Cartesia Sonic 3.5's 40ms TTFA is needed; theatrical emotional delivery (use Hume Octave 2)
+
 ## Sesame CSM-1B — Conversational Naturalness, Apache 2.0
 
 Sesame CSM-1B (Conversational Speech Model) stands out for human-like conversational realism: natural pauses, "umms", breath sounds, and subtle intonation shifts that traditional TTS models miss. Trained on 1M+ hours of English audio; uses a Llama-3.2 backbone + 300M audio decoder.
@@ -346,6 +365,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Enterprise production (uptime + pricing transparency) | Deepgram Aura-2 ($200 free credits to start) |
 | Ultra-cheap high-volume English TTS, single-vendor STT+TTS | Speechmatics TTS ($0.011/1K chars, ~80ms TTFA) |
 | Open-weight multilingual cloud TTS, low cost | Mistral Voxtral TTS ($0.016/1K chars) |
+| Open-source multilingual TTS, 10 languages, self-hosted or commercial | Qwen3-TTS (Apache 2.0, 97ms TTFA, voice cloning + free-form voice design, github.com/QwenLM/Qwen3-TTS) |
 | On-device, zero API cost, privacy-first | NeuTTS Air (Apache 2.0, CPU-capable) |
 | Ultra-fast batch TTS, drop-in OpenAI TTS replacement | Kokoro TTS (Apache 2.0, 82M params, 96× real-time, fixed voices) |
 | Human-like conversational naturalness (pauses, ums, breaths) | Sesame CSM-1B (Apache 2.0, English only, CUDA required) |
