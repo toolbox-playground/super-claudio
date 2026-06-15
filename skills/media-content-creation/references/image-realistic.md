@@ -22,8 +22,8 @@
 | **FLUX.2 [klein]** (Black Forest Labs) | bfl.ai, fal.ai, HuggingFace | Sub-second generation & editing; unified text-to-image + image editing; 4B and 9B variants; 4-step distilled inference; ~13GB VRAM for 4B — runs on RTX 3090/4070; supports multi-reference composition | 4B: Apache 2.0 (commercial use free); 9B: non-commercial |
 | **Stable Diffusion** | Local / Automatic1111 | Full control, local, free | Yes (local) |
 | **Adobe Firefly Image 5** | firefly.adobe.com | Commercial safe, custom model training, 30+ third-party models (Runway, Google, OpenAI) in one workspace | Free tier (paid for full access; see notes) |
-| **Ideogram v3** | ideogram.ai | Text in images, posters, signage | Free tier |
-| **Google Imagen 4** | AI Studio / Gemini API | Photorealism, 2K resolution, text rendering; Ultra variant for max fidelity | Via AI Studio (free tier) |
+| **Ideogram 4.0** | ideogram.ai, Together AI | Text in images, posters, signage; first open-weight T2I model from Ideogram (9.3B params, Jun 3 2026); #1 text rendering (0.97 X-Omni OCR — highest among open-weight models); native 2K resolution; bounding-box layout control; color-palette conditioning (up to 16 hex colors); inference code Apache 2.0; model weights: non-commercial license | Free tier (ideogram.ai); API: $0.03 Turbo / $0.06 Default / $0.10 Quality per image |
+| **Google Imagen 4** **(DEPRECATED — all Imagen endpoints shut down June 24–30, 2026; migrate to Nano Banana / Gemini Image models)** | — | — | — |
 
 ## Nano Banana 2 — Top Pick for Product & Lifestyle Images
 
@@ -87,6 +87,10 @@ Firefly Image 5 (March 2026) adds custom model training — brands can train Fir
 ## DALL-E Retirement Note
 
 DALL-E 2 and DALL-E 3 were retired by OpenAI on May 12, 2026. GPT Image 2 (already in the table above) is their replacement. Do not recommend DALL-E endpoints — they are deprecated.
+
+## Google Imagen 4 Deprecation Note
+
+All Google Imagen model endpoints (Imagen 3, Imagen 4, Imagen 4 Ultra) will shut down June 24–30, 2026. Migrate to Gemini Image models ("Nano Banana"): swap the model name from `imagen-*` to the corresponding `gemini-*-image` model in your API calls. Firebase AI Logic and Vertex AI users must update before the cutoff or requests will fail. Google AI Studio provides a migration guide at firebase.google.com/docs/ai-logic/imagen-models-migration.
 
 ## Using Claude's Native Image Generation
 
