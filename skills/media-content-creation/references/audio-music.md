@@ -24,8 +24,8 @@ Similar to Suno, strong on musicality and production quality.
 
 - URL: udio.com
 - **Important (2026):** Udio temporarily disabled all downloads (audio, video, stems) across all plan tiers during a 2025–2026 licensing transition. Tracks can only be streamed/shared on-platform as of May 2026 — no DAW export, no Spotify upload, no use in video.
-- **Licensing deals signed:** Udio reached agreements with Universal Music Group (Oct 2025), Warner Music, Merlin, and Kobalt (Q1 2026). A jointly licensed UMG × Udio platform is scheduled for 2026; downloads may return once the platform launches.
-- Good for: previewing and sharing music concepts; not suitable if you need to use the audio outside Udio today
+- **Licensing deals signed:** Udio reached agreements with Universal Music Group (Oct 2025), Warner Music, Merlin, and Kobalt (Q1 2026). The new licensed platform launched Q2 2026 but operates as a **walled garden** — tracks cannot be downloaded or exported, only streamed/shared within the Udio network. No download capability is expected for the foreseeable future.
+- Good for: previewing and sharing music concepts within the platform only; not suitable if you need to use the audio outside Udio
 
 ## Mureka v8 — Developer-Focused AI Music Generation
 
@@ -93,4 +93,4 @@ For background music without AI generation:
 | Unique branded sound | Speed matters |
 | Need API / stems / MIDI (Mureka) | Budget is zero |
 
-> **Note:** As of May 2026, Udio still does not allow audio export (licensing transition in progress). For any use case where you need to keep or use the generated audio, use Suno (paid), ElevenLabs Music (free), Google Flow Music / flowmusic.app (free, Google), or a royalty-free library instead.
+> **Note:** As of June 2026, Udio's licensed platform has launched but operates as a walled garden — audio cannot be downloaded or exported. For any use case where you need to keep or use the generated audio, use Suno (paid), ElevenLabs Music (free), Google Flow Music / flowmusic.app (free, Google), or a royalty-free library instead.
