@@ -62,6 +62,19 @@ with open("output.mp3", "wb") as f:
 **Best for:** High-quality voiceovers for ads or professional content
 **Voice cloning:** Paid feature; clone any voice from a sample
 
+## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
+
+ElevenLabs Flash is the speed-optimized sibling of Eleven v3, purpose-built for real-time conversational agents where latency matters more than expressiveness. Generates speech in ~75ms TTFA. Recommended by ElevenLabs over the older Turbo models for all low-latency use cases.
+
+- **Model IDs:** `eleven_flash_v2` (English only) · `eleven_flash_v2_5` (32 languages)
+- **Released:** December 2024
+- **URL:** elevenlabs.io (same API as v3)
+- **Latency:** ~75ms TTFA
+- **Languages:** Flash v2 — English only; Flash v2.5 — 32 languages
+- **Pricing:** same per-character pricing as the rest of the ElevenLabs API (see elevenlabs.io/pricing)
+- **Best for:** Voice agents, chatbots, real-time assistants where latency trumps emotional range
+- **Not ideal for:** Long-form narration or expressive delivery — use Eleven v3 for those
+
 ## Inworld Realtime TTS-2 — Closed-Loop Conversational TTS (NEW May 2026)
 
 Inworld Realtime TTS-2 (launched May 5, 2026) is a fundamentally different architecture from TTS-1.5: it takes the actual audio of prior conversation turns as input — not just text — so it understands tone, pacing, and emotional context from everything that was said before. Ranked alongside TTS-1.5 Max at the top of the Artificial Analysis Speech Arena.
@@ -353,6 +366,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 |------|------|
 | Quick article summary, personal use | edge-tts (Azure, free) |
 | Professional ad voiceover | ElevenLabs v3 or Inworld TTS-1.5 |
+| Low-latency voice agent (ElevenLabs ecosystem) | ElevenLabs Flash v2.5 (~75ms, 32 languages) or Flash v2 (English only, ~75ms) |
 | Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
 | 80+ languages, emotion control | Fish Audio S2 Pro |
