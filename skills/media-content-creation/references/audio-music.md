@@ -38,15 +38,20 @@ Mureka v8 is the go-to for developers and technical producers: native API, stem 
 - Commercial rights: full ownership on paid plans (royalty-free, use in ads/videos/streaming)
 
 
-## ElevenLabs Music (ElevenMusic) — Free Text-to-Music, April 2026
+## ElevenLabs Music v2 — Genre-Switching AI Music with API Access (May 2026)
 
-ElevenLabs launched ElevenMusic as an iOS app on April 1, 2026, expanding from voice into generative music. Competes directly with Suno and Udio.
+ElevenLabs launched ElevenMusic as an iOS app on April 1, 2026, then shipped Music v2 on May 26, 2026 — a major upgrade adding mid-track genre switching, chunk-based composition plans, and full API access across ElevenMusic, ElevenCreative, and ElevenAPI.
 
-- URL: elevenlabs.io (ElevenMusic iOS app)
-- Free tier: up to 7 songs/day, no credit card required
-- Input: natural language text prompt; control lyrics on/off, song length, writing style
-- Licensing: launched with licensing partnerships and an opt-in creator marketplace
-- Best for: quick free music generation; users already in the ElevenLabs ecosystem for TTS
+- URL: elevenlabs.io (ElevenMusic iOS, ElevenCreative web app, ElevenAPI)
+- **API model_id:** `music_v2` (on Generate music, Stream music, Generate music detailed, Upload music endpoints)
+- Free tier: up to 7 songs/day in ElevenMusic app (personal use only; no commercial rights on free)
+- Commercial use: Starter plan+ (Music v2 trained on licensed data — cleared for commercial use on paid plans)
+- Input: natural language text prompt; control lyrics on/off, song length, writing style, genre
+- **Genre-switching mid-track:** one generation can shift between wildly different styles (operatic intro → metal breakdown → ambient outro)
+- **Chunk-based composition:** build tracks section by section using GenerationChunk and AudioRefChunk objects — intro, verse, chorus, bridge, outro — each preserving tonal continuity across the full track
+- **Inpainting:** rebuild specific sections (e.g., only the bridge) without touching the rest of the song
+- Better multilingual lyrics and arrangement vs Music v1
+- Best for: developers integrating music generation via API (ElevenAPI); ad music and branded content (ElevenCreative); quick casual generation (ElevenMusic iOS app)
 
 ## Google Flow Music (formerly Producer.ai / Riffusion) — Google-Owned, Free, Lyria 3 Powered
 
@@ -93,4 +98,4 @@ For background music without AI generation:
 | Unique branded sound | Speed matters |
 | Need API / stems / MIDI (Mureka) | Budget is zero |
 
-> **Note:** As of June 2026, Udio's licensed platform has launched but operates as a walled garden — audio cannot be downloaded or exported. For any use case where you need to keep or use the generated audio, use Suno (paid), ElevenLabs Music (free), Google Flow Music / flowmusic.app (free, Google), or a royalty-free library instead.
+> **Note:** As of June 2026, Udio's licensed platform has launched but operates as a walled garden — audio cannot be downloaded or exported. For any use case where you need to keep or use the generated audio, use Suno (paid), ElevenLabs Music v2 (free for personal; Starter plan+ for commercial), Google Flow Music / flowmusic.app (free, Google), or a royalty-free library instead.
