@@ -146,6 +146,21 @@ Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors
 
 **Pricing:** Starts at $110/month (Starter — 10 videos); $220/month (Creator — 20 videos); no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
 
+## Pose Video Studio — Identity-Consistent UGC from Your Own Face
+
+Pose Video Studio (pose.ai) generates UGC-style video ads where every variant features the same AI actor trained on your own uploaded selfies — not a generic avatar from a pre-built library. Voice is cloned via ElevenLabs from ~1 minute of reference audio, so face and voice stay consistent across all campaign variants.
+
+1. Go to pose.ai
+2. Upload selfies → Pose trains a custom AI actor on your face
+3. Record ~1 minute of reference audio → voice cloned via ElevenLabs
+4. Input product details or ad script
+5. Generate UGC-style videos for TikTok, Reels, or YouTube Shorts — all featuring your consistent brand face
+
+**Free tier:** Trial available
+**Pricing:** From $9/month (billed yearly)
+**Best for:** Brands and solo creators who want a recognizable, consistent face across every creative variant without filming — stronger brand recall than generic AI avatars.
+**Not ideal for:** High-volume multi-actor campaigns needing different personas per audience segment (use Arcads for that).
+
 ## Hyper AI — Cross-Platform Campaign Automation
 
 Hyper (hyperfx.ai) runs TikTok, Meta, Google, LinkedIn, and Amazon as one autonomous agent: hourly creative-fatigue detection, automatic budget reallocation, creative-brief generation from last-7-day winners, and Smart+ feed optimization.
