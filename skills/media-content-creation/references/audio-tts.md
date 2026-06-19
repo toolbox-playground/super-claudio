@@ -215,6 +215,23 @@ StepAudio 2.5 TTS from StepFun (Shanghai) ranks **#3 on the Artificial Analysis 
 - **Best for:** Production TTS needing dramatic delivery control without SSML tags; voice agents with nuanced emotional requirements; multilingual content (Chinese + English strong)
 - **Not ideal for:** Ultra-low-latency real-time agents (<100ms); long-form narration over 1K chars without chunking
 
+## MiniMax Speech 2.8 HD — Broadcast Quality, 40+ Languages, 7 Emotions (NEW 2026)
+
+MiniMax Speech 2.8 HD is MiniMax's current flagship TTS, replacing Speech 2.6. Broadcast-grade audio quality with 40+ languages, 17+ expressive voice presets, and an expanded emotion set with natural interjection tags.
+
+- **URL:** minimax.io/audio | **API:** replicate.com/minimax/speech-2.8-hd, wavespeed.ai
+- **Free tier:** No direct free tier; available via Replicate and WaveSpeedAI (pay-as-you-go)
+- **Latency:** <250ms
+- **Languages:** 40+ (expanded from ~32 in Speech 2.6)
+- **Voices:** 17+ expressive presets spanning gender, age, and speaking style
+- **Emotions:** 7 modes (calm, fluent, surprised + 4 more); "auto" matches tone to script context
+- **Interjection tags:** `[laugh]`, `[sigh]`, `[gasp]` — natural non-verbals dropped anywhere in text
+- **Voice cloning:** Yes — improved tonal nuance and timbre similarity vs. Speech 2.6
+- **Architecture:** Autoregressive Transformer + Flow-VAE decoder; models speech in learned latent space for natural cadence and emotional depth
+- **Variants:** HD (broadcast-grade fidelity) vs Turbo (2–3× faster, lower cost, same features)
+- **Best for:** Multilingual narration, marketing voiceovers, audiobooks needing emotional range and reliable voice cloning
+- **Not ideal for:** Ultra-low-latency agents (<100ms) — use Cartesia Sonic 3.5 for those
+
 ## Chatterbox — Free & Open-Source, No Usage Caps
 
 Chatterbox by Resemble AI is MIT-licensed and outperformed ElevenLabs in blind listener tests (65.3% preference for Turbo; 63.8% for standard). Zero-shot voice cloning with a few seconds of reference audio.
@@ -389,3 +406,4 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Conversational AI with tone/context awareness across turns | Inworld Realtime TTS-2 (closed-loop, adapts to prior audio, 100+ langs, May 2026) |
 | Grok/xAI ecosystem, 20+ languages, format flexibility | xAI Grok TTS ($4.20/1M chars, Elo 1,194 #5 globally June 2026, voice cloning) |
 | Contextual performance TTS, dramatic delivery without tags | StepAudio 2.5 TTS (platform.stepfun.ai, Elo ~1,187 #3 globally, plain-language voice direction) |
+| Multilingual broadcast-quality narration, 40+ languages, emotion+interjections | MiniMax Speech 2.8 HD (minimax.io/audio, Replicate, WaveSpeedAI; HD for quality, Turbo for speed) |
