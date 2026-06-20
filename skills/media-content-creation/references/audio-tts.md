@@ -187,6 +187,20 @@ Deepgram Aura-2 targets enterprises building production voice systems where upti
 - Best for: enterprise voice agents, high-volume production systems, call center bots
 - Not ideal for: artistic/emotional content where ElevenLabs or Fish Audio excel
 
+## Rime TTS — 300+ Voices, Sociolinguistics-Based, Sub-100ms
+
+Rime (rime.ai) grounds its TTS in sociolinguistics — training on how real people speak — producing subtle cadence, stress patterns, and rhythmic variation that most neural TTS models miss. Available as three model tiers plus a free plan with 200+ voices.
+
+- **URL:** rime.ai
+- **Free tier:** 10,000 characters/month; 200+ voices included
+- **Models:** Mist v3 (flagship, general use), Arcana (premium expressiveness), Coda (sub-100ms latency, real-time agents)
+- **Pricing:** $5/mo Starter (100K chars); $19/mo Developer (500K chars); $99/mo Pro (3M chars); $249/mo Business (10M chars + professional voice cloning)
+- **Voice library:** 300+ voices (age, gender, accent diversity); 200+ available on free plan
+- **Latency:** sub-200ms cloud; sub-100ms with Coda model
+- **Languages:** English focus; multilingual support available
+- **Best for:** Developers who need natural-sounding conversational voices without the cost of ElevenLabs; enterprise voice agents needing the Coda model's sub-100ms TTFA
+- **Not ideal for:** Theatrical emotional range (use Hume Octave 2); self-hosted / open-source deployment (use Chatterbox or Kokoro)
+
 ## Speechify SIMBA 3.0 — Top-10 Quality at $10/1M Characters (NEW May 2026)
 
 Speechify SIMBA 3.0 (May 2026) broke into the Artificial Analysis TTS global top 10 at #7 (Elo 1,159), ranking above ElevenLabs, OpenAI TTS, and Microsoft at one-tenth their typical price.
@@ -394,6 +408,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Bulk generation (many files) | edge-tts or Chatterbox (no credit limits) |
 | Real-time voice agent / chatbot | Cartesia Sonic 3.5 (~40ms TTFA), Smallest.ai Lightning V3.1 (<100ms), or Inworld Realtime TTS-2 (<200ms, closed-loop, 100+ langs) |
 | Enterprise production (uptime + pricing transparency) | Deepgram Aura-2 ($200 free credits to start) |
+| Natural-sounding conversational voices, 300+ voice options, free start | Rime TTS (rime.ai, 10K chars/month free, Coda model for sub-100ms) |
 | Ultra-cheap high-volume English TTS, single-vendor STT+TTS | Speechmatics TTS ($0.011/1K chars, ~80ms TTFA) |
 | Open-weight multilingual cloud TTS, low cost | Mistral Voxtral TTS ($0.016/1K chars) |
 | Open-source multilingual TTS, 10 languages, self-hosted or commercial | Qwen3-TTS (Apache 2.0, 97ms TTFA, voice cloning + free-form voice design, github.com/QwenLM/Qwen3-TTS) |
