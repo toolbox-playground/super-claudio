@@ -56,6 +56,12 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | Unsplash | Millions of free high-quality stock photos | api.unsplash.com | Free key |
 | Picsum Photos | Random placeholder images by size | picsum.photos | None |
 
+## Communication
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| Discord API | Build bots, manage servers, send/read messages, listen to real-time events via WebSocket gateway; no limits on bot creation; well-documented | discord.com/developers | Bot token (free) |
+
 ## Developer Utilities
 
 | API | What | URL | Auth |
