@@ -101,9 +101,25 @@ Inworld TTS-1.5 Max ranks in the top 5 on the Artificial Analysis Speech Arena �
 - Best for: voice agents, interactive AI, professional voiceovers
 - Pricing: $15–$25/million characters (standard)
 
+## Fun-Realtime-TTS (Alibaba Cloud) — #1 Artificial Analysis Speech Arena (NEW June 2026)
+
+Alibaba's Fun-Realtime-TTS took the #1 spot on the Artificial Analysis Speech Arena on June 3, 2026 (Elo 1,219), surpassing Gemini 3.1 Flash TTS and Inworld Realtime TTS-2. Supports real-time streaming, voice cloning, voice design, and regional accent recognition via Alibaba Cloud's DashScope API.
+
+- **URL:** alibabacloud.com/help/en/model-studio/realtime-tts-user-guide
+- **API endpoints:** `https://dashscope-intl.aliyuncs.com/api/v1` (Singapore); `https://dashscope.aliyuncs.com/api/v1` (Beijing)
+- **Free tier:** No permanent free tier; Alibaba Cloud trial credits on new accounts
+- **Pricing:** $27.6/1M characters (competitive with frontier TTS models)
+- **Elo:** 1,219 on Artificial Analysis Speech Arena — #1 globally (June 3, 2026)
+- **Languages:** Multilingual with regional accent and dialect support
+- **Voice cloning:** Yes — from a short reference audio sample via DashScope voice cloning API
+- **Voice design:** Yes — create a synthetic speaker profile from scratch
+- **Streaming:** Real-time — audio is delivered as it is synthesized, no wait for full output
+- **Best for:** Production TTS needing the highest-ranked quality with streaming; developers in the Alibaba Cloud ecosystem; multilingual content with regional accent fidelity
+- **Not ideal for:** Zero-cost self-hosted deployment (use Kokoro or Chatterbox); on-device mobile (use NeuTTS Air)
+
 ## Gemini 3.1 Flash TTS — Free, 70+ Languages, Style-Controllable (NEW Apr 2026)
 
-Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expressive speech with inline audio tags for style and pacing control — and is currently free in AI Studio during preview. Ranked #1 on the Artificial Analysis TTS Arena (Elo 1,211) as of May 2026.
+Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expressive speech with inline audio tags for style and pacing control — and is currently free in AI Studio during preview. Ranked #2 on the Artificial Analysis TTS Arena (Elo 1,214) as of June 2026 (surpassed by Fun-Realtime-TTS on June 3, 2026).
 
 - **URL:** aistudio.google.com | Vertex AI | cloud.google.com/text-to-speech
 - **Free tier:** Yes — free in Google AI Studio (preview; rate limited); also accessible in Google Vids
@@ -113,7 +129,7 @@ Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expres
 - **Multi-speaker:** Up to 2 speakers per generation, each with independent voice and style
 - **Audio tags:** Inline delivery control — `<laugh>`, `<whisper>`, `<excited>`, pacing adjustments — via natural markup in the prompt
 - **Watermarking:** SynthID — imperceptible watermark embedded in all output audio
-- **Elo:** 1,214 on Artificial Analysis TTS Arena — #1 ranked TTS model (June 2026)
+- **Elo:** 1,214 on Artificial Analysis TTS Arena — #2 ranked TTS model (June 2026; #1 until June 3 2026 when Fun-Realtime-TTS surpassed it)
 - **Best for:** Multilingual voiceovers, free developer experimentation, style-directed narration, Google Cloud / Vertex AI workflows
 - **Not ideal for:** Ultra-low-latency real-time voice agents (use Cartesia Sonic 3.5); self-hosted / offline deployment
 
@@ -401,7 +417,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
 | 80+ languages, emotion control | Fish Audio S2 Pro |
-| Best blind-test naturalness (cloud) | Gemini 3.1 Flash TTS (Elo 1,214, #1 June 2026), Inworld AI TTS-1.5 Max, StepAudio 2.5 TTS (Elo ~1,187, #3 May 2026), or Inworld Realtime TTS-2 |
+| Best blind-test naturalness (cloud) | Fun-Realtime-TTS (Alibaba, Elo 1,219, #1 June 2026), Gemini 3.1 Flash TTS (Elo 1,214, #2 June 2026), Inworld AI TTS-1.5 Max, or StepAudio 2.5 TTS (Elo ~1,187, #3 May 2026) |
 | Voice cloning, no cost, offline | Chatterbox (open-source) |
 | Long-form narration (up to 12 min), zero hallucinations, self-hosted | Hume AI TADA (Apache 2.0, open-source) |
 | Voice cloning, cloud, easiest | ElevenLabs (paid) |
@@ -422,3 +438,4 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Grok/xAI ecosystem, 20+ languages, format flexibility | xAI Grok TTS ($4.20/1M chars, Elo 1,194 #5 globally June 2026, voice cloning) |
 | Contextual performance TTS, dramatic delivery without tags | StepAudio 2.5 TTS (platform.stepfun.ai, Elo ~1,187 #3 globally, plain-language voice direction) |
 | Multilingual broadcast-quality narration, 40+ languages, emotion+interjections | MiniMax Speech 2.8 HD (minimax.io/audio, Replicate, WaveSpeedAI; HD for quality, Turbo for speed) |
+| Highest-ranked cloud TTS by Elo, real-time streaming, voice cloning | Fun-Realtime-TTS (Alibaba Cloud, $27.6/1M chars, Elo 1,219 #1 globally June 2026) |
