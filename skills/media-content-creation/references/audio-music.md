@@ -54,6 +54,17 @@ ElevenLabs launched ElevenMusic as an iOS app on April 1, 2026, then shipped Mus
 - Better multilingual lyrics and arrangement vs Music v1
 - Best for: developers integrating music generation via API (ElevenAPI); ad music and branded content (ElevenCreative); quick casual generation (ElevenMusic iOS app)
 
+## MiniMax Music 2.5 — Structural Control + Studio-Grade Fidelity (Jan 2026)
+
+MiniMax Music 2.5 (released January 29, 2026) adds paragraph-level precision control over song structure and fixes the "muddy mixing" artifact common in AI music through improved spectral separation between vocals and instrumentation.
+
+- URL: minimax.io/audio | API: wavespeed.ai/models/minimax/music-2.5
+- Free tier: limited via minimax.io; API via WaveSpeedAI (pay-as-you-go)
+- **14+ structural tags:** `[Intro]`, `[Verse]`, `[Chorus]`, `[Bridge]`, `[Interlude]`, `[Build-up]`, `[Hook]`, `[Outro]` — placed inline in the prompt to control song layout section by section
+- **Audio fidelity:** Optimized soundstage keeps vocals and instruments in separate spectral regions — the key improvement over Music 2.0
+- Best for: generation where song structure matters (commercial jingles, video scoring with section-to-cut sync, multi-verse songs with distinct parts)
+- Not ideal for: stem export or MIDI (use Mureka v8); on-demand free generation (use Suno free tier)
+
 ## Google Flow Music (formerly Producer.ai / Riffusion) — Google-Owned, Free, Lyria 3 Powered
 
 Riffusion rebranded to Producer.ai in July 2025. Google acquired Producer.ai in February 2026 and moved the team into Google Labs and Google DeepMind. On April 20, 2026, Google rebranded the tool again to **Google Flow Music**, integrating it into the broader Google Flow ecosystem alongside the video and image tools. Available free at flowmusic.app.
@@ -81,6 +92,19 @@ Released May 20, 2026. Text-to-audio model family covering music, sound effects,
 - **Licensing:** Community License (you own outputs, commercial use allowed); Enterprise License for >$1M ARR
 - **Best for:** Ad background music, custom SFX, production pipelines where training-data licensing provenance matters
 
+
+## Beatoven.ai — Fairly Trained Royalty-Free Music for Video
+
+Beatoven.ai generates mood-based background music from text descriptions, purpose-built for video content creators. All training data is licensed from real musicians (Fairly Trained certified) — tracks carry a clean commercial license with verifiable IP provenance.
+
+- URL: beatoven.ai
+- Free tier: limited (evaluation only; no commercial rights)
+- Paid: $7/month Creator (unlimited + commercial license); $20/month Pro (stems, priority generation)
+- **Text-to-music:** "calm acoustic guitar with soft piano for a travel vlog" → track in seconds
+- **Video-to-music:** Upload a video file; AI analyzes the visual content and generates a matching soundtrack automatically
+- **Emotion control:** 16 moods (happy, sad, motivational, scary, relaxing, etc.) + regional sound styles + adjustable tempo
+- Best for: YouTubers, podcasters, course creators, and game devs needing mood-appropriate instrumentals with clean commercial licensing
+- Not ideal for: full songs with vocals (use Suno or MiniMax Music 2.5); stem separation (use Mureka v8 or Stable Audio 3.0)
 
 ## Free Royalty-Free Music (no generation needed)
 
