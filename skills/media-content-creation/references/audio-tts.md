@@ -77,7 +77,7 @@ ElevenLabs Flash is the speed-optimized sibling of Eleven v3, purpose-built for 
 
 ## Inworld Realtime TTS-2 — Closed-Loop Conversational TTS (NEW May 2026)
 
-Inworld Realtime TTS-2 (launched May 5, 2026) is a fundamentally different architecture from TTS-1.5: it takes the actual audio of prior conversation turns as input — not just text — so it understands tone, pacing, and emotional context from everything that was said before. Ranked alongside TTS-1.5 Max at the top of the Artificial Analysis Speech Arena.
+Inworld Realtime TTS-2 (launched May 5, 2026) is a fundamentally different architecture from TTS-1.5: it takes the actual audio of prior conversation turns as input — not just text — so it understands tone, pacing, and emotional context from everything that was said before. Ranked **#3 on the Artificial Analysis Speech Arena** (Elo 1,209, June 2026).
 
 - **URL:** inworld.ai
 - **Free tier:** 40 minutes/month (On-Demand plan)
@@ -119,7 +119,7 @@ Alibaba's Fun-Realtime-TTS took the #1 spot on the Artificial Analysis Speech Ar
 
 ## Gemini 3.1 Flash TTS — Free, 70+ Languages, Style-Controllable (NEW Apr 2026)
 
-Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expressive speech with inline audio tags for style and pacing control — and is currently free in AI Studio during preview. Ranked #2 on the Artificial Analysis TTS Arena (Elo 1,214) as of June 2026 (surpassed by Fun-Realtime-TTS on June 3, 2026).
+Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expressive speech with inline audio tags for style and pacing control — and is currently free in AI Studio during preview. Ranked **#2 on the Artificial Analysis TTS Arena** (Elo 1,214, June 2026) — held #1 through May 2026 until Alibaba's Fun-Realtime-TTS (Elo 1,219) surpassed it on June 3, 2026.
 
 - **URL:** aistudio.google.com | Vertex AI | cloud.google.com/text-to-speech
 - **Free tier:** Yes — free in Google AI Studio (preview; rate limited); also accessible in Google Vids
@@ -129,7 +129,7 @@ Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expres
 - **Multi-speaker:** Up to 2 speakers per generation, each with independent voice and style
 - **Audio tags:** Inline delivery control — `<laugh>`, `<whisper>`, `<excited>`, pacing adjustments — via natural markup in the prompt
 - **Watermarking:** SynthID — imperceptible watermark embedded in all output audio
-- **Elo:** 1,214 on Artificial Analysis TTS Arena — #2 ranked TTS model (June 2026; #1 until June 3 2026 when Fun-Realtime-TTS surpassed it)
+- **Elo:** 1,214 on Artificial Analysis TTS Arena — **#2 ranked TTS model** (June 2026; surpassed by Alibaba Fun-Realtime-TTS at Elo 1,219 on June 3, 2026)
 - **Best for:** Multilingual voiceovers, free developer experimentation, style-directed narration, Google Cloud / Vertex AI workflows
 - **Not ideal for:** Ultra-low-latency real-time voice agents (use Cartesia Sonic 3.5); self-hosted / offline deployment
 
@@ -417,7 +417,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
 | 80+ languages, emotion control | Fish Audio S2 Pro |
-| Best blind-test naturalness (cloud) | Fun-Realtime-TTS (Alibaba, Elo 1,219, #1 June 2026), Gemini 3.1 Flash TTS (Elo 1,214, #2 June 2026), Inworld AI TTS-1.5 Max, or StepAudio 2.5 TTS (Elo ~1,187, #3 May 2026) |
+| Best blind-test naturalness (cloud) | Fun-Realtime-TTS (Alibaba, Elo 1,219, #1 June 2026), Gemini 3.1 Flash TTS (Elo 1,214, #2 June 2026), Inworld Realtime TTS-2 (Elo 1,209, #3 June 2026), Inworld AI TTS-1.5 Max |
 | Voice cloning, no cost, offline | Chatterbox (open-source) |
 | Long-form narration (up to 12 min), zero hallucinations, self-hosted | Hume AI TADA (Apache 2.0, open-source) |
 | Voice cloning, cloud, easiest | ElevenLabs (paid) |
