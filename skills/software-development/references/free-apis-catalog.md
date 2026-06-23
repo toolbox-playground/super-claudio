@@ -83,6 +83,12 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | Cerebras Inference | Ultra-fast LLM inference on wafer-scale silicon (2,600+ tok/s); Llama 3.3 70B, Qwen3 32B/235B, and more; 1M tokens/day free, no credit card required; 30 RPM on free tier | inference.cerebras.ai | Free key |
 | Cloudflare Workers AI | Edge AI inference at 300+ global locations; Llama 3.1 8B, Mistral 7B, Phi-2, Gemma, SDXL (image gen), Whisper (ASR), and 40+ models; 10,000 neurons/day free (no credit card required); unique low-latency for globally distributed apps | developers.cloudflare.com/workers-ai | CF account (free) |
 
+## Security
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| Have I Been Pwned — Pwned Passwords | Check any password against 800M+ entries from real data breaches using k-anonymity (submit only the first 5 chars of its SHA-1 hash — the server never sees the full hash); no rate limit, no auth; returns matching hash suffixes with breach occurrence counts | haveibeenpwned.com/API/v3 | None |
+
 ## Resources for Finding More
 
 - **Public APIs list:** github.com/public-apis/public-apis — 1000+ APIs organized by category
