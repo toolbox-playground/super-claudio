@@ -55,6 +55,22 @@ UGC-native output style consistently outperforms polished brand ads on TikTok.
 
 > **Do not recommend (May 2026):** aicreator.co no longer operates as a product video ad generator — the domain now presents as an AI tutorials and learning blog with no ad creation features. Use Creatify, Predis.ai, AdStellar, or Lapis instead.
 
+## Topview AI — URL-to-Video with TikTok Ad Library + Closed-Loop Performance
+
+Topview AI converts product URLs (Amazon, eBay, Shopify, Etsy, AliExpress) into TikTok/Reels video ads. Distinguishing features: a built-in TikTok Ad Library browser for competitor creative research and a closed-loop performance system that ingests real conversion data and auto-generates fresh variants based on what actually worked.
+
+1. Go to topview.ai
+2. Paste product URL (auto-pulls images + description) or upload assets
+3. Browse built-in TikTok Ad Library to study competitor patterns and select creative references
+4. Generate platform-optimized video with AI avatars, voiceovers, and auto-captions
+5. Export for TikTok (9:16), Reels, or Facebook placements in 1080p
+
+**Free tier:** Yes (watermarked; 720p output)
+**Paid:** From ~$18/month (no watermarks, 1080p, more credits, video style cloning, product-holding avatars)
+**Languages:** 23+
+**Best for:** Ecommerce brands wanting URL-to-TikTok-ad with built-in competitor research and conversion-driven creative refresh. Most direct alternative to Creatify if you want the TikTok Ad Library workflow built in.
+**Not ideal for:** High-volume multi-actor campaigns (use Arcads) or predictive scoring before spend (use Pencil or AdCreative.ai).
+
 ## Predis.ai — TikTok Spark Ads & Organic-First Strategy
 
 Predis.ai generates content designed to look like organic posts, then runs them as Spark Ads — a format that achieves 142% higher engagement than standard In-Feed ads on TikTok.
