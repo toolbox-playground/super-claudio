@@ -180,6 +180,19 @@ Cartesia Sonic 3.5 (upgraded May 2026) is purpose-built for real-time conversati
 - Best for: voice agents, live chatbots, real-time assistants
 - Not ideal for: long-form content where ElevenLabs, Fish Audio, or Chatterbox are better
 
+## OpenAI GPT-Realtime-2 — Voice Reasoning Model, GPT-5-Class Intelligence (May 2026)
+
+OpenAI GPT-Realtime-2 (released May 8, 2026) is a speech-to-speech model — not a dedicated TTS — built for voice agents that need to reason while they speak. It integrates GPT-5-class reasoning directly into the audio loop: handles tool calls, interruptions, and multi-turn logic entirely in voice with a 128,000-token context window (4× larger than GPT-Realtime-1.5). Related models in the same API update: `gpt-realtime-translate` (live streaming translation across 70+ input languages, $0.034/min) and `gpt-realtime-whisper` (streaming STT, $0.017/min).
+
+- **URL:** platform.openai.com/docs/guides/realtime
+- **API model:** `gpt-realtime-2`
+- **Pricing:** $32/1M audio input tokens; $64/1M audio output tokens; cached input at $0.40/1M tokens
+- **Context window:** 128,000 tokens
+- **Latency:** real-time streaming; handles interruptions without losing context
+- **Reasoning:** adjustable effort levels; runs parallel tool calls during conversation; scores 15.2% higher than GPT-Realtime-1.5 on Big Bench Audio
+- **Best for:** Voice agents needing complex decision-making (booking, enterprise support, multi-tool workflows) where GPT-5-class reasoning outweighs cost concerns
+- **Not ideal for:** Pure TTS use cases, budget-sensitive pipelines, or long-form content narration — the $64/1M output rate is very high vs. dedicated TTS ($10–$27/1M characters)
+
 ## Smallest.ai Lightning V3.1 — Conversational TTS, Beats ElevenLabs on MOS
 
 Smallest.ai Lightning V3.1 (launched March 27, 2026) achieves a 3.89 MOS, outperforming ElevenLabs, OpenAI TTS, and Cartesia on conversational naturalness benchmarks. Sub-100ms TTFA. Voice cloning from 3 seconds of audio.
@@ -423,6 +436,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Voice cloning, cloud, easiest | ElevenLabs (paid) |
 | Bulk generation (many files) | edge-tts or Chatterbox (no credit limits) |
 | Real-time voice agent / chatbot | Cartesia Sonic 3.5 (~40ms TTFA), Smallest.ai Lightning V3.1 (<100ms), or Inworld Realtime TTS-2 (<200ms, closed-loop, 100+ langs) |
+| Voice agent needing GPT-5-class reasoning in audio (complex tool calls, multi-turn logic) | OpenAI GPT-Realtime-2 ($32/1M in + $64/1M out; 128K context, parallel tool calls, interruption handling — expensive; not a substitute for pure TTS) |
 | Enterprise production (uptime + pricing transparency) | Deepgram Aura-2 ($200 free credits to start) |
 | Natural-sounding conversational voices, 300+ voice options, free start | Rime TTS (rime.ai, 10K chars/month free, Coda model for sub-100ms) |
 | Ultra-cheap high-volume English TTS, single-vendor STT+TTS | Speechmatics TTS ($0.011/1K chars, ~80ms TTFA) |

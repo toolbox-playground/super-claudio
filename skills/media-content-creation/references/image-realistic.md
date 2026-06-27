@@ -11,7 +11,7 @@
 
 | Tool | Access | Best For | Free |
 |------|--------|----------|
-| **Midjourney v8.1** | midjourney.com | Artistic quality, concept art, portraits; v8.1 (released Apr 30 2026, became default Jun 10 2026) — 5× faster than v7, native 2K resolution, improved text rendering, HD mode now affordable as default | Paid (no free tier) |
+| **Midjourney v8.1** | midjourney.com | Artistic quality, concept art, portraits; v8.1 (released Apr 30 2026, became default Jun 11 2026) — 5× faster than v7, native 2K resolution, improved text rendering, HD mode now affordable as default; V8.2 in preview via `--preview` flag (aesthetic refinements, better Sref/moodboard consistency — not yet GA) | Paid (no free tier) |
 | **Recraft V4** | recraft.ai | Logos, SVG vectors, brand assets, text rendering | Free tier |
 | **Nano Banana 2** (Google / Gemini) | gemini.google.com | Product images, lifestyle scenes, ad creatives — default free model (Gemini 3.1 Flash Image) | Free (Gemini app) |
 | **Nano Banana Pro** (Google / Gemini 3 Pro Image) | gemini.google.com, aistudio.google.com | Complex compositions, highest Google image quality, 4K output — premium variant of Nano Banana | Paid (Google AI Pro/Ultra plans; 3 free gens/day for free users; API: $0.134/image) |
