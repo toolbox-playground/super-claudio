@@ -10,6 +10,7 @@ Sources to search when looking for Claude Code skills and plugins.
 | Claude.ai Plugins (official) | claude.com/plugins | Claude.ai integrations marketplace |
 | **Claude Plugins Official** (Anthropic GitHub) | github.com/anthropics/claude-plugins-official | Anthropic-managed, high-quality plugin directory |
 | **Anthropic Skills** (Anthropic GitHub) | github.com/anthropics/skills | Official public Agent Skills repo (May 2026); includes spec, example skills, and skill-creator; all skills available to Claude.ai paid plans |
+| **Claude Plugins Community** (Anthropic GitHub) | github.com/anthropics/claude-plugins-community | Read-only mirror of Anthropic's community plugin marketplace — third-party plugins that passed automated security scanning; add manually: `claude plugin marketplace add anthropics/claude-plugins-community`; submit plugins at clau.de/plugin-directory-submission |
 
 ## Community Marketplaces
 
