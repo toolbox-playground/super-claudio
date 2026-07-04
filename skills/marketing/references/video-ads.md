@@ -227,6 +227,26 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 
 Access: business.tiktok.com → Creative Center → Symphony AI (now generally available for all TikTok for Business accounts)
 
+## TikTok Agentic Hub — AI Skills Marketplace (June 30, 2026)
+
+TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and third-party AI Skills built on the TikTok Ads MCP Server, letting AI agents execute advertising workflows directly inside TikTok Ads Manager without manual UI work.
+
+**How it works:**
+1. Go to business.tiktok.com → Agentic Hub
+2. Browse and activate Skills from TikTok and third-party partners
+3. Connect an AI agent (Claude, ChatGPT, etc.) via the TikTok Business MCP to run tasks
+4. Brands can also build custom Skills for proprietary workflows
+
+**What Skills can do:**
+- Campaign creation — draft and launch campaigns end-to-end from a natural language brief
+- Creative generation — access Symphony tools (Seedance 2.0 avatars, AI video, voiceovers) programmatically
+- Catalog management — sync product feeds and dynamic creative templates
+- Audience analysis + performance reporting — real-time data with AI-generated optimization recommendations
+
+**Launch partners:** HubSpot (CRM sync), Wix (storefront integration), Constant Contact (audience import), Mobvista (DSP connections)
+
+**Access:** business.tiktok.com → Agentic Hub (generally available to all TikTok for Business accounts)
+
 ## Google Ads Asset Studio — Veo 3 Video Generation Inside Google Ads
 
 Google added Veo 3 directly inside Google Ads Asset Studio (March 2026), letting advertisers generate video ad assets from text or image prompts without leaving the Ads Manager workflow:
