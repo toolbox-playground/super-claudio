@@ -42,7 +42,7 @@ edge-tts --list-voices
 
 ## ElevenLabs v3 — Premium Quality, Voice Cloning
 
-ElevenLabs v3 produces studio-quality speech with emotionally nuanced voices, 29 languages, and voice cloning from 1 minute of audio.
+ElevenLabs v3 produces studio-quality speech with emotionally nuanced voices, 70+ languages (74 officially supported), and voice cloning from 1 minute of audio.
 
 **API usage:**
 ```python
