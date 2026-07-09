@@ -331,6 +331,24 @@ pip install git+https://github.com/QwenLM/Qwen3-TTS
 - **Best for:** Open-source multilingual TTS needing commercial use at zero API cost; CJK + EU-language coverage; self-hosted or on-device deployment
 - **Not ideal for:** Ultra-low-latency real-time agents where Cartesia Sonic 3.5's 40ms TTFA is needed; theatrical emotional delivery (use Hume Octave 2)
 
+## Zyphra ZONOS2 — Open-Source MoE TTS, 43 Languages, Zero-Shot Voice Cloning (June 2026)
+
+Zyphra ZONOS2 (released June 12, 2026) is the first open-source Mixture-of-Experts TTS model — 8B total parameters (900M active per inference pass) trained on 6M+ hours of speech across 43 languages. CD-quality 44.1kHz audio, zero-shot voice cloning from 10–30 seconds of reference audio, and Apache 2.0 license for free commercial use.
+
+- **URL / GitHub:** github.com/Zyphra/ZONOS2 | **HuggingFace:** `Zyphra/ZONOS2`
+- **License:** Apache 2.0 (commercial use permitted)
+- **Architecture:** MoE++ — 8B total params, 900M active during inference
+- **Training data:** 6M+ hours of speech across 43 languages (expanded from 200K hours in ZONOS-v0.1)
+- **Languages:** 43 — Japanese, English, Chinese at Tier 1 (highest quality); broad multilingual coverage
+- **Voice cloning:** Zero-shot from 10–30 second reference audio; preserves timbre, cadence, and accent
+- **Audio quality:** CD-quality 44.1kHz output
+- **Emotion control:** Yes — inline expressive controls
+- **Code-switching:** Yes — switch languages mid-sentence while preserving voice identity
+- **Streaming:** Real-time
+- **Cloud:** Zyphra Cloud (AMD-hosted; free trial available); weights on HuggingFace
+- **Best for:** Open-source multilingual TTS with commercial use at zero API cost; Japanese, English, and Chinese production content requiring high-fidelity voice cloning; projects needing CD-quality output without usage caps
+- **Not ideal for:** Ultra-low-latency real-time agents where Cartesia Sonic 3.5's 40ms TTFA is needed; English-only lightweight deployment (use Kokoro or NeuTTS Air for those)
+
 ## Sesame CSM-1B — Conversational Naturalness, Apache 2.0
 
 Sesame CSM-1B (Conversational Speech Model) stands out for human-like conversational realism: natural pauses, "umms", breath sounds, and subtle intonation shifts that traditional TTS models miss. Trained on 1M+ hours of English audio; uses a Llama-3.2 backbone + 300M audio decoder.
@@ -443,6 +461,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Ultra-cheap high-volume English TTS, single-vendor STT+TTS | Speechmatics TTS ($0.011/1K chars, ~80ms TTFA) |
 | Open-weight multilingual cloud TTS, low cost | Mistral Voxtral TTS ($0.016/1K chars) |
 | Open-source multilingual TTS, 10 languages, self-hosted or commercial | Qwen3-TTS (Apache 2.0, 97ms TTFA, voice cloning + free-form voice design, github.com/QwenLM/Qwen3-TTS) |
+| Open-source multilingual TTS, 43 languages, CD-quality, voice cloning | Zyphra ZONOS2 (Apache 2.0, first open-source MoE TTS, 8B/900M active, Zyphra Cloud free trial, github.com/Zyphra/ZONOS2) |
 | On-device, zero API cost, privacy-first | NeuTTS Air (Apache 2.0, CPU-capable) |
 | Ultra-fast batch TTS, drop-in OpenAI TTS replacement | Kokoro TTS (Apache 2.0, 82M params, 96× real-time, fixed voices) |
 | Human-like conversational naturalness (pauses, ums, breaths) | Sesame CSM-1B (Apache 2.0, English only, CUDA required) |
