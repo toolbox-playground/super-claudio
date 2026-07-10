@@ -227,6 +227,27 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 
 Access: business.tiktok.com → Creative Center → Symphony AI (now generally available for all TikTok for Business accounts)
 
+## TikTok Symphony Agent — Agentic Campaign Creation (Cannes Lions, June 22, 2026)
+
+Symphony Agent is TikTok's end-to-end agentic workflow for building full campaigns from a single text prompt. Unlike the Symphony creative tools (which generate individual assets), Symphony Agent orchestrates the full creative pipeline: reads performance signals, writes briefs, matches creators, and coordinates across three TikTok surfaces simultaneously.
+
+**Integrated into three TikTok products:**
+1. **Symphony Creative Studio** — AI chat experience that combines brand goals, TikTok platform insights, and performance signals to generate up to 3 videos per request (~3 min for 12s clip; ~5 min for 20s clip); guided workflow: product brief → insight report → storyboard → final video; powered by Seedance 2.0
+2. **Content Suite** — AI Search that scans thousands of creator videos to surface content aligned with the advertiser's brief, enabling brands to repurpose existing creator content at scale
+3. **TikTok One** — Creator brief generation, discovery, and outreach at scale; supports multi-language filtering for multi-market campaigns
+
+**Built-in safeguards:** AI labels, invisible watermarks, and content moderation filters embedded in all output.
+
+**How to access:**
+1. Go to ads.tiktok.com → Symphony Creative Studio or Content Suite
+2. Input your brief in natural language (product, goal, target audience)
+3. Symphony Agent guides you through the workflow and delivers finished assets
+4. Assets deploy directly to Smart+ campaigns
+
+**Access:** ads.tiktok.com → Symphony; available to TikTok for Business accounts (rolling out globally post-Cannes)
+**Best for:** Brands that want a fully guided TikTok campaign workflow — from brief to published ad — without switching between Creator Marketplace, Symphony Studio, and Ads Manager separately.
+**Not ideal for:** One-off single-asset creation (use Symphony Creative Studio directly); high-volume UGC avatar campaigns (use Arcads or Creatify for those).
+
 ## TikTok Agentic Hub — AI Skills Marketplace (June 30, 2026)
 
 TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and third-party AI Skills built on the TikTok Ads MCP Server, letting AI agents execute advertising workflows directly inside TikTok Ads Manager without manual UI work.
