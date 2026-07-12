@@ -295,7 +295,7 @@ torchaudio.save("output.wav", wav, model.sr)
 
 **Models:**
 - `chatterbox-tts` — English, emotion control, voice cloning
-- `chatterbox-tts[multilingual]` — 23+ languages
+- `chatterbox-tts[multilingual]` — **v3 (June 10, 2026):** 25 languages (21 + 4 dialects); PerTh watermark embedded by default in all output; improved speaker similarity, lower hallucination rate, cross-lingual voice identity preservation (timbre, accent, rhythm held across every language); zero-shot voice cloning across all 25 languages from a single reference clip
 - `chatterbox-turbo` — 350M params; up to 6× faster than real-time on GPU; sub-200ms latency; paralinguistic prompting tags (`[laugh]`, `[cough]`, `[chuckle]`) for natural-sounding output; MIT license
 
 **Homepage:** resemble.ai/chatterbox | **PyPI:** `pip install chatterbox-tts`
