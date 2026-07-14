@@ -202,6 +202,48 @@ Synter (syntermedia.ai) emerged in 2026 as the first MCP-native ad platform: Cla
 
 **Best for:** Agencies and performance marketers running campaigns across 3+ platforms simultaneously who want to eliminate the copy-paste-upload loop. Not a substitute for creative-specific tools (Creatify, Arcads) for pure video UGC production.
 
+## Shhots AI — Budget-Friendly UGC Ads for Ecommerce ($19/mo)
+
+Shhots AI is an ecommerce-focused platform for generating product videos, AI UGC ads, and product images from existing product photos — purpose-built for TikTok, Reels, and Shopify. Among the lowest entry prices for AI ad generators with commercial usage rights included on all plans.
+
+1. Go to shhots.ai
+2. Upload product images → AI generates creator-style UGC video with script + voiceover
+3. Select format: 9:16 (TikTok/Reels), 1:1 (feed), or landscape (YouTube)
+4. Download — commercial license included on all plans
+
+**Free tier:** 500 credits one-time ($5 Mini Plan; credits never expire)
+**Pricing:** Starter $19/month, Pro $49/month, Scale $99/month; ~$1/ad on Starter
+**Best for:** Solo operators and small ecommerce brands wanting low-cost UGC ads with avatars and captions without hiring influencers.
+**Not ideal for:** High-volume multi-actor campaigns at scale (use Arcads) or URL-to-video with built-in competitor research (use Topview AI).
+
+## Jogg AI — URL-to-Video with 450+ Avatars ($15/mo Entry)
+
+Jogg AI generates UGC-style video ads from a product URL — 450+ stock AI avatars, multilingual voiceovers in 200+ languages, and batch mode for up to 100 video variations in minutes. 95,000+ creators and brands.
+
+1. Go to jogg.ai
+2. Paste product page URL — AI auto-extracts images + description
+3. Select avatar (filter by age, gender, ethnicity, style) and review/edit script
+4. Generate; batch mode produces up to 100 variants simultaneously
+
+**Free tier:** 3 credits (3 watermarked videos, 1 min max each)
+**Pricing:** From $15/month entry; up to $89/month for volume
+**Best for:** Teams needing multilingual UGC ads at the lowest entry price with a broad avatar library.
+**Not ideal for:** Product-in-hand realism (use MakeUGC) or campaigns requiring performance scoring before spend (use Pencil or AdCreative.ai).
+
+## MakeUGC — AI Actors Holding Your Product On-Screen
+
+MakeUGC generates talking-head UGC-style ads where AI actors appear to physically hold your product — the platform's defining feature. Designed for brands that want authentic product-in-hand content without filming.
+
+1. Go to makeugc.ai
+2. Upload product images
+3. Select AI actor from the library
+4. Generate product-in-hand video with B-roll, auto-captions, and AI-written script
+
+**Free tier:** None
+**Pricing:** $49/month Startup (5 videos), $69/month Growth (10 videos), $119/month Pro (20 videos)
+**Best for:** Beauty, supplement, and consumer-goods brands where product-in-hand authenticity is the creative priority.
+**Not ideal for:** High-volume multi-language campaigns (use Jogg AI or Arcads for those).
+
 ## TikTok Symphony & Ad Formats — TikTok World 2026 (May 13, 2026)
 
 TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by Dreamina Seedance 2.0:
