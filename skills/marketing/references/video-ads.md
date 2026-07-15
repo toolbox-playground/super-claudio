@@ -202,6 +202,7 @@ Synter (syntermedia.ai) emerged in 2026 as the first MCP-native ad platform: Cla
 
 **Best for:** Agencies and performance marketers running campaigns across 3+ platforms simultaneously who want to eliminate the copy-paste-upload loop. Not a substitute for creative-specific tools (Creatify, Arcads) for pure video UGC production.
 
+
 ## Shhots AI — Budget-Friendly UGC Ads for Ecommerce ($19/mo)
 
 Shhots AI is an ecommerce-focused platform for generating product videos, AI UGC ads, and product images from existing product photos — purpose-built for TikTok, Reels, and Shopify. Among the lowest entry prices for AI ad generators with commercial usage rights included on all plans.
@@ -215,6 +216,21 @@ Shhots AI is an ecommerce-focused platform for generating product videos, AI UGC
 **Pricing:** Starter $19/month, Pro $49/month, Scale $99/month; ~$1/ad on Starter
 **Best for:** Solo operators and small ecommerce brands wanting low-cost UGC ads with avatars and captions without hiring influencers.
 **Not ideal for:** High-volume multi-actor campaigns at scale (use Arcads) or URL-to-video with built-in competitor research (use Topview AI).
+
+## AdsTurbo — Ad Clone + 1,000+ AI Actors (Mar 2026)
+
+AdsTurbo (adsturbo.ai, launched March 20, 2026) specializes in high-volume UGC-style video ads with AI actors that mimic real human expressions, gestures, and delivery. Distinguishing features: **Ad Clone** (clone a competitor ad's structure and recreate it with your own brand, avatar, and offer) and batch generation of 10–15 variants simultaneously.
+
+1. Go to adsturbo.ai
+2. Paste a product URL — AI auto-pulls images + description
+3. Select an AI actor from 1,000+ options (trained from real creators)
+4. Optionally use Ad Clone to base the video on a winning competitor format
+5. Batch-generate 10–15 hook/CTA/avatar/language variants in one session
+
+**Free tier:** 300 credits/month (watermarked output)
+**Paid:** Creator $31/month (annual) — 1,200 credits; Growth $99/month — 3,300 credits, 120s max video, 4K exports, bulk processing, early access to Video Agent. Credits: 8 credits/second of output (15s ad = 120 credits)
+**Best for:** Performance marketers who want to quickly clone + remix winning competitor ad structures; teams needing large A/B test batches with different hooks, CTAs, avatars, and languages without re-uploading assets.
+**Not ideal for:** Highest-volume multi-actor campaigns at scale (use Arcads); URL-to-video with TikTok Ad Library research built in (use Topview AI); predictive scoring before spend (use Pencil or AdCreative.ai).
 
 ## Jogg AI — URL-to-Video with 450+ Avatars ($15/mo Entry)
 
