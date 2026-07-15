@@ -43,6 +43,12 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | ip-api.com | IP to location | ip-api.com | None (rate limited) |
 | REST Countries | Country data | restcountries.com | None |
 
+## Transportation & Aviation
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| OpenSky Network | Real-time ADS-B aircraft positions, callsigns, altitude, velocity, heading — community sensor network; REST API + WebSocket; free for research/personal use; historical data for registered users; uneven coverage outside Europe/North America; non-commercial license | opensky-network.org | None (basic); free account for historical data + higher rate limits |
+
 ## Books & Literature
 
 | API | What | URL | Auth |
