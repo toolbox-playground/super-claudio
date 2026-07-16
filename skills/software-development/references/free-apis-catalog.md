@@ -55,6 +55,12 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 |-----|------|-----|------|
 | Open Library | Books, authors, covers — millions of titles from the Internet Archive | openlibrary.org/api | None |
 
+## Food & Nutrition
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| Open Food Facts | Barcode lookup for 3M+ food products worldwide — returns ingredients, nutrition facts, Nutri-Score, and NOVA group; covers EAN/UPC barcodes; full-text and faceted search; no rate limits; data under Open Database License | world.openfoodfacts.org / API: world.openfoodfacts.net/api/v2/product/{barcode} | None |
+
 ## Images & Media
 
 | API | What | URL | Auth |
