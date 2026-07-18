@@ -134,6 +134,21 @@ AdStellar combines ad creative generation, campaign launch, and performance opti
 
 Best for: performance marketers and agencies who want creative generation, campaign building, and optimization in one place.
 
+## ElevenLabs Ads Engine — Global Ad Localization Across 50+ Languages (Jun 2026)
+
+ElevenLabs Ads Engine (launched June 22, 2026) localizes existing ad creatives across 50+ languages — adapting text, images, and video (dubbing) in one workflow and pushing the localized versions directly back to Google Ads and Meta. It does not generate ads from scratch; it scales proven creatives globally with near-zero production cost per new market.
+
+1. Go to elevenlabs.io → ElevenCreative → Ads Engine
+2. Upload or connect your existing ad creative (text, image, or video)
+3. Select target languages (50+ supported)
+4. Ads Engine translates text, adapts image copy, and dubs video while preserving tone and delivery (powered by Dubbing v2)
+5. Export or push directly to Google Ads (Search, text) or Meta Ads (text, image, video) — no manual re-upload
+
+**Free tier:** ElevenLabs Creator plan and above ($11/month); credits apply
+**Supported integrations at launch:** Google Ads, Meta Ads
+**Best for:** Brands with proven creative that want to expand to new markets at minimal production cost; multilingual campaigns without re-filming or re-voicing.
+**Not ideal for:** Generating new creatives from scratch (use Creatify, Arcads, or AdStellar for that); ad platforms beyond Google and Meta (Ads Engine is Google + Meta only at launch).
+
 ## HeyGen — AI Avatar Video, 175+ Languages (Avatar V, April 2026)
 
 HeyGen is the leading AI avatar video platform for brand content and UGC-style talking-head ads — ranked #1 for avatar realism in blind scroll tests on TikTok (2026). Avatar V (launched April 8, 2026) is the most photorealistic AI avatar released to date.
@@ -176,6 +191,20 @@ Pose Video Studio (pose.ai) generates UGC-style video ads where every variant fe
 **Pricing:** From $9/month (billed yearly)
 **Best for:** Brands and solo creators who want a recognizable, consistent face across every creative variant without filming — stronger brand recall than generic AI avatars.
 **Not ideal for:** High-volume multi-actor campaigns needing different personas per audience segment (use Arcads for that).
+
+## ElevenLabs Avatars — Script-to-Video Inside Your Voice Workflow (Jun 2026)
+
+ElevenLabs Avatars (launched June 13, 2026 in ElevenCreative) ties ElevenLabs' voice models directly to a lip-syncing video pipeline — upload reference photos, build a persistent avatar, then generate a talking-head video from a script and voice in one step. The Avatar Flows node plugs avatar generation into fully automated pipelines (brief → script → voiceover → video → batch across languages and hooks without re-uploading assets).
+
+1. Go to elevenlabs.io → ElevenCreative → Avatars
+2. Upload 3–5 reference photos → ElevenLabs builds a persistent visual identity (avatar)
+3. Write a script; choose a voice from the ElevenLabs library or your own cloned voice
+4. Generate a lip-synced talking-head video
+5. (Optional) Use the Avatar node in Flows to batch across products, languages, or hook variants automatically
+
+**Free tier:** Creator plan ($11/month) and above
+**Best for:** ElevenLabs users who already use the platform for voice and want to add avatar video to the same workflow; script-heavy campaigns where consistent voice + face identity matters; multilingual batching via Flows.
+**Not ideal for:** Campaigns needing a large diverse library of distinct actor types per audience segment (use Arcads — 1,000+ actors); product-in-hand realism (use MakeUGC); ultra-high-volume generation at the lowest cost-per-video.
 
 ## Hyper AI — Cross-Platform Campaign Automation
 
