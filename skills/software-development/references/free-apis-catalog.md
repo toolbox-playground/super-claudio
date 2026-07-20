@@ -71,6 +71,12 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | Unsplash | Millions of free high-quality stock photos | api.unsplash.com | Free key |
 | Picsum Photos | Random placeholder images by size | picsum.photos | None |
 
+## Domains
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| **GoDaddy Developer Platform** | Domain search, availability checking, pricing, purchase, DNS configuration, and domain management APIs; OAuth-based authentication; agent-safe execution controls; CLI included; LLM-optimized docs; launched July 15, 2026 | developer.godaddy.com | Free account (OAuth) |
+
 ## Communication
 
 | API | What | URL | Auth |
