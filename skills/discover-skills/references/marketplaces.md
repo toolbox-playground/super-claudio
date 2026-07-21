@@ -7,7 +7,7 @@ Sources to search when looking for Claude Code skills and plugins.
 | Source | URL | Notes |
 |--------|-----|-------|
 | Claude Code Plugins (official) | code.claude.com/docs/en/discover-plugins | Official Claude Code plugin directory |
-| Claude.ai Plugins (official) | claude.com/plugins | Claude.ai integrations marketplace |
+| Claude.ai Plugins + Skills + Connectors (official) | claude.ai/customize | Unified browse surface (launched March 31, 2026) — skills, connectors, and plugins in one place with typed filters and one-click install; Team/Enterprise admins can pin skills workspace-wide |
 | **Claude Plugins Official** (Anthropic GitHub) | github.com/anthropics/claude-plugins-official | Anthropic-managed, high-quality plugin directory |
 | **Anthropic Skills** (Anthropic GitHub) | github.com/anthropics/skills | Official public Agent Skills repo (May 2026); includes spec, example skills, and skill-creator; all skills available to Claude.ai paid plans |
 | **Claude Plugins Community** (Anthropic GitHub) | github.com/anthropics/claude-plugins-community | Read-only mirror of Anthropic's community plugin marketplace — third-party plugins that passed automated security scanning; add manually: `claude plugin marketplace add anthropics/claude-plugins-community`; submit plugins at clau.de/plugin-directory-submission |
@@ -16,7 +16,7 @@ Sources to search when looking for Claude Code skills and plugins.
 
 | Source | URL | Notes |
 |--------|-----|-------|
-| **Claude Marketplaces** | claudemarketplaces.com | Largest community-curated skills and plugins |
+| **Claude Marketplaces** | claudemarketplaces.com | 23,400+ skills, 2,500+ aggregated marketplaces, 770+ MCP servers; includes a "Skills Updater" tool to scan local installs and fetch upstream updates |
 | **There Is A Skill For That** | theresaskillforthat.com | Community directory of Claude skills by use case |
 | **AI Templates** | aitmpl.com/plugins | Plugin and skill templates |
 | **Awesome Claude** | awesomeclaude.ai/code-cheatsheet | Curated Claude Code resources and cheatsheets |
@@ -26,6 +26,8 @@ Sources to search when looking for Claude Code skills and plugins.
 | **Claude Directory** | claudedirectory.org | 60+ plugins from Anthropic, partners, and community; semantic search; each plugin installs with one command and integrates automatically; covers frontend, backend, DevOps, security workflows; updated weekly (June 2026) |
 | **ClaudePluginHub** | claudepluginhub.com | Plugin directory ranked by install velocity; semantic AI search across all plugins and components; cherry-pick individual commands, agents, and skills from any plugin and bundle into a single installable package; browse by marketplace category |
 | **Skills.sh** (Vercel Labs) | skills.sh | npm-style CLI package manager for agent skills — `npx skills add <repo>`, `npx skills find`; Vercel-backed; launched January 2026; community-driven with versioning and updates; GitHub: vercel-labs/skills; compatible with Claude Code, Cursor, Codex, and 40+ agents |
+| **AgentSkills.to** | agentskills.to | Standalone marketplace built on the agentskills.io open standard; skills are cross-agent portable (Claude Code, Cursor, Copilot, Codex, Gemini CLI, 30+ agents); growing community alongside netresearch/claude-code-marketplace |
+| **Mastering Claude Skills** | mastering-claude.com/skills | 504+ curated and tested skills; browsable without GitHub; human-reviewed for quality |
 | **Agensi** | agensi.io | Security-scanned marketplace — every skill passes an 8-point checklist (prompt injection, data exfiltration, secret detection, dangerous commands, obfuscation, external fetches) before listing; creator payments (80% revenue share); paid and free skills |
 | **SkillsMP** | skillsmp.com | 2.2M+ agent skills indexed from GitHub (2,213,455+ as of July 2026; public API available); compatible with Claude Code, Codex CLI, ChatGPT, and other agents |
 | **Tons of Skills** | tonsofskills.com | 463 plugins, 3,070 skills, 200 agents for Claude Code; `ccpi` CLI package manager; catalog updated daily from GitHub; most comprehensive single-site collection (July 2026) |
