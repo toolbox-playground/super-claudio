@@ -51,6 +51,8 @@ Paste a product URL and get a complete 15-30 second TikTok/Instagram ad in minut
 
 UGC-native output style consistently outperforms polished brand ads on TikTok.
 
+**2026 updates:** 1,500+ AI avatars (up from previous library), 75+ languages, 140+ voices with voice cloning; analytics integration — the AI learns from real ad performance data and auto-adjusts future scripts and visuals. G2 Summer 2026 Leader with 1,500+ reviews at 4.8/5. Pricing: Free ($0, 10 credits), Starter ($39/mo), Pro ($99/mo, includes competitor tracker + ad launcher + custom avatars).
+
 ## aicreator.co — Automated Ad Video (Defunct as Ad Tool)
 
 > **Do not recommend (May 2026):** aicreator.co no longer operates as a product video ad generator — the domain now presents as an AI tutorials and learning blog with no ad creation features. Use Creatify, Predis.ai, AdStellar, or Lapis instead.
@@ -129,6 +131,8 @@ AdStellar combines ad creative generation, campaign launch, and performance opti
 3. Generate image ads, video ads, or UGC-style avatar content
 4. Launch directly as a Meta campaign with AI-optimized audiences and copy
 5. Winners Hub surfaces best-performing creatives automatically by ROAS, CPA, and CTR
+
+**AdStellar Agent (May 2026):** In-app AI media buyer — chat to analyze performance, write copy, generate creative, and launch/manage Meta campaigns in one conversation; confirm/cancel cards appear before any spend is committed. Also added: **multi-actor UGC** (up to 3 simultaneous AI actors per prompt, generating 3 separate videos); standalone video editor with blank canvas mode; bulk budget edits across campaigns.
 
 **Pricing:** $49/month (Hobby), $129/month (Pro), $499/month (Ultra); 7-day free trial, no credit card required.
 
