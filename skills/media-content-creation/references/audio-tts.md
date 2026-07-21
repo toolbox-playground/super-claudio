@@ -62,6 +62,10 @@ with open("output.mp3", "wb") as f:
 **Best for:** High-quality voiceovers for ads or professional content
 **Voice cloning:** Paid feature; clone any voice from a sample
 
+## ElevenLabs — Deprecated Models (July 9, 2026)
+
+`eleven_monolingual_v1`, `eleven_multilingual_v1`, and `scribe_v1` were removed on July 9, 2026. Migrate to `eleven_multilingual_v2` or `eleven_v3` for TTS; `scribe_v2` or `scribe_v2_realtime` for STT.
+
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
 
 ElevenLabs Flash is the speed-optimized sibling of Eleven v3, purpose-built for real-time conversational agents where latency matters more than expressiveness. Generates speech in ~75ms TTFA. Recommended by ElevenLabs over the older Turbo models for all low-latency use cases.
