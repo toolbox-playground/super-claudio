@@ -12,7 +12,7 @@
 | Tool | Access | Best For | Free |
 |------|--------|----------|
 | **Midjourney v8.1** | midjourney.com | Artistic quality, concept art, portraits; v8.1 (released Apr 30 2026, became default Jun 11 2026) — 5× faster than v7, native 2K resolution, improved text rendering, HD mode now affordable as default; V8.2 in preview via `--preview` flag (aesthetic refinements, better Sref/moodboard consistency, Big Batch Draft Mode with `--sref random` for 24× faster style exploration — GA release imminent as of July 2026) | Paid (no free tier) |
-| **Recraft V4** | recraft.ai | Logos, SVG vectors, brand assets, text rendering | Free tier |
+| **Recraft V4.1** | recraft.ai | Logos, SVG vectors, brand assets, text rendering; V4.1 (Jun 2026): sharper photorealism, improved SVG vector accuracy, better text rendering and style consistency | Free tier |
 | **Nano Banana 2** (Google / Gemini) | gemini.google.com | Product images, lifestyle scenes, ad creatives — default free model (Gemini 3.1 Flash Image) | Free (Gemini app) |
 | **Nano Banana 2 Lite** (Google / Gemini) | gemini.google.com, aistudio.google.com | Fastest & cheapest Google image model; 2.7× faster than Nano Banana 2 (~4 s); 1K resolution cap; **#5 on Artificial Analysis Image Arena (Elo 1261, July 2026)** — highest-ranked free model per dollar; released June 30, 2026 | Free (Google AI Studio); API: $0.034/image (batch: $0.017) |
 | **Nano Banana Pro** (Google / Gemini 3 Pro Image) | gemini.google.com, aistudio.google.com | Complex compositions, highest Google image quality, 4K output — premium variant of Nano Banana | Paid (Google AI Pro/Ultra plans; 3 free gens/day for free users; API: $0.134/image) |
@@ -50,9 +50,9 @@ Google's Nano Banana 2 (Gemini 3.1 Flash Image) is available free in the Gemini 
 3. Generate several variants and pick the best
 4. Use result directly or pass to Weavy AI / Kling for animation (see motion.md)
 
-## Recraft V4 — Logos, Vectors & Brand Assets
+## Recraft V4.1 — Logos, Vectors & Brand Assets
 
-Recraft V4 tops the HuggingFace Text-to-Image Arena leaderboard (2026). Use it when you need:
+Recraft V4.1 (released June 2026; upgrade from V4 released Feb 2026) tops the HuggingFace Text-to-Image Arena leaderboard (2026). V4.1 improvements: sharper photorealism, more accurate SVG vector output, improved text rendering and style consistency. Use it when you need:
 - **Logos and icons** — generates editable SVG files (unique among AI image tools)
 - **Typography and signage** — reliably renders legible text in designs
 - **Brand-consistent visuals** — built-in brand styling with color/style locks
