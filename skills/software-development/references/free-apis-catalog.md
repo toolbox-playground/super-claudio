@@ -8,6 +8,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 |-----|------|-----|------|
 | OpenWeather | Current weather, 5-day forecast, air pollution; 1,000 calls/day free | openweathermap.org | Free key |
 | Open-Meteo | Hourly/daily weather forecasts, historical data, **Air Quality API** (PM2.5, PM10, ozone, NO2, UV index, pollen, dust — same no-key, no-rate-limit model), no limits on free tier | open-meteo.com | None |
+| **Weather.gov (NWS)** | US National Weather Service data — current conditions, forecasts, hourly data, alerts; GeoJSON API; ~5,000 req/hour free; no key required | api.weather.gov | None |
 
 ## Space & Astronomy
 
@@ -77,11 +78,14 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 |-----|------|-----|------|
 | **GoDaddy Developer Platform** | Domain search, availability checking, pricing, purchase, DNS configuration, and domain management APIs; OAuth-based authentication; agent-safe execution controls; CLI included; LLM-optimized docs; launched July 15, 2026 | developer.godaddy.com | Free account (OAuth) |
 
-## Communication
+## Communication & Social
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
 | Discord API | Build bots, manage servers, send/read messages, listen to real-time events via WebSocket gateway; no limits on bot creation; well-documented | discord.com/developers | Bot token (free) |
+| **Bluesky API (AT Protocol)** | Read/write posts, timelines, user data, follows; permissive free rate limits; growing developer community after X went paid | atproto.com | Free account |
+| **Threads API (Meta)** | Post, read replies, manage media; free developer access; rate limits generous for indie devs | developers.facebook.com/docs/threads | Free account |
+| **X (Twitter) API** | **⚠️ No longer free (Feb 6, 2026)** — reading a tweet costs $0.005, posting $0.015; full-archive search from $42K/month enterprise. Use Bluesky/Threads instead for social data at no cost. | developer.x.com | Paid only |
 
 ## Developer Utilities
 
@@ -99,7 +103,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 |-----|------|-----|------|
 | Google Gemini API | LLM inference (Gemini 3.5 Flash free in AI Studio — new default since May 19, 2026; daily Gemini 3.1 Pro allotment for harder reasoning), 1M token context, multimodal | ai.google.dev | Free key (generous limits) |
 | Groq | Ultra-fast LLM inference (LPU hardware); Llama 4 Scout, Llama 4 Maverick, Kimi K2 (1T MoE), Qwen3 235B, Gemma, Mistral, DeepSeek R1 and more; no credit card required | groq.com | Free key |
-| OpenRouter | Access to 100+ free AI models (Claude, GPT, Llama, Gemini) via one API | openrouter.ai | Free key |
+| OpenRouter | Access to 100+ free AI models via one API; notable free models (July 2026): **NVIDIA Nemotron 3 Ultra** (550B MoE, 1M context, `nvidia/nemotron-3-ultra-550b-a55b:free`) and **OpenAI GPT-OSS** (20B Apache 2.0 open-weight, `openai/gpt-oss-20b:free`); 25+ free models total; 50 req/day free, 1,000/day after $10 purchase | openrouter.ai | Free key |
 | GitHub Models | 40+ AI models (GPT-4o, Llama, DeepSeek-R1, Mistral, Phi, xAI, Cohere) via OpenAI-compatible API; uses your GitHub account — no separate key or signup; free tier rate-limited (e.g. GPT-4o: 10 RPM / 50 RPD); opt-in paid tier for higher limits | github.com/features/models | GitHub account (free) |
 | Cerebras Inference | Ultra-fast LLM inference on wafer-scale silicon (2,600+ tok/s); Llama 3.3 70B, Qwen3 32B/235B, and more; 1M tokens/day free, no credit card required; 30 RPM on free tier | inference.cerebras.ai | Free key |
 | Cloudflare Workers AI | Edge AI inference at 300+ global locations; Llama 3.1 8B, Mistral 7B, Phi-2, Gemma, SDXL (image gen), Whisper (ASR), and 40+ models; 10,000 neurons/day free (no credit card required); unique low-latency for globally distributed apps | developers.cloudflare.com/workers-ai | CF account (free) |
