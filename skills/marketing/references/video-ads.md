@@ -359,16 +359,47 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 **Access:** business.tiktok.com → Agentic Hub (generally available to all TikTok for Business accounts)
 
-## Google Ads Asset Studio — Veo 3 Video Generation Inside Google Ads
+## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
-Google added Veo 3 directly inside Google Ads Asset Studio (March 2026), letting advertisers generate video ad assets from text or image prompts without leaving the Ads Manager workflow:
+Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
 
 1. Open Google Ads → Asset Studio
-2. Select "Generate video" → enter a text prompt or upload a reference image
-3. Veo 3 generates a production-ready video clip for use in Performance Max or Video campaigns
-4. No external tool required — assets go directly into your campaign asset library
+2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image
+3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images
+4. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
+5. Assets go directly into your campaign library — no external tool or re-upload required
 
-Best for: Google Ads-first teams who want AI video without a third-party subscription; especially powerful in Performance Max campaigns where Google's system picks the best asset combinations automatically.
+Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
+
+## Amazon Ads Creative Agent — Agentic AI for Amazon Campaigns (Feb 2026)
+
+Amazon Ads launched Creative Agent on February 24, 2026, inside Amazon's Creative Studio. The tool creates video and display ads for Amazon's media network (Prime Video, Twitch, Amazon.com) at no additional cost — you pay only normal campaign spend.
+
+1. Go to advertising.amazon.com → Creative Studio → Creative Agent
+2. Use the chat interface to describe your product and campaign goal
+3. Creative Agent pulls product data, brand store content, and Amazon shopping signals to brainstorm and storyboard ad concepts
+4. Review the storyboard → generate final video or display ad creative
+5. Publish directly to your Amazon campaign (Prime Video, Twitch, display placements)
+
+**Pricing:** No additional cost to advertisers (included with Amazon Ads account)
+**Access:** UK launch February 2026; rolling out to additional markets
+**Best for:** Brands selling on Amazon who want AI-generated ad creative (video + display) with Amazon's own retail and shopping signal data baked in — no other platform has access to Amazon's purchase intent signals.
+**Not ideal for:** Non-Amazon campaigns (output is formatted for Amazon media only); use Creatify or AdStellar for TikTok/Meta/Google campaigns.
+
+## LinkedIn Campaign Manager AI Tools — Brand Kit, Draft with AI & Variants (Jul 2026)
+
+LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026, designed to help B2B advertisers produce more creative variants with less manual work:
+
+1. Go to business.linkedin.com → Campaign Manager → Create Ad
+2. Use **Draft with AI**: paste your landing page URL + campaign objective → AI generates a first ad draft ready for editing
+3. Use **Brand Kit**: upload your color palette, typography, and tone-of-voice guidelines → AI generates all future creatives within those brand parameters (auto-assembled from your Company Page content)
+4. Use **AI Ad Variants**: generate multiple hook/copy/visual variants of the same ad in one step for A/B testing
+5. Use **Ads Personalization**: auto-adapt creatives to specific audience segments (function, seniority, industry)
+6. Use **Flexible Ad Creation**: mix formats (single image, carousel, video) within one campaign in the new ad builder
+
+**Performance signal:** LinkedIn internal data shows 20%+ higher CTR for campaigns running 5+ ad variants vs. single-ad campaigns.
+**Best for:** B2B brands running LinkedIn campaigns who want faster variant generation and consistent brand voice without manual design work per variant.
+**Not ideal for:** Consumer / DTC advertising (LinkedIn CPMs are high; use TikTok Symphony or Meta Advantage+ for lower-funnel consumer campaigns).
 
 ## Higgsfield — Cinema Studio Platform
 
