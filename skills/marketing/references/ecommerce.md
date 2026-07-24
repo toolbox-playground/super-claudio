@@ -41,3 +41,8 @@ Running paid ads? Create at least 5 different creative variations to test:
 - Same product, different contexts
 
 Use Creatify.ai or the video-ads workflow to generate variations quickly. (Note: aicreator.co is defunct as of May 2026 — do not use.)
+
+## TikTok Shop Compliance Changes (July 2026)
+
+- **Account Health Rating (AHR):** TikTok Shop replaced the old Violation Points system with a 0–1,000 compliance score on a 180-day rolling window (previously 90-day reset). Falling below milestone thresholds (150 / 100 / 50 / 0 points) progressively cuts off new listings, ad campaign eligibility, and Shop Tab / livestream visibility — so seller compliance now directly gates distribution, not just account standing. Check your AHR before scaling ad spend on a listing.
+- **AI voices banned in shopping livestreams:** As of mid-July 2026, TikTok prohibits AI-generated voices, pre-recorded narration, radio-style audio tracks, and looping/screen-recorded footage specifically in **live shopping streams** (enforced via AHR). This does not affect pre-recorded product videos, Reels, or feed posts — the AI voiceover workflow above is still fine for those; it only applies if you go live.
