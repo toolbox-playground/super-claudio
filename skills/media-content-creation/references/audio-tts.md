@@ -255,13 +255,15 @@ Rime (rime.ai) grounds its TTS in sociolinguistics — training on how real peop
 
 ## Qwen-Audio-3.0-TTS-Plus (Alibaba) — #1 Artificial Analysis TTS Arena (Elo 1,236, Mid-July 2026)
 
-Alibaba's Qwen-Audio-3.0-TTS-Plus (distinct from the open-source Qwen3-TTS listed below) is the **new #1 on the Artificial Analysis Speech Arena Leaderboard** as of mid-July 2026, narrowly surpassing Speechify SIMBA 3.2 — overlapping confidence intervals make the margin close. Delivers increased naturalness and contextually appropriate intonation; available as a proprietary cloud-hosted model via Alibaba Cloud Model Studio (DashScope). Continues Alibaba's momentum across model categories following HappyHorse and Fun-Realtime-TTS.
+Alibaba's Qwen-Audio-3.0-TTS-Plus (distinct from the open-source Qwen3-TTS listed below) is the **new #1 on the Artificial Analysis Speech Arena Leaderboard** as of mid-July 2026, narrowly surpassing Speechify SIMBA 3.2 — overlapping confidence intervals make the margin close. Delivers increased naturalness and contextually appropriate intonation; available as a proprietary cloud-hosted model via Alibaba Cloud Model Studio (DashScope). Continues Alibaba's momentum across model categories following HappyHorse and Fun-Realtime-TTS. **Officially launched July 20, 2026** as a two-tier family: **Plus** (quality-optimized, the #1-ranked model described here) and **Flash** (real-time, ~300ms first-packet latency, lower quality ceiling — pick this tier for latency-sensitive use instead of Plus).
 
 - **URL:** alibabacloud.com (Model Studio / DashScope)
 - **Elo:** 1,236 — **#1 globally (Artificial Analysis Speech Arena, mid-July 2026)**; narrowly above SIMBA 3.2 (1,234) with overlapping confidence intervals
 - **Free tier:** Alibaba Cloud trial credits on new accounts; no permanent free tier
-- **Generation speed:** ~16 chars/sec — significantly slower than Sonic 3.5 (~120 chars/sec) and SIMBA 3.2 (~30 chars/sec); note for throughput-sensitive pipelines
-- **Best for:** Applications prioritizing top benchmark quality; developers already in the Alibaba Cloud / DashScope ecosystem
+- **Pricing:** $27.59/1M characters (Plus tier)
+- **Languages:** 16 — Chinese, Arabic, English, French, German, Indonesian, Italian, Japanese, Korean, Malay, Portuguese, Russian, Spanish, Tagalog, Thai, Vietnamese
+- **Generation speed:** ~16 chars/sec (Plus) — significantly slower than Sonic 3.5 (~120 chars/sec) and SIMBA 3.2 (~30 chars/sec); use the Flash tier for throughput/latency-sensitive pipelines
+- **Best for:** Applications prioritizing top benchmark quality (Plus); real-time use within the Alibaba Cloud / DashScope ecosystem (Flash)
 - **Not ideal for:** Ultra-low-latency agents (use Cartesia Sonic 3.5 at ~40ms TTFA); high-throughput batch generation (use SIMBA 3.2 or Kokoro); offline/on-device deployment (use NeuTTS Air)
 
 ## Speechify SIMBA 3.2 — #2 Artificial Analysis TTS Arena at $10/1M Characters (Mid-July 2026)
