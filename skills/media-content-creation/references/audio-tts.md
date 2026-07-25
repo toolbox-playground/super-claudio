@@ -255,13 +255,16 @@ Rime (rime.ai) grounds its TTS in sociolinguistics — training on how real peop
 
 ## Qwen-Audio-3.0-TTS-Plus (Alibaba) — #1 Artificial Analysis TTS Arena (Elo 1,236, Mid-July 2026)
 
-Alibaba's Qwen-Audio-3.0-TTS-Plus (distinct from the open-source Qwen3-TTS listed below) is the **new #1 on the Artificial Analysis Speech Arena Leaderboard** as of mid-July 2026, narrowly surpassing Speechify SIMBA 3.2 — overlapping confidence intervals make the margin close. Delivers increased naturalness and contextually appropriate intonation; available as a proprietary cloud-hosted model via Alibaba Cloud Model Studio (DashScope). Continues Alibaba's momentum across model categories following HappyHorse and Fun-Realtime-TTS.
+Alibaba's Qwen-Audio-3.0-TTS-Plus (distinct from the open-source Qwen3-TTS listed below) is the **new #1 on the Artificial Analysis Speech Arena Leaderboard** as of mid-July 2026, narrowly surpassing Speechify SIMBA 3.2 — overlapping confidence intervals make the margin close. Delivers increased naturalness and contextually appropriate intonation; available as a proprietary cloud-hosted model via Alibaba Cloud Model Studio (DashScope). Continues Alibaba's momentum across model categories following HappyHorse and Fun-Realtime-TTS. **Formal product launch July 20, 2026** shipped as two tiers: **Flash** (real-time, ~300ms TTFA, WER/CER 3.87) and **Plus** (quality-optimized, the Elo-1,236 variant below) — both hosted-only via Alibaba Cloud Model Studio, no open weights.
 
 - **URL:** alibabacloud.com (Model Studio / DashScope)
 - **Elo:** 1,236 — **#1 globally (Artificial Analysis Speech Arena, mid-July 2026)**; narrowly above SIMBA 3.2 (1,234) with overlapping confidence intervals
+- **Tiers:** Flash (~300ms TTFA, WER/CER 3.87, real-time use) and Plus (quality-optimized, benchmarked above)
+- **Languages:** 16 — Arabic, Chinese, English, French, German, Indonesian, Italian, Japanese, Korean, Malay, Portuguese, Russian, Spanish, Tagalog, Thai, Vietnamese — plus 20 Chinese dialect regions
 - **Free tier:** Alibaba Cloud trial credits on new accounts; no permanent free tier
-- **Generation speed:** ~16 chars/sec — significantly slower than Sonic 3.5 (~120 chars/sec) and SIMBA 3.2 (~30 chars/sec); note for throughput-sensitive pipelines
-- **Best for:** Applications prioritizing top benchmark quality; developers already in the Alibaba Cloud / DashScope ecosystem
+- **Pricing:** $27.59/1M characters (both Flash and Plus tiers)
+- **Generation speed:** ~16 chars/sec (Plus) — significantly slower than Sonic 3.5 (~120 chars/sec) and SIMBA 3.2 (~30 chars/sec); use Flash tier for throughput-sensitive pipelines
+- **Best for:** Applications prioritizing top benchmark quality; developers already in the Alibaba Cloud / DashScope ecosystem; multilingual + Chinese-dialect coverage
 - **Not ideal for:** Ultra-low-latency agents (use Cartesia Sonic 3.5 at ~40ms TTFA); high-throughput batch generation (use SIMBA 3.2 or Kokoro); offline/on-device deployment (use NeuTTS Air)
 
 ## Speechify SIMBA 3.2 — #2 Artificial Analysis TTS Arena at $10/1M Characters (Mid-July 2026)
@@ -328,7 +331,7 @@ torchaudio.save("output.wav", wav, model.sr)
 
 **Models:**
 - `chatterbox-tts` — English, emotion control, voice cloning
-- `chatterbox-tts[multilingual]` — 23+ languages
+- `chatterbox-tts[multilingual]` — now **Multilingual v3** (released June 10, 2026): 25 total languages (21 languages + 4 dialects + 6 tuned Language Pack models), up from 23+ in the prior release; same 0.5B Llama backbone, MIT license; improved speaker similarity and lower hallucination rate; training data expanded from 25.6k to 36.7k hours; PerTh watermarking now embedded by default on every output
 - `chatterbox-turbo` — 350M params; up to 6× faster than real-time on GPU; sub-200ms latency; paralinguistic prompting tags (`[laugh]`, `[cough]`, `[chuckle]`) for natural-sounding output; MIT license
 
 **Homepage:** resemble.ai/chatterbox | **PyPI:** `pip install chatterbox-tts`
