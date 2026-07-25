@@ -51,7 +51,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
-| OpenSky Network | Real-time ADS-B aircraft positions, callsigns, altitude, velocity, heading — community sensor network; REST API + WebSocket; free for research/personal use; historical data for registered users; uneven coverage outside Europe/North America; non-commercial license | opensky-network.org | None (basic); free account for historical data + higher rate limits |
+| OpenSky Network | Real-time ADS-B aircraft positions, callsigns, altitude, velocity, heading — community sensor network; REST API + WebSocket; free for research/personal use; historical data for registered users; uneven coverage outside Europe/North America; non-commercial license; **basic auth removed Mar 18, 2026** — now requires OAuth2 client credentials (create a client on your account page for a client_id/client_secret, exchange for a ~30-min bearer token) | opensky-network.org | Free OAuth2 client (required — basic auth no longer supported) |
 
 ## Books & Literature
 
