@@ -25,6 +25,17 @@
    - Write caption with 3-5 relevant hashtags
    - Post during peak hours (7-9pm local time typically)
 
+## TikTok GMV Max Creative Hub
+
+Inside TikTok Ads Manager / Seller Center, GMV Max Creative Hub (full rollout Feb 2026) shows Shop sellers which creative assets and creators are actually driving GMV and orders, with filters to surface top- and under-performing creatives.
+
+1. Go to TikTok Seller Center or Ads Manager → GMV Max
+2. Review the Creative Hub dashboard: performance broken down by asset and by creator
+3. Double down on top-performing creative angles; retire or refresh underperformers
+4. Pair with Symphony (see `video-ads.md`) to generate replacement creative based on what's winning
+
+Best for: TikTok Shop sellers running GMV Max campaigns who need to know which specific videos are converting, not just aggregate spend/ROAS.
+
 ## Instagram Shop
 
 - Product tags in feed posts, Reels, and Stories
