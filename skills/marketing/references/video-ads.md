@@ -371,6 +371,19 @@ Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools 
 
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
 
+## Meta Advantage+ Creative — Muse Image (Jul 2026)
+
+Meta launched Muse Image on July 7, 2026 — the first in-house image model from Meta Superintelligence Labs — rolling into Advantage+ Creative for advertisers during Q3 2026. It uses agentic visual reasoning and self-refinement to interpret full creative briefs rather than short prompts: generating diverse lifestyle visuals, new backgrounds for existing product photos, and static creatives pulled from video, while preserving brand identity.
+
+1. Go to Meta Ads Manager → Advantage+ Creative
+2. Enable Advantage+ Creative enhancements on a campaign
+3. Muse Image generates on-brand variations: new backgrounds, lifestyle scenes, static-from-video creatives
+4. Meta auto-labels AI-generated/edited ads with an "AI info" tag; outputs carry an invisible Content Seal watermark
+
+**Pricing:** No separate cost — included with any Meta Ads account using Advantage+ Creative.
+**Best for:** Meta-first advertisers wanting Google/Amazon-style native AI creative generation without leaving Ads Manager.
+**Not ideal for:** Non-Meta campaigns; full cross-platform automation (use Synter or Hyper AI instead).
+
 ## Amazon Ads Creative Agent — Agentic AI for Amazon Campaigns (Feb 2026)
 
 Amazon Ads launched Creative Agent on February 24, 2026, inside Amazon's Creative Studio. The tool creates video and display ads for Amazon's media network (Prime Video, Twitch, Amazon.com) at no additional cost — you pay only normal campaign spend.
