@@ -27,6 +27,7 @@ Similar to Suno, strong on musicality and production quality.
 - URL: udio.com
 - **Important (2026):** Udio temporarily disabled all downloads (audio, video, stems) across all plan tiers during a 2025–2026 licensing transition. Tracks can only be streamed/shared on-platform as of May 2026 — no DAW export, no Spotify upload, no use in video.
 - **Licensing deals signed:** Udio reached agreements with Universal Music Group (Oct 2025), Warner Music, Merlin, and Kobalt (Q1 2026). The new licensed platform launched Q2 2026 but operates as a **walled garden** — tracks cannot be downloaded or exported, only streamed/shared within the Udio network. No download capability is expected for the foreseeable future.
+- **Walled garden hardened via DRM (July 14, 2026):** Udio contracted BuyDRM's KeyOS MultiKey service to encrypt streams across Widevine, FairPlay, and PlayReady — an infrastructure-level lock-in confirming no download/export capability is coming back soon.
 - Good for: previewing and sharing music concepts within the platform only; not suitable if you need to use the audio outside Udio
 
 ## Mureka v8 — Developer-Focused AI Music Generation
