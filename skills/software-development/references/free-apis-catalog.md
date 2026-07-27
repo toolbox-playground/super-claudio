@@ -53,11 +53,23 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 |-----|------|-----|------|
 | OpenSky Network | Real-time ADS-B aircraft positions, callsigns, altitude, velocity, heading — community sensor network; REST API + WebSocket; free for research/personal use; historical data for registered users; uneven coverage outside Europe/North America; non-commercial license | opensky-network.org | None (basic); free account for historical data + higher rate limits |
 
+## Government & Public Data
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| **api.data.gov** | Gateway to 450+ US federal agency APIs (Census, FDA, USDA FoodData Central, Treasury, NASA, and more) through a single API key; DEMO_KEY available for quick testing (30 req/hour, 50/day); free signup for full limits | api.data.gov | Free key (DEMO_KEY for testing) |
+
 ## Books & Literature
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
 | Open Library | Books, authors, covers — millions of titles from the Internet Archive | openlibrary.org/api | None |
+
+## Language & Translation
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| **LibreTranslate** | Open-source machine translation API (100+ languages via Argos Translate); self-hostable; public instance free for testing/personal/infrequent use, ~80 req/min, no key required; API key must be purchased for production use | libretranslate.com | None (rate limited; paid key for production) |
 
 ## Food & Nutrition
 
@@ -71,6 +83,12 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 |-----|------|-----|------|
 | Unsplash | Millions of free high-quality stock photos | api.unsplash.com | Free key |
 | Picsum Photos | Random placeholder images by size | picsum.photos | None |
+
+## Music
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| **MusicBrainz** | Open community music metadata database — 2M+ artists, 30M+ recordings/releases; structured data linked by stable MBIDs; JSON/XML responses; requires a descriptive User-Agent header, ~1 req/sec rate limit | musicbrainz.org/doc/MusicBrainz_API | None (User-Agent required) |
 
 ## Domains
 
