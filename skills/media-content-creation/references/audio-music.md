@@ -14,7 +14,7 @@ Generate complete songs (vocals + instruments) from a text prompt.
 - **Stem Separation (June 11, 2026 update):** Three modes — **Advanced Split** (NEW, Premier only): choose from ~100 instruments to regenerate each stem from scratch — no separation artifacts; also exports MIDI; 10 credits/extracted track. **Split from Mix** (Updated): pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
 - Free tier: 50 credits/day (~10 songs); non-commercial use only
 - **Important (2026):** Free-tier users can no longer download audio files — tracks can only be streamed/shared within the platform. Download requires a paid plan ($10/month Pro, $30/month Premier).
-- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of June 2026 the transition has not yet occurred — current models remain active — but when it does, all generations made with the old models will eventually become inaccessible. UMG and Sony Music litigation remains active — a fair-use summary judgment hearing in the U.S. case is scheduled for July 2026 (no verdict as of July 11, 2026); a separate German case (GEMA v. Suno) is due July 31, 2026. Users who want to preserve old generations should download them now on a paid plan.
+- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of June 2026 the transition has not yet occurred — current models remain active — but when it does, all generations made with the old models will eventually become inaccessible. UMG and Sony Music litigation remains active — the previously anticipated July 2026 U.S. fair-use summary judgment hearing was postponed: a June 30, 2026 amended scheduling order pushed fact discovery to September 30, 2026 and dispositive motions to April 9, 2027 (UMG/Sony also moved in May 2026 to expand the case from 560 to 61,026 recordings). A separate German case (GEMA v. Suno) is set for a Munich court verdict on July 31, 2026 — potentially Europe's first major ruling on AI music training and copyright. Users who want to preserve old generations should download them now on a paid plan.
 - Input: genre, mood, lyrics (optional), style description
 - Output: full song (streaming on free; downloadable MP3 on paid)
 
@@ -76,6 +76,20 @@ Riffusion rebranded to Producer.ai in July 2025. Google acquired Producer.ai in 
 - Stack: Lyria 3 (audio) + Veo (music video) + Nano Banana (album art) — all Google AI models
 - Best for: free music generation with optional music video output; users in the Google/Gemini ecosystem
 
+## Google Lyria 3 Pro — Developer Music API on Vertex AI (NEW Apr 2026)
+
+Lyria 3 Pro is the production, developer-facing counterpart to Google Flow Music above — same Lyria 3 model family, but accessed as a programmatic API (Vertex AI / Gemini API) rather than the free consumer web app. Entered public preview April 7, 2026.
+
+- URL: cloud.google.com/vertex-ai (Vertex AI Media Studio: `console.cloud.google.com/vertex-ai/studio/media/music`) | also in Google AI Studio / Gemini API
+- Free tier: none (pay-per-generation); Google Flow Music (above) remains the free option
+- Pricing: ~$0.08 per full song generation (rates can vary by region/commitment — check current Vertex AI pricing)
+- Max length: Lyria 3 Pro up to 3 minutes per generation; base Lyria 3 up to 30 seconds
+- Input: text prompt, reference image (mood/style/story guidance), optional user-supplied lyrics with timing, instrumental-only mode
+- Structure: understands song architecture (intros, verses, choruses, bridges) for section-aware generation
+- Watermarking: SynthID embedded in all outputs; C2PA content credentials supported
+- Access: Vertex AI API, Vertex AI Media Studio (web UI), Gen AI SDK for Python
+- Best for: developers who need programmatic Lyria access with commercial terms and structural control, as an alternative to Mureka v8 or ElevenLabs Music v2's API
+- Not ideal for: casual free generation (use Google Flow Music instead)
 
 ## Stable Audio 3.0 (Stability AI) — Open-Weight, Commercially Licensed Music & SFX
 
