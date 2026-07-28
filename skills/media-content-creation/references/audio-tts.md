@@ -90,7 +90,7 @@ Inworld Realtime TTS-2 (launched May 5, 2026) is a fundamentally different archi
 
 - **URL:** inworld.ai
 - **Free tier:** 40 minutes/month (On-Demand plan)
-- **Pricing:** $35/1M characters (On-Demand); $25/1M characters (Growth plan)
+- **Pricing (cut ~30–50% June 10, 2026):** $25/1M characters (On-Demand, down from $35); $15/1M at $300/mo Growth tier; $12.50/1M at $1,500/mo Scale tier; $10/1M at Enterprise scale
 - **Latency:** <200ms median TTFA; sub-250ms P90
 - **Languages:** 100+ with mid-utterance language switching (same voice identity preserved across every language)
 - **Voice direction:** Inline bracket tags — `[speak sadly]`, `[excited, fast-paced]` — passed directly in the text at inference time
@@ -109,7 +109,7 @@ Inworld TTS-1.5 Max held #1 on the Artificial Analysis Speech Arena in July 2026
 - Latency: <200ms streaming
 - **Elo: 1,238 (peak, early July 2026)** — surpassed by Speechify SIMBA 3.2, then by Qwen-Audio-3.0-TTS-Plus; live leaderboard rankings shift dynamically
 - Best for: professional voiceovers, non-conversational narration needing top quality and emotional range
-- Pricing: $15–$25/million characters (standard)
+- Pricing: ~$10/million characters (standard, after June 2026 Inworld-wide price cut; previously $15–$25/1M)
 
 ## Fun-Realtime-TTS (Alibaba Cloud) — Top-3 Artificial Analysis Speech Arena (June 2026)
 
