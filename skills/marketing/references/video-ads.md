@@ -382,9 +382,24 @@ Amazon Ads launched Creative Agent on February 24, 2026, inside Amazon's Creativ
 5. Publish directly to your Amazon campaign (Prime Video, Twitch, display placements)
 
 **Pricing:** No additional cost to advertisers (included with Amazon Ads account)
-**Access:** UK launch February 2026; rolling out to additional markets
+**Access:** UK launch February 2026; expanded to Canada, France, Germany, India, Italy, and Spain by July 2026
 **Best for:** Brands selling on Amazon who want AI-generated ad creative (video + display) with Amazon's own retail and shopping signal data baked in — no other platform has access to Amazon's purchase intent signals.
 **Not ideal for:** Non-Amazon campaigns (output is formatted for Amazon media only); use Creatify or AdStellar for TikTok/Meta/Google campaigns.
+
+## Meta AI Creative Solution & Brand Memory — Cannes Lions 2026 (Limited Beta)
+
+Meta introduced an end-to-end AI creative solution (announced June 23, 2026 at Cannes Lions) — a single Ads Manager workspace where creative and media teams review what's performing, generate new creative from those learnings, and test it. The headline feature, Brand Memory, ingests a brand's existing ad library to learn its visual identity, tone, and creative style, then automatically applies those brand rules to new AI-generated image, video, and text variations — aimed at the common complaint that AI ad creative looks generic and erodes brand differentiation.
+
+1. Go to Meta Ads Manager (business.facebook.com/adsmanager)
+2. Opt into the AI Creative Solution workspace where available
+3. Let Brand Memory learn from your existing ad library, or set brand rules manually
+4. Generate creative variants — Brand Memory keeps visual identity and tone consistent across outputs
+5. Also included: expanded multilingual generation (5 new text-on-image languages, 11 new video-voiceover languages, including Hindi) and built-in creative approval workflows for team sign-off
+
+**Status (as of July 2026): limited beta / phased rollout.** Brand Memory and the unified workspace are available only to a limited group of advertisers inside Ads Manager; Meta says broader rollout is coming "in the coming months" with no firm GA date. WPP is integrating the tools into WPP Open for agency workflows.
+
+**Best for:** Ecommerce and DTC brands running Meta campaigns who want AI-generated variants that stay on-brand instead of generic; agencies managing brand consistency across many advertiser accounts.
+**Not ideal for:** Advertisers wanting self-serve access today — this is invite-limited, not GA. For immediate multi-variant testing, use Creatify, AdCreative.ai, or Pencil instead, then re-check Meta's rollout status.
 
 ## LinkedIn Campaign Manager AI Tools — Brand Kit, Draft with AI & Variants (Jul 2026)
 
