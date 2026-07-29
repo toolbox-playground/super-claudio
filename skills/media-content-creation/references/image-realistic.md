@@ -11,7 +11,7 @@
 
 | Tool | Access | Best For | Free |
 |------|--------|----------|
-| **Midjourney v8.1** | midjourney.com | Artistic quality, concept art, portraits; v8.1 (released Apr 30 2026, became default Jun 11 2026) — 5× faster than v7, native 2K resolution, improved text rendering, HD mode now affordable as default; V8.2 in preview via `--preview` flag (aesthetic refinements, better Sref/moodboard consistency, Big Batch Draft Mode with `--sref random` for 24× faster style exploration — GA release imminent as of July 2026) | Paid (no free tier) |
+| **Midjourney v8.2** | midjourney.com | Artistic quality, concept art, portraits; v8.2 became the default model July 24, 2026 (v8.1 had been default since Jun 11 2026) — bolder, more sophisticated aesthetic by default, Personalization tuned more accurately to a user's like history, Big Batch Draft Mode with `--sref random` for 24× faster style exploration | Paid (no free tier) |
 | **Recraft V4.1** | recraft.ai | Logos, SVG vectors, brand assets, text rendering; V4.1 (Jun 2026): sharper photorealism, improved SVG vector accuracy, better text rendering and style consistency | Free tier |
 | **Nano Banana 2** (Google / Gemini) | gemini.google.com | Product images, lifestyle scenes, ad creatives — default free model (Gemini 3.1 Flash Image) | Free (Gemini app) |
 | **Nano Banana 2 Lite** (Google / Gemini) | gemini.google.com, aistudio.google.com | Fastest & cheapest Google image model; 2.7× faster than Nano Banana 2 (~4 s); 1K resolution cap; **#5 on Artificial Analysis Image Arena (Elo 1261, July 2026)** — highest-ranked free model per dollar; released June 30, 2026 | Free (Google AI Studio); API: $0.034/image (batch: $0.017) |
@@ -113,6 +113,12 @@ DALL-E 2 and DALL-E 3 were retired by OpenAI on May 12, 2026. GPT Image 2 (alrea
 ## Google Imagen 4 Deprecation Note
 
 Google is deprecating all Imagen model endpoints in two waves. Imagen 3 endpoints shut down June 24–30, 2026 (already complete). Imagen 4 endpoints (`imagen-4.0-generate-001`, `imagen-4.0-ultra-generate-001`, `imagen-4.0-fast-generate-001`) shut down August 17, 2026 — calls after that date fail with a hard error (no grace period). Migrate to Gemini Image models ("Nano Banana"): swap the model name from `imagen-*` to the corresponding `gemini-*-image` model in your API calls. Firebase AI Logic and Vertex AI users must update before August 17 or requests will fail. Google AI Studio provides a migration guide at firebase.google.com/docs/ai-logic/imagen-models-migration.
+
+## FLUX 3 — Announced, Image Variant Not Yet Available (July 23, 2026)
+
+Black Forest Labs unveiled FLUX 3 on July 23, 2026: a unified multimodal model spanning image, video, audio, and experimental robot-action prediction — BFL's pivot toward general "visual intelligence" beyond still images. Video generation with native synced audio (up to 20 seconds) entered early access at launch. **FLUX 3 Image is not yet available** — BFL says it will roll out "in the coming weeks," with faster and open-weight variants promised later in 2026. Until then, use FLUX.2 [max]/[pro] (above) for photorealistic generation; revisit this note once FLUX 3 Image reaches general availability.
+
+Early access: bfl.ai
 
 ## Using Claude's Native Image Generation
 
