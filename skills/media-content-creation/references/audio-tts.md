@@ -260,6 +260,8 @@ Alibaba's Qwen-Audio-3.0-TTS-Plus (distinct from the open-source Qwen3-TTS liste
 - **URL:** alibabacloud.com (Model Studio / DashScope)
 - **Elo:** 1,236 — **#1 globally (Artificial Analysis Speech Arena, mid-July 2026)**; narrowly above SIMBA 3.2 (1,234) with overlapping confidence intervals
 - **Free tier:** Alibaba Cloud trial credits on new accounts; no permanent free tier
+- **Pricing:** $27.59/1M characters (Plus tier); Flash tier also available (~300ms first-packet latency, real-time-oriented) at a lower published rate — confirmed at official wide-release (July 20, 2026)
+- **Languages:** 16, plus 20 Chinese dialect/regional variants (per the July 20, 2026 wide-release announcement)
 - **Generation speed:** ~16 chars/sec — significantly slower than Sonic 3.5 (~120 chars/sec) and SIMBA 3.2 (~30 chars/sec); note for throughput-sensitive pipelines
 - **Best for:** Applications prioritizing top benchmark quality; developers already in the Alibaba Cloud / DashScope ecosystem
 - **Not ideal for:** Ultra-low-latency agents (use Cartesia Sonic 3.5 at ~40ms TTFA); high-throughput batch generation (use SIMBA 3.2 or Kokoro); offline/on-device deployment (use NeuTTS Air)
