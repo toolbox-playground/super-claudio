@@ -41,3 +41,7 @@ Running paid ads? Create at least 5 different creative variations to test:
 - Same product, different contexts
 
 Use Creatify.ai or the video-ads workflow to generate variations quickly. (Note: aicreator.co is defunct as of May 2026 — do not use.)
+
+## TikTok Shop Livestream Compliance Note (Jul 2026)
+
+TikTok Shop's July 2026 seller rules ban AI-generated voices, pre-recorded/looped audio, and static slideshow-style visuals from promotional **livestreams** specifically — this does not apply to the pre-recorded short-form video content described above. Violations feed into TikTok's new Account Health Rating (0–1,000, replaced the old Violation Points system) and can restrict campaign/commission eligibility or trigger account deactivation at low scores. If running TikTok Shop LIVE selling (not just short-form video), avoid AI voiceover, looped audio, or slideshow content — real-time human narration (or sign language) is required.
