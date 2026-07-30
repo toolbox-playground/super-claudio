@@ -181,13 +181,13 @@ Hume Octave 2 is the first TTS model built on a language model backbone that tru
 
 ## Cartesia Sonic 3.5 — #2 Artificial Analysis TTS Arena, Real-Time Conversational TTS
 
-Cartesia Sonic 3.5 (upgraded May 2026) is purpose-built for real-time conversational AI with ~40ms time-to-first-audio — the standard pick for voice agents and chatbots. Sonic 3.5 improves on Sonic 3 with noticeably more natural voices, better stability through long calls, and more consistent pronunciation of difficult words and names. **Ranked #2 on the Artificial Analysis Speech Arena (Elo ~1,211, July 2026)** — a notable rise, combining both fast latency and top-tier quality. The upgrade applies automatically to all existing Cartesia integrations.
+Cartesia Sonic 3.5 (upgraded May 2026) is purpose-built for real-time conversational AI with ~40ms time-to-first-audio — the standard pick for voice agents and chatbots. Sonic 3.5 improves on Sonic 3 with noticeably more natural voices, better stability through long calls, and more consistent pronunciation of difficult words and names. **Ranked ~#4 on the Artificial Analysis Speech Arena (Elo ~1,207, July 2026)** — combining fast latency with top-tier quality. The upgrade applies automatically to all existing Cartesia integrations.
 
 - URL: cartesia.ai
 - Free tier available
 - Latency: ~40ms TTFA (best-in-class for streaming)
 - Languages: 42
-- Elo: ~1,211 — **#2 globally (Artificial Analysis Speech Arena, July 2026)**
+- Elo: ~1,207 — **~#4 globally (Artificial Analysis Speech Arena, July 2026)**
 - Best for: voice agents, live chatbots, real-time assistants — now competitive on quality benchmarks as well as latency
 - Not ideal for: long-form content where ElevenLabs, Fish Audio, or Chatterbox are better
 
