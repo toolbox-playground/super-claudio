@@ -422,7 +422,7 @@ Kokoro (82M parameters, Apache 2.0) ranked #1 on the HuggingFace TTS Spaces Aren
 pip install kokoro
 ```
 
-- **URL:** kokorottsai.com | **HuggingFace:** `hexgrad/Kokoro-82M`
+- **URL:** huggingface.co/hexgrad/Kokoro-82M | **GitHub:** github.com/hexgrad/kokoro | **HuggingFace:** `hexgrad/Kokoro-82M`
 - **License:** Apache 2.0 (commercial use free)
 - **Languages:** 8 (American & British English, French, Korean, Japanese, Mandarin, + more); 48 voices
 - **Voice cloning:** No (fixed voice library)
@@ -438,7 +438,7 @@ NeuTTS Air (~360M active params) runs fully on-device with no cloud dependency â
 pip install neutts
 ```
 
-- **URL:** neutts.com | **HuggingFace:** `neuphonic/neutts-air`
+- **URL:** neuphonic.com | **GitHub:** github.com/neuphonic/neutts | **HuggingFace:** `neuphonic/neutts-air` (note: neutts.com is an unaffiliated third-party domain â€” do not link it)
 - **License:** Apache 2.0 (full commercial use)
 - **Languages:** English
 - **Voice cloning:** Instant (3-second mono WAV reference)
