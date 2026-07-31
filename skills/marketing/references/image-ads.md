@@ -10,6 +10,7 @@
 | **Adobe Express** | Quick resizing, brand kits | Free tier |
 | **Nano Banana 2** | Product in lifestyle scene | Check site |
 | **Flux via fal.ai** | AI-generated product images | API credits |
+| **ImagineArt** | Multi-model studio (30+ image/video models: text-to-image, image-to-video, inpainting/outpainting, upscaling) for ad creative | Yes (free plan, 100 credits/24hr, non-commercial) |
 
 ### Canva Ad Creation Workflow
 

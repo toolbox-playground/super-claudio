@@ -163,8 +163,8 @@ HeyGen is the leading AI avatar video platform for brand content and UGC-style t
 4. Translate and re-lip-sync into any of 175+ languages in one click
 
 **Free tier:** 3 videos/month (720p, watermarked, 30+ languages)
-**Creator:** $29/month — unlimited videos, 200 credits, 175+ languages, commercial license
-**Pro:** $99/month — more credits, custom avatar training
+**Creator:** $29/month ($24/mo billed annually) — unlimited videos, 200 credits, 175+ languages, commercial license
+**Pro:** from $49/month (1,000 credits), scaling up to $4,300/month (100,000 credits) — custom avatar training
 
 **Best for:** Brand channel content (YouTube Shorts, TikTok, Reels), product demos, multilingual market localization from one source video.
 **Not ideal for:** High-volume ad testing at scale (use Arcads or Creatify for that — HeyGen credits run out faster at volume).
@@ -191,8 +191,7 @@ Pose Video Studio (pose.ai) generates UGC-style video ads where every variant fe
 4. Input product details or ad script
 5. Generate UGC-style videos for TikTok, Reels, or YouTube Shorts — all featuring your consistent brand face
 
-**Free tier:** Trial available
-**Pricing:** From $9/month (billed yearly)
+**Pricing:** $4.99 for the first week, then $14.99/week (400 credits/week, shared across photos, headshots, and video) — no free-forever tier; the product has expanded beyond ad video into a general "AI Photo, Video & UGC Studio" (headshots, selfies too)
 **Best for:** Brands and solo creators who want a recognizable, consistent face across every creative variant without filming — stronger brand recall than generic AI avatars.
 **Not ideal for:** High-volume multi-actor campaigns needing different personas per audience segment (use Arcads for that).
 
@@ -250,6 +249,19 @@ Shhots AI is an ecommerce-focused platform for generating product videos, AI UGC
 **Best for:** Solo operators and small ecommerce brands wanting low-cost UGC ads with avatars and captions without hiring influencers.
 **Not ideal for:** High-volume multi-actor campaigns at scale (use Arcads) or URL-to-video with built-in competitor research (use Topview AI).
 
+## PixVerse Ad Master — Pay-Per-Video Ecommerce Ads ($2–3/video)
+
+PixVerse Ad Master (part of the established pixverse.ai video platform) generates complete product ad videos — with voiceover, subtitles, and multi-shot storytelling — from a single product image and a short description of selling points/aesthetic. Priced per video rather than a monthly subscription.
+
+1. Go to app.pixverse.ai/mini-apps/ad-master
+2. Upload one product image + describe selling points/desired aesthetic
+3. AI infers scenes, casts talent, and generates a full ad video in one step
+4. Download and deploy
+
+**Pricing:** ~$3/video (~$2/video for existing PixVerse subscribers) — no monthly subscription required
+**Best for:** Budget-conscious solo sellers who want to pay only for the ads they actually generate instead of committing to a monthly credit plan.
+**Not ideal for:** High-volume batch A/B testing across many variants at once (use AdsTurbo or Arcads for bulk generation).
+
 ## AdsTurbo — Ad Clone + 1,000+ AI Actors (Mar 2026)
 
 AdsTurbo (adsturbo.ai, launched March 20, 2026) specializes in high-volume UGC-style video ads with AI actors that mimic real human expressions, gestures, and delivery. Distinguishing features: **Ad Clone** (clone a competitor ad's structure and recreate it with your own brand, avatar, and offer) and batch generation of 10–15 variants simultaneously.
@@ -261,7 +273,7 @@ AdsTurbo (adsturbo.ai, launched March 20, 2026) specializes in high-volume UGC-s
 5. Batch-generate 10–15 hook/CTA/avatar/language variants in one session
 
 **Free tier:** 300 credits/month (watermarked output)
-**Paid:** Creator $31/month (annual) — 1,200 credits; Growth $99/month — 3,300 credits, 120s max video, 4K exports, bulk processing, early access to Video Agent. Credits: 8 credits/second of output (15s ad = 120 credits)
+**Paid:** Creator $31/month (annual) — 1,200 credits; Growth $79/month — 3,300 credits, 120s max video, 4K exports, bulk processing, early access to Video Agent. Credits: 8 credits/second of output (15s ad = 120 credits)
 **Best for:** Performance marketers who want to quickly clone + remix winning competitor ad structures; teams needing large A/B test batches with different hooks, CTAs, avatars, and languages without re-uploading assets.
 **Not ideal for:** Highest-volume multi-actor campaigns at scale (use Arcads); URL-to-video with TikTok Ad Library research built in (use Topview AI); predictive scoring before spend (use Pencil or AdCreative.ai).
 
