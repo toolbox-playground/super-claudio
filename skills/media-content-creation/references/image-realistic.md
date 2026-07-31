@@ -11,7 +11,7 @@
 
 | Tool | Access | Best For | Free |
 |------|--------|----------|
-| **Midjourney v8.1** | midjourney.com | Artistic quality, concept art, portraits; v8.1 (released Apr 30 2026, became default Jun 11 2026) — 5× faster than v7, native 2K resolution, improved text rendering, HD mode now affordable as default; V8.2 in preview via `--preview` flag (aesthetic refinements, better Sref/moodboard consistency, Big Batch Draft Mode with `--sref random` for 24× faster style exploration — GA release imminent as of July 2026) | Paid (no free tier) |
+| **Midjourney v8.2** | midjourney.com | Artistic quality, concept art, portraits; v8.2 became the default Jul 24 2026 (previewed since Jun 25 2026 via `--preview` flag) — sharper/bolder aesthetics, improved taste/personalization understanding, fewer low-quality outputs, Big Batch Draft Mode with `--sref random` for 24× faster style exploration | Paid (no free tier) |
 | **Recraft V4.1** | recraft.ai | Logos, SVG vectors, brand assets, text rendering; V4.1 (Jun 2026): sharper photorealism, improved SVG vector accuracy, better text rendering and style consistency | Free tier |
 | **Nano Banana 2** (Google / Gemini) | gemini.google.com | Product images, lifestyle scenes, ad creatives — default free model (Gemini 3.1 Flash Image) | Free (Gemini app) |
 | **Nano Banana 2 Lite** (Google / Gemini) | gemini.google.com, aistudio.google.com | Fastest & cheapest Google image model; 2.7× faster than Nano Banana 2 (~4 s); 1K resolution cap; **#5 on Artificial Analysis Image Arena (Elo 1261, July 2026)** — highest-ranked free model per dollar; released June 30, 2026 | Free (Google AI Studio); API: $0.034/image (batch: $0.017) |
@@ -20,7 +20,7 @@
 | **Meta Muse Image** (Meta Superintelligence Labs) | meta.ai, Meta AI app, Instagram Stories (US), WhatsApp (limited countries) | Social-native image generation — text-to-image, multi-photo blending, @mention of public Instagram accounts for likeness reference, sketch-and-instruction editing, 30+ Instagram Story effects; agentic tool use (web search + coding invoked during generation); self-refinement at inference time (test-time compute scaling before delivering the final image); Content Seal invisible watermark; launched July 7, 2026; **#2 on Arena.ai Text-to-Image Arena (Elo 1280, July 2026)** — also #2 in single-image edit and multi-image edit arenas; no developer API at launch (Meta evaluating external access) | Free (consumer; subscription for power users via Meta AI subscription plans) |
 | **MAI-Image-2.5 / Flash** (Microsoft) | microsoft.ai (MAI Playground), openrouter.ai/microsoft/mai-image-2.5, Azure AI Foundry | High-quality generation and precise localized editing; #2 image editing, #3 text-to-image on Arena (launched June 2, 2026 at Microsoft Build); +75 pts over MAI-Image-2, biggest gains in Text Rendering (+107) and Cartoon/Anime/Fantasy (+90); strong product imagery, text rendering, and prompt adherence; Flash variant for 2.7× lower cost; integrating into PowerPoint (generation) and OneDrive (photo editing) | No free tier (API: $47/1M image output tokens standard; $33/1M Flash; text input: $5/1M standard, $1.75/1M Flash) |
 | **Luma Uni-1.1** (Luma AI) | lumalabs.ai | Reasoning-first unified model — reasons before rendering; 9 typed reference images (STYLE, CHARACTER, COMPOSITION, LIGHTING); tops Nano Banana 2 and GPT Image 1.5 on reasoning benchmarks; multilingual text in images (Chinese, Arabic, Japanese); #1 Elo for overall quality, style, and reference-based generation in human preference tests; Uni-1 launched March 2026; Uni-1.1 API opened May 5, 2026 | API: $0.0404/image (uni-1), $0.10/image (uni-1-max); reference images $0.003 each; no permanent free tier (Dream Machine legacy for trials) |
-| **Reve 2.0** (Reve AI) | app.reve.com | Layout-first 4K generation — builds an editable code-based layout before rendering, so you can fix a misplaced headline or resize one element without re-rolling; dedicated typography step keeps headlines, packaging labels, and captions crisp and correctly spelled; text-to-image, image editing, multi-reference composition; native 4K output; debuted #2 on Image Arena (score 1280, launched June 3, 2026) | Free tier (daily refresh); Lite $7.99/mo; Pro $19.99/mo |
+| **Reve 2.1** (Reve AI) | app.reve.com | Layout-first 4K generation — builds an editable code-based layout before rendering, so you can fix a misplaced headline or resize one element without re-rolling; dedicated typography step keeps headlines, packaging labels, and captions crisp and correctly spelled; text-to-image, image editing, multi-reference composition; native 4K output; sharper prompt understanding, world knowledge, and foreign-text rendering vs 2.0; #2 on Image Arena (score 1306, up from 1280; launched July 9, 2026) | Free tier (daily refresh); Lite $7.99/mo; Pro $19.99/mo |
 | **Seedream 5.0** (ByteDance) | seed.bytedance.com, pixverse.ai | Fast photorealistic generation — 2K images in ~1.8s, up to 4K resolution, real-time web search grounding during generation, multi-step visual reasoning; strong for current-events-aware imagery | Limited free (via PixVerse) |
 | **Seedream 5.0 Pro** (ByteDance) | seed.bytedance.com, byteplus.com, fal.ai | Precision editing + layered output — launched July 8, 2026; splits one render into 10+ transparent PNG layers (auto-fills occluded areas for maskless editing in Figma/Photoshop); pixel-level spatial grounding for interactive regional edits; multilingual text generation in 10+ languages (Chinese, English, French, German, Russian, Japanese, Korean, Spanish, Arabic — includes RTL layouts); realistic portrait textures and multi-person compositing; available via BytePlus API, Doubao/Jimeng consumer apps, fal.ai, and ComfyUI | API: $0.075/image ≤2.36MP; $0.150/image >2.36MP; $0.005 per extra input image |
 | **Riverflow 2.0 Pro** (Sourceful) | openrouter.ai/sourceful/riverflow-v2-pro, runware.ai, wavespeed.ai | Photorealistic product mockups, packaging, ads, brand assets — #1 on Artificial Analysis Image Generation leaderboard (Feb 2026); 4K output, transparent background support, agentic precision for commercial imagery | API credits ($0.15/image 2K, $0.33/image 4K; no direct consumer site — API only) |
@@ -32,7 +32,7 @@
 | **Krea 2 Turbo / Raw** (Krea) | krea.ai, HuggingFace (krea/Krea-2-Turbo, krea/Krea-2-Raw) | 2-second 2K generation; 12B Diffusion Transformer open weights released June 22, 2026; Turbo is post-trained + distilled for maximum speed; Raw is base checkpoint for fine-tuning and research; aesthetic-first design; **Krea 2 Medium: #6 on Artificial Analysis Text-to-Image Arena (July 2026)** — #1 among independent research lab models; Krea 2 Community License | Community License: free for individuals + companies with <50 seats (requires technical safeguards); enterprise agreement required above 50 seats |
 | **Stable Diffusion** | Local / Automatic1111 | Full control, local, free | Yes (local) |
 | **Adobe Firefly Image 5** | firefly.adobe.com | Commercial safe, custom model training, 30+ third-party models (Runway, Google, OpenAI) in one workspace | Free tier (paid for full access; see notes) |
-| **Ideogram 4.0** | ideogram.ai, Together AI | Text in images, posters, signage; first open-weight T2I model from Ideogram (9.3B params, Jun 3 2026); #1 text rendering (0.97 X-Omni OCR — highest among open-weight models); native 2K resolution; bounding-box layout control; color-palette conditioning (up to 16 hex colors); inference code Apache 2.0; model weights: non-commercial license | Free tier (ideogram.ai); API: $0.03 Turbo / $0.06 Default / $0.10 Quality per image |
+| **Ideogram 4.0** | ideogram.ai, Together AI | Text in images, posters, signage; first open-weight T2I model from Ideogram (9.3B params, Jun 3 2026); #1 text rendering (0.97 X-Omni OCR — highest among open-weight models); native 2K resolution; bounding-box layout control; color-palette conditioning (up to 16 hex colors); inference code Apache 2.0; model weights: non-commercial by default (Ideogram Non-Commercial Model Agreement), self-serve commercial license available for smaller-scale self-hosting (10K–100K images/mo), Enterprise for larger | Free tier (ideogram.ai); API: $0.03 Turbo / $0.06 Default / $0.10 Quality per image |
 | **Google Imagen 4** **(DEPRECATED — Imagen 4 endpoints shut down August 17, 2026; Imagen 3 already shut down June 24–30, 2026; migrate to Nano Banana / Gemini Image models)** | — | — | — |
 
 ## Nano Banana 2 — Top Pick for Product & Lifestyle Images
@@ -48,7 +48,7 @@ Google's Nano Banana 2 (Gemini 3.1 Flash Image) is available free in the Gemini 
 1. Prepare your product image (real photo)
 2. Upload + write scene description: "product placed on a marble kitchen counter, morning light, minimalist style"
 3. Generate several variants and pick the best
-4. Use result directly or pass to Weavy AI / Kling for animation (see motion.md)
+4. Use result directly or pass to Figma Weave / Kling for animation (see motion.md)
 
 ## Recraft V4.1 — Logos, Vectors & Brand Assets
 
@@ -80,6 +80,16 @@ FLUX.1 Kontext from Black Forest Labs enables reference-image-guided editing: pr
 - Best for: product image variations, background swaps, style transfer, object replacement
 - Dev variant: open-weight, free for non-commercial use (`black-forest-labs/FLUX.1-Kontext-dev` on HuggingFace)
 - Pro/Max variants: via bfl.ai API or fal.ai
+
+## FLUX 3 — New Multimodal Model (Image Variant Not Yet Released)
+
+Black Forest Labs unveiled FLUX 3 on July 23, 2026 — the company's first unified model trained jointly across image, video, and audio, extending to robot-action prediction (FLUX-mimic, tested by Audi). It accepts up to 10 reference images/video/audio inputs and generates video clips up to 20 seconds with synchronized audio.
+
+- **FLUX 3 Video** and **FLUX 3 Action**: gated Early Access (apply at bfl.ai), launched July 23, 2026
+- **FLUX 3 Image**: not yet available — BFL says "coming in the following weeks" as of late July 2026
+- **FLUX 3 Dev** (open-weight tier): planned for later in 2026
+
+Until FLUX 3 Image ships, **FLUX.2 [max]/[pro]/[klein]** (above) remain the current FLUX models for still-image generation.
 
 ## Prompt Formula for Realistic Images
 
