@@ -49,6 +49,38 @@ for event in events:
 }
 ```
 
+## USGS Earthquake API — Real-Time & Historical Seismic Data
+
+Query global earthquake data (magnitude, depth, location, time) from the US Geological Survey's FDSN Event Web Service. No key required; complements EONET for natural-event tracking.
+
+- **Base URL:** https://earthquake.usgs.gov/fdsnws/event/1
+- **Auth:** None required
+- **Docs:** earthquake.usgs.gov/fdsnws/event/1/
+
+### Example: Significant earthquakes in the past day
+```bash
+curl "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_day.geojson"
+```
+
+### Example: Custom query (magnitude 4.5+, last 7 days)
+```python
+import requests
+from datetime import datetime, timedelta
+
+def get_earthquakes(min_magnitude=4.5, days=7):
+    url = "https://earthquake.usgs.gov/fdsnws/event/1/query"
+    params = {
+        "format": "geojson",
+        "starttime": (datetime.utcnow() - timedelta(days=days)).isoformat(),
+        "minmagnitude": min_magnitude,
+    }
+    return requests.get(url, params=params).json()["features"]
+
+quakes = get_earthquakes()
+for q in quakes:
+    print(q["properties"]["place"], q["properties"]["mag"])
+```
+
 ## OpenWeatherMap — Current & Forecast Weather
 
 - **Base URL:** https://api.openweathermap.org/data/2.5

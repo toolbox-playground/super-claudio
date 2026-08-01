@@ -46,6 +46,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | ip-api.com | IP to location | ip-api.com | None (rate limited) |
 | **IPinfo Lite** | IP to country + ASN lookup for IPv4 and IPv6; unlimited requests, no rate limits on free tier; data updated daily; CC BY-SA 4.0 license; requires free account token | ipinfo.io/lite | Free token |
 | REST Countries | Country data | restcountries.com | None |
+| **openrouteservice** | Routing/directions, isochrones, time-distance matrices, geocoding, and elevation built on OpenStreetMap data; car/bike/walk/wheelchair/heavy-vehicle profiles; free Standard plan (~2,000 requests/day); open source, self-hostable | openrouteservice.org | Free token |
 
 ## Transportation & Aviation
 
@@ -71,6 +72,12 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 |-----|------|-----|------|
 | Unsplash | Millions of free high-quality stock photos | api.unsplash.com | Free key |
 | Picsum Photos | Random placeholder images by size | picsum.photos | None |
+
+## Email
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| **Resend** | Transactional email API for apps (receipts, password resets, notifications); React email templates; 3,000 emails/month free, capped at 100/day, 1 verified domain, 30-day log retention, basic webhooks; no credit card required | resend.com | Free account |
 
 ## Domains
 
@@ -101,7 +108,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
-| Google Gemini API | LLM inference (Gemini 3.5 Flash free in AI Studio — new default since May 19, 2026; daily Gemini 3.1 Pro allotment for harder reasoning), 1M token context, multimodal | ai.google.dev | Free key (generous limits) |
+| Google Gemini API | LLM inference — free tier now covers **Flash models only** (Gemini 3.5 Flash, Gemini 3.1 Flash-Lite); **Gemini 3.1 Pro removed from the free API tier April 1, 2026 and is paid-only** (the daily Pro allotment still exists on the consumer chat web app, but not via API key), 1M token context, multimodal | ai.google.dev | Free key (Flash only; tighter daily quotas since Apr 2026) |
 | Groq | Ultra-fast LLM inference (LPU hardware); Llama 4 Scout, Llama 4 Maverick, Kimi K2 (1T MoE), Qwen3 235B, Gemma, Mistral, DeepSeek R1 and more; no credit card required | groq.com | Free key |
 | OpenRouter | Access to 100+ free AI models via one API; notable free models (July 2026): **NVIDIA Nemotron 3 Ultra** (550B MoE, 1M context, `nvidia/nemotron-3-ultra-550b-a55b:free`) and **OpenAI GPT-OSS** (20B Apache 2.0 open-weight, `openai/gpt-oss-20b:free`); 25+ free models total; 50 req/day free, 1,000/day after $10 purchase | openrouter.ai | Free key |
 | GitHub Models | 40+ AI models (GPT-4o, Llama, DeepSeek-R1, Mistral, Phi, xAI, Cohere) via OpenAI-compatible API; uses your GitHub account — no separate key or signup; free tier rate-limited (e.g. GPT-4o: 10 RPM / 50 RPD); opt-in paid tier for higher limits | github.com/features/models | GitHub account (free) |
