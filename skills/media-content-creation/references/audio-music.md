@@ -14,7 +14,8 @@ Generate complete songs (vocals + instruments) from a text prompt.
 - **Stem Separation (June 11, 2026 update):** Three modes — **Advanced Split** (NEW, Premier only): choose from ~100 instruments to regenerate each stem from scratch — no separation artifacts; also exports MIDI; 10 credits/extracted track. **Split from Mix** (Updated): pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
 - Free tier: 50 credits/day (~10 songs); non-commercial use only
 - **Important (2026):** Free-tier users can no longer download audio files — tracks can only be streamed/shared within the platform. Download requires a paid plan ($10/month Pro, $30/month Premier).
-- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of June 2026 the transition has not yet occurred — current models remain active — but when it does, all generations made with the old models will eventually become inaccessible. UMG and Sony Music litigation remains active — a fair-use summary judgment hearing in the U.S. case is scheduled for July 2026 (no verdict as of July 11, 2026); a separate German case (GEMA v. Suno) is due July 31, 2026. Users who want to preserve old generations should download them now on a paid plan.
+- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of July 2026 the transition has not yet occurred — current models remain active — but when it does, all generations made with the old models will eventually become inaccessible. Users who want to preserve old generations should download them now on a paid plan.
+- **Suno loses GEMA lawsuit in Germany (July 31, 2026):** The Munich Regional Court ruled that Suno infringed copyright by training on and reproducing songs from GEMA's catalog (models v3.5 and v4), ordering Suno to disclose infringement-related revenue and pay damages (amount not yet determined). This is the first EU ruling establishing a licensing requirement for AI music training. The judgment is not yet final — Suno can appeal to a higher German court — and Suno remains operational with no immediate service impact for users. Separately, the U.S. UMG/Sony Music case (Massachusetts) has been delayed: dispositive motions are now scheduled for April 9, 2027, not summer 2026 as previously expected.
 - Input: genre, mood, lyrics (optional), style description
 - Output: full song (streaming on free; downloadable MP3 on paid)
 
@@ -29,13 +30,14 @@ Similar to Suno, strong on musicality and production quality.
 - **Licensing deals signed:** Udio reached agreements with Universal Music Group (Oct 2025), Warner Music, Merlin, and Kobalt (Q1 2026). The new licensed platform launched Q2 2026 but operates as a **walled garden** — tracks cannot be downloaded or exported, only streamed/shared within the Udio network. No download capability is expected for the foreseeable future.
 - Good for: previewing and sharing music concepts within the platform only; not suitable if you need to use the audio outside Udio
 
-## Mureka v8 — Developer-Focused AI Music Generation
+## Mureka v9 — Developer-Focused AI Music Generation (flagship since March 2026)
 
-Mureka v8 is the go-to for developers and technical producers: native API, stem separation, and MIDI export alongside full song generation.
+Mureka v9 (March 27, 2026) replaces v8 as the flagship model — the go-to for developers and technical producers: native API, stem separation, and MIDI export alongside full song generation. Uses MusiCoT (Music Chain-of-Thought) to plan song structure (intro/verse/chorus/bridge/outro) before generating, improving coherence on longer tracks; noticeably more natural vocals (breath control, note endings, emotional delivery) and clearer instrument separation vs v8. New one-click Remix: switch genres while preserving vocals/melody, or rewrite lyrics while keeping the melody.
 
 - URL: mureka.ai | API: platform.mureka.ai
-- Free tier: available with limitations — non-commercial only, Mureka retains output rights on free
-- Paid: $10/month (400 songs, full commercial rights); $30/month Pro
+- Free tier: limited free trial generations on V9; non-commercial only, Mureka retains output rights on free
+- Paid: credit-based, pay-as-you-go (no expiry on purchased credits) plus subscription plans from ~$20–27/month; roughly $10/month equivalent gets ~400 songs at entry pricing — check platform.mureka.ai for current rates
+- Languages: 10+; Styles: 50+
 - Best for: API integration into apps, stem exports for remixing, developers who need programmatic music in their pipeline
 - Commercial rights: full ownership on paid plans (royalty-free, use in ads/videos/streaming)
 
@@ -64,7 +66,7 @@ MiniMax Music 2.5 (released January 29, 2026) adds paragraph-level precision con
 - **14+ structural tags:** `[Intro]`, `[Verse]`, `[Chorus]`, `[Bridge]`, `[Interlude]`, `[Build-up]`, `[Hook]`, `[Outro]` — placed inline in the prompt to control song layout section by section
 - **Audio fidelity:** Optimized soundstage keeps vocals and instruments in separate spectral regions — the key improvement over Music 2.0
 - Best for: generation where song structure matters (commercial jingles, video scoring with section-to-cut sync, multi-verse songs with distinct parts)
-- Not ideal for: stem export or MIDI (use Mureka v8); on-demand free generation (use Suno free tier)
+- Not ideal for: stem export or MIDI (use Mureka v9); on-demand free generation (use Suno free tier)
 
 ## Google Flow Music (formerly Producer.ai / Riffusion) — Google-Owned, Free, Lyria 3 Powered
 
@@ -105,7 +107,7 @@ Beatoven.ai generates mood-based background music from text descriptions, purpos
 - **Video-to-music:** Upload a video file; AI analyzes the visual content and generates a matching soundtrack automatically
 - **Emotion control:** 16 moods (happy, sad, motivational, scary, relaxing, etc.) + regional sound styles + adjustable tempo
 - Best for: YouTubers, podcasters, course creators, and game devs needing mood-appropriate instrumentals with clean commercial licensing
-- Not ideal for: full songs with vocals (use Suno or MiniMax Music 2.5); stem separation (use Mureka v8 or Stable Audio 3.0)
+- Not ideal for: full songs with vocals (use Suno or MiniMax Music 2.5); stem separation (use Mureka v9 or Stable Audio 3.0)
 
 ## Free Royalty-Free Music (no generation needed)
 
