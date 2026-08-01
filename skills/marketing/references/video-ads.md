@@ -371,6 +371,20 @@ Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools 
 
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
 
+## Meta AI Creative Ecosystem — Brand Memory & End-to-End Ad Generation (Cannes Lions, Jun 23 2026)
+
+Meta unveiled an end-to-end AI creative ecosystem at Cannes Lions 2026: a single workspace where marketers review ad performance, generate new creative variations informed by those learnings, and test them — without leaving Ads Manager. The headline feature, **Brand Memory**, ingests a brand's own ad library to learn its identity and tone, then applies that consistently to new AI-generated creative so output doesn't drift off-brand at scale. Ads Manager also gained a built-in creative approval workflow, in-image text generation, and one-click language translation for existing creative.
+
+1. Go to Meta Ads Manager → Advantage+ Creative
+2. Opt in to Brand Memory where available — Meta analyzes your existing ad library automatically
+3. Generate new creative variations informed by what has already worked for your brand
+4. Use in-platform translation and text-generation tools to adapt creative per market
+5. Route generated creative through the new built-in approval workflow before publishing
+
+**Availability:** Brand Memory and the full end-to-end workspace are in limited testing with select advertisers as of mid-2026; broader rollout is "coming months" per Meta, no firm date given. AI creative tools are free to advertisers (no added cost beyond ad spend); political advertisers are excluded.
+**Best for:** Meta-first brands with an existing ad library who want on-brand creative generation without a separate specialized tool; will likely fold Advantage+ Creative, Brand Memory, and the new Creator Marketing Hub (unified creator discovery + partnership ads) into one workspace once fully live.
+**Not ideal for:** Brands wanting creative tools today rather than "coming months" — use Creatify, AdStellar, or Arcads for production-ready Meta ad creative right now; this is a wait-and-see feature, not yet broadly usable.
+
 ## Amazon Ads Creative Agent — Agentic AI for Amazon Campaigns (Feb 2026)
 
 Amazon Ads launched Creative Agent on February 24, 2026, inside Amazon's Creative Studio. The tool creates video and display ads for Amazon's media network (Prime Video, Twitch, Amazon.com) at no additional cost — you pay only normal campaign spend.
@@ -382,7 +396,7 @@ Amazon Ads launched Creative Agent on February 24, 2026, inside Amazon's Creativ
 5. Publish directly to your Amazon campaign (Prime Video, Twitch, display placements)
 
 **Pricing:** No additional cost to advertisers (included with Amazon Ads account)
-**Access:** UK launch February 2026; rolling out to additional markets
+**Access:** UK launch February 2026; expanded to Canada, France, Germany, India, Italy, and Spain by mid-2026; continuing to roll out to more markets
 **Best for:** Brands selling on Amazon who want AI-generated ad creative (video + display) with Amazon's own retail and shopping signal data baked in — no other platform has access to Amazon's purchase intent signals.
 **Not ideal for:** Non-Amazon campaigns (output is formatted for Amazon media only); use Creatify or AdStellar for TikTok/Meta/Google campaigns.
 
