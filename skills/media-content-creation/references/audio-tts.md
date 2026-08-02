@@ -143,7 +143,7 @@ Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expres
 - **Best for:** Multilingual voiceovers, free developer experimentation, style-directed narration, Google Cloud / Vertex AI workflows
 - **Not ideal for:** Ultra-low-latency real-time voice agents (use Cartesia Sonic 3.5); self-hosted / offline deployment
 
-## Fish Audio S2 Pro — Best Multilingual + Emotion Control
+## Fish Audio S2 Pro / S2.1 Pro — Best Multilingual + Emotion Control, Free Unlimited API (through Aug 31, 2026)
 
 Fish Audio S2 Pro ranks #1 on TTS-Arena2 with 80+ languages and 50+ inline emotion controls. Trained on 10M+ hours of audio.
 
@@ -152,6 +152,8 @@ Fish Audio S2 Pro ranks #1 on TTS-Arena2 with 80+ languages and 50+ inline emoti
 - Best for: multilingual content, emotionally nuanced narration, voice cloning
 - License: research/non-commercial free; commercial use requires separate license
 - Open-source model on HuggingFace: `fishaudio/s2-pro`
+
+**S2.1 Pro (July 2026 update):** Newer model, 83 languages, ~70ms time-to-first-audio, voice cloning from a 5-second clip, natural-language control over emotion/prosody; Elo 1,153 (~#13 on Artificial Analysis Speech Arena — lower ranked than S2 Pro's TTS-Arena2 result but higher throughput). **Free via API with no hard usage cap under fair use** (model string `s2.1-pro-free`) — originally through July 24, 2026, extended twice, now through **August 31, 2026**; Fish Audio asks accounts above $1M revenue to talk before building on the free tier. Best for developers who want zero-cost production TTS now, with the caveat that the free window has an end date and has already been extended twice.
 
 ## Hume AI TADA — Open-Source, Long-Context, Zero Content Hallucinations
 
@@ -445,6 +447,14 @@ pip install neutts
 - **Performance:** 20 tok/s on mobile CPU; 119 tok/s on Ryzen 9 laptop; 16,000+ tok/s on RTX 4090
 - **Watermarking:** Perth watermark embedded in all output audio
 - **Best for:** Privacy-first / offline deployment, edge devices, zero API cost in production
+
+## xAI Grok Voice "Think Fast 2.0" — Speech-to-Speech, Not Pure TTS (Jul 2026)
+
+Grok Voice (distinct from the Grok TTS API below) is xAI's speech-to-speech conversational model — the voice engine behind Grok Voice Mode. "Think Fast 2.0" (released July 29–30, 2026) cut first-audio-response latency to ~0.70s (from 1.25s on v1.0) and scored 82.9% on Artificial Analysis' speech-to-speech benchmark (up from 75.7%). The `grok-voice-latest` API alias auto-switches from Think Fast 1.0 to 2.0 on August 5, 2026.
+
+- **Pricing:** $0.08/minute of audio
+- **Best for:** Real-time conversational voice agents already in the xAI ecosystem needing low-latency reasoning-in-voice (comparable use case to OpenAI GPT-Realtime-2)
+- **Not ideal for:** Pure TTS narration — use the Grok TTS entry below for that; Grok Voice is a conversational speech-to-speech model, not a text-to-speech generator
 
 ## xAI Grok TTS — 5 Voices, 20+ Languages (April 2026)
 
