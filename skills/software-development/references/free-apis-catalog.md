@@ -108,6 +108,12 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | Cerebras Inference | Ultra-fast LLM inference on wafer-scale silicon (2,600+ tok/s); Llama 3.3 70B, Qwen3 32B/235B, and more; 1M tokens/day free, no credit card required; 30 RPM on free tier | inference.cerebras.ai | Free key |
 | Cloudflare Workers AI | Edge AI inference at 300+ global locations; Llama 3.1 8B, Mistral 7B, Phi-2, Gemma, SDXL (image gen), Whisper (ASR), and 40+ models; 10,000 neurons/day free (no credit card required); unique low-latency for globally distributed apps | developers.cloudflare.com/workers-ai | CF account (free) |
 
+## Healthcare
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| **NPPES NPI Registry (CMS)** | Official US National Provider Identifier database — 7M+ active records for every US doctor, hospital, and clinic; name, credentials, org info, address, specialties/taxonomy; updated weekly by CMS | npiregistry.cms.hhs.gov/api | None |
+
 ## Security
 
 | API | What | URL | Auth |
