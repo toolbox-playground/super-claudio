@@ -25,11 +25,11 @@ Kling's image-to-video mode is also excellent for animating photos.
 - Higher quality than many tools
 - Supports longer clips from a single image
 
-## Runway "Act One" / Gen-3
+## Runway Gen-4.5 (Act One)
 
 - URL: runwayml.com
-- Professional-grade animation from images
-- More control over motion style and duration
+- Professional-grade animation from images; world-consistent characters, native audio, post-generation editing via Aleph
+- More control over motion style and duration than most competitors
 
 ## When to Use Which
 
