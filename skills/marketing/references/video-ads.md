@@ -222,6 +222,18 @@ Hyper (hyperfx.ai) runs TikTok, Meta, Google, LinkedIn, and Amazon as one autono
 **Pricing:** $49/month flat (all connected channels; no per-platform fees)
 **Best for:** Teams running TikTok alongside other paid channels who need unified multi-platform optimization; rated 9.4/10 in 2026 TikTok ad automation comparisons. Not a creative generator — use alongside Creatify or Arcads for new video assets.
 
+## Benly — AI Media-Buying Agent for TikTok/Meta/Google Analytics
+
+Benly (benly.ai) is not a creative generator — it's an AI agent for media buying that unifies TikTok, Meta, and Google Ads data in one dashboard and analyzes ad creatives frame-by-frame with computer vision to predict performance and decode winning hooks before you spend more budget.
+
+1. Go to benly.ai and connect your TikTok, Meta, and/or Google Ads accounts
+2. Benly's Creative Vision analyzes existing creatives frame-by-frame, surfacing why top performers work
+3. Cross-platform dashboard auto-detects anomalies and generates natural-language performance reports
+4. Use insights to brief your next batch of creative in Creatify, Arcads, or AdStellar
+
+**Best for:** Teams running TikTok ads alongside Meta/Google who want unified analytics and creative-performance prediction without manually cross-referencing three ad managers.
+**Not ideal for:** Generating new video creative from scratch (pair with a generation tool above).
+
 ## Synter — MCP-Native Cross-Platform Ad Generator (14 Platforms in One Workflow)
 
 Synter (syntermedia.ai) emerged in 2026 as the first MCP-native ad platform: Claude and other AI agents can generate a full creative suite (image ad, video ad, landing page) from a single prompt and distribute it across 14 ad platforms in one step — no manual uploading or platform switching.
