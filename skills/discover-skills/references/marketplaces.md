@@ -22,6 +22,7 @@ Sources to search when looking for Claude Code skills and plugins.
 | **Awesome Claude** | awesomeclaude.ai/code-cheatsheet | Curated Claude Code resources and cheatsheets |
 | **Claude Marketplaces Community** | claudemarketplaces.com/skills | Browse skills by category |
 | **GitHub: superpowers** | github.com/obra/superpowers | The superpowers skill collection — meta-skills for Claude Code |
+| **ComposioHQ/awesome-claude-skills** | github.com/ComposioHQ/awesome-claude-skills | 1,000+ production-ready Claude Skills and Plugins for Claude.ai, Claude Code, and other coding agents (Codex, Cursor, Gemini CLI, Antigravity); also links Composio's MCP Gateway (1,000+ integrations) |
 | **ClaudeSkills.info** | claudeskills.info | 658+ free, community-contributed Claude Code skills including official Anthropic skills (PDF, DOCX, XLSX, frontend design, MCP builder); no paid tier, no subscriptions; updated daily |
 | **Claude Directory** | claudedirectory.org | 60+ plugins from Anthropic, partners, and community; semantic search; each plugin installs with one command and integrates automatically; covers frontend, backend, DevOps, security workflows; updated weekly (June 2026) |
 | **ClaudePluginHub** | claudepluginhub.com | Plugin directory ranked by install velocity; semantic AI search across all plugins and components; cherry-pick individual commands, agents, and skills from any plugin and bundle into a single installable package; browse by marketplace category |
