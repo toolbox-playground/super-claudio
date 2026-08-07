@@ -359,6 +359,33 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 **Access:** business.tiktok.com → Agentic Hub (generally available to all TikTok for Business accounts)
 
+## TikTok Symphony — Dreamina Seedance 2.5 Upgrade (Aug 3, 2026)
+
+TikTok rolled Dreamina Seedance 2.5 into Symphony on August 3, 2026, doubling clip length and greatly expanding creative reference inputs over the Seedance 2.0 baseline described above:
+- **Clip length** — doubled from 15 seconds to 30 seconds
+- **Multimodal references** — up from 9 to 50 image/video/audio references, with creative direction attachable to specific timestamps
+- **Visual quality** — sharper, more realistic imagery with stronger lighting, motion, and character consistency across a generated clip
+- **Where it's live** — Symphony Creative Studio, Symphony Automations (Smart+), and the Symphony API
+- **Safeguards** — unchanged: no unauthorized likeness/IP use; AI labels included on all generated content
+
+**Access:** Rolling out first to select paid advertisers in initial markets, expanding from there — check Symphony Creative Studio for availability.
+**Best for:** Advertisers already on Symphony who need longer clips (30s) or want to guide generation with far more reference assets (up to 50) than the previous 9-reference limit allowed.
+
+## Meta Advantage+ Creative — Muse Image, AI Dubbing & Generated Music (Jul 2026)
+
+Meta shipped **Muse Image** — the first image-generation model from Meta Superintelligence Labs — into Advantage+ creative on July 7, 2026, alongside AI Dubbing, AI-generated background music, and persona-based image generation. Muse Image plans a layout before generating, can blend multiple reference photos, and renders legible in-image text (price tags, infographics, QR codes) — a step up from prior Advantage+ image tools.
+
+1. Go to Meta Ads Manager → Ad creation → Advantage+ creative
+2. Turn on **Image generation** (Muse Image) — describe the shot or upload reference product photos; the model can combine multiple references and keep on-image text readable
+3. Turn on **AI Dubbing** to auto-translate and lip-sync existing video ads for new-language markets
+4. Turn on **AI-generated music** to auto-score video ads to match pacing and tone
+5. Use **Persona-based image generation** to produce consistent on-brand lifestyle variations from a single product photo
+
+**Rollout:** Muse Image began reaching advertisers and agencies in Advantage+ creative "in the coming weeks" after the July 7 announcement (already live in Meta AI, WhatsApp, and Instagram as a consumer feature); over 8 million advertisers were using Meta's AI creative tools as of the announcement.
+**Transparency:** Meta now auto-detects AI-edited ads via C2PA metadata; ads featuring a photorealistic AI-generated person get an AI label next to "Sponsored" instead of buried in the three-dot menu.
+**Best for:** Meta/Instagram-first advertisers who want in-platform image generation, auto-dubbing, and auto-scoring without leaving Ads Manager.
+**Not ideal for:** TikTok or Amazon campaigns (Advantage+ is Meta/Instagram only — use TikTok Symphony or Amazon Ads Creative Agent for those); high-volume UGC avatar video (use Arcads or Creatify).
+
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
 Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
