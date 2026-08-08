@@ -181,6 +181,8 @@ Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors
 
 **Pricing:** Starts at $110/month (Starter — 10 videos); $220/month (Creator — 20 videos); no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
 
+**Infinite Canvas & Video Translation (Aug 2026):** Arcads added an infinite-canvas workspace that puts creative generation and team review into one collaborative board — a single batch session now generates up to 60 variant combinations (5 hooks × 4 actors × 3 CTAs) for reviewers to score side by side. Also new: **Video Translation**, which takes an existing ad and re-renders it in another language with the AI actor's lips re-synced to the dubbed audio, plus a vocal-delivery import option (record yourself reading the script; Arcads maps your pacing and emphasis onto the chosen actor instead of using a flat AI voice).
+
 ## Pose Video Studio — Identity-Consistent UGC from Your Own Face
 
 Pose Video Studio (pose.ai) generates UGC-style video ads where every variant features the same AI actor trained on your own uploaded selfies — not a generic avatar from a pre-built library. Voice is cloned via ElevenLabs from ~1 minute of reference audio, so face and voice stay consistent across all campaign variants.
@@ -400,6 +402,20 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 **Performance signal:** LinkedIn internal data shows 20%+ higher CTR for campaigns running 5+ ad variants vs. single-ad campaigns.
 **Best for:** B2B brands running LinkedIn campaigns who want faster variant generation and consistent brand voice without manual design work per variant.
 **Not ideal for:** Consumer / DTC advertising (LinkedIn CPMs are high; use TikTok Symphony or Meta Advantage+ for lower-funnel consumer campaigns).
+
+## Meta Advantage+ — End-to-End AI Campaign Automation (Aug 2026)
+
+Advantage+ is now Meta's default ad campaign type rather than an opt-in — Meta has folded most manual campaign structures into a single AI-run pipeline that handles creative generation, audience targeting, placement, and bid management from one input: a business URL and a budget.
+
+1. Go to Meta Ads Manager → Create Campaign (Advantage+ is now the default flow; manual campaigns are still available but no longer the first option)
+2. Enter your business or landing page URL and a total budget
+3. Advantage+ Creative generates video from your static product images and produces multiple ad variations automatically
+4. **Predictive Budget Allocation** (Aug 2026) shifts spend toward high-performing audience segments in real time as the campaign runs, without manual reallocation
+5. Review generated variants and launch — Meta's delivery systems (Andromeda for retrieval, GEM for ranking) handle placement and bidding from there
+
+**Performance signals:** Predictive Budget Allocation shows 8–15% better ROAS in early tests; consolidating fragmented campaign structures into Advantage+ has cut CPA by up to 32% for advertisers who migrated; Advantage+ Creative's auto-variant generation is cutting creative production costs by up to 40% for teams that adopt it.
+**Best for:** Brands running Meta as a primary channel who want Performance-Max-style automation — one input (URL + budget), AI handles the rest.
+**Not ideal for:** Teams wanting granular manual control over audience segments or bid strategy (manual campaigns are still supported, just no longer the default); pure creative generation without campaign management (use Creatify, Arcads, or AdStellar and export the creative to a manually-run campaign).
 
 ## Higgsfield — Cinema Studio Platform
 
