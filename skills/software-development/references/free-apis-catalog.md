@@ -59,6 +59,18 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 |-----|------|-----|------|
 | Open Library | Books, authors, covers — millions of titles from the Internet Archive | openlibrary.org/api | None |
 
+## Calendar & Holidays
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| **Nager.Date** | Public holidays for 150+ countries — names (local + English), holiday type (Public/Bank/School/etc.), long-weekend calculation, "is today a holiday" check; REST v3; open source, self-hostable | date.nager.at/api | None |
+
+## Movies & TV
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| **TMDB (The Movie Database)** | Movies, TV shows, cast/crew, images (posters/backdrops), trending, watch providers; ~150 endpoints; free for non-commercial use (commercial needs a separate agreement); ~40 req/sec soft limit | developer.themoviedb.org | Free key |
+
 ## Food & Nutrition
 
 | API | What | URL | Auth |
@@ -87,6 +99,12 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | **Threads API (Meta)** | Post, read replies, manage media; free developer access; rate limits generous for indie devs | developers.facebook.com/docs/threads | Free account |
 | **X (Twitter) API** | **⚠️ No longer free (Feb 6, 2026)** — reading a tweet costs $0.005, posting $0.015; full-archive search from $42K/month enterprise. Use Bluesky/Threads instead for social data at no cost. | developer.x.com | Paid only |
 
+## Email & Messaging
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| **Resend** | Transactional email API — REST + SMTP, official SDKs, inbound email, batch sending, open/click tracking, DKIM/SPF/DMARC; free tier: 3,000 emails/month, 100/day, 1 verified domain | resend.com | Free key |
+
 ## Developer Utilities
 
 | API | What | URL | Auth |
@@ -96,6 +114,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | DummyJSON | Mock data (products, users) | dummyjson.com | None |
 | Open Trivia DB | Trivia questions (50+ categories) | opentdb.com/api_config.php | None |
 | Mockerito | 200+ realistic mock REST endpoints across 9 domains (E-Commerce, Finance, Healthcare, Aviation, Meteorology, etc.); full CRUD + filtering/pagination; more varied than JSONPlaceholder | mockerito.com | None |
+| **PokéAPI** | Deep, well-structured Pokémon data — species, moves, abilities, items, types, evolution chains; REST + GraphQL; ~60 endpoints; serves 1B+ requests/month, no signup | pokeapi.co | None |
 
 ## AI / Machine Learning
 
