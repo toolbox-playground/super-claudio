@@ -208,6 +208,7 @@ OpenAI GPT-Realtime-2 (released May 8, 2026) is a speech-to-speech model — not
 
 OpenAI launched GPT-Live-1 and GPT-Live-1 mini on July 8, 2026, replacing Advanced Voice Mode in ChatGPT with a true full-duplex architecture that listens and speaks simultaneously. Unlike GPT-Realtime-2 (the current developer API), GPT-Live is consumer-facing first — currently in ChatGPT, with API access coming soon (waitlist). For complex requests, GPT-Live delegates to GPT-5.5 behind the scenes and returns results in-conversation.
 
+- **Update (late July 2026):** GPT-Live now supports file uploads and Projects directly inside a voice conversation — upload a file mid-conversation and ask questions about it, or use voice within a Project while it references that project's recent chats, sources, and instructions. Live is now the default voice experience for ChatGPT Enterprise, Edu, and Healthcare workspaces (when a workspace owner enables Voice). A matching update brought GPT Voice mode to the ChatGPT desktop app for talking through work in Chat, Work, and Codex, including alongside Computer Use and local files.
 - **URL:** chat.openai.com; API access: platform.openai.com (sign-up waitlist — not yet GA)
 - **Pricing:** Included with ChatGPT free (mini) and Plus/Pro ($20/$200/mo); API pricing TBA
 - **Models:** GPT-Live-1 (paid users, highest quality); GPT-Live-1 mini (free users)
@@ -382,6 +383,21 @@ Zyphra ZONOS2 (released June 12, 2026) is the first open-source Mixture-of-Exper
 - **Best for:** Open-source multilingual TTS with commercial use at zero API cost; Japanese, English, and Chinese production content requiring high-fidelity voice cloning; projects needing CD-quality output without usage caps
 - **Not ideal for:** Ultra-low-latency real-time agents where Cartesia Sonic 3.5's 40ms TTFA is needed; English-only lightweight deployment (use Kokoro or NeuTTS Air for those)
 
+## Higgs Audio v3 (Boson AI) — Open-Weight, 100+ Languages, Inline Emotion Control (NEW June 2026)
+
+Higgs Audio v3 (Boson AI, released June 4, 2026) is a 4B-parameter conversational TTS model spanning 100+ languages with zero-shot voice cloning and inline control tokens for emotion, style (singing, shouting, whispering), sound effects, and prosody — controlled directly in the prompt without SSML. Ships an OpenAI-compatible API for drop-in integration, and can be self-hosted via SGLang-Omni.
+
+- **URL / GitHub:** github.com/boson-ai/higgs-audio | **HuggingFace:** `bosonai/higgs-audio-v3-tts-4b`
+- **License:** Research / Non-Commercial (Boson Higgs Audio v3 license); commercial or revenue-generating deployment requires a separate agreement with Boson AI
+- **Parameters:** 4B
+- **Languages:** 100+ (85 at production quality, WER/CER <5%)
+- **Voice cloning:** Zero-shot, no training data required
+- **Inline control:** Emotion (21 types), style (singing/shouting/whispering), sound effects, and prosody via control tokens in the text
+- **Streaming:** Real-time
+- **Hosted API:** OpenAI-compatible; free public preview via boson.ai/workspace (API key required)
+- **Best for:** Developers wanting an OpenAI-compatible drop-in with strong multilingual coverage and inline emotion/style control; research and non-commercial multilingual TTS
+- **Not ideal for:** Commercial production without a paid license from Boson AI (use Qwen3-TTS or Zyphra ZONOS2 for free commercial use instead); ultra-low-latency agents (use Cartesia Sonic 3.5)
+
 ## Sesame CSM-1B — Conversational Naturalness, Apache 2.0
 
 Sesame CSM-1B (Conversational Speech Model) stands out for human-like conversational realism: natural pauses, "umms", breath sounds, and subtle intonation shifts that traditional TTS models miss. Trained on 1M+ hours of English audio; uses a Llama-3.2 backbone + 300M audio decoder.
@@ -495,6 +511,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Open-weight multilingual cloud TTS, low cost | Mistral Voxtral TTS ($0.016/1K chars) |
 | Open-source multilingual TTS, 10 languages, self-hosted or commercial | Qwen3-TTS (Apache 2.0, 97ms TTFA, voice cloning + free-form voice design, github.com/QwenLM/Qwen3-TTS) |
 | Open-source multilingual TTS, 43 languages, CD-quality, voice cloning | Zyphra ZONOS2 (Apache 2.0, first open-source MoE TTS, 8B/900M active, Zyphra Cloud free trial, github.com/Zyphra/ZONOS2) |
+| Open-weight multilingual TTS with inline emotion/style tokens, OpenAI-compatible API | Higgs Audio v3 (Boson AI, 4B params, 100+ languages, zero-shot cloning, github.com/boson-ai/higgs-audio — non-commercial license, paid license needed for production) |
 | On-device, zero API cost, privacy-first | NeuTTS Air (Apache 2.0, CPU-capable) |
 | Ultra-fast batch TTS, drop-in OpenAI TTS replacement | Kokoro TTS (Apache 2.0, 82M params, 96× real-time, fixed voices) |
 | Human-like conversational naturalness (pauses, ums, breaths) | Sesame CSM-1B (Apache 2.0, English only, CUDA required) |
