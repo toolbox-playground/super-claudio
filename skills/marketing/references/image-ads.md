@@ -9,6 +9,7 @@
 | **Canva** | Banners, carousels, social posts | Yes (free tier) |
 | **Adobe Express** | Quick resizing, brand kits | Free tier |
 | **Nano Banana 2** | Product in lifestyle scene | Check site |
+| **Nano Banana Pro** (Gemini 3 Pro Image) | Studio-quality 2K/4K product shots, multilingual on-image text, lighting/color-grade control; now live directly inside Google Ads Asset Studio for campaign creative | Check site |
 | **Flux via fal.ai** | AI-generated product images | API credits |
 
 ### Canva Ad Creation Workflow

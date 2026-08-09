@@ -84,16 +84,21 @@ Predis.ai generates content designed to look like organic posts, then runs them 
 
 Best for: brands wanting native-feel TikTok ads with lower CPM through Spark Ads.
 
-## Lapis — Best AI Ad Generator for TikTok (2026)
+## Lapis — AI Ad Generator, Now Multi-Platform (2026 Update)
 
-Lapis is purpose-built for TikTok, auto-sizing creatives for vertical-first placements (9:16, 1:1) with built-in performance forecasting and visuals tuned to TikTok's native aesthetic.
+Lapis started TikTok-first (auto-sizing creatives for vertical-first placements with visuals tuned to TikTok's native aesthetic) but has expanded into a cross-platform ad generator: one prompt now produces correctly-sized, on-brand ads for Meta (feed, stories, reels), Google Display (all IAB sizes), LinkedIn, TikTok, WhatsApp, and ChatGPT sponsored results — with built-in performance forecasting (predicted impressions, clicks, CTR, leads based on industry benchmarks) before you spend.
 
 1. Go to trylapis.com
-2. Input product details or URL
-3. Select TikTok ad format
-4. Generate scroll-stopping visuals optimized for the platform algorithm
+2. Upload your logo, brand colors, and reference images — Lapis learns your visual identity and voice
+3. Describe your campaign in a prompt, or paste a product URL
+4. Select target platform(s): Meta, Google, LinkedIn, TikTok, WhatsApp, or ChatGPT
+5. Review forecasted performance, then generate and export
 
-Best for: high-volume TikTok campaigns with creative performance scoring.
+**Free tier:** 5 credits
+**Pricing:** Basic $99/month (25 campaigns; Meta + LinkedIn, 5 competitors tracked), Pro $599/month (250 campaigns, all platforms); custom Enterprise
+**Languages:** 15+, including Hindi, Tamil, Telugu, Spanish
+**Best for:** teams wanting one prompt to cover multiple ad platforms with pre-spend performance forecasting; still a strong pick for TikTok-only, high-volume campaigns.
+**Not ideal for:** pure video UGC production at volume (use Arcads or Creatify instead — Lapis leans toward image/static ad generation).
 
 ## AdCreative.ai — Predictive Scoring for High-Volume Campaigns
 
@@ -318,6 +323,14 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 
 Access: business.tiktok.com → Creative Center → Symphony AI (now generally available for all TikTok for Business accounts)
 
+### Seedance 2.5 Update (Aug 3, 2026)
+
+Symphony's underlying video model upgraded from Dreamina Seedance 2.0 to **Seedance 2.5**, rolling out first to select paid advertisers across Symphony Creative Studio, Symphony Automations (in Ads Manager), and the Symphony API:
+- **Max clip length doubled** — 15 seconds → 30 seconds per AI-generated ad
+- **4K output** available (up from lower-resolution defaults)
+- **50 multimodal reference uploads** per generation (images, video, audio) — up from a previous limit of 9
+- Same built-in safety features carry over: AI labels, invisible watermarks, no unauthorized likeness/IP use
+
 ## TikTok Symphony Agent — Agentic Campaign Creation (Cannes Lions, June 22, 2026)
 
 Symphony Agent is TikTok's end-to-end agentic workflow for building full campaigns from a single text prompt. Unlike the Symphony creative tools (which generate individual assets), Symphony Agent orchestrates the full creative pipeline: reads performance signals, writes briefs, matches creators, and coordinates across three TikTok surfaces simultaneously.
@@ -358,6 +371,21 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 **Launch partners:** HubSpot (CRM sync), Wix (storefront integration), Constant Contact (audience import), Mobvista (DSP connections)
 
 **Access:** business.tiktok.com → Agentic Hub (generally available to all TikTok for Business accounts)
+
+## Meta Advantage+ Creative — Muse Image (Jul 2026, Rolling Out)
+
+Meta announced **Muse Image** on July 7, 2026 — Meta Superintelligence Labs' first in-house image-generation model (following the Muse Spark LLM shipped in April 2026). Muse Image is powering new advertiser-facing tools inside Advantage+ Creative: background generation and expansion, image touch-up, on-image text generation, video expansion for Reels, and automatic creative variations.
+
+1. Open Meta Ads Manager → Advantage+ Creative (standard enhancements run by default on most campaigns)
+2. Upload a base product/lifestyle image or existing creative
+3. Use Muse Image-powered tools to generate background variations, expand the image beyond its original frame, touch up product shots, or add on-image text
+4. Meta auto-generates additional creative variants, grouped into categories like "Refined product look," "Popular in your niche," and "High return on ad spend"
+5. Review and approve variants — approved ones run automatically as part of Advantage+ delivery
+
+**Status (as of Aug 2026):** Announced, not yet fully live — Meta said advertiser access would arrive "in the coming weeks" from the July 7 announcement, with broader Q3 2026 availability for larger accounts. Check your own Advantage+ Creative panel for availability.
+**Disclosure requirement:** Since March 2026, Meta requires labeling ads that contain AI-generated or AI-modified content.
+**Best for:** Meta-first advertisers already running Advantage+ who want native AI image variation without adding a third-party tool.
+**Not ideal for:** Brands wanting full manual creative control — Advantage+ enhancements are on by default and need to be reviewed or disabled per campaign; TikTok/Google-first campaigns (use Symphony or Asset Studio instead).
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
