@@ -53,6 +53,18 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 |-----|------|-----|------|
 | OpenSky Network | Real-time ADS-B aircraft positions, callsigns, altitude, velocity, heading — community sensor network; REST API + WebSocket; free for research/personal use; historical data for registered users; uneven coverage outside Europe/North America; non-commercial license | opensky-network.org | None (basic); free account for historical data + higher rate limits |
 
+## Holidays & Calendar
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| **Nager.Date** | Public holiday data for 200+ countries; open-source REST API (v3); JSON responses with date, local name, country code, and holiday type; free cloud API with no key; offline NuGet/Docker options require a paid sponsor license, but the hosted REST API stays free | nagerholidays.com/api (formerly date.nager.at) | None |
+
+## Jobs & Careers
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| **Jobicy Remote Jobs API** | Remote job listings from distributed companies across categories and regions; filter by industry, region, and keyword; returns title, company, description, salary, employment type; also available as RSS, MCP server, and embeddable widgets; no signup — but avoid polling more than once/hour to prevent throttling | jobicy.com/api/v2/remote-jobs (github.com/Jobicy/remote-jobs-api) | None |
+
 ## Books & Literature
 
 | API | What | URL | Auth |
