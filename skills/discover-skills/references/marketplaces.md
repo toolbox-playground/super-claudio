@@ -30,7 +30,7 @@ Sources to search when looking for Claude Code skills and plugins.
 | **Mastering Claude Skills** | mastering-claude.com/skills | 504+ curated and tested skills; browsable without GitHub; human-reviewed for quality |
 | **Agensi** | agensi.io | Security-scanned marketplace — every skill passes an 8-point checklist (prompt injection, data exfiltration, secret detection, dangerous commands, obfuscation, external fetches) before listing; creator payments (80% revenue share); paid and free skills |
 | **SkillsMP** | skillsmp.com | 2.2M+ agent skills indexed from GitHub (2,213,455+ as of July 2026; public API available); compatible with Claude Code, Codex CLI, ChatGPT, and other agents |
-| **Tons of Skills** | tonsofskills.com | 463 plugins, 3,070 skills, 200 agents for Claude Code; `ccpi` CLI package manager; catalog updated daily from GitHub; most comprehensive single-site collection (July 2026) |
+| **Tons of Skills** | tonsofskills.com | 471 plugins, 3,069+ skills, 347 agents, 30 community contributors for Claude Code; source repo github.com/jeremylongshore/claude-code-plugins-plus-skills; `ccpi` CLI package manager (`@intentsolutionsio/ccpi` on npm); catalog updated daily from GitHub; most comprehensive single-site collection (verified August 2026) |
 | **claude-skills (345 skills)** | github.com/alirezarezvani/claude-skills | 345 production-ready skills across 13 AI coding agents (Claude Code, Codex CLI, Cursor, Gemini CLI, and more), spanning engineering, marketing, product, compliance, and C-level advisory domains; also includes 30+ agents, 70+ custom commands, and 602 Python CLI tools |
 | **claude-code-marketplace (Netresearch)** | github.com/netresearch/claude-code-marketplace | Curated Agent Skills using agentskills.io open standard — portable across Claude Code, Cursor, Copilot, Codex, Gemini CLI, and 30+ more agents |
 | **claude-code-skills (daymade)** | github.com/daymade/claude-code-skills | Production-ready skills marketplace for enhanced development workflows |
@@ -43,6 +43,8 @@ Sources to search when looking for Claude Code skills and plugins.
 | **Cross AI Tools** | crossaitools.com | 21,700+ Claude Code skills, plugins, and MCP servers in one browsable directory; 300,000+ monthly visitors; daily GitHub sync; supports Claude Code, Codex, OpenCode, Cursor, and 40+ agents; search by category (frontend, backend, testing, DevOps, security) |
 | **LobeHub Skills** | lobehub.com/skills | 169K+ agent skills in SKILL.md format — compatible with Claude Code, Codex CLI, ChatGPT; includes security vetting, AI/LLM integration, and developer tooling categories |
 | **There's An AI For That** | theresanaiforthat.com | Broader AI tool discovery (not Claude-specific, but useful for research) |
+| **awesome-claude-skills (ComposioHQ)** | github.com/ComposioHQ/awesome-claude-skills | Curated collection of 1,000+ production-ready Claude Skills; 72.1k GitHub stars, 8.2k forks; organized into 10 sections (document processing, dev tools, data/analysis, business/marketing, creative/media, security, App Automation via Composio's 78 SaaS integrations, and more) |
+| **awesome-claude-skills (travisvn)** | github.com/travisvn/awesome-claude-skills | Curated list of Claude Skills, resources, and tools focused on Claude Code; 14.6k GitHub stars, 1.8k forks; covers official skills (DOCX/PDF/PPTX/XLSX, design, dev, comms) plus community collections like obra/superpowers |
 
 ## How to Search Each Source
 
