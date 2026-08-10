@@ -78,6 +78,36 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 |-----|------|-----|------|
 | **GoDaddy Developer Platform** | Domain search, availability checking, pricing, purchase, DNS configuration, and domain management APIs; OAuth-based authentication; agent-safe execution controls; CLI included; LLM-optimized docs; launched July 15, 2026 | developer.godaddy.com | Free account (OAuth) |
 
+## Entertainment — Movies & TV
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| TMDb (The Movie Database) | Movie/TV metadata, cast/crew, images, ratings for hundreds of thousands of titles; free for non-commercial use with required attribution; commercial license available on request | developer.themoviedb.org | Free key |
+
+## Gaming
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| FreeToGame API | Database of 400+ free-to-play PC/browser/mobile games — genre, platform, publisher, release date, thumbnails; ~10 req/sec soft limit | freetogame.com/api-doc | None |
+
+## Sports
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| API-Sports | Family of 10+ sport-specific APIs (Football, Basketball/NBA, NFL/NCAA, Formula-1, MMA, Hockey, Rugby, and more) — scores, stats, standings, odds; "always free" tier, no credit card; 100 req/day + 10 req/min per sport | api-sports.io | Free key |
+
+## Health
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| disease.sh | COVID-19 and influenza statistics — global/continental/country time series, vaccine data, historical trends; open-source (GPL-3.0) | disease.sh, github.com/disease-sh/API | None |
+
+## IoT / Environmental Sensors
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| openSenseMap API | Real-time environmental data (temperature, humidity, PM2.5/PM10, etc.) from thousands of community-run senseBox stations worldwide; data is open (CC0/PDDL) | api.opensensemap.org | None (read endpoints) |
+
 ## Communication & Social
 
 | API | What | URL | Auth |
@@ -101,7 +131,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
-| Google Gemini API | LLM inference (Gemini 3.5 Flash free in AI Studio — new default since May 19, 2026; daily Gemini 3.1 Pro allotment for harder reasoning), 1M token context, multimodal | ai.google.dev | Free key (generous limits) |
+| Google Gemini API | LLM inference — free tier is Flash/Flash-Lite only (Gemini 3.6 Flash default since ~May 2026, plus Flash-Lite variants); **Gemini 3.1 Pro was removed from the free API tier April 1, 2026 and is now paid-only** ($2/$12 per 1M tokens); 1M token context, multimodal | ai.google.dev | Free key (Flash tier only) |
 | Groq | Ultra-fast LLM inference (LPU hardware); Llama 4 Scout, Llama 4 Maverick, Kimi K2 (1T MoE), Qwen3 235B, Gemma, Mistral, DeepSeek R1 and more; no credit card required | groq.com | Free key |
 | OpenRouter | Access to 100+ free AI models via one API; notable free models (July 2026): **NVIDIA Nemotron 3 Ultra** (550B MoE, 1M context, `nvidia/nemotron-3-ultra-550b-a55b:free`) and **OpenAI GPT-OSS** (20B Apache 2.0 open-weight, `openai/gpt-oss-20b:free`); 25+ free models total; 50 req/day free, 1,000/day after $10 purchase | openrouter.ai | Free key |
 | GitHub Models | 40+ AI models (GPT-4o, Llama, DeepSeek-R1, Mistral, Phi, xAI, Cohere) via OpenAI-compatible API; uses your GitHub account — no separate key or signup; free tier rate-limited (e.g. GPT-4o: 10 RPM / 50 RPD); opt-in paid tier for higher limits | github.com/features/models | GitHub account (free) |
