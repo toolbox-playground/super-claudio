@@ -193,7 +193,7 @@ Cartesia Sonic 3.5 (upgraded May 2026) is purpose-built for real-time conversati
 
 ## OpenAI GPT-Realtime-2 — Voice Reasoning Model, GPT-5-Class Intelligence (May 2026)
 
-OpenAI GPT-Realtime-2 (released May 8, 2026) is a speech-to-speech model — not a dedicated TTS — built for voice agents that need to reason while they speak. It integrates GPT-5-class reasoning directly into the audio loop: handles tool calls, interruptions, and multi-turn logic entirely in voice with a 128,000-token context window (4× larger than GPT-Realtime-1.5). Related models in the same API update: `gpt-realtime-translate` (live streaming translation across 70+ input languages, $0.034/min) and `gpt-realtime-whisper` (streaming STT, $0.017/min).
+OpenAI GPT-Realtime-2 (released May 8, 2026) is a speech-to-speech model — not a dedicated TTS — built for voice agents that need to reason while they speak. It integrates GPT-5-class reasoning directly into the audio loop: handles tool calls, interruptions, and multi-turn logic entirely in voice with a 128,000-token context window (4× larger than GPT-Realtime-1.5). Related models in the same API update: `gpt-realtime-translate` (live streaming translation across 70+ input languages, $0.034/min) and `gpt-realtime-whisper` (streaming STT, $0.017/min). **Updated July 6, 2026:** `gpt-realtime-2.1` and a new `gpt-realtime-2.1-mini` budget tier shipped — ~25% lower p95 latency via improved caching; the mini variant has no equivalent in the 2.0 generation.
 
 - **URL:** platform.openai.com/docs/guides/realtime
 - **API model:** `gpt-realtime-2`
@@ -459,6 +459,17 @@ xAI launched its Grok Text-to-Speech API in April 2026, built on the same voice 
 - **Expressive tags:** Inline: `[laugh]`, `[sigh]`, `[breath]`; wrapping: `<whisper>text</whisper>`, `<emphasis>text</emphasis>`
 - **Best for:** Developers already in the xAI/Grok ecosystem; multilingual voice agents; production pipelines needing format flexibility
 - **Not ideal for:** Budget-sensitive high-volume use (use Speechmatics $0.011/1K chars or Kokoro at no cost); theatrical emotional range (use Hume Octave 2); top-5 quality ranking (Cartesia Sonic 3.5 and Fun-Realtime-TTS now rank above it)
+
+## xAI Grok Voice Think Fast 2.0 — Speech-to-Speech Reasoning Model (Jul 2026)
+
+Distinct from the xAI Grok TTS API above (pure text-to-speech): Grok Voice Think Fast 2.0 is a speech-to-speech conversational reasoning model, in the same category as OpenAI's GPT-Realtime-2.1 and Gemini Live. Released July 29, 2026; became the default via the `grok-voice-latest` alias on August 5, 2026.
+
+- **URL:** x.ai/api | **Model ID:** `grok-voice-think-fast-2.0`
+- **Pricing:** $0.08/min audio (up from $0.05/min on Think Fast 1.0)
+- **Latency:** ~0.70s time-to-first-audio (down from 1.25s on 1.0)
+- **Benchmark:** 82.9% on Artificial Analysis' speech-to-speech benchmark, vs. 79.1% for GPT-Realtime-2.1 and 69.5% for Gemini 3.1 Flash (speech-to-speech mode)
+- **Best for:** Voice agents needing low-latency reasoning in the Grok/xAI ecosystem
+- **Not ideal for:** Pure TTS use cases (use xAI Grok TTS above); budget-sensitive pipelines
 
 ## Speechmatics TTS — Ultra-Cheap Enterprise TTS, 11–27× Below ElevenLabs
 
