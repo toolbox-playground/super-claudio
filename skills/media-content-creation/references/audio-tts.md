@@ -158,13 +158,13 @@ Fish Audio S2 Pro ranks #1 on TTS-Arena2 with 80+ languages and 50+ inline emoti
 Hume TADA (Text-Acoustic Dual Alignment, March 2026) is Hume's first open-source TTS release: it aligns text tokens directly to audio tokens, achieving zero content hallucinations across 1,000+ test samples and supporting up to 700 seconds of audio (~12 min) in a single pass — 10× longer than most models. 5× faster inference than comparable LLM-based TTS (real-time factor ~0.09).
 
 - **URL / GitHub:** github.com/HumeAI/tada
-- **License:** Open-source (Apache 2.0)
-- **Languages:** English
+- **License:** Dual — code is MIT; model weights are under the Llama 3.2 Community License Agreement (built on Llama 3.2), so weight usage must comply with Meta's terms
+- **Languages:** English (default) plus Arabic, Chinese, French, German, Italian, Japanese, Polish, Portuguese, Spanish
 - **Duration:** up to 700 seconds in a single pass
-- **Latency:** Real-time factor ~0.09
+- **Latency:** Real-time factor ~0.09–0.12 depending on hardware/caching (H100 with cached prompts)
 - **Free tier:** Yes (self-host)
 - **Best for:** Long-form narration without content hallucinations; research; self-hosted open-source deployment
-- **Not ideal for:** Multilingual content or emotionally nuanced delivery (use Chatterbox or Hume Octave 2 for those)
+- **Not ideal for:** Emotionally nuanced delivery (use Chatterbox or Hume Octave 2 for that); commercial deployment without reviewing the Llama 3.2 license terms on the weights
 
 ## Hume Octave 2 — Emotional TTS with Acting Instructions
 
@@ -326,12 +326,16 @@ wav = model.generate("Hello, this is a test of Chatterbox TTS.")
 torchaudio.save("output.wav", wav, model.sr)
 ```
 
-**Models:**
-- `chatterbox-tts` — English, emotion control, voice cloning
-- `chatterbox-tts[multilingual]` — 23+ languages
-- `chatterbox-turbo` — 350M params; up to 6× faster than real-time on GPU; sub-200ms latency; paralinguistic prompting tags (`[laugh]`, `[cough]`, `[chuckle]`) for natural-sounding output; MIT license
+**Models (expanded lineup, 2026):**
+- `chatterbox-tts` — Original English model (500M params), CFG and exaggeration tuning controls
+- `chatterbox-multilingual` (V3) — 500M params, 23+ languages (Arabic, Chinese, English, French, German, Hindi, Japanese, Korean, Spanish, and more); improved speaker similarity and reduced hallucinations vs earlier versions
+- `chatterbox-turbo` — 350M params; up to 6× faster than real-time on GPU; sub-200ms latency; single-step decoder; paralinguistic prompting tags (`[laugh]`, `[cough]`, `[chuckle]`) for natural-sounding output
+- `chatterbox-nano` (NEW) — 110M params, English only; shares Turbo's architecture; CPU-capable at ~3× real-time on 8 CPU cores — for on-device / tight resource budgets
+- **Single Language Packs** (NEW) — six 500M dedicated finetunes for region/dialect-specific quality: Chinese, Latam Spanish, Spain Spanish, Brazilian Portuguese, Portugal Portuguese, Hindi
 
-**Homepage:** resemble.ai/chatterbox | **PyPI:** `pip install chatterbox-tts`
+All models are MIT-licensed and watermark output audio with Perth watermarking.
+
+**Homepage:** resemble.ai/chatterbox | **GitHub:** github.com/resemble-ai/chatterbox | **PyPI:** `pip install chatterbox-tts`
 
 ## Mistral Voxtral TTS — Open-Weight, Low-Latency, 9 Languages
 
@@ -369,7 +373,7 @@ pip install git+https://github.com/QwenLM/Qwen3-TTS
 Zyphra ZONOS2 (released June 12, 2026) is the first open-source Mixture-of-Experts TTS model — 8B total parameters (900M active per inference pass) trained on 6M+ hours of speech across 43 languages. CD-quality 44.1kHz audio, zero-shot voice cloning from 10–30 seconds of reference audio, and Apache 2.0 license for free commercial use.
 
 - **URL / GitHub:** github.com/Zyphra/ZONOS2 | **HuggingFace:** `Zyphra/ZONOS2`
-- **License:** Apache 2.0 (commercial use permitted)
+- **License:** MIT (commercial use permitted; some vendored third-party components, e.g. NeMo-text-processing, are Apache-2.0)
 - **Architecture:** MoE++ — 8B total params, 900M active during inference
 - **Training data:** 6M+ hours of speech across 43 languages (expanded from 200K hours in ZONOS-v0.1)
 - **Languages:** 43 — Japanese, English, Chinese at Tier 1 (highest quality); broad multilingual coverage
@@ -403,16 +407,31 @@ pip install git+https://github.com/SesameAILabs/csm
 
 Microsoft VibeVoice is an open-source family accepted as an Oral at ICLR 2026 — includes TTS (1.5B), a streaming Realtime variant (0.5B), and a long-form ASR model (7B). The TTS model synthesizes up to 90 minutes with up to 4 distinct speakers in one pass — unique among open-source models.
 
-> **Note:** Microsoft explicitly recommends against production/commercial deployment without further testing. Currently best suited for research and development.
+> **Note:** Microsoft explicitly recommends against production/commercial deployment without further testing: "We do not recommend using VibeVoice in commercial or real-world applications without further testing and development." Currently best suited for research and development.
+>
+> **Repo history:** The TTS *code* was removed from the GitHub repo in September 2025 over misuse concerns — the TTS model weights are still published on HuggingFace, but the reference inference code lives outside the main repo now. Check the repo before assuming a plain `git clone` gets you the TTS pipeline.
 
 - **URL / GitHub:** github.com/microsoft/VibeVoice | **HuggingFace:** `microsoft/VibeVoice-1.5B`
 - **License:** MIT (research/development use recommended; commercial deployment not advised by Microsoft yet)
-- **Models:** VibeVoice-TTS-1.5B (long-form), VibeVoice-Realtime-0.5B (streaming), VibeVoice-ASR-7B (recognition)
+- **Models:** VibeVoice-TTS-1.5B (long-form), VibeVoice-Realtime-0.5B (streaming, ~10 min), VibeVoice-ASR-7B (recognition, up to 60 min continuous), VibeVoice-ASR-BitNet (quantized, CPU/edge inference — 4.62GB model compressed to 1.58GB, added July 2026)
 - **Speakers:** up to 4 simultaneous in one generation
-- **Duration:** up to 90 minutes in a single pass
-- **ASR:** 50+ languages, speaker diarization, timestamps
+- **Duration:** up to 90 minutes in a single pass (TTS)
+- **ASR:** 50+ languages, speaker diarization, timestamps; also available through Azure AI Foundry Labs (integrated March 2026) and native HuggingFace Transformers support
 - **Best for:** Audiobooks, long-form narration, multi-speaker podcast generation, research
 - **Not ideal for:** Production voice agents or commercial apps (use Cartesia/ElevenLabs for those)
+
+## Boson AI Higgs Audio v3 / Higgs TTS 3 — Open-Weight Conversational TTS, 100+ Languages (NEW June 2026)
+
+Boson AI (founded by former AWS chief scientist Alex Smola and Mu Li) released Higgs Audio v3 — also branded Higgs TTS 3 — on June 4, 2026: a 4B-parameter chat-native TTS model that streams audio over Server-Sent Events before a full sentence has finished generating. Inline control tags let you change emotion, switch speaking style, adjust speed/pitch, insert pauses, or trigger sound effects mid-utterance. On Boson's internal 111-language/dialect benchmark suite it reaches single-digit WER/CER across 100 languages. A companion speech-to-speech model, **Higgs RealTime**, skips the text-intermediate step entirely for lower-latency, interruption-tolerant conversational agents.
+
+- **URL / GitHub:** github.com/boson-ai/higgs-audio (8k+ stars) | **HuggingFace:** `bosonai/higgs-audio-v3-tts-4b`
+- **API:** boson.ai/workspace — OpenAI-compatible interface; free rate-limited preview tier
+- **License:** Boson Higgs Audio v3 Research and Non-Commercial License — free for research/non-commercial use; **production/commercial use requires a separate paid license**; prohibits non-consensual voice cloning, impersonation, and other misuse
+- **Parameters:** 4B
+- **Languages:** 100+ (111 languages/dialects in Boson's own benchmark suite)
+- **Voice cloning:** Zero-shot
+- **Best for:** Evaluating a strong open-weight conversational TTS with self-host or API options; research and non-commercial projects
+- **Not ideal for:** Commercial production without buying the separate license — use Qwen3-TTS, Kokoro, or Chatterbox instead if you need a fully permissive Apache/MIT license
 
 ## Kokoro TTS — Ultra-Lightweight, #1 HuggingFace TTS Arena
 
@@ -484,7 +503,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | 80+ languages, emotion control | Fish Audio S2 Pro |
 | Best blind-test naturalness (cloud) | Qwen-Audio-3.0-TTS-Plus (Elo 1,236, **#1** mid-July 2026), Speechify SIMBA 3.2 (Elo 1,234, **#2** mid-July 2026), Gemini 3.1 Flash TTS (Elo ~1,214, **~#3**), Cartesia Sonic 3.5 (Elo ~1,207, **~#4**) |
 | Voice cloning, no cost, offline | Chatterbox (open-source) |
-| Long-form narration (up to 12 min), zero hallucinations, self-hosted | Hume AI TADA (Apache 2.0, open-source) |
+| Long-form narration (up to 12 min), zero hallucinations, self-hosted | Hume AI TADA (MIT code / Llama 3.2 license on weights, open-source) |
 | Voice cloning, cloud, easiest | ElevenLabs (paid) |
 | Bulk generation (many files) | edge-tts or Chatterbox (no credit limits) |
 | Real-time voice agent / chatbot | Cartesia Sonic 3.5 (~40ms TTFA), Smallest.ai Lightning V3.1 (<100ms), or Inworld Realtime TTS-2 (<200ms, closed-loop, 100+ langs) |
@@ -494,7 +513,8 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Ultra-cheap high-volume English TTS, single-vendor STT+TTS | Speechmatics TTS ($0.011/1K chars, ~80ms TTFA) |
 | Open-weight multilingual cloud TTS, low cost | Mistral Voxtral TTS ($0.016/1K chars) |
 | Open-source multilingual TTS, 10 languages, self-hosted or commercial | Qwen3-TTS (Apache 2.0, 97ms TTFA, voice cloning + free-form voice design, github.com/QwenLM/Qwen3-TTS) |
-| Open-source multilingual TTS, 43 languages, CD-quality, voice cloning | Zyphra ZONOS2 (Apache 2.0, first open-source MoE TTS, 8B/900M active, Zyphra Cloud free trial, github.com/Zyphra/ZONOS2) |
+| Open-source multilingual TTS, 43 languages, CD-quality, voice cloning | Zyphra ZONOS2 (MIT license, first open-source MoE TTS, 8B/900M active, Zyphra Cloud free trial, github.com/Zyphra/ZONOS2) |
+| Open-weight conversational TTS, 100+ languages, research/non-commercial | Boson AI Higgs Audio v3 / Higgs TTS 3 (4B params, github.com/boson-ai/higgs-audio, free research license — commercial deployment needs a separate paid license) |
 | On-device, zero API cost, privacy-first | NeuTTS Air (Apache 2.0, CPU-capable) |
 | Ultra-fast batch TTS, drop-in OpenAI TTS replacement | Kokoro TTS (Apache 2.0, 82M params, 96× real-time, fixed voices) |
 | Human-like conversational naturalness (pauses, ums, breaths) | Sesame CSM-1B (Apache 2.0, English only, CUDA required) |
