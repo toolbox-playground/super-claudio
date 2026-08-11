@@ -43,6 +43,8 @@ Sources to search when looking for Claude Code skills and plugins.
 | **Cross AI Tools** | crossaitools.com | 21,700+ Claude Code skills, plugins, and MCP servers in one browsable directory; 300,000+ monthly visitors; daily GitHub sync; supports Claude Code, Codex, OpenCode, Cursor, and 40+ agents; search by category (frontend, backend, testing, DevOps, security) |
 | **LobeHub Skills** | lobehub.com/skills | 169K+ agent skills in SKILL.md format — compatible with Claude Code, Codex CLI, ChatGPT; includes security vetting, AI/LLM integration, and developer tooling categories |
 | **There's An AI For That** | theresanaiforthat.com | Broader AI tool discovery (not Claude-specific, but useful for research) |
+| **awesome-claude-skills (ComposioHQ)** | github.com/ComposioHQ/awesome-claude-skills | Curated list of 1,000+ production-ready Claude Skills and Plugins, organized by use case (docs, dev, data, business, creative, productivity, security); portable across Claude.ai, Claude Code, the Claude API, Cursor, Gemini CLI, and other agents; includes both official Anthropic skills and community contributions; surfaced on GitHub's daily trending page |
+| **PM Skills Marketplace (phuryn)** | github.com/VibeWithClaude/Claude-Code-PM-skills | Niche marketplace of 65+ skills across 8 plugins and 36 chained workflow commands for product management (discovery, strategy, execution, launch, growth); encodes frameworks from Teresa Torres, Marty Cagan, and Alberto Savoia; MIT licensed; add with `claude plugin marketplace add phuryn/pm-skills` |
 
 ## How to Search Each Source
 
