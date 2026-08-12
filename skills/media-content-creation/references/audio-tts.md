@@ -143,14 +143,14 @@ Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expres
 - **Best for:** Multilingual voiceovers, free developer experimentation, style-directed narration, Google Cloud / Vertex AI workflows
 - **Not ideal for:** Ultra-low-latency real-time voice agents (use Cartesia Sonic 3.5); self-hosted / offline deployment
 
-## Fish Audio S2 Pro — Best Multilingual + Emotion Control
+## Fish Audio S2.1 Pro — Best Multilingual + Emotion Control
 
-Fish Audio S2 Pro ranks #1 on TTS-Arena2 with 80+ languages and 50+ inline emotion controls. Trained on 10M+ hours of audio.
+Fish Audio S2 Pro ranks #1 on TTS-Arena2 with 80+ languages and 50+ inline emotion controls, trained on 10M+ hours of audio. **Updated July 28, 2026:** Fish Audio raised a $52M seed and launched **S2.1 Pro**, pitched directly against ElevenLabs and Cartesia — 5-second voice clones, word-level emotion tags, and roughly 1/6 the API cost of ElevenLabs, with a free developer API trial window at launch.
 
 - URL: fish.audio
-- Free tier: 200 minutes/month
-- Best for: multilingual content, emotionally nuanced narration, voice cloning
-- License: research/non-commercial free; commercial use requires separate license
+- **Free tier (corrected 2026 pricing):** 8,000 credits/month, ~7 minutes of generation — personal/non-commercial. (Note: "200 minutes" is the **paid** Plus plan, $15/month, 250K credits, commercial use — not the free tier.)
+- Best for: multilingual content, emotionally nuanced narration, voice cloning, cost-sensitive ElevenLabs switchers
+- License: research/non-commercial free; commercial use requires a paid plan or separate license
 - Open-source model on HuggingFace: `fishaudio/s2-pro`
 
 ## Hume AI TADA — Open-Source, Long-Context, Zero Content Hallucinations
@@ -191,30 +191,30 @@ Cartesia Sonic 3.5 (upgraded May 2026) is purpose-built for real-time conversati
 - Best for: voice agents, live chatbots, real-time assistants — now competitive on quality benchmarks as well as latency
 - Not ideal for: long-form content where ElevenLabs, Fish Audio, or Chatterbox are better
 
-## OpenAI GPT-Realtime-2 — Voice Reasoning Model, GPT-5-Class Intelligence (May 2026)
+## OpenAI GPT-Realtime-2.1 — Voice Reasoning Model, GPT-5-Class Intelligence (Updated July 2026)
 
-OpenAI GPT-Realtime-2 (released May 8, 2026) is a speech-to-speech model — not a dedicated TTS — built for voice agents that need to reason while they speak. It integrates GPT-5-class reasoning directly into the audio loop: handles tool calls, interruptions, and multi-turn logic entirely in voice with a 128,000-token context window (4× larger than GPT-Realtime-1.5). Related models in the same API update: `gpt-realtime-translate` (live streaming translation across 70+ input languages, $0.034/min) and `gpt-realtime-whisper` (streaming STT, $0.017/min).
+OpenAI GPT-Realtime-2 (released May 8, 2026) is a speech-to-speech model — not a dedicated TTS — built for voice agents that need to reason while they speak. It integrates GPT-5-class reasoning directly into the audio loop: handles tool calls, interruptions, and multi-turn logic entirely in voice with a 128,000-token context window (4× larger than GPT-Realtime-1.5). **Update (July 2026):** OpenAI shipped `gpt-realtime-2.1` and a new `gpt-realtime-2.1-mini` variant — same speech-to-speech design plus configurable reasoning effort, better alphanumeric recognition (order numbers, confirmation codes), more reliable interruption handling, and at least 25% lower p95 latency (from improved caching, not a smaller model). Related models in the same API family: `gpt-realtime-translate` (live streaming translation across 70+ input languages, $0.034/min) and `gpt-realtime-whisper` (streaming STT, $0.017/min).
 
 - **URL:** platform.openai.com/docs/guides/realtime
-- **API model:** `gpt-realtime-2`
-- **Pricing:** $32/1M audio input tokens; $64/1M audio output tokens; cached input at $0.40/1M tokens
+- **API models:** `gpt-realtime-2.1` (full model) · `gpt-realtime-2.1-mini` (NEW — lower cost/latency, trades some reasoning depth)
+- **Pricing:** `gpt-realtime-2.1` — $32/1M audio input tokens, $64/1M audio output tokens; `gpt-realtime-2.1-mini` — $10/1M audio input tokens, $20/1M audio output tokens; cached input at $0.40/1M tokens
 - **Context window:** 128,000 tokens
-- **Latency:** real-time streaming; handles interruptions without losing context
-- **Reasoning:** adjustable effort levels; runs parallel tool calls during conversation; scores 15.2% higher than GPT-Realtime-1.5 on Big Bench Audio
-- **Best for:** Voice agents needing complex decision-making (booking, enterprise support, multi-tool workflows) where GPT-5-class reasoning outweighs cost concerns
-- **Not ideal for:** Pure TTS use cases, budget-sensitive pipelines, or long-form content narration — the $64/1M output rate is very high vs. dedicated TTS ($10–$27/1M characters)
+- **Latency:** real-time streaming; handles interruptions without losing context; ≥25% lower p95 latency vs. `gpt-realtime-2`
+- **Reasoning:** configurable effort levels; runs parallel tool calls during conversation; scores 15.2% higher than GPT-Realtime-1.5 on Big Bench Audio
+- **Best for:** Voice agents needing complex decision-making (booking, enterprise support, multi-tool workflows) where GPT-5-class reasoning outweighs cost concerns; the new mini variant is worth a look for high-volume/latency-sensitive agents that still want some reasoning
+- **Not ideal for:** Pure TTS use cases, budget-sensitive pipelines, or long-form content narration — even the mini's $20/1M output rate is high vs. dedicated TTS ($10–$27/1M characters)
 
 ## OpenAI GPT-Live-1 — Full-Duplex Consumer Voice Model (July 8, 2026)
 
-OpenAI launched GPT-Live-1 and GPT-Live-1 mini on July 8, 2026, replacing Advanced Voice Mode in ChatGPT with a true full-duplex architecture that listens and speaks simultaneously. Unlike GPT-Realtime-2 (the current developer API), GPT-Live is consumer-facing first — currently in ChatGPT, with API access coming soon (waitlist). For complex requests, GPT-Live delegates to GPT-5.5 behind the scenes and returns results in-conversation.
+OpenAI launched GPT-Live-1 and GPT-Live-1 mini on July 8, 2026, replacing Advanced Voice Mode in ChatGPT with a true full-duplex architecture that listens and speaks simultaneously. Unlike GPT-Realtime-2.1 (the current developer API), GPT-Live is consumer-facing first — currently in ChatGPT, with API access coming soon (waitlist). For complex requests, GPT-Live delegates to GPT-5.5 behind the scenes and returns results in-conversation.
 
 - **URL:** chat.openai.com; API access: platform.openai.com (sign-up waitlist — not yet GA)
 - **Pricing:** Included with ChatGPT free (mini) and Plus/Pro ($20/$200/mo); API pricing TBA
 - **Models:** GPT-Live-1 (paid users, highest quality); GPT-Live-1 mini (free users)
-- **Architecture:** Full-duplex — speaks and listens at the same time (GPT-Realtime-2 requires push-to-talk; GPT-Live supports natural simultaneous turn-taking)
+- **Architecture:** Full-duplex — speaks and listens at the same time (GPT-Realtime-2.1 requires push-to-talk; GPT-Live supports natural simultaneous turn-taking)
 - **Naturalness:** Back-channel acknowledgments ("mhmm", "yeah"), natural interruption handling, variable pacing
 - **Best for:** ChatGPT users wanting the most natural voice conversation; developers planning consumer voice apps (once API releases)
-- **Not ideal for:** Production TTS pipelines today (API not yet available); developers needing a stable API now (use GPT-Realtime-2 for that)
+- **Not ideal for:** Production TTS pipelines today (API still not GA as of August 2026); developers needing a stable API now (use GPT-Realtime-2.1 for that)
 
 ## Smallest.ai Lightning V3.1 — Conversational TTS, Beats ElevenLabs on MOS
 
@@ -328,7 +328,7 @@ torchaudio.save("output.wav", wav, model.sr)
 
 **Models:**
 - `chatterbox-tts` — English, emotion control, voice cloning
-- `chatterbox-tts[multilingual]` — 23+ languages
+- `chatterbox-tts[multilingual]` — 25 languages (Multilingual v3, released June 10, 2026 — up from 23; still MIT-licensed, still the 0.5B Llama backbone)
 - `chatterbox-turbo` — 350M params; up to 6× faster than real-time on GPU; sub-200ms latency; paralinguistic prompting tags (`[laugh]`, `[cough]`, `[chuckle]`) for natural-sounding output; MIT license
 
 **Homepage:** resemble.ai/chatterbox | **PyPI:** `pip install chatterbox-tts`
@@ -488,7 +488,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Voice cloning, cloud, easiest | ElevenLabs (paid) |
 | Bulk generation (many files) | edge-tts or Chatterbox (no credit limits) |
 | Real-time voice agent / chatbot | Cartesia Sonic 3.5 (~40ms TTFA), Smallest.ai Lightning V3.1 (<100ms), or Inworld Realtime TTS-2 (<200ms, closed-loop, 100+ langs) |
-| Voice agent needing GPT-5-class reasoning in audio (complex tool calls, multi-turn logic) | OpenAI GPT-Realtime-2 ($32/1M in + $64/1M out; 128K context, parallel tool calls, interruption handling — expensive; not a substitute for pure TTS) |
+| Voice agent needing GPT-5-class reasoning in audio (complex tool calls, multi-turn logic) | OpenAI GPT-Realtime-2.1 ($32/1M in + $64/1M out; 128K context, parallel tool calls, interruption handling — expensive; not a substitute for pure TTS) or GPT-Realtime-2.1-mini ($10/1M in + $20/1M out, lower latency) |
 | Enterprise production (uptime + pricing transparency) | Deepgram Aura-2 ($200 free credits to start) |
 | Natural-sounding conversational voices, 300+ voice options, free start | Rime TTS (rime.ai, 10K chars/month free, Coda model for sub-100ms) |
 | Ultra-cheap high-volume English TTS, single-vendor STT+TTS | Speechmatics TTS ($0.011/1K chars, ~80ms TTFA) |
