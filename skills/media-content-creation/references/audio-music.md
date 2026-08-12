@@ -73,7 +73,7 @@ Riffusion rebranded to Producer.ai in July 2025. Google acquired Producer.ai in 
 - URL: flowmusic.app (old URL producer.ai redirects here)
 - Free tier: daily credit top-up; globally available (250+ countries), no waitlist
 - Input: text prompt; also supports image-to-music and audio-to-music inputs; new Replace and Extend features for remixing specific sections of a track
-- Stack: Lyria 3 (audio) + Veo (music video) + Nano Banana (album art) — all Google AI models
+- Stack: Lyria 3.5 (audio, upgraded July 29, 2026 — richer melodies, more expressive/emotionally nuanced vocals, better lyric prompt-adherence; trained on licensed material; SynthID watermark on all output) + Veo (music video) + Nano Banana (album art) — all Google AI models
 - Best for: free music generation with optional music video output; users in the Google/Gemini ecosystem
 
 
