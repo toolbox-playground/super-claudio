@@ -38,6 +38,11 @@ export const MyVideo = () => {
 npx remotion render src/index.ts MyVideo out/video.mp4
 ```
 
+**Claude Code agent skill (community, Jan 2026):**
+An open-source Claude agent skill teaches Claude Code (also works in Claude Desktop/Claude.ai) to write and render Remotion videos directly from a plain-English prompt — motion design with springs/easing, staggered animation choreography, color grading, film grain, Ken Burns on stills, word-synced captions, and sound design, with a render-inspect-fix loop before delivery. One of the most-installed community skills for programmatic video.
+- Repo: github.com/haidrrrry/claude-remotion-skill (MIT license)
+- Useful when you want Claude Code itself to author the Remotion components instead of hand-writing them.
+
 **Best for:**
 - Shareable WhatsApp/Instagram content with text + emoji
 - Branded promotional videos with consistent style

@@ -58,7 +58,7 @@ Then burn captions into video:
 ffmpeg -i input.mp4 -vf "subtitles=input.srt" output_captioned.mp4
 ```
 
-**CapCut** — free desktop app, automatic captions with one click, good for social media.
+**CapCut** — free desktop app, automatic captions with one click (130+ languages), good for social media. 2026 AI toolkit adds AI avatars for faceless videos and TTS with 269 voices (free tier); **AI Auto-Edit** (CapCut Desktop Pro, paid) processes raw footage through scene recognition, speech transcription, and quality scoring, then auto-assembles a cut with color correction, audio leveling, and transitions.
 
 ## Google Video Remix — AI Video Transformations in Google Photos (July 8, 2026)
 
