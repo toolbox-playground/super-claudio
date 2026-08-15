@@ -371,6 +371,23 @@ Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools 
 
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
 
+## Meta Advantage+ Creative — Native AI Creative Suite Inside Ads Manager (2026 Updates)
+
+Meta's built-in AI creative toolkit inside Ads Manager keeps expanding, with most enhancements on by default for new and existing campaigns:
+- **Text Improvements (headline rewrite)** — spotted live July 27, 2026 (documented by Meta ads specialist Jon Loomer): AI now swaps the actual headline text baked into your uploaded ad image, generating new variations automatically while leaving colors, fonts, logo, and layout untouched. Enable/disable per creative, or opt out via Branding settings.
+- **Muse Image** — Meta's own AI image model, folded into Advantage+ Creative in July 2026, so you can generate and refine ad images natively inside Ads Manager without an external tool.
+- **3D Animation / Image-to-Video** — static product photos auto-convert into 6-15 second video ad variants alongside the original static creative.
+- Other default-on enhancements: Music (auto-selected tracks for Reels/Stories), Image Filter (color/vignette adjustment), Visual Touch-Ups (brightness/contrast), Image Template (text overlay bar), Expand Image (fills placement space), Relevant Comments, Carousel Enhancements.
+
+1. Go to Meta Ads Manager → create or edit an ad → Advantage+ Creative section
+2. Review which enhancements are toggled on (most are, by default) — disable any per-creative that would conflict with locked brand guidelines
+3. Upload a static product image — Image-to-Video will auto-generate a short video variant to run alongside it
+4. Use Muse Image inside Ads Manager to generate or refine image creative without leaving the platform
+
+**Access:** Built into Meta Ads Manager (business.facebook.com) — no separate signup or subscription; standard ad spend only
+**Best for:** Advertisers already running Meta campaigns who want free, native creative variation and testing without adding a separate tool.
+**Not ideal for:** Locked-down brand creative that can't tolerate auto-edited headlines/images (disable the relevant enhancements per-ad); generating new UGC-style avatar content from scratch (Advantage+ only remixes what you upload — use Arcads or Creatify for that).
+
 ## Amazon Ads Creative Agent — Agentic AI for Amazon Campaigns (Feb 2026)
 
 Amazon Ads launched Creative Agent on February 24, 2026, inside Amazon's Creative Studio. The tool creates video and display ads for Amazon's media network (Prime Video, Twitch, Amazon.com) at no additional cost — you pay only normal campaign spend.
