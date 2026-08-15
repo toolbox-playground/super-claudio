@@ -11,6 +11,7 @@ Sources to search when looking for Claude Code skills and plugins.
 | **Claude Plugins Official** (Anthropic GitHub) | github.com/anthropics/claude-plugins-official | Anthropic-managed, high-quality plugin directory |
 | **Anthropic Skills** (Anthropic GitHub) | github.com/anthropics/skills | Official public Agent Skills repo (May 2026); includes spec, example skills, and skill-creator; all skills available to Claude.ai paid plans |
 | **Claude Plugins Community** (Anthropic GitHub) | github.com/anthropics/claude-plugins-community | Read-only mirror of Anthropic's community plugin marketplace — third-party plugins that passed automated security scanning; add manually: `claude plugin marketplace add anthropics/claude-plugins-community`; submit plugins at clau.de/plugin-directory-submission |
+| **Anthropic Knowledge Work Plugins** (Anthropic GitHub) | github.com/anthropics/knowledge-work-plugins | Official Anthropic-managed marketplace of 11 open-source role-based plugins (Productivity, Sales, Customer Support, Product Management, Marketing, Legal, Finance, Data, Enterprise Search, Bio-Research, Cowork Plugin Management); built for Claude Cowork but also compatible with Claude Code; integrates via MCP with Slack, Notion, HubSpot, Jira, and more |
 
 ## Community Marketplaces
 
@@ -43,6 +44,7 @@ Sources to search when looking for Claude Code skills and plugins.
 | **Cross AI Tools** | crossaitools.com | 21,700+ Claude Code skills, plugins, and MCP servers in one browsable directory; 300,000+ monthly visitors; daily GitHub sync; supports Claude Code, Codex, OpenCode, Cursor, and 40+ agents; search by category (frontend, backend, testing, DevOps, security) |
 | **LobeHub Skills** | lobehub.com/skills | 169K+ agent skills in SKILL.md format — compatible with Claude Code, Codex CLI, ChatGPT; includes security vetting, AI/LLM integration, and developer tooling categories |
 | **There's An AI For That** | theresanaiforthat.com | Broader AI tool discovery (not Claude-specific, but useful for research) |
+| **awesome-claude-skills** (ComposioHQ) | github.com/ComposioHQ/awesome-claude-skills | Large curated GitHub list — 72.4k stars; 1,000+ production-ready skills across document processing, dev tools, data/analysis, business/marketing, and creative/media; includes 78 pre-built SaaS integrations via Composio's "connect-apps" plugin; cross-agent (Claude Code, Codex, Cursor, Gemini CLI) |
 
 ## How to Search Each Source
 

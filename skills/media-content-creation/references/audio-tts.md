@@ -228,6 +228,19 @@ Smallest.ai Lightning V3.1 (launched March 27, 2026) achieves a 3.89 MOS, outper
 - Best for: voice agents, enterprise conversational AI (banking, BPO, telecom)
 - Not ideal for: long-form narration or podcast production (use Chatterbox or VibeVoice)
 
+## Deepgram Flux TTS — Conversation-Native TTS for Voice Agents (NEW Aug 12, 2026)
+
+Deepgram launched Flux TTS on August 12, 2026, extending the conversational architecture of its Flux speech-to-text model (originally Oct 2025) into text-to-speech. Rather than treating each sentence in isolation, Flux TTS treats the ongoing exchange as its operating context — combining generation with context-aware turn detection and native barge-in handling so voice agents know when to speak, wait, or yield.
+
+- **URL:** deepgram.com/product/text-to-speech
+- **Turn detection:** ~260ms P50 end-of-turn latency (inherited from the Flux STT sibling model)
+- **Languages:** Flux Multilingual — 10 languages (English, Spanish, French, German, Hindi, Russian, Portuguese, Japanese, Italian, Dutch) with mid-conversation code-switching
+- **Voice cloning:** Yes — brand/customer voice cloning, no engineering required
+- **Deployment:** Deepgram-managed cloud, VPC, or on-premises; native integrations with Vapi, Pipecat, LiveKit, Jambonz, Cloudflare
+- **Free tier:** Free to build with through September 12, 2026 (up to 45 concurrent streaming connections globally; 5 in EU/AU); standard pricing of $0.045/1,000 characters (with volume discounts) begins September 13, 2026
+- **Best for:** Enterprise voice agents needing tightly integrated STT+TTS turn-taking and barge-in handling
+- **Not ideal for:** Non-conversational narration or bulk generation once standard pricing starts (use Aura-2 below or Speechmatics at $0.011/1K chars)
+
 ## Deepgram Aura-2 — Enterprise Production TTS
 
 Deepgram Aura-2 targets enterprises building production voice systems where uptime, transparent pricing, and consistent low latency matter more than theatrical expressiveness. Sub-200ms TTFB (90ms optimized), 40+ English voices, 10+ Spanish voices with regional accents.
@@ -236,7 +249,7 @@ Deepgram Aura-2 targets enterprises building production voice systems where upti
 - Free start: $200 in free credits (no credit card required)
 - Pricing: $0.030 per 1,000 characters (~$1.80/hour of audio)
 - Languages: 7 (English, Spanish + others)
-- Best for: enterprise voice agents, high-volume production systems, call center bots
+- Best for: enterprise voice agents, high-volume production systems, call center bots (non-conversational; see Flux TTS above for turn-taking/barge-in needs)
 - Not ideal for: artistic/emotional content where ElevenLabs or Fish Audio excel
 
 ## Rime TTS — 300+ Voices, Sociolinguistics-Based, Sub-100ms
@@ -490,6 +503,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Real-time voice agent / chatbot | Cartesia Sonic 3.5 (~40ms TTFA), Smallest.ai Lightning V3.1 (<100ms), or Inworld Realtime TTS-2 (<200ms, closed-loop, 100+ langs) |
 | Voice agent needing GPT-5-class reasoning in audio (complex tool calls, multi-turn logic) | OpenAI GPT-Realtime-2 ($32/1M in + $64/1M out; 128K context, parallel tool calls, interruption handling — expensive; not a substitute for pure TTS) |
 | Enterprise production (uptime + pricing transparency) | Deepgram Aura-2 ($200 free credits to start) |
+| Voice agent needing tight STT+TTS turn-taking, barge-in handling | Deepgram Flux TTS (~260ms end-of-turn, free through Sept 12 2026, then $0.045/1K chars) |
 | Natural-sounding conversational voices, 300+ voice options, free start | Rime TTS (rime.ai, 10K chars/month free, Coda model for sub-100ms) |
 | Ultra-cheap high-volume English TTS, single-vendor STT+TTS | Speechmatics TTS ($0.011/1K chars, ~80ms TTFA) |
 | Open-weight multilingual cloud TTS, low cost | Mistral Voxtral TTS ($0.016/1K chars) |

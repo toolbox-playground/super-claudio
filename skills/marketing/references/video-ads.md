@@ -117,7 +117,7 @@ Pencil generates video and image ads and scores every creative against patterns 
 5. Export top-predicted creatives directly to your ad manager
 
 **Free tier:** 6 ads free (guided creation; no credit card required)
-**Pricing:** ~$99/month (Basic); ~$499/month (Pro — agency seats, unlimited)
+**Pricing (repriced, Aug 2026):** Core $14/month ($11/mo billed annually — 50 generations); Growth $55/month ($44/mo billed annually — 250 generations); Pro — custom/enterprise pricing (unlimited generations, bulk feed generation, role-based access, no-train/indemnification). Replaces the older ~$99/~$499 Basic/Pro tiers.
 **Platforms:** Facebook, Instagram, TikTok, YouTube, Amazon, Pinterest, Snapchat
 **Best for:** DTC brands and agencies that want statistically validated creatives before launch; teams burned by wasting budget on losers during testing.
 **Not ideal for:** Pure video UGC production at volume (use Arcads or Creatify instead); sub-$1K/month spend where predictive value is limited.
@@ -148,7 +148,7 @@ ElevenLabs Ads Engine (launched June 22, 2026) localizes existing ad creatives a
 4. Ads Engine translates text, adapts image copy, and dubs video while preserving tone and delivery (powered by Dubbing v2)
 5. Export or push directly to Google Ads (Search, text) or Meta Ads (text, image, video) — no manual re-upload
 
-**Free tier:** ElevenLabs Creator plan and above ($11/month); credits apply
+**Free tier:** ElevenLabs Creator plan and above ($22/month, or $18.33/mo billed annually — $11/mo is a first-month-only promo price, not the standing rate); credits apply
 **Supported integrations at launch:** Google Ads, Meta Ads
 **Best for:** Brands with proven creative that want to expand to new markets at minimal production cost; multilingual campaigns without re-filming or re-voicing.
 **Not ideal for:** Generating new creatives from scratch (use Creatify, Arcads, or AdStellar for that); ad platforms beyond Google and Meta (Ads Engine is Google + Meta only at launch).
@@ -206,7 +206,7 @@ ElevenLabs Avatars (launched June 13, 2026 in ElevenCreative) ties ElevenLabs' v
 4. Generate a lip-synced talking-head video
 5. (Optional) Use the Avatar node in Flows to batch across products, languages, or hook variants automatically
 
-**Free tier:** Creator plan ($11/month) and above
+**Free tier:** Creator plan ($22/month, $18.33/mo billed annually) and above
 **Best for:** ElevenLabs users who already use the platform for voice and want to add avatar video to the same workflow; script-heavy campaigns where consistent voice + face identity matters; multilingual batching via Flows.
 **Not ideal for:** Campaigns needing a large diverse library of distinct actor types per audience segment (use Arcads — 1,000+ actors); product-in-hand realism (use MakeUGC); ultra-high-volume generation at the lowest cost-per-video.
 
@@ -403,11 +403,25 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 
 ## Higgsfield — Cinema Studio Platform
 
-Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.0, Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace, with Cinema Studio 3.5 adding 70+ cinematic camera presets and Soul ID for cross-shot character consistency.
+Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.0, Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace. **Cinema Studio 4.0** (live mid-August 2026, replacing 3.5) adds 30+ new camera-movement presets (dolly, pan, crane, FPV), an Acting Console (6 emotions × 3 intensity levels per character), a 2-source Video Lighting Console with 50+ color-grading palettes, Video Extend (forward/backward/bridge generation without a full re-render), 30-second generations, and up to 50 references per generation to lock a face, product, or style — on top of Soul ID for cross-shot character consistency.
 
 When you need the highest realism (luxury products, fashion):
 1. Prepare a high-quality product/lifestyle image
 2. Go to higgsfield.ai → Cinema Studio
 3. Write a detailed prompt describing the camera movement and mood
-4. Use Soul ID to lock character/product appearance across shots
+4. Use Soul ID (or the Acting Console for emotion control) to lock character/product appearance across shots
 5. Generate — Higgsfield produces cinematic results that feel like professional ad shoots
+
+## AdSkull — Free-Tier AI Media Buyer for Meta, TikTok & Snap
+
+AdSkull (adskull.io) pairs an AI Studio (21+ models, including Sora 2, Veo 3.1, and Kling 3.0 for video) with campaign launch and optimization across Meta, TikTok, and Snapchat — and, unlike most UGC/ad-video competitors, offers a genuine free tier with no credit card required. It positions directly against Arcads on price (adskull.io publishes a head-to-head pricing comparison at adskull.io/en/vs/arcads).
+
+1. Go to adskull.io → Creative Studio
+2. Paste a product URL or upload assets — generate UGC-style video or image ads in ~60 seconds
+3. Choose a model (Sora 2, Veo 3.1, Kling 3.0, and others) and avatar
+4. Launch and manage campaigns directly on Meta, TikTok, or Snap from the same dashboard
+
+**Free tier:** Yes — 1 ad account, 25 launches, 50 AI credits, full AI Studio access, no credit card required
+**Pricing:** Creator $19/month (AI Studio only, 320 credits); Starter $29/month; Pro $69/month; Elite $149/month (20% off on annual billing)
+**Best for:** Solo operators and small teams wanting a no-cost way to test AI UGC ad generation before committing spend, or a cheaper Arcads alternative once they scale.
+**Not ideal for:** Teams needing Arcads' 1,000+-actor library depth or highest-volume multi-actor batch runs.

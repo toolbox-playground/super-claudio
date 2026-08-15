@@ -9,6 +9,8 @@
 | **Canva** | Banners, carousels, social posts | Yes (free tier) |
 | **Adobe Express** | Quick resizing, brand kits | Free tier |
 | **Nano Banana 2** | Product in lifestyle scene | Check site |
+| **GPT Image 2** | Photorealistic product shots, ad mockups, UI-style visuals | Free in ChatGPT (limited); API pay-per-image |
+| **Ideogram** | Ads with headline/text baked into the image (best-in-class text rendering) | Free tier (10 prompts/day) |
 | **Flux via fal.ai** | AI-generated product images | API credits |
 
 ### Canva Ad Creation Workflow

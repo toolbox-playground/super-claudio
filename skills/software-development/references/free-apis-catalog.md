@@ -86,6 +86,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | **Bluesky API (AT Protocol)** | Read/write posts, timelines, user data, follows; permissive free rate limits; growing developer community after X went paid | atproto.com | Free account |
 | **Threads API (Meta)** | Post, read replies, manage media; free developer access; rate limits generous for indie devs | developers.facebook.com/docs/threads | Free account |
 | **X (Twitter) API** | **⚠️ No longer free (Feb 6, 2026)** — reading a tweet costs $0.005, posting $0.015; full-archive search from $42K/month enterprise. Use Bluesky/Threads instead for social data at no cost. | developer.x.com | Paid only |
+| **Arctic Shift** | Community-run replacement for the defunct Pushshift API — search/query Reddit posts, comments, subreddits, and users by keyword, date range, author, and score; bulk data dumps also available; no official Reddit API needed (Reddit's own commercial API runs ~$12K/year); no uptime SLA, dynamic rate limiting (a few req/sec is generally fine) | arctic-shift.photon-reddit.com | None |
 
 ## Developer Utilities
 
@@ -101,8 +102,9 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
-| Google Gemini API | LLM inference (Gemini 3.5 Flash free in AI Studio — new default since May 19, 2026; daily Gemini 3.1 Pro allotment for harder reasoning), 1M token context, multimodal | ai.google.dev | Free key (generous limits) |
-| Groq | Ultra-fast LLM inference (LPU hardware); Llama 4 Scout, Llama 4 Maverick, Kimi K2 (1T MoE), Qwen3 235B, Gemma, Mistral, DeepSeek R1 and more; no credit card required | groq.com | Free key |
+| Google Gemini API | LLM inference — free tier limited to Flash-tier models (Gemini 3.6 Flash, 3.5 Flash, 3.5 Flash-Lite), 1M token context, multimodal. **Pro-tier models (3.1 Pro) removed from the free API tier since April 1, 2026** — the daily Pro allotment now applies only to the consumer Gemini app, not the developer API | ai.google.dev | Free key (Flash tier only) |
+| Groq | Ultra-fast LLM inference (LPU hardware); Llama 4 Scout, Llama 4 Maverick, Kimi K2 (1T MoE), Qwen3 235B, Gemma, Mistral, DeepSeek R1 and more; no credit card required; free tier ~30 RPM / 14,400 requests/day per org | groq.com | Free key |
+| **Mistral AI (La Plateforme)** | Free tier gives rate-limited access to all hosted models, including Mistral Large and Codestral; 1 req/sec, 500K tokens/min, 1B tokens/month cap; intended for prototyping/evaluation, not production traffic | docs.mistral.ai | Free key |
 | OpenRouter | Access to 100+ free AI models via one API; notable free models (July 2026): **NVIDIA Nemotron 3 Ultra** (550B MoE, 1M context, `nvidia/nemotron-3-ultra-550b-a55b:free`) and **OpenAI GPT-OSS** (20B Apache 2.0 open-weight, `openai/gpt-oss-20b:free`); 25+ free models total; 50 req/day free, 1,000/day after $10 purchase | openrouter.ai | Free key |
 | GitHub Models | 40+ AI models (GPT-4o, Llama, DeepSeek-R1, Mistral, Phi, xAI, Cohere) via OpenAI-compatible API; uses your GitHub account — no separate key or signup; free tier rate-limited (e.g. GPT-4o: 10 RPM / 50 RPD); opt-in paid tier for higher limits | github.com/features/models | GitHub account (free) |
 | Cerebras Inference | Ultra-fast LLM inference on wafer-scale silicon (2,600+ tok/s); Llama 3.3 70B, Qwen3 32B/235B, and more; 1M tokens/day free, no credit card required; 30 RPM on free tier | inference.cerebras.ai | Free key |
