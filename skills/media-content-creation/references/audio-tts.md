@@ -143,15 +143,20 @@ Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expres
 - **Best for:** Multilingual voiceovers, free developer experimentation, style-directed narration, Google Cloud / Vertex AI workflows
 - **Not ideal for:** Ultra-low-latency real-time voice agents (use Cartesia Sonic 3.5); self-hosted / offline deployment
 
-## Fish Audio S2 Pro — Best Multilingual + Emotion Control
+## Fish Audio S2.1 Pro — 83 Languages, Free Non-Commercial API, Low Latency (Updated Jul 28, 2026)
 
-Fish Audio S2 Pro ranks #1 on TTS-Arena2 with 80+ languages and 50+ inline emotion controls. Trained on 10M+ hours of audio.
+Fish Audio S2.1 Pro succeeds S2 Pro as the company's flagship TTS model: broader language coverage (80+ → 83), lower latency (~70ms TTFA, down from ~100ms), higher throughput (56.3 chars/sec — ahead of GPT-Realtime-2 and Gemini 3.1 Flash TTS), and improved natural-language control over emotion and prosody. Ranks **#13 on the Artificial Analysis Speech Arena** (Elo 1,153). Launched alongside a $52M seed round.
 
-- URL: fish.audio
-- Free tier: 200 minutes/month
-- Best for: multilingual content, emotionally nuanced narration, voice cloning
-- License: research/non-commercial free; commercial use requires separate license
-- Open-source model on HuggingFace: `fishaudio/s2-pro`
+- **URL:** fish.audio | **HuggingFace:** `fishaudio/s2-pro` (prior-gen S2 Pro weights; S2.1 Pro is API-only)
+- **Free tier:** `s2.1-pro-free` — unlimited free API access, non-commercial use only (also available via OpenRouter)
+- **Paid:** $15 per million UTF-8 bytes (pay-as-you-go API); web subscriptions from $15/mo (Plus) for commercial use
+- **Languages:** 83 (up from 80+ on S2 Pro)
+- **Latency:** ~70ms TTFA (single request)
+- **Throughput:** 56.3 characters/sec
+- **Voice cloning:** Yes, plus natural-language emotion/prosody control
+- **License:** Free API tier is non-commercial only; commercial use requires a paid plan (Plus $15/mo+)
+- **Best for:** Multilingual content, emotionally nuanced narration, voice cloning, developers wanting a free non-commercial sandbox before committing to a paid plan
+- **Not ideal for:** Commercial use on the free tier (upgrade required)
 
 ## Hume AI TADA — Open-Source, Long-Context, Zero Content Hallucinations
 
@@ -473,6 +478,22 @@ xAI launched its Grok Text-to-Speech API in April 2026, built on the same voice 
 - **Best for:** Developers already in the xAI/Grok ecosystem; multilingual voice agents; production pipelines needing format flexibility
 - **Not ideal for:** Budget-sensitive high-volume use (use Speechmatics $0.011/1K chars or Kokoro at no cost); theatrical emotional range (use Hume Octave 2); top-5 quality ranking (Cartesia Sonic 3.5 and Fun-Realtime-TTS now rank above it)
 
+## Soniox TTS v2 — 60+ Languages, Audio Tags, Cloning from Seconds of Audio (NEW Aug 13, 2026)
+
+Soniox — best known for real-time speech-to-text — shipped Soniox TTS v2 in mid-August 2026, less than four months after its first TTS model, adding programmable audio tags for expressive delivery, integrated voice cloning, natural mid-sentence language switching, and character-level timing for tight text/audio sync.
+
+- **URL:** soniox.com/text-to-speech
+- **Model:** `tts-rt-v2` · **API:** `https://api.soniox.com/v1` (REST + WebSocket streaming)
+- **Pricing:** $0.70 per generated hour — single flat rate, no premium-voice upcharges or tiers
+- **Free tier:** none confirmed at launch
+- **Languages:** 60+ with natural mid-utterance language switching
+- **Voice cloning:** From a few seconds of everyday audio; automatically cleans background noise/echo from the reference clip while preserving accent, rhythm, and personality
+- **Audio tags:** Inline expressive controls — whisper, laugh, hesitation, excitement, tension, sadness, reassurance, intensity shifts
+- **Latency:** Low-latency streaming; playback can begin before the full sentence finishes generating; character-level timestamps for sync
+- **Availability:** US, Europe, Japan (regional data processing)
+- **Best for:** Teams already on Soniox STT wanting a matched TTS stack; multilingual streaming voice agents; expressive narration at flat, predictable per-hour pricing
+- **Not ideal for:** Regions outside US/EU/Japan (not yet available); teams needing an established public benchmark track record (too new for Artificial Analysis Arena ranking as of launch)
+
 ## Speechmatics TTS — Ultra-Cheap Enterprise TTS, 11–27× Below ElevenLabs
 
 Speechmatics launched its own neural TTS in 2026 alongside its industry-leading STT (55+ languages). At $0.011 per 1,000 characters it is 11–27× cheaper than ElevenLabs while delivering comparable neural quality and sub-150ms streaming latency.
@@ -494,7 +515,8 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Low-latency voice agent (ElevenLabs ecosystem) | ElevenLabs Flash v2.5 (~75ms, 32 languages) or Flash v2 (English only, ~75ms) |
 | Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
-| 80+ languages, emotion control | Fish Audio S2 Pro |
+| 83 languages, emotion control, free non-commercial API | Fish Audio S2.1 Pro |
+| Flat per-hour pricing, 60+ languages, audio tags | Soniox TTS v2 ($0.70/generated hour, US/EU/Japan) |
 | Best blind-test naturalness (cloud) | Qwen-Audio-3.0-TTS-Plus (Elo 1,236, **#1** mid-July 2026), Speechify SIMBA 3.2 (Elo 1,234, **#2** mid-July 2026), Gemini 3.1 Flash TTS (Elo ~1,214, **~#3**), Cartesia Sonic 3.5 (Elo ~1,207, **~#4**) |
 | Voice cloning, no cost, offline | Chatterbox (open-source) |
 | Long-form narration (up to 12 min), zero hallucinations, self-hosted | Hume AI TADA (Apache 2.0, open-source) |
