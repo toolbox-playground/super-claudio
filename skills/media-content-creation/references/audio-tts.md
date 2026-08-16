@@ -68,7 +68,7 @@ with open("output.mp3", "wb") as f:
 
 ## ElevenLabs v4 — Previewed at ElevenSummit Warsaw (Not Yet Released)
 
-ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
+ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of the elevenlabs.io changelog through Aug 10, 2026, v4 has **still not been released** — no model ID, API endpoint, or release date announced (recent changelog entries cover Dubbing v2 API and agent-testing features only, not v4). Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Industry trackers still expect H2 2026. Check elevenlabs.io/changelog for the GA announcement.
 
 
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
@@ -238,6 +238,15 @@ Deepgram Aura-2 targets enterprises building production voice systems where upti
 - Languages: 7 (English, Spanish + others)
 - Best for: enterprise voice agents, high-volume production systems, call center bots
 - Not ideal for: artistic/emotional content where ElevenLabs or Fish Audio excel
+
+## Deepgram Flux TTS — Conversation-Native, Turn-Based Voice Agents (NEW Aug 2026)
+
+Deepgram Flux TTS (launched Aug 12, 2026) is a second, separate model from Aura-2 — purpose-built for real-time voice agents around a turn-based conversation lifecycle rather than flat text-to-speech, with cross-turn voice consistency across a session.
+
+- **URL:** deepgram.com
+- **Pricing:** $0.045/1,000 characters standard; free through Sept 12, 2026 for up to 45 concurrent streams (5 concurrent in EU/AU)
+- **Best for:** Turn-based conversational voice agents needing consistent voice identity across a multi-turn session
+- **Not ideal for:** Static long-form narration (use Aura-2 or ElevenLabs for that)
 
 ## Rime TTS — 300+ Voices, Sociolinguistics-Based, Sub-100ms
 
