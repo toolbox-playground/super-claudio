@@ -295,12 +295,12 @@ MakeUGC generates talking-head UGC-style ads where AI actors appear to physicall
 
 ## TikTok Symphony & Ad Formats — TikTok World 2026 (May 13, 2026)
 
-TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by Dreamina Seedance 2.0:
+TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by Dreamina Seedance 2.5 (upgraded Aug 3, 2026 from Seedance 2.0 — rolling out to select paid advertisers/markets):
 - **Script Generator** — briefs → ad scripts aligned with trending hooks
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
-- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Video Generation** — powered by Dreamina Seedance 2.5 (Aug 2026 upgrade): max AI-generated clip length doubled from 15s to 30s; multi-modal reference uploads raised from 9 to 50 for tighter creative guidance
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
@@ -323,7 +323,7 @@ Access: business.tiktok.com → Creative Center → Symphony AI (now generally a
 Symphony Agent is TikTok's end-to-end agentic workflow for building full campaigns from a single text prompt. Unlike the Symphony creative tools (which generate individual assets), Symphony Agent orchestrates the full creative pipeline: reads performance signals, writes briefs, matches creators, and coordinates across three TikTok surfaces simultaneously.
 
 **Integrated into three TikTok products:**
-1. **Symphony Creative Studio** — AI chat experience that combines brand goals, TikTok platform insights, and performance signals to generate up to 3 videos per request (~3 min for 12s clip; ~5 min for 20s clip); guided workflow: product brief → insight report → storyboard → final video; powered by Seedance 2.0
+1. **Symphony Creative Studio** — AI chat experience that combines brand goals, TikTok platform insights, and performance signals to generate up to 3 videos per request; guided workflow: product brief → insight report → storyboard → final video; powered by Seedance 2.5 (upgraded Aug 2026, up to 30-second clips — render times not yet reconfirmed for the new model)
 2. **Content Suite** — AI Search that scans thousands of creator videos to surface content aligned with the advertiser's brief, enabling brands to repurpose existing creator content at scale
 3. **TikTok One** — Creator brief generation, discovery, and outreach at scale; supports multi-language filtering for multi-market campaigns
 
@@ -351,7 +351,7 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 **What Skills can do:**
 - Campaign creation — draft and launch campaigns end-to-end from a natural language brief
-- Creative generation — access Symphony tools (Seedance 2.0 avatars, AI video, voiceovers) programmatically
+- Creative generation — access Symphony tools (Seedance 2.5 avatars, AI video, voiceovers) programmatically
 - Catalog management — sync product feeds and dynamic creative templates
 - Audience analysis + performance reporting — real-time data with AI-generated optimization recommendations
 
@@ -367,7 +367,8 @@ Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools 
 2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image
 3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images
 4. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
-5. Assets go directly into your campaign library — no external tool or re-upload required
+5. **1-Click Creative Testing** (GML 2026): surfaces predicted high-performing assets against your campaign objective before you spend
+6. Assets go directly into your campaign library — no external tool or re-upload required
 
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
 
@@ -403,7 +404,7 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 
 ## Higgsfield — Cinema Studio Platform
 
-Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.0, Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace, with Cinema Studio 3.5 adding 70+ cinematic camera presets and Soul ID for cross-shot character consistency.
+Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.5 (upgraded from 2.0 in Aug 2026 — cinematic clips up to 30 seconds with audio generated in the same pass), Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace, with Cinema Studio 3.5 adding 70+ cinematic camera presets and Soul ID for cross-shot character consistency.
 
 When you need the highest realism (luxury products, fashion):
 1. Prepare a high-quality product/lifestyle image
