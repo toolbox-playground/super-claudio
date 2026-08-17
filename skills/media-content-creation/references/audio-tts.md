@@ -446,6 +446,31 @@ pip install neutts
 - **Watermarking:** Perth watermark embedded in all output audio
 - **Best for:** Privacy-first / offline deployment, edge devices, zero API cost in production
 
+## Supertonic 3 — Ultra-Lightweight On-Device TTS, 31 Languages, Runs on a Raspberry Pi (Apr 2026)
+
+Supertonic 3 (Supertone Inc., April 29, 2026) is a ~99M-parameter open-source TTS — 7–20× smaller than comparable open TTS models (0.7B–2B params) — that runs fully on-device via ONNX Runtime with no cloud dependency. Expanded language coverage from 5 (Supertonic 2) to 31 languages while reducing repeat/skip failures and improving speaker similarity.
+
+```bash
+pip install supertonic
+```
+
+```python
+from supertonic import TTS
+tts = TTS(auto_download=True)
+style = tts.get_voice_style(voice_name="M1")
+wav, duration = tts.synthesize(text="Your text", lang="en", voice_style=style)
+```
+
+- **URL / GitHub:** github.com/supertone-inc/supertonic | **HuggingFace:** `Supertone/supertonic-3`
+- **License:** Sample code MIT; model weights OpenRAIL-M
+- **Parameters:** ~99M (vs 0.7B–2B for comparable open TTS)
+- **Languages:** 31 (English, Spanish, French, German, Japanese, Korean, Arabic, and more); `lang="na"` for language-agnostic input
+- **Voice cloning:** No — fixed preset voice-style library (M1, M3–M5, F3–F5, more); cloning available only via the separate hosted Voice Builder tool, not the open-source repo
+- **Performance:** ~0.3× real-time factor on constrained hardware (tested on an e-reader and Raspberry Pi-class devices) — no GPU required
+- **Self-hosted server:** `pip install 'supertonic[serve]'` then `supertonic serve` — local HTTP server with a native endpoint and an OpenAI-compatible `/v1/audio/speech` endpoint
+- **Best for:** Mobile/embedded/edge deployment where Kokoro's 8 languages or NeuTTS Air's English-only coverage aren't enough; privacy-first offline multilingual apps
+- **Not ideal for:** Voice cloning (use Chatterbox, Qwen3-TTS, or NeuTTS Air); expressive/emotional delivery (use Hume Octave 2 or MiniMax Speech 2.8 HD)
+
 ## xAI Grok TTS — 5 Voices, 20+ Languages (April 2026)
 
 xAI launched its Grok Text-to-Speech API in April 2026, built on the same voice stack powering Grok Voice, Tesla vehicles, and Starlink customer support. Ranked ~#6 on the Artificial Analysis TTS Arena (Elo ~1,194, July 2026; was #5 in June 2026 — Cartesia Sonic 3.5 rose above it).
@@ -495,7 +520,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Open-weight multilingual cloud TTS, low cost | Mistral Voxtral TTS ($0.016/1K chars) |
 | Open-source multilingual TTS, 10 languages, self-hosted or commercial | Qwen3-TTS (Apache 2.0, 97ms TTFA, voice cloning + free-form voice design, github.com/QwenLM/Qwen3-TTS) |
 | Open-source multilingual TTS, 43 languages, CD-quality, voice cloning | Zyphra ZONOS2 (Apache 2.0, first open-source MoE TTS, 8B/900M active, Zyphra Cloud free trial, github.com/Zyphra/ZONOS2) |
-| On-device, zero API cost, privacy-first | NeuTTS Air (Apache 2.0, CPU-capable) |
+| On-device, zero API cost, privacy-first | NeuTTS Air (Apache 2.0, CPU-capable, English only) or Supertonic 3 (31 languages, ~99M params, runs on Raspberry Pi, no voice cloning) |
 | Ultra-fast batch TTS, drop-in OpenAI TTS replacement | Kokoro TTS (Apache 2.0, 82M params, 96× real-time, fixed voices) |
 | Human-like conversational naturalness (pauses, ums, breaths) | Sesame CSM-1B (Apache 2.0, English only, CUDA required) |
 | Long-form multi-speaker narration (audiobooks, podcasts) | VibeVoice-TTS-1.5B (MIT, up to 90 min / 4 speakers, research use) |
