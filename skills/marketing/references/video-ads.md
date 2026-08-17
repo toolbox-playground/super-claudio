@@ -169,15 +169,15 @@ HeyGen is the leading AI avatar video platform for brand content and UGC-style t
 **Best for:** Brand channel content (YouTube Shorts, TikTok, Reels), product demos, multilingual market localization from one source video.
 **Not ideal for:** High-volume ad testing at scale (use Arcads or Creatify for that — HeyGen credits run out faster at volume).
 
-## Arcads — AI UGC Video Actors (1,000+ Actors)
+## Arcads — AI UGC Video Actors (1,500+ Actors, Workflows & MCP)
 
-Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors — the largest AI actor library in 2026, purpose-built for Meta and TikTok ad testing.
+Arcads generates talking-head UGC-style video ads using 1,500+ diverse AI actors (grown from 1,000+) — the largest AI actor library in 2026, purpose-built for Meta and TikTok ad testing. **Workflows** (launched June 2026) adds node-based batch automation: build a graph with one script, a set of actors, and a set of languages, then run it once to fan out clips across every combination — a real differentiator for teams needing many variants fast. An **MCP server** (mcp.arcads.ai, June 2026) lets Claude and other AI agents generate UGC ads directly from a chat interface, no dashboard required.
 
 1. Go to arcads.ai
 2. Write or paste your ad script (15–60 seconds)
-3. Select an AI actor (filter by age, gender, ethnicity, style)
+3. Select an AI actor (filter by age, gender, ethnicity, style) — or use Workflows to fan one script across many actors/languages at once
 4. Generate the video — output is virtually indistinguishable from real UGC in scroll tests
-5. Download and deploy directly to Meta/TikTok Ads Manager
+5. Download and deploy directly to Meta/TikTok Ads Manager, or connect the MCP server to generate straight from Claude
 
 **Pricing:** Starts at $110/month (Starter — 10 videos); $220/month (Creator — 20 videos); no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
 
@@ -370,6 +370,20 @@ Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools 
 5. Assets go directly into your campaign library — no external tool or re-upload required
 
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
+
+## Meta Advantage+ Creative — Muse Image & Native Generative Ads (Jul 2026)
+
+Meta's own AI creative layer inside Ads Manager is expanding with **Muse Image** — the first in-house image model from Meta Superintelligence Labs, announced July 7, 2026. Unlike a one-shot generator, Muse Image supports prompts, photo blending, presets, sketches, and iterative annotation-based editing, with agentic reasoning that revises specific elements without regenerating the whole image.
+
+1. Open Ads Manager → enable Advantage+ Creative on an ad
+2. Meta auto-generates: background generation/expansion, image touch-up, on-image text rewriting, video expansion for Reels, and related-media variants — each is toggled on/off and approved per creative
+3. Once rolled out, Muse Image adds prompt-based and photo-blended image generation directly in the creative workflow
+4. Review generated variants in Ads Manager before they publish — nothing goes live without advertiser approval per module
+
+**Rollout:** Muse Image launched first via Meta AI, Instagram Stories, and WhatsApp; Advantage+ Creative access is rolling out "in the coming weeks" per Meta (not yet live for all advertisers as of early August 2026). Facebook/Messenger and a planned Muse Video model follow later in 2026.
+**Pricing:** No additional cost — included with any Meta Ads account; standard campaign spend applies.
+**Best for:** Meta-first advertisers who want native AI creative variation without a third-party tool; Meta reports 8M+ advertisers already using its AI creative tools, with production cost reductions of up to 40%.
+**Not ideal for:** TikTok/Google/Amazon campaigns (Meta-only); teams wanting predictive performance scoring before spend (use Pencil or AdCreative.ai instead).
 
 ## Amazon Ads Creative Agent — Agentic AI for Amazon Campaigns (Feb 2026)
 
