@@ -16,7 +16,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 |-----|------|-----|------|
 | NASA APIs | APOD, Mars rover photos, NEO asteroids | api.nasa.gov | Free key |
 | Open Notify | ISS current location | open-notify.org | None |
-| SpaceX API | Launch data, rockets, missions | github.com/r-spacex/SpaceX-API | None |
+| SpaceX API | Launch data, rockets, missions. **Note:** source repo was archived (read-only) by its owner on Jun 6, 2026 — API endpoint (api.spacexdata.com) is still live with no reported incidents as of mid-2026, but treat as unmaintained; data may lag behind real launches | github.com/r-spacex/SpaceX-API | None |
 
 ## Finance & Economics
 
@@ -51,7 +51,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
-| OpenSky Network | Real-time ADS-B aircraft positions, callsigns, altitude, velocity, heading — community sensor network; REST API + WebSocket; free for research/personal use; historical data for registered users; uneven coverage outside Europe/North America; non-commercial license | opensky-network.org | None (basic); free account for historical data + higher rate limits |
+| OpenSky Network | Real-time ADS-B aircraft positions, callsigns, altitude, velocity, heading — community sensor network; REST API + WebSocket; free for research/personal use; historical data for registered users; uneven coverage outside Europe/North America; non-commercial license. **Auth changed Mar 18, 2026:** basic username/password login was removed — the API now requires OAuth2 client credentials (create an API client in your account, exchange client_id/client_secret for a bearer token) | opensky-network.org | None for anonymous use (limited: `/states/all` only, 10s resolution, 400 credits/day); free account + OAuth2 client credentials for full access, historical data, and higher limits |
 
 ## Books & Literature
 
