@@ -11,7 +11,7 @@ description: >
   "criar slides TBXTech", "nova aula do curso carreira tech".
   Also trigger when: user shares a PPTX from the DevOps Mentoria and asks to adapt it for
   the Carreira Tech course, or asks to create a new lesson in the TBXTech beginner pattern.
-  Do NOT trigger for: creating HTML pages from slides (use webpage-from-slides),
+  Do NOT trigger for: creating HTML pages from slides (use productivity),
   generic presentation creation (use productivity), video or image generation.
 ---
 
