@@ -1,6 +1,6 @@
 {
   "name": "super-claudio",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Super Cláudio — curated skills for anything Claude can do: media creation, software development, carreira-tech-slides, video-script-and-slides (video script + slides with verified data), marketing, writing, design, productivity (including slides-to-webpage), AI/agents, and community skill discovery.",
   "author": {
     "name": "Caio Roscelly",
@@ -9,5 +9,18 @@
   "homepage": "https://github.com/toolbox-playground/super-claudio",
   "repository": "https://github.com/toolbox-playground/super-claudio",
   "license": "MIT",
-  "keywords": ["media", "video", "audio", "image", "marketing", "writing", "design", "productivity", "ai", "agents", "automation", "apis"]
+  "keywords": [
+    "media",
+    "video",
+    "audio",
+    "image",
+    "marketing",
+    "writing",
+    "design",
+    "productivity",
+    "ai",
+    "agents",
+    "automation",
+    "apis"
+  ]
 }

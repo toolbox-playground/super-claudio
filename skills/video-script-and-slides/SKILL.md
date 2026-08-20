@@ -49,10 +49,12 @@ to their audience, not a corporate ad.
    concrete data points with source name + date
 2. **Script** — script.md: hook, one section per slide with talking points + timing,
    transitions, closing CTA
-3. **Slides** — slides.html: single local file (HTML+CSS+JS inline), keyboard navigation,
-   real SVG logos, data with cited sources
-4. **Verify + deliver** — open/screenshot the slides, check every slide renders, deliver
-   both files
+3. **Slides** — slides.html: single local file (HTML+CSS+JS inline), keyboard-only
+   navigation, real SVG logos, data with cited sources
+4. **Publishing kit** — youtube.md (title options, full description with chapters and
+   links, hashtags) + capa.html (1–2 thumbnail mockups, 16:9)
+5. **Verify + deliver** — open/screenshot slides and thumbnails, check every slide
+   renders, deliver all files
 
 ## Routing
 
@@ -76,4 +78,8 @@ Always load `references/workflow.md` before starting.
 - Script must sound like a person talking, not text being read: short sentences,
   natural contractions (in pt-BR: "pra", "tá"), direct address to the viewer.
 - Prefer data for the user's country/market when it exists; global data is the fallback
-  and must be labeled as global.
+  and must be labeled as global. Actively look for official localized versions of every
+  platform you recommend (e.g., /pt-BR/ paths); state language availability honestly.
+- Slides navigate by keyboard only — clicking must never advance (people click to copy).
+- If the user's context (memory/CLAUDE.md) defines a brand identity, apply its colors and
+  footer to slides and thumbnails without being asked.

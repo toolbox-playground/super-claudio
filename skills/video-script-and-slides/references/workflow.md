@@ -4,6 +4,8 @@ Output goes to `~/Movies/video-talks/<slug>/`:
 - `script.md` — the spoken script
 - `slides.html` — the presentation (single self-contained file)
 - `sources.md` — every source checked, with URL, date checked, and what it confirmed
+- `youtube.md` — publishing kit: title options, full description, thumbnail notes
+- `capa.html` — 1–2 thumbnail mockups (16:9, self-contained)
 
 Write all three in the language of the user's request. Templates below use pt-BR as the
 example language — adapt headings and register to the user's language.
@@ -31,6 +33,12 @@ The topics are usually career/education/tech questions ("vale a pena X em 2026?"
    survey percentages). These become the spine of the slides.
 6. Local-first: when data exists for the user's country/market, prefer it; global data
    is the fallback and must be labeled as global.
+7. **Localized versions**: for every platform/course you recommend, actively check for an
+   official version in the user's language (try language paths like `/pt-BR/`, `/es/`, or
+   the site's language switcher) — a localized link is far more valuable to the audience.
+   When only English exists, say so honestly in the script and suggest translating pages
+   with the browser/Google Translate extension — noting that videos stay in the original
+   language. Never imply a course is localized when it isn't.
 
 ## Phase 2 — Script (script.md)
 
@@ -82,8 +90,11 @@ as data URIs or pasted inline SVG. Must open offline by double-click.
 6. **Closing** — recap line + CTA
 
 **Design rules:**
-- 16:9, dark background, one accent color (from the topic's brand logo when there is
-  one — e.g. Kubernetes blue — else a neutral accent like `#3B82F6`)
+- **Brand identity first**: if the user's context (memory, CLAUDE.md) defines a brand —
+  colors, logo, tagline, footer pattern — apply it: brand colors as the palette and the
+  brand footer on every slide. Only fall back to topic-derived colors when no brand exists.
+- 16:9, dark background, one accent color (from the brand, else the topic's logo color,
+  else a neutral accent like `#3B82F6`)
 - Huge typography: titles 8–10vh, body 4–5vh (a phone viewer watching the recording must
   read everything); max ~25 words visible per slide
 - Real SVG logos: Devicon `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/<name>/<name>-original.svg`,
@@ -92,8 +103,11 @@ as data URIs or pasted inline SVG. Must open offline by double-click.
 - Source footer on every slide that shows data: `Fonte: {nome}, {ano}` in small muted text
 - Progress dots + slide counter in a corner
 
-**Navigation JS (include):** arrow keys / space / click advance, `Home`/`End` jump,
+**Navigation JS (include):** arrow keys / space / PageUp-PageDown, `Home`/`End` jump,
 URL hash per slide (`#3`) so the presenter can reload mid-recording without losing place.
+**Clicking must NOT advance slides** — presenters click to select/copy text while
+reviewing; keyboard only. On load, clear the hardcoded `active` class before applying the
+hash target, or a direct load of `#3` leaves the cover slide rendered underneath.
 
 **Skeleton:**
 
@@ -126,26 +140,47 @@ URL hash per slide (`#3`) so the presenter can reload mid-recording without losi
   <section class="slide"><!-- content --></section>
   <div class="counter"><span id="cur">1</span>/<span id="tot"></span></div>
 <script>
-  const slides=[...document.querySelectorAll('.slide')];let i=Math.min(Math.max((+location.hash.slice(1)||1)-1,0),slides.length-1);
+  const slides=[...document.querySelectorAll('.slide')];
+  let i=Math.min(Math.max((+location.hash.slice(1)||1)-1,0),slides.length-1);
+  const sync=()=>{document.getElementById('cur').textContent=i+1;location.hash=i+1;};
   const show=n=>{slides[i].classList.remove('active');i=Math.min(Math.max(n,0),slides.length-1);
-    slides[i].classList.add('active');document.getElementById('cur').textContent=i+1;location.hash=i+1;};
-  document.getElementById('tot').textContent=slides.length;show(i);
+    slides[i].classList.add('active');sync();};
+  slides.forEach(x=>x.classList.remove('active'));slides[i].classList.add('active');
+  document.getElementById('tot').textContent=slides.length;sync();
   addEventListener('keydown',e=>{if(['ArrowRight',' ','PageDown'].includes(e.key))show(i+1);
     if(['ArrowLeft','PageUp'].includes(e.key))show(i-1);if(e.key==='Home')show(0);if(e.key==='End')show(slides.length-1);});
-  addEventListener('click',()=>show(i+1));
 </script>
 </body>
 </html>
 ```
 
-## Phase 4 — Verify + deliver
+## Phase 4 — Publishing kit (youtube.md + capa.html)
+
+The video needs packaging, not just content. Produce `youtube.md` with:
+
+1. **Title options (2–3)**: curiosity + concrete benefit, honest (no promise the video
+   doesn't keep). Highlight the strongest verified hooks (e.g., "free", "in Portuguese",
+   "in 1 hour").
+2. **Full description**, ready to paste: one-line hook; chapter timestamps taken from the
+   script's timing marks; the verified links (same URLs as sources.md); a transparency
+   note when something needs a caveat; the user's site/social links (from their brand
+   identity in memory, when available); 5–8 hashtags.
+3. **Thumbnail concepts**: build `capa.html` — 1–2 fullscreen 16:9 mockups navigable like
+   the slides (same JS), using brand colors, giant text (≤6 words), real platform logos,
+   and optionally a dashed placeholder where the presenter's face goes (thumbnails with
+   faces perform better). The user opens it fullscreen and screenshots at 1920×1080.
+
+## Phase 5 — Verify + deliver
 
 1. Every cited URL was fetched and confirmed (this happened in Phase 1 — re-check any
    added later).
-2. Open `slides.html` in the browser (or render it) and step through EVERY slide —
-   check: nothing overflows, logos render, counter works, sources present.
+2. Open `slides.html` in the browser (or screenshot headlessly) and check EVERY slide —
+   nothing overflows, logos render, counter works, sources present. Also load a middle
+   slide directly by hash (e.g., `#3`) to confirm no slide renders underneath. Check
+   `capa.html` the same way.
 3. Word-count sanity on the script: ~130–150 spoken words per minute of video; a 5-min
    script ≈ 650–750 words of talking points is the ceiling.
-4. Deliver: send `script.md` and `slides.html` to the user; summarize the slide list,
+4. Deliver: send `script.md`, `slides.html`, `sources.md`, `youtube.md`, and `capa.html`
+   to the user; summarize the slide list,
    total estimated duration, and the strongest data points found. Mention anything you
    could NOT verify so the presenter doesn't repeat it on camera.
