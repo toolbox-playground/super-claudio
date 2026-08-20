@@ -51,7 +51,7 @@ Paste a product URL and get a complete 15-30 second TikTok/Instagram ad in minut
 
 UGC-native output style consistently outperforms polished brand ads on TikTok.
 
-**2026 updates:** 1,500+ AI avatars (up from previous library), 75+ languages, 140+ voices with voice cloning; analytics integration — the AI learns from real ad performance data and auto-adjusts future scripts and visuals. G2 Summer 2026 Leader with 1,500+ reviews at 4.8/5. Pricing: Free ($0, 10 credits), Starter ($39/mo), Pro ($99/mo, includes competitor tracker + ad launcher + custom avatars).
+**2026 updates:** 1,500+ AI avatars (up from previous library), 75+ languages, 140+ voices with voice cloning; analytics integration — the AI learns from real ad performance data and auto-adjusts future scripts and visuals. G2 Summer 2026 Leader with 1,500+ reviews at 4.8/5. Pricing: Free ($0, 10 credits), Starter ($39/mo), Pro ($99/mo, includes competitor tracker + ad launcher + custom avatars); **new $3,900/month high-volume plan** added for agencies/enterprise (Aug 2026), plus batch-mode variation generation, project duplication, in-editor aspect-ratio switching.
 
 ## aicreator.co — Automated Ad Video (Defunct as Ad Tool)
 
@@ -181,6 +181,8 @@ Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors
 
 **Pricing:** Starts at $110/month (Starter — 10 videos); $220/month (Creator — 20 videos); no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
 
+**2026 updates:** Repositioned from a pure UGC-actor tool to a multi-model generative-media aggregator — 1,000+ AI actors across three talking-actor engines (Arcads 1.0, Audio-Driven, and OmniHuman 1.5), plus a new **Workflows** feature and an **MCP server** for agentic integration. Raised $16M seed (Eurazeo, Dec 2025); reportedly $15M ARR / 6,000+ clients.
+
 ## Pose Video Studio — Identity-Consistent UGC from Your Own Face
 
 Pose Video Studio (pose.ai) generates UGC-style video ads where every variant features the same AI actor trained on your own uploaded selfies — not a generic avatar from a pre-built library. Voice is cloned via ElevenLabs from ~1 minute of reference audio, so face and voice stay consistent across all campaign variants.
@@ -295,7 +297,7 @@ MakeUGC generates talking-head UGC-style ads where AI actors appear to physicall
 
 ## TikTok Symphony & Ad Formats — TikTok World 2026 (May 13, 2026)
 
-TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by Dreamina Seedance 2.0:
+TikTok's own AI toolset inside Creative Center and Ads Manager. **Updated Aug 3, 2026:** Symphony now runs on Dreamina **Seedance 2.5** (up from 2.0) — max AI video length doubled to 30s (from 15s), reference-image uploads raised from 9 to 50, improved rendering fidelity; Content Credentials now auto-label AI-generated content (EU AI transparency compliance):
 - **Script Generator** — briefs → ad scripts aligned with trending hooks
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
@@ -361,15 +363,27 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
-Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
+Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. It integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation; **Gemini Omni now powers video generation** inside Asset Studio (rolled out globally through summer 2026, #GML2026 announcement) and a new **"1-Click Creative Testing"** feature surfaces top-performing assets automatically:
 
 1. Open Google Ads → Asset Studio
 2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image
-3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images
+3. Gemini Omni / Veo 3.1 generate production-ready video clips; Nano Banana Pro generates product lifestyle images
 4. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
-5. Assets go directly into your campaign library — no external tool or re-upload required
+5. Use **1-Click Creative Testing** to auto-identify which generated variants are outperforming
+6. Assets go directly into your campaign library — no external tool or re-upload required
 
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
+
+## Meta Advantage+ — AI-Default Campaign Creation (2026)
+
+Meta Advantage+ is now the **default** setup for new Meta ad campaigns (Facebook/Instagram), not an opt-in. Key 2026 additions: **Advantage+ Leads Campaigns** went global; a new **Restricted Words** control lets advertisers block specific terms from AI-generated ad text; Advantage+ now automatically rewrites headline text baked directly into ad images; Threads is gaining Carousel, Advantage+ Catalog, and Advantage+ App ad formats in testing.
+
+1. Create a campaign in Meta Ads Manager — Advantage+ is pre-selected
+2. Upload creative assets (image/video) + basic copy; Advantage+ auto-generates variants, targeting, and placements
+3. Use Restricted Words to prevent AI text rewrites from using off-brand or prohibited terms
+4. Meta's system continuously tests and reallocates budget across auto-generated variants
+
+Best for: brands running Meta-first campaigns who want automated creative + targeting optimization without manual A/B setup; pair with Creatify, Arcads, or AdStellar for the source UGC/video assets Advantage+ then optimizes.
 
 ## Amazon Ads Creative Agent — Agentic AI for Amazon Campaigns (Feb 2026)
 

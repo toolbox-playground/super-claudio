@@ -20,6 +20,8 @@
 5. Resize for all platforms in one click (Canva Magic Resize)
 6. Export as PNG/JPG
 
+**2026 update — Magic Studio consolidation:** Canva's separate AI tools (Magic Design, Magic Media, Magic Edit, Magic Write) are now unified behind one conversational prompt box that auto-routes to the right tool. A new **Canva Grow** feature generates static/video ads directly from brand data and connected ad-account performance signals, exporting results into the editor via "Magic Layers." Free tier: 10 Magic Design generations/month; Pro: unlimited.
+
 ### Prompt for AI-generated ad image (Flux/GPT Image 2)
 
 ```

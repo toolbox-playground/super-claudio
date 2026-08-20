@@ -25,12 +25,18 @@
    - Write caption with 3-5 relevant hashtags
    - Post during peak hours (7-9pm local time typically)
 
+### New TikTok Shop AI Tools (2026)
+
+- **AI Fashion Video Maker** — generates shoppable videos from product photos with no models or photoshoot needed, including "multi-emotion voiceovers" cloned from the seller's own voice/lip movements. Announced at TikTok World 2026.
+- **List with AI** — auto-generates a full product listing (title, description, category) from a product image + short brief.
+
 ## Instagram Shop
 
 - Product tags in feed posts, Reels, and Stories
 - Reels with product tag perform best
 - Use same video as TikTok (9:16 format works for both)
 - Add product sticker in Stories
+- **2026:** Meta is building an agentic shopping assistant (codename "Hatch," built on the Muse Spark model); Reels creators are gaining direct access to business product catalogs for in-Reel tagging (expanding to 22 countries); affiliate partnerships in testing with Amazon (US) and Shopee (Asia)
 
 ## Content Volume for Performance
 
