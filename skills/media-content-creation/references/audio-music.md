@@ -14,7 +14,10 @@ Generate complete songs (vocals + instruments) from a text prompt.
 - **Stem Separation (June 11, 2026 update):** Three modes — **Advanced Split** (NEW, Premier only): choose from ~100 instruments to regenerate each stem from scratch — no separation artifacts; also exports MIDI; 10 credits/extracted track. **Split from Mix** (Updated): pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
 - Free tier: 50 credits/day (~10 songs); non-commercial use only
 - **Important (2026):** Free-tier users can no longer download audio files — tracks can only be streamed/shared within the platform. Download requires a paid plan ($10/month Pro, $30/month Premier).
-- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of June 2026 the transition has not yet occurred — current models remain active — but when it does, all generations made with the old models will eventually become inaccessible. UMG and Sony Music litigation remains active — a fair-use summary judgment hearing in the U.S. case is scheduled for July 2026 (no verdict as of July 11, 2026); a separate German case (GEMA v. Suno) is due July 31, 2026. Users who want to preserve old generations should download them now on a paid plan.
+- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of August 2026 the transition has not yet occurred — current models (v5.5) remain active — but when it does, all generations made with the old models will eventually become inaccessible. Users who want to preserve old generations should download them now on a paid plan.
+- **GEMA lawsuit — Suno lost (Jul 31, 2026):** The Munich Regional Court ruled Suno infringed GEMA-repertoire copyrights (training, memorization, and output reproduction), ordering damages (amount TBD) and disclosure of usage scale. Suno is appealing. This is Suno's first adverse court judgment (distinct from the earlier WMG settlement) and specifically threatens EU distribution. UMG and Sony Music litigation in the U.S. remains active/unresolved.
+- **BMG licensing deal (Aug 12, 2026):** Suno struck a "global alliance" deal with BMG covering both past training and future licensed-model output — its second major label deal after WMG. No confirmed name or ship date yet for the resulting licensed model (informally called "v6," unconfirmed).
+- **Product mitigations (Aug 6, 2026):** In direct response to legal pressure, Suno added audio watermarking/fingerprinting (via Audible Magic, Musixmatch, ACRCloud), tightened community guidelines banning uploaded copyrighted material and unauthorized voice cloning, and added new download/distribution restrictions.
 - Input: genre, mood, lyrics (optional), style description
 - Output: full song (streaming on free; downloadable MP3 on paid)
 
@@ -54,6 +57,16 @@ ElevenLabs launched ElevenMusic as an iOS app on April 1, 2026, then shipped Mus
 - **Inpainting:** rebuild specific sections (e.g., only the bridge) without touching the rest of the song
 - Better multilingual lyrics and arrangement vs Music v1
 - Best for: developers integrating music generation via API (ElevenAPI); ad music and branded content (ElevenCreative); quick casual generation (ElevenMusic iOS app)
+
+## MiniMax Music 3 — Open-Weight Full Songs with Vocals (NEW Aug 2026)
+
+MiniMax Music 3 (released August 13–14, 2026) supersedes Music 2.5 as MiniMax's flagship and is one of the first "production-ready" open-weight full-song models. Hybrid-LM architecture (8B global + 0.6B local LLM) with flow-matching synthesis generates complete 5-minute songs with vocals from lyrics + a structured caption, at 32kHz/16-bit stereo WAV.
+
+- **URL:** minimax.io/audio | Hosted API: $0.15/song
+- **License:** Community License — free commercial use; revenue >$20M/year requires a separate agreement
+- **Output:** Up to 5-minute complete songs with vocals, 32kHz/16-bit stereo WAV
+- **Best for:** Open-weight full-song generation with commercial rights at low/no cost; self-hosted deployment
+- **Not ideal for:** Precision section-by-section structural tags (use Music 2.5 below, still available) or stem export/MIDI (use Mureka v8)
 
 ## MiniMax Music 2.5 — Structural Control + Studio-Grade Fidelity (Jan 2026)
 

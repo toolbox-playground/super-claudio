@@ -239,6 +239,16 @@ Deepgram Aura-2 targets enterprises building production voice systems where upti
 - Best for: enterprise voice agents, high-volume production systems, call center bots
 - Not ideal for: artistic/emotional content where ElevenLabs or Fish Audio excel
 
+## Deepgram Flux TTS — Conversation-Aware, Sub-80ms (NEW Aug 2026)
+
+Deepgram Flux TTS (launched August 12, 2026, GA) is a companion product to the existing Deepgram Aura-2 (below), purpose-built for voice-agent pipelines alongside Deepgram's Flux STT. It handles structured content — account numbers, drug names, monetary amounts — that trips up other TTS models, and targets sub-80ms time-to-first-audio.
+
+- **URL:** deepgram.com
+- **Pricing:** $0.045/1,000 characters starting Sept 13, 2026; free through Sept 12, 2026 (up to 45 concurrent streams)
+- **Latency:** sub-80ms TTFA
+- **Best for:** Voice-agent pipelines already using Deepgram Flux STT; structured/numeric content read-back
+- **Not ideal for:** Long-form narration or theatrical delivery (use Aura-2 or ElevenLabs for those)
+
 ## Rime TTS — 300+ Voices, Sociolinguistics-Based, Sub-100ms
 
 Rime (rime.ai) grounds its TTS in sociolinguistics — training on how real people speak — producing subtle cadence, stress patterns, and rhythmic variation that most neural TTS models miss. Available as three model tiers plus a free plan with 200+ voices.
