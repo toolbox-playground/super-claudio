@@ -1,9 +1,9 @@
-# Roteiro e Slides — Full Workflow
+# Video Script and Slides — Full Workflow
 
 Output goes to `~/Movies/video-talks/<slug>/`:
-- `roteiro.md` — the spoken script
+- `script.md` — the spoken script
 - `slides.html` — the presentation (single self-contained file)
-- `fontes.md` — every source checked, with URL, date checked, and what it confirmed
+- `sources.md` — every source checked, with URL, date checked, and what it confirmed
 
 Write all three in the language of the user's request. Templates below use pt-BR as the
 example language — adapt headings and register to the user's language.
@@ -21,7 +21,7 @@ The topics are usually career/education/tech questions ("vale a pena X em 2026?"
    State of DevOps, LinkedIn/Glassdoor salary data) → reputable tech media. Avoid blogs
    of unknown origin for numbers.
 3. **Verify each fact with WebFetch** before using it: fetch the page and confirm it
-   states what you'll cite. Record in `fontes.md`: URL, what it confirms, date checked.
+   states what you'll cite. Record in `sources.md`: URL, what it confirms, date checked.
 4. **Course recommendations get the strictest check** — for EACH course confirm on its
    own page: (a) it exists at that URL today, (b) enrollment is free, (c) it issues a
    certificate, (d) whether the certificate itself is free or paid. If a detail can't be
@@ -32,7 +32,7 @@ The topics are usually career/education/tech questions ("vale a pena X em 2026?"
 6. Local-first: when data exists for the user's country/market, prefer it; global data
    is the fallback and must be labeled as global.
 
-## Phase 2 — Script (roteiro.md)
+## Phase 2 — Script (script.md)
 
 Format — one section per slide, ~1 minute each. For a 5-min video: cover + 4–5 content
 sections + closing. Template (pt-BR example):
@@ -146,6 +146,6 @@ URL hash per slide (`#3`) so the presenter can reload mid-recording without losi
    check: nothing overflows, logos render, counter works, sources present.
 3. Word-count sanity on the script: ~130–150 spoken words per minute of video; a 5-min
    script ≈ 650–750 words of talking points is the ceiling.
-4. Deliver: send `roteiro.md` and `slides.html` to the user; summarize the slide list,
+4. Deliver: send `script.md` and `slides.html` to the user; summarize the slide list,
    total estimated duration, and the strongest data points found. Mention anything you
    could NOT verify so the presenter doesn't repeat it on camera.

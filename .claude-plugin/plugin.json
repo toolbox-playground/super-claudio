@@ -1,7 +1,7 @@
 {
   "name": "super-claudio",
-  "version": "1.2.0",
-  "description": "Super Cláudio — curated skills for anything Claude can do: media creation, software development, carreira-tech-slides, roteiro-e-slides (video script + slides with verified data), marketing, writing, design, productivity (including slides-to-webpage), AI/agents, and community skill discovery.",
+  "version": "1.2.1",
+  "description": "Super Cláudio — curated skills for anything Claude can do: media creation, software development, carreira-tech-slides, video-script-and-slides (video script + slides with verified data), marketing, writing, design, productivity (including slides-to-webpage), AI/agents, and community skill discovery.",
   "author": {
     "name": "Caio Roscelly",
     "email": "caioroscelly@gmail.com"

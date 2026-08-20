@@ -12,7 +12,7 @@ to route them to the right skill before responding.
 | Build APIs, databases, automate workflows, write scripts, use free APIs, deploy | `software-development` |
 | Turn a PDF or slide deck into a standalone HTML webpage | `productivity` (routes to `references/webpage-from-slides.md`) |
 | Transform DevOps Mentoria PPTX slides into Carreira Tech beginner slides | `carreira-tech-slides` |
-| Prepare a script + local HTML slides for a self-recorded video (real researched data) | `roteiro-e-slides` |
+| Prepare a script + local HTML slides for a self-recorded video (real researched data) | `video-script-and-slides` |
 | Create ads, TikTok Shop content, ecommerce creatives, marketing campaigns | `marketing` |
 | Write blog posts, social captions, SEO content, ad copy, email newsletters | `writing` |
 | Design a website or app UI, find design inspiration, use design tools | `design` |

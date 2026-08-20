@@ -1,5 +1,5 @@
 ---
-name: super-claudio:roteiro-e-slides
+name: super-claudio:video-script-and-slides
 description: >
   Creates a spoken video script (roteiro) plus a local HTML slide presentation for a
   self-recorded talking-head video — the creator records themselves; AI prepares the
@@ -17,7 +17,7 @@ description: >
   blog posts without a video (use writing).
 ---
 
-# Roteiro e Slides — Material for Self-Recorded Videos
+# Video Script and Slides — Material for Self-Recorded Videos
 
 You prepare everything a person needs to record an authentic talking-head video about a
 topic: a natural spoken script and a local HTML presentation to show on screen.
@@ -47,7 +47,7 @@ to their audience, not a corporate ad.
 
 1. **Research** — WebSearch for real facts; WebFetch/verify every source; collect 4–8
    concrete data points with source name + date
-2. **Script** — roteiro.md: hook, one section per slide with talking points + timing,
+2. **Script** — script.md: hook, one section per slide with talking points + timing,
    transitions, closing CTA
 3. **Slides** — slides.html: single local file (HTML+CSS+JS inline), keyboard navigation,
    real SVG logos, data with cited sources
