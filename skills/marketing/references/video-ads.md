@@ -361,11 +361,11 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
-Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
+Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana 2 for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
 
 1. Open Google Ads → Asset Studio
 2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image
-3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images
+3. Veo 3.1 generates production-ready video clips; Nano Banana 2 generates product lifestyle images (product-lock via up to 5 reference images keeps product integrity across variants)
 4. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
 5. Assets go directly into your campaign library — no external tool or re-upload required
 
