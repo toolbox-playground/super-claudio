@@ -101,6 +101,10 @@ as data URIs or pasted inline SVG. Must open offline by double-click.
   SVGL api `https://api.svgl.app?search=<term>`; verify `head -c 200` shows `<svg`;
   embed as data URI (`base64`) or inline `<svg>` — never a remote `<img src="http...">`
 - Source footer on every slide that shows data: `Fonte: {nome}, {ano}` in small muted text
+- Logos with dark ink (AWS wordmark, many brand marks) must sit on a white rounded chip —
+  never place a dark logo directly on a dark background
+- Bulleted lines need `padding-left` + negative `text-indent` so wrapped text aligns under
+  the first character instead of falling back to the margin
 - Progress dots + slide counter in a corner
 
 **Navigation JS (include):** arrow keys / space / PageUp-PageDown, `Home`/`End` jump,
@@ -131,6 +135,7 @@ hash target, or a direct load of `#3` leaves the cover slide rendered underneath
   .fonte { position:absolute; bottom:3vh; font-size:2vh; color:var(--muted) }
   .counter { position:fixed; bottom:3vh; right:3vw; font-size:2.2vh; color:var(--muted) }
   ul { list-style:none; display:flex; flex-direction:column; gap:2.5vh; text-align:left }
+  li { padding-left:1.6em; text-indent:-1.6em } /* wrapped lines stay aligned */
   li::before { content:'▸ '; color:var(--accent) }
   img.logo { height:18vh }
 </style>
