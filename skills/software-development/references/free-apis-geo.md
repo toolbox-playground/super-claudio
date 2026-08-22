@@ -53,7 +53,7 @@ for event in events:
 
 - **Base URL:** https://api.openweathermap.org/data/2.5
 - **Auth:** Free API key (register at openweathermap.org)
-- **Free tier:** 60 calls/minute, 7-day forecast, current weather
+- **Free tier:** 60 calls/minute, 5-day/3-hour forecast, current weather
 
 ### Setup
 1. Register at openweathermap.org → API Keys → copy your key
