@@ -179,17 +179,17 @@ Hume Octave 2 is the first TTS model built on a language model backbone that tru
 - **Best for:** Dramatic narration, character voices, emotionally nuanced dialogue, marketing voiceovers where delivery matters
 - **Not ideal for:** High-volume bulk generation (Kokoro / edge-tts are cheaper at scale); on-device deployment (use NeuTTS Air)
 
-## Cartesia Sonic 3.5 — #2 Artificial Analysis TTS Arena, Real-Time Conversational TTS
+## Cartesia Sonic 3.6 (beta) / Sonic 3.5 (stable) — #1 Artificial Analysis TTS Arena, Real-Time Conversational TTS (UPDATED Aug 2026)
 
-Cartesia Sonic 3.5 (upgraded May 2026) is purpose-built for real-time conversational AI with ~40ms time-to-first-audio — the standard pick for voice agents and chatbots. Sonic 3.5 improves on Sonic 3 with noticeably more natural voices, better stability through long calls, and more consistent pronunciation of difficult words and names. **Ranked #2 on the Artificial Analysis Speech Arena (Elo ~1,211, July 2026)** — a notable rise, combining both fast latency and top-tier quality. The upgrade applies automatically to all existing Cartesia integrations.
+Cartesia shipped **Sonic 3.6 in beta on its API** (~August 18, 2026), taking **#1 on both Artificial Analysis Speech Arena leaderboards** — Provider Voice (Elo ~1,285) and Controlled Voice (where Sonic 3.5 now holds #2) — surpassing Speechify SIMBA 3.2 and Alibaba's Qwen-Audio-3.0-TTS-Plus, which had traded the top spot through mid-July 2026. It runs on a state-space-model architecture rather than a transformer. Cartesia's docs still list **Sonic 3.5** (upgraded May 2026) as the stable/GA model, and most partner integrations still run on 3.5 — use 3.6 for bleeding-edge quality, 3.5 for a settled, broadly-integrated model. Vendor-stated latency for both is sub-90ms TTFA; independently measured real-world latency runs closer to 166–190ms end-to-end.
 
 - URL: cartesia.ai
-- Free tier available
-- Latency: ~40ms TTFA (best-in-class for streaming)
+- Free tier: 20,000 credits (roughly 1 credit per character); commercial use unlocks at the $5/mo Pro tier; Scale tier $299/mo (8M credits)
+- Latency: ~40ms TTFA vendor-stated for Sonic 3.5; sub-90ms vendor-stated for Sonic 3.6 (real-world TTFA measured higher, ~166–190ms, for both)
 - Languages: 42
-- Elo: ~1,211 — **#2 globally (Artificial Analysis Speech Arena, July 2026)**
-- Best for: voice agents, live chatbots, real-time assistants — now competitive on quality benchmarks as well as latency
-- Not ideal for: long-form content where ElevenLabs, Fish Audio, or Chatterbox are better
+- Elo: Sonic 3.6 ~1,285 — **#1 globally on both AA Speech Arena boards (August 2026)**; Sonic 3.5 ~1,211, still #2 on the Controlled Voice board
+- Best for: voice agents, live chatbots, real-time assistants — competitive on quality benchmarks as well as latency
+- Not ideal for: long-form content where ElevenLabs, Fish Audio, or Chatterbox are better; production pipelines needing a settled non-beta model (use Sonic 3.5)
 
 ## OpenAI GPT-Realtime-2 — Voice Reasoning Model, GPT-5-Class Intelligence (May 2026)
 
@@ -253,20 +253,20 @@ Rime (rime.ai) grounds its TTS in sociolinguistics — training on how real peop
 - **Best for:** Developers who need natural-sounding conversational voices without the cost of ElevenLabs; enterprise voice agents needing the Coda model's sub-100ms TTFA
 - **Not ideal for:** Theatrical emotional range (use Hume Octave 2); self-hosted / open-source deployment (use Chatterbox or Kokoro)
 
-## Qwen-Audio-3.0-TTS-Plus (Alibaba) — #1 Artificial Analysis TTS Arena (Elo 1,236, Mid-July 2026)
+## Qwen-Audio-3.0-TTS-Plus (Alibaba) — Former #1 Artificial Analysis TTS Arena (Elo 1,236, Mid-July 2026; passed by Cartesia Sonic 3.6 in August)
 
-Alibaba's Qwen-Audio-3.0-TTS-Plus (distinct from the open-source Qwen3-TTS listed below) is the **new #1 on the Artificial Analysis Speech Arena Leaderboard** as of mid-July 2026, narrowly surpassing Speechify SIMBA 3.2 — overlapping confidence intervals make the margin close. Delivers increased naturalness and contextually appropriate intonation; available as a proprietary cloud-hosted model via Alibaba Cloud Model Studio (DashScope). Continues Alibaba's momentum across model categories following HappyHorse and Fun-Realtime-TTS.
+Alibaba's Qwen-Audio-3.0-TTS-Plus (distinct from the open-source Qwen3-TTS listed below) held **#1 on the Artificial Analysis Speech Arena Leaderboard** from mid-July 2026, narrowly ahead of Speechify SIMBA 3.2, until **Cartesia Sonic 3.6 took over #1 in mid-August 2026** (see Cartesia entry above). Still a top-tier option: delivers increased naturalness and contextually appropriate intonation; available as a proprietary cloud-hosted model via Alibaba Cloud Model Studio (DashScope). Continues Alibaba's momentum across model categories following HappyHorse and Fun-Realtime-TTS.
 
 - **URL:** alibabacloud.com (Model Studio / DashScope)
-- **Elo:** 1,236 — **#1 globally (Artificial Analysis Speech Arena, mid-July 2026)**; narrowly above SIMBA 3.2 (1,234) with overlapping confidence intervals
+- **Elo:** 1,236 — held **#1 globally mid-July 2026**; now behind Cartesia Sonic 3.6 (~1,285, August 2026), narrowly above SIMBA 3.2 (1,234) with overlapping confidence intervals
 - **Free tier:** Alibaba Cloud trial credits on new accounts; no permanent free tier
 - **Generation speed:** ~16 chars/sec — significantly slower than Sonic 3.5 (~120 chars/sec) and SIMBA 3.2 (~30 chars/sec); note for throughput-sensitive pipelines
 - **Best for:** Applications prioritizing top benchmark quality; developers already in the Alibaba Cloud / DashScope ecosystem
 - **Not ideal for:** Ultra-low-latency agents (use Cartesia Sonic 3.5 at ~40ms TTFA); high-throughput batch generation (use SIMBA 3.2 or Kokoro); offline/on-device deployment (use NeuTTS Air)
 
-## Speechify SIMBA 3.2 — #2 Artificial Analysis TTS Arena at $10/1M Characters (Mid-July 2026)
+## Speechify SIMBA 3.2 — Top-3 Artificial Analysis TTS Arena at $10/1M Characters (Mid-July 2026; still best price/quality)
 
-Speechify SIMBA 3.2 (July 2026) reached **#1 on the Artificial Analysis TTS Arena** before being narrowly surpassed by Qwen-Audio-3.0-TTS-Plus in mid-July 2026 (now **#2, Elo 1,234**; overlapping confidence intervals — effectively co-equal on quality) — at $10/1M characters ($6/1M at the Scale tier), the lowest price among current global top-5 models. SIMBA 3.0 (May 2026) entered at #7 (Elo 1,159); 3.2 improved emotional control, locale coverage, and streaming latency, rising to #1 by mid-July 2026.
+Speechify SIMBA 3.2 (July 2026) reached **#1 on the Artificial Analysis TTS Arena** before being narrowly surpassed by Qwen-Audio-3.0-TTS-Plus in mid-July 2026 (Elo 1,234; overlapping confidence intervals — effectively co-equal on quality), and both have since been passed by Cartesia Sonic 3.6 (~1,285, August 2026). SIMBA 3.2 remains **top-3 globally** and, at $10/1M characters ($6/1M at the Scale tier), the lowest price among the current global top-5 models by a wide margin. SIMBA 3.0 (May 2026) entered at #7 (Elo 1,159); 3.2 improved emotional control, locale coverage, and streaming latency, rising to #1 by mid-July 2026.
 
 - **URL:** speechify.com
 - **Free tier:** No API free tier; Speechify consumer app has a limited free plan
@@ -482,7 +482,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
 | 80+ languages, emotion control | Fish Audio S2 Pro |
-| Best blind-test naturalness (cloud) | Qwen-Audio-3.0-TTS-Plus (Elo 1,236, **#1** mid-July 2026), Speechify SIMBA 3.2 (Elo 1,234, **#2** mid-July 2026), Gemini 3.1 Flash TTS (Elo ~1,214, **~#3**), Cartesia Sonic 3.5 (Elo ~1,207, **~#4**) |
+| Best blind-test naturalness (cloud) | Cartesia Sonic 3.6 (Elo ~1,285, **#1** Aug 2026, beta), Qwen-Audio-3.0-TTS-Plus (Elo 1,236, mid-July 2026 peak), Speechify SIMBA 3.2 (Elo 1,234, best price/quality at $10/1M chars), Gemini 3.1 Flash TTS (Elo ~1,214, free in AI Studio) |
 | Voice cloning, no cost, offline | Chatterbox (open-source) |
 | Long-form narration (up to 12 min), zero hallucinations, self-hosted | Hume AI TADA (Apache 2.0, open-source) |
 | Voice cloning, cloud, easiest | ElevenLabs (paid) |
@@ -500,9 +500,9 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Human-like conversational naturalness (pauses, ums, breaths) | Sesame CSM-1B (Apache 2.0, English only, CUDA required) |
 | Long-form multi-speaker narration (audiobooks, podcasts) | VibeVoice-TTS-1.5B (MIT, up to 90 min / 4 speakers, research use) |
 | Multilingual style-controllable TTS, free for developers | Gemini 3.1 Flash TTS (70+ languages, audio tags, free in AI Studio); Gemini 3.5 Flash TTS ($6/1M output — cheapest option) |
-| Top quality at minimum cost | Speechify SIMBA 3.2 (**#2 globally** mid-July 2026, Elo 1,234, $10/1M chars; $6/1M at Scale tier) — best price/quality; Qwen-Audio-3.0-TTS-Plus is new #1 (Alibaba DashScope) but has slower throughput (16 chars/sec) |
+| Top quality at minimum cost | Speechify SIMBA 3.2 (top-3 globally, Elo 1,234, $10/1M chars; $6/1M at Scale tier) — best price/quality; Cartesia Sonic 3.6 and Qwen-Audio-3.0-TTS-Plus rank higher on Elo but Qwen has slower throughput (16 chars/sec) and Sonic 3.6 is still beta |
 | Conversational AI with tone/context awareness across turns | Inworld Realtime TTS-2 (closed-loop, adapts to prior audio, 100+ langs, May 2026) |
 | Grok/xAI ecosystem, 20+ languages, format flexibility | xAI Grok TTS ($4.20/1M chars, Elo ~1,194 ~#6 globally July 2026, voice cloning) |
 | Contextual performance TTS, dramatic delivery without tags | StepAudio 2.5 TTS (platform.stepfun.ai, Elo ~1,187 ~#7 globally July 2026, plain-language voice direction) |
 | Multilingual broadcast-quality narration, 40+ languages, emotion+interjections | MiniMax Speech 2.8 HD (minimax.io/audio, Replicate, WaveSpeedAI; HD for quality, Turbo for speed) |
-| Highest-ranked cloud TTS by Elo, real-time streaming | Qwen-Audio-3.0-TTS-Plus (Alibaba DashScope, Elo 1,236, **#1** mid-July 2026); Speechify SIMBA 3.2 ($10/1M chars, Elo 1,234, **#2**); Gemini 3.1 Flash TTS (free in AI Studio, Elo ~1,214, ~#3); Cartesia Sonic 3.5 (free tier, Elo ~1,207, ~#4, ~40ms latency) |
+| Highest-ranked cloud TTS by Elo, real-time streaming | Cartesia Sonic 3.6 (Elo ~1,285, **#1** Aug 2026, beta, sub-90ms claimed TTFA); Qwen-Audio-3.0-TTS-Plus (Alibaba DashScope, Elo 1,236, mid-July 2026 peak); Speechify SIMBA 3.2 ($10/1M chars, Elo 1,234); Cartesia Sonic 3.5 (stable/GA, free tier, Elo ~1,207, ~40ms latency) |
