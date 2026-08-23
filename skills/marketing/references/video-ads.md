@@ -84,16 +84,19 @@ Predis.ai generates content designed to look like organic posts, then runs them 
 
 Best for: brands wanting native-feel TikTok ads with lower CPM through Spark Ads.
 
-## Lapis — Best AI Ad Generator for TikTok (2026)
+## Lapis — Multi-Platform AI Ad Generator, YC-Backed (2026)
 
-Lapis is purpose-built for TikTok, auto-sizing creatives for vertical-first placements (9:16, 1:1) with built-in performance forecasting and visuals tuned to TikTok's native aesthetic.
+Lapis started TikTok-first but has broadened into a 6-platform generator: Meta, Google Display, LinkedIn, TikTok, WhatsApp, and ChatGPT — auto-sizing creatives per placement with built-in performance forecasting.
 
 1. Go to trylapis.com
 2. Input product details or URL
-3. Select TikTok ad format
+3. Select ad format/platform
 4. Generate scroll-stopping visuals optimized for the platform algorithm
 
-Best for: high-volume TikTok campaigns with creative performance scoring.
+**Free tier:** 5 credits
+**Pricing:** Basic $99/month, Pro $599/month
+**Backing:** Y Combinator (F25 batch); 4.9/5 on G2
+Best for: teams running creative across TikTok plus other paid channels who want one tool instead of platform-specific generators.
 
 ## AdCreative.ai — Predictive Scoring for High-Volume Campaigns
 
@@ -146,12 +149,12 @@ ElevenLabs Ads Engine (launched June 22, 2026) localizes existing ad creatives a
 2. Upload or connect your existing ad creative (text, image, or video)
 3. Select target languages (50+ supported)
 4. Ads Engine translates text, adapts image copy, and dubs video while preserving tone and delivery (powered by Dubbing v2)
-5. Export or push directly to Google Ads (Search, text) or Meta Ads (text, image, video) — no manual re-upload
+5. Export or push directly to Google Ads (Search, text), Meta Ads (text, image, video), or LinkedIn Ads — no manual re-upload
 
 **Free tier:** ElevenLabs Creator plan and above ($11/month); credits apply
-**Supported integrations at launch:** Google Ads, Meta Ads
+**Supported integrations at launch:** Google Ads, Meta Ads, LinkedIn Ads
 **Best for:** Brands with proven creative that want to expand to new markets at minimal production cost; multilingual campaigns without re-filming or re-voicing.
-**Not ideal for:** Generating new creatives from scratch (use Creatify, Arcads, or AdStellar for that); ad platforms beyond Google and Meta (Ads Engine is Google + Meta only at launch).
+**Not ideal for:** Generating new creatives from scratch (use Creatify, Arcads, or AdStellar for that).
 
 ## HeyGen — AI Avatar Video, 175+ Languages (Avatar V, April 2026)
 
@@ -192,7 +195,7 @@ Pose Video Studio (pose.ai) generates UGC-style video ads where every variant fe
 5. Generate UGC-style videos for TikTok, Reels, or YouTube Shorts — all featuring your consistent brand face
 
 **Free tier:** Trial available
-**Pricing:** From $9/month (billed yearly)
+**Pricing:** Credit-based weekly plans, from $4.99/week (400 credits)
 **Best for:** Brands and solo creators who want a recognizable, consistent face across every creative variant without filming — stronger brand recall than generic AI avatars.
 **Not ideal for:** High-volume multi-actor campaigns needing different personas per audience segment (use Arcads for that).
 
@@ -212,15 +215,14 @@ ElevenLabs Avatars (launched June 13, 2026 in ElevenCreative) ties ElevenLabs' v
 
 ## Hyper AI — Cross-Platform Campaign Automation
 
-Hyper (hyperfx.ai) runs TikTok, Meta, Google, LinkedIn, and Amazon as one autonomous agent: hourly creative-fatigue detection, automatic budget reallocation, creative-brief generation from last-7-day winners, and Smart+ feed optimization.
+Hyper (hyperfx.ai) has broadened from ad-channel optimization into a wider agent platform spanning ads, SEO, content, and analytics, with 80+ integrations (including Slack, Teams, iMessage): hourly creative-fatigue detection, automatic budget reallocation, creative-brief generation from last-7-day winners, and Smart+ feed optimization across TikTok, Meta, Google, LinkedIn, and Amazon.
 
 1. Go to hyperfx.ai
-2. Connect your ad accounts (TikTok, Meta, Google, etc.)
+2. Connect your ad accounts and other integrations
 3. Hyper audits campaigns hourly, kills fatigued creatives early, and surfaces briefs for replacements
 4. Pair with a creative tool (Creatify, Arcads, Lapis) for video production — Hyper handles distribution and optimization
 
-**Pricing:** $49/month flat (all connected channels; no per-platform fees)
-**Best for:** Teams running TikTok alongside other paid channels who need unified multi-platform optimization; rated 9.4/10 in 2026 TikTok ad automation comparisons. Not a creative generator — use alongside Creatify or Arcads for new video assets.
+**Best for:** Teams running TikTok alongside other paid channels (and adjacent SEO/content workflows) who need unified multi-surface optimization. Not a creative generator — use alongside Creatify or Arcads for new video assets.
 
 ## Synter — MCP-Native Cross-Platform Ad Generator (14 Platforms in One Workflow)
 
@@ -272,7 +274,7 @@ Jogg AI generates UGC-style video ads from a product URL — 450+ stock AI avata
 1. Go to jogg.ai
 2. Paste product page URL — AI auto-extracts images + description
 3. Select avatar (filter by age, gender, ethnicity, style) and review/edit script
-4. Generate; batch mode produces up to 100 variants simultaneously
+4. Generate; batch mode produces up to 10 variants simultaneously
 
 **Free tier:** 3 credits (3 watermarked videos, 1 min max each)
 **Pricing:** From $15/month entry; up to $89/month for volume
@@ -281,7 +283,7 @@ Jogg AI generates UGC-style video ads from a product URL — 450+ stock AI avata
 
 ## MakeUGC — AI Actors Holding Your Product On-Screen
 
-MakeUGC generates talking-head UGC-style ads where AI actors appear to physically hold your product — the platform's defining feature. Designed for brands that want authentic product-in-hand content without filming.
+MakeUGC generates talking-head UGC-style ads where AI actors appear to physically hold your product — the platform's defining feature. 100+ avatars available. Designed for brands that want authentic product-in-hand content without filming.
 
 1. Go to makeugc.ai
 2. Upload product images
