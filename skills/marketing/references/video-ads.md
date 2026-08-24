@@ -32,7 +32,7 @@
    ffmpeg -i product_clip.mp4 -i voiceover.mp3 \
      -c:v copy -c:a aac -shortest output_with_audio.mp4
    ```
-   Or use CapCut: import video + audio, add auto-captions, add text overlay for CTA.
+   Or use CapCut: import video + audio, add auto-captions, add text overlay for CTA. For TikTok Shop/Shopify products specifically, **CapCut Commerce Pro** (commercepro.capcut.com) connects to your catalog and auto-generates + auto-distributes product videos, skipping most of this manual editing.
 
 5. **Add CTA overlay**
    In CapCut: Text → "Shop Now" / "Link in Bio" → style to match brand
@@ -300,7 +300,7 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
-- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Video Generation** — powered by Dreamina Seedance 2.0, upgraded to **Seedance 2.5 on August 3, 2026**: max AI-generated clip length doubled from 15s to 30s, and multi-modal reference uploads (image/video/audio pinned to timestamps) raised from 9 to 50; rolling out first to paid advertisers in select markets
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max

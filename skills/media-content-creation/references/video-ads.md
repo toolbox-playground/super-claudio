@@ -27,6 +27,7 @@ other performance marketing channels.
 ### Step 4: Final edit
 - Add captions, product name overlay, CTA ("Shop Now", "Link in Bio")
 - Use CapCut (free, mobile/desktop) for quick edits and caption overlay
+- Selling on TikTok Shop or Shopify? **CapCut Commerce Pro** (commercepro.capcut.com) connects to your product catalog and can auto-generate + auto-publish product videos, skipping most manual steps below
 - Or use the `video-editing` reference for ffmpeg-based automation
 
 ## aicreator.co — Defunct (May 2026)
@@ -45,7 +46,7 @@ Tool for generating ad-optimized product images:
 
 1. Create product image (real photo or Nano Banana 2 scene)
 2. Animate with Figma Weave (model interacts with product)
-3. Add music + captions (CapCut or ffmpeg)
+3. Add music + captions (CapCut, CapCut Commerce Pro, or ffmpeg)
 4. Upload to TikTok with Shop product tag
 5. Add affiliate/shop link in description
 

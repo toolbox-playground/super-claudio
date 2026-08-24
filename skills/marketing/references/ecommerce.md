@@ -19,6 +19,7 @@
    - Auto-captions → font: bold, high contrast
    - Add product sticker (TikTok Shop feature)
    - Add background music (trending audio from TikTok library)
+   - For a more automated pipeline, use **CapCut Commerce Pro** (commercepro.capcut.com) instead of plain CapCut — it connects directly to your TikTok Shop or Shopify catalog, auto-generates product videos/photos and avatar-led ads from your listings, and can auto-distribute straight to TikTok Shop. Free trial with limited credits; paid tiers unlock higher usage and full analytics.
 
 3. **Upload:**
    - Add product tag from your TikTok Shop catalog

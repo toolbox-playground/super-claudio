@@ -10,6 +10,7 @@
 | **Adobe Express** | Quick resizing, brand kits | Free tier |
 | **Nano Banana 2** | Product in lifestyle scene | Check site |
 | **Flux via fal.ai** | AI-generated product images | API credits |
+| **AdCreative.ai** | Batch static/carousel ad generation with a pre-spend performance prediction score (CTR/conversion) per variant | No free tier; from $39/mo (trial available) |
 
 ### Canva Ad Creation Workflow
 
