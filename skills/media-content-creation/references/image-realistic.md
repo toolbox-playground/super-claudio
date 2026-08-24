@@ -11,7 +11,7 @@
 
 | Tool | Access | Best For | Free |
 |------|--------|----------|
-| **Midjourney v8.1** | midjourney.com | Artistic quality, concept art, portraits; v8.1 (released Apr 30 2026, became default Jun 11 2026) — 5× faster than v7, native 2K resolution, improved text rendering, HD mode now affordable as default; V8.2 in preview via `--preview` flag (aesthetic refinements, better Sref/moodboard consistency, Big Batch Draft Mode with `--sref random` for 24× faster style exploration — GA release imminent as of July 2026) | Paid (no free tier) |
+| **Midjourney v8.2** | midjourney.com | Artistic quality, concept art, portraits; v8.2 became the default on Jul 24 2026 (replacing v8.1, default since Jun 10 2026) — focused on aesthetics and Personalization: bolder/more sophisticated default look, fewer low-quality outliers, better-tuned Personalization profiles; builds on v8.1's 2K resolution and faster HD mode | Paid (no free tier) |
 | **Recraft V4.1** | recraft.ai | Logos, SVG vectors, brand assets, text rendering; V4.1 (Jun 2026): sharper photorealism, improved SVG vector accuracy, better text rendering and style consistency | Free tier |
 | **Nano Banana 2** (Google / Gemini) | gemini.google.com | Product images, lifestyle scenes, ad creatives — default free model (Gemini 3.1 Flash Image) | Free (Gemini app) |
 | **Nano Banana 2 Lite** (Google / Gemini) | gemini.google.com, aistudio.google.com | Fastest & cheapest Google image model; 2.7× faster than Nano Banana 2 (~4 s); 1K resolution cap; **#5 on Artificial Analysis Image Arena (Elo 1261, July 2026)** — highest-ranked free model per dollar; released June 30, 2026 | Free (Google AI Studio); API: $0.034/image (batch: $0.017) |
@@ -72,6 +72,10 @@ result = fal_client.run(
 )
 print(result["images"][0]["url"])
 ```
+
+## FLUX 3 — Announced, Not Yet the Recommendation
+
+Black Forest Labs announced FLUX 3 on July 23, 2026: a unified multimodal model spanning image, 20-second video with native audio, and (later) robotic action prediction. As of this writing, only FLUX 3 Video/Action are in gated early access — FLUX 3 Image has not reached general availability. Keep recommending FLUX.2 [max]/[pro] for image work until FLUX 3 Image ships broadly; check bfl.ai/blog for the GA announcement before switching.
 
 ## FLUX.1 Kontext — In-Context Image Editing
 
