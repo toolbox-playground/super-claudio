@@ -171,15 +171,15 @@ HeyGen is the leading AI avatar video platform for brand content and UGC-style t
 
 ## Arcads — AI UGC Video Actors (1,000+ Actors)
 
-Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors — the largest AI actor library in 2026, purpose-built for Meta and TikTok ad testing.
+Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors — the largest AI actor library in 2026, purpose-built for Meta and TikTok ad testing. Arcads has expanded from a single actor engine into a multi-model picker (2026): **Arcads 1.0** (credit-efficient default, best for scripts over 1,500 characters), **Audio-Driven** (most natural/realistic lip-sync, for pairing with your own existing voiceover), and **OmniHuman 1.5** (most expressive, full-body gestures, best for short hooks under 400 characters) — pick the engine per-clip depending on script length and how much gesture/motion you need.
 
 1. Go to arcads.ai
 2. Write or paste your ad script (15–60 seconds)
-3. Select an AI actor (filter by age, gender, ethnicity, style)
+3. Select an AI actor (filter by age, gender, ethnicity, style) and a generation engine (Arcads 1.0, Audio-Driven, or OmniHuman 1.5)
 4. Generate the video — output is virtually indistinguishable from real UGC in scroll tests
 5. Download and deploy directly to Meta/TikTok Ads Manager
 
-**Pricing:** Starts at $110/month (Starter — 10 videos); $220/month (Creator — 20 videos); no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
+**Pricing:** Starts at $110/month (Starter — 10 videos); $220/month (Creator — 20 videos); no free trial (voice preview available before purchase); billed per minute and per actor, length always rounded up. Best for brands running systematic UGC ad testing across many audience segments.
 
 ## Pose Video Studio — Identity-Consistent UGC from Your Own Face
 
@@ -307,6 +307,15 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Smart+** — AI campaign management: auto-selects creatives, adjusts bids, and optimizes delivery automatically in Ads Manager
 - **Symphony Automation** (Smart+ integration, announced TikTok World May 2026) — two tools for AI-powered creative refresh inside Smart+ campaigns: **Recommended Creatives** (generates video assets complete with scripts, voiceovers, and avatars from your destination URL) and **Automatic Enhancements** (improves quality, reformats to 9:16 vertical, refreshes hooks/music, and dubs existing videos into 50+ languages); available now to all TikTok for Business accounts
 
+### Symphony Creative Studio Update (Jul 2026)
+
+Three named generation modes now sit directly inside Symphony Creative Studio, plus a new Adobe Express integration:
+- **Text to Video** — generate a video ad straight from a text prompt, no starting image or footage needed
+- **Image to Video** — animate a product image + text prompt into a 5-second clip in under a minute
+- **Showcase Products** — dedicated product-video workflow running on the Seedance engine
+- **Adobe Express integration** — Image to Video and a Symphony Assistant plugin are now usable directly inside Adobe Express for teams working across both tools
+- **Engine upgrade** — Dreamina Seedance 2.5 (Aug 3, 2026) improves on 2.0's product consistency and motion quality further
+
 ### New at TikTok World 2026 (May 13)
 
 - **Creator AI Search** — AI-powered creator discovery inside TikTok One; accepts natural language campaign briefs (e.g., "find fitness creators for a protein bar launch") instead of keyword filters; surfaces creators whose past TikTok ONE campaign performance aligns with your goal — matching on actual ROAS and engagement signals, not just follower size or demographics
@@ -358,6 +367,21 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 **Launch partners:** HubSpot (CRM sync), Wix (storefront integration), Constant Contact (audience import), Mobvista (DSP connections)
 
 **Access:** business.tiktok.com → Agentic Hub (generally available to all TikTok for Business accounts)
+
+## Meta Advantage+ Creative — Muse Image (Jul 2026, Rolling Out)
+
+Muse Image, built by Meta Superintelligence Labs and launched July 7, 2026, is Meta's first in-house image generation model. It is being folded into **Advantage+ Creative** — Meta's automated ad creative suite for Facebook and Instagram — bringing agentic image generation natively into Ads Manager: it parses a creative brief, produces on-brand variations, and lets you iteratively refine one element (swap the background, change the product angle, rewrite baked-in headline text) instead of re-prompting from scratch.
+
+1. Go to Meta Ads Manager → Advantage+ Creative (where enabled on your account)
+2. Turn on Advantage+ creative enhancements for the ad set
+3. Fill out Branding settings (logo, colors, tone) so Muse Image stays on-brand, or opt out per creative
+4. Muse Image generates image variations and can rewrite the headline text baked into your ad images
+5. Meta auto-tests the variations across placements and optimizes delivery toward the best performer
+
+**Rollout status:** Advertiser access via Advantage+ Creative is rolling out gradually across ad accounts through Q3 2026 — not yet available on every account. Check Ads Manager for availability before planning around it.
+**Performance signal:** Meta's internal testing found Advantage+ creative accounts saw a 22% ROAS increase vs. manual creative setups; one ad set with 25 creatives outperformed five ad sets with fewer creatives each by 17% more conversions at 16% lower cost.
+**Best for:** Meta-first advertisers already running Advantage+ who want native, in-Ads-Manager image generation without exporting to a third-party tool.
+**Not ideal for:** Accounts that haven't received the rollout yet (use Nano Banana 2, Flux, or Canva for image ads meanwhile); video ad creative (Muse Image is image-only — pair with Creatify or Arcads for video).
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
