@@ -38,6 +38,8 @@ export const MyVideo = () => {
 npx remotion render src/index.ts MyVideo out/video.mp4
 ```
 
+**Remotion Agent Skills (added 2026)** — official rule files (`remotion-dev/skills` on GitHub) that teach coding agents, including Claude Code, how to write correct Remotion code: components, transitions, animation primitives, and audio timing. Install them in a Remotion project so Claude Code can generate Remotion videos from a plain-language description instead of hand-written JSX. Worth invoking when a user wants a programmatic video but doesn't want to write the React themselves.
+
 **Best for:**
 - Shareable WhatsApp/Instagram content with text + emoji
 - Branded promotional videos with consistent style
