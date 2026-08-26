@@ -110,7 +110,7 @@ Meta Superintelligence Labs launched Muse Image on July 7, 2026: Meta's first im
 
 ## DALL-E Retirement Note
 
-DALL-E 2 and DALL-E 3 were retired by OpenAI on May 12, 2026. GPT Image 2 (already in the table above) is their replacement. Do not recommend DALL-E endpoints — they are deprecated.
+DALL-E 2 and DALL-E 3 were retired from the OpenAI API on May 12, 2026. GPT Image 2 (already in the table above) is their replacement. Do not recommend DALL-E endpoints — they are deprecated. Separately, OpenAI is retiring the legacy "DALL·E" GPT inside the ChatGPT app on August 30, 2026 — any workflow still pointing users to that in-app GPT should redirect them to ChatGPT Images (GPT Image 2) instead.
 
 ## Google Imagen 4 Deprecation Note
 
