@@ -33,7 +33,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
-| NewsAPI | Headlines from 150k sources | newsapi.org | Free key |
+| NewsAPI | Headlines from 150k sources; **free "Developer" tier is dev/test only** — 100 req/day, articles delayed 24 hours, CORS restricted to localhost, no production or commercial use per ToS | newsapi.org | Free key |
 | The Guardian | Full article access | open-platform.theguardian.com | Free key |
 | HackerNews | Tech news, rankings | hacker-news.firebaseio.com | None |
 
@@ -83,8 +83,8 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | API | What | URL | Auth |
 |-----|------|-----|------|
 | Discord API | Build bots, manage servers, send/read messages, listen to real-time events via WebSocket gateway; no limits on bot creation; well-documented | discord.com/developers | Bot token (free) |
-| **Bluesky API (AT Protocol)** | Read/write posts, timelines, user data, follows; permissive free rate limits; growing developer community after X went paid | atproto.com | Free account |
-| **Threads API (Meta)** | Post, read replies, manage media; free developer access; rate limits generous for indie devs | developers.facebook.com/docs/threads | Free account |
+| **Bluesky API (AT Protocol)** | Read/write posts, timelines, user data, follows; genuinely free (no paid tier exists) — write ops capped at 5,000 points/hr & 35,000/day per account (a post = 3 points), public reads via api.bsky.app/public.api.bsky.app at 3,000 req/5min per IP; growing developer community after X went paid | atproto.com | Free account |
+| **Threads API (Meta)** | Post, read replies, manage media; free (Meta charges no per-call fee) but **capped at 250 posts / 1,000 replies per 24 hours per profile**, and production use requires passing Meta App Review (dev/tester mode is open immediately) | developers.facebook.com/docs/threads | Free account |
 | **X (Twitter) API** | **⚠️ No longer free (Feb 6, 2026)** — reading a tweet costs $0.005, posting $0.015; full-archive search from $42K/month enterprise. Use Bluesky/Threads instead for social data at no cost. | developer.x.com | Paid only |
 
 ## Developer Utilities
