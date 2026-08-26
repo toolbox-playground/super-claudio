@@ -132,7 +132,7 @@ AdStellar combines ad creative generation, campaign launch, and performance opti
 4. Launch directly as a Meta campaign with AI-optimized audiences and copy
 5. Winners Hub surfaces best-performing creatives automatically by ROAS, CPA, and CTR
 
-**AdStellar Agent (May 2026):** In-app AI media buyer — chat to analyze performance, write copy, generate creative, and launch/manage Meta campaigns in one conversation; confirm/cancel cards appear before any spend is committed. Also added: **multi-actor UGC** (up to 3 simultaneous AI actors per prompt, generating 3 separate videos); standalone video editor with blank canvas mode; bulk budget edits across campaigns.
+**AdStellar Agent (May 2026):** In-app AI media buyer — chat to analyze performance, write copy, generate creative, and launch/manage Meta campaigns in one conversation; confirm/cancel cards appear before any spend is committed. Also added: **multi-actor UGC** (up to 3 simultaneous AI actors per prompt, generating 3 separate videos); standalone video editor with blank canvas mode; bulk budget edits across campaigns. **Slack integration (Jun 17, 2026):** the same Agent now runs inside Slack — analyze performance, write copy, generate creative, and launch/manage Meta campaigns from a Slack channel or DM without opening the app.
 
 **Pricing:** $49/month (Hobby), $129/month (Pro), $499/month (Ultra); 7-day free trial, no credit card required.
 
@@ -265,6 +265,19 @@ AdsTurbo (adsturbo.ai, launched March 20, 2026) specializes in high-volume UGC-s
 **Best for:** Performance marketers who want to quickly clone + remix winning competitor ad structures; teams needing large A/B test batches with different hooks, CTAs, avatars, and languages without re-uploading assets.
 **Not ideal for:** Highest-volume multi-actor campaigns at scale (use Arcads); URL-to-video with TikTok Ad Library research built in (use Topview AI); predictive scoring before spend (use Pencil or AdCreative.ai).
 
+## UGCfy AI — URL-to-UGC with Compliance Guardrails (Jul 2026)
+
+UGCfy AI (launched July 9, 2026) converts a Shopify, Amazon, or other product page URL into creator-style UGC video ads for TikTok and Meta. Its distinguishing feature: built-in compliance guardrails that flag risky claims before you publish — aimed at beauty, skincare, and supplement brands, where unsubstantiated claims are a common cause of platform ad-policy strikes.
+
+1. Go to ugcfy.ai
+2. Paste a product page URL — AI extracts benefits, claims, and images
+3. Review AI-drafted hook/script variants; guardrails flag risky health/beauty claims before generation
+4. Generate vertical video with AI presenters and captions, sized for TikTok, Reels, and Meta placements
+5. Full commercial usage rights included on every plan
+
+**Best for:** Beauty, skincare, and supplement brands needing UGC ad volume without risking claim-related policy strikes.
+**Not ideal for:** Categories with no claims-review need (use Creatify or Topview AI, which are more mature URL-to-video platforms).
+
 ## Jogg AI — URL-to-Video with 450+ Avatars ($15/mo Entry)
 
 Jogg AI generates UGC-style video ads from a product URL — 450+ stock AI avatars, multilingual voiceovers in 200+ languages, and batch mode for up to 100 video variations in minutes. 95,000+ creators and brands.
@@ -300,7 +313,7 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
-- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Video Generation** — powered by Dreamina Seedance 2.0, upgraded to **Seedance 2.5** (Aug 3, 2026): native single-pass 30-second clips (double the prior 15s cap) and up to 50 multi-modal reference uploads (up from 9), with sharper imagery and better-preserved lighting/motion/character consistency across a video; rolling out to select paid advertisers in select markets — TikTok has not confirmed a full-GA timetable or incremental cost
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
@@ -358,6 +371,17 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 **Launch partners:** HubSpot (CRM sync), Wix (storefront integration), Constant Contact (audience import), Mobvista (DSP connections)
 
 **Access:** business.tiktok.com → Agentic Hub (generally available to all TikTok for Business accounts)
+
+## Meta Advantage+ Creative — Muse Image (Jul 2026, Rolling Out to Advertisers)
+
+Meta launched Muse Image on July 7, 2026 — the first image-generation model from Meta Superintelligence Labs (led by Alexandr Wang). Unlike Advantage+ Creative's existing one-shot image tools, Muse Image works agentically: it parses a creative brief, searches the web, writes and runs code, and iteratively refines drafts instead of generating a single static output. It renders legible text inside images, edits existing photos (remove elements, change camera angle), builds room-redesign visuals using real catalog products, and generates infographics.
+
+1. Muse Image is already live in the Meta AI app, meta.ai, Instagram Stories (US), and WhatsApp (limited countries)
+2. Advertiser access via Advantage+ Creative image generation was announced "in the coming weeks" at launch — as of mid-August 2026 no official rollout to ad accounts has been confirmed, so treat it as pending, not yet available
+3. Once live, expect it inside Ads Manager → Advantage+ Creative → generate image, alongside the existing enhancement stack (image-to-video, auto text/color variations, background expansion)
+
+**Best for:** Meta-first advertisers once the ad-account rollout lands — on-brand image variations with fewer manual edits per iteration.
+**Not yet usable for:** live campaigns today — check Ads Manager directly before planning around it; use Nano Banana Pro or Flux in the meantime for Meta image ads (see image-ads.md).
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 

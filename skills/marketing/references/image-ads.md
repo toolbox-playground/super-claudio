@@ -20,6 +20,8 @@
 5. Resize for all platforms in one click (Canva Magic Resize)
 6. Export as PNG/JPG
 
+**2026 update:** Canva's Magic Studio now routes ad-creation requests through a single conversational box instead of separate Magic Design/Write/Edit tools. Magic Design can generate up to 50 layout variations in one pass — useful for producing A/B test variants fast — and Magic Layers splits any flat AI-generated (or uploaded) image into editable layers for further customization.
+
 ### Prompt for AI-generated ad image (Flux/GPT Image 2)
 
 ```

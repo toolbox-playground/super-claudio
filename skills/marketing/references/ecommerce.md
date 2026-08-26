@@ -14,6 +14,7 @@
 1. **Create product-in-action video:**
    - If you have the product: film a 30-second demo
    - AI approach: Nano Banana 2 product scene → Figma Weave animation → ffmpeg voiceover
+   - **Native TikTok option (2026):** TikTok Shop's built-in **AI Fashion Video Maker** (TikTok Seller Center) turns uploaded product images into shoppable video clips with voiceover automatically, free for menswear/womenswear sellers on desktop and mobile — no external tool needed. Pair with **List with AI** to auto-generate the product title, description, and category from the same images.
 
 2. **Edit in CapCut:**
    - Auto-captions → font: bold, high contrast
