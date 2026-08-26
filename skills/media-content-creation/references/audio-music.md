@@ -14,7 +14,9 @@ Generate complete songs (vocals + instruments) from a text prompt.
 - **Stem Separation (June 11, 2026 update):** Three modes — **Advanced Split** (NEW, Premier only): choose from ~100 instruments to regenerate each stem from scratch — no separation artifacts; also exports MIDI; 10 credits/extracted track. **Split from Mix** (Updated): pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
 - Free tier: 50 credits/day (~10 songs); non-commercial use only
 - **Important (2026):** Free-tier users can no longer download audio files — tracks can only be streamed/shared within the platform. Download requires a paid plan ($10/month Pro, $30/month Premier).
-- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of June 2026 the transition has not yet occurred — current models remain active — but when it does, all generations made with the old models will eventually become inaccessible. UMG and Sony Music litigation remains active — a fair-use summary judgment hearing in the U.S. case is scheduled for July 2026 (no verdict as of July 11, 2026); a separate German case (GEMA v. Suno) is due July 31, 2026. Users who want to preserve old generations should download them now on a paid plan.
+- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of August 2026 the transition has not yet occurred — v5.5 remains the current flagship (v6 has no confirmed release date, delayed since a promised 2026 relaunch with Warner) — but when it does, all generations made with the old models will eventually become inaccessible. Users who want to preserve old generations should download them now on a paid plan.
+- **Litigation update (August 2026):** Suno **lost** the GEMA v. Suno case in Germany — the Munich District Court ruled July 31, 2026 that Suno's training and outputs infringed copyright (even though training occurred in the U.S.), ordered disclosure of usage scale, and held Suno liable for damages; Suno is expected to appeal. The separate U.S. case (UMG/Sony Music v. Suno, Massachusetts) has **no ruling yet** — summary judgment was pushed back to January 8, 2027, so no U.S. fair-use verdict is expected in 2026.
+- **Watermarking & download policy (August 6, 2026):** Facing this legal pressure, Suno announced it will add audio watermarking/fingerprinting to identify AI-generated tracks, tighten its downloads policy to curb mass-distribution/streaming-royalty-fraud schemes, and rewrite community guidelines to explicitly ban uploading copyrighted material or cloning real voices without permission — rolling out "in the coming weeks" per Suno's blog post.
 - Input: genre, mood, lyrics (optional), style description
 - Output: full song (streaming on free; downloadable MP3 on paid)
 
@@ -65,6 +67,17 @@ MiniMax Music 2.5 (released January 29, 2026) adds paragraph-level precision con
 - **Audio fidelity:** Optimized soundstage keeps vocals and instruments in separate spectral regions — the key improvement over Music 2.0
 - Best for: generation where song structure matters (commercial jingles, video scoring with section-to-cut sync, multi-verse songs with distinct parts)
 - Not ideal for: stem export or MIDI (use Mureka v8); on-demand free generation (use Suno free tier)
+
+## MiniMax Music 3 — Open-Weights, Full 5-Minute Songs (NEW August 2026)
+
+MiniMax Music 3 (weights live on HuggingFace/ComfyUI since ~August 13, 2026) is MiniMax's first **open-weights** music model — a step beyond the closed API-only Music 2.5/2.6 line. Generates a complete, produced song up to 5 minutes long in a single pass at 32kHz stereo, from lyrics plus a "Structured Caption" (separate Global Metadata, Vocal Details, and Arrangement sections) for fine-grained control over genre, BPM, vocal style, and instrumentation. Hierarchical architecture: 8B Global LLM (long-range structure) + 0.6B Local LLM (acoustic detail) + 2.4B flow-matching module + Flow-VAE decoder.
+
+- **URL / GitHub:** github.com/MiniMax-AI/MiniMax-Music3 | **HuggingFace:** `MiniMaxAI/MiniMax-Music3`
+- **License:** MiniMax Community License (not OSI-approved open-source) — commercial use allowed by default but must display "MiniMax-Music3" attribution in-product; orgs with >$20M annual revenue need prior written authorization from MiniMax
+- **Max length:** 5 minutes in a single generation, 32kHz stereo output
+- **Note:** MiniMax's hosted API (minimax.io/audio, WaveSpeedAI) still documents the older Music 2.6 model as of August 2026 — Music 3 is currently a self-hosted/open-weights release, not yet on the hosted API
+- Best for: self-hosted full-song generation with structural control, teams wanting to fine-tune or run music generation on their own infrastructure
+- Not ideal for: turnkey hosted API access (use ElevenLabs Music v2 or Mureka v8 for that today)
 
 ## Google Flow Music (formerly Producer.ai / Riffusion) — Google-Owned, Free, Lyria 3 Powered
 
