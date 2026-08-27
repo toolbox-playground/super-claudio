@@ -20,6 +20,14 @@
 5. Resize for all platforms in one click (Canva Magic Resize)
 6. Export as PNG/JPG
 
+### Meta Advantage+ Creative — Automatic Headline Rewrites on Ad Images (Jul–Aug 2026)
+
+As of late July 2026, Meta Advantage+ Creative can rewrite the headline text baked into an uploaded ad image itself — not just the ad copy field — while preserving the original font, colors, banner, and layout, then generating multiple variants automatically (8 pre-selected by default). This is **on by default** for eligible accounts.
+
+- If your ad images carry baked-in text (headline on a banner, price callout, etc.), fill out Branding under account Identity (logo, fonts, colors, tone, restricted words) so Meta rewrites within your rules instead of freeform
+- Turn it off per-creative if you don't want Meta editing text baked into a specific image
+- Relevant when designing image ads for Meta: leave clean space/simple typography if you want predictable rewrite results, since Meta is now editing pixels on your uploaded image, not just overlaying new copy
+
 ### Prompt for AI-generated ad image (Flux/GPT Image 2)
 
 ```

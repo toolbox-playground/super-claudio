@@ -25,10 +25,24 @@
    - Write caption with 3-5 relevant hashtags
    - Post during peak hours (7-9pm local time typically)
 
+### Product Image Standards (Aug 2026 Brand Protection Update)
+
+TikTok Shop began enforcing stricter main-image requirements in August 2026 — listings that don't comply risk having sales halted. Main product images must:
+- Be at least 800x800px resolution
+- Use a pure white background (#FFFFFF)
+- Show the product at correct proportions
+- Have no watermarks, text overlays, or promotional elements
+
+Applies to all sellers, including those cross-listing from Shopify, Etsy, or Amazon — re-check your main image before syncing a catalog.
+
+**Also new for sellers (2026):** Creator Picks (curated creator-recommended product collections), Automated Sample Approvals, Automated Affiliate Commission Receipts, LIVE Auto-Post, and expanded bulk editing tools — check Seller Center → Latest Feature Updates.
+
 ## Instagram Shop
 
 - Product tags in feed posts, Reels, and Stories
-- Reels with product tag perform best
+- Reels with product tag perform best — and as of August 2026, shopping-tagged Reels get materially higher reach-per-impression than untagged content in the same category (a real algorithmic ranking boost, not just a UX convenience)
+- Tag up to 30 products from a catalog/collection in a single Reel
+- Tagged Reels surface in more shop-adjacent placements: the Shop tab, product detail pages, and a secondary feed slot Meta is testing for users who've engaged with similar products
 - Use same video as TikTok (9:16 format works for both)
 - Add product sticker in Stories
 

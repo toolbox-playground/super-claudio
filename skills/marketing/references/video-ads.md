@@ -279,6 +279,21 @@ Jogg AI generates UGC-style video ads from a product URL — 450+ stock AI avata
 **Best for:** Teams needing multilingual UGC ads at the lowest entry price with a broad avatar library.
 **Not ideal for:** Product-in-hand realism (use MakeUGC) or campaigns requiring performance scoring before spend (use Pencil or AdCreative.ai).
 
+## UGCfy AI — Budget URL-to-UGC-Ad Generator ($3.33/video, Jul 2026)
+
+UGCfy AI (ugcfy.ai, launched July 2026 by Jacob Logic Technology) turns a Shopify, Amazon, or other product page URL into creator-style UGC video ads for TikTok, Meta, and Reels. It auto-extracts product benefits and claims from the page, drafts 10+ hook and script variants mapped to proven ad angles, and runs a built-in safety check that flags or rewrites risky product claims before rendering.
+
+1. Go to ugcfy.ai
+2. Paste a product page URL — UGCfy AI extracts images, benefits, and claims automatically
+3. Review AI-generated hooks, scripts, and shot-by-shot storyboards; edit as needed
+4. Select from 24 AI actors across ages, identities, and niches
+5. Generate — export captioned 9:16 (TikTok/Reels) or 1:1 (Meta feed) video with commercial usage rights included
+
+**Free tier:** Not confirmed at launch — check site for current trial terms
+**Pricing:** From $3.33/video — among the lowest per-video costs of any URL-to-video UGC tool in this list
+**Best for:** Ecommerce sellers, dropshippers, and agencies wanting the cheapest per-video cost for high-volume URL-based UGC testing.
+**Not ideal for:** Actor realism at the top end (use Arcads) or built-in TikTok Ad Library competitor research (use Topview AI).
+
 ## MakeUGC — AI Actors Holding Your Product On-Screen
 
 MakeUGC generates talking-head UGC-style ads where AI actors appear to physically hold your product — the platform's defining feature. Designed for brands that want authentic product-in-hand content without filming.
@@ -317,6 +332,11 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **TikTok MCP Server** — AI agents (Claude, GPT, etc.) can now launch and manage TikTok ad campaigns directly via the MCP protocol; no manual Ads Manager UI required; announced for developers at TikTok World 2026
 
 Access: business.tiktok.com → Creative Center → Symphony AI (now generally available for all TikTok for Business accounts)
+
+### Seedance 2.5 Upgrade + Q3 2026 Product Preview (Jul 28 – Aug 3, 2026)
+
+- **Seedance 2.5 integration (Aug 3, 2026)** — Symphony's video generation now runs on Dreamina Seedance 2.5: max AI-generated clip length doubles to 30 seconds, and multi-modal reference image uploads rise from 9 to 50 per generation. Rolling out first to select paid advertisers in select markets — TikTok has not confirmed a global timetable or whether it carries incremental cost.
+- **Q3 2026 Product Preview (Jul 28, 2026)** — **Symphony Avatar upgrade** folds voiceover, product demonstrations, and virtual try-on into a single avatar workflow; **TopView Geo Exclusion** lets advertisers run national TopView campaigns while excluding up to 40% of sub-regions (states/cities/DMAs, market-dependent); TopView buys can now be booked, managed, and launched self-serve directly in TikTok Ads Manager; **TopReach Max Reach** extends the TopView+TopFeed bundle introduced at TikTok World; **TopView Traffic Optimization** prioritizes users more likely to click through while preserving guaranteed reach.
 
 ## TikTok Symphony Agent — Agentic Campaign Creation (Cannes Lions, June 22, 2026)
 
@@ -361,13 +381,15 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
-Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
+Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. It integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, plus **Gemini Omni** — announced at #GML2026 in May and rolled out globally in English starting August 2026:
 
 1. Open Google Ads → Asset Studio
 2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image
 3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images
-4. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
-5. Assets go directly into your campaign library — no external tool or re-upload required
+4. **Gemini Omni** (GA August 2026): turns a creative brief, brand guidelines, and existing static assets into full multi-format video storyboards and motion scenes in one pass — outputs both 16:9 and 9:16 cuts together, so you no longer generate horizontal and vertical versions separately; refine scenes with natural-language prompts; outputs carry SynthID watermarking
+5. **1-Click Creative Testing** (Aug 2026): validate a new creative variant's expected performance directly inside the Asset Studio workflow before deploying it to a live campaign
+6. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
+7. Assets go directly into your campaign library — no external tool or re-upload required
 
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
 
