@@ -231,7 +231,7 @@ Synter (syntermedia.ai) emerged in 2026 as the first MCP-native ad platform: Cla
 3. Synter generates image ads, video ads, and a matching landing page via 100+ MCP tools
 4. Approve and distribute to any combination of: Google Ads, Meta, LinkedIn, TikTok, Reddit, Pinterest, Snapchat, Microsoft Ads, X Ads, Amazon DSP, Taboola, Spotify Ads, Trade Desk, StackAdapt
 
-**Pricing:** Starts at $199/month. MCP server is open-source at github.com/Synter-Media-AI/mcp-server.
+**Pricing:** Free plan available (no card required); Pro $299/month (50,000 credits). MCP server is open-source at github.com/Synter-Media-AI/mcp-server.
 
 **Best for:** Agencies and performance marketers running campaigns across 3+ platforms simultaneously who want to eliminate the copy-paste-upload loop. Not a substitute for creative-specific tools (Creatify, Arcads) for pure video UGC production.
 
@@ -317,6 +317,8 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **TikTok MCP Server** — AI agents (Claude, GPT, etc.) can now launch and manage TikTok ad campaigns directly via the MCP protocol; no manual Ads Manager UI required; announced for developers at TikTok World 2026
 
 Access: business.tiktok.com → Creative Center → Symphony AI (now generally available for all TikTok for Business accounts)
+
+**Adobe Express integration (2026):** Symphony Image-to-Video and a "Symphony Assistant" are now available as a plugin inside Adobe Express, letting brands generate TikTok-first content without leaving Adobe's tools.
 
 ## TikTok Symphony Agent — Agentic Campaign Creation (Cannes Lions, June 22, 2026)
 
