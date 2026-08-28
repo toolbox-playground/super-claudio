@@ -14,7 +14,7 @@ Generate complete songs (vocals + instruments) from a text prompt.
 - **Stem Separation (June 11, 2026 update):** Three modes — **Advanced Split** (NEW, Premier only): choose from ~100 instruments to regenerate each stem from scratch — no separation artifacts; also exports MIDI; 10 credits/extracted track. **Split from Mix** (Updated): pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
 - Free tier: 50 credits/day (~10 songs); non-commercial use only
 - **Important (2026):** Free-tier users can no longer download audio files — tracks can only be streamed/shared within the platform. Download requires a paid plan ($10/month Pro, $30/month Premier).
-- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of June 2026 the transition has not yet occurred — current models remain active — but when it does, all generations made with the old models will eventually become inaccessible. UMG and Sony Music litigation remains active — a fair-use summary judgment hearing in the U.S. case is scheduled for July 2026 (no verdict as of July 11, 2026); a separate German case (GEMA v. Suno) is due July 31, 2026. Users who want to preserve old generations should download them now on a paid plan.
+- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of an Aug 6, 2026 company post, the licensed model (V6) still has not shipped — current models remain active — but when it does, all generations made with the old models will eventually become inaccessible. UMG and Sony Music litigation remains active. **GEMA v. Suno (Germany) ruled against Suno on July 31, 2026** — the Munich Regional Court found copyright infringement on both US-training and EU-reproduction grounds and ordered disclosure of usage scale, with damages still to be determined and an appeal likely. In August 2026 Suno rolled out tighter audio watermarking/fingerprinting and a stricter download policy (not a new model). Users who want to preserve old generations should download them now on a paid plan.
 - Input: genre, mood, lyrics (optional), style description
 - Output: full song (streaming on free; downloadable MP3 on paid)
 
@@ -106,6 +106,15 @@ Beatoven.ai generates mood-based background music from text descriptions, purpos
 - **Emotion control:** 16 moods (happy, sad, motivational, scary, relaxing, etc.) + regional sound styles + adjustable tempo
 - Best for: YouTubers, podcasters, course creators, and game devs needing mood-appropriate instrumentals with clean commercial licensing
 - Not ideal for: full songs with vocals (use Suno or MiniMax Music 2.5); stem separation (use Mureka v8 or Stable Audio 3.0)
+
+## Alibaba HappyShrimp 1.0 — Text-to-Full-Song (Beta, Aug 2026)
+
+HappyShrimp 1.0 is Alibaba's new text-to-full-song AI music generator, launched in beta Aug 17, 2026.
+
+- URL: happyshrimp.ai (global), happyshrimp.cn
+- Pricing: Membership from $14.90/month, or credit packs from $9.90 (no permanent free tier confirmed)
+- Best for: Full-song generation from a text prompt within the Alibaba AI ecosystem
+- Not ideal for: Users needing stems/MIDI export (use Mureka v8) or a proven free tier (use Suno free tier or Google Flow Music)
 
 ## Free Royalty-Free Music (no generation needed)
 
