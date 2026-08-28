@@ -28,6 +28,14 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | DexScreener | Real-time and historical DEX trading pair data across Solana, ETH, BSC, and 50+ chains; WebSocket push; no key required; covers on-chain prices, volume, and liquidity that CoinGecko doesn't | docs.dexscreener.com/api/reference | None |
 | **Frankfurter** | Exchange rates sourced from 84 central banks; 201 currencies; historical data back to 1948; JSON + CSV responses; no auth, no monthly/daily caps; self-hostable (Docker) | frankfurter.dev | None |
 | **fawazahmed0/exchange-api** | Free community-maintained currency exchange rates; 200+ currencies; no rate limits; CDN-hosted on Cloudflare Pages and jsDelivr; updated daily | github.com/fawazahmed0/exchange-api | None |
+| **FRED API** (St. Louis Fed) | 800,000+ US and global economic time series (GDP, inflation, employment, interest rates); ~2-minute signup; 120 calls/minute free | fred.stlouisfed.org/docs/api/fred | Free key |
+| **SEC EDGAR API** | Company filings and XBRL financial facts for every US public company; no signup — only requires a descriptive `User-Agent` header | data.sec.gov, sec.gov/search-filings/edgar-application-programming-interfaces | None (User-Agent header only) |
+
+## Calendar & Holidays
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| **Nager.Date** | Public holidays for 200+ countries, long-weekend calculation; no rate limit; also served at the 2026 rebrand domain nagerholidays.com | date.nager.at/api/v3 (also nagerholidays.com/api/v3) | None |
 
 ## News & Media
 
@@ -51,7 +59,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
-| OpenSky Network | Real-time ADS-B aircraft positions, callsigns, altitude, velocity, heading — community sensor network; REST API + WebSocket; free for research/personal use; historical data for registered users; uneven coverage outside Europe/North America; non-commercial license | opensky-network.org | None (basic); free account for historical data + higher rate limits |
+| OpenSky Network | Real-time ADS-B aircraft positions, callsigns, altitude, velocity, heading — community sensor network; REST API + WebSocket; free for research/personal use; historical data for registered users; uneven coverage outside Europe/North America; non-commercial license; **as of Mar 18, 2026, basic username/password auth was dropped in favor of OAuth2 client-credentials** — update old code samples accordingly | opensky-network.org | None (basic); OAuth2 client-credentials account for historical data + higher rate limits |
 
 ## Books & Literature
 
