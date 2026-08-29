@@ -14,7 +14,8 @@ Generate complete songs (vocals + instruments) from a text prompt.
 - **Stem Separation (June 11, 2026 update):** Three modes — **Advanced Split** (NEW, Premier only): choose from ~100 instruments to regenerate each stem from scratch — no separation artifacts; also exports MIDI; 10 credits/extracted track. **Split from Mix** (Updated): pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
 - Free tier: 50 credits/day (~10 songs); non-commercial use only
 - **Important (2026):** Free-tier users can no longer download audio files — tracks can only be streamed/shared within the platform. Download requires a paid plan ($10/month Pro, $30/month Premier).
-- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of June 2026 the transition has not yet occurred — current models remain active — but when it does, all generations made with the old models will eventually become inaccessible. UMG and Sony Music litigation remains active — a fair-use summary judgment hearing in the U.S. case is scheduled for July 2026 (no verdict as of July 11, 2026); a separate German case (GEMA v. Suno) is due July 31, 2026. Users who want to preserve old generations should download them now on a paid plan.
+- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. Suno signed a second major-label licensing deal with BMG on August 12, 2026 (covering BMG's recordings and publishing catalog, plus back-pay for past use of BMG-controlled songs). Despite that, as of August 29, 2026 the promised licensed-catalog model still has not shipped — Suno's own August 6, 2026 statement still describes it as in development, and Warner's CEO says it remains "on track" for later in 2026. Current (unlicensed-trained) models remain active in the meantime, so all generations made with them are still accessible today.
+- **Litigation update (Aug 2026):** Suno **lost** the German GEMA case on July 31, 2026 — the Munich District Court found infringement, ordered Suno to disclose the scale of its use, and held it liable for damages (the judgment is not final; an appeal is expected, focused on the ruling's extraterritorial reach). In the U.S., the UMG/Sony Music case remains unresolved with no fair-use verdict yet: on August 18, 2026 the judge allowed the labels to add a DMCA circumvention claim (accusing Suno of "stream-ripping" YouTube to source training audio) via an amended complaint filed August 25, while denying their bid to add 61,000+ more recordings to the existing suit. Users who want to preserve old generations should download them now on a paid plan.
 - Input: genre, mood, lyrics (optional), style description
 - Output: full song (streaming on free; downloadable MP3 on paid)
 
@@ -27,6 +28,7 @@ Similar to Suno, strong on musicality and production quality.
 - URL: udio.com
 - **Important (2026):** Udio temporarily disabled all downloads (audio, video, stems) across all plan tiers during a 2025–2026 licensing transition. Tracks can only be streamed/shared on-platform as of May 2026 — no DAW export, no Spotify upload, no use in video.
 - **Licensing deals signed:** Udio reached agreements with Universal Music Group (Oct 2025), Warner Music, Merlin, and Kobalt (Q1 2026). The new licensed platform launched Q2 2026 but operates as a **walled garden** — tracks cannot be downloaded or exported, only streamed/shared within the Udio network. No download capability is expected for the foreseeable future.
+- **Sony Music has not settled:** Sony filed a second, larger lawsuit against Udio on July 20, 2026, asserting 30,000+ additional recordings after a judge barred it from adding them to the original case. Sony is now the lone major holdout among the labels, and a U.S. fair-use ruling on its claims isn't expected before 2027.
 - Good for: previewing and sharing music concepts within the platform only; not suitable if you need to use the audio outside Udio
 
 ## Mureka v8 — Developer-Focused AI Music Generation
@@ -39,6 +41,18 @@ Mureka v8 is the go-to for developers and technical producers: native API, stem 
 - Best for: API integration into apps, stem exports for remixing, developers who need programmatic music in their pipeline
 - Commercial rights: full ownership on paid plans (royalty-free, use in ads/videos/streaming)
 
+## HappyShrimp 1.0 (Alibaba) — Full-Song Text-to-Music, Public Beta (NEW Aug 2026)
+
+Alibaba launched HappyShrimp 1.0 in public beta on August 17, 2026 — an end-to-end, natural-language full-song generator (melody, arrangement, lyrics, and vocals from a single prompt) spanning pop, R&B/soul, hip hop, rock, funk, electronic, classical, jazz, and Chinese-style genres. China's Taihe Music has signed on for artist co-creation. It's Alibaba's answer to Suno/Udio, part of the same wave of Alibaba Cloud multimodal releases that produced Qwen3-TTS and Fun-Realtime-TTS (see audio-tts.md).
+
+- **URL:** happyshrimp.ai
+- **Status:** Public beta (mid-August 2026); browser-based, available in China and internationally
+- **Pricing:** Membership from $14.90/month; credit packages from $9.90; free trial credits for new users
+- **Input:** Natural-language prompt (an emotion, story, or genre) or user-supplied lyrics
+- **Output:** Full vocal songs or instrumental tracks, planned holistically for long-range structural coherence
+- **Not yet published:** A public API, technical model card, benchmark data, or commercial-use terms — Alibaba hasn't released these as of the beta launch
+- **Best for:** Early hands-on evaluation of Alibaba's music-generation direction
+- **Not ideal for:** Developers needing API access or stems/MIDI today (use Mureka v8); commercial projects needing clear licensing terms until Alibaba publishes them
 
 ## ElevenLabs Music v2 — Genre-Switching AI Music with API Access (May 2026)
 
