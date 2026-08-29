@@ -17,6 +17,7 @@ other performance marketing channels.
 - **Figma Weave** (formerly Weavy AI; acquired by Figma Oct 2025, rebranded May 2026) — takes a static image and adds realistic motion (person walks, model poses, fabric moves); node-based canvas to chain multiple AI models (image → video → effects) in one workflow
   - Great for: fashion, lifestyle products, showing a model wearing/using your product
   - URL: weave.figma.com (legacy weavy.ai still accessible)
+  - **MCP integration (Aug 11, 2026):** Weave tools can now be run directly from Claude (or ChatGPT, Cursor) via the Figma MCP server — describe what you need in the conversation and the agent finds and runs the right Weave tool (product shoots, style transfer, image-to-video) without switching to the Figma app. Set up via the Figma plugin in Claude Code, which installs the MCP server plus Agent Skills for common workflows.
 - **Kling "Image to Video"** — similar approach, strong motion quality
   - URL: klingai.com → Image to Video
 
