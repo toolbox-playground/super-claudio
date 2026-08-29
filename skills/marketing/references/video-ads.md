@@ -361,13 +361,15 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
-Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
+Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of August 2026, it integrates Gemini, Veo 3.1, Nano Banana Pro, and **Gemini Omni** for image and video generation:
 
 1. Open Google Ads → Asset Studio
 2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image
 3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images
 4. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
-5. Assets go directly into your campaign library — no external tool or re-upload required
+5. **Gemini Omni** (GML 2026, rolling out globally in English through August 2026, free): turns a creative brief, brand guidelines, and website URL — or existing static assets — into multi-format video storyboards and motion scenes; refine results with natural-language instructions (Gemini Omni retains context from prior edits) instead of rebuilding creative from scratch
+6. **1-Click Creative Testing** (GML 2026): test creative variants against a chosen campaign objective with one click, skipping manual experiment setup and traffic-split configuration
+7. Assets go directly into your campaign library — no external tool or re-upload required
 
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
 
@@ -382,9 +384,23 @@ Amazon Ads launched Creative Agent on February 24, 2026, inside Amazon's Creativ
 5. Publish directly to your Amazon campaign (Prime Video, Twitch, display placements)
 
 **Pricing:** No additional cost to advertisers (included with Amazon Ads account)
-**Access:** UK launch February 2026; rolling out to additional markets
+**Access:** Launched UK February 2026; by August 2026 available in North America, Brazil, most of Western Europe, UAE, Saudi Arabia, Australia, Japan, India, Singapore, and China (DSP-specific features remain US-first, expanding through 2026)
 **Best for:** Brands selling on Amazon who want AI-generated ad creative (video + display) with Amazon's own retail and shopping signal data baked in — no other platform has access to Amazon's purchase intent signals.
 **Not ideal for:** Non-Amazon campaigns (output is formatted for Amazon media only); use Creatify or AdStellar for TikTok/Meta/Google campaigns.
+
+## Meta Advantage+ Creative & Ads AI Connectors — Muse Image, Creative Strategy Space, MCP for Claude/ChatGPT (2026)
+
+Meta's ad ecosystem picked up three notable AI upgrades through mid-2026: **Muse Image** (Meta's first in-house image-generation model, wired into Advantage+ creative), **Meta Ads AI Connectors** (a hosted MCP server so Claude, ChatGPT, and other AI agents can manage campaigns with read/write access), and Cannes Lions announcements (**Creative Strategy Space**, **Meta Creator Marketing Hub**).
+
+1. Go to Meta Ads Manager → Advantage+ creative for in-platform AI tools: AI Dubbing and persona-based image generation (audience-tailored product visual variants), live since March 2026
+2. **Muse Image** (from Meta Superintelligence Labs, rolling out to advertisers/agencies from July 7, 2026): interprets full creative briefs — restyles existing ads, generates stills from video, produces on-brand variations with fewer iterations — via "agentic visual reasoning and self-refinement" rather than plain text prompts
+3. **Meta Ads AI Connectors** (open beta, launched April 29, 2026): a hosted MCP server at mcp.facebook.com/ads plus a companion CLI — connect Claude, ChatGPT, or any MCP-compatible AI tool directly to your ad account for campaign creation/editing, performance reporting, audience insights, catalog management, and signal diagnostics, without leaving your existing AI workflow
+4. **Creative Strategy Space** (announced Cannes Lions, June 23, 2026): a shared workspace linking creative and media teams, turning in-flight campaign performance signals into new creative directions as a campaign runs
+5. **Meta Creator Marketing Hub** (announced Cannes Lions 2026, rolling out later in 2026): merges Creator Marketplace and Partnership Ads Hub into one tool for sourcing, briefing, and managing creator partnerships
+
+**Pricing:** Advantage+ AI creative features included with standard Meta ad spend; Ads AI Connectors free during open beta.
+**Best for:** Brands already running Meta campaigns who want in-platform AI creative generation plus agentic control from Claude or ChatGPT without switching tools.
+**Not ideal for:** Teams wanting a dedicated large UGC-actor library (use Arcads or Creatify) or one-prompt distribution across many ad platforms at once (use Synter).
 
 ## LinkedIn Campaign Manager AI Tools — Brand Kit, Draft with AI & Variants (Jul 2026)
 
