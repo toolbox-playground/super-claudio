@@ -53,10 +53,12 @@ Google's Nano Banana 2 (Gemini 3.1 Flash Image) is available free in the Gemini 
 
 ## Recraft V4.1 — Logos, Vectors & Brand Assets
 
-Recraft V4.1 (released June 2026; upgrade from V4 released Feb 2026) tops the HuggingFace Text-to-Image Arena leaderboard (2026). V4.1 improvements: sharper photorealism, more accurate SVG vector output, improved text rendering and style consistency. Use it when you need:
+Recraft V4.1 (released June 2026; upgrade from V4 released Feb 2026) tops the HuggingFace Text-to-Image Arena leaderboard (2026); V4.1 Utility Pro is the highest-ranked text-to-image model outside Google and OpenAI on Artificial Analysis. V4.1 improvements: sharper photorealism, more accurate SVG vector output, improved text rendering and style consistency. Ships in two lines (V4.1 for peak artistic/design quality, V4.1 Utility for general-purpose work), each with standard (1MP) and Pro (4MP, print-ready) versions. Use it when you need:
 - **Logos and icons** — generates editable SVG files (unique among AI image tools)
 - **Typography and signage** — reliably renders legible text in designs
 - **Brand-consistent visuals** — built-in brand styling with color/style locks
+
+**New (Aug 2026): Recraft V4 Styles** — a dedicated model family for style-consistent generation. Define a style from a single reference image or up to 10 references, and every generation preserves rendering technique, color, texture, and composition (not just overall look). Two match modes: Precise (default, follows the style meticulously) and Flexible (matches general vibe). Available in standard and Pro, both raster and vector.
 
 Access: recraft.ai (free tier available)
 
