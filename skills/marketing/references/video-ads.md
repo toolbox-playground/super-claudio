@@ -166,6 +166,8 @@ HeyGen is the leading AI avatar video platform for brand content and UGC-style t
 **Creator:** $29/month — unlimited videos, 200 credits, 175+ languages, commercial license
 **Pro:** $99/month — more credits, custom avatar training
 
+**Digital Twins (Aug 2026):** One-shot custom avatar creation from a single photo or brief video clip — no lengthy training session required, with speed/quality generation modes. Lets brands build a branded ambassador avatar (of a real team member or spokesperson) without a studio shoot.
+
 **Best for:** Brand channel content (YouTube Shorts, TikTok, Reels), product demos, multilingual market localization from one source video.
 **Not ideal for:** High-volume ad testing at scale (use Arcads or Creatify for that — HeyGen credits run out faster at volume).
 
@@ -361,15 +363,30 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
-Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
+Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. It integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation. **Gemini Omni** rolled out globally in English through summer 2026 (announced #GML2026, May 20), adding multimodal video creation/editing via natural-language prompts and a new **1-Click Creative Testing** feature that surfaces which generated assets are likely to perform best before you spend:
 
 1. Open Google Ads → Asset Studio
 2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image
-3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images
+3. Veo 3.1 and Gemini Omni generate production-ready video clips and support natural-language edits; Nano Banana Pro generates product lifestyle images
 4. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
-5. Assets go directly into your campaign library — no external tool or re-upload required
+5. Use **1-Click Creative Testing** to identify high-performing assets against campaign objectives before full spend
+6. Assets go directly into your campaign library — no external tool or re-upload required
 
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
+
+## Meta Advantage+ Creative — Muse Image & AI Video Enhancements (Jul 2026)
+
+Meta integrated **Muse Image** — Meta Superintelligence Labs' first native image-generation model, launched July 7, 2026 — directly into Advantage+ Creative inside Ads Manager. Unlike a blank-prompt generator, Muse Image applies "reasoning" to your existing ad assets: swapping backgrounds/styles, rendering text inside images, building infographics, and generating persona-based variations of the same ad tailored to different audience segments. Advantage+ Creative (on by default for new campaigns) separately generates video from static images, adds AI background music, and AI-dubs video ads into multiple languages.
+
+1. In Ads Manager, Advantage+ Creative is on by default for new campaigns (toggle it under ad creative settings)
+2. Upload your base image or video asset
+3. Muse Image generates background/style swaps, text overlays, and persona-tailored variations automatically
+4. Use the video enhancements to expand a static image into video, add AI-generated music, or auto-dub into other languages
+5. All AI-generated output is labeled and watermarked per Meta's Content Seal policy before it publishes
+
+**Access:** facebook.com/business/ads/meta-advantage-plus/creative — Muse Image access is expanding through Advantage+ Creative in Ads Manager over Q3 2026
+**Best for:** Meta-first advertisers who want free, built-in AI variant generation and multilingual dubbing without leaving Ads Manager.
+**Not ideal for:** Generating a UGC-style avatar-led ad from scratch (use Creatify, Arcads, or HeyGen — Advantage+ Creative enhances existing assets rather than creating new avatar performances).
 
 ## Amazon Ads Creative Agent — Agentic AI for Amazon Campaigns (Feb 2026)
 
@@ -403,7 +420,7 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 
 ## Higgsfield — Cinema Studio Platform
 
-Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.0, Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace, with Cinema Studio 3.5 adding 70+ cinematic camera presets and Soul ID for cross-shot character consistency.
+Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.0, Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace. **Cinema Studio 4.0** (Aug 2026, up from 3.5) extends max generation length to 30 seconds and improves camera, color, and character performance; it still includes 70+ cinematic camera presets and Soul ID for cross-shot character consistency. Higgsfield raised a $400M Series B in August 2026 ($5.4B valuation, $700M ARR) and is positioning itself as a full creative workspace rather than a single video generator.
 
 When you need the highest realism (luxury products, fashion):
 1. Prepare a high-quality product/lifestyle image
