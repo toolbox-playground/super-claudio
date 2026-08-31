@@ -165,6 +165,7 @@ HeyGen is the leading AI avatar video platform for brand content and UGC-style t
 **Free tier:** 3 videos/month (720p, watermarked, 30+ languages)
 **Creator:** $29/month — unlimited videos, 200 credits, 175+ languages, commercial license
 **Pro:** $99/month — more credits, custom avatar training
+**Digital Twins** (added August 2026): one-shot avatar generation from a single photo or short video, plus "Looks" — restyle your avatar's appearance via text prompt; narrows the gap with Pose Video Studio's identity-consistent pitch below
 
 **Best for:** Brand channel content (YouTube Shorts, TikTok, Reels), product demos, multilingual market localization from one source video.
 **Not ideal for:** High-volume ad testing at scale (use Arcads or Creatify for that — HeyGen credits run out faster at volume).
@@ -361,7 +362,7 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
-Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
+Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. It integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation; **Gemini Omni shipped Aug 25, 2026** (free, global rollout) and generates full multi-format video storyboards/motion scenes from a brief + brand guidelines + URL, with iterative conversational editing of scenes, voiceover, and pacing:
 
 1. Open Google Ads → Asset Studio
 2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image
@@ -403,7 +404,7 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 
 ## Higgsfield — Cinema Studio Platform
 
-Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.0, Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace, with Cinema Studio 3.5 adding 70+ cinematic camera presets and Soul ID for cross-shot character consistency.
+Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.0, Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace. **Cinema Studio 4.0** (shipped early August 2026) adds a 2-source Video Lighting Console, Color Grading (50+ palettes), an Acting Console (6 emotions × 3 intensities), 30+ camera-movement presets, Video Extend, generations up to 30 seconds at 720p, and Soul ID for cross-shot character consistency.
 
 When you need the highest realism (luxury products, fashion):
 1. Prepare a high-quality product/lifestyle image
