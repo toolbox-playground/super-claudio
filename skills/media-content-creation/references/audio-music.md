@@ -26,12 +26,12 @@ Similar to Suno, strong on musicality and production quality.
 
 - URL: udio.com
 - **Important (2026):** Udio temporarily disabled all downloads (audio, video, stems) across all plan tiers during a 2025–2026 licensing transition. Tracks can only be streamed/shared on-platform as of May 2026 — no DAW export, no Spotify upload, no use in video.
-- **Licensing deals signed:** Udio reached agreements with Universal Music Group (Oct 2025), Warner Music, Merlin, and Kobalt (Q1 2026). The new licensed platform launched Q2 2026 but operates as a **walled garden** — tracks cannot be downloaded or exported, only streamed/shared within the Udio network. No download capability is expected for the foreseeable future.
+- **Licensing deals signed:** Udio reached agreements with Universal Music Group (Oct 2025), Warner Music, Merlin, and Kobalt (Q1 2026). A new licensed platform has been described as launching in 2026, but as of late August 2026 neither UMG nor Udio has confirmed a public launch date — treat "Q2 2026 launch" as unconfirmed. Downloads remain disabled in the meantime, and the platform is expected to operate as a **walled garden** — tracks cannot be downloaded or exported, only streamed/shared within the Udio network. No download capability is expected for the foreseeable future.
 - Good for: previewing and sharing music concepts within the platform only; not suitable if you need to use the audio outside Udio
 
-## Mureka v8 — Developer-Focused AI Music Generation
+## Mureka v9.5 — Developer-Focused AI Music Generation
 
-Mureka v8 is the go-to for developers and technical producers: native API, stem separation, and MIDI export alongside full song generation.
+Mureka v9.5 (O3 variant in preview) is the go-to for developers and technical producers: native API, stem separation, and MIDI export alongside full song generation.
 
 - URL: mureka.ai | API: platform.mureka.ai
 - Free tier: available with limitations — non-commercial only, Mureka retains output rights on free
@@ -39,6 +39,14 @@ Mureka v8 is the go-to for developers and technical producers: native API, stem 
 - Best for: API integration into apps, stem exports for remixing, developers who need programmatic music in their pipeline
 - Commercial rights: full ownership on paid plans (royalty-free, use in ads/videos/streaming)
 
+
+## Alibaba HappyShrimp 1.0 — Full-Song Text-to-Music (NEW Aug 2026)
+
+Alibaba launched HappyShrimp 1.0 on August 17, 2026: a full-song text-to-music generator in the Qwen ecosystem, with commercial licensing available. China's Taihe Music has signed on for artist co-creation, following the pattern set by Alibaba's HappyHorse (video) and Fun-Realtime-TTS (speech) launches.
+
+- URL: check Alibaba Cloud Model Studio / DashScope for API access
+- Best for: teams already in the Alibaba Cloud ecosystem wanting a commercially-licensed full-song generator
+- Not ideal for: developers needing stem export or MIDI (use Mureka v9.5 for that) — HappyShrimp is very new and workflow integrations are still emerging
 
 ## ElevenLabs Music v2 — Genre-Switching AI Music with API Access (May 2026)
 
