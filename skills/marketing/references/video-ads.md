@@ -149,9 +149,9 @@ ElevenLabs Ads Engine (launched June 22, 2026) localizes existing ad creatives a
 5. Export or push directly to Google Ads (Search, text) or Meta Ads (text, image, video) — no manual re-upload
 
 **Free tier:** ElevenLabs Creator plan and above ($11/month); credits apply
-**Supported integrations at launch:** Google Ads, Meta Ads
+**Supported integrations:** Full localization + push-back on Google Ads (Search, text) and Meta Ads (text, image, video); LinkedIn Ads connects for performance-insights only — no localization or push-back yet
 **Best for:** Brands with proven creative that want to expand to new markets at minimal production cost; multilingual campaigns without re-filming or re-voicing.
-**Not ideal for:** Generating new creatives from scratch (use Creatify, Arcads, or AdStellar for that); ad platforms beyond Google and Meta (Ads Engine is Google + Meta only at launch).
+**Not ideal for:** Generating new creatives from scratch (use Creatify, Arcads, or AdStellar for that); full ad creation/push on platforms beyond Google and Meta (LinkedIn is insights-only for now; more platforms planned).
 
 ## HeyGen — AI Avatar Video, 175+ Languages (Avatar V, April 2026)
 
@@ -307,6 +307,8 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Smart+** — AI campaign management: auto-selects creatives, adjusts bids, and optimizes delivery automatically in Ads Manager
 - **Symphony Automation** (Smart+ integration, announced TikTok World May 2026) — two tools for AI-powered creative refresh inside Smart+ campaigns: **Recommended Creatives** (generates video assets complete with scripts, voiceovers, and avatars from your destination URL) and **Automatic Enhancements** (improves quality, reformats to 9:16 vertical, refreshes hooks/music, and dubs existing videos into 50+ languages); available now to all TikTok for Business accounts
 
+**Model upgrade (Aug 3, 2026):** Symphony's video generation is moving from Seedance 2.0 to **Dreamina Seedance 2.5** — better handling of ambitious/complex creative briefs. Rolling out to select paid advertisers in select markets first, available in both Symphony Creative Studio and Symphony Automations.
+
 ### New at TikTok World 2026 (May 13)
 
 - **Creator AI Search** — AI-powered creator discovery inside TikTok One; accepts natural language campaign briefs (e.g., "find fitness creators for a protein bar launch") instead of keyword filters; surfaces creators whose past TikTok ONE campaign performance aligns with your goal — matching on actual ROAS and engagement signals, not just follower size or demographics
@@ -361,15 +363,16 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
-Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
+Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. It integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, plus **Gemini Omni** (announced at Google Marketing Live, May 20, 2026, now rolling out globally as a free Asset Studio feature): brief a concept in natural language and Gemini Omni generates a storyboard and motion scenes, producing both 16:9 and 9:16 video cuts from the same brief so you don't have to separately produce variants per placement.
 
 1. Open Google Ads → Asset Studio
 2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image
-3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images
-4. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
-5. Assets go directly into your campaign library — no external tool or re-upload required
+3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images; Gemini Omni turns a brand brief + landing page URL into a full video storyboard in both aspect ratios
+4. **1-Click Creative Testing** (GML 2026): spin up multiple creative variants and route them into an experiment automatically, without a separate testing setup
+5. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
+6. Assets go directly into your campaign library — no external tool or re-upload required
 
-Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
+Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max and Demand Gen campaigns where Google's system auto-selects the best asset combinations.
 
 ## Amazon Ads Creative Agent — Agentic AI for Amazon Campaigns (Feb 2026)
 
@@ -382,9 +385,9 @@ Amazon Ads launched Creative Agent on February 24, 2026, inside Amazon's Creativ
 5. Publish directly to your Amazon campaign (Prime Video, Twitch, display placements)
 
 **Pricing:** No additional cost to advertisers (included with Amazon Ads account)
-**Access:** UK launch February 2026; rolling out to additional markets
+**Access:** Launched February 2026 in the UK, France, Germany, Italy, and Spain; rolling out to additional markets
 **Best for:** Brands selling on Amazon who want AI-generated ad creative (video + display) with Amazon's own retail and shopping signal data baked in — no other platform has access to Amazon's purchase intent signals.
-**Not ideal for:** Non-Amazon campaigns (output is formatted for Amazon media only); use Creatify or AdStellar for TikTok/Meta/Google campaigns.
+**Not ideal for:** Non-Amazon campaigns — generated creative is restricted by Amazon's terms to use on Amazon properties only, and output is formatted for Amazon media; use Creatify or AdStellar for TikTok/Meta/Google campaigns.
 
 ## LinkedIn Campaign Manager AI Tools — Brand Kit, Draft with AI & Variants (Jul 2026)
 
@@ -400,6 +403,20 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 **Performance signal:** LinkedIn internal data shows 20%+ higher CTR for campaigns running 5+ ad variants vs. single-ad campaigns.
 **Best for:** B2B brands running LinkedIn campaigns who want faster variant generation and consistent brand voice without manual design work per variant.
 **Not ideal for:** Consumer / DTC advertising (LinkedIn CPMs are high; use TikTok Symphony or Meta Advantage+ for lower-funnel consumer campaigns).
+
+## Meta Advantage+ Creative — Muse Image & AI-Generated Ad Variants (Jul–Aug 2026)
+
+Meta's Advantage+ creative began running on **Muse Image**, Meta Superintelligence Labs' first in-house image model, after its July 7, 2026 announcement — rolling out to advertisers in the weeks following its Instagram/WhatsApp launch. Muse Image plans, adjusts individual elements, swaps styles, and produces on-brand variations of your source creative with fewer manual round trips than earlier Advantage+ generation. August 2026 additions layered on top: AI Dubbing, AI-generated music, persona-based image generation, automatic rewriting of headline text baked into ad images (opt-out per creative in Branding settings), and Predictive Budget Allocation (shifts spend to high-performing segments in real time — 8–15% better ROAS in early tests).
+
+1. Go to adsmanager.facebook.com → create or edit a campaign → enable Advantage+ creative
+2. Upload a base image or video asset
+3. Advantage+ auto-generates variants: video-from-image, AI dubbing into other languages, on-brand image edits via Muse Image, and rewritten headline text
+4. Toggle Predictive Budget Allocation to let Meta shift spend across audience segments automatically
+5. Review and approve variants before they go live
+
+**Pricing:** No additional cost — runs inside a standard Meta Ads account.
+**Best for:** Meta-first advertisers who want cheaper creative iteration (Meta reports up to 40% lower creative production cost) without leaving Ads Manager.
+**Not ideal for:** Multi-platform campaigns needing one workflow across TikTok/Google/Meta (use Synter or Hyper); from-scratch concepting — Muse Image is strongest at on-brand variation of an existing asset, not novel creative direction.
 
 ## Higgsfield — Cinema Studio Platform
 
