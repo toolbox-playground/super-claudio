@@ -60,6 +60,19 @@ ffmpeg -i input.mp4 -vf "subtitles=input.srt" output_captioned.mp4
 
 **CapCut** — free desktop app, automatic captions with one click, good for social media.
 
+## Imagen Video — AI Color Grading (left beta, NAB 2026)
+
+Adaptive AI color grading, announced at NAB 2026 and now out of beta. Integrates directly into
+Adobe Premiere and DaVinci Resolve as a plugin rather than a standalone editor — grades clip-by-clip,
+handles camera matching across footage from different cameras, and automates technical color
+corrections so editors can focus on creative grading.
+
+- URL: imagen-ai.com/video
+- Pricing: pay-as-you-go ~$1/min graded, or $36/mo for 60 min (rolls over; $0.60/min beyond that);
+  free trial covers up to 20 minutes of footage
+- Best for: colorists and video editors who want AI-assisted grading inside an existing NLE, not
+  a replacement for Premiere/Resolve
+
 ## Google Video Remix — AI Video Transformations in Google Photos (July 8, 2026)
 
 Google Photos launched Video Remix on July 8, 2026, powered by Gemini Omni. Applies AI-driven visual transformations to existing clips in seconds — not generation from scratch, but style and scene editing.

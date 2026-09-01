@@ -38,6 +38,15 @@ export const MyVideo = () => {
 npx remotion render src/index.ts MyVideo out/video.mp4
 ```
 
+**Remotion Agent Skills (Jan 2026):** Remotion ships an official Claude Code skill bundle that
+teaches this exact agent how to write correct Remotion code — component patterns, transitions,
+spring/interpolation timing, audio integration — instead of guessing at the API. Install per-project:
+```bash
+npx remotion skills add
+```
+Worth installing before a Remotion-heavy task in this repo, since it directly improves output
+quality for Claude Code (`npx remotion skills update` to refresh; docs: remotion.dev/docs/ai/skills).
+
 **Best for:**
 - Shareable WhatsApp/Instagram content with text + emoji
 - Branded promotional videos with consistent style
