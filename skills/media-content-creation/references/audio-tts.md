@@ -382,6 +382,18 @@ Zyphra ZONOS2 (released June 12, 2026) is the first open-source Mixture-of-Exper
 - **Best for:** Open-source multilingual TTS with commercial use at zero API cost; Japanese, English, and Chinese production content requiring high-fidelity voice cloning; projects needing CD-quality output without usage caps
 - **Not ideal for:** Ultra-low-latency real-time agents where Cartesia Sonic 3.5's 40ms TTFA is needed; English-only lightweight deployment (use Kokoro or NeuTTS Air for those)
 
+## Breeze TTS 2 (BreezeBlue) — #1 Open-Weights on Artificial Analysis, Sub-40ms (NEW)
+
+Breeze TTS 2 is an open-weight, bilingual (English + Chinese) streaming TTS model from BreezeBlue that ranks #1 among open-weight models on the Artificial Analysis TTS leaderboard, beating some closed proprietary systems on the same benchmark. It reuses the audio tokenizer from Qwen3-TTS and adds voice cloning, natural-language voice design, and instruction-based voice direction (re-deliver a cloned voice with a different emotion/pace/tone from a text instruction) plus vocal-event tags like `(laugh)` and `(cough)`.
+
+- **URL / GitHub:** github.com/breezeblue-ai/breeze-tts | **HuggingFace:** `BreezeBlue/Breeze-TTS-2`
+- **License — read carefully, it's split:** Inference code and the audio tokenizer are Apache 2.0; the **model weights are under a separate "BreezeBlue Research and Non-Commercial License"** — self-hosting the weights for commercial output is *not* permitted under that license. Commercial use of generated audio requires an active paid subscription through BreezeBlue's own hosted platform (governed by its Terms of Service), not self-hosted inference.
+- **Languages:** English and Chinese (single checkpoint)
+- **Latency:** sub-40ms time-to-first-audio; ~3.1x real-time generation speed on an H100
+- **Hardware:** ~7.7GB VRAM minimum, 12GB recommended; Linux, Python 3.10+, CUDA-capable NVIDIA GPU
+- **Best for:** Researchers and hobbyists self-hosting for non-commercial projects; teams wanting BreezeBlue's hosted commercial plan for production use
+- **Not ideal for:** Commercial self-hosted deployment without a separate license from BreezeBlue (use Kokoro, NeuTTS Air, Zyphra ZONOS2, or Qwen3-TTS instead — all fully Apache 2.0/MIT on the weights too)
+
 ## Sesame CSM-1B — Conversational Naturalness, Apache 2.0
 
 Sesame CSM-1B (Conversational Speech Model) stands out for human-like conversational realism: natural pauses, "umms", breath sounds, and subtle intonation shifts that traditional TTS models miss. Trained on 1M+ hours of English audio; uses a Llama-3.2 backbone + 300M audio decoder.
@@ -495,6 +507,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Open-weight multilingual cloud TTS, low cost | Mistral Voxtral TTS ($0.016/1K chars) |
 | Open-source multilingual TTS, 10 languages, self-hosted or commercial | Qwen3-TTS (Apache 2.0, 97ms TTFA, voice cloning + free-form voice design, github.com/QwenLM/Qwen3-TTS) |
 | Open-source multilingual TTS, 43 languages, CD-quality, voice cloning | Zyphra ZONOS2 (Apache 2.0, first open-source MoE TTS, 8B/900M active, Zyphra Cloud free trial, github.com/Zyphra/ZONOS2) |
+| Top-ranked open-weights TTS (research/non-commercial), sub-40ms | Breeze TTS 2 (BreezeBlue, #1 open-weights on Artificial Analysis, English+Chinese — **weights are non-commercial license**, code is Apache 2.0, github.com/breezeblue-ai/breeze-tts); for guaranteed-commercial open weights use Kokoro, NeuTTS Air, Zyphra ZONOS2, or Qwen3-TTS instead |
 | On-device, zero API cost, privacy-first | NeuTTS Air (Apache 2.0, CPU-capable) |
 | Ultra-fast batch TTS, drop-in OpenAI TTS replacement | Kokoro TTS (Apache 2.0, 82M params, 96× real-time, fixed voices) |
 | Human-like conversational naturalness (pauses, ums, breaths) | Sesame CSM-1B (Apache 2.0, English only, CUDA required) |
