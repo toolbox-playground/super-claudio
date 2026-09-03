@@ -176,8 +176,9 @@ Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors
 1. Go to arcads.ai
 2. Write or paste your ad script (15–60 seconds)
 3. Select an AI actor (filter by age, gender, ethnicity, style)
-4. Generate the video — output is virtually indistinguishable from real UGC in scroll tests
-5. Download and deploy directly to Meta/TikTok Ads Manager
+4. Choose a generation engine: **Arcads 1.0** (default, general-purpose), **Audio-Driven** (best when you already have a voiceover recorded — improves lip-sync accuracy to it), or **OmniHuman 1.5** (full-body gestures, more expressive delivery, works best on shorter scripts)
+5. Generate the video — output is virtually indistinguishable from real UGC in scroll tests
+6. Download and deploy directly to Meta/TikTok Ads Manager
 
 **Pricing:** Starts at $110/month (Starter — 10 videos); $220/month (Creator — 20 videos); no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
 
@@ -403,11 +404,35 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 
 ## Higgsfield — Cinema Studio Platform
 
-Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.0, Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace, with Cinema Studio 3.5 adding 70+ cinematic camera presets and Soul ID for cross-shot character consistency.
+Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.0, Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace. **Cinema Studio 4.0** (Aug 2026, up from 3.5) adds independent light/color/camera/edit controls, 30-second generations, up to 50 references, 30+ camera presets (up from 70+ cumulative presets in 3.5), and an "Acting Console" with 6 emotion presets for performance direction; Soul ID handles cross-shot character consistency.
 
 When you need the highest realism (luxury products, fashion):
 1. Prepare a high-quality product/lifestyle image
 2. Go to higgsfield.ai → Cinema Studio
 3. Write a detailed prompt describing the camera movement and mood
-4. Use Soul ID to lock character/product appearance across shots
+4. Use Soul ID to lock character/product appearance across shots; use the Acting Console to direct emotional delivery
 5. Generate — Higgsfield produces cinematic results that feel like professional ad shoots
+
+## Higgsfield Marketing Studio — URL-to-Ad Generation
+
+Distinct from Cinema Studio (above): Marketing Studio is Higgsfield's URL-to-ad product, competing directly with Creatify, Topview, and Jogg AI. 40+ ready-made UGC avatars generate product shots, UGC-style talking-head ads, and unboxing videos from a product URL or uploaded images.
+
+1. Go to higgsfield.ai/marketing-studio
+2. Paste a product URL or upload product images
+3. Select a UGC avatar and ad format (product shot, UGC talking-head, unboxing)
+4. Generate — export directly for TikTok/Reels/Meta placements
+
+Best for: brands already using Higgsfield for cinematic ads who want URL-to-ad generation in the same workspace instead of switching tools.
+
+## Coinis — Full-Stack Generation + Meta Campaign Launch
+
+Coinis (coinis.com) wraps multiple video/image/avatar models (Veo, Kling, Seedance, Hailuo, HeyGen, FLUX, Seedream) behind one interface, then launches the output directly as a Meta campaign with built-in ROAS tracking and auto-optimization — similar positioning to AdStellar and Synter.
+
+1. Go to coinis.com
+2. Describe the product/campaign or connect a product URL
+3. Coinis generates creative using the underlying model best suited to the brief
+4. Launch directly to Meta Ads with ROAS tracking and auto-optimization enabled
+
+**Free tier:** Weekly credits
+**Pricing:** $79/month; $299/month Pro (flat)
+**Best for:** Teams wanting one tool for both multi-model creative generation and Meta campaign management/optimization, without stitching together a separate creative tool and ads manager.
