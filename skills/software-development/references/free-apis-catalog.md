@@ -23,8 +23,8 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | API | What | URL | Auth |
 |-----|------|-----|------|
 | Open Exchange Rates | Currency exchange rates | openexchangerates.org | Free key |
-| CoinGecko | Crypto prices and data | coingecko.com/api | None (rate limited) |
-| Alpha Vantage | Stock market data | alphavantage.co | Free key |
+| CoinGecko | Crypto prices and data; free "Demo Plan" requires a free key (`x_cg_demo_api_key`), 100 calls/min, 10,000 calls/month | coingecko.com/api | Free key |
+| Alpha Vantage | Stock market data; free tier capped at 25 requests/day | alphavantage.co | Free key |
 | DexScreener | Real-time and historical DEX trading pair data across Solana, ETH, BSC, and 50+ chains; WebSocket push; no key required; covers on-chain prices, volume, and liquidity that CoinGecko doesn't | docs.dexscreener.com/api/reference | None |
 | **Frankfurter** | Exchange rates sourced from 84 central banks; 201 currencies; historical data back to 1948; JSON + CSV responses; no auth, no monthly/daily caps; self-hostable (Docker) | frankfurter.dev | None |
 | **fawazahmed0/exchange-api** | Free community-maintained currency exchange rates; 200+ currencies; no rate limits; CDN-hosted on Cloudflare Pages and jsDelivr; updated daily | github.com/fawazahmed0/exchange-api | None |
@@ -33,7 +33,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
-| NewsAPI | Headlines from 150k sources | newsapi.org | Free key |
+| NewsAPI | Headlines from 150k sources; free "Developer" tier is localhost-only (CORS blocks deployed frontends), 100 req/day, no commercial use, and articles are delayed 24 hours | newsapi.org | Free key |
 | The Guardian | Full article access | open-platform.theguardian.com | Free key |
 | HackerNews | Tech news, rankings | hacker-news.firebaseio.com | None |
 
@@ -51,7 +51,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
-| OpenSky Network | Real-time ADS-B aircraft positions, callsigns, altitude, velocity, heading — community sensor network; REST API + WebSocket; free for research/personal use; historical data for registered users; uneven coverage outside Europe/North America; non-commercial license | opensky-network.org | None (basic); free account for historical data + higher rate limits |
+| OpenSky Network | Real-time ADS-B aircraft positions, callsigns, altitude, velocity, heading — community sensor network; REST API + WebSocket; free for research/personal use; historical data for registered users; uneven coverage outside Europe/North America; non-commercial license; **basic username/password auth retired Mar 18, 2026** — now OAuth2 client-credentials flow (create a client, exchange for a 30-min bearer token); anonymous access still works but is more rate-limited; contributors running an ADS-B receiver get ~8,000 credits/day | opensky-network.org | None (anonymous, limited); OAuth2 client credentials for historical data + higher rate limits |
 
 ## Books & Literature
 
@@ -107,6 +107,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | GitHub Models | 40+ AI models (GPT-4o, Llama, DeepSeek-R1, Mistral, Phi, xAI, Cohere) via OpenAI-compatible API; uses your GitHub account — no separate key or signup; free tier rate-limited (e.g. GPT-4o: 10 RPM / 50 RPD); opt-in paid tier for higher limits | github.com/features/models | GitHub account (free) |
 | Cerebras Inference | Ultra-fast LLM inference on wafer-scale silicon (2,600+ tok/s); Llama 3.3 70B, Qwen3 32B/235B, and more; 1M tokens/day free, no credit card required; 30 RPM on free tier | inference.cerebras.ai | Free key |
 | Cloudflare Workers AI | Edge AI inference at 300+ global locations; Llama 3.1 8B, Mistral 7B, Phi-2, Gemma, SDXL (image gen), Whisper (ASR), and 40+ models; 10,000 neurons/day free (no credit card required); unique low-latency for globally distributed apps | developers.cloudflare.com/workers-ai | CF account (free) |
+| Puter.js | JS SDK giving client-side, no-server-key access to 500+ LLMs (GPT, Claude, Gemini, and more); **unusual "user-pays" model** — each end user authenticates with their own free Puter.com account, which absorbs the AI cost, rather than the developer holding a billed API key; good for prototypes and hackathon apps, not a drop-in replacement for a normal metered API | developer.puter.com | Free (per end-user Puter.com account) |
 
 ## Security
 
