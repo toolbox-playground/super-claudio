@@ -51,7 +51,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
-| OpenSky Network | Real-time ADS-B aircraft positions, callsigns, altitude, velocity, heading — community sensor network; REST API + WebSocket; free for research/personal use; historical data for registered users; uneven coverage outside Europe/North America; non-commercial license | opensky-network.org | None (basic); free account for historical data + higher rate limits |
+| OpenSky Network | Real-time ADS-B aircraft positions, callsigns, altitude, velocity, heading — community sensor network; REST API + WebSocket; free for research/personal use; historical data for registered users; uneven coverage outside Europe/North America; non-commercial license. **Auth changed:** basic username/password login was retired March 2026 — registered-account access (historical data, higher rate limits) now requires the OAuth2 client-credentials flow (create a client, exchange for a bearer token, token expires after 30 min) | opensky-network.org | None (anonymous, basic tier); OAuth2 client credentials for registered-account features |
 
 ## Books & Literature
 
@@ -76,7 +76,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
-| **GoDaddy Developer Platform** | Domain search, availability checking, pricing, purchase, DNS configuration, and domain management APIs; OAuth-based authentication; agent-safe execution controls; CLI included; LLM-optimized docs; launched July 15, 2026 | developer.godaddy.com | Free account (OAuth) |
+| **GoDaddy Developer Platform** | Domain search, availability checking, pricing, purchase, DNS configuration, and domain management APIs; OAuth-based authentication; agent-safe execution controls; CLI included; LLM-optimized docs; launched July 15, 2026; Domains API free for accounts with an active domain, capped at 20,000 calls/month | developer.godaddy.com | Free account (OAuth) |
 
 ## Communication & Social
 
