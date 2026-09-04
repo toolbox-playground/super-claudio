@@ -25,6 +25,8 @@
    - Write caption with 3-5 relevant hashtags
    - Post during peak hours (7-9pm local time typically)
 
+**TikTok Shop AI Dubbing (Aug 2026):** TikTok Shop now offers native AI Dubbing for seller videos — auto-translates and lip-syncs product demo videos into other languages using a synthetic version of the seller's own voice, so one video can be localized for multiple markets without re-filming. Access it from TikTok Shop Seller Center on existing videos. Disclosure is required for AI-dubbed content and synthetic voices/faces per TikTok's content rules.
+
 ## Instagram Shop
 
 - Product tags in feed posts, Reels, and Stories

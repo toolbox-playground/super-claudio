@@ -20,6 +20,8 @@
 5. Resize for all platforms in one click (Canva Magic Resize)
 6. Export as PNG/JPG
 
+**Canva Grow 2.0 (Jun 2026):** Canva now lets you create, launch, analyze, and refresh ad campaigns directly on Meta, TikTok, and LinkedIn without leaving Canva — plus an insights dashboard for performance tracking. Useful when you want to skip exporting to a separate ads manager for simple campaigns; for TikTok-specific creative depth (avatars, predictive scoring, UGC actors), still use the dedicated tools in video-ads.md.
+
 ### Prompt for AI-generated ad image (Flux/GPT Image 2)
 
 ```

@@ -181,6 +181,8 @@ Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors
 
 **Pricing:** Starts at $110/month (Starter — 10 videos); $220/month (Creator — 20 videos); no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
 
+**Aug 2026 update:** Arcads integrated ByteDance's Seedance 2.5 model into its Studio (7-day unlimited generations during rollout), adding 30-second single-clip output, up to 50 reference assets, and native 4K — a meaningful jump in output length and fidelity over the prior model generation.
+
 ## Pose Video Studio — Identity-Consistent UGC from Your Own Face
 
 Pose Video Studio (pose.ai) generates UGC-style video ads where every variant features the same AI actor trained on your own uploaded selfies — not a generic avatar from a pre-built library. Voice is cloned via ElevenLabs from ~1 minute of reference audio, so face and voice stay consistent across all campaign variants.
@@ -295,12 +297,15 @@ MakeUGC generates talking-head UGC-style ads where AI actors appear to physicall
 
 ## TikTok Symphony & Ad Formats — TikTok World 2026 (May 13, 2026)
 
-TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by Dreamina Seedance 2.0:
+TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by Dreamina Seedance 2.0.
+
+**Updated August 3, 2026 — Dreamina Seedance 2.5:** Symphony's video model was upgraded to Seedance 2.5, doubling the maximum AI-generated clip length from 15 to 30 seconds and raising the multi-modal reference-upload limit from 9 to 50 (image, video, and audio references), with support for timestamp-specific creative direction (pin different guidance to different moments in the same generation). Visual quality also improved — sharper imagery, and stronger preservation of lighting, motion, and character consistency across a clip. Rolling out first to select paid advertisers in select markets before wider availability.
+
 - **Script Generator** — briefs → ad scripts aligned with trending hooks
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
-- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Video Generation** — powered by Dreamina Seedance 2.5 as of August 2026 (up to 30s clips, up to 50 multi-modal references, better product consistency, more natural motion, less manual correction post-gen)
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
@@ -361,13 +366,14 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
-Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
+Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. It integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, and **Gemini Omni rolled out in August 2026** (#GML2026 announcement) as a free, globally-available multimodal video creation model:
 
 1. Open Google Ads → Asset Studio
-2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image
-3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images
+2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image, or describe the brief in natural language and let Gemini Omni draft storyboards/motion scenes from your brand guidelines, website, and campaign goals
+3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images; Gemini Omni generates and edits full video creative from a text brief
 4. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
-5. Assets go directly into your campaign library — no external tool or re-upload required
+5. **1-Click Creative Testing** (Aug 2026): automatically identifies which generated assets are likely to perform best for your campaign objective before you commit budget
+6. Assets go directly into your campaign library — no external tool or re-upload required
 
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
 
@@ -401,9 +407,26 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 **Best for:** B2B brands running LinkedIn campaigns who want faster variant generation and consistent brand voice without manual design work per variant.
 **Not ideal for:** Consumer / DTC advertising (LinkedIn CPMs are high; use TikTok Symphony or Meta Advantage+ for lower-funnel consumer campaigns).
 
+## ChatGPT Ads — New Ad Platform Inside Conversations (Self-Serve, Aug 2026)
+
+OpenAI launched ChatGPT Ads on February 9, 2026 and opened self-serve buying in August 2026 — a genuinely new ad surface distinct from TikTok/Meta/Google, growing fast (OpenAI reported ChatGPT Ads crossed a $1B annualized revenue run rate by August 31, 2026). Ads are contextually matched to the live conversation (topic, chat history, prior ad interactions) rather than targeted via cookies or demographic profiles — no video ads yet; creative is minimal by design.
+
+1. Go to the ChatGPT Ads Manager (self-serve beta) — no $200K account minimum, budgets start at $25/day
+2. Choose a buying model: CPC, CPM, or oCPC
+3. Build creative in the `chat_card` format: a 50-character title, 100-character body copy, one image, and a destination URL — available as sponsored answer cards, product spotlight ads, or contextual sidebar placements
+4. Launch, monitor, and optimize directly in Ads Manager (no rich media, no animated banners — keep creative simple and text/image-led)
+5. Self-serve rollout expanded August 31, 2026 to India, Europe, the Middle East, and North Africa (alongside existing markets)
+
+**Pricing:** Budgets from $25/day; CPC/CPM/oCPC bidding; no minimum spend commitment on self-serve.
+**Third-party tooling:** Lapis added a ChatSense product (Aug 24, 2026) specifically for ChatGPT advertising — strategy, creative, landing pages, launch, measurement, and optimization in one system for brands new to the channel.
+**Best for:** Brands wanting early-mover presence on a fast-growing, low-competition ad surface; high-intent placements where users are already asking product questions.
+**Not ideal for:** Video or rich-media creative (format is currently text + single image only); brand-awareness campaigns needing visual impact (use TikTok Symphony, Meta, or YouTube for that).
+
 ## Higgsfield — Cinema Studio Platform
 
 Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.0, Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace, with Cinema Studio 3.5 adding 70+ cinematic camera presets and Soul ID for cross-shot character consistency.
+
+**Aug 2026 update:** Higgsfield raised a $400M Series B (Aug 17, 2026), quadrupling its valuation to $5.4B in 8 months — signal of how fast the multi-model ad-video space is growing. Pricing was refreshed the same month: Basic $5/month (70 credits), Pro $29/month (600 credits), Max $79/month (1,800 credits). An MCP connector now lets Claude and Claude Code trigger Higgsfield generations directly from an agent workflow, and the Apps library has grown past 80 purpose-built tools (Face Swap, Lipsync Studio, Product Placement, Outfit Swap, Angles 2.0).
 
 When you need the highest realism (luxury products, fashion):
 1. Prepare a high-quality product/lifestyle image
