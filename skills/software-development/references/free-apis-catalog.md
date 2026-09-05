@@ -7,7 +7,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | API | What | URL | Auth |
 |-----|------|-----|------|
 | OpenWeather | Current weather, 5-day forecast, air pollution; 1,000 calls/day free | openweathermap.org | Free key |
-| Open-Meteo | Hourly/daily weather forecasts, historical data, **Air Quality API** (PM2.5, PM10, ozone, NO2, UV index, pollen, dust — same no-key, no-rate-limit model), no limits on free tier | open-meteo.com | None |
+| Open-Meteo | Hourly/daily weather forecasts, historical data, **Air Quality API** (PM2.5, PM10, ozone, NO2, UV index, pollen, dust — same no-key model); free for non-commercial use, fair-use capped at 10,000 calls/day (5,000/hour, 600/min) | open-meteo.com | None |
 | **Weather.gov (NWS)** | US National Weather Service data — current conditions, forecasts, hourly data, alerts; GeoJSON API; ~5,000 req/hour free; no key required | api.weather.gov | None |
 
 ## Space & Astronomy
@@ -17,13 +17,14 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | NASA APIs | APOD, Mars rover photos, NEO asteroids | api.nasa.gov | Free key |
 | Open Notify | ISS current location | open-notify.org | None |
 | SpaceX API | Launch data, rockets, missions | github.com/r-spacex/SpaceX-API | None |
+| **The Space Devs (Launch Library 2)** | Launch schedules, agencies, rockets, and missions across every spaceflight provider (not just SpaceX) | ll.thespacedevs.com | None (keyless; higher limits with free key) |
 
 ## Finance & Economics
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
 | Open Exchange Rates | Currency exchange rates | openexchangerates.org | Free key |
-| CoinGecko | Crypto prices and data | coingecko.com/api | None (rate limited) |
+| CoinGecko | Crypto prices and data | coingecko.com/api | None (~5-15 calls/min, unstable); free Demo key gives a stable 100 calls/min / 10,000 calls/month |
 | Alpha Vantage | Stock market data | alphavantage.co | Free key |
 | DexScreener | Real-time and historical DEX trading pair data across Solana, ETH, BSC, and 50+ chains; WebSocket push; no key required; covers on-chain prices, volume, and liquidity that CoinGecko doesn't | docs.dexscreener.com/api/reference | None |
 | **Frankfurter** | Exchange rates sourced from 84 central banks; 201 currencies; historical data back to 1948; JSON + CSV responses; no auth, no monthly/daily caps; self-hostable (Docker) | frankfurter.dev | None |
@@ -107,6 +108,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | GitHub Models | 40+ AI models (GPT-4o, Llama, DeepSeek-R1, Mistral, Phi, xAI, Cohere) via OpenAI-compatible API; uses your GitHub account — no separate key or signup; free tier rate-limited (e.g. GPT-4o: 10 RPM / 50 RPD); opt-in paid tier for higher limits | github.com/features/models | GitHub account (free) |
 | Cerebras Inference | Ultra-fast LLM inference on wafer-scale silicon (2,600+ tok/s); Llama 3.3 70B, Qwen3 32B/235B, and more; 1M tokens/day free, no credit card required; 30 RPM on free tier | inference.cerebras.ai | Free key |
 | Cloudflare Workers AI | Edge AI inference at 300+ global locations; Llama 3.1 8B, Mistral 7B, Phi-2, Gemma, SDXL (image gen), Whisper (ASR), and 40+ models; 10,000 neurons/day free (no credit card required); unique low-latency for globally distributed apps | developers.cloudflare.com/workers-ai | CF account (free) |
+| **OVHcloud AI Endpoints** | 20+ open-weight models (Qwen, Mistral, Llama, DeepSeek) hosted in EU data centers; OpenAI SDK-compatible; genuinely anonymous tier — no signup, no key at all | ovhcloud.com/en/public-cloud/ai-endpoints | None (2 req/min/IP/model); free account key for higher limits |
 
 ## Security
 
