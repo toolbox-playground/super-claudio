@@ -24,6 +24,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 |-----|------|-----|------|
 | Open Exchange Rates | Currency exchange rates | openexchangerates.org | Free key |
 | CoinGecko | Crypto prices and data | coingecko.com/api | None (rate limited) |
+| **FRED (Federal Reserve Economic Data)** | 800,000+ US economic/macro time series (GDP, CPI, unemployment, interest rates, housing) direct from the St. Louis Fed; JSON/XML; 120 calls/minute | fred.stlouisfed.org/docs/api | Free key |
 | Alpha Vantage | Stock market data | alphavantage.co | Free key |
 | DexScreener | Real-time and historical DEX trading pair data across Solana, ETH, BSC, and 50+ chains; WebSocket push; no key required; covers on-chain prices, volume, and liquidity that CoinGecko doesn't | docs.dexscreener.com/api/reference | None |
 | **Frankfurter** | Exchange rates sourced from 84 central banks; 201 currencies; historical data back to 1948; JSON + CSV responses; no auth, no monthly/daily caps; self-hostable (Docker) | frankfurter.dev | None |
@@ -52,6 +53,13 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | API | What | URL | Auth |
 |-----|------|-----|------|
 | OpenSky Network | Real-time ADS-B aircraft positions, callsigns, altitude, velocity, heading — community sensor network; REST API + WebSocket; free for research/personal use; historical data for registered users; uneven coverage outside Europe/North America; non-commercial license | opensky-network.org | None (basic); free account for historical data + higher rate limits |
+
+## Sports
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| **balldontlie** | NBA teams/players/games/stats API; **tightened in 2026 — no longer keyless**, now requires a free account + key; 5 req/min free, paid tiers $9.99–$39.99/mo for higher RPM | docs.balldontlie.io | Free key |
+| **TheSportsDB** | Multi-sport team/event/league metadata and images; free test key `123`, ~30 req/min, limited to 10 results/endpoint; $9/mo Patreon key unlocks V2 API + livescores | thesportsdb.com/documentation | Free test key |
 
 ## Books & Literature
 
@@ -83,9 +91,9 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | API | What | URL | Auth |
 |-----|------|-----|------|
 | Discord API | Build bots, manage servers, send/read messages, listen to real-time events via WebSocket gateway; no limits on bot creation; well-documented | discord.com/developers | Bot token (free) |
-| **Bluesky API (AT Protocol)** | Read/write posts, timelines, user data, follows; permissive free rate limits; growing developer community after X went paid | atproto.com | Free account |
-| **Threads API (Meta)** | Post, read replies, manage media; free developer access; rate limits generous for indie devs | developers.facebook.com/docs/threads | Free account |
-| **X (Twitter) API** | **⚠️ No longer free (Feb 6, 2026)** — reading a tweet costs $0.005, posting $0.015; full-archive search from $42K/month enterprise. Use Bluesky/Threads instead for social data at no cost. | developer.x.com | Paid only |
+| **Bluesky API (AT Protocol)** | Read/write posts, timelines, user data, follows; permissive free rate limits (5,000 pts/hour, 35,000 pts/day; a post costs 3 pts); no approval process, open registration; growing developer community after X went paid | atproto.com | Free account |
+| **Threads API (Meta)** | Post, read replies, manage media; free (no dollar cost), but production access requires Meta App Review + Tech Provider Verification (~1 week) and is sandbox-only until then; hard 24h caps once approved (250 posts / 1,000 replies / 100 deletions per profile) | developers.facebook.com/docs/threads | Free account (gated for production) |
+| **X (Twitter) API** | **⚠️ No longer free (Feb 6, 2026), and has tightened further since** — reading a post ~$0.005, posting ~$0.015 ($0.20 if it contains a URL), user lookup ~$0.010; following/liking/quote-posting moved to Enterprise-only (Apr 20, 2026); legacy $5K/mo Pro subscribers were forced onto pay-per-use (Aug 14, 2026) — no self-serve Basic/Pro tier remains. Use Bluesky/Threads instead for social data at no cost. | developer.x.com | Paid only |
 
 ## Developer Utilities
 
@@ -101,11 +109,11 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
-| Google Gemini API | LLM inference (Gemini 3.5 Flash free in AI Studio — new default since May 19, 2026; daily Gemini 3.1 Pro allotment for harder reasoning), 1M token context, multimodal | ai.google.dev | Free key (generous limits) |
+| Google Gemini API | LLM inference; **free tier is Flash-only since April 1, 2026** — Pro models (3.1 Pro, 3 Pro, 2.5 Pro) were removed from the free tier and are now paid-only; free access covers Gemini 3 Flash / 3.1 Flash-Lite (and legacy 2.5/2.0 Flash) with reduced quotas (~5–15 RPM, ~1,000–1,500 req/day depending on model), 1M token context, multimodal | ai.google.dev | Free key (Flash only; Pro requires billing) |
 | Groq | Ultra-fast LLM inference (LPU hardware); Llama 4 Scout, Llama 4 Maverick, Kimi K2 (1T MoE), Qwen3 235B, Gemma, Mistral, DeepSeek R1 and more; no credit card required | groq.com | Free key |
-| OpenRouter | Access to 100+ free AI models via one API; notable free models (July 2026): **NVIDIA Nemotron 3 Ultra** (550B MoE, 1M context, `nvidia/nemotron-3-ultra-550b-a55b:free`) and **OpenAI GPT-OSS** (20B Apache 2.0 open-weight, `openai/gpt-oss-20b:free`); 25+ free models total; 50 req/day free, 1,000/day after $10 purchase | openrouter.ai | Free key |
-| GitHub Models | 40+ AI models (GPT-4o, Llama, DeepSeek-R1, Mistral, Phi, xAI, Cohere) via OpenAI-compatible API; uses your GitHub account — no separate key or signup; free tier rate-limited (e.g. GPT-4o: 10 RPM / 50 RPD); opt-in paid tier for higher limits | github.com/features/models | GitHub account (free) |
-| Cerebras Inference | Ultra-fast LLM inference on wafer-scale silicon (2,600+ tok/s); Llama 3.3 70B, Qwen3 32B/235B, and more; 1M tokens/day free, no credit card required; 30 RPM on free tier | inference.cerebras.ai | Free key |
+| OpenRouter | Access to 100+ free AI models via one API through the `:free` model suffix / auto-router; the specific free model lineup changes often (models are added and retired without notice — as of Sept 2026 it includes NVIDIA Nemotron 3 Ultra and others, not a fixed list); 20 req/min, 50/day fresh account, 1,000/day after $10 lifetime purchase | openrouter.ai | Free key |
+| GitHub Models | 40+ AI models (GPT-4o, Llama, DeepSeek-R1, Mistral, Phi, xAI, Cohere) via OpenAI-compatible API; uses your GitHub account — no separate key or signup; free tier rate-limited (e.g. GPT-4o: 10 RPM / 50 RPD; mini models up to 150 RPD); opt-in paid tier for higher limits | github.com/features/models | GitHub account (free) |
+| Cerebras Inference | Ultra-fast LLM inference on wafer-scale silicon (2,600+ tok/s); Llama 3.3 70B, Qwen3 32B/235B, and more; **card-free daily tier discontinued Aug 17, 2026** — now requires adding a payment method for $5 in one-time credits (expire after 30 days); no longer a no-card free option | inference.cerebras.ai | Free key (payment method required for trial credits) |
 | Cloudflare Workers AI | Edge AI inference at 300+ global locations; Llama 3.1 8B, Mistral 7B, Phi-2, Gemma, SDXL (image gen), Whisper (ASR), and 40+ models; 10,000 neurons/day free (no credit card required); unique low-latency for globally distributed apps | developers.cloudflare.com/workers-ai | CF account (free) |
 
 ## Security
