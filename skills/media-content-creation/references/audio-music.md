@@ -14,7 +14,7 @@ Generate complete songs (vocals + instruments) from a text prompt.
 - **Stem Separation (June 11, 2026 update):** Three modes — **Advanced Split** (NEW, Premier only): choose from ~100 instruments to regenerate each stem from scratch — no separation artifacts; also exports MIDI; 10 credits/extracted track. **Split from Mix** (Updated): pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
 - Free tier: 50 credits/day (~10 songs); non-commercial use only
 - **Important (2026):** Free-tier users can no longer download audio files — tracks can only be streamed/shared within the platform. Download requires a paid plan ($10/month Pro, $30/month Premier).
-- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of June 2026 the transition has not yet occurred — current models remain active — but when it does, all generations made with the old models will eventually become inaccessible. UMG and Sony Music litigation remains active — a fair-use summary judgment hearing in the U.S. case is scheduled for July 2026 (no verdict as of July 11, 2026); a separate German case (GEMA v. Suno) is due July 31, 2026. Users who want to preserve old generations should download them now on a paid plan.
+- **Model retirement (imminent, Sept 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. Suno signed a second major licensing deal with BMG on August 12, 2026 (covering BMG's recorded music and publishing catalog), and on August 10, 2026 confirmed: "Soon, we'll introduce a new generation of Suno models, developed in partnership with the music industry... When the new models launch, all prior models will be retired" — meaning every model from V2 through v5.5 retires at once, not gradually. A teaser posted September 4, 2026 ("New models. Coming soon") signals the launch is close, though no name, date, or feature list has been announced. New Terms of Service took effect September 3, 2026, and Suno began capping the number of downloads subscribers can pull per period starting September 2026 to curb mass-export abuse. UMG and Sony Music litigation remains active. Users who want to preserve old generations should download them now on a paid plan, before the retirement and before download caps tighten further.
 - Input: genre, mood, lyrics (optional), style description
 - Output: full song (streaming on free; downloadable MP3 on paid)
 
@@ -52,8 +52,9 @@ ElevenLabs launched ElevenMusic as an iOS app on April 1, 2026, then shipped Mus
 - **Genre-switching mid-track:** one generation can shift between wildly different styles (operatic intro → metal breakdown → ambient outro)
 - **Chunk-based composition:** build tracks section by section using GenerationChunk and AudioRefChunk objects — intro, verse, chorus, bridge, outro — each preserving tonal continuity across the full track
 - **Inpainting:** rebuild specific sections (e.g., only the bridge) without touching the rest of the song
+- **Composer (NEW Aug 25, 2026):** Section-by-section song editor in ElevenMusic — rewrite a verse, slow down the bridge, or change the key of the chorus independently; paste your own lyrics into any section and regenerate just that part to hear the new words sung; reorder song structure by swapping, doubling, or extending sections. Tracks can start from your own lyrics, an existing recording, a text prompt, or from scratch.
 - Better multilingual lyrics and arrangement vs Music v1
-- Best for: developers integrating music generation via API (ElevenAPI); ad music and branded content (ElevenCreative); quick casual generation (ElevenMusic iOS app)
+- Best for: developers integrating music generation via API (ElevenAPI); ad music and branded content (ElevenCreative); quick casual generation (ElevenMusic iOS app); fine-grained manual editing after generation (Composer)
 
 ## MiniMax Music 2.5 — Structural Control + Studio-Grade Fidelity (Jan 2026)
 
@@ -93,6 +94,16 @@ Released May 20, 2026. Text-to-audio model family covering music, sound effects,
 - **Licensing:** Community License (you own outputs, commercial use allowed); Enterprise License for >$1M ARR
 - **Best for:** Ad background music, custom SFX, production pipelines where training-data licensing provenance matters
 
+## Adobe Firefly Generate Music — Licensed Instrumental Background Music, GA (NEW Aug 2026)
+
+Adobe made Generate Music (powered by the Firefly Music Model) generally available on August 20, 2026, alongside Generate Speech and Generate Sound Effects — all in one Firefly studio. It creates "universally licensed" original instrumental tracks tuned to a video's length and mood, with a general license that covers commercial use without takedown risk. **Instrumental only — it does not generate vocals, sung lyrics, or full songs**, so it competes with Beatoven.ai and Stable Audio 3.0 rather than Suno or Udio.
+
+- **URL:** adobe.com/products/firefly/features/ai-music-generator.html
+- **Free tier:** Firefly free plan includes a daily generation allowance via the AI Assistant; premium features draw from paid credit pools
+- **Pricing:** Bundled into Firefly plans — Standard $9.99/mo (2,000 credits), Pro $19.99/mo (4,000 credits), Pro Plus $49.99/mo (10,000 credits), Premium $199.99/mo (50,000 credits)
+- **Video-aware generation:** Upload a video or audio file; Firefly analyzes its vibe and style and auto-generates tailored music prompts with editable tags and multiple variations
+- **Best for:** Video editors and teams already in the Adobe ecosystem needing commercially safe instrumental background music with no copyright takedown risk
+- **Not ideal for:** Songs with vocals or lyrics (use Suno, Udio, ElevenLabs Music v2, or MiniMax Music 2.5); standalone use outside Adobe's ecosystem (Beatoven.ai or Stable Audio 3.0 are simpler standalone options)
 
 ## Beatoven.ai — Fairly Trained Royalty-Free Music for Video
 
