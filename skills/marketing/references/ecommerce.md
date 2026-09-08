@@ -41,3 +41,7 @@ Running paid ads? Create at least 5 different creative variations to test:
 - Same product, different contexts
 
 Use Creatify.ai or the video-ads workflow to generate variations quickly. (Note: aicreator.co is defunct as of May 2026 — do not use.)
+
+## AI Content Disclosure (TikTok Shop, 2026)
+
+If a product image or video uses an AI-generated model, a fabricated scene/background, or a product dropped into an environment that was never shot (e.g. the Nano Banana 2 product-scene approach above), TikTok Shop requires a visible "AI-generated" disclosure label. Light AI-assisted editing — color correction, cleanup, background removal — does not require disclosure. Skipping the label on qualifying content risks reduced distribution or listing takedown.
