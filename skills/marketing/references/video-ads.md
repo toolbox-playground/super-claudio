@@ -51,7 +51,7 @@ Paste a product URL and get a complete 15-30 second TikTok/Instagram ad in minut
 
 UGC-native output style consistently outperforms polished brand ads on TikTok.
 
-**2026 updates:** 1,500+ AI avatars (up from previous library), 75+ languages, 140+ voices with voice cloning; analytics integration — the AI learns from real ad performance data and auto-adjusts future scripts and visuals. G2 Summer 2026 Leader with 1,500+ reviews at 4.8/5. Pricing: Free ($0, 10 credits), Starter ($39/mo), Pro ($99/mo, includes competitor tracker + ad launcher + custom avatars).
+**2026 updates:** 1,500+ AI avatars (up from previous library), 75+ languages, 140+ voices with voice cloning; analytics integration — the AI learns from real ad performance data and auto-adjusts future scripts and visuals. G2 Summer 2026 Leader with 1,500+ reviews at 4.8/5. Pricing: Free ($0, 10 credits), Starter ($39/mo, up from $33/mo), Pro ($99/mo, up from $49/mo — includes competitor tracker + ad launcher + custom avatars). **Discontinued (end of May 2026):** AI Shorts, standalone Product Video, and Video Translation features were removed from the product.
 
 ## aicreator.co — Automated Ad Video (Defunct as Ad Tool)
 
@@ -117,8 +117,9 @@ Pencil generates video and image ads and scores every creative against patterns 
 5. Export top-predicted creatives directly to your ad manager
 
 **Free tier:** 6 ads free (guided creation; no credit card required)
-**Pricing:** ~$99/month (Basic); ~$499/month (Pro — agency seats, unlimited)
+**Pricing:** ~$99/month (Basic); ~$499/month (Pro — agency seats, unlimited); also available via Google Cloud Marketplace
 **Platforms:** Facebook, Instagram, TikTok, YouTube, Amazon, Pinterest, Snapchat
+**2026 updates:** "AI Agents" now act as live collaborators inside the workflow (not just a one-shot generator); added Topaz Labs upscaling/enhancement and Adobe Firefly integration for creative assembly
 **Best for:** DTC brands and agencies that want statistically validated creatives before launch; teams burned by wasting budget on losers during testing.
 **Not ideal for:** Pure video UGC production at volume (use Arcads or Creatify instead); sub-$1K/month spend where predictive value is limited.
 
@@ -339,6 +340,8 @@ Symphony Agent is TikTok's end-to-end agentic workflow for building full campaig
 **Best for:** Brands that want a fully guided TikTok campaign workflow — from brief to published ad — without switching between Creator Marketplace, Symphony Studio, and Ads Manager separately.
 **Not ideal for:** One-off single-asset creation (use Symphony Creative Studio directly); high-volume UGC avatar campaigns (use Arcads or Creatify for those).
 
+**Update (Aug 2026):** Symphony Agent now runs on Dreamina Seedance 2.5 (up from 2.0), extending max generated clip length from 15s to 30s; also added AI Search for discovering existing creator/UGC video content matching a campaign brief.
+
 ## TikTok Agentic Hub — AI Skills Marketplace (June 30, 2026)
 
 TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and third-party AI Skills built on the TikTok Ads MCP Server, letting AI agents execute advertising workflows directly inside TikTok Ads Manager without manual UI work.
@@ -367,7 +370,8 @@ Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools 
 2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image
 3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images
 4. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
-5. Assets go directly into your campaign library — no external tool or re-upload required
+5. **1-Click Creative Testing** (rolling out globally in English, summer 2026): auto-generates and tests creative variants against each other, surfacing the best performer without manual A/B setup
+6. Assets go directly into your campaign library — no external tool or re-upload required
 
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
 
@@ -382,8 +386,8 @@ Amazon Ads launched Creative Agent on February 24, 2026, inside Amazon's Creativ
 5. Publish directly to your Amazon campaign (Prime Video, Twitch, display placements)
 
 **Pricing:** No additional cost to advertisers (included with Amazon Ads account)
-**Access:** UK launch February 2026; rolling out to additional markets
-**Best for:** Brands selling on Amazon who want AI-generated ad creative (video + display) with Amazon's own retail and shopping signal data baked in — no other platform has access to Amazon's purchase intent signals.
+**Access:** UK/FR/DE/IT/ES launch February 2026; expanded into the unified Amazon Ads console and now also produces streaming TV ad creative (in addition to video + display)
+**Best for:** Brands selling on Amazon who want AI-generated ad creative (video, display, streaming TV) with Amazon's own retail and shopping signal data baked in — no other platform has access to Amazon's purchase intent signals.
 **Not ideal for:** Non-Amazon campaigns (output is formatted for Amazon media only); use Creatify or AdStellar for TikTok/Meta/Google campaigns.
 
 ## LinkedIn Campaign Manager AI Tools — Brand Kit, Draft with AI & Variants (Jul 2026)
@@ -411,3 +415,27 @@ When you need the highest realism (luxury products, fashion):
 3. Write a detailed prompt describing the camera movement and mood
 4. Use Soul ID to lock character/product appearance across shots
 5. Generate — Higgsfield produces cinematic results that feel like professional ad shoots
+
+**Ad Multiplier (Aug 25, 2026):** Turns one finished ad into many variants — new characters and settings while preserving the original's pacing and performance characteristics — for rapid creative testing without starting from scratch.
+
+## ChatGPT Ads (OpenAI) — Self-Serve Ad Platform (May 2026)
+
+OpenAI's ad platform went self-serve on May 5, 2026 (dropping its prior $200K minimum spend, adding CPC bidding), and is now live in 40+ countries including 31 European markets as of late Aug 2026 — reportedly running at roughly $1B annualized revenue.
+
+1. Go to openai.com (ChatGPT Ads self-serve portal)
+2. Set up a campaign with CPC bidding — no minimum spend commitment
+3. Ads surface within relevant ChatGPT conversations
+
+**Best for:** Brands wanting early access to a new high-intent ad surface inside ChatGPT conversations.
+**Not ideal for:** Teams without capacity to test a new, still-maturing ad platform alongside established channels.
+
+## Segwise — Cross-Network Creative Intelligence
+
+Segwise (segwise.ai) unifies creative intelligence and generation across 10+ ad networks and 4 mobile measurement partners (MMPs) in one workspace — surfacing which creative elements (hooks, visuals, CTAs) are actually driving performance across your full media mix, not just one platform.
+
+1. Go to segwise.ai
+2. Connect ad networks and MMPs
+3. Segwise analyzes cross-network creative performance and surfaces winning patterns
+4. Generate new creative variants informed by what's already working
+
+**Best for:** Performance marketing teams running campaigns across many networks who want one place to see which creative elements are working everywhere.
