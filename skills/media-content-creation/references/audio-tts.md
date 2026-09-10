@@ -71,6 +71,17 @@ with open("output.mp3", "wb") as f:
 ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
 
 
+## Breeze TTS 2 (BreezeBlue/Resonia) — #1 Open-Weight Model, Artificial Analysis Speech Arena (Aug 2026)
+
+Breeze TTS 2 is a 3B-parameter real-time TTS model released Aug 25, 2026 — the top-ranked open-weight model on the Artificial Analysis Speech Arena (1,215 Elo), ahead of ElevenLabs Eleven v3 (1,177).
+
+- **URL / HuggingFace:** huggingface.co/BreezeBlue/Breeze-TTS-2 | breezeblue.ai/breeze-tts-2
+- **License:** Code is Apache 2.0, but weights and outputs are non-commercial only — commercial use requires a separate license from Resonia
+- **Languages:** 50
+- **Latency:** ~133ms TTFA (cold); ~40ms warm
+- **Best for:** Research, prototyping, and non-commercial real-time voice applications wanting top open-weight quality
+- **Not ideal for:** Commercial production use without a paid license (use Chatterbox, Kokoro, or Qwen3-TTS for zero-cost commercial open-source TTS)
+
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
 
 ElevenLabs Flash is the speed-optimized sibling of Eleven v3, purpose-built for real-time conversational agents where latency matters more than expressiveness. Generates speech in ~75ms TTFA. Recommended by ElevenLabs over the older Turbo models for all low-latency use cases.
