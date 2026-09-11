@@ -51,7 +51,7 @@ Paste a product URL and get a complete 15-30 second TikTok/Instagram ad in minut
 
 UGC-native output style consistently outperforms polished brand ads on TikTok.
 
-**2026 updates:** 1,500+ AI avatars (up from previous library), 75+ languages, 140+ voices with voice cloning; analytics integration — the AI learns from real ad performance data and auto-adjusts future scripts and visuals. G2 Summer 2026 Leader with 1,500+ reviews at 4.8/5. Pricing: Free ($0, 10 credits), Starter ($39/mo), Pro ($99/mo, includes competitor tracker + ad launcher + custom avatars).
+**2026 updates:** 1,500+ AI avatars (up from previous library), 75+ languages, 140+ voices with voice cloning; analytics integration — the AI learns from real ad performance data and auto-adjusts future scripts and visuals; **Brand DNA Lock** (added ~Aug 2026) locks color/logo/typography across generations, reported to cut manual revisions by ~68% in G2 testing. G2 Summer 2026 Leader with 1,500+ reviews at 4.8/5. Pricing: Free ($0, 10 credits), Starter ($39/mo), Pro ($99/mo, includes competitor tracker + ad launcher + custom avatars).
 
 ## aicreator.co — Automated Ad Video (Defunct as Ad Tool)
 
@@ -179,7 +179,7 @@ Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors
 4. Generate the video — output is virtually indistinguishable from real UGC in scroll tests
 5. Download and deploy directly to Meta/TikTok Ads Manager
 
-**Pricing:** Starts at $110/month (Starter — 10 videos); $220/month (Creator — 20 videos); no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
+**Pricing:** Starts at $110/month (Starter — 10 videos); $220/month (Creator — 20 videos); no free trial (voice preview available before purchase). Note: Arcads overhauled its credit system in 2026 (1 old credit = 800 new credits) — if you see older guidance referencing "10 credits = 10 videos," it no longer applies; check current plan details on arcads.ai before budgeting. Best for brands running systematic UGC ad testing across many audience segments.
 
 ## Pose Video Studio — Identity-Consistent UGC from Your Own Face
 
@@ -300,9 +300,10 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
-- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Video Generation** — powered by Dreamina Seedance (upgraded to 2.5 in 2026; better product consistency, more natural motion, less manual correction post-gen); max generated length increased from 15s to **30s**
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
+- **Image-to-Video, Text-to-Video & Showcase Products** — expanded Symphony toolset (2026) for turning static product photos or plain text briefs directly into shoppable video; integrates with an **Adobe Express partnership** (Sept 2026) for cross-editing
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
 - **Smart+** — AI campaign management: auto-selects creatives, adjusts bids, and optimizes delivery automatically in Ads Manager
 - **Symphony Automation** (Smart+ integration, announced TikTok World May 2026) — two tools for AI-powered creative refresh inside Smart+ campaigns: **Recommended Creatives** (generates video assets complete with scripts, voiceovers, and avatars from your destination URL) and **Automatic Enhancements** (improves quality, reformats to 9:16 vertical, refreshes hooks/music, and dubs existing videos into 50+ languages); available now to all TikTok for Business accounts
@@ -400,6 +401,14 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 **Performance signal:** LinkedIn internal data shows 20%+ higher CTR for campaigns running 5+ ad variants vs. single-ad campaigns.
 **Best for:** B2B brands running LinkedIn campaigns who want faster variant generation and consistent brand voice without manual design work per variant.
 **Not ideal for:** Consumer / DTC advertising (LinkedIn CPMs are high; use TikTok Symphony or Meta Advantage+ for lower-funnel consumer campaigns).
+
+## Nano Banana 2 — Sept 2026 Relaunch
+
+Google refreshed Nano Banana 2's messaging Sept 10, 2026 — now explicitly built on Gemini 3.1, generating up to 4K output "3–5x faster" than comparable competitors per Google's own claims, and is the default image model rolling out across the Gemini app. No change to access (still free in gemini.google.com).
+
+## TikTok Shop AI Content Disclosure (compliance — check before publishing)
+
+TikTok Shop now requires a visible disclosure label on AI-generated or AI-enhanced product imagery and AI avatars in Shop listings and videos. AI-generated or pre-recorded voices are banned outright in livestreams. Non-compliance is enforced through the seller's Account Health Rating, so add the disclosure label whenever a workflow here (Nano Banana 2 scenes, Kling/Higgsfield animation, AI avatars) touches product imagery bound for TikTok Shop.
 
 ## Higgsfield — Cinema Studio Platform
 

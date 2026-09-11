@@ -25,6 +25,10 @@
    - Write caption with 3-5 relevant hashtags
    - Post during peak hours (7-9pm local time typically)
 
+## Compliance: AI Content Disclosure (2026)
+
+TikTok Shop now requires a visible disclosure label on any AI-generated or AI-enhanced product imagery and AI avatars used in Shop listings/videos, and bans AI-generated or pre-recorded voices in livestreams outright. This is enforced via the seller's Account Health Rating — add the disclosure label whenever the workflow above uses Nano Banana 2 scenes, Figma Weave/Kling animation, or an AI avatar.
+
 ## Instagram Shop
 
 - Product tags in feed posts, Reels, and Stories
