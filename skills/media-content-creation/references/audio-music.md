@@ -9,12 +9,12 @@
 Generate complete songs (vocals + instruments) from a text prompt.
 
 - URL: suno.com
-- **Latest model:** v5.5 (March 2026) — Voices (clone your singing voice), Custom Models (tune on your catalog), My Taste (personalized generation); v5.5 requires Pro/Premier; free tier capped at v4.5 and below
-- **Suno Studio (in-browser DAW):** Multi-track view, stem separation (see below), 6-band EQ, Warp Markers (adjust timing post-generation), Remove FX (strip reverb/effects), alternates, and expanded time signature support. Studio 1.2 (February 2026) added warp markers, remove FX, and alternates. Available to Pro/Premier subscribers.
-- **Stem Separation (June 11, 2026 update):** Three modes — **Advanced Split** (NEW, Premier only): choose from ~100 instruments to regenerate each stem from scratch — no separation artifacts; also exports MIDI; 10 credits/extracted track. **Split from Mix** (Updated): pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
+- **Latest models: v6, v6-wild, v6-mini** (launched Sept 9, 2026) — Suno's first models trained on licensed catalogs from Warner Music Group, BMG, and Believe, replacing the v4–v5.5 line entirely; existing user-generated songs from old models remain playable/shareable, but the old models themselves are retired and can no longer generate new output
+- **Suno Studio (in-browser DAW):** Multi-track view, stem separation (see below), 6-band EQ, Warp Markers (adjust timing post-generation), Remove FX (strip reverb/effects), alternates, and expanded time signature support. Available to Pro/Premier subscribers.
+- **Stem Separation:** Three modes — **Advanced Split** (Premier only): choose from ~100 instruments to regenerate each stem from scratch — no separation artifacts; also exports MIDI; 10 credits/extracted track. **Split from Mix**: pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
 - Free tier: 50 credits/day (~10 songs); non-commercial use only
 - **Important (2026):** Free-tier users can no longer download audio files — tracks can only be streamed/shared within the platform. Download requires a paid plan ($10/month Pro, $30/month Premier).
-- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of June 2026 the transition has not yet occurred — current models remain active — but when it does, all generations made with the old models will eventually become inaccessible. UMG and Sony Music litigation remains active — a fair-use summary judgment hearing in the U.S. case is scheduled for July 2026 (no verdict as of July 11, 2026); a separate German case (GEMA v. Suno) is due July 31, 2026. Users who want to preserve old generations should download them now on a paid plan.
+- **Litigation status (Sept 2026):** WMG (Nov 2025) and BMG (Aug 12, 2026) have settled with Suno and licensed their catalogs for the new v6 models. UMG and Sony Music have NOT settled and continue suing — the US summary judgment ruling in UMG/Sony v. Suno has been pushed back to Jan 8, 2027 (no verdict yet). Separately, a Munich court ruled against Suno in the German GEMA case on July 31, 2026 (non-US, does not affect Suno's US operations). Users relying on old v4–v5.5 generations should download them now on a paid plan, since those models can no longer regenerate similar output.
 - Input: genre, mood, lyrics (optional), style description
 - Output: full song (streaming on free; downloadable MP3 on paid)
 
@@ -25,13 +25,13 @@ Example prompt: "upbeat Brazilian funk, energetic, no lyrics, good for TikTok ad
 Similar to Suno, strong on musicality and production quality.
 
 - URL: udio.com
-- **Important (2026):** Udio temporarily disabled all downloads (audio, video, stems) across all plan tiers during a 2025–2026 licensing transition. Tracks can only be streamed/shared on-platform as of May 2026 — no DAW export, no Spotify upload, no use in video.
-- **Licensing deals signed:** Udio reached agreements with Universal Music Group (Oct 2025), Warner Music, Merlin, and Kobalt (Q1 2026). The new licensed platform launched Q2 2026 but operates as a **walled garden** — tracks cannot be downloaded or exported, only streamed/shared within the Udio network. No download capability is expected for the foreseeable future.
+- **Important (Sept 2026 — still true):** Udio still has all downloads (audio, video, stems) disabled across all plan tiers. Tracks can only be streamed/shared on-platform — no DAW export, no Spotify upload, no use in video.
+- **Licensing status:** Udio reached agreements with Universal Music Group (Oct 2025), Warner Music, Merlin, and Kobalt (Q1 2026); UMG is building a new licensed, still-walled-garden platform expected "sometime in 2026" — not live yet as of September 2026. Sony Music has NOT settled and filed a fresh copyright suit against Udio, which remains active. No download capability is expected for the foreseeable future.
 - Good for: previewing and sharing music concepts within the platform only; not suitable if you need to use the audio outside Udio
 
-## Mureka v8 — Developer-Focused AI Music Generation
+## Mureka V9.5 — Developer-Focused AI Music Generation
 
-Mureka v8 is the go-to for developers and technical producers: native API, stem separation, and MIDI export alongside full song generation.
+Mureka is the go-to for developers and technical producers: native API, stem separation, and MIDI export alongside full song generation. Version history: v8 (Mar 2026) → v9 (Apr 2026) → **V9.5** (Aug 31, 2026, current) — with an **O3** reasoning model ("test-time scaling" for composition) in preview.
 
 - URL: mureka.ai | API: platform.mureka.ai
 - Free tier: available with limitations — non-commercial only, Mureka retains output rights on free
@@ -65,6 +65,13 @@ MiniMax Music 2.5 (released January 29, 2026) adds paragraph-level precision con
 - **Audio fidelity:** Optimized soundstage keeps vocals and instruments in separate spectral regions — the key improvement over Music 2.0
 - Best for: generation where song structure matters (commercial jingles, video scoring with section-to-cut sync, multi-verse songs with distinct parts)
 - Not ideal for: stem export or MIDI (use Mureka v8); on-demand free generation (use Suno free tier)
+
+## Alibaba HappyShrimp 1.0 — Beta Text-to-Music (NEW Aug 2026)
+
+Alibaba launched HappyShrimp 1.0 in beta on August 17, 2026 — a new AI music generation model covering melody, arrangement, lyrics, and vocals from a single text prompt. Part of Alibaba's broader push across model categories following HappyHorse (video) and Fun-Realtime-TTS (speech).
+
+- Best for: early adopters wanting to evaluate Alibaba's music stack alongside Suno/Mureka; not yet established on independent benchmarks
+- Not ideal for: production use requiring proven commercial licensing terms (details still emerging during beta)
 
 ## Google Flow Music (formerly Producer.ai / Riffusion) — Google-Owned, Free, Lyria 3 Powered
 
@@ -124,4 +131,4 @@ For background music without AI generation:
 | Unique branded sound | Speed matters |
 | Need API / stems / MIDI (Mureka) | Budget is zero |
 
-> **Note:** As of June 2026, Udio's licensed platform has launched but operates as a walled garden — audio cannot be downloaded or exported. For any use case where you need to keep or use the generated audio, use Suno (paid), ElevenLabs Music v2 (free for personal; Starter plan+ for commercial), Google Flow Music / flowmusic.app (free, Google), or a royalty-free library instead.
+> **Note:** As of September 2026, Udio still operates as a walled garden — audio cannot be downloaded or exported, and its UMG-licensed platform hasn't launched yet. For any use case where you need to keep or use the generated audio, use Suno v6 (paid), ElevenLabs Music v2 (free for personal; Starter plan+ for commercial), Google Flow Music / flowmusic.app (free, Google), or a royalty-free library instead.
