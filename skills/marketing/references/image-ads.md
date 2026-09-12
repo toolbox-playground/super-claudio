@@ -9,6 +9,7 @@
 | **Canva** | Banners, carousels, social posts | Yes (free tier) |
 | **Adobe Express** | Quick resizing, brand kits | Free tier |
 | **Nano Banana 2** | Product in lifestyle scene | Check site |
+| **Meta Muse Image** | Rolled into Meta Advantage+ creative generation (July 2026); ad headline-text rewrite spotted live in Advantage+ | Free (Meta AI); Advantage+ access via ad account |
 | **Flux via fal.ai** | AI-generated product images | API credits |
 
 ### Canva Ad Creation Workflow

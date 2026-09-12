@@ -300,7 +300,7 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
-- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Video Generation** — powered by Dreamina Seedance 2.5 as of an August 2026 update (upgraded from Seedance 2.0): max clip length extended from 15s to 30s, multimodal reference inputs raised from 9 to 50 — better product consistency, more natural motion, less manual correction post-gen
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
@@ -361,7 +361,7 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
-Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
+Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. It integrates Gemini, Veo 3.1, Nano Banana Pro, and **Gemini Omni** (added summer 2026) for image and video generation. Late July/August 2026 additions: **1-Click Creative Testing**, further AI upscaling/outpainting improvements, and **"How this ad was made"** AI-transparency labels on generated assets:
 
 1. Open Google Ads → Asset Studio
 2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image
