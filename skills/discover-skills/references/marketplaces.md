@@ -7,16 +7,22 @@ Sources to search when looking for Claude Code skills and plugins.
 | Source | URL | Notes |
 |--------|-----|-------|
 | Claude Code Plugins (official) | code.claude.com/docs/en/discover-plugins | Official Claude Code plugin directory |
+| **Claude Plugins & Skills catalogs (official)** | claude.com/plugins, claude.com/skills | Newer official catalog pages, now cited directly by code.claude.com/docs/en/discover-plugins as "the catalog" — distinct from the claude.ai/customize browse surface below |
 | Claude.ai Plugins + Skills + Connectors (official) | claude.ai/customize | Unified browse surface (launched March 31, 2026) — skills, connectors, and plugins in one place with typed filters and one-click install; Team/Enterprise admins can pin skills workspace-wide |
 | **Claude Plugins Official** (Anthropic GitHub) | github.com/anthropics/claude-plugins-official | Anthropic-managed, high-quality plugin directory |
 | **Anthropic Skills** (Anthropic GitHub) | github.com/anthropics/skills | Official public Agent Skills repo (May 2026); includes spec, example skills, and skill-creator; all skills available to Claude.ai paid plans |
 | **Claude Plugins Community** (Anthropic GitHub) | github.com/anthropics/claude-plugins-community | Read-only mirror of Anthropic's community plugin marketplace — third-party plugins that passed automated security scanning; add manually: `claude plugin marketplace add anthropics/claude-plugins-community`; submit plugins at clau.de/plugin-directory-submission |
 
+**Note on Claude Cowork:** Anthropic's Cowork product has its own plugin/connector ecosystem, launched Jan 30, 2026 and expanded through 2026 with knowledge-work/finance plugins and connectors (DocuSign, FactSet, Google Workspace, etc). Plugins now span two surfaces — Claude Code and Cowork — some shared, some surface-specific. When searching for a plugin, check whether it targets Claude Code, Cowork, or both.
+
 ## Community Marketplaces
 
 | Source | URL | Notes |
 |--------|-----|-------|
-| **Claude Marketplaces** | claudemarketplaces.com | 23,400+ skills, 2,500+ aggregated marketplaces, 770+ MCP servers; includes a "Skills Updater" tool to scan local installs and fetch upstream updates |
+| **Claude Marketplaces** | claudemarketplaces.com | 23,600+ skills, 2,500+ aggregated marketplaces, 770+ MCP servers; includes a "Skills Updater" tool to scan local installs and fetch upstream updates |
+| **Build with Claude** | buildwithclaude.com (github.com/davepoon/buildwithclaude) | Active hub for skills, agents, commands, hooks, and plugins; 84+ plugins |
+| **Skills Directory** | skillsdirectory.com | Security-scanned/verified skills directory; 204+ skills across 13 categories |
+| **MCP Servers Agent Skills** | mcpservers.org/agent-skills | Skills directory affiliated with the Awesome-MCP-Servers project |
 | **There Is A Skill For That** | theresaskillforthat.com | Community directory of Claude skills by use case |
 | **AI Templates** | aitmpl.com/plugins | Plugin and skill templates |
 | **Awesome Claude** | awesomeclaude.ai/code-cheatsheet | Curated Claude Code resources and cheatsheets |
