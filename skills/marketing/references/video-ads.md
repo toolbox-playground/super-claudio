@@ -401,6 +401,20 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 **Best for:** B2B brands running LinkedIn campaigns who want faster variant generation and consistent brand voice without manual design work per variant.
 **Not ideal for:** Consumer / DTC advertising (LinkedIn CPMs are high; use TikTok Symphony or Meta Advantage+ for lower-funnel consumer campaigns).
 
+## ClipLoft — Budget AI UGC Ads with VocalMatch Lip-Sync
+
+ClipLoft (cliploft.com) is a newer entrant in the AI UGC ad-actor space, competing directly with Arcads and Creatify on price and batch volume.
+
+1. Go to cliploft.com
+2. Write or paste your ad script
+3. Select an AI actor from 300+ options
+4. Generate — VocalMatch lip-sync aligns delivery to the script; export up to 40 hook/CTA variants per batch
+5. Download and format for Meta/TikTok ad specs
+
+**Pricing:** $49/month
+**Best for:** Teams wanting Arcads/Creatify-style UGC actor variety at a lower entry price with large batch exports.
+**Not ideal for:** Largest actor library (Arcads has 1,000+) or predictive performance scoring (use Pencil or AdCreative.ai).
+
 ## Higgsfield — Cinema Studio Platform
 
 Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.0, Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace, with Cinema Studio 3.5 adding 70+ cinematic camera presets and Soul ID for cross-shot character consistency.
