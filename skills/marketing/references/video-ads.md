@@ -104,7 +104,7 @@ AdCreative.ai generates large batches of ad creatives and assigns each a perform
 3. Generate ad creative variants (images, carousels, short videos)
 4. Sort by performance score → prioritize top-predicted variants for paid spend
 
-**Pricing:** Starts at $39/month (no permanent free tier; trial available). Best for mid-to-large teams running multi-platform campaigns at scale (TikTok, Meta, Google).
+**Pricing:** Starts at $39/month (Starter, no permanent free tier; 7-day trial available) but video ad generation (AI UGC video, product video, storytelling ads) is locked behind the $249/month Professional tier — the $39 plan is images/static only. Best for mid-to-large teams running multi-platform campaigns at scale (TikTok, Meta, Google).
 
 ## Pencil — Predictive Scoring Trained on $1B+ in Ad Spend
 
@@ -149,9 +149,9 @@ ElevenLabs Ads Engine (launched June 22, 2026) localizes existing ad creatives a
 5. Export or push directly to Google Ads (Search, text) or Meta Ads (text, image, video) — no manual re-upload
 
 **Free tier:** ElevenLabs Creator plan and above ($11/month); credits apply
-**Supported integrations at launch:** Google Ads, Meta Ads
+**Supported integrations:** Google Ads and Meta Ads at launch; **LinkedIn Campaign Manager** added since, per ElevenLabs' own docs (elevenlabs.io/docs/overview/capabilities/ads-engine) — three direct API integrations as of mid-2026.
 **Best for:** Brands with proven creative that want to expand to new markets at minimal production cost; multilingual campaigns without re-filming or re-voicing.
-**Not ideal for:** Generating new creatives from scratch (use Creatify, Arcads, or AdStellar for that); ad platforms beyond Google and Meta (Ads Engine is Google + Meta only at launch).
+**Not ideal for:** Generating new creatives from scratch (use Creatify, Arcads, or AdStellar for that); TikTok, Amazon, or other ad platforms (Ads Engine covers Google, Meta, and LinkedIn only).
 
 ## HeyGen — AI Avatar Video, 175+ Languages (Avatar V, April 2026)
 
@@ -300,7 +300,7 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
-- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Video Generation** — powered by Dreamina Seedance 2.0, upgraded to **Seedance 2.5** on Aug 3, 2026: max generated clip length doubled from 15s to 30s, reference-image uploads raised from 9 to 50, plus new timestamp-specific creative direction (pin which asset/product appears at which point in the video). Rolling out to select paid advertisers in select markets first, available in both Symphony Creative Studio and Symphony Automations.
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
@@ -361,15 +361,30 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
-Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
+Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. It integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation. At Google Marketing Live on May 20, 2026, Google announced **Gemini Omni** integration (multimodal video creation from a natural-language brief) plus **1-Click Creative Testing** (auto-identifies which generated assets are likely to perform best against your campaign objective before you spend); both rolled out globally in English over summer 2026 and are live as of this writing:
 
 1. Open Google Ads → Asset Studio
-2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image
+2. Select "Generate image" or "Generate video" → enter a text prompt (Gemini Omni understands full marketing briefs, brand guidelines, and site content) or upload a reference image
 3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images
-4. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
-5. Assets go directly into your campaign library — no external tool or re-upload required
+4. Run **1-Click Creative Testing** on the generated batch to surface the highest-predicted-performance assets
+5. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
+6. Assets go directly into your campaign library — no external tool or re-upload required
 
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
+
+## Meta Advantage+ Creative — Image-to-Video from Up to 20 Product Photos
+
+Meta's own AI creative tool inside Ads Manager (Advantage+ Creative) generates video ads directly from static product photos — no filming, no third-party tool. Announced at Cannes Lions 2026 and confirmed on Meta's own Advantage+ Creative business page (facebook.com/business/ads/meta-advantage-plus/creative): upload up to 20 product images and Meta's Video Generation 2.0 technology assembles a multi-scene video with motion, transitions, text overlays, and royalty-free music. Meta reports over 4 million advertisers now generating AI video ads monthly (15M+ AI-enhanced ads created), with early adopters seeing AI-generated video perform within 5–15% of professionally produced video on direct-response objectives (ecommerce purchases, lead gen). Meta is also wiring **Muse Image** (its second Superintelligence Labs model, codename Mango) into Advantage+ for AI-generated image variants.
+
+1. In Ads Manager, create or edit an ad → enable Advantage+ Creative
+2. Upload up to 20 product/lifestyle photos
+3. Choose which AI enhancements to apply: image-to-video generation, text variations, image expansion, new backgrounds, animation, music
+4. Meta assembles a multi-scene video ad automatically and generates creative variations for testing
+5. Launch — Advantage+ campaigns handle placement and audience optimization on top of the AI-generated creative
+
+**Pricing:** Included in your normal Meta Ads spend — no separate creative-tool subscription.
+**Best for:** Brands already running Meta ads who want free, native image-to-video generation without paying for Creatify/Arcads/AdStellar just to animate product photos.
+**Not ideal for:** TikTok/Google/Amazon-native placements (Meta-only); highly custom UGC-actor scripts (use Arcads, Creatify, or MakeUGC for actor-driven ads instead).
 
 ## Amazon Ads Creative Agent — Agentic AI for Amazon Campaigns (Feb 2026)
 
@@ -382,7 +397,7 @@ Amazon Ads launched Creative Agent on February 24, 2026, inside Amazon's Creativ
 5. Publish directly to your Amazon campaign (Prime Video, Twitch, display placements)
 
 **Pricing:** No additional cost to advertisers (included with Amazon Ads account)
-**Access:** UK launch February 2026; rolling out to additional markets
+**Access:** US (late 2025) → UK (Feb 2026) → Canada and multiple additional European markets added through mid-2026; also handles market localization (script adaptation + regionally appropriate voice options for dubbing)
 **Best for:** Brands selling on Amazon who want AI-generated ad creative (video + display) with Amazon's own retail and shopping signal data baked in — no other platform has access to Amazon's purchase intent signals.
 **Not ideal for:** Non-Amazon campaigns (output is formatted for Amazon media only); use Creatify or AdStellar for TikTok/Meta/Google campaigns.
 
@@ -401,7 +416,7 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 **Best for:** B2B brands running LinkedIn campaigns who want faster variant generation and consistent brand voice without manual design work per variant.
 **Not ideal for:** Consumer / DTC advertising (LinkedIn CPMs are high; use TikTok Symphony or Meta Advantage+ for lower-funnel consumer campaigns).
 
-## Higgsfield — Cinema Studio Platform
+## Higgsfield — Cinema Studio Platform + Marketing Studio / Hermes Agent
 
 Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.0, Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace, with Cinema Studio 3.5 adding 70+ cinematic camera presets and Soul ID for cross-shot character consistency.
 
@@ -411,3 +426,10 @@ When you need the highest realism (luxury products, fashion):
 3. Write a detailed prompt describing the camera movement and mood
 4. Use Soul ID to lock character/product appearance across shots
 5. Generate — Higgsfield produces cinematic results that feel like professional ad shoots
+
+**Higgsfield Marketing Studio + Hermes Agent (launched April 23, 2026):** a separate, UGC-focused mode inside the same platform. Hermes Agent researches your product/niche, identifies currently-converting hooks and formats, and outputs up to 9 ready-to-run UGC ad variants per prompt across multiple formats (UGC, pure CGI, street-style editorial, product reviews, tutorials, TV-spot style, virtual try-on) — closer to Higgsfield competing directly with AdStellar Agent/Pencil-style automation than to Cinema Studio's cinematic focus.
+1. Go to higgsfield.ai → Marketing Studio
+2. Enter your product/offer — Hermes Agent researches converting hooks and formats in your category
+3. Select or let Hermes select a UGC format
+4. Generate up to 9 ad variants in one pass, ready to download and launch
+**Best for:** Brands wanting Higgsfield's model quality applied to fast, high-volume UGC output rather than single cinematic shots — use Cinema Studio instead for luxury/fashion hero shots.

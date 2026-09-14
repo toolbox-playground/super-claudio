@@ -20,6 +20,8 @@
 5. Resize for all platforms in one click (Canva Magic Resize)
 6. Export as PNG/JPG
 
+**2026 update:** Canva's Magic Studio added a conversational AI layer (describe the ad in a chat prompt — "banner for a pizzeria, red background, three menu items" — and get an editable design in ~10 seconds) plus **Dream Lab style transfer**: upload a reference image and generate new product/lifestyle visuals matching its look, useful for keeping ad creative visually consistent across a campaign without a photoshoot.
+
 ### Prompt for AI-generated ad image (Flux/GPT Image 2)
 
 ```
