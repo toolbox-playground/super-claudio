@@ -9,6 +9,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | OpenWeather | Current weather, 5-day forecast, air pollution; 1,000 calls/day free | openweathermap.org | Free key |
 | Open-Meteo | Hourly/daily weather forecasts, historical data, **Air Quality API** (PM2.5, PM10, ozone, NO2, UV index, pollen, dust — same no-key, no-rate-limit model), no limits on free tier | open-meteo.com | None |
 | **Weather.gov (NWS)** | US National Weather Service data — current conditions, forecasts, hourly data, alerts; GeoJSON API; ~5,000 req/hour free; no key required | api.weather.gov | None |
+| **gridcarbon** | Hourly grid carbon intensity (gCO2eq/kWh) for 45 zones — 33 European bidding zones (ENTSO-E), 11 US balancing authorities (EIA-930), and Great Britain (NESO); OpenAPI 3.1 spec; Python/TypeScript SDKs + MCP server; CORS enabled | gridcarbon.dev | None |
 
 ## Space & Astronomy
 
@@ -101,10 +102,10 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
-| Google Gemini API | LLM inference (Gemini 3.5 Flash free in AI Studio — new default since May 19, 2026; daily Gemini 3.1 Pro allotment for harder reasoning), 1M token context, multimodal | ai.google.dev | Free key (generous limits) |
-| Groq | Ultra-fast LLM inference (LPU hardware); Llama 4 Scout, Llama 4 Maverick, Kimi K2 (1T MoE), Qwen3 235B, Gemma, Mistral, DeepSeek R1 and more; no credit card required | groq.com | Free key |
-| OpenRouter | Access to 100+ free AI models via one API; notable free models (July 2026): **NVIDIA Nemotron 3 Ultra** (550B MoE, 1M context, `nvidia/nemotron-3-ultra-550b-a55b:free`) and **OpenAI GPT-OSS** (20B Apache 2.0 open-weight, `openai/gpt-oss-20b:free`); 25+ free models total; 50 req/day free, 1,000/day after $10 purchase | openrouter.ai | Free key |
-| GitHub Models | 40+ AI models (GPT-4o, Llama, DeepSeek-R1, Mistral, Phi, xAI, Cohere) via OpenAI-compatible API; uses your GitHub account — no separate key or signup; free tier rate-limited (e.g. GPT-4o: 10 RPM / 50 RPD); opt-in paid tier for higher limits | github.com/features/models | GitHub account (free) |
+| Google Gemini API | LLM inference — **Gemini 3.6 Flash** free in AI Studio (general-purpose upgrade, released July 21, 2026, succeeding 3.5 Flash); **3.5 Flash-Lite** also free for speed/cost-sensitive use; 1M token context, multimodal | ai.google.dev | Free key (generous limits) |
+| Groq | Ultra-fast LLM inference (LPU hardware); Llama 4 Scout, Llama 4 Maverick, Kimi K2 (1T MoE), Qwen3 235B, Gemma, Mistral, DeepSeek R1 and more; free tier ~30 RPM, ~14,400 requests/day, no credit card required | groq.com | Free key |
+| OpenRouter | Access to 100+ free AI models via one API; notable free models (confirmed still live Sept 2026): **NVIDIA Nemotron 3 Ultra** (550B MoE, 1M context, `nvidia/nemotron-3-ultra-550b-a55b:free`) and **OpenAI GPT-OSS** (20B Apache 2.0 open-weight, `openai/gpt-oss-20b:free`); 20-25+ free models total (roster rotates); 20 RPM, 50 req/day free, 1,000/day after $10 lifetime purchase | openrouter.ai | Free key |
+| GitHub Models | 40+ AI models (GPT-4o, Llama, DeepSeek-R1, Mistral, Phi, xAI, Cohere) via OpenAI-compatible API; uses your GitHub account — no separate key or signup; free tier tiered by model complexity — low/mini models (GPT-4o mini, Phi mini): 150 req/day; high-complexity models (GPT-4o, Llama 3.3 70B): 10 RPM / 50 req/day; still in public preview, limits subject to change; opt-in paid tier for higher limits | github.com/features/models | GitHub account (free) |
 | Cerebras Inference | Ultra-fast LLM inference on wafer-scale silicon (2,600+ tok/s); Llama 3.3 70B, Qwen3 32B/235B, and more; 1M tokens/day free, no credit card required; 30 RPM on free tier | inference.cerebras.ai | Free key |
 | Cloudflare Workers AI | Edge AI inference at 300+ global locations; Llama 3.1 8B, Mistral 7B, Phi-2, Gemma, SDXL (image gen), Whisper (ASR), and 40+ models; 10,000 neurons/day free (no credit card required); unique low-latency for globally distributed apps | developers.cloudflare.com/workers-ai | CF account (free) |
 
@@ -113,6 +114,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | API | What | URL | Auth |
 |-----|------|-----|------|
 | Have I Been Pwned — Pwned Passwords | Check any password against 800M+ entries from real data breaches using k-anonymity (submit only the first 5 chars of its SHA-1 hash — the server never sees the full hash); no rate limit, no auth; returns matching hash suffixes with breach occurrence counts | haveibeenpwned.com/API/v3 | None |
+| **SSL Labs (Qualys)** | Analyze any public server's SSL/TLS configuration — certificate validity, protocol support, cipher suites, vulnerability detection; free for non-commercial use; v4 requires a one-time free email registration (sent in a request header), no API key/payment | api.ssllabs.com/api/v4 | Free (email registration) |
 
 ## Resources for Finding More
 
