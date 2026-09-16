@@ -318,6 +318,8 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 
 Access: business.tiktok.com → Creative Center → Symphony AI (now generally available for all TikTok for Business accounts)
 
+**Aug 3, 2026 update:** TikTok integrated Dreamina Seedance 2.5 into Symphony's Video Generation, doubling max AI-generated clip length from 15s to 30s and expanding multi-modal reference uploads (image/video/audio pinned to specific moments) from 9 to 50 references per generation.
+
 ## TikTok Symphony Agent — Agentic Campaign Creation (Cannes Lions, June 22, 2026)
 
 Symphony Agent is TikTok's end-to-end agentic workflow for building full campaigns from a single text prompt. Unlike the Symphony creative tools (which generate individual assets), Symphony Agent orchestrates the full creative pipeline: reads performance signals, writes briefs, matches creators, and coordinates across three TikTok surfaces simultaneously.
@@ -369,6 +371,8 @@ Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools 
 4. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
 5. Assets go directly into your campaign library — no external tool or re-upload required
 
+**1-Click Creative Testing** (rolling out globally in English, summer 2026): generates and launches multiple creative variants for A/B testing directly from Asset Studio in a single action, without manually building separate ad groups per variant.
+
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
 
 ## Amazon Ads Creative Agent — Agentic AI for Amazon Campaigns (Feb 2026)
@@ -400,6 +404,20 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 **Performance signal:** LinkedIn internal data shows 20%+ higher CTR for campaigns running 5+ ad variants vs. single-ad campaigns.
 **Best for:** B2B brands running LinkedIn campaigns who want faster variant generation and consistent brand voice without manual design work per variant.
 **Not ideal for:** Consumer / DTC advertising (LinkedIn CPMs are high; use TikTok Symphony or Meta Advantage+ for lower-funnel consumer campaigns).
+
+## CraftStory — Photo-to-UGC Ad Video with a Real Free Tier
+
+CraftStory (craftstory.com) turns a single photo — or a choice from 100+ licensed AI creators — into a talking, lip-synced UGC ad video, no filming required.
+
+1. Go to craftstory.com
+2. Upload a product/person photo or pick a licensed AI creator
+3. Write or paste a script; select from 30+ supported languages
+4. Generate — output is a lip-synced talking video ready for TikTok/Reels/Shorts
+
+**Free tier:** 3 videos/month, no credit card required
+**Pricing:** From ~$19/month (roughly 3 credits/second at 720p)
+**Best for:** Brands wanting an Arcads/MakeUGC-style tool with an actual free tier and a licensed-actor library (avoids the likeness/rights questions of generic AI avatars).
+**Not ideal for:** High-volume campaigns needing 1,000+ actor variety (use Arcads) or product-in-hand realism (use MakeUGC).
 
 ## Higgsfield — Cinema Studio Platform
 
