@@ -51,7 +51,7 @@ Paste a product URL and get a complete 15-30 second TikTok/Instagram ad in minut
 
 UGC-native output style consistently outperforms polished brand ads on TikTok.
 
-**2026 updates:** 1,500+ AI avatars (up from previous library), 75+ languages, 140+ voices with voice cloning; analytics integration — the AI learns from real ad performance data and auto-adjusts future scripts and visuals. G2 Summer 2026 Leader with 1,500+ reviews at 4.8/5. Pricing: Free ($0, 10 credits), Starter ($39/mo), Pro ($99/mo, includes competitor tracker + ad launcher + custom avatars).
+**2026 updates:** 1,500+ AI avatars (up from previous library), 75+ languages, 140+ voices with voice cloning; analytics integration — the AI learns from real ad performance data and auto-adjusts future scripts and visuals; new **Brand DNA Lock** (enforces color/logo/typography consistency across generated ads) and dedicated YouTube ad templates. G2 Summer 2026 Leader with 1,500+ reviews at 4.8/5. **Pricing raised Aug 2026:** Free ($0, 10 credits), Starter $39/mo (up ~18%), Pro $99/mo (roughly 2× prior price) — includes competitor tracker + ad launcher + custom avatars.
 
 ## aicreator.co — Automated Ad Video (Defunct as Ad Tool)
 
@@ -117,7 +117,7 @@ Pencil generates video and image ads and scores every creative against patterns 
 5. Export top-predicted creatives directly to your ad manager
 
 **Free tier:** 6 ads free (guided creation; no credit card required)
-**Pricing:** ~$99/month (Basic); ~$499/month (Pro — agency seats, unlimited)
+**Pricing (updated Aug 13 2026):** Core $14/mo (50 generations); Growth $55/mo (250 generations); Pro custom/unlimited. Video pipeline now runs on Google Veo via Pencil Pro. Coty (beauty conglomerate) partnership since July 1, 2026 with an embedded Pencil team.
 **Platforms:** Facebook, Instagram, TikTok, YouTube, Amazon, Pinterest, Snapchat
 **Best for:** DTC brands and agencies that want statistically validated creatives before launch; teams burned by wasting budget on losers during testing.
 **Not ideal for:** Pure video UGC production at volume (use Arcads or Creatify instead); sub-$1K/month spend where predictive value is limited.
@@ -179,7 +179,7 @@ Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors
 4. Generate the video — output is virtually indistinguishable from real UGC in scroll tests
 5. Download and deploy directly to Meta/TikTok Ads Manager
 
-**Pricing:** Starts at $110/month (Starter — 10 videos); $220/month (Creator — 20 videos); no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
+**Pricing (updated Aug 2026):** Starter/Creator/Pro tiers at $77/$154/$385/mo (30% promo pricing); Pro tier now includes 48,000 credits (up from 40,000); no free trial (voice preview available before purchase). New **Workflows** feature (June 2026): node-based batch generation — fan one script out across multiple actors and languages in a single run. ~$15M ARR, ~4K customers as of Sept 2026. Best for brands running systematic UGC ad testing across many audience segments.
 
 ## Pose Video Studio — Identity-Consistent UGC from Your Own Face
 
@@ -358,6 +358,19 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 **Launch partners:** HubSpot (CRM sync), Wix (storefront integration), Constant Contact (audience import), Mobvista (DSP connections)
 
 **Access:** business.tiktok.com → Agentic Hub (generally available to all TikTok for Business accounts)
+
+## Meta Advantage+ Creative — AI Rewrites, Variants & Predictive Budgeting (Jul 27 2026)
+
+Meta updated Advantage+ Creative on July 27, 2026 with several AI upgrades inside Ads Manager: it now rewrites ad image text by default, generates up to 8 headline variants automatically, and can generate video directly from static product images. A new **Muse Image** integration adds original image generation, and **Predictive Budget Allocation** shifts spend across ad sets based on projected ROAS (8–15% lift in Meta's own tests). Conversion thresholds for entering Advantage+ campaigns were also lowered (25/week for Shopping campaigns, 15/week for App campaigns).
+
+1. Go to Meta Ads Manager → create or edit a campaign → enable Advantage+ Creative
+2. Upload a static product image or existing ad asset
+3. Meta auto-generates headline variants, rewritten ad copy, and (optionally) a video cut from the static image
+4. Review and launch — Predictive Budget Allocation reallocates spend across variants automatically as performance data comes in
+
+**Pricing:** No additional cost beyond normal ad spend (built into Ads Manager)
+**Best for:** Meta-first advertisers who want automatic creative variant generation and budget optimization without a separate tool.
+**Not ideal for:** Teams needing full creative control over every variant (Advantage+ automates aggressively) or non-Meta placements.
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
