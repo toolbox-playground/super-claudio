@@ -41,3 +41,11 @@ Running paid ads? Create at least 5 different creative variations to test:
 - Same product, different contexts
 
 Use Creatify.ai or the video-ads workflow to generate variations quickly. (Note: aicreator.co is defunct as of May 2026 — do not use.)
+
+## TikTok Shop Paid Ads: GMV Max (Required)
+
+Since March 2026, GMV Max is the *only* supported way to run TikTok Shop paid ads under the Sales objective — manual Video Shopping Ads and Product Shopping Ads campaigns can no longer be created, edited, or duplicated. Give GMV Max a product, a budget, and an ROI target; it automatically pulls creative from your organic videos, paid ad uploads, and authorized affiliate posts, then picks the audience, bidding, placement, and winning creative for you.
+
+- Feed it the 5+ creative variations from the workflow above as source material — GMV Max tests them and reallocates spend automatically
+- Affiliate videos need "Affiliate post" set as the video source to be pulled into the campaign
+- Access: TikTok Ads Manager → Campaign → Sales objective → TikTok Shop → GMV Max
