@@ -16,14 +16,15 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 |-----|------|-----|------|
 | NASA APIs | APOD, Mars rover photos, NEO asteroids | api.nasa.gov | Free key |
 | Open Notify | ISS current location | open-notify.org | None |
-| SpaceX API | Launch data, rockets, missions | github.com/r-spacex/SpaceX-API | None |
+| **Launch Library 2** | Launch data for SpaceX and 100+ other providers — rockets, launch pads, missions, crew; official successor recommended after SpaceX-API's archival; maintained by The Space Devs | ll.thespacedevs.com | None (~15 req/hour; free key raises to 30 req/hour) |
+| **SpaceX API** | **⚠️ Defunct (archived Jun 6, 2026)** — GitHub repo is read-only and the live endpoint no longer resolves; use Launch Library 2 above instead | github.com/r-spacex/SpaceX-API | None |
 
 ## Finance & Economics
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
 | Open Exchange Rates | Currency exchange rates | openexchangerates.org | Free key |
-| CoinGecko | Crypto prices and data | coingecko.com/api | None (rate limited) |
+| CoinGecko | Crypto prices and data | coingecko.com/api | None (keyless ~5-15 calls/min; free Demo key raises to 100 calls/min, 10K calls/month) |
 | Alpha Vantage | Stock market data | alphavantage.co | Free key |
 | DexScreener | Real-time and historical DEX trading pair data across Solana, ETH, BSC, and 50+ chains; WebSocket push; no key required; covers on-chain prices, volume, and liquidity that CoinGecko doesn't | docs.dexscreener.com/api/reference | None |
 | **Frankfurter** | Exchange rates sourced from 84 central banks; 201 currencies; historical data back to 1948; JSON + CSV responses; no auth, no monthly/daily caps; self-hostable (Docker) | frankfurter.dev | None |
