@@ -318,6 +318,12 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 
 Access: business.tiktok.com → Creative Center → Symphony AI (now generally available for all TikTok for Business accounts)
 
+### TikTok Q3 2026 Product Preview (Ads Manager)
+
+- **TopReach Max Reach** — the TopReach bundle (TopView + TopFeed in one buy) is now available under this name via allowlist in select regions; automated priority logic with age/gender/interest targeting, built for major launches and broad-awareness buys
+- **TopView Self-Serve** — book, manage, and launch TopView campaigns directly in Ads Manager instead of through a managed sales process; check real-time inventory, modify orders, and appeal creative rejections in one click. Available in select markets via allowlist; requires an Advertising Purchase Agreement
+- **TopView Geo Exclusion** — national TopView campaigns can now exclude up to 40% of a country's sub-regions (states, cities, or other geographic areas); available globally via allowlist
+
 ## TikTok Symphony Agent — Agentic Campaign Creation (Cannes Lions, June 22, 2026)
 
 Symphony Agent is TikTok's end-to-end agentic workflow for building full campaigns from a single text prompt. Unlike the Symphony creative tools (which generate individual assets), Symphony Agent orchestrates the full creative pipeline: reads performance signals, writes briefs, matches creators, and coordinates across three TikTok surfaces simultaneously.
@@ -370,6 +376,22 @@ Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools 
 5. Assets go directly into your campaign library — no external tool or re-upload required
 
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
+
+## Meta Advantage+ Creative — Muse Image & Auto Text Rewrite (Jul–Q3 2026)
+
+Meta Advantage+ Creative now generates and edits ad creative natively inside Ads Manager, powered by Meta Superintelligence Labs' first in-house generation models (previously Meta licensed Midjourney and Black Forest Labs for this).
+
+- **Auto text rewrite** (default-on since July 27, 2026) — rewrites text inside uploaded ad images automatically, generating up to 8 headline variants per image while preserving font, colors, and layout; configure restricted words in Branding settings to block unwanted rewrites
+- **Muse Image** (launched July 7, 2026) — Meta's first in-house image generation model; reads a full creative brief and produces on-brand variations with fewer round trips than prompting from scratch; rolling out into Advantage+ Creative across Q3 2026 to Meta's ~8M Advantage+ advertisers (not yet at 100% rollout)
+- **Muse Video** — previewed alongside Muse Image; not yet broadly available inside Advantage+ ad tools
+
+1. Go to Meta Ads Manager → any ad set → Advantage+ Creative
+2. Text rewrite is on by default — toggle off per-enhancement, or restrict specific words in Branding settings, if you don't want auto-rewrites
+3. As Muse Image reaches your account, generate on-brand image variations from a creative brief directly inside the ad set
+4. Review auto-generated headline/text variants before publishing
+
+**Best for:** Meta-first advertisers who want native, no-cost creative variation testing without a third-party tool; brands already running Advantage+ Shopping campaigns.
+**Not ideal for:** UGC-style talking-head video ads (use Arcads, Creatify, or HeyGen); full ad production from a blank page (Advantage+ enhances/varies existing assets rather than generating a full campaign from nothing).
 
 ## Amazon Ads Creative Agent — Agentic AI for Amazon Campaigns (Feb 2026)
 

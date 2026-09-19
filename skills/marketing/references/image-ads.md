@@ -9,6 +9,7 @@
 | **Canva** | Banners, carousels, social posts | Yes (free tier) |
 | **Adobe Express** | Quick resizing, brand kits | Free tier |
 | **Nano Banana 2** | Product in lifestyle scene | Check site |
+| **Photoroom** | Product photo background removal + AI lifestyle scenes/shadows | Free tier (100 exports/mo, background remover unlimited; free-tier images not licensed for commercial use — paid from $7.50/mo billed yearly for commercial license) |
 | **Flux via fal.ai** | AI-generated product images | API credits |
 
 ### Canva Ad Creation Workflow
