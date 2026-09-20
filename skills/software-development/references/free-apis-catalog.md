@@ -16,7 +16,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 |-----|------|-----|------|
 | NASA APIs | APOD, Mars rover photos, NEO asteroids | api.nasa.gov | Free key |
 | **Open Notify** | ISS current location and number of people in space. **⚠️ Data-quality caveats (2026)** — the ISS Pass Times prediction endpoint has been discontinued; community reports note crew-list and position data can be stale (community-run, no SLA). Fine for demos, not for accuracy-critical use | open-notify.org | None |
-| SpaceX API | Launch data, rockets, missions | github.com/r-spacex/SpaceX-API | None |
+| **SpaceX API** | Launch data, rockets, missions. **⚠️ Origin repo archived (Jun 6, 2026)** — r-spacex/SpaceX-API is now read-only, and the original api.spacexdata.com endpoint has reportedly gone dark; community successors have revived the dataset, but verify current status before relying on it for anything beyond historical/demo data | github.com/r-spacex/SpaceX-API | None |
 
 ## Finance & Economics
 
@@ -101,7 +101,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
-| Google Gemini API | LLM inference (Gemini 3.5 Flash free in AI Studio — new default since May 19, 2026; daily Gemini 3.1 Pro allotment for harder reasoning), 1M token context, multimodal | ai.google.dev | Free key (generous limits) |
+| **Google Gemini API** | LLM inference — Flash and Flash-Lite models remain free in AI Studio with generous daily limits; **⚠️ Pro models pulled from the free tier (Apr 1, 2026)** — Gemini Pro is now trial-only on a free key (~50 requests/day) or paid, so use Flash/Flash-Lite for free-tier work; 1M token context, multimodal | ai.google.dev | Free key (Flash/Flash-Lite generous; Pro limited/paid) |
 | Groq | Ultra-fast LLM inference (LPU hardware); Llama 4 Scout, Llama 4 Maverick, Kimi K2 (1T MoE), Qwen3 235B, Gemma, Mistral, DeepSeek R1 and more; no credit card required | groq.com | Free key |
 | OpenRouter | Access to 100+ free AI models via one API; notable free models (July 2026): **NVIDIA Nemotron 3 Ultra** (550B MoE, 1M context, `nvidia/nemotron-3-ultra-550b-a55b:free`) and **OpenAI GPT-OSS** (20B Apache 2.0 open-weight, `openai/gpt-oss-20b:free`); 25+ free models total; 50 req/day free, 1,000/day after $10 purchase | openrouter.ai | Free key |
 | GitHub Models | 40+ AI models (GPT-4o, Llama, DeepSeek-R1, Mistral, Phi, xAI, Cohere) via OpenAI-compatible API; uses your GitHub account — no separate key or signup; free tier rate-limited (e.g. GPT-4o: 10 RPM / 50 RPD); opt-in paid tier for higher limits | github.com/features/models | GitHub account (free) |
