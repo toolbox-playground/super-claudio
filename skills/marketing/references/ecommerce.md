@@ -14,6 +14,7 @@
 1. **Create product-in-action video:**
    - If you have the product: film a 30-second demo
    - AI approach: Nano Banana 2 product scene → Figma Weave animation → ffmpeg voiceover
+   - TikTok's native tool: Seller Center → Shoppable Videos → Create Content → **AI Video Maker** (renamed from "AI Fashion Video Maker" — combines Image-to-Video and Auto-Generate Video). Upload product images/clips, optionally add a style prompt, generates 2-3 videos per run (~30-45 min). Free inside Seller Center, no separate account needed.
 
 2. **Edit in CapCut:**
    - Auto-captions → font: bold, high contrast
@@ -24,6 +25,10 @@
    - Add product tag from your TikTok Shop catalog
    - Write caption with 3-5 relevant hashtags
    - Post during peak hours (7-9pm local time typically)
+
+### List with AI (TikTok Shop)
+
+Seller Center → Manage Products → List with AI: takes product images + a short description and generates a full listing (title, description, categories) to improve search visibility on TikTok Shop. Free for sellers.
 
 ## Instagram Shop
 

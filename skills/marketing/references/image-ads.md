@@ -10,6 +10,7 @@
 | **Adobe Express** | Quick resizing, brand kits | Free tier |
 | **Nano Banana 2** | Product in lifestyle scene | Check site |
 | **Flux via fal.ai** | AI-generated product images | API credits |
+| **Grok Imagine Image 2.0** (xAI) | Ad creative with legible in-image headlines/text, layered editable output, multi-reference edits (up to 5 images) | No — paid only (SuperGrok $10-30/mo; free tier removed Mar 2026) |
 
 ### Canva Ad Creation Workflow
 

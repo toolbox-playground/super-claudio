@@ -293,6 +293,34 @@ MakeUGC generates talking-head UGC-style ads where AI actors appear to physicall
 **Best for:** Beauty, supplement, and consumer-goods brands where product-in-hand authenticity is the creative priority.
 **Not ideal for:** High-volume multi-language campaigns (use Jogg AI or Arcads for those).
 
+## UGCfy AI — Product-Link-to-UGC at Sub-$5/Video (Jul 2026)
+
+UGCfy AI (ugcfy.ai, launched July 9, 2026) generates a UGC-style ad video straight from a product link: it reads the product page, writes hooks and a script, then renders a vertical video with an AI actor in minutes — aimed at ecommerce teams running creative tests across TikTok, Meta, Instagram, Shopify, and Amazon.
+
+1. Go to ugcfy.ai
+2. Paste your product page URL
+3. UGCfy reads the page, writes hooks/script, and generates a 5-scene UGC video with an AI actor
+4. Export 9:16 or 1:1, captioned, for TikTok/Reels/Meta placements
+
+**Free tier:** None found; plans start at $59/month (one-time credit packs from $89)
+**Pricing:** ~$4–6 per 5-scene ad on subscription plans; full commercial rights included on every plan, no attribution required
+**Best for:** Ecommerce teams wanting fast, cheap creative-testing volume from existing product pages.
+**Not ideal for:** Large actor-diversity needs (use Arcads) or built-in predictive scoring before spend (use Pencil or AdCreative.ai).
+
+## CreateUGC — AutoDS-Trained Avatars for Dropshippers (2026)
+
+CreateUGC (createugc.ai), launched by AutoDS, turns a product link into a UGC-style video ad in under 60 seconds. Its avatars are trained on real ecommerce video ads from AutoDS sellers, and it integrates directly with AutoDS so dropshippers can generate ads straight from their existing product catalog.
+
+1. Go to createugc.ai (or launch it from inside AutoDS)
+2. Paste your product link or connect your AutoDS catalog
+3. Select an AI actor and review the auto-written script
+4. Generate and export the UGC-style video ad
+
+**Free tier:** 3-day free trial, 30 credits (covers video generation, video editing, and image generation)
+**Pricing:** Launch $26.90/month, Scale $39.90/month, Max $66.90/month (annual billing brings these to ~$19.90/$29.90/$49.90)
+**Best for:** Dropshippers and AutoDS users wanting UGC ads generated directly from their product catalog.
+**Not ideal for:** Non-dropshipping brands without an AutoDS catalog (use Creatify or Jogg AI for general URL-to-video instead).
+
 ## TikTok Symphony & Ad Formats — TikTok World 2026 (May 13, 2026)
 
 TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by Dreamina Seedance 2.0:
@@ -358,6 +386,20 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 **Launch partners:** HubSpot (CRM sync), Wix (storefront integration), Constant Contact (audience import), Mobvista (DSP connections)
 
 **Access:** business.tiktok.com → Agentic Hub (generally available to all TikTok for Business accounts)
+
+## Meta AI Creative Ecosystem — Advantage+ Gen AI Tools (Cannes Lions, June 2026)
+
+Meta unveiled an end-to-end AI creative ecosystem for advertisers at Cannes Lions 2026, expanding generative AI inside Ads Manager: on-image text generation and editing (not just headlines), AI translation of in-image text (5 languages: Portuguese, French, German, Italian, Indonesian), AI video voiceover translation (11 languages: Portuguese, Hindi, Arabic, German, French, Chinese, Italian, Indonesian, Polish, Dutch, Turkish), a **Brand Memory** feature that learns a company's identity/tone from its past ads to keep AI-generated creative on-brand, and a built-in creative approval workflow. **Muse Image** (Meta Superintelligence Labs' first image model, launched July 7, 2026) now powers Advantage+ image generation — it interprets full creative briefs rather than isolated keywords, plans layouts like a designer, and can generate still images directly from video assets (no separate shoot needed).
+
+1. Go to Ads Manager → Advantage+ creative (or Meta Business Suite)
+2. Enable generative AI text/image/video enhancements per ad set
+3. Use Brand Memory (limited testing) to keep generated variations on-brand
+4. Generate translated text-on-image and dubbed voiceovers for target markets in one workflow
+5. Route creative through the built-in approval flow before it goes live
+
+**Access:** Rolling out inside Ads Manager/Advantage+ for existing Meta advertisers; Brand Memory and the approval workflow are in limited testing, not yet generally available to all accounts.
+**Best for:** Meta-first advertisers wanting on-brand creative variations, multilingual localization, and less manual design work without leaving Ads Manager.
+**Not ideal for:** Avatar-led UGC video at volume (use Arcads, Creatify, or Jogg AI) or cross-platform distribution beyond Meta (use Synter or AdStellar).
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
