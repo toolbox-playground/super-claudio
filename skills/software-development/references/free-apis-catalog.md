@@ -15,7 +15,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | API | What | URL | Auth |
 |-----|------|-----|------|
 | NASA APIs | APOD, Mars rover photos, NEO asteroids | api.nasa.gov | Free key |
-| Open Notify | ISS current location | open-notify.org | None |
+| **Open Notify** | ISS current location and number of people in space. **⚠️ Data-quality caveats (2026)** — the ISS Pass Times prediction endpoint has been discontinued; community reports note crew-list and position data can be stale (community-run, no SLA). Fine for demos, not for accuracy-critical use | open-notify.org | None |
 | SpaceX API | Launch data, rockets, missions | github.com/r-spacex/SpaceX-API | None |
 
 ## Finance & Economics
@@ -23,7 +23,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | API | What | URL | Auth |
 |-----|------|-----|------|
 | Open Exchange Rates | Currency exchange rates | openexchangerates.org | Free key |
-| CoinGecko | Crypto prices and data | coingecko.com/api | None (rate limited) |
+| **CoinGecko** | Crypto prices and data. **⚠️ Demo key now effectively required (2026)** — a fully keyless public endpoint still exists but is heavily rate-limited (~10-30 calls/min); CoinGecko now issues a free "Demo" API key (100 calls/min, ~10,000 calls/month) for practical use, no credit card needed | coingecko.com/api | Free key (Demo) recommended; keyless still works but is rate-limited |
 | Alpha Vantage | Stock market data | alphavantage.co | Free key |
 | DexScreener | Real-time and historical DEX trading pair data across Solana, ETH, BSC, and 50+ chains; WebSocket push; no key required; covers on-chain prices, volume, and liquidity that CoinGecko doesn't | docs.dexscreener.com/api/reference | None |
 | **Frankfurter** | Exchange rates sourced from 84 central banks; 201 currencies; historical data back to 1948; JSON + CSV responses; no auth, no monthly/daily caps; self-hostable (Docker) | frankfurter.dev | None |
@@ -107,6 +107,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | GitHub Models | 40+ AI models (GPT-4o, Llama, DeepSeek-R1, Mistral, Phi, xAI, Cohere) via OpenAI-compatible API; uses your GitHub account — no separate key or signup; free tier rate-limited (e.g. GPT-4o: 10 RPM / 50 RPD); opt-in paid tier for higher limits | github.com/features/models | GitHub account (free) |
 | Cerebras Inference | Ultra-fast LLM inference on wafer-scale silicon (2,600+ tok/s); Llama 3.3 70B, Qwen3 32B/235B, and more; 1M tokens/day free, no credit card required; 30 RPM on free tier | inference.cerebras.ai | Free key |
 | Cloudflare Workers AI | Edge AI inference at 300+ global locations; Llama 3.1 8B, Mistral 7B, Phi-2, Gemma, SDXL (image gen), Whisper (ASR), and 40+ models; 10,000 neurons/day free (no credit card required); unique low-latency for globally distributed apps | developers.cloudflare.com/workers-ai | CF account (free) |
+| **Mistral AI (La Plateforme)** | Free rate-limited "Experiment" tier with access to Mistral's model lineup (incl. Mistral Large and Codestral) for evaluation/prototyping; not for production traffic; no credit card required to start | mistral.ai | Free key |
 
 ## Security
 
