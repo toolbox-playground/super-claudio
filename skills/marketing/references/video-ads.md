@@ -265,6 +265,21 @@ AdsTurbo (adsturbo.ai, launched March 20, 2026) specializes in high-volume UGC-s
 **Best for:** Performance marketers who want to quickly clone + remix winning competitor ad structures; teams needing large A/B test batches with different hooks, CTAs, avatars, and languages without re-uploading assets.
 **Not ideal for:** Highest-volume multi-actor campaigns at scale (use Arcads); URL-to-video with TikTok Ad Library research built in (use Topview AI); predictive scoring before spend (use Pencil or AdCreative.ai).
 
+## Wireflow — Node-Based UGC Ad Workflow Canvas (Reusable Systems, Not One-Off Clips)
+
+Wireflow (wireflow.ai) takes a different approach from single-prompt generators like Arcads or Creatify: it's a node-based AI canvas where you wire together the steps of an ad production pipeline — brief → hook → script → avatar/product visual → video model → voice → captions → final assembly — save it as a reusable workflow, then re-run the same graph with new inputs. It also runs 30+ image/video/audio models in the cloud (no local GPU needed) and can publish a saved graph as a REST endpoint or MCP tool for programmatic/agentic use.
+
+1. Go to wireflow.ai
+2. Build a workflow on the node canvas (or start from a community template): connect brief → script → avatar/visual → video model → voice → captions → assembly nodes
+3. Save the graph — the format stays fixed while you swap the variable (new product, new hook, new script)
+4. Re-run the same workflow across batches to generate consistent-format variants for A/B testing
+5. (Optional) Publish the workflow as an API/MCP endpoint to trigger generation programmatically
+
+**Free tier:** Yes (build workflows, browse community gallery, no credit card required)
+**Pricing:** Free ($0), Starter ($24/month), Professional ($45/month), Team ($249/month) — usage-based credits on top of each tier; top-up credits available
+**Best for:** Agencies and growth teams that want a repeatable production *system* (same structure, swapped variables) rather than a single-purpose generator — plus teams wanting programmatic/MCP access to chain models.
+**Not ideal for:** Solo users wanting the fastest single ad with zero setup (use Arcads or Creatify — Wireflow's node canvas has a steeper initial setup).
+
 ## Jogg AI — URL-to-Video with 450+ Avatars ($15/mo Entry)
 
 Jogg AI generates UGC-style video ads from a product URL — 450+ stock AI avatars, multilingual voiceovers in 200+ languages, and batch mode for up to 100 video variations in minutes. 95,000+ creators and brands.
@@ -295,12 +310,12 @@ MakeUGC generates talking-head UGC-style ads where AI actors appear to physicall
 
 ## TikTok Symphony & Ad Formats — TikTok World 2026 (May 13, 2026)
 
-TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by Dreamina Seedance 2.0:
+TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by Dreamina Seedance 2.5 (upgraded from 2.0 on August 3, 2026):
 - **Script Generator** — briefs → ad scripts aligned with trending hooks
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
-- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Video Generation** — powered by Dreamina Seedance 2.5 (better product consistency, more natural motion, less manual correction post-gen). The 2.5 upgrade (rolling out to select paid advertisers) doubles max clip length to 30 seconds (from 15s), raises multi-modal reference uploads to 50 (from 9) with timestamp-specific creative direction, and sharpens visual quality/character consistency.
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
@@ -361,13 +376,15 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
-Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
+Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads, integrating Gemini, Veo 3.1, and Nano Banana Pro for image and video generation. **Gemini Omni** (announced at #GML2026, rolled out globally starting August 2026) added multimodal video creation direct from a text brief:
 
 1. Open Google Ads → Asset Studio
 2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image
 3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images
-4. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
-5. Assets go directly into your campaign library — no external tool or re-upload required
+4. **Gemini Omni** (live since Aug 2026): describe a brief in natural language (brand guidelines + landing page URL, or existing static assets) and it generates full video storyboards and motion scenes, output in both 16:9 and 9:16 simultaneously — no separate production pass per placement
+5. **1-Click Creative Testing** (GML 2026): auto-generates and launches creative variants for A/B testing directly from Asset Studio
+6. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
+7. Assets go directly into your campaign library (Demand Gen, Performance Max, YouTube) — no external tool or re-upload required
 
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
 
