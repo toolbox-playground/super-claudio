@@ -10,6 +10,7 @@
 | **Adobe Express** | Quick resizing, brand kits | Free tier |
 | **Nano Banana 2** | Product in lifestyle scene | Check site |
 | **Flux via fal.ai** | AI-generated product images | API credits |
+| **Grok Imagine Image 2.0** (xAI) | Ad-relevant templates: product shots, ecommerce listings, marketing posters, UGC images, merchandise design; multi-reference editing (up to 5 images), transparent-bg removal, strong typography/layout handling | Grok subscription (Quality Mode); free tier limited/unstable |
 
 ### Canva Ad Creation Workflow
 

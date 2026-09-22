@@ -84,16 +84,18 @@ Predis.ai generates content designed to look like organic posts, then runs them 
 
 Best for: brands wanting native-feel TikTok ads with lower CPM through Spark Ads.
 
-## Lapis — Best AI Ad Generator for TikTok (2026)
+## Lapis — AI Ad Generator, Now 6 Platforms (2026)
 
-Lapis is purpose-built for TikTok, auto-sizing creatives for vertical-first placements (9:16, 1:1) with built-in performance forecasting and visuals tuned to TikTok's native aesthetic.
+Lapis started purpose-built for TikTok, auto-sizing creatives for vertical-first placements (9:16, 1:1) with built-in performance forecasting and visuals tuned to TikTok's native aesthetic.
 
 1. Go to trylapis.com
 2. Input product details or URL
-3. Select TikTok ad format
+3. Select ad format/platform
 4. Generate scroll-stopping visuals optimized for the platform algorithm
 
-Best for: high-volume TikTok campaigns with creative performance scoring.
+**2026 update:** Lapis expanded beyond TikTok — now generates ad creative for 6 platforms (Meta, Google, LinkedIn, TikTok, WhatsApp, ChatGPT Ads) from a single prompt, with native ChatGPT Ads format support (headline ≤50 chars, description ≤100 chars, thumbnail-sized images) and forecasting trained on 10,000+ campaigns.
+
+Best for: high-volume TikTok campaigns with creative performance scoring; now also a single-prompt option for teams running the same creative across 6 platforms.
 
 ## AdCreative.ai — Predictive Scoring for High-Volume Campaigns
 
@@ -179,7 +181,7 @@ Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors
 4. Generate the video — output is virtually indistinguishable from real UGC in scroll tests
 5. Download and deploy directly to Meta/TikTok Ads Manager
 
-**Pricing:** Starts at $110/month (Starter — 10 videos); $220/month (Creator — 20 videos); no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
+**Pricing:** Starts at $110/month (Starter — 10 videos); $220/month (Creator — 20 videos); new **Lite plan ($29/month, 1,800 credits)** for short model-generated clips (no talking actors); no free trial (voice preview available before purchase). A 30% "limited-time" promo was running as of Aug 2026 ($77/$154/$385 vs. list) — check current pricing at arcads.ai before quoting. Best for brands running systematic UGC ad testing across many audience segments.
 
 ## Pose Video Studio — Identity-Consistent UGC from Your Own Face
 
@@ -401,9 +403,24 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 **Best for:** B2B brands running LinkedIn campaigns who want faster variant generation and consistent brand voice without manual design work per variant.
 **Not ideal for:** Consumer / DTC advertising (LinkedIn CPMs are high; use TikTok Symphony or Meta Advantage+ for lower-funnel consumer campaigns).
 
+## OpenAI Ads (ChatGPT Ads) — New Ad Platform Inside ChatGPT (May–Aug 2026)
+
+OpenAI opened a self-serve ads platform for ChatGPT on May 6, 2026, then expanded to Spain and 30+ European countries on August 24, 2026. Ads appear as "Sponsored" cards below ChatGPT's answer (never inside it), matched to conversation context; only free-tier ChatGPT users (Free/Go) see them — all paid plans (Plus/Pro/Business/Enterprise/Edu) stay ad-free.
+
+1. Go to ads.openai.com → create an advertiser account (email, business details, tax ID/EIN, billing, landing page)
+2. Build a text ad: headline + description + landing page
+3. Bid via relevance-weighted, second-price auction (CPC/CPM) — entry bids ~$3-5/click, CPMs ~$25-60
+4. Launch — reporting is aggregated (not conversation-level); personal user data isn't shared with advertisers
+
+**Pricing:** No platform fee; auction-based CPC/CPM as above.
+**Best for:** First-mover presence in AI-answer-engine advertising; complements Google/Meta/TikTok rather than replacing them.
+**Not ideal for:** Rich video/avatar creative (text + limited image only) — pair with Creatify/Arcads for video assets elsewhere.
+
 ## Higgsfield — Cinema Studio Platform
 
 Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.0, Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace, with Cinema Studio 3.5 adding 70+ cinematic camera presets and Soul ID for cross-shot character consistency.
+
+**2026 update:** Higgsfield expanded to 120+ models (Sora 2, Veo 3.1, Kling 3.0, Seedance 2.5, WAN 2.6, MiniMax Hailuo 02, etc. — up from ~15) and added Seedance 2.5 (up from 2.0). A public Developer API ("Open Higgsfield AI") now lets teams embed Higgsfield generation in external apps/workflows.
 
 When you need the highest realism (luxury products, fashion):
 1. Prepare a high-quality product/lifestyle image
