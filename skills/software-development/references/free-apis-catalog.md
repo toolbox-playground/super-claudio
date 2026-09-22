@@ -71,6 +71,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 |-----|------|-----|------|
 | Unsplash | Millions of free high-quality stock photos | api.unsplash.com | Free key |
 | Picsum Photos | Random placeholder images by size | picsum.photos | None |
+| **Pexels API** | Free stock photos & videos, full library, commercial use allowed, no attribution legally required; 200 req/hour, 20,000 req/month default (higher limits free on request with attribution) | pexels.com/api | Free key |
 
 ## Domains
 
@@ -107,12 +108,14 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | GitHub Models | 40+ AI models (GPT-4o, Llama, DeepSeek-R1, Mistral, Phi, xAI, Cohere) via OpenAI-compatible API; uses your GitHub account — no separate key or signup; free tier rate-limited (e.g. GPT-4o: 10 RPM / 50 RPD); opt-in paid tier for higher limits | github.com/features/models | GitHub account (free) |
 | Cerebras Inference | Ultra-fast LLM inference on wafer-scale silicon (2,600+ tok/s); Llama 3.3 70B, Qwen3 32B/235B, and more; 1M tokens/day free, no credit card required; 30 RPM on free tier | inference.cerebras.ai | Free key |
 | Cloudflare Workers AI | Edge AI inference at 300+ global locations; Llama 3.1 8B, Mistral 7B, Phi-2, Gemma, SDXL (image gen), Whisper (ASR), and 40+ models; 10,000 neurons/day free (no credit card required); unique low-latency for globally distributed apps | developers.cloudflare.com/workers-ai | CF account (free) |
+| **Mistral AI (La Plateforme)** | Free "Experiment" tier for all models incl. Mistral Large and Codestral (code-specialized); ~1B tokens/month cap, rate-limited for eval/prototyping not production; no credit card charged | console.mistral.ai | Free account (email/OAuth + phone verification) |
 
 ## Security
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
 | Have I Been Pwned — Pwned Passwords | Check any password against 800M+ entries from real data breaches using k-anonymity (submit only the first 5 chars of its SHA-1 hash — the server never sees the full hash); no rate limit, no auth; returns matching hash suffixes with breach occurrence counts | haveibeenpwned.com/API/v3 | None |
+| **VirusTotal Public API** | Scan/lookup files, URLs, domains, IPs against 70+ AV engines and threat intel; 4 req/min, 500 req/day; ToS forbids commercial/business-workflow use — research/personal only | virustotal.com/api | Free key |
 
 ## Resources for Finding More
 
