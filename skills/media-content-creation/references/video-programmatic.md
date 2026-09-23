@@ -13,6 +13,15 @@ npx create-video@latest
 # choose a template: Hello World, Blank, or from remotion.dev/templates
 ```
 
+**Agent Skills (Claude Code integration):**
+Remotion ships an official Agent Skills bundle — modular rule files that teach coding agents
+(Claude Code, Codex CLI, Cursor) correct Remotion patterns: sequences, transitions, spring
+physics/interpolation, and audio integration. Install inside a Remotion project, then start
+Claude Code from that same directory so it follows Remotion's conventions instead of guessing:
+```bash
+npx remotion skills add
+```
+
 **Templates worth knowing:**
 - `remotion.dev/templates` — starter templates including social media formats
 - Emoji/motion graphics templates — great for fun WhatsApp/Instagram shares
