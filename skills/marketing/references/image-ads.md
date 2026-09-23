@@ -10,6 +10,7 @@
 | **Adobe Express** | Quick resizing, brand kits | Free tier |
 | **Nano Banana 2** | Product in lifestyle scene | Check site |
 | **Flux via fal.ai** | AI-generated product images | API credits |
+| **AdCreative.ai** | High-converting static/carousel ads with predictive CTR/conversion scoring | Trial only (from $39/mo) |
 
 ### Canva Ad Creation Workflow
 

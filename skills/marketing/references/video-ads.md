@@ -138,6 +138,20 @@ AdStellar combines ad creative generation, campaign launch, and performance opti
 
 Best for: performance marketers and agencies who want creative generation, campaign building, and optimization in one place.
 
+## Smartly.io — Enterprise Cross-Channel Creative Automation (10+ Platforms)
+
+Smartly.io is an enterprise-grade advertising platform for high-spend teams running creative automation across Meta, Google, TikTok, Pinterest, Snapchat, Amazon, Reddit, Spotify, YouTube, and 200+ CTV streaming services from one interface. Its AI Studio (launched 2025) has generated 1.9M+ creative assets across 260+ customers, with a documented 27% average performance lift over static creatives.
+
+1. Go to smartly.io and request a demo (no self-serve signup — sales-led onboarding)
+2. Connect ad accounts across your active channels
+3. Upload brand assets and performance data — AI Studio analyzes them alongside audience segments
+4. Generate dynamic creative variants (image, video, carousel) that auto-adapt based on real-time performance
+5. Launch and optimize centrally across all connected channels from one dashboard
+
+**Pricing:** Custom, quote-based — typically 2–4% of ad spend plus a $4,000–5,000/month minimum; built for advertisers spending $50K+/month (roughly $250K+/year).
+**Best for:** Enterprise brands and agencies running 50+ creative variants across many channels simultaneously, including CTV and Spotify, which most AI ad tools in this list don't touch.
+**Not ideal for:** Solo operators, small ecommerce brands, or anyone under ~$50K/month ad spend — use AdStellar, Pencil, or Creatify instead for a much lower cost of entry.
+
 ## ElevenLabs Ads Engine — Global Ad Localization Across 50+ Languages (Jun 2026)
 
 ElevenLabs Ads Engine (launched June 22, 2026) localizes existing ad creatives across 50+ languages — adapting text, images, and video (dubbing) in one workflow and pushing the localized versions directly back to Google Ads and Meta. It does not generate ads from scratch; it scales proven creatives globally with near-zero production cost per new market.
@@ -367,7 +381,8 @@ Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools 
 2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image
 3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images
 4. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
-5. Assets go directly into your campaign library — no external tool or re-upload required
+5. **Video Ads Dubbing** (rolling out Sep 2026): AI-dubs existing video creative into 33 languages and locales directly inside Asset Studio — free for select users during rollout, availability still limited
+6. Assets go directly into your campaign library — no external tool or re-upload required
 
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
 
