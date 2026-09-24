@@ -61,6 +61,8 @@ UGC-native output style consistently outperforms polished brand ads on TikTok.
 
 Topview AI converts product URLs (Amazon, eBay, Shopify, Etsy, AliExpress) into TikTok/Reels video ads. Distinguishing features: a built-in TikTok Ad Library browser for competitor creative research and a closed-loop performance system that ingests real conversion data and auto-generates fresh variants based on what actually worked.
 
+**Topview Avatar 2 (May 2026):** upgraded avatars from basic hand-held product shots to full-body interaction — avatars can wear, sit on, and showcase products (walk in outfits, try on sunglasses, sit on furniture), not just hold them. Includes pixel-perfect product/logo rendering and voiceovers in 20+ languages.
+
 1. Go to topview.ai
 2. Paste product URL (auto-pulls images + description) or upload assets
 3. Browse built-in TikTok Ad Library to study competitor patterns and select creative references
@@ -292,6 +294,35 @@ MakeUGC generates talking-head UGC-style ads where AI actors appear to physicall
 **Pricing:** $49/month Startup (5 videos), $69/month Growth (10 videos), $119/month Pro (20 videos)
 **Best for:** Beauty, supplement, and consumer-goods brands where product-in-hand authenticity is the creative priority.
 **Not ideal for:** High-volume multi-language campaigns (use Jogg AI or Arcads for those).
+
+## CraftStory — Photo-to-Talking-Video UGC with a Real Free Plan
+
+CraftStory (built by the team behind OpenCV, the open-source computer-vision library) turns a single photo into a talking, lip-synced UGC-style video — no filming required — or lets you pick from 100+ AI creators instead. Positioned as a lower-cost alternative to HeyGen/Arcads for UGC ad variant testing, with a genuinely usable free tier (not just a watermarked trial).
+
+1. Go to craftstory.com
+2. Upload one photo (yours or a stock creator) or choose from 100+ AI creators
+3. Write or paste a script — CraftStory lip-syncs and adds natural gestures
+4. Generate multiple UGC ad variants from the same photo/script for A/B testing
+5. Export for TikTok, Reels, or Meta ads
+
+**Free tier:** Yes — 3 AI Actor videos/month, 720p, up to 3 minutes, no credit card required
+**Pricing:** Indie $19/month, Producer $34/month (Indie $14/mo, Producer $24/mo billed annually); pay-as-you-go credit packs also available ($5 for 150 credits)
+**Best for:** Solo creators and small brands wanting a real free tier plus a cheap paid tier for UGC ad variant testing.
+**Not ideal for:** High-volume multi-actor campaigns at scale (use Arcads); product-in-hand realism specifically (use MakeUGC).
+
+## Meta Advantage+ Creative — Muse Image (Jul 2026)
+
+Meta introduced Muse Image (announced July 2026), its first in-house image generation model from Meta Superintelligence Labs, as the new engine powering Advantage+ Creative's existing image tools: background generation/expansion, image touch-up, text generation, and on-brand variations generated directly from an advertiser's existing creative assets. It's a model swap under a feature advertisers already have, not a new standalone product, rolling out through Q3 2026 to Advantage+ Creative's ~8 million advertisers.
+
+1. In Meta Ads Manager, open a Sales, Leads, or App Promotion campaign (Advantage+ Creative enhancements are on by default since Feb 2026)
+2. Upload your base creative (product photo or existing ad image)
+3. Muse Image generates background variations, expands/touches up the image, and produces on-brand variants with fewer manual iterations than before
+4. Meta auto-tests the variants across placements
+
+**Pricing:** No separate cost — included in standard Meta Ads spend via Advantage+ Creative
+**Disclosure requirement:** Since March 2026, Meta requires disclosure on ads containing AI-generated or AI-modified content; skipping this is a common cause of ad rejections.
+**Best for:** Advertisers already running Meta campaigns who want AI-assisted image variation without leaving Ads Manager.
+**Not ideal for:** Full video ad generation from scratch (use Creatify, Arcads, or AdStellar); non-Meta placements.
 
 ## TikTok Symphony & Ad Formats — TikTok World 2026 (May 13, 2026)
 
