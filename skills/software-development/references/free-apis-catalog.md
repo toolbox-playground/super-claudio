@@ -86,6 +86,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | **Bluesky API (AT Protocol)** | Read/write posts, timelines, user data, follows; permissive free rate limits; growing developer community after X went paid | atproto.com | Free account |
 | **Threads API (Meta)** | Post, read replies, manage media; free developer access; rate limits generous for indie devs | developers.facebook.com/docs/threads | Free account |
 | **X (Twitter) API** | **⚠️ No longer free (Feb 6, 2026)** — reading a tweet costs $0.005, posting $0.015; full-archive search from $42K/month enterprise. Use Bluesky/Threads instead for social data at no cost. | developer.x.com | Paid only |
+| **Arctic Shift** | Free, unauthenticated archive/search API for Reddit posts and comments (open-source successor to Pushshift) — useful now that Reddit's own API charges for most commercial use; endpoints for search, ID lookup, and full comment trees; also ships bulk Parquet dumps on Hugging Face | arctic-shift.photon-reddit.com | None |
 
 ## Developer Utilities
 
@@ -101,11 +102,11 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
-| Google Gemini API | LLM inference (Gemini 3.5 Flash free in AI Studio — new default since May 19, 2026; daily Gemini 3.1 Pro allotment for harder reasoning), 1M token context, multimodal | ai.google.dev | Free key (generous limits) |
-| Groq | Ultra-fast LLM inference (LPU hardware); Llama 4 Scout, Llama 4 Maverick, Kimi K2 (1T MoE), Qwen3 235B, Gemma, Mistral, DeepSeek R1 and more; no credit card required | groq.com | Free key |
-| OpenRouter | Access to 100+ free AI models via one API; notable free models (July 2026): **NVIDIA Nemotron 3 Ultra** (550B MoE, 1M context, `nvidia/nemotron-3-ultra-550b-a55b:free`) and **OpenAI GPT-OSS** (20B Apache 2.0 open-weight, `openai/gpt-oss-20b:free`); 25+ free models total; 50 req/day free, 1,000/day after $10 purchase | openrouter.ai | Free key |
-| GitHub Models | 40+ AI models (GPT-4o, Llama, DeepSeek-R1, Mistral, Phi, xAI, Cohere) via OpenAI-compatible API; uses your GitHub account — no separate key or signup; free tier rate-limited (e.g. GPT-4o: 10 RPM / 50 RPD); opt-in paid tier for higher limits | github.com/features/models | GitHub account (free) |
-| Cerebras Inference | Ultra-fast LLM inference on wafer-scale silicon (2,600+ tok/s); Llama 3.3 70B, Qwen3 32B/235B, and more; 1M tokens/day free, no credit card required; 30 RPM on free tier | inference.cerebras.ai | Free key |
+| Google Gemini API | LLM inference via AI Studio — free tier now covers **Flash/Flash-Lite models only** (Gemini 3.5/3.6/3.7/3.8 Flash, Flash-Lite); Google removed Pro-series models (Gemini 2.5 Pro, 3 Pro, 3.1 Pro) from the free tier on April 1, 2026, Pro is paid-only now; 1M token context, multimodal; free-tier prompts may be used by Google to improve its products | ai.google.dev | Free key |
+| Groq | Ultra-fast LLM inference (LPU hardware); free tier includes GPT-OSS 120B/20B, Qwen3, Whisper (ASR), and Compound models at ~30 RPM, no credit card required; **note:** Llama 3.1 8B and Llama 3.3 70B were pulled from the free tier on Aug 16, 2026 (now enterprise-only) — check console.groq.com/docs/models for the current free lineup | groq.com | Free key |
+| OpenRouter | Access to dozens of free AI models via one API; the free lineup rotates (e.g. NVIDIA Nemotron 3 Ultra, `nvidia/nemotron-3-ultra-550b-a55b:free`, was still free as of Sept 2026); 20 req/min, 50 req/day free, 1,000/day after $10 lifetime credit purchase | openrouter.ai | Free key |
+| ~~GitHub Models~~ | **Discontinued.** GitHub fully retired GitHub Models (playground, catalog, inference API, BYOK) on July 30, 2026, after closing it to new customers on June 16, 2026. GitHub points migrating developers to Microsoft/Azure AI Foundry instead. | — | — |
+| Cerebras Inference | Ultra-fast LLM inference on wafer-scale silicon (2,600+ tok/s); Llama 3.3 70B, Qwen3 32B/235B, and more. **⚠️ No longer free without a card (since July 16, 2026)** — new accounts get $5 in trial credit, valid 30 days, only after adding a verified payment method; the old no-card daily free allotment is gone | inference.cerebras.ai | Card required (trial credit) |
 | Cloudflare Workers AI | Edge AI inference at 300+ global locations; Llama 3.1 8B, Mistral 7B, Phi-2, Gemma, SDXL (image gen), Whisper (ASR), and 40+ models; 10,000 neurons/day free (no credit card required); unique low-latency for globally distributed apps | developers.cloudflare.com/workers-ai | CF account (free) |
 
 ## Security
