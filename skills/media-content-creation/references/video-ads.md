@@ -49,6 +49,8 @@ Tool for generating ad-optimized product images:
 4. Upload to TikTok with Shop product tag
 5. Add affiliate/shop link in description
 
+**Free built-in alternative:** TikTok Seller Center → Shoppable Videos → Create Content → AI Video Maker generates shoppable videos directly from product photos at no cost (no external tool needed) — good for a quick first pass before investing in the fuller Nano Banana 2 / Figma Weave pipeline above. Note: TikTok Shop requires a visible "AI-generated content" label on any listing image/video with an AI-generated scene, model, or background, even when the product itself is real.
+
 ## Platform Specs
 
 | Platform | Aspect Ratio | Duration | File |
