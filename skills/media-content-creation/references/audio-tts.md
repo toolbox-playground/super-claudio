@@ -68,7 +68,7 @@ with open("output.mp3", "wb") as f:
 
 ## ElevenLabs v4 — Previewed at ElevenSummit Warsaw (Not Yet Released)
 
-ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
+ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of late September 2026, v4 still has **not been released** — no model ID, API endpoint, or confirmed release date, though it continues to be tracked for H2 2026. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. In the meantime, ElevenLabs shipped other updates (e.g. Studio 4.0 for ElevenCreative, Sept 21, 2026, and Scribe v2 Medical, a clinical-audio STT model) that are not v4 itself. Check elevenlabs.io/changelog for the GA announcement.
 
 
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
@@ -84,13 +84,14 @@ ElevenLabs Flash is the speed-optimized sibling of Eleven v3, purpose-built for 
 - **Best for:** Voice agents, chatbots, real-time assistants where latency trumps emotional range
 - **Not ideal for:** Long-form narration or expressive delivery — use Eleven v3 for those
 
-## Inworld Realtime TTS-2 — Closed-Loop Conversational TTS (NEW May 2026)
+## Inworld Realtime TTS-2 — Closed-Loop Conversational TTS (Updated to GA Aug 2026)
 
-Inworld Realtime TTS-2 (launched May 5, 2026) is a fundamentally different architecture from TTS-1.5: it takes the actual audio of prior conversation turns as input — not just text — so it understands tone, pacing, and emotional context from everything that was said before. Ranked **#4 on the Artificial Analysis Speech Arena** (Elo ~1,203, July 2026; was #3 at Elo 1,209 in June 2026).
+Inworld Realtime TTS-2 (first launched May 5, 2026; reached general availability August 31, 2026 alongside a new faster **TTS-2 Flash** sibling) is a fundamentally different architecture from TTS-1.5: it takes the actual audio of prior conversation turns as input — not just text — so it understands tone, pacing, and emotional context from everything that was said before. As of September 2026 it leads the **Artificial Analysis Controlled Voice Arena at #1 (Elo 1,123)**, narrowly ahead of Cartesia Sonic 3.6 (1,119), and holds **#2 on the Provider Voice Arena (Elo 1,252)** behind Sonic 3.6 (1,282). Pricing dropped substantially at GA.
 
 - **URL:** inworld.ai
-- **Free tier:** 40 minutes/month (On-Demand plan)
-- **Pricing:** $35/1M characters (On-Demand); $25/1M characters (Growth plan)
+- **Free tier:** 40 minutes/month (On-Demand plan) — still available
+- **Pricing (post-GA, Sept 2026):** $25/1M characters (On-Demand, down from $35); $12.50/1M characters (Growth plan, down from $25); as low as $5/1M at enterprise scale
+- **TTS-2 Flash variant:** faster, higher-volume sibling — $15/1M On-Demand, $7/1M at scale, before custom enterprise pricing
 - **Latency:** <200ms median TTFA; sub-250ms P90
 - **Languages:** 100+ with mid-utterance language switching (same voice identity preserved across every language)
 - **Voice direction:** Inline bracket tags — `[speak sadly]`, `[excited, fast-paced]` — passed directly in the text at inference time
@@ -103,6 +104,8 @@ Inworld Realtime TTS-2 (launched May 5, 2026) is a fundamentally different archi
 ## Inworld AI TTS-1.5 Max — #2 Artificial Analysis TTS Arena (Elo 1,238, July 2026)
 
 Inworld TTS-1.5 Max held #1 on the Artificial Analysis Speech Arena in July 2026 before Speechify SIMBA 3.2 surpassed it (**#2, Elo 1,238**; Inworld models also hold #3 and #4). Wins blind tests for naturalness, emotional range, and conversational flow at sub-200ms streaming latency. TTS-2 (above) is the pick for real-time conversational use; TTS-1.5 Max is the recommended pick for non-conversational voiceover production needing top-quality results.
+
+> **Update (Sept 2026):** The top of the leaderboard has moved on again — Cartesia Sonic 3.6 now leads the Provider Voice Arena and Inworld's own Realtime TTS-2 leads the Controlled Voice Arena (see their entries above). TTS-1.5 Max's current standing on the refreshed two-arena leaderboard was not independently reconfirmed for this update.
 
 - URL: inworld.ai
 - Free tier: 40 minutes/month
@@ -179,17 +182,18 @@ Hume Octave 2 is the first TTS model built on a language model backbone that tru
 - **Best for:** Dramatic narration, character voices, emotionally nuanced dialogue, marketing voiceovers where delivery matters
 - **Not ideal for:** High-volume bulk generation (Kokoro / edge-tts are cheaper at scale); on-device deployment (use NeuTTS Air)
 
-## Cartesia Sonic 3.5 — #2 Artificial Analysis TTS Arena, Real-Time Conversational TTS
+## Cartesia Sonic 3.6 — #1 Artificial Analysis Provider Voice Arena (NEW Aug 2026)
 
-Cartesia Sonic 3.5 (upgraded May 2026) is purpose-built for real-time conversational AI with ~40ms time-to-first-audio — the standard pick for voice agents and chatbots. Sonic 3.5 improves on Sonic 3 with noticeably more natural voices, better stability through long calls, and more consistent pronunciation of difficult words and names. **Ranked #2 on the Artificial Analysis Speech Arena (Elo ~1,211, July 2026)** — a notable rise, combining both fast latency and top-tier quality. The upgrade applies automatically to all existing Cartesia integrations.
+Cartesia shipped Sonic 3.6 on August 27, 2026 (GA; beta from Aug 17) — just three months after Sonic 3.5 — with a step change in naturalness and expressiveness across 44 languages (61 locales, including new Odia and Urdu support; 500+ preset voices). Listeners preferred it over Sonic 3.5 in up to 93% of blind head-to-head tests across fifteen locales. It leads the **Artificial Analysis Provider Voice Arena at #1 (Elo 1,282, September 2026)**, ahead of Inworld Realtime TTS-2 (1,252) and Qwen-Audio-3.0-TTS-Plus (1,241); on Artificial Analysis's separate **Controlled Voice Arena** it holds #2 (Elo 1,119) just behind Inworld Realtime TTS-2 (1,123), which overtook it there about a month after launch. The upgrade applies automatically to existing Cartesia integrations.
 
-- URL: cartesia.ai
-- Free tier available
-- Latency: ~40ms TTFA (best-in-class for streaming)
-- Languages: 42
-- Elo: ~1,211 — **#2 globally (Artificial Analysis Speech Arena, July 2026)**
-- Best for: voice agents, live chatbots, real-time assistants — now competitive on quality benchmarks as well as latency
-- Not ideal for: long-form content where ElevenLabs, Fish Audio, or Chatterbox are better
+- **URL:** cartesia.ai
+- **Free tier:** Yes — $0 plan, ~27 TTS minutes/month (~20,000 credits)
+- **Paid tiers:** Pro $5/mo (~133 min); Startup $49/mo (~1,667 min); Scale $299/mo (~10,667 min); custom Enterprise
+- **Latency:** Low-latency streaming, Cartesia's long-standing hallmark (Sonic 3.5 measured ~40ms TTFA; not independently re-benchmarked for 3.6)
+- **Languages:** 44 languages / 61 locales (added Odia, Urdu in this release)
+- **Elo:** 1,282 — **#1 globally on the Provider Voice Arena** (Artificial Analysis, Sept 2026); 1,119 — **#2 on the Controlled Voice Arena**, just behind Inworld Realtime TTS-2
+- **Best for:** voice agents, live chatbots, real-time assistants — now competitive on quality benchmarks as well as latency; broadest locale coverage among top-tier models
+- **Not ideal for:** long-form content where ElevenLabs, Fish Audio, or Chatterbox are better
 
 ## OpenAI GPT-Realtime-2 — Voice Reasoning Model, GPT-5-Class Intelligence (May 2026)
 
@@ -262,7 +266,8 @@ Alibaba's Qwen-Audio-3.0-TTS-Plus (distinct from the open-source Qwen3-TTS liste
 - **Free tier:** Alibaba Cloud trial credits on new accounts; no permanent free tier
 - **Generation speed:** ~16 chars/sec — significantly slower than Sonic 3.5 (~120 chars/sec) and SIMBA 3.2 (~30 chars/sec); note for throughput-sensitive pipelines
 - **Best for:** Applications prioritizing top benchmark quality; developers already in the Alibaba Cloud / DashScope ecosystem
-- **Not ideal for:** Ultra-low-latency agents (use Cartesia Sonic 3.5 at ~40ms TTFA); high-throughput batch generation (use SIMBA 3.2 or Kokoro); offline/on-device deployment (use NeuTTS Air)
+- **Not ideal for:** Ultra-low-latency agents (use Cartesia Sonic 3.6 at ~40ms TTFA); high-throughput batch generation (use SIMBA 3.2 or Kokoro); offline/on-device deployment (use NeuTTS Air)
+- **Update (Sept 2026):** Cartesia Sonic 3.6 (Provider Voice Arena, Elo 1,282) and Inworld Realtime TTS-2 (Controlled Voice Arena, Elo 1,123) have since taken the top spots on Artificial Analysis's now-separate arenas; Qwen-Audio-3.0-TTS-Plus's current relative position was not independently reconfirmed for this update.
 
 ## Speechify SIMBA 3.2 — #2 Artificial Analysis TTS Arena at $10/1M Characters (Mid-July 2026)
 
@@ -274,7 +279,8 @@ Speechify SIMBA 3.2 (July 2026) reached **#1 on the Artificial Analysis TTS Aren
 - **Latency:** <250ms TTFA (streaming-native)
 - **Features:** Fine-grained emotional control at the prosody level (rhythmic and tonal patterns), SSML prosody support, zero-shot voice cloning from short reference clips, 30+ locales, mixed-language input handled automatically
 - **Best for:** Cost-sensitive high-volume production TTS needing #1 quality; enterprises benchmarking ElevenLabs alternatives at 10× lower price
-- **Not ideal for:** Ultra-low-latency (<100ms) conversational agents (use Cartesia Sonic 3.5)
+- **Not ideal for:** Ultra-low-latency (<100ms) conversational agents (use Cartesia Sonic 3.6)
+- **Update (Sept 2026):** Cartesia Sonic 3.6 and Inworld Realtime TTS-2 have since taken the #1 spots on Artificial Analysis's Provider Voice and Controlled Voice arenas respectively; SIMBA 3.2's per-character pricing advantage still stands.
 
 ## StepAudio 2.5 TTS (StepFun) — Contextual Performance TTS (NEW May 2026)
 
@@ -482,12 +488,12 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
 | 80+ languages, emotion control | Fish Audio S2 Pro |
-| Best blind-test naturalness (cloud) | Qwen-Audio-3.0-TTS-Plus (Elo 1,236, **#1** mid-July 2026), Speechify SIMBA 3.2 (Elo 1,234, **#2** mid-July 2026), Gemini 3.1 Flash TTS (Elo ~1,214, **~#3**), Cartesia Sonic 3.5 (Elo ~1,207, **~#4**) |
+| Best blind-test naturalness (cloud) | **As of Sept 2026, Artificial Analysis splits this into two arenas:** Provider Voice Arena — Cartesia Sonic 3.6 (Elo 1,282, **#1**), Inworld Realtime TTS-2 (Elo 1,252, **#2**), Qwen-Audio-3.0-TTS-Plus (Elo 1,241, **#3**); Controlled Voice Arena — Inworld Realtime TTS-2 (Elo 1,123, **#1**), Cartesia Sonic 3.6 (Elo 1,119, **#2**). Earlier (mid-July 2026) leaders Speechify SIMBA 3.2 (Elo 1,234) and Gemini 3.1 Flash TTS (Elo ~1,214) remain strong but were not reconfirmed on the current split leaderboard |
 | Voice cloning, no cost, offline | Chatterbox (open-source) |
 | Long-form narration (up to 12 min), zero hallucinations, self-hosted | Hume AI TADA (Apache 2.0, open-source) |
 | Voice cloning, cloud, easiest | ElevenLabs (paid) |
 | Bulk generation (many files) | edge-tts or Chatterbox (no credit limits) |
-| Real-time voice agent / chatbot | Cartesia Sonic 3.5 (~40ms TTFA), Smallest.ai Lightning V3.1 (<100ms), or Inworld Realtime TTS-2 (<200ms, closed-loop, 100+ langs) |
+| Real-time voice agent / chatbot | Cartesia Sonic 3.6 (~40ms TTFA, #1 Provider Voice Arena), Smallest.ai Lightning V3.1 (<100ms), or Inworld Realtime TTS-2 (<200ms, #1 Controlled Voice Arena, closed-loop, 100+ langs, now with a faster TTS-2 Flash variant) |
 | Voice agent needing GPT-5-class reasoning in audio (complex tool calls, multi-turn logic) | OpenAI GPT-Realtime-2 ($32/1M in + $64/1M out; 128K context, parallel tool calls, interruption handling — expensive; not a substitute for pure TTS) |
 | Enterprise production (uptime + pricing transparency) | Deepgram Aura-2 ($200 free credits to start) |
 | Natural-sounding conversational voices, 300+ voice options, free start | Rime TTS (rime.ai, 10K chars/month free, Coda model for sub-100ms) |
