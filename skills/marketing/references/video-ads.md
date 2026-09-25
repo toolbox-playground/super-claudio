@@ -179,7 +179,7 @@ Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors
 4. Generate the video — output is virtually indistinguishable from real UGC in scroll tests
 5. Download and deploy directly to Meta/TikTok Ads Manager
 
-**Pricing:** Starts at $110/month (Starter — 10 videos); $220/month (Creator — 20 videos); no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
+**Pricing:** Starts at $110/month (Starter — 10 videos); $220/month (Creator — 20 videos); custom Pro tier (~$385–$550/month) adds API access for high-volume production; no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
 
 ## Pose Video Studio — Identity-Consistent UGC from Your Own Face
 
