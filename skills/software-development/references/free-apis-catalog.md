@@ -26,6 +26,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | CoinGecko | Crypto prices and data | coingecko.com/api | None (rate limited) |
 | Alpha Vantage | Stock market data | alphavantage.co | Free key |
 | DexScreener | Real-time and historical DEX trading pair data across Solana, ETH, BSC, and 50+ chains; WebSocket push; no key required; covers on-chain prices, volume, and liquidity that CoinGecko doesn't | docs.dexscreener.com/api/reference | None |
+| **DefiLlama** | 31+ free endpoints covering DeFi protocol/chain TVL, token prices, stablecoin supply, yield pools, and DEX volumes/fees; no key required, no hard rate limit for normal traffic (~500 req/5min in practice); paid Pro tier (~$300/mo) only unlocks extra endpoints (unlocks, bridges, treasuries) and higher limits — base data API is genuinely free | api-docs.defillama.com | None |
 | **Frankfurter** | Exchange rates sourced from 84 central banks; 201 currencies; historical data back to 1948; JSON + CSV responses; no auth, no monthly/daily caps; self-hostable (Docker) | frankfurter.dev | None |
 | **fawazahmed0/exchange-api** | Free community-maintained currency exchange rates; 200+ currencies; no rate limits; CDN-hosted on Cloudflare Pages and jsDelivr; updated daily | github.com/fawazahmed0/exchange-api | None |
 
