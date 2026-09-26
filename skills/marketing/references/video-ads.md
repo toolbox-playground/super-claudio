@@ -84,6 +84,8 @@ Predis.ai generates content designed to look like organic posts, then runs them 
 
 Best for: brands wanting native-feel TikTok ads with lower CPM through Spark Ads.
 
+**Possible pricing change (unconfirmed, Sept 2026):** one secondary source suggests Predis.ai's pricing page now shows paid tiers only plus a 7-day trial, with no permanent free plan. Not independently verified — check predis.ai directly before telling a user it's free.
+
 ## Lapis — Best AI Ad Generator for TikTok (2026)
 
 Lapis is purpose-built for TikTok, auto-sizing creatives for vertical-first placements (9:16, 1:1) with built-in performance forecasting and visuals tuned to TikTok's native aesthetic.
@@ -293,14 +295,14 @@ MakeUGC generates talking-head UGC-style ads where AI actors appear to physicall
 **Best for:** Beauty, supplement, and consumer-goods brands where product-in-hand authenticity is the creative priority.
 **Not ideal for:** High-volume multi-language campaigns (use Jogg AI or Arcads for those).
 
-## TikTok Symphony & Ad Formats — TikTok World 2026 (May 13, 2026)
+## TikTok Symphony & Ad Formats — Updated Aug 2026 (Dreamina Seedance 2.5)
 
-TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by Dreamina Seedance 2.0:
+TikTok's own AI toolset inside Creative Center and Ads Manager, upgraded August 3, 2026 from Dreamina Seedance 2.0 to **Dreamina Seedance 2.5**: max AI video length doubled from 15s to 30s, and multi-modal reference uploads raised from 9 to 50 images:
 - **Script Generator** — briefs → ad scripts aligned with trending hooks
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
-- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Video Generation** — powered by Dreamina Seedance 2.5 (up to 30s clips, up to 50 reference images, better product consistency, more natural motion, less manual correction post-gen)
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
@@ -370,6 +372,10 @@ Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools 
 5. Assets go directly into your campaign library — no external tool or re-upload required
 
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
+
+**Search campaign structure change (Sept 2026):** Google is mandatorily auto-upgrading legacy Search campaigns (Automatically Created Assets, campaign-level Broad Match) to **AI Max** between September 1–30, 2026; the related Dynamic Search Ads sunset/auto-upgrade has been pushed back to February 2027. This affects campaign structure and bidding, not creative generation directly, but expect client accounts to shift automatically during this window.
+
+**Meta Advantage+ note:** Meta added its own Muse Image model (Meta Superintelligence Labs' first image model, see `image-generation` skill) into Advantage+ creative image generation around August 2026, alongside an in-development "Creative Diversity" score in Ads Manager. Reporting on this is thinner than for the Google/TikTok changes above — verify current availability in your Ads Manager before relying on it.
 
 ## Amazon Ads Creative Agent — Agentic AI for Amazon Campaigns (Feb 2026)
 
