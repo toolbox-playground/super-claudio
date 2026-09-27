@@ -117,7 +117,7 @@ Pencil generates video and image ads and scores every creative against patterns 
 5. Export top-predicted creatives directly to your ad manager
 
 **Free tier:** 6 ads free (guided creation; no credit card required)
-**Pricing:** ~$99/month (Basic); ~$499/month (Pro — agency seats, unlimited)
+**Pricing (restructured, current as of Sept 2026):** Core $14/month ($11/mo billed annually, 50 generations); Growth $55/month (250 generations); Pro is custom/enterprise pricing (unlimited) — a significant drop from the previous ~$99/~$499 tiers
 **Platforms:** Facebook, Instagram, TikTok, YouTube, Amazon, Pinterest, Snapchat
 **Best for:** DTC brands and agencies that want statistically validated creatives before launch; teams burned by wasting budget on losers during testing.
 **Not ideal for:** Pure video UGC production at volume (use Arcads or Creatify instead); sub-$1K/month spend where predictive value is limited.
@@ -358,6 +358,17 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 **Launch partners:** HubSpot (CRM sync), Wix (storefront integration), Constant Contact (audience import), Mobvista (DSP connections)
 
 **Access:** business.tiktok.com → Agentic Hub (generally available to all TikTok for Business accounts)
+
+## Meta Ads MCP Server — AI Agents Managing Meta Campaigns Directly (2026)
+
+Meta launched its own first-party MCP endpoint (mcp.facebook.com/ads) letting AI agents — Claude included — create, manage, and analyze Meta ad campaigns without going through the Ads Manager UI or setting up traditional API credentials. Unlike a read-only reporting integration, this supports write actions (campaign creation, budget/catalog changes) under governance rules Meta ships with the connector. A July 16, 2026 update added support for custom developer apps. This is Meta's direct counterpart to the TikTok Ads MCP Server described above.
+
+1. Connect the MCP server at mcp.facebook.com/ads to Claude or another MCP-compatible agent
+2. Describe the campaign or change you want in natural language (create campaign, adjust budget, pull performance data)
+3. Review the agent's proposed action — governance rules require confirmation before spend-affecting changes commit
+4. Pair with a creative tool (Creatify, Arcads, AdStellar) for the actual ad assets — the MCP server handles campaign management, not creative generation
+
+**Best for:** Teams already running agentic workflows who want Meta campaign management inside the same agent conversation as creative generation. Not a creative generator by itself.
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
