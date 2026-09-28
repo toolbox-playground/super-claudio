@@ -7,7 +7,8 @@ Sources to search when looking for Claude Code skills and plugins.
 | Source | URL | Notes |
 |--------|-----|-------|
 | Claude Code Plugins (official) | code.claude.com/docs/en/discover-plugins | Official Claude Code plugin directory |
-| Claude.ai Plugins + Skills + Connectors (official) | claude.ai/customize | Unified browse surface (launched March 31, 2026) — skills, connectors, and plugins in one place with typed filters and one-click install; Team/Enterprise admins can pin skills workspace-wide |
+| **Claude Marketplace (official)** | claude.com/platform/marketplace | Launched Sept 23, 2026 — Anthropic's unified marketplace, superseding the claude.ai/customize browse surface; three sections: "Connectors and Plugins" (2,000+ at launch), "Agents and Products" (Claude-powered partner software), "Service Partners" (consulting firms); skills specifically live at claude.com/skills |
+| Claude.ai Plugins + Skills + Connectors (official, legacy) | claude.ai/customize | Original unified browse surface (launched March 31, 2026) — likely superseded by claude.com/platform/marketplace above; Team/Enterprise admins can still pin skills workspace-wide |
 | **Claude Plugins Official** (Anthropic GitHub) | github.com/anthropics/claude-plugins-official | Anthropic-managed, high-quality plugin directory |
 | **Anthropic Skills** (Anthropic GitHub) | github.com/anthropics/skills | Official public Agent Skills repo (May 2026); includes spec, example skills, and skill-creator; all skills available to Claude.ai paid plans |
 | **Claude Plugins Community** (Anthropic GitHub) | github.com/anthropics/claude-plugins-community | Read-only mirror of Anthropic's community plugin marketplace — third-party plugins that passed automated security scanning; add manually: `claude plugin marketplace add anthropics/claude-plugins-community`; submit plugins at clau.de/plugin-directory-submission |
@@ -16,7 +17,7 @@ Sources to search when looking for Claude Code skills and plugins.
 
 | Source | URL | Notes |
 |--------|-----|-------|
-| **Claude Marketplaces** | claudemarketplaces.com | 23,400+ skills, 2,500+ aggregated marketplaces, 770+ MCP servers; includes a "Skills Updater" tool to scan local installs and fetch upstream updates |
+| **Claude Marketplaces** | claudemarketplaces.com | 23,600+ skills, 2,500+ aggregated marketplaces, 770+ MCP servers; includes a "Skills Updater" tool to scan local installs and fetch upstream updates |
 | **There Is A Skill For That** | theresaskillforthat.com | Community directory of Claude skills by use case |
 | **AI Templates** | aitmpl.com/plugins | Plugin and skill templates |
 | **Awesome Claude** | awesomeclaude.ai/code-cheatsheet | Curated Claude Code resources and cheatsheets |
