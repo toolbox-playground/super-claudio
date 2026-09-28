@@ -9,12 +9,12 @@
 Generate complete songs (vocals + instruments) from a text prompt.
 
 - URL: suno.com
-- **Latest model:** v5.5 (March 2026) — Voices (clone your singing voice), Custom Models (tune on your catalog), My Taste (personalized generation); v5.5 requires Pro/Premier; free tier capped at v4.5 and below
-- **Suno Studio (in-browser DAW):** Multi-track view, stem separation (see below), 6-band EQ, Warp Markers (adjust timing post-generation), Remove FX (strip reverb/effects), alternates, and expanded time signature support. Studio 1.2 (February 2026) added warp markers, remove FX, and alternates. Available to Pro/Premier subscribers.
-- **Stem Separation (June 11, 2026 update):** Three modes — **Advanced Split** (NEW, Premier only): choose from ~100 instruments to regenerate each stem from scratch — no separation artifacts; also exports MIDI; 10 credits/extracted track. **Split from Mix** (Updated): pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
+- **Latest models: v6, v6-wild, v6-mini (launched Sept 9, 2026)** — the first Suno generation trained entirely on fully licensed catalogs (Warner Music, BMG, Believe/TuneCore) under the Nov 2025 Warner settlement. All prior models (v4, v4.5, v5, v5.5) were retired for new generations the same day — existing library tracks stay playable/shareable but can no longer be regenerated on old models. New: edit sections of an existing track, mashups, generate from video/photo/journal-entry "vibe" prompts.
+- **Suno Studio (in-browser DAW):** Multi-track view, stem separation (see below), 6-band EQ, Warp Markers (adjust timing post-generation), Remove FX (strip reverb/effects), alternates, and expanded time signature support. Available to Pro/Premier subscribers.
+- **Stem Separation:** Three modes — **Advanced Split** (Premier only): choose from ~100 instruments to regenerate each stem from scratch — no separation artifacts; also exports MIDI; 10 credits/extracted track. **Split from Mix**: pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
 - Free tier: 50 credits/day (~10 songs); non-commercial use only
-- **Important (2026):** Free-tier users can no longer download audio files — tracks can only be streamed/shared within the platform. Download requires a paid plan ($10/month Pro, $30/month Premier).
-- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of June 2026 the transition has not yet occurred — current models remain active — but when it does, all generations made with the old models will eventually become inaccessible. UMG and Sony Music litigation remains active — a fair-use summary judgment hearing in the U.S. case is scheduled for July 2026 (no verdict as of July 11, 2026); a separate German case (GEMA v. Suno) is due July 31, 2026. Users who want to preserve old generations should download them now on a paid plan.
+- **Download caps (introduced Sept 3, 2026):** Free: 7 lifetime downloads; Pro: 20/month; Premier: 60/month (unlimited via Studio). Pricing reported inconsistently across sources as $8–$10/month Pro and $24–$30/month Premier — verify current pricing at suno.com before quoting.
+- **Litigation status (Sept 2026):** UMG and Sony did **not** settle — they expanded their case from 560 to 61,026 recordings (potential damages >$9B) and returned to court Sept 18, 2026 (Boston). Separately, the German case (GEMA v. Suno) was **decided against Suno**: the Munich Regional Court ruled for GEMA on July 31, 2026, barring use of six compositions, ordering disclosure of usage scale, and holding Suno liable for damages.
 - Input: genre, mood, lyrics (optional), style description
 - Output: full song (streaming on free; downloadable MP3 on paid)
 
@@ -25,7 +25,7 @@ Example prompt: "upbeat Brazilian funk, energetic, no lyrics, good for TikTok ad
 Similar to Suno, strong on musicality and production quality.
 
 - URL: udio.com
-- **Important (2026):** Udio temporarily disabled all downloads (audio, video, stems) across all plan tiers during a 2025–2026 licensing transition. Tracks can only be streamed/shared on-platform as of May 2026 — no DAW export, no Spotify upload, no use in video.
+- **Important (confirmed still current as of Sept 28, 2026):** Udio has disabled all downloads (audio, video, stems) across all plan tiers since its 2025–2026 licensing transition. Tracks can only be streamed/shared on-platform — no DAW export, no Spotify upload, no use in video, and no restoration date announced.
 - **Licensing deals signed:** Udio reached agreements with Universal Music Group (Oct 2025), Warner Music, Merlin, and Kobalt (Q1 2026). The new licensed platform launched Q2 2026 but operates as a **walled garden** — tracks cannot be downloaded or exported, only streamed/shared within the Udio network. No download capability is expected for the foreseeable future.
 - Good for: previewing and sharing music concepts within the platform only; not suitable if you need to use the audio outside Udio
 
@@ -38,6 +38,7 @@ Mureka v8 is the go-to for developers and technical producers: native API, stem 
 - Paid: $10/month (400 songs, full commercial rights); $30/month Pro
 - Best for: API integration into apps, stem exports for remixing, developers who need programmatic music in their pipeline
 - Commercial rights: full ownership on paid plans (royalty-free, use in ads/videos/streaming)
+- **Note (2026):** Mureka's current flagship is now **V9.5** (supersedes v8); an upcoming "O3" model has also been previewed. Verify current feature/pricing specifics at mureka.ai before quoting details beyond what's above.
 
 
 ## ElevenLabs Music v2 — Genre-Switching AI Music with API Access (May 2026)
