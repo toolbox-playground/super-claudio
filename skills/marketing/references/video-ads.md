@@ -59,7 +59,7 @@ UGC-native output style consistently outperforms polished brand ads on TikTok.
 
 ## Topview AI — URL-to-Video with TikTok Ad Library + Closed-Loop Performance
 
-Topview AI converts product URLs (Amazon, eBay, Shopify, Etsy, AliExpress) into TikTok/Reels video ads. Distinguishing features: a built-in TikTok Ad Library browser for competitor creative research and a closed-loop performance system that ingests real conversion data and auto-generates fresh variants based on what actually worked.
+Topview AI converts product URLs (Amazon, eBay, Shopify, Etsy, AliExpress) into TikTok/Reels video ads. Distinguishing features: a built-in TikTok Ad Library browser for competitor creative research, a closed-loop performance system that ingests real conversion data and auto-generates fresh variants based on what actually worked, and **Topview Avatar 2** (2026) — full-body AI avatars that can wear, sit on, and physically interact with products (try on clothes/sunglasses, sit on furniture), not just hold them like most avatar tools.
 
 1. Go to topview.ai
 2. Paste product URL (auto-pulls images + description) or upload assets
@@ -367,7 +367,8 @@ Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools 
 2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image
 3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images
 4. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
-5. Assets go directly into your campaign library — no external tool or re-upload required
+5. **Gemini Omni** (rolled out summer 2026, per the #GML2026 announcement): generates full video storyboards and motion scenes directly from a campaign brief + brand guidelines
+6. Assets go directly into your campaign library — no external tool or re-upload required
 
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
 
@@ -382,9 +383,13 @@ Amazon Ads launched Creative Agent on February 24, 2026, inside Amazon's Creativ
 5. Publish directly to your Amazon campaign (Prime Video, Twitch, display placements)
 
 **Pricing:** No additional cost to advertisers (included with Amazon Ads account)
-**Access:** UK launch February 2026; rolling out to additional markets
+**Access:** Launched UK February 2026; as of 2026 available to advertisers in the US, Canada, France, Germany, India, Italy, Spain, and UK
 **Best for:** Brands selling on Amazon who want AI-generated ad creative (video + display) with Amazon's own retail and shopping signal data baked in — no other platform has access to Amazon's purchase intent signals.
 **Not ideal for:** Non-Amazon campaigns (output is formatted for Amazon media only); use Creatify or AdStellar for TikTok/Meta/Google campaigns.
+
+## Meta Brand Memory — Pilot Only (Announced Cannes Lions, June 23, 2026)
+
+Meta's answer to TikTok Symphony: an AI feature that ingests ~18 months of a brand's ad library to learn its tone/color/style and auto-generate new on-brand image and video ads. **As of September 2026 this remains a limited pilot** (WPP is the sole confirmed agency partner) with no general-availability date announced — not yet usable for most advertisers. Watch for a GA rollout before recommending it as a workflow.
 
 ## LinkedIn Campaign Manager AI Tools — Brand Kit, Draft with AI & Variants (Jul 2026)
 
@@ -403,7 +408,7 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 
 ## Higgsfield — Cinema Studio Platform
 
-Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.0, Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace, with Cinema Studio 3.5 adding 70+ cinematic camera presets and Soul ID for cross-shot character consistency.
+Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.5, Kling 3.0, Veo 3.1, Wan 3.0, and others in one workspace. **Cinema Studio 4.0** (September 2026, supersedes 3.5) raises clips to up to 30 seconds, expands structured cinematic controls (camera/composition/lighting/character refs), grew the model library to 120+ (from 15), and added a Blender plugin for direct in-viewport AI generation — plus Soul ID for cross-shot character consistency.
 
 When you need the highest realism (luxury products, fashion):
 1. Prepare a high-quality product/lifestyle image
