@@ -9,7 +9,8 @@
 | **Canva** | Banners, carousels, social posts | Yes (free tier) |
 | **Adobe Express** | Quick resizing, brand kits | Free tier |
 | **Nano Banana 2** | Product in lifestyle scene | Check site |
-| **Flux via fal.ai** | AI-generated product images | API credits |
+| **Nano Banana Pro** | Ad images with on-image headline/CTA text — most reliable AI text rendering | Check site |
+| **Flux 2 via fal.ai** | AI-generated product images, strongest photorealism | API credits |
 
 ### Canva Ad Creation Workflow
 
@@ -20,7 +21,7 @@
 5. Resize for all platforms in one click (Canva Magic Resize)
 6. Export as PNG/JPG
 
-### Prompt for AI-generated ad image (Flux/GPT Image 2)
+### Prompt for AI-generated ad image (Flux 2/GPT Image 2.5)
 
 ```
 Professional product advertisement photo. [Product] centered on [background].

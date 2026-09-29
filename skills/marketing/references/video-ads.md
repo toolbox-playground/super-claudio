@@ -295,12 +295,12 @@ MakeUGC generates talking-head UGC-style ads where AI actors appear to physicall
 
 ## TikTok Symphony & Ad Formats — TikTok World 2026 (May 13, 2026)
 
-TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by Dreamina Seedance 2.0:
+TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by Dreamina Seedance 2.5 (upgraded from 2.0 in August 2026):
 - **Script Generator** — briefs → ad scripts aligned with trending hooks
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
-- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Video Generation** — powered by Dreamina Seedance 2.5 (upgraded from 2.0 on **August 3, 2026**: max clip length doubled to 30 seconds, up from 15s; multimodal reference uploads raised to 50, up from 9; sharper imagery with stronger preservation of lighting, motion, and character consistency)
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
@@ -323,7 +323,7 @@ Access: business.tiktok.com → Creative Center → Symphony AI (now generally a
 Symphony Agent is TikTok's end-to-end agentic workflow for building full campaigns from a single text prompt. Unlike the Symphony creative tools (which generate individual assets), Symphony Agent orchestrates the full creative pipeline: reads performance signals, writes briefs, matches creators, and coordinates across three TikTok surfaces simultaneously.
 
 **Integrated into three TikTok products:**
-1. **Symphony Creative Studio** — AI chat experience that combines brand goals, TikTok platform insights, and performance signals to generate up to 3 videos per request (~3 min for 12s clip; ~5 min for 20s clip); guided workflow: product brief → insight report → storyboard → final video; powered by Seedance 2.0
+1. **Symphony Creative Studio** — AI chat experience that combines brand goals, TikTok platform insights, and performance signals to generate up to 3 videos per request (~3 min for 12s clip; ~5 min for 20s clip); guided workflow: product brief → insight report → storyboard → final video; powered by Seedance 2.5 since Aug 3, 2026 (was Seedance 2.0) — max clip length now 30s, up to 50 multimodal references
 2. **Content Suite** — AI Search that scans thousands of creator videos to surface content aligned with the advertiser's brief, enabling brands to repurpose existing creator content at scale
 3. **TikTok One** — Creator brief generation, discovery, and outreach at scale; supports multi-language filtering for multi-market campaigns
 
@@ -370,6 +370,20 @@ Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools 
 5. Assets go directly into your campaign library — no external tool or re-upload required
 
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
+
+## Meta Advantage+ Creative — Muse Image Integration (Jul 2026)
+
+Meta launched Muse Image on July 7, 2026 — the first image generation model built entirely in-house by Meta Superintelligence Labs, ending Meta's prior reliance on outside vendors (Midjourney, Black Forest Labs) for in-app image generation. Muse Image is rolling out into Advantage+ Creative across Q3 2026, reaching all 8 million Advantage+ advertisers. It brings agentic reasoning and iterative refinement: it parses a creative brief, adjusts individual elements, swaps styles, and produces on-brand variations with fewer round trips than the previous third-party-model workflow.
+
+1. Go to Meta Ads Manager → enable Advantage+ Creative on a campaign (on by default for most objectives)
+2. Meta generates creative variations (backgrounds, video-from-image, text overlays, aspect-ratio expansions) automatically per placement
+3. As Muse Image rolls out to your account, generated/enhanced options are grouped into categories: Refined product look, Popular in your niche, High return on ad spend
+4. Review and approve suggested variations, or let Advantage+ auto-select per placement
+
+**Note:** Since March 2026, Meta requires disclosure on ads containing AI-generated or AI-modified content — skipping this is a common cause of ad rejections.
+
+Best for: Meta-first advertisers already running Advantage+ who want in-platform generative creative without exporting to a third-party tool first.
+Not ideal for: Brands wanting full manual control over every creative element (Advantage+ enhancements are largely automatic/default-on) — use Creatify, AdStellar, or Canva for hand-built creative instead.
 
 ## Amazon Ads Creative Agent — Agentic AI for Amazon Campaigns (Feb 2026)
 
