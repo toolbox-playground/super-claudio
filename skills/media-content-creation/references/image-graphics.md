@@ -26,6 +26,8 @@ from text or concept descriptions. No design skills needed.
 - "How neural networks learn"
 - "Steps to launch an ecommerce store"
 
+**2026 updates:** Napkin shipped 50+ new visual designs plus faster, more accurate generation; a beta **sketch-to-diagram** feature now refines rough hand-drawn shapes/layouts into polished visuals; in-editor **effects and styling options** add visual depth without restructuring the diagram; expanded icon library with improved icon-matching; and slide-generation + custom branding kits for consistent, on-brand output across a deck.
+
 ## Mermaid — Code-Based Diagrams
 
 Claude can generate Mermaid diagrams as code, which render in many tools (GitHub, Notion, etc.)
@@ -47,10 +49,13 @@ Render it at: mermaid.live
 - Freehand, hand-drawn aesthetic
 - Export as SVG or PNG
 - Can be embedded in docs/Notion
+- **2026 update:** new **Autoshape** tool (Shift+X) converts freehand sketches into clean geometric shapes and arrows on the fly; Excalidraw+ (paid) added expanded cloud storage, voice hangouts/screensharing for live collaboration, an Education plan, multi-language support, and API key management
 
 ## Canva — Infographics & Social Graphics
 
 - URL: canva.com
-- Free tier very capable
 - Templates for Instagram posts, LinkedIn infographics, presentations
 - Good for: polish + export in multiple formats
+- **Free tier (2026):** permanently free plan now includes ~50 Magic Studio AI uses/month (Text-to-Image, Magic Write, Background Remover) — still capable for light use, but heavier AI workflows need a paid plan
+- **Pricing (2026):** Canva Pro is now $18/mo (up from $12.99 in 2025, via a $15 intermediate step); Canva Business is $25/user/mo (replaced the old flat-rate Teams plan)
+- **Canva AI 2.0** (Apr 2026) added a proprietary design-layout foundation model plus OpenAI's GPT Image 2 integration for more photorealistic Magic Media output; Magic Studio credits are now a single tiered pool (Standard/Premium/Ultra) instead of one flat 500-credit allowance
