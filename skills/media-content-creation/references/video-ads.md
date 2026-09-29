@@ -39,7 +39,7 @@ Tool for generating ad-optimized product images:
 - Creates lifestyle/context images of products
 - Input: product image + scene description
 - Output: product placed in realistic scene (kitchen, lifestyle, etc.)
-- Then: pass to Weavy AI or Kling to animate
+- Then: pass to Figma Weave or Kling to animate
 
 ## TikTok Shop Workflow
 
