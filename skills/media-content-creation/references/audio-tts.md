@@ -40,6 +40,8 @@ edge-tts --list-voices
 3. Generate audio: `edge-tts --voice pt-BR-FranciscaNeural --text "..." --write-media summary.mp3`
 4. Play or share: `afplay summary.mp3` (macOS) or `mpg123 summary.mp3` (Linux)
 
+**Status check (Oct 2026 scan):** edge-tts is actively maintained — latest GitHub release is v7.2.8 (March 22, 2026; github.com/rany2/edge-tts), which replaced metadata-based offset compensation with CBR byte-count math and relicensed the project from MIT to LGPLv3. No functional impact on the usage above, but note the license change if redistributing.
+
 ## ElevenLabs v3 — Premium Quality, Voice Cloning
 
 ElevenLabs v3 produces studio-quality speech with emotionally nuanced voices, 70+ languages (74 officially supported), and voice cloning from 1 minute of audio.
@@ -152,6 +154,7 @@ Fish Audio S2 Pro ranks #1 on TTS-Arena2 with 80+ languages and 50+ inline emoti
 - Best for: multilingual content, emotionally nuanced narration, voice cloning
 - License: research/non-commercial free; commercial use requires separate license
 - Open-source model on HuggingFace: `fishaudio/s2-pro`
+- **Growth note (Oct 2026 scan):** Fish Audio reportedly raised a $52M seed round (Coreline Ventures, Capital Today) announced July 28, 2026, growing to ~$21M ARR / 8M users in roughly a year — a signal the service is well-funded and actively developed, not that free-tier terms changed. Verify current free-tier limits directly at fish.audio before relying on the numbers above.
 
 ## Hume AI TADA — Open-Source, Long-Context, Zero Content Hallucinations
 
