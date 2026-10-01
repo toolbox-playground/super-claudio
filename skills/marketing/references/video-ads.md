@@ -361,7 +361,7 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
-Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
+Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation. **Update (confirmed at Google Marketing Live 2026):** Gemini Omni shipped into Asset Studio as multimodal video generation in the same workspace as image/text, alongside natural-language briefing/editing and a new **1-Click Creative Testing** feature; also integrates with Canva, Adobe, Merchant Center, and YouTube Studio (English-language rollout):
 
 1. Open Google Ads → Asset Studio
 2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image
@@ -400,6 +400,19 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 **Performance signal:** LinkedIn internal data shows 20%+ higher CTR for campaigns running 5+ ad variants vs. single-ad campaigns.
 **Best for:** B2B brands running LinkedIn campaigns who want faster variant generation and consistent brand voice without manual design work per variant.
 **Not ideal for:** Consumer / DTC advertising (LinkedIn CPMs are high; use TikTok Symphony or Meta Advantage+ for lower-funnel consumer campaigns).
+
+## Magic Hour — Directable UGC Ad Generator (100+ Tool Suite)
+
+Magic Hour (magichour.ai) generates UGC-style vertical TikTok ads up to 60 seconds, directable by script, scene, tone, and actor emotion — part of a broader 100+ tool suite (API, face swap, lip sync). Corroboration for this entry is moderate (vendor blog + one press-release pickup) — verify current pricing directly before quoting it to a client.
+
+1. Go to magichour.ai
+2. Describe the product, tone, and target actor emotion
+3. Generate a vertical UGC-style ad (up to 60s)
+4. Use the API or face swap/lip sync tools for variants
+
+**Free tier:** Reported to exist (unconfirmed limits)
+**Pricing (as reported, unverified on pricing page directly):** Pro ~$59/month (50k credits), Business ~$299/month (250k credits)
+**Best for:** Teams wanting a single suite that combines UGC ad generation with face swap/lip sync utilities.
 
 ## Higgsfield — Cinema Studio Platform
 
