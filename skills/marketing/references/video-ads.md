@@ -245,10 +245,24 @@ Shhots AI is an ecommerce-focused platform for generating product videos, AI UGC
 3. Select format: 9:16 (TikTok/Reels), 1:1 (feed), or landscape (YouTube)
 4. Download — commercial license included on all plans
 
-**Free tier:** 500 credits one-time ($5 Mini Plan; credits never expire)
+**Free tier:** None confirmed — current sources show only the 3 paid plans below (annual billing saves 15%)
 **Pricing:** Starter $19/month, Pro $49/month, Scale $99/month; ~$1/ad on Starter
 **Best for:** Solo operators and small ecommerce brands wanting low-cost UGC ads with avatars and captions without hiring influencers.
 **Not ideal for:** High-volume multi-actor campaigns at scale (use Arcads) or URL-to-video with built-in competitor research (use Topview AI).
+
+## Magic Hour — Low-Cost UGC Ad Generator ($10/mo Entry)
+
+Magic Hour (magichour.ai) added an "AI UGC Ad Generator" feature (Jan 12, 2026) inside its broader AI content platform — a lower-cost alternative to MakeUGC/Shhots for brands wanting UGC-style product ads.
+
+1. Go to magichour.ai
+2. Upload product images or details
+3. Generate UGC-style ad video with AI actor, script, and captions
+4. Export for TikTok, Reels, or YouTube Shorts
+
+**Free tier:** Limited free version available
+**Pricing:** From ~$10/month entry
+**Best for:** Budget-conscious solo creators and small brands wanting the cheapest entry point into AI UGC ads.
+**Not ideal for:** High-volume multi-actor campaigns (use Arcads) or product-in-hand realism (use MakeUGC).
 
 ## AdsTurbo — Ad Clone + 1,000+ AI Actors (Mar 2026)
 
