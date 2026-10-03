@@ -13,6 +13,8 @@
 
 ### Canva Ad Creation Workflow
 
+**Note (Apr 2026):** Canva retired the "Magic Studio" branding in favor of **Canva AI 2.0** — Magic Design, Magic Write, Magic Edit, and Magic Switch are now routed through one conversational AI prompt box instead of separate buttons/menu items. If you're looking for "Magic Studio" in the nav and can't find it, it's now under "Canva AI." Magic Resize (step 5 below) is unchanged and still works as its own named feature.
+
 1. canva.com → Create Design → choose format (Instagram Post, Facebook Ad, etc.)
 2. Search templates for "ad" or "product"
 3. Replace placeholder image with product photo
