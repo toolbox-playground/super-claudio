@@ -8,9 +8,11 @@ Sources to search when looking for Claude Code skills and plugins.
 |--------|-----|-------|
 | Claude Code Plugins (official) | code.claude.com/docs/en/discover-plugins | Official Claude Code plugin directory |
 | Claude.ai Plugins + Skills + Connectors (official) | claude.ai/customize | Unified browse surface (launched March 31, 2026) — skills, connectors, and plugins in one place with typed filters and one-click install; Team/Enterprise admins can pin skills workspace-wide |
+| **Claude Marketplace** (official) | claude.com/marketplace/plugins | Anthropic's own live, browsable plugin catalog on the web — install counts, "Anthropic verified" badges, category browsing; distinct from the claude.ai/customize settings page; verified live Oct 2026 |
 | **Claude Plugins Official** (Anthropic GitHub) | github.com/anthropics/claude-plugins-official | Anthropic-managed, high-quality plugin directory |
 | **Anthropic Skills** (Anthropic GitHub) | github.com/anthropics/skills | Official public Agent Skills repo (May 2026); includes spec, example skills, and skill-creator; all skills available to Claude.ai paid plans |
 | **Claude Plugins Community** (Anthropic GitHub) | github.com/anthropics/claude-plugins-community | Read-only mirror of Anthropic's community plugin marketplace — third-party plugins that passed automated security scanning; add manually: `claude plugin marketplace add anthropics/claude-plugins-community`; submit plugins at clau.de/plugin-directory-submission |
+| **Knowledge Work Plugins** (Anthropic GitHub) | github.com/anthropics/knowledge-work-plugins | Official Anthropic open-source repo (announced Sept 2026) of 11 role-specific plugins — productivity, sales, customer support, product management, marketing, legal, finance, data, enterprise search, bio research, plugin management; built for Claude Cowork, compatible with Claude Code; add via `claude plugin marketplace add anthropics/knowledge-work-plugins` |
 
 ## Community Marketplaces
 
