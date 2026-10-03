@@ -293,6 +293,21 @@ MakeUGC generates talking-head UGC-style ads where AI actors appear to physicall
 **Best for:** Beauty, supplement, and consumer-goods brands where product-in-hand authenticity is the creative priority.
 **Not ideal for:** High-volume multi-language campaigns (use Jogg AI or Arcads for those).
 
+## Magic Hour — Budget AI UGC with Anchor-Image Control (Jan 2026, 200+ Actors)
+
+Magic Hour (magichour.ai) launched its AI UGC Ad Generator on January 12, 2026 (covered by Fortune). Distinguishing feature: an anchor-image-first workflow — pick or generate the exact first frame (actor + product composition) instead of relying on a text prompt alone, then direct the script, scene description, tone, and the actor's emotion from there. 200+ stock AI actors, or upload your own image as the anchor.
+
+1. Go to magichour.ai
+2. Choose an anchor image: one of 200+ AI actors, or upload your own product/actor image
+3. Write the script, scene description, tone, and desired actor emotion
+4. Generate a UGC-style video ad up to 60 seconds
+5. Export for TikTok/Reels/Shorts
+
+**Free tier:** Yes (~400 starter credits, roughly 17 seconds of video; watermarked)
+**Pricing:** From ~$10/month (Creator, billed annually; ~$12/month month-to-month) — no watermark, 120,000 credits/year
+**Best for:** Budget-conscious teams who want to lock in the exact actor + product composition before generation rather than hoping a prompt lands right; longer single clips (up to 60s) at low cost.
+**Not ideal for:** High-volume multi-actor campaigns at scale (use Arcads); predictive scoring before spend (use Pencil or AdCreative.ai).
+
 ## TikTok Symphony & Ad Formats — TikTok World 2026 (May 13, 2026)
 
 TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by Dreamina Seedance 2.0:
@@ -306,6 +321,8 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
 - **Smart+** — AI campaign management: auto-selects creatives, adjusts bids, and optimizes delivery automatically in Ads Manager
 - **Symphony Automation** (Smart+ integration, announced TikTok World May 2026) — two tools for AI-powered creative refresh inside Smart+ campaigns: **Recommended Creatives** (generates video assets complete with scripts, voiceovers, and avatars from your destination URL) and **Automatic Enhancements** (improves quality, reformats to 9:16 vertical, refreshes hooks/music, and dubs existing videos into 50+ languages); available now to all TikTok for Business accounts
+
+**Seedance 2.5 update (Aug 3, 2026):** Symphony's video generation — across Symphony Creative Studio, Symphony Automations, and the Symphony API — now runs on Dreamina Seedance 2.5, up from Seedance 2.0. Max generated video length doubles from 15s to 30s, the multimodal reference upload limit jumps from 9 to 50 (images, video, and audio), and visual quality/product-proportion accuracy are improved. Rolling out first to select paid advertiser accounts, not yet all accounts.
 
 ### New at TikTok World 2026 (May 13)
 
