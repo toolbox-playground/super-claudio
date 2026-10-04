@@ -13,7 +13,7 @@ from text or concept descriptions. No design skills needed.
 - Input: paste text, describe a concept, or write a prompt
 - Output: SVG/PNG diagram, ready to use
 - Best for: presentations, documentation, concept visualization, social content
-- Free tier: available
+- Free tier: available (500 AI credits/week as of 2026) — note: free-tier exports carry a Napkin watermark; unbranded PNG/PDF export requires Plus ($9+/mo billed annually)
 
 **Workflow:**
 1. Go to napkin.ai
