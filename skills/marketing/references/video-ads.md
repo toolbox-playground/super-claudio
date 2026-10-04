@@ -359,6 +359,21 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 **Access:** business.tiktok.com → Agentic Hub (generally available to all TikTok for Business accounts)
 
+## Meta Advantage+ Creative — Brand Memory & Muse Image (Jun–Jul 2026)
+
+Meta's native AI creative stack inside Ads Manager, unveiled at Cannes Lions on June 23, 2026 (Brand Memory) and expanded July 7, 2026 with Muse Image, Meta Superintelligence Labs' first in-house image-generation model. Unlike TikTok Symphony or Google Asset Studio, it runs directly inside the Advantage+ workflow and is built to learn from your own ad history rather than a blank prompt.
+
+1. Go to Ads Manager → Advantage+ Creative
+2. **Brand Memory** ingests your existing ad library and learns your brand's visual identity, tone, and creative style from it
+3. Refine Brand Memory by explicitly defining brand guidelines (colors, tone, do's/don'ts) so generated variants stay on-brand without manual art direction
+4. **Muse Image** generates the actual visuals inside Advantage+ Creative using the signals Brand Memory has accumulated — it plans layout, pulls real-time web context, and blends multiple references instead of a single text-to-image pass
+5. Generated variants (image swaps, style changes, multi-scene video built from product images) are tested automatically across placements via Advantage+
+
+**Rollout:** Brand Memory announced June 23, 2026; Muse Image added July 7, 2026; rolling out to advertisers and agencies through summer/fall 2026 — check Ads Manager if not yet visible on your account. WPP is the first agency pilot (via WPP Open); Unilever is the first brand client.
+**Pricing:** No separate fee — included with standard Meta ad spend, same as the rest of Advantage+.
+**Best for:** Brands and agencies already running Advantage+ campaigns who want on-brand creative generated automatically from their own ad history, without a separate tool or re-uploading brand assets.
+**Not ideal for:** A large diverse AI-actor library (use Arcads) or full UGC video production (use Creatify/Arcads) — Muse Image is an image/layout model, not a talking-head avatar generator.
+
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
 Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
