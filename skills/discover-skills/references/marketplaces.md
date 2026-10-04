@@ -11,6 +11,7 @@ Sources to search when looking for Claude Code skills and plugins.
 | **Claude Plugins Official** (Anthropic GitHub) | github.com/anthropics/claude-plugins-official | Anthropic-managed, high-quality plugin directory |
 | **Anthropic Skills** (Anthropic GitHub) | github.com/anthropics/skills | Official public Agent Skills repo (May 2026); includes spec, example skills, and skill-creator; all skills available to Claude.ai paid plans |
 | **Claude Plugins Community** (Anthropic GitHub) | github.com/anthropics/claude-plugins-community | Read-only mirror of Anthropic's community plugin marketplace — third-party plugins that passed automated security scanning; add manually: `claude plugin marketplace add anthropics/claude-plugins-community`; submit plugins at clau.de/plugin-directory-submission |
+| **Claude Marketplace** (official web directory) | claude.com/marketplace/plugins | Public web catalog of the official `claude-plugins-official` marketplace — browse plugins with install counts and "Anthropic verified" badges without opening Claude Code; linked from the install flow |
 
 ## Community Marketplaces
 
@@ -43,6 +44,8 @@ Sources to search when looking for Claude Code skills and plugins.
 | **Cross AI Tools** | crossaitools.com | 21,700+ Claude Code skills, plugins, and MCP servers in one browsable directory; 300,000+ monthly visitors; daily GitHub sync; supports Claude Code, Codex, OpenCode, Cursor, and 40+ agents; search by category (frontend, backend, testing, DevOps, security) |
 | **LobeHub Skills** | lobehub.com/skills | 169K+ agent skills in SKILL.md format — compatible with Claude Code, Codex CLI, ChatGPT; includes security vetting, AI/LLM integration, and developer tooling categories |
 | **There's An AI For That** | theresanaiforthat.com | Broader AI tool discovery (not Claude-specific, but useful for research) |
+| **claude-code-templates (davila7)** | github.com/davila7/claude-code-templates | CLI + catalog of ready-to-use agents, commands, skills, hooks, MCPs, and project templates; 32k+ stars, actively maintained; interactive `npx claude-code-templates@latest` installer with analytics and health checks; aggregates community and official sources (incl. 139 scientific skills, 21 official Anthropic skills) |
+| **Awesome Claude Plugins (ComposioHQ)** | github.com/ComposioHQ/awesome-claude-plugins | Hand-curated list of production-ready Claude Code plugins across 9 categories (integrations, frontend/design, git, testing, backend, DevOps, docs/security, productivity, companion); 1.9k+ stars, actively maintained |
 
 ## How to Search Each Source
 
