@@ -16,7 +16,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 |-----|------|-----|------|
 | NASA APIs | APOD, Mars rover photos, NEO asteroids | api.nasa.gov | Free key |
 | Open Notify | ISS current location | open-notify.org | None |
-| SpaceX API | Launch data, rockets, missions | github.com/r-spacex/SpaceX-API | None |
+| SpaceX API | Launch data, rockets, missions; **repo archived by owner Jun 6, 2026 (read-only, unmaintained)** — hosted API (api.spacexdata.com) may still respond but no further updates/fixes expected; use with caution | github.com/r-spacex/SpaceX-API | None |
 
 ## Finance & Economics
 
