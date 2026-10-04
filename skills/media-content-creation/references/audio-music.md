@@ -9,14 +9,16 @@
 Generate complete songs (vocals + instruments) from a text prompt.
 
 - URL: suno.com
-- **Latest model:** v5.5 (March 2026) — Voices (clone your singing voice), Custom Models (tune on your catalog), My Taste (personalized generation); v5.5 requires Pro/Premier; free tier capped at v4.5 and below
-- **Suno Studio (in-browser DAW):** Multi-track view, stem separation (see below), 6-band EQ, Warp Markers (adjust timing post-generation), Remove FX (strip reverb/effects), alternates, and expanded time signature support. Studio 1.2 (February 2026) added warp markers, remove FX, and alternates. Available to Pro/Premier subscribers.
-- **Stem Separation (June 11, 2026 update):** Three modes — **Advanced Split** (NEW, Premier only): choose from ~100 instruments to regenerate each stem from scratch — no separation artifacts; also exports MIDI; 10 credits/extracted track. **Split from Mix** (Updated): pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
-- Free tier: 50 credits/day (~10 songs); non-commercial use only
-- **Important (2026):** Free-tier users can no longer download audio files — tracks can only be streamed/shared within the platform. Download requires a paid plan ($10/month Pro, $30/month Premier).
-- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of June 2026 the transition has not yet occurred — current models remain active — but when it does, all generations made with the old models will eventually become inaccessible. UMG and Sony Music litigation remains active — a fair-use summary judgment hearing in the U.S. case is scheduled for July 2026 (no verdict as of July 11, 2026); a separate German case (GEMA v. Suno) is due July 31, 2026. Users who want to preserve old generations should download them now on a paid plan.
+- **Latest models:** v6, v6-wild, and v6-mini (launched September 9, 2026) — trained from scratch on licensed catalog from Warner Music Group, BMG, and Believe, fulfilling the November 2025 Warner settlement commitment to retire the old unlicensed-data models. All three add plain-language section/lyric editing, mashups from multiple songs, sampling, and multimodal prompting (text, audio, image, or video input).
+- **Suno Studio (in-browser DAW):** Multi-track view, stem separation (see below), 6-band EQ, Warp Markers (adjust timing post-generation), Remove FX (strip reverb/effects), alternates, and expanded time signature support. Available to Premier subscribers.
+- **Stem Separation:** Three modes — **Advanced Split** (Premier only): choose from ~100 instruments to regenerate each stem from scratch — no separation artifacts; also exports MIDI; 10 credits/extracted track. **Split from Mix**: pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
+- **Free tier:** v6-mini only, 50 credits/day (~10 songs), shared generation queue, no monthly download allowance, no commercial rights
+- **Pro ($10/month, $8/month billed yearly):** v6 + v6-wild, 2,500 credits/month, commercial rights, advanced editing, 20 song downloads/month
+- **Premier ($30/month, $24/month billed yearly):** Same models as Pro, 10,000 credits/month, Suno Studio, 60 song downloads/month
+- **Watermarking:** Suno now watermarks generated songs; download allowances are separate from generation credits, and songs downloaded while on a paid plan retain commercial-use rights
+- **Litigation status (as of Oct 2026):** Universal Music Group and Sony Music have NOT settled and continue litigating in the U.S. — fact discovery closed September 30, 2026, with dispositive (fair-use) summary-judgment motions now due April 9, 2027 (pushed back from the earlier July 2026 estimate). Separately, a German court (Munich Regional Court) ruled against Suno in **GEMA v. Suno on July 31, 2026**, finding copyright infringement and rejecting the U.S.-style fair-use defense for models commercialized in Europe; Suno was ordered to stop the infringing uses, disclose information, and pay damages. This ruling concerns Suno's legacy (pre-v6) models and training data, not a verdict on v6's licensed catalog.
 - Input: genre, mood, lyrics (optional), style description
-- Output: full song (streaming on free; downloadable MP3 on paid)
+- Output: full song (streaming on free; downloadable MP3 on paid, subject to the monthly download caps above)
 
 Example prompt: "upbeat Brazilian funk, energetic, no lyrics, good for TikTok ads"
 
@@ -25,18 +27,19 @@ Example prompt: "upbeat Brazilian funk, energetic, no lyrics, good for TikTok ad
 Similar to Suno, strong on musicality and production quality.
 
 - URL: udio.com
-- **Important (2026):** Udio temporarily disabled all downloads (audio, video, stems) across all plan tiers during a 2025–2026 licensing transition. Tracks can only be streamed/shared on-platform as of May 2026 — no DAW export, no Spotify upload, no use in video.
-- **Licensing deals signed:** Udio reached agreements with Universal Music Group (Oct 2025), Warner Music, Merlin, and Kobalt (Q1 2026). The new licensed platform launched Q2 2026 but operates as a **walled garden** — tracks cannot be downloaded or exported, only streamed/shared within the Udio network. No download capability is expected for the foreseeable future.
+- **Important (as of Oct 2026):** Udio still disables all downloads (audio, video, stems) across all plan tiers during the ongoing 2025–2026 licensing transition. Tracks can only be streamed/shared on-platform — no DAW export, no Spotify upload, no use in video.
+- **Licensing deals signed:** Udio reached settlement/licensing agreements with Universal Music Group (Oct 29, 2025), Warner Music Group (Nov 19, 2025), Merlin, and Kobalt. A new fully-licensed walled-garden platform is planned to launch "sometime in 2026," but **as of October 2026 it has not yet launched publicly** — no firm date has been disclosed. The current product remains available in the interim under the download-disabled restrictions above.
 - Good for: previewing and sharing music concepts within the platform only; not suitable if you need to use the audio outside Udio
 
-## Mureka v8 — Developer-Focused AI Music Generation
+## Mureka 9 — Developer-Focused AI Music Generation, Chain-of-Thought Planning (Updated Apr 2026)
 
-Mureka v8 is the go-to for developers and technical producers: native API, stem separation, and MIDI export alongside full song generation.
+Mureka 9 (Kunlun Tech) is the go-to for developers and technical producers: native API, stem separation, and MIDI export alongside full song generation. Mureka-9 shipped as the API model in April 2026, building on the MusiCoT ("music chain-of-thought") technique introduced by Mureka O1 — the model plans a song's structure before generating audio, which is the company's clearest technical differentiator versus Suno/Udio.
 
 - URL: mureka.ai | API: platform.mureka.ai
 - Free tier: available with limitations — non-commercial only, Mureka retains output rights on free
-- Paid: $10/month (400 songs, full commercial rights); $30/month Pro
-- Best for: API integration into apps, stem exports for remixing, developers who need programmatic music in their pipeline
+- **Paid:** Basic $8/month billed annually (400 songs, full commercial rights); Pro $24/month (1,600 songs, advanced features) — monthly (non-annual) billing may be higher; check mureka.ai/pricing for current rates
+- Languages: 10+, including tonal languages
+- Best for: API integration into apps, stem exports for remixing, developers who need programmatic music in their pipeline, multilingual lyrics and song-structure control
 - Commercial rights: full ownership on paid plans (royalty-free, use in ads/videos/streaming)
 
 
@@ -55,16 +58,17 @@ ElevenLabs launched ElevenMusic as an iOS app on April 1, 2026, then shipped Mus
 - Better multilingual lyrics and arrangement vs Music v1
 - Best for: developers integrating music generation via API (ElevenAPI); ad music and branded content (ElevenCreative); quick casual generation (ElevenMusic iOS app)
 
-## MiniMax Music 2.5 — Structural Control + Studio-Grade Fidelity (Jan 2026)
+## MiniMax Music 3.0 — Current Flagship, Better Semantic Understanding (NEW Jul 2026)
 
-MiniMax Music 2.5 (released January 29, 2026) adds paragraph-level precision control over song structure and fixes the "muddy mixing" artifact common in AI music through improved spectral separation between vocals and instrumentation.
+MiniMax Music 3.0 (released July 16, 2026) supersedes Music 2.5/2.6 as MiniMax's current flagship, with better semantic understanding of prompts and commercial-grade audio quality. Songs run up to 5 minutes, with a toggle between vocal and fully instrumental output and selectable bitrate/sample rate.
 
-- URL: minimax.io/audio | API: wavespeed.ai/models/minimax/music-2.5
-- Free tier: limited via minimax.io; API via WaveSpeedAI (pay-as-you-go)
-- **14+ structural tags:** `[Intro]`, `[Verse]`, `[Chorus]`, `[Bridge]`, `[Interlude]`, `[Build-up]`, `[Hook]`, `[Outro]` — placed inline in the prompt to control song layout section by section
-- **Audio fidelity:** Optimized soundstage keeps vocals and instruments in separate spectral regions — the key improvement over Music 2.0
-- Best for: generation where song structure matters (commercial jingles, video scoring with section-to-cut sync, multi-verse songs with distinct parts)
-- Not ideal for: stem export or MIDI (use Mureka v8); on-demand free generation (use Suno free tier)
+- URL: minimax.io/audio | API: platform.minimax.io, wavespeed.ai (not currently listed on Replicate)
+- **Pricing:** $0.15 per song (pay-per-generation); free trial tier `Music-3.0-free` at 3 requests/minute, no cost
+- **Max length:** Up to 5 minutes per generation
+- **Lyric input:** Up to ~2,000 tokens of lyric content per prompt
+- **Legacy model:** MiniMax Music 2.5 (Jan 2026, 14+ structural tags like `[Intro]`/`[Chorus]`/`[Bridge]`) and 2.6 (Apr 2026) remain available via wavespeed.ai/models/minimax/music-2.5 if you need the older section-tag workflow
+- Best for: generation where prompt understanding and audio quality matter most; quick free experimentation via the Music-3.0-free tier
+- Not ideal for: stem export or MIDI (use Mureka 9); on-demand free generation with no rate limit (use Suno free tier)
 
 ## Google Flow Music (formerly Producer.ai / Riffusion) — Google-Owned, Free, Lyria 3 Powered
 
@@ -105,7 +109,7 @@ Beatoven.ai generates mood-based background music from text descriptions, purpos
 - **Video-to-music:** Upload a video file; AI analyzes the visual content and generates a matching soundtrack automatically
 - **Emotion control:** 16 moods (happy, sad, motivational, scary, relaxing, etc.) + regional sound styles + adjustable tempo
 - Best for: YouTubers, podcasters, course creators, and game devs needing mood-appropriate instrumentals with clean commercial licensing
-- Not ideal for: full songs with vocals (use Suno or MiniMax Music 2.5); stem separation (use Mureka v8 or Stable Audio 3.0)
+- Not ideal for: full songs with vocals (use Suno or MiniMax Music 3.0); stem separation (use Mureka 9 or Stable Audio 3.0)
 
 ## Free Royalty-Free Music (no generation needed)
 
@@ -124,4 +128,4 @@ For background music without AI generation:
 | Unique branded sound | Speed matters |
 | Need API / stems / MIDI (Mureka) | Budget is zero |
 
-> **Note:** As of June 2026, Udio's licensed platform has launched but operates as a walled garden — audio cannot be downloaded or exported. For any use case where you need to keep or use the generated audio, use Suno (paid), ElevenLabs Music v2 (free for personal; Starter plan+ for commercial), Google Flow Music / flowmusic.app (free, Google), or a royalty-free library instead.
+> **Note:** As of October 2026, Udio remains a walled garden with no downloads on any plan, and its new fully-licensed platform has not yet launched publicly. For any use case where you need to keep or use the generated audio, use Suno (v6/v6-wild on Pro or Premier — commercial rights, capped monthly downloads), ElevenLabs Music v2 (free for personal; Starter plan+ for commercial), Google Flow Music / flowmusic.app (free, Google), or a royalty-free library instead.
