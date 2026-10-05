@@ -62,6 +62,10 @@
 3. Enter text prompt → generate
 4. Veo 3.1 Lite is the most cost-effective variant (Vertex AI, May 2026: <50% the cost of Veo 3.1 Fast at same quality); Veo 3.1 Fast for speed
 
+## FLUX 3 Video (Black Forest Labs) — Early Access, Not Yet Usable
+
+Black Forest Labs announced FLUX 3 on July 23, 2026: a multimodal successor to FLUX.2 that generates images, video, and audio from one backbone. FLUX 3 Video generates clips up to 20 seconds with native synced audio (text-to-video, image-to-video, video-to-video, keyframe transitions, multilingual dialogue, multi-shot chaining); 9:16 to 21:9 aspect ratios. **Gated early access only** — apply via bfl.ai; API + private weights for approved partners; no public pricing, no self-serve access, no GA date announced. Not a usable option yet for the workflows in this file — listed here for awareness only; check back once it reaches general availability.
+
 ## Notes
 
 - All tools have usage limits on free tiers; paid plans give more credits
