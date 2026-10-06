@@ -18,6 +18,7 @@ to route them to the right skill before responding.
 | Design a website or app UI, find design inspiration, use design tools | `design` |
 | Create documents, presentations, spreadsheets, dashboards, project plans | `productivity` |
 | Use the Claude API, build AI apps, create skills/agents/MCP servers, prompt engineering | `ai-and-agents` |
+| Create or update a mentee career diagnosis, technical roadmap, verified course guide, or mentoring PDF | `tech-career-mentorship` |
 | Find the best AI web tools for any category with honest free-tier info | `find-ai-tools` |
 | Find a Claude Code skill or plugin that doesn't exist yet in super-claudio | `discover-skills` |
 

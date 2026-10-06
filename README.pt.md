@@ -60,6 +60,7 @@ Não precisa de slash commands (mas também funcionam: `/super-claudio:writing`)
 | [design](#design) | Inspiração UI/UX, Figma, v0.dev, prototipagem | "design de site", "inspiração de UI", "wireframe" |
 | [productivity](#productivity) | Documentos, apresentações, dashboards, planejamento | "cria um pitch deck", "plano de projeto", "monta um dashboard" |
 | [ai-and-agents](#ai-and-agents) | API do Claude, engenharia de prompt, servidores MCP, criação de skills | "usa a API do Claude", "cria um servidor MCP", "cria uma skill" |
+| [tech-career-mentorship](skills/tech-career-mentorship/SKILL.md) | Diagnóstico de carreira, gaps, roadmap de estudo e PDF de mentoria | "analisa este currículo para mentoria", "atualiza o plano do mentorando" |
 | [discover](#discover) | Encontra skills que não estão neste plugin | "acha uma skill para X" |
 
 ---
