@@ -181,6 +181,8 @@ Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors
 
 **Pricing:** Starts at $110/month (Starter — 10 videos); $220/month (Creator — 20 videos); no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
 
+**2026 update:** Arcads has expanded beyond talking-head UGC into a fuller ad-production platform — built-in editing tools (background removal, captions, actor swap, voice change, translate, extend, upscale), multiple image models for static creative (GPT Image, Nano Banana, Seedream), a public API, and an MCP connector (mcp.arcads.ai) that lets Claude and other AI agents create ads conversationally — including slash commands like `/spy-competitor-ads` and `/clone-hook` to reverse-engineer competitor creatives directly from chat.
+
 ## Pose Video Studio — Identity-Consistent UGC from Your Own Face
 
 Pose Video Studio (pose.ai) generates UGC-style video ads where every variant features the same AI actor trained on your own uploaded selfies — not a generic avatar from a pre-built library. Voice is cloned via ElevenLabs from ~1 minute of reference audio, so face and voice stay consistent across all campaign variants.
@@ -317,6 +319,10 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **TikTok MCP Server** — AI agents (Claude, GPT, etc.) can now launch and manage TikTok ad campaigns directly via the MCP protocol; no manual Ads Manager UI required; announced for developers at TikTok World 2026
 
 Access: business.tiktok.com → Creative Center → Symphony AI (now generally available for all TikTok for Business accounts)
+
+### Seedance 2.5 Upgrade (August 3, 2026)
+
+TikTok integrated **Dreamina Seedance 2.5** into Symphony, doubling the max length of an AI-generated video from 15 to 30 seconds and raising the multi-modal reference upload limit from 9 to 50 (product images, existing video clips, and audio can all be fed in as references for a single generation). ByteDance reports sharper imagery and stronger preservation of lighting, motion, and character consistency versus Seedance 2.0 — useful for fuller, narrative-style ad videos without manual editing.
 
 ## TikTok Symphony Agent — Agentic Campaign Creation (Cannes Lions, June 22, 2026)
 
