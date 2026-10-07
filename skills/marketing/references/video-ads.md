@@ -51,11 +51,11 @@ Paste a product URL and get a complete 15-30 second TikTok/Instagram ad in minut
 
 UGC-native output style consistently outperforms polished brand ads on TikTok.
 
-**2026 updates:** 1,500+ AI avatars (up from previous library), 75+ languages, 140+ voices with voice cloning; analytics integration — the AI learns from real ad performance data and auto-adjusts future scripts and visuals. G2 Summer 2026 Leader with 1,500+ reviews at 4.8/5. Pricing: Free ($0, 10 credits), Starter ($39/mo), Pro ($99/mo, includes competitor tracker + ad launcher + custom avatars).
+**2026 updates:** 1,500+ AI avatars (up from previous library), 75+ languages, 140+ voices with voice cloning; analytics integration — the AI learns from real ad performance data and auto-adjusts future scripts and visuals. G2 Summer 2026 Leader with 1,500+ reviews at 4.8/5. Pricing: Free ($0, 10 credits), Starter ($39/mo), Pro ($99/mo, includes competitor tracker + ad launcher + custom avatars). **Creatify Agent** (May 2026): conversational brand-research-to-render workflow — describe your brand, Creatify researches it and drafts creative. **AI Media Buyer** (June 2026): connects to your ad accounts to audit, build, launch, and optimize campaigns — pushes Creatify into full-stack territory alongside AdStellar. Asset generator now includes Seedance 2.0 and Wan 2.7; node-based "AdFlow" builder added for repeatable campaign pipelines.
 
 ## aicreator.co — Automated Ad Video (Defunct as Ad Tool)
 
-> **Do not recommend (May 2026):** aicreator.co no longer operates as a product video ad generator — the domain now presents as an AI tutorials and learning blog with no ad creation features. Use Creatify, Predis.ai, AdStellar, or Lapis instead.
+> **Do not recommend (May 2026, re-checked Oct 2026):** aicreator.co no longer operates as a product video ad generator — the domain now presents as an AI tutorials and learning blog with no ad creation features; as of this check the domain is unreachable entirely. Use Creatify, Predis.ai, AdStellar, or Lapis instead.
 
 ## Topview AI — URL-to-Video with TikTok Ad Library + Closed-Loop Performance
 
@@ -169,15 +169,15 @@ HeyGen is the leading AI avatar video platform for brand content and UGC-style t
 **Best for:** Brand channel content (YouTube Shorts, TikTok, Reels), product demos, multilingual market localization from one source video.
 **Not ideal for:** High-volume ad testing at scale (use Arcads or Creatify for that — HeyGen credits run out faster at volume).
 
-## Arcads — AI UGC Video Actors (1,000+ Actors)
+## Arcads — AI UGC Video Actors (1,000+ Actors), Now a Broader Suite
 
-Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors — the largest AI actor library in 2026, purpose-built for Meta and TikTok ad testing.
+Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors — the largest AI actor library in 2026, purpose-built for Meta and TikTok ad testing. Since mid-2026 it has expanded from a pure actor tool into a broader suite: a "Workflow" canvas, a public API, an MCP connector, and access to 8 image/11 video models (Sora 2, Veo 3.1, Kling 3.0, Seedance 2.0, Grok Video, and more) plus 3 actor styles — along with captioning, translation, upscaling, and actor-replacement tools. This pushes its positioning closer to Higgsfield/Creatify than before.
 
 1. Go to arcads.ai
 2. Write or paste your ad script (15–60 seconds)
 3. Select an AI actor (filter by age, gender, ethnicity, style)
 4. Generate the video — output is virtually indistinguishable from real UGC in scroll tests
-5. Download and deploy directly to Meta/TikTok Ads Manager
+5. Download and deploy directly to Meta/TikTok Ads Manager, or use the public API/MCP connector for programmatic workflows
 
 **Pricing:** Starts at $110/month (Starter — 10 videos); $220/month (Creator — 20 videos); no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
 
@@ -300,7 +300,7 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
-- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Video Generation** — powered by Dreamina Seedance 2.0, upgraded to **Seedance 2.5 (Aug 3, 2026)**: max clip length doubled from 15s to 30s, multi-modal reference uploads raised from 9 to 50 — better product consistency, more natural motion, less manual correction post-gen
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
@@ -361,11 +361,11 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
-Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
+Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. It integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation; **Gemini Omni** (announced at Google Marketing Live 2026) is now GA with a new **"1-Click Creative Testing"** feature: a natural-language brief auto-generates both 16:9 and 9:16 video variants directly from your brand URL + guidelines, rolling out globally in English, free inside Google Ads:
 
 1. Open Google Ads → Asset Studio
-2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image
-3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images
+2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image, or describe a brief for 1-Click Creative Testing
+3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images; Gemini Omni handles conversational multi-modal generation
 4. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
 5. Assets go directly into your campaign library — no external tool or re-upload required
 
@@ -382,7 +382,7 @@ Amazon Ads launched Creative Agent on February 24, 2026, inside Amazon's Creativ
 5. Publish directly to your Amazon campaign (Prime Video, Twitch, display placements)
 
 **Pricing:** No additional cost to advertisers (included with Amazon Ads account)
-**Access:** UK launch February 2026; rolling out to additional markets
+**Access:** UK launch February 2026; since expanded to Canada and India. A new **"Video Generator"** feature brings Creative Agent's capabilities to 50+ total tools, alongside a separate companion **"Ads Agent"** for campaign optimization (distinct from Creative Agent, which focuses on creative generation).
 **Best for:** Brands selling on Amazon who want AI-generated ad creative (video + display) with Amazon's own retail and shopping signal data baked in — no other platform has access to Amazon's purchase intent signals.
 **Not ideal for:** Non-Amazon campaigns (output is formatted for Amazon media only); use Creatify or AdStellar for TikTok/Meta/Google campaigns.
 
@@ -398,6 +398,7 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 6. Use **Flexible Ad Creation**: mix formats (single image, carousel, video) within one campaign in the new ad builder
 
 **Performance signal:** LinkedIn internal data shows 20%+ higher CTR for campaigns running 5+ ad variants vs. single-ad campaigns.
+**Also added since launch:** **Accelerate** — sub-5-minute AI-optimized campaign setup; **Campaign Performance Digest** — plain-language summaries of campaign results instead of raw dashboard metrics.
 **Best for:** B2B brands running LinkedIn campaigns who want faster variant generation and consistent brand voice without manual design work per variant.
 **Not ideal for:** Consumer / DTC advertising (LinkedIn CPMs are high; use TikTok Symphony or Meta Advantage+ for lower-funnel consumer campaigns).
 
@@ -411,3 +412,17 @@ When you need the highest realism (luxury products, fashion):
 3. Write a detailed prompt describing the camera movement and mood
 4. Use Soul ID to lock character/product appearance across shots
 5. Generate — Higgsfield produces cinematic results that feel like professional ad shoots
+
+**Sept 2026 update:** New "DoP I2V-01-preview" cinematic model, plus GPT-6 Astra integration for prompt/storyboard assistance.
+
+## Segwise — Creative Intelligence Layer (Not a Generator)
+
+Segwise is a creative-intelligence/analytics layer rather than a generator from scratch — it tags ad elements (hooks, visuals, CTAs, pacing) across 15+ ad networks and feeds the winning patterns it finds back into your generation workflow. It complements tools like Creatify, Arcads, or AdCreative.ai rather than replacing them.
+
+1. Connect your ad accounts across the networks you run on
+2. Segwise tags and clusters creative elements automatically, surfacing which patterns correlate with performance
+3. Feed the winning patterns into your creative-generation tool of choice as a brief
+
+**Pricing:** Enterprise-scale ($499–$1,699+/month) — aimed at mobile-game, app, and DTC teams running volume campaigns, not solo creators or small budgets.
+**Best for:** Teams already running significant ad spend across many networks who want a data-driven feedback loop into their creative pipeline.
+**Not ideal for:** Solo creators or small budgets (use the generators above directly); teams wanting a single generate-and-launch tool.
