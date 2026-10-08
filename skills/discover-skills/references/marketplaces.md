@@ -7,10 +7,12 @@ Sources to search when looking for Claude Code skills and plugins.
 | Source | URL | Notes |
 |--------|-----|-------|
 | Claude Code Plugins (official) | code.claude.com/docs/en/discover-plugins | Official Claude Code plugin directory |
-| Claude.ai Plugins + Skills + Connectors (official) | claude.ai/customize | Unified browse surface (launched March 31, 2026) — skills, connectors, and plugins in one place with typed filters and one-click install; Team/Enterprise admins can pin skills workspace-wide |
+| Claude.ai Plugins + Skills + Connectors (official) | claude.ai/customize | Unified browse surface (launched March 31, 2026) — skills, connectors, and plugins in one place with typed filters and one-click install; Team/Enterprise admins can pin skills workspace-wide; plugins enabled here **sync automatically into Claude Code terminal sessions** via account sync (shown as `<name>@synced`), including org-wide required plugins — a distinct discovery path from the git-based marketplaces below |
+| **claude.com/marketplace/plugins** | claude.com/marketplace/plugins | Official web-browsable catalog of the official plugin marketplace — shows install counts and "Anthropic verified" badges; part of the broader claude.com/marketplace storefront (2,000+ connectors/plugins/partner agents), but this page is specifically Claude Code plugins |
 | **Claude Plugins Official** (Anthropic GitHub) | github.com/anthropics/claude-plugins-official | Anthropic-managed, high-quality plugin directory |
 | **Anthropic Skills** (Anthropic GitHub) | github.com/anthropics/skills | Official public Agent Skills repo (May 2026); includes spec, example skills, and skill-creator; all skills available to Claude.ai paid plans |
 | **Claude Plugins Community** (Anthropic GitHub) | github.com/anthropics/claude-plugins-community | Read-only mirror of Anthropic's community plugin marketplace — third-party plugins that passed automated security scanning; add manually: `claude plugin marketplace add anthropics/claude-plugins-community`; submit plugins at clau.de/plugin-directory-submission |
+| **Anthropic Knowledge Work Plugins** (Anthropic GitHub) | github.com/anthropics/knowledge-work-plugins | Official topic-specific marketplace for non-engineering/knowledge-work plugins, separate from the general plugin directory |
 
 ## Community Marketplaces
 
