@@ -45,7 +45,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | Mapbox | Maps, geocoding, directions, static images; 50,000 map loads/month free; JS SDK; DevKit MCP Server available | mapbox.com | Free key |
 | ip-api.com | IP to location | ip-api.com | None (rate limited) |
 | **IPinfo Lite** | IP to country + ASN lookup for IPv4 and IPv6; unlimited requests, no rate limits on free tier; data updated daily; CC BY-SA 4.0 license; requires free account token | ipinfo.io/lite | Free token |
-| REST Countries | Country data | restcountries.com | None |
+| REST Countries | Country data; **legacy v1–v4 endpoints are now dead** (return a deprecation error per restcountries.com's own docs) — v5 requires a free API key via `Authorization: Bearer`, and some response field names/shapes changed | restcountries.com | Free key (v5; was keyless) |
 
 ## Transportation & Aviation
 
