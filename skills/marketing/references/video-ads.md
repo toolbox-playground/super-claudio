@@ -300,7 +300,7 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
-- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Video Generation** — powered by Dreamina Seedance 2.0; **upgraded to Seedance 2.5 on Aug 3, 2026** — max AI video length doubled from 15s to 30s, and multi-image reference uploads raised from 9 to 50 (better product consistency, more natural motion, less manual correction post-gen)
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
@@ -404,6 +404,8 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 ## Higgsfield — Cinema Studio Platform
 
 Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.0, Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace, with Cinema Studio 3.5 adding 70+ cinematic camera presets and Soul ID for cross-shot character consistency.
+
+**2026 momentum:** Raised a $400M Series B in August 2026 at a $5.4B valuation (self-reported figures, not independently audited). Ran an $85,000 "Adathon" AI-ad contest with Adweek (entries closed Aug 24, 2026). Per an OpenAI customer story published Sept 21, 2026, Higgsfield now uses GPT-6 ("Astra") internally to speed up ad-feature shipping.
 
 When you need the highest realism (luxury products, fashion):
 1. Prepare a high-quality product/lifestyle image
