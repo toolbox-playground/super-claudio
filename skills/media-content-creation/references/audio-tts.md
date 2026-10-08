@@ -66,9 +66,14 @@ with open("output.mp3", "wb") as f:
 
 `eleven_monolingual_v1`, `eleven_multilingual_v1`, and `scribe_v1` were removed on July 9, 2026. Migrate to `eleven_multilingual_v2` or `eleven_v3` for TTS; `scribe_v2` or `scribe_v2_realtime` for STT.
 
-## ElevenLabs v4 — Previewed at ElevenSummit Warsaw (Not Yet Released)
+## ElevenLabs v4 / v4 Turbo — Released (Sept 28, 2026)
 
-ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
+ElevenLabs shipped Eleven v4 and v4 Turbo on September 28, 2026, following the preview at ElevenSummit Warsaw (June 2026). New model architecture with improved tag/emotion following, 90+ languages, up to 10,000 characters per generation, and restored Professional Voice Clones (unavailable in v3). Available across ElevenAgents, ElevenCreative, and the API. ElevenLabs claims #1 on the Artificial Analysis "Provider Voice Arena" for September 2026 — self-reported by ElevenLabs, not independently confirmed as of this writing.
+
+- **URL:** elevenlabs.io
+- **Model IDs:** `eleven_v4`, `eleven_v4_turbo`
+- **Best for:** Teams already on ElevenLabs wanting the latest quality/emotion tier; voice cloning workflows needing Professional Voice Clones back
+- **Not ideal for:** Cost-sensitive high-volume pipelines where SIMBA/Qwen-Audio pricing wins (see Choosing Between Tools below)
 
 
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
@@ -206,15 +211,15 @@ OpenAI GPT-Realtime-2 (released May 8, 2026) is a speech-to-speech model — not
 
 ## OpenAI GPT-Live-1 — Full-Duplex Consumer Voice Model (July 8, 2026)
 
-OpenAI launched GPT-Live-1 and GPT-Live-1 mini on July 8, 2026, replacing Advanced Voice Mode in ChatGPT with a true full-duplex architecture that listens and speaks simultaneously. Unlike GPT-Realtime-2 (the current developer API), GPT-Live is consumer-facing first — currently in ChatGPT, with API access coming soon (waitlist). For complex requests, GPT-Live delegates to GPT-5.5 behind the scenes and returns results in-conversation.
+OpenAI launched GPT-Live-1 and GPT-Live-1 mini on July 8, 2026, replacing Advanced Voice Mode in ChatGPT with a true full-duplex architecture that listens and speaks simultaneously. Unlike GPT-Realtime-2 (the prior developer API), GPT-Live was consumer-facing first — in ChatGPT only at launch. **API access opened September 10, 2026** at $0.05/minute (platform.openai.com). For complex requests, GPT-Live delegates to GPT-5.5 behind the scenes and returns results in-conversation.
 
-- **URL:** chat.openai.com; API access: platform.openai.com (sign-up waitlist — not yet GA)
-- **Pricing:** Included with ChatGPT free (mini) and Plus/Pro ($20/$200/mo); API pricing TBA
+- **URL:** chat.openai.com; API: platform.openai.com
+- **Pricing:** Included with ChatGPT free (mini) and Plus/Pro ($20/$200/mo); API: $0.05/minute (added Sept 10, 2026)
 - **Models:** GPT-Live-1 (paid users, highest quality); GPT-Live-1 mini (free users)
 - **Architecture:** Full-duplex — speaks and listens at the same time (GPT-Realtime-2 requires push-to-talk; GPT-Live supports natural simultaneous turn-taking)
 - **Naturalness:** Back-channel acknowledgments ("mhmm", "yeah"), natural interruption handling, variable pacing
-- **Best for:** ChatGPT users wanting the most natural voice conversation; developers planning consumer voice apps (once API releases)
-- **Not ideal for:** Production TTS pipelines today (API not yet available); developers needing a stable API now (use GPT-Realtime-2 for that)
+- **Best for:** ChatGPT users wanting the most natural voice conversation; developers building full-duplex consumer voice apps now that the API is open
+- **Not ideal for:** Pure TTS pipelines where cost matters — $0.05/min is expensive versus dedicated TTS; use GPT-Realtime-2 or a dedicated TTS model for non-conversational narration
 
 ## Smallest.ai Lightning V3.1 — Conversational TTS, Beats ElevenLabs on MOS
 
