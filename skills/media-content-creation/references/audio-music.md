@@ -9,12 +9,12 @@
 Generate complete songs (vocals + instruments) from a text prompt.
 
 - URL: suno.com
-- **Latest model:** v5.5 (March 2026) — Voices (clone your singing voice), Custom Models (tune on your catalog), My Taste (personalized generation); v5.5 requires Pro/Premier; free tier capped at v4.5 and below
+- **Latest model:** v6 (Sept 9, 2026) — Suno's first model trained on licensed catalog data, released in partnership with Warner Music Group, BMG, and Believe (following the Nov 2025 WMG settlement); a v6-wild variant targets unconventional/experimental compositions; v6 and v6-wild require Pro/Premier; **free tier is now capped at v6-mini only** (down from the v4.5 cap previously)
 - **Suno Studio (in-browser DAW):** Multi-track view, stem separation (see below), 6-band EQ, Warp Markers (adjust timing post-generation), Remove FX (strip reverb/effects), alternates, and expanded time signature support. Studio 1.2 (February 2026) added warp markers, remove FX, and alternates. Available to Pro/Premier subscribers.
 - **Stem Separation (June 11, 2026 update):** Three modes — **Advanced Split** (NEW, Premier only): choose from ~100 instruments to regenerate each stem from scratch — no separation artifacts; also exports MIDI; 10 credits/extracted track. **Split from Mix** (Updated): pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
 - Free tier: 50 credits/day (~10 songs); non-commercial use only
 - **Important (2026):** Free-tier users can no longer download audio files — tracks can only be streamed/shared within the platform. Download requires a paid plan ($10/month Pro, $30/month Premier).
-- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of June 2026 the transition has not yet occurred — current models remain active — but when it does, all generations made with the old models will eventually become inaccessible. UMG and Sony Music litigation remains active — a fair-use summary judgment hearing in the U.S. case is scheduled for July 2026 (no verdict as of July 11, 2026); a separate German case (GEMA v. Suno) is due July 31, 2026. Users who want to preserve old generations should download them now on a paid plan.
+- **Model transition (underway):** Following the November 2025 Warner Music Group settlement, Suno launched its first licensed-catalog model, v6, on Sept 9, 2026 (BMG and Believe also on board); older models (trained on unlicensed audio) remain active for now, but expect them to be phased out as the licensed-catalog lineup matures — generations made with old models may eventually become inaccessible. Litigation continues: Sony and UMG filed a new complaint in Massachusetts on Sept 18, 2026 (60,202 recordings), arguing v6 inherits infringement from v5-era training and that some v6 training data was stream-ripped from YouTube shortly before the licensed release; Suno disputes this. Users who want to preserve old generations should download them now on a paid plan.
 - Input: genre, mood, lyrics (optional), style description
 - Output: full song (streaming on free; downloadable MP3 on paid)
 
@@ -29,9 +29,9 @@ Similar to Suno, strong on musicality and production quality.
 - **Licensing deals signed:** Udio reached agreements with Universal Music Group (Oct 2025), Warner Music, Merlin, and Kobalt (Q1 2026). The new licensed platform launched Q2 2026 but operates as a **walled garden** — tracks cannot be downloaded or exported, only streamed/shared within the Udio network. No download capability is expected for the foreseeable future.
 - Good for: previewing and sharing music concepts within the platform only; not suitable if you need to use the audio outside Udio
 
-## Mureka v8 — Developer-Focused AI Music Generation
+## Mureka v9.5 — Developer-Focused AI Music Generation
 
-Mureka v8 is the go-to for developers and technical producers: native API, stem separation, and MIDI export alongside full song generation.
+Mureka v9.5 (up from v8, Aug 31, 2026) is the go-to for developers and technical producers: native API, stem separation, and MIDI export alongside full song generation. The lyrics-first model family now runs on MusiCoT chain-of-thought composition planning, adding more emotional depth, tighter arrangements, and more lifelike vocals.
 
 - URL: mureka.ai | API: platform.mureka.ai
 - Free tier: available with limitations — non-commercial only, Mureka retains output rights on free
@@ -64,7 +64,7 @@ MiniMax Music 2.5 (released January 29, 2026) adds paragraph-level precision con
 - **14+ structural tags:** `[Intro]`, `[Verse]`, `[Chorus]`, `[Bridge]`, `[Interlude]`, `[Build-up]`, `[Hook]`, `[Outro]` — placed inline in the prompt to control song layout section by section
 - **Audio fidelity:** Optimized soundstage keeps vocals and instruments in separate spectral regions — the key improvement over Music 2.0
 - Best for: generation where song structure matters (commercial jingles, video scoring with section-to-cut sync, multi-verse songs with distinct parts)
-- Not ideal for: stem export or MIDI (use Mureka v8); on-demand free generation (use Suno free tier)
+- Not ideal for: stem export or MIDI (use Mureka v9.5); on-demand free generation (use Suno free tier)
 
 ## Google Flow Music (formerly Producer.ai / Riffusion) — Google-Owned, Free, Lyria 3 Powered
 
@@ -105,7 +105,7 @@ Beatoven.ai generates mood-based background music from text descriptions, purpos
 - **Video-to-music:** Upload a video file; AI analyzes the visual content and generates a matching soundtrack automatically
 - **Emotion control:** 16 moods (happy, sad, motivational, scary, relaxing, etc.) + regional sound styles + adjustable tempo
 - Best for: YouTubers, podcasters, course creators, and game devs needing mood-appropriate instrumentals with clean commercial licensing
-- Not ideal for: full songs with vocals (use Suno or MiniMax Music 2.5); stem separation (use Mureka v8 or Stable Audio 3.0)
+- Not ideal for: full songs with vocals (use Suno or MiniMax Music 2.5); stem separation (use Mureka v9.5 or Stable Audio 3.0)
 
 ## Free Royalty-Free Music (no generation needed)
 
