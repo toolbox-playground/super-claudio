@@ -8,7 +8,8 @@
 |------|-----|------|
 | **Canva** | Banners, carousels, social posts | Yes (free tier) |
 | **Adobe Express** | Quick resizing, brand kits | Free tier |
-| **Nano Banana 2** | Product in lifestyle scene | Check site |
+| **Nano Banana 2** | Product in lifestyle scene — fast, cheap default for most ad creative | Check site |
+| **Nano Banana Pro** (Gemini 3 Pro Image) | Premium tier for complex scenes, dense on-image text/typography, multi-logo accuracy — use for hero/flagship ads, not high-volume batches | API credits (~2x Nano Banana 2's per-image cost) |
 | **Flux via fal.ai** | AI-generated product images | API credits |
 
 ### Canva Ad Creation Workflow

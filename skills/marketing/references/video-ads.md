@@ -301,6 +301,7 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
 - **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Seedance 2.5 upgrade (Aug 3, 2026)** — max AI-generated video length doubled from 15s to 30s; reference image uploads increased from 9 to 50, letting Symphony pin more product/brand assets into a single generation. AI labels and likeness/IP-use safeguards remain enforced on all output.
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
@@ -385,6 +386,8 @@ Amazon Ads launched Creative Agent on February 24, 2026, inside Amazon's Creativ
 **Access:** UK launch February 2026; rolling out to additional markets
 **Best for:** Brands selling on Amazon who want AI-generated ad creative (video + display) with Amazon's own retail and shopping signal data baked in — no other platform has access to Amazon's purchase intent signals.
 **Not ideal for:** Non-Amazon campaigns (output is formatted for Amazon media only); use Creatify or AdStellar for TikTok/Meta/Google campaigns.
+
+**Platform context (unBoxed 2026, Sept 29):** Amazon renamed its broader unified ad-buying platform "Amazon Ads Agent," rebuilding it around agentic AI with a conversational interface, and introduced **DVA+** (folding Sponsored Display, video/TV, and programmatic buying together) plus a new **Full-Funnel Campaigns** product — both rolling out through Q4 2026. This is a rebrand of Amazon's ad-buying/DSP side; Creative Agent above remains the dedicated creative-generation tool inside Creative Studio. Exact details of how the two surfaces merge are still rolling out — check advertising.amazon.com for current naming before citing it to a client.
 
 ## LinkedIn Campaign Manager AI Tools — Brand Kit, Draft with AI & Variants (Jul 2026)
 
