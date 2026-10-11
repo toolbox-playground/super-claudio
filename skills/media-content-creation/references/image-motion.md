@@ -2,18 +2,24 @@
 
 Tools that take a still image and add realistic motion to it.
 
-## Weavy AI — Motion from Photo
+## Figma Weave (formerly Weavy AI) — Motion from Photo
 
-Adds realistic motion to a static photograph (person moves, fabric flows, hair blows).
+Figma acquired Weavy and rebranded it **Figma Weave**; the product still runs at app.weavy.ai
+(same canvas/workflows) and is also surfacing inside Figma Design/Figma Community as "Weave
+tools" since Config 2026. Still the node-based go-to for adding realistic motion to a static
+photograph (person moves, fabric flows, hair blows) by chaining AI models on a canvas.
 
 - Great for: fashion images, lifestyle photos, product ads where a model wears/uses the product
 - Input: photo + motion direction prompt
 - Output: short looping or progressive video clip
 - Common use case: animate an ecommerce model photo → use in TikTok Shop
+- Free tier: 150 credits/month, up to 5 workflows, no model restrictions; paid plans from
+  Starter $24/mo ($19/mo annual, 1,500 credits) — Weave credits are separate from any Figma
+  subscription/credits
 
 **Workflow:**
 1. Prepare a clean product/model photo
-2. Upload to Weavy AI
+2. Upload to Figma Weave (app.weavy.ai, or the Weave tools inside Figma Design)
 3. Describe the desired motion: "model turns and smiles", "dress flows in wind", "product rotates slowly"
 4. Generate and download as MP4
 
@@ -35,6 +41,6 @@ Kling's image-to-video mode is also excellent for animating photos.
 
 | Tool | Best For |
 |------|---------|
-| Weavy AI | Fashion/lifestyle/ecommerce model motion |
+| Figma Weave (formerly Weavy AI) | Fashion/lifestyle/ecommerce model motion |
 | Kling Image-to-Video | General high-quality animation |
 | Runway | Professional production, fine control |
