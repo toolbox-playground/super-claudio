@@ -222,14 +222,14 @@ Hyper (hyperfx.ai) runs TikTok, Meta, Google, LinkedIn, and Amazon as one autono
 **Pricing:** $49/month flat (all connected channels; no per-platform fees)
 **Best for:** Teams running TikTok alongside other paid channels who need unified multi-platform optimization; rated 9.4/10 in 2026 TikTok ad automation comparisons. Not a creative generator — use alongside Creatify or Arcads for new video assets.
 
-## Synter — MCP-Native Cross-Platform Ad Generator (14 Platforms in One Workflow)
+## Synter — MCP-Native Cross-Platform Ad Generator (20+ Platforms in One Workflow)
 
-Synter (syntermedia.ai) emerged in 2026 as the first MCP-native ad platform: Claude and other AI agents can generate a full creative suite (image ad, video ad, landing page) from a single prompt and distribute it across 14 ad platforms in one step — no manual uploading or platform switching.
+Synter (syntermedia.ai) emerged in 2026 as the first MCP-native ad platform: Claude and other AI agents can generate a full creative suite (image ad, video ad, landing page) from a single prompt and distribute it across ad platforms in one step — no manual uploading or platform switching. Synter's own materials describe growth from "14 ad platforms" to "20+ platforms via Direct API" by late 2026 (self-reported; not independently confirmed).
 
 1. Go to syntermedia.ai (or connect the MCP server at syntermedia.ai/mcp to Claude)
 2. Describe your product and target audience in a prompt
 3. Synter generates image ads, video ads, and a matching landing page via 100+ MCP tools
-4. Approve and distribute to any combination of: Google Ads, Meta, LinkedIn, TikTok, Reddit, Pinterest, Snapchat, Microsoft Ads, X Ads, Amazon DSP, Taboola, Spotify Ads, Trade Desk, StackAdapt
+4. Approve and distribute to any combination of: Google Ads, Meta, LinkedIn, TikTok, Reddit, Pinterest, Snapchat, Microsoft Ads, X Ads, Amazon DSP, Taboola, Spotify Ads, Trade Desk, StackAdapt, and others added through 2026
 
 **Pricing:** Starts at $199/month. MCP server is open-source at github.com/Synter-Media-AI/mcp-server.
 
@@ -295,12 +295,12 @@ MakeUGC generates talking-head UGC-style ads where AI actors appear to physicall
 
 ## TikTok Symphony & Ad Formats — TikTok World 2026 (May 13, 2026)
 
-TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by Dreamina Seedance 2.0:
+TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by Dreamina Seedance 2.5 (upgraded from 2.0 as of ~August 2026):
 - **Script Generator** — briefs → ad scripts aligned with trending hooks
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
-- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Video Generation** — powered by Dreamina Seedance 2.5 as of ~August 2026 (upgraded from Seedance 2.0): max generated clip length doubled to 30s, and multimodal reference uploads increased from 9 to 50 (images/video/audio); rolling out to select paid advertisers across Symphony Creative Studio, Symphony Automations, and the Symphony API
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
@@ -323,7 +323,7 @@ Access: business.tiktok.com → Creative Center → Symphony AI (now generally a
 Symphony Agent is TikTok's end-to-end agentic workflow for building full campaigns from a single text prompt. Unlike the Symphony creative tools (which generate individual assets), Symphony Agent orchestrates the full creative pipeline: reads performance signals, writes briefs, matches creators, and coordinates across three TikTok surfaces simultaneously.
 
 **Integrated into three TikTok products:**
-1. **Symphony Creative Studio** — AI chat experience that combines brand goals, TikTok platform insights, and performance signals to generate up to 3 videos per request (~3 min for 12s clip; ~5 min for 20s clip); guided workflow: product brief → insight report → storyboard → final video; powered by Seedance 2.0
+1. **Symphony Creative Studio** — AI chat experience that combines brand goals, TikTok platform insights, and performance signals to generate up to 3 videos per request (~3 min for 12s clip; ~5 min for 20s clip); guided workflow: product brief → insight report → storyboard → final video; powered by Seedance 2.5 as of ~August 2026 (up to 30s clips, 50 multimodal references — see Video Generation note above)
 2. **Content Suite** — AI Search that scans thousands of creator videos to surface content aligned with the advertiser's brief, enabling brands to repurpose existing creator content at scale
 3. **TikTok One** — Creator brief generation, discovery, and outreach at scale; supports multi-language filtering for multi-market campaigns
 
@@ -369,6 +369,8 @@ Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools 
 4. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
 5. Assets go directly into your campaign library — no external tool or re-upload required
 
+**Updates since Sept 2026:** Performance Max asset groups now auto-prefill with AI creative pulled directly from Asset Studio — one click during manual setup, or automatic when a campaign starts from the Asset Studio workspace (rolling out from ~Sept 2, 2026). Asset-level conversion reporting (which specific asset drove the conversion, not just a performance rating) is rolling out globally to all advertisers.
+
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
 
 ## Amazon Ads Creative Agent — Agentic AI for Amazon Campaigns (Feb 2026)
@@ -400,6 +402,19 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 **Performance signal:** LinkedIn internal data shows 20%+ higher CTR for campaigns running 5+ ad variants vs. single-ad campaigns.
 **Best for:** B2B brands running LinkedIn campaigns who want faster variant generation and consistent brand voice without manual design work per variant.
 **Not ideal for:** Consumer / DTC advertising (LinkedIn CPMs are high; use TikTok Symphony or Meta Advantage+ for lower-funnel consumer campaigns).
+
+## X Lift — URL-to-Campaign Ads on X (Oct 2026)
+
+X launched **X Lift** inside X Ads Manager on October 6, 2026 (announced at Advertising Week New York): paste a business URL and it generates a full ad campaign (images, copy, targeting) in one step, trained on X's own ad corpus. Builds on the earlier "Prefill with Grok" feature.
+
+1. Go to ads.x.com → X Lift
+2. Paste your business or landing page URL
+3. X Lift generates creative, copy, and an initial targeting setup
+4. Review and launch directly in X Ads Manager
+
+**Pricing:** No separate fee — bundled into X Ads Manager (normal campaign spend applies)
+**Best for:** Brands already advertising on X who want a fast first-draft campaign without a separate creative tool; first-time/small-business advertisers on the platform
+**Not ideal for:** Cross-platform campaigns (X Lift output stays on X) — use Synter or AdStellar for multi-platform distribution
 
 ## Higgsfield — Cinema Studio Platform
 
