@@ -17,6 +17,7 @@ Sources to search when looking for Claude Code skills and plugins.
 | Source | URL | Notes |
 |--------|-----|-------|
 | **Claude Marketplaces** | claudemarketplaces.com | 23,400+ skills, 2,500+ aggregated marketplaces, 770+ MCP servers; includes a "Skills Updater" tool to scan local installs and fetch upstream updates |
+| **claudemarket.ai** | claudemarket.ai | Large aggregator for Claude Code/Cowork/Desktop; self-reported ~23,000+ installable items (~13,870+ MCP servers, ~4,384+ skills) — figures vary across the site's own pages and aren't independently confirmed; `npx claudemarket search` CLI; also sells paid persona/bundle packs |
 | **There Is A Skill For That** | theresaskillforthat.com | Community directory of Claude skills by use case |
 | **AI Templates** | aitmpl.com/plugins | Plugin and skill templates |
 | **Awesome Claude** | awesomeclaude.ai/code-cheatsheet | Curated Claude Code resources and cheatsheets |
@@ -31,6 +32,7 @@ Sources to search when looking for Claude Code skills and plugins.
 | **Agensi** | agensi.io | Security-scanned marketplace — every skill passes an 8-point checklist (prompt injection, data exfiltration, secret detection, dangerous commands, obfuscation, external fetches) before listing; creator payments (80% revenue share); paid and free skills |
 | **SkillsMP** | skillsmp.com | 2.2M+ agent skills indexed from GitHub (2,213,455+ as of July 2026; public API available); compatible with Claude Code, Codex CLI, ChatGPT, and other agents |
 | **Tons of Skills** | tonsofskills.com | 463 plugins, 3,070 skills, 200 agents for Claude Code; `ccpi` CLI package manager; catalog updated daily from GitHub; most comprehensive single-site collection (July 2026) |
+| **claude-code-plugins-plus-skills** | github.com/jeremylongshore/claude-code-plugins-plus-skills | Fast-growing community marketplace; ~425-471 plugins, ~2,810-3,069 skills, ~200-347 agents (counts vary by aggregator snapshot); npm packages under `@intentsolutionsio`; install via `/plugin marketplace add jeremylongshore/claude-code-plugins-plus-skills` or its own `ccpi` CLI; MIT license |
 | **claude-skills (345 skills)** | github.com/alirezarezvani/claude-skills | 345 production-ready skills across 13 AI coding agents (Claude Code, Codex CLI, Cursor, Gemini CLI, and more), spanning engineering, marketing, product, compliance, and C-level advisory domains; also includes 30+ agents, 70+ custom commands, and 602 Python CLI tools |
 | **claude-code-marketplace (Netresearch)** | github.com/netresearch/claude-code-marketplace | Curated Agent Skills using agentskills.io open standard — portable across Claude Code, Cursor, Copilot, Codex, Gemini CLI, and 30+ more agents |
 | **claude-code-skills (daymade)** | github.com/daymade/claude-code-skills | Production-ready skills marketplace for enhanced development workflows |
