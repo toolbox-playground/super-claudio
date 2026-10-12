@@ -66,9 +66,13 @@ with open("output.mp3", "wb") as f:
 
 `eleven_monolingual_v1`, `eleven_multilingual_v1`, and `scribe_v1` were removed on July 9, 2026. Migrate to `eleven_multilingual_v2` or `eleven_v3` for TTS; `scribe_v2` or `scribe_v2_realtime` for STT.
 
-## ElevenLabs v4 — Previewed at ElevenSummit Warsaw (Not Yet Released)
+## ElevenLabs Eleven v4 / v4 Turbo — Released Sept 28, 2026
 
-ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
+Eleven v4 (quality-focused, for produced audio) and Eleven v4 Turbo (low-latency, ~150ms TTFA per ElevenLabs' own figures) shipped Sept 28, 2026 — superseding the earlier Warsaw preview — and are available across ElevenAgents, ElevenCreative, and ElevenAPI, including the free tier. SSML `<break>` tags are disabled in favor of inline delivery tags (`[laughs]`, `[whispers]`); Professional Voice Clones (unavailable in v3) are back; 90+ languages; multi-speaker; up to 10,000 characters per generation. ElevenLabs claims v4 ranked #1 on Artificial Analysis' "Provider Voice Arena" for September 2026 — treat that specific ranking as a vendor claim pending independent confirmation (a July 22, 2026 snapshot still showed Qwen-Audio-3.0-TTS-Plus and Speechify SIMBA 3.2 on top of the TTS naturalness Elo board; no independently-sourced September/October reranking was found).
+
+- **URL:** elevenlabs.io/changelog
+- **Released:** September 28, 2026
+- **Best for:** Anyone already on ElevenLabs wanting the latest quality tier free; low-latency agents via v4 Turbo
 
 
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
@@ -179,17 +183,18 @@ Hume Octave 2 is the first TTS model built on a language model backbone that tru
 - **Best for:** Dramatic narration, character voices, emotionally nuanced dialogue, marketing voiceovers where delivery matters
 - **Not ideal for:** High-volume bulk generation (Kokoro / edge-tts are cheaper at scale); on-device deployment (use NeuTTS Air)
 
-## Cartesia Sonic 3.5 — #2 Artificial Analysis TTS Arena, Real-Time Conversational TTS
+## Cartesia Sonic 3.6 — 44 Languages, Real-Time Conversational TTS (NEW Aug 2026)
 
-Cartesia Sonic 3.5 (upgraded May 2026) is purpose-built for real-time conversational AI with ~40ms time-to-first-audio — the standard pick for voice agents and chatbots. Sonic 3.5 improves on Sonic 3 with noticeably more natural voices, better stability through long calls, and more consistent pronunciation of difficult words and names. **Ranked #2 on the Artificial Analysis Speech Arena (Elo ~1,211, July 2026)** — a notable rise, combining both fast latency and top-tier quality. The upgrade applies automatically to all existing Cartesia integrations.
+Cartesia Sonic 3.6 (launched ~Aug 27, 2026) supersedes Sonic 3.5 as Cartesia's flagship — still purpose-built for real-time conversational AI with ~40ms time-to-first-audio, the standard pick for voice agents and chatbots. Language coverage expanded to 44 (some sources cite 61 locales including newly added Odia/Urdu), hosted-API only (no self-hosted weights). Cartesia claims #1 on Artificial Analysis' "provider" and "controlled voice streaming" leaderboards — a company claim, not yet independently cross-checked this cycle. The upgrade applied automatically to existing Cartesia integrations, same as prior version bumps.
 
 - URL: cartesia.ai
 - Free tier available
 - Latency: ~40ms TTFA (best-in-class for streaming)
-- Languages: 42
-- Elo: ~1,211 — **#2 globally (Artificial Analysis Speech Arena, July 2026)**
-- Best for: voice agents, live chatbots, real-time assistants — now competitive on quality benchmarks as well as latency
+- Languages: 44
+- Best for: voice agents, live chatbots, real-time assistants — competitive on quality benchmarks as well as latency
 - Not ideal for: long-form content where ElevenLabs, Fish Audio, or Chatterbox are better
+
+**Note:** Artificial Analysis also runs a separate **Speech Agent Arena** (launched Aug 24, 2026) that scores full speech-to-speech agents on real-world task completion rather than voice naturalness alone — Gemini 3.1 Flash Live Preview (Minimal) leads overall preference (Elo ~1,046), Grok Voice leads task success. This is a distinct leaderboard from the TTS naturalness Elo scores used elsewhere in this file — don't conflate the two.
 
 ## OpenAI GPT-Realtime-2 — Voice Reasoning Model, GPT-5-Class Intelligence (May 2026)
 
