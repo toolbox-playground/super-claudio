@@ -9,16 +9,30 @@
 Generate complete songs (vocals + instruments) from a text prompt.
 
 - URL: suno.com
-- **Latest model:** v5.5 (March 2026) — Voices (clone your singing voice), Custom Models (tune on your catalog), My Taste (personalized generation); v5.5 requires Pro/Premier; free tier capped at v4.5 and below
+- **Latest model (NEW Sept 9, 2026):** v6 family — flagship **v6** (polished, reliable across genres), **v6-wild** (more varied/unpredictable output), and **v6-mini** (faster, lighter, available on all plans including free). v6 and v6-wild require Pro/Premier; v6-mini is available to everyone. All three generate up to 8 minutes per song (up from v5.5's limits) and support starting from text, audio, images, or video. New editing tools: plain-language edits to a single section or lyric line, and mashups built from several of a user's own songs.
+- **Previous model:** v5.5 (March 2026) — Voices (clone your singing voice), Custom Models (tune on your catalog), My Taste (personalized generation); free tier capped at v4.5 and below
 - **Suno Studio (in-browser DAW):** Multi-track view, stem separation (see below), 6-band EQ, Warp Markers (adjust timing post-generation), Remove FX (strip reverb/effects), alternates, and expanded time signature support. Studio 1.2 (February 2026) added warp markers, remove FX, and alternates. Available to Pro/Premier subscribers.
 - **Stem Separation (June 11, 2026 update):** Three modes — **Advanced Split** (NEW, Premier only): choose from ~100 instruments to regenerate each stem from scratch — no separation artifacts; also exports MIDI; 10 credits/extracted track. **Split from Mix** (Updated): pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
 - Free tier: 50 credits/day (~10 songs); non-commercial use only
 - **Important (2026):** Free-tier users can no longer download audio files — tracks can only be streamed/shared within the platform. Download requires a paid plan ($10/month Pro, $30/month Premier).
-- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of June 2026 the transition has not yet occurred — current models remain active — but when it does, all generations made with the old models will eventually become inaccessible. UMG and Sony Music litigation remains active — a fair-use summary judgment hearing in the U.S. case is scheduled for July 2026 (no verdict as of July 11, 2026); a separate German case (GEMA v. Suno) is due July 31, 2026. Users who want to preserve old generations should download them now on a paid plan.
+- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of October 2026 the transition has not yet occurred — v6 and earlier models remain active — but when it does, all generations made with the old models will eventually become inaccessible. Users who want to preserve old generations should download them now on a paid plan.
+- **Litigation update (as of October 2026):** Suno **lost** the German case — the Munich Regional Court ruled for GEMA on July 31, 2026, finding Suno used stream-ripping to pull copyrighted songs from YouTube for training and that this violated reproduction and public-communication rights; Suno must stop the unauthorized use and pay damages (amount not yet set), and the ruling is being appealed. In the U.S., UMG and Sony's original case is still pretrial (a judge denied the labels' bid to add 61,026 more recordings on August 18, 2026; the fair-use summary-judgment timing is disputed across sources, ranging from a July 2026 hearing to a date pushed to January 8, 2027). UMG and Sony then filed a **second** U.S. suit on September 18, 2026, specifically targeting the v6 models as built on the earlier models' unlicensed training data ("fruit of the same poisoned tree"), alleging unauthorized use of 60,202 recordings.
 - Input: genre, mood, lyrics (optional), style description
 - Output: full song (streaming on free; downloadable MP3 on paid)
 
 Example prompt: "upbeat Brazilian funk, energetic, no lyrics, good for TikTok ads"
+
+## Suno Speech — Voice + Music Generated Together (NEW, Beta Oct 1, 2026)
+
+Suno's first product beyond song generation: a single model that writes spoken narration and background music together as one cohesive track, rather than generating narration and scoring it separately. Positioned by coverage as Suno's entry into ElevenLabs' territory, though it is explicitly not a precision voiceover tool.
+
+- **URL:** suno.com (in-app; public beta on web and mobile)
+- **Modes:** Simple (short description in, finished clip out) or Advanced (supply your own script; set voice gender, speech style, and variation); music is optional and can be toggled off for speech-only output
+- **Length:** Up to ~8 minutes per clip
+- **Pricing:** Reportedly included on current Suno plans at no extra cost during the beta (unconfirmed officially; no published credit/quota numbers yet)
+- **API:** None published yet
+- **Best for:** Short, expressive spoken pieces with an integrated soundtrack — intros, promos, narrated clips where mood matters more than word-for-word script fidelity
+- **Not ideal for:** Precision voiceover/ad narration needing exact script adherence, SSML control, or API integration — use ElevenLabs v4, Qwen-Audio-3.1-TTS-Plus, or another dedicated TTS tool from `audio-tts.md` for those
 
 ## Udio — High-Quality Music Generation
 
@@ -72,9 +86,12 @@ Riffusion rebranded to Producer.ai in July 2025. Google acquired Producer.ai in 
 
 - URL: flowmusic.app (old URL producer.ai redirects here)
 - Free tier: daily credit top-up; globally available (250+ countries), no waitlist
-- Input: text prompt; also supports image-to-music and audio-to-music inputs; new Replace and Extend features for remixing specific sections of a track
-- Stack: Lyria 3 (audio) + Veo (music video) + Nano Banana (album art) — all Google AI models
-- Best for: free music generation with optional music video output; users in the Google/Gemini ecosystem
+- Input: text prompt; also supports image-to-music and audio-to-music inputs; Replace and Extend features for remixing specific sections of a track
+- **Upload your own beats (NEW July 16, 2026):** Upload original beats/instrumentals and have Flow Music analyze tempo, style, and mood, then remix or build on them with Extend, Replace, and Cover
+- **Gemini Omni Flash (May 2026):** Added conversational editing and section-by-section rework — translate or restyle just one part of a track, or reinterpret an earlier generation into something new while keeping the original melody/structure
+- **Standalone iOS app (May 20, 2026):** Section-level editing, tempo changes, lyric rewrites, and cover generation on mobile (Android reportedly in progress)
+- Stack: Lyria 3 Pro (audio) + Veo (music video) + Nano Banana (album art) — all Google AI models
+- Best for: free music generation with optional music video output; remixing your own beats; users in the Google/Gemini ecosystem
 
 
 ## Stable Audio 3.0 (Stability AI) — Open-Weight, Commercially Licensed Music & SFX
