@@ -66,9 +66,14 @@ with open("output.mp3", "wb") as f:
 
 `eleven_monolingual_v1`, `eleven_multilingual_v1`, and `scribe_v1` were removed on July 9, 2026. Migrate to `eleven_multilingual_v2` or `eleven_v3` for TTS; `scribe_v2` or `scribe_v2_realtime` for STT.
 
-## ElevenLabs v4 — Previewed at ElevenSummit Warsaw (Not Yet Released)
+## ElevenLabs v4 / v4 Turbo — Released September 28, 2026
 
-ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
+ElevenLabs shipped Eleven v4 and a low-latency Eleven v4 Turbo variant on September 28, 2026, following the preview shown at ElevenSummit Warsaw (June 2026). Model IDs and pricing not yet confirmed independently — verify at elevenlabs.io/docs before quoting exact figures.
+
+- **v4:** ElevenLabs' most emotive model yet — "performance acting" delivery (emotion, intent, accent) rather than flat text-to-speech; company claims #1 on the Artificial Analysis Provider Voice Arena for September 2026 (self-reported, not independently verified here)
+- **v4 Turbo:** low-latency sibling aimed at voice agents / real-time use, same emotive improvements
+- **Availability:** immediately available in ElevenAgents, ElevenCreative, and via ElevenAPI; included on the free tier
+- Update references to "v4 not yet released" elsewhere in this file — v3 remains the previous-generation model for existing integrations until migration
 
 
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
