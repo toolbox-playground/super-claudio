@@ -42,6 +42,7 @@ Sources to search when looking for Claude Code skills and plugins.
 | **MCP Market** | mcpmarket.com | Agent Skills directory for Claude Code, ChatGPT, and Codex; 318 MCP servers indexed; 200k+ monthly visitors; searchable by capability (June 2026) |
 | **Cross AI Tools** | crossaitools.com | 21,700+ Claude Code skills, plugins, and MCP servers in one browsable directory; 300,000+ monthly visitors; daily GitHub sync; supports Claude Code, Codex, OpenCode, Cursor, and 40+ agents; search by category (frontend, backend, testing, DevOps, security) |
 | **LobeHub Skills** | lobehub.com/skills | 169K+ agent skills in SKILL.md format — compatible with Claude Code, Codex CLI, ChatGPT; includes security vetting, AI/LLM integration, and developer tooling categories |
+| **Vibe Index** | vibeindex.ai | Searchable directory of Claude Code marketplaces, plugins, and skills organized by tag (agents, coding, audio, model, etc.); listings show repo name, description, and popularity; covers broad collections (e.g. davepoon-buildwithclaude: 117 agents, 174 slash commands, 28 hooks, 199 MCP servers) down to narrow single-purpose tools |
 | **There's An AI For That** | theresanaiforthat.com | Broader AI tool discovery (not Claude-specific, but useful for research) |
 
 ## How to Search Each Source
