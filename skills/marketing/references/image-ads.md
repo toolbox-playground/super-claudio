@@ -37,6 +37,10 @@ Text space on [left/right/top/bottom] for headline.
 
 Canva has carousel templates — use "Instagram Carousel" template.
 
+## Meta Brand Memory — AI That Learns From Your Past Ads (Cannes Lions, Jun 2026)
+
+Meta introduced Brand Memory at Cannes Lions 2026: it ingests a brand's historical ad library and uses it to inform new AI-generated creative (tone, visual style, past winners) rather than generating from a blank prompt each time. **Still in a very limited pilot with select advertisers as of September 2026** — not yet broadly available. Check ads.meta.com/advantage for rollout status before recommending it as a working tool.
+
 ## Ad Copy Formula
 
 Use Claude to generate ad copy with this prompt:
