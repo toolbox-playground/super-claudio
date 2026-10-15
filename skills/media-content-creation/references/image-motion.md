@@ -2,7 +2,9 @@
 
 Tools that take a still image and add realistic motion to it.
 
-## Weavy AI — Motion from Photo
+## Weavy AI / Figma Weave — Motion from Photo
+
+> **Ownership note:** Weavy AI was acquired by Figma (announced Oct 2025) and is being rebranded **Figma Weave** (weave.figma.com); the legacy weavy.ai URL still works for now. See `video-ads.md` for the current naming.
 
 Adds realistic motion to a static photograph (person moves, fabric flows, hair blows).
 
