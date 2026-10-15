@@ -117,7 +117,7 @@ Pencil generates video and image ads and scores every creative against patterns 
 5. Export top-predicted creatives directly to your ad manager
 
 **Free tier:** 6 ads free (guided creation; no credit card required)
-**Pricing:** ~$99/month (Basic); ~$499/month (Pro — agency seats, unlimited)
+**Pricing:** $14/month Core (50 generations); $55/month Growth (250 generations); Pro is custom/enterprise pricing — correcting earlier (higher) figures seen for this tool
 **Platforms:** Facebook, Instagram, TikTok, YouTube, Amazon, Pinterest, Snapchat
 **Best for:** DTC brands and agencies that want statistically validated creatives before launch; teams burned by wasting budget on losers during testing.
 **Not ideal for:** Pure video UGC production at volume (use Arcads or Creatify instead); sub-$1K/month spend where predictive value is limited.
@@ -179,7 +179,7 @@ Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors
 4. Generate the video — output is virtually indistinguishable from real UGC in scroll tests
 5. Download and deploy directly to Meta/TikTok Ads Manager
 
-**Pricing:** Starts at $110/month (Starter — 10 videos); $220/month (Creator — 20 videos); no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
+**Pricing:** New entry-level **Lite tier at $29/month**; Starter $110/month (10 videos); Creator $220/month (20 videos) — promotional pricing as low as $77/$154 per month has been seen on these tiers; no free trial (voice preview available before purchase). Best for brands running systematic UGC ad testing across many audience segments.
 
 ## Pose Video Studio — Identity-Consistent UGC from Your Own Face
 
@@ -400,6 +400,17 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 **Performance signal:** LinkedIn internal data shows 20%+ higher CTR for campaigns running 5+ ad variants vs. single-ad campaigns.
 **Best for:** B2B brands running LinkedIn campaigns who want faster variant generation and consistent brand voice without manual design work per variant.
 **Not ideal for:** Consumer / DTC advertising (LinkedIn CPMs are high; use TikTok Symphony or Meta Advantage+ for lower-funnel consumer campaigns).
+
+## Segwise — Creative Intelligence & Performance Analytics
+
+Segwise (segwise.ai) is not a generation tool — it's a creative-intelligence layer that sits on top of your existing ad accounts. It tags creative elements (hooks, CTAs, emotions, visual style) with multimodal AI and maps them to ROAS/performance data across 15+ ad networks (Meta, Google, TikTok, AppsFlyer, and more), flagging creative fatigue early and surfacing which winning patterns to generate more of.
+
+1. Go to segwise.ai
+2. Connect your ad accounts and attribution data
+3. Segwise auto-tags every creative's elements and correlates them with performance
+4. Review fatigue alerts and winning-pattern reports; brief your generation tool (Creatify, Arcads, Lapis) on what to make next
+
+Best for: teams already running creatives at volume who want data on *why* a creative wins or dies, rather than another generation tool. Not ideal for: brands that haven't yet started running paid creative (nothing to analyze yet).
 
 ## Higgsfield — Cinema Studio Platform
 
