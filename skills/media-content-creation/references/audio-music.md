@@ -9,12 +9,12 @@
 Generate complete songs (vocals + instruments) from a text prompt.
 
 - URL: suno.com
-- **Latest model:** v5.5 (March 2026) — Voices (clone your singing voice), Custom Models (tune on your catalog), My Taste (personalized generation); v5.5 requires Pro/Premier; free tier capped at v4.5 and below
-- **Suno Studio (in-browser DAW):** Multi-track view, stem separation (see below), 6-band EQ, Warp Markers (adjust timing post-generation), Remove FX (strip reverb/effects), alternates, and expanded time signature support. Studio 1.2 (February 2026) added warp markers, remove FX, and alternates. Available to Pro/Premier subscribers.
-- **Stem Separation (June 11, 2026 update):** Three modes — **Advanced Split** (NEW, Premier only): choose from ~100 instruments to regenerate each stem from scratch — no separation artifacts; also exports MIDI; 10 credits/extracted track. **Split from Mix** (Updated): pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
-- Free tier: 50 credits/day (~10 songs); non-commercial use only
-- **Important (2026):** Free-tier users can no longer download audio files — tracks can only be streamed/shared within the platform. Download requires a paid plan ($10/month Pro, $30/month Premier).
-- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of June 2026 the transition has not yet occurred — current models remain active — but when it does, all generations made with the old models will eventually become inaccessible. UMG and Sony Music litigation remains active — a fair-use summary judgment hearing in the U.S. case is scheduled for July 2026 (no verdict as of July 11, 2026); a separate German case (GEMA v. Suno) is due July 31, 2026. Users who want to preserve old generations should download them now on a paid plan.
+- **Latest models (NEW Sept 9, 2026): v6, v6-wild, v6-mini** — Suno's first models trained with licensed catalog access from Warner Music Group, BMG, and Believe (following the Nov 2025 WMG settlement), with revenue sharing to those partners starting at launch. v6 and v6-wild are Pro/Premier-only; v6-mini is available to all users (including free tier). Features: partial song editing, mashups from multiple source tracks, audio isolation, sampling.
+- **Model retirement:** Suno is retiring all previous models (v5.5 and earlier, trained on unlicensed audio) as v6 rolls out — do not build new workflows on v5.5.
+- **Suno Studio (in-browser DAW):** Multi-track view, stem separation (see below), 6-band EQ, Warp Markers (adjust timing post-generation), Remove FX (strip reverb/effects), alternates, and expanded time signature support. Available to Pro/Premier subscribers.
+- **Stem Separation:** Three modes — **Advanced Split** (Premier only): choose from ~100 instruments to regenerate each stem from scratch; also exports MIDI; 10 credits/extracted track. **Split from Mix**: pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
+- **Downloads (tightened Sept 3, 2026):** Monthly download caps now apply even to songs made before the cap started — reported at 20 songs/month on Pro, 60 songs/month on Premier; free tier has no regular download allowance (streaming/sharing only). Verify current caps at suno.com/pricing before relying on them for a production workflow.
+- **Litigation status:** With the WMG settlement and BMG/Believe deals now reflected in v6's licensing, remaining UMG/Sony Music litigation should be checked directly with Suno — don't assume it's fully resolved.
 - Input: genre, mood, lyrics (optional), style description
 - Output: full song (streaming on free; downloadable MP3 on paid)
 
@@ -40,9 +40,18 @@ Mureka v8 is the go-to for developers and technical producers: native API, stem 
 - Commercial rights: full ownership on paid plans (royalty-free, use in ads/videos/streaming)
 
 
+## ElevenLabs Music v2.5 — New Default Model (NEW Sept 2026)
+
+ElevenLabs shipped Music v2.5 in September 2026 (reports date it to Sept 3 or Sept 11 — check elevenlabs.io/blog for the exact date), replacing Music v2 as ElevenMusic's default generative audio model. Positioned around native-sounding lyrics/vocals across more languages; like v2, trained on licensed data and cleared for commercial use.
+
+- URL: elevenlabs.io (ElevenMusic app/web, ElevenCreative, ElevenAPI)
+- **Downloads:** Free plan — 5 lossless downloads/day; Pro plan — 400/month (reported; verify at elevenlabs.io/pricing)
+- **Separate from this release:** ElevenLabs also announced a multi-year music licensing agreement with Universal Music Group (~Sept 10, 2026) — company sources say that deal is independent of the Music v2.5 model itself, not the data it was trained on
+- Music v2 (below) remains available via the API for existing integrations
+
 ## ElevenLabs Music v2 — Genre-Switching AI Music with API Access (May 2026)
 
-ElevenLabs launched ElevenMusic as an iOS app on April 1, 2026, then shipped Music v2 on May 26, 2026 — a major upgrade adding mid-track genre switching, chunk-based composition plans, and full API access across ElevenMusic, ElevenCreative, and ElevenAPI.
+ElevenLabs launched ElevenMusic as an iOS app on April 1, 2026, then shipped Music v2 on May 26, 2026 — a major upgrade adding mid-track genre switching, chunk-based composition plans, and full API access across ElevenMusic, ElevenCreative, and ElevenAPI. **Superseded by Music v2.5 (Sept 2026, above) as the default model** — v2 remains available via API for existing integrations.
 
 - URL: elevenlabs.io (ElevenMusic iOS, ElevenCreative web app, ElevenAPI)
 - **API model_id:** `music_v2` (on Generate music, Stream music, Generate music detailed, Upload music endpoints)
