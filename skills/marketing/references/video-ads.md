@@ -339,6 +339,20 @@ Symphony Agent is TikTok's end-to-end agentic workflow for building full campaig
 **Best for:** Brands that want a fully guided TikTok campaign workflow — from brief to published ad — without switching between Creator Marketplace, Symphony Studio, and Ads Manager separately.
 **Not ideal for:** One-off single-asset creation (use Symphony Creative Studio directly); high-volume UGC avatar campaigns (use Arcads or Creatify for those).
 
+## TikTok Advertising Week NY & TikTok World Canada — Agentic Commerce Push (NEW Oct 5–7, 2026)
+
+TikTok announced a wave of agentic AI ad tools at Advertising Week New York (Oct 5) and TikTok World Canada (Oct 7, 2026), extending Smart+ and Symphony with conversational and lead-gen agents. Most tools are rolling out via eligibility-based testing — availability dates for specific advertisers are not yet published.
+
+- **Shopping Assistant** — conversational AI agent inside TikTok's new "Agentic Commerce" framework; answers product questions and remembers user preferences across sessions, acting as a real-time shopping guide
+- **Agentic Leads** — lead-generation agent that runs inside TikTok direct messages and on advertisers' own lead forms
+- **Search Ads Campaign (Smart+)** — extends Smart+ automation to TikTok Search Ads, automating keyword and creative setup
+- **TikTok Ad Network (TTAN)** — TikTok's network for extending campaigns to ~400,000 third-party apps; opened to US-targeted campaigns as of this announcement
+- **Symphony + Seedance 2.5** — TikTok is integrating ByteDance's Dreamina Seedance 2.5 video model directly into Symphony's creative generation
+- **Smart+ Auto Selection + AI Summary** — Smart+ adds automatic best-asset selection across creative pools plus an AI-generated performance summary tool
+- **TikTok for Business MCP** — now listed as a connector on several AI platforms including Claude (not just a standalone MCP server); TikTok reports 200%+ growth in advertiser usage July–Sept 2026
+
+**Access:** business.tiktok.com / ads.tiktok.com — features are rolling out via eligibility testing, not yet generally available to all accounts.
+
 ## TikTok Agentic Hub — AI Skills Marketplace (June 30, 2026)
 
 TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and third-party AI Skills built on the TikTok Ads MCP Server, letting AI agents execute advertising workflows directly inside TikTok Ads Manager without manual UI work.
