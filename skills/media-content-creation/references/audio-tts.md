@@ -40,6 +40,17 @@ edge-tts --list-voices
 3. Generate audio: `edge-tts --voice pt-BR-FranciscaNeural --text "..." --write-media summary.mp3`
 4. Play or share: `afplay summary.mp3` (macOS) or `mpg123 summary.mp3` (Linux)
 
+## ElevenLabs v4 / v4 Turbo — New Flagship (NEW Sept 28, 2026)
+
+ElevenLabs launched Eleven v4 and v4 Turbo on September 28, 2026, replacing v3 as the company's flagship voice models. v4 targets maximum expressiveness and quality; v4 Turbo targets live calls and agent loops with ~100ms median inference / ~150ms median time-to-first-speech.
+
+- **URL:** elevenlabs.io (same ElevenAPI, ElevenCreative, ElevenAgents surfaces)
+- **Benchmark claim:** ElevenLabs reports v4 placed #1 on the Artificial Analysis Provider Voice Arena, preferred in ~75% of blind head-to-head listening tests — company-reported, not yet independently confirmed across all benchmarks
+- **Capabilities:** script-level speaker/context awareness, 90+ languages, inline direction tags, improved voice cloning from ~10 seconds of reference audio, better long-form speaker consistency
+- **Pricing (reported, verify at elevenlabs.io/pricing):** introductory API pricing ≈$22/1M characters (v4), ≈$11/1M characters (Turbo)
+- **Best for:** teams already on ElevenLabs wanting the highest quality/expressiveness tier (v4) or the lowest-latency tier for live agents (v4 Turbo); supersedes v3 for new projects
+- v3 (below) remains available and is still a solid pick where v4 pricing isn't justified
+
 ## ElevenLabs v3 — Premium Quality, Voice Cloning
 
 ElevenLabs v3 produces studio-quality speech with emotionally nuanced voices, 70+ languages (74 officially supported), and voice cloning from 1 minute of audio.
@@ -253,9 +264,13 @@ Rime (rime.ai) grounds its TTS in sociolinguistics — training on how real peop
 - **Best for:** Developers who need natural-sounding conversational voices without the cost of ElevenLabs; enterprise voice agents needing the Coda model's sub-100ms TTFA
 - **Not ideal for:** Theatrical emotional range (use Hume Octave 2); self-hosted / open-source deployment (use Chatterbox or Kokoro)
 
-## Qwen-Audio-3.0-TTS-Plus (Alibaba) — #1 Artificial Analysis TTS Arena (Elo 1,236, Mid-July 2026)
+## Qwen-Audio-3.1-TTS-Plus (Alibaba) — Successor Model (reported ~Elo 1,297, Oct 2026)
 
-Alibaba's Qwen-Audio-3.0-TTS-Plus (distinct from the open-source Qwen3-TTS listed below) is the **new #1 on the Artificial Analysis Speech Arena Leaderboard** as of mid-July 2026, narrowly surpassing Speechify SIMBA 3.2 — overlapping confidence intervals make the margin close. Delivers increased naturalness and contextually appropriate intonation; available as a proprietary cloud-hosted model via Alibaba Cloud Model Studio (DashScope). Continues Alibaba's momentum across model categories following HappyHorse and Fun-Realtime-TTS.
+Alibaba followed Qwen-Audio-3.0-TTS-Plus with **Qwen-Audio-3.1-TTS-Plus**, reported in October 2026 leaderboard snapshots at ~Elo 1,297 — still behind ElevenLabs' new Eleven v4 / v4 Turbo (reported ~1,326–1,328) but ahead of most other cloud TTS models. As with other fast-moving arena rankings, confirm the live leaderboard at artificialanalysis.ai before treating any single snapshot as current.
+
+## Qwen-Audio-3.0-TTS-Plus (Alibaba) — Previous-Gen Flagship (Elo 1,236, Mid-July 2026)
+
+Alibaba's Qwen-Audio-3.0-TTS-Plus (distinct from the open-source Qwen3-TTS listed below) briefly held **#1 on the Artificial Analysis Speech Arena Leaderboard** in mid-July 2026, narrowly surpassing Speechify SIMBA 3.2. Delivers increased naturalness and contextually appropriate intonation; available as a proprietary cloud-hosted model via Alibaba Cloud Model Studio (DashScope). **Superseded by Qwen-Audio-3.1-TTS-Plus** (above) and by ElevenLabs Eleven v4 in the current rankings.
 
 - **URL:** alibabacloud.com (Model Studio / DashScope)
 - **Elo:** 1,236 — **#1 globally (Artificial Analysis Speech Arena, mid-July 2026)**; narrowly above SIMBA 3.2 (1,234) with overlapping confidence intervals
@@ -308,6 +323,14 @@ MiniMax Speech 2.8 HD is MiniMax's current flagship TTS, replacing Speech 2.6. B
 - **Variants:** HD (broadcast-grade fidelity) vs Turbo (2–3× faster, lower cost, same features)
 - **Best for:** Multilingual narration, marketing voiceovers, audiobooks needing emotional range and reliable voice cloning
 - **Not ideal for:** Ultra-low-latency agents (<100ms) — use Cartesia Sonic 3.5 for those
+
+## Fish Audio Drama 3 Preview — Top Open-Weights TTS (reported ~Elo 1,242, Oct 2026)
+
+Fish Audio's Drama 3 Preview is reported as the highest-ranked open-weights model on the Artificial Analysis TTS leaderboard as of October 2026 (~Elo 1,242–1,243), ahead of other self-hostable options. Treat it as a newer alternative to Fish Audio S2 Pro below — check fish.audio for current weight availability and licensing terms, which had not fully settled as of this scan.
+
+- **URL:** fish.audio
+- **Best for:** teams wanting the strongest open-weights TTS quality available to self-host, rather than S2 Pro's broader language/emotion feature set
+- **Not ideal for:** production use before confirming the model's final license terms (still "Preview" as of Oct 2026)
 
 ## Chatterbox — Free & Open-Source, No Usage Caps
 
@@ -477,12 +500,13 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Need | Tool |
 |------|------|
 | Quick article summary, personal use | edge-tts (Azure, free) |
-| Professional ad voiceover | ElevenLabs v3 or Inworld TTS-1.5 |
+| Professional ad voiceover | ElevenLabs v4 (new flagship, Sept 2026) or v3 (cheaper, still solid); Inworld TTS-1.5 |
 | Low-latency voice agent (ElevenLabs ecosystem) | ElevenLabs Flash v2.5 (~75ms, 32 languages) or Flash v2 (English only, ~75ms) |
 | Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
 | 80+ languages, emotion control | Fish Audio S2 Pro |
-| Best blind-test naturalness (cloud) | Qwen-Audio-3.0-TTS-Plus (Elo 1,236, **#1** mid-July 2026), Speechify SIMBA 3.2 (Elo 1,234, **#2** mid-July 2026), Gemini 3.1 Flash TTS (Elo ~1,214, **~#3**), Cartesia Sonic 3.5 (Elo ~1,207, **~#4**) |
+| Best blind-test naturalness (cloud) | ElevenLabs Eleven v4 / v4 Turbo (reported ~Elo 1,326–1,328, **new flagship Sept 2026**), Qwen-Audio-3.1-TTS-Plus (reported ~Elo 1,297, Oct 2026), Qwen-Audio-3.0-TTS-Plus (Elo 1,236), Speechify SIMBA 3.2 (Elo 1,234), Gemini 3.1 Flash TTS (Elo ~1,214), Cartesia Sonic 3.5 (Elo ~1,207) — verify current order at artificialanalysis.ai, rankings shift often |
+| Best open-weights / self-hosted quality | Fish Audio Drama 3 Preview (reported ~Elo 1,242, Oct 2026 — still "Preview," check license before production use) |
 | Voice cloning, no cost, offline | Chatterbox (open-source) |
 | Long-form narration (up to 12 min), zero hallucinations, self-hosted | Hume AI TADA (Apache 2.0, open-source) |
 | Voice cloning, cloud, easiest | ElevenLabs (paid) |
