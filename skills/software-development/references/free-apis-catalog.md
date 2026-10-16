@@ -58,6 +58,14 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | API | What | URL | Auth |
 |-----|------|-----|------|
 | Open Library | Books, authors, covers — millions of titles from the Internet Archive | openlibrary.org/api | None |
+| **Gutendex** | Full catalog + metadata for 70,000+ free public-domain ebooks from Project Gutenberg; search by title/author/language/topic; returns direct download links (plain text, EPUB, etc.) | gutendex.com | None |
+
+## Research & Academic
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| OpenAlex | 250M+ scholarly works, authors, institutions, and citation graphs; successor to Microsoft Academic Graph; bulk + single-record queries | openalex.org/api | None (polite pool with email param) |
+| Crossref | DOI metadata lookup and search for scholarly publications (journals, books, datasets) | api.crossref.org | None |
 
 ## Food & Nutrition
 
