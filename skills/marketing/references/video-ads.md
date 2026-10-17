@@ -339,6 +339,16 @@ Symphony Agent is TikTok's end-to-end agentic workflow for building full campaig
 **Best for:** Brands that want a fully guided TikTok campaign workflow — from brief to published ad — without switching between Creator Marketplace, Symphony Studio, and Ads Manager separately.
 **Not ideal for:** One-off single-asset creation (use Symphony Creative Studio directly); high-volume UGC avatar campaigns (use Arcads or Creatify for those).
 
+## TikTok Logo Takeover & Prime Time — New Ad Formats (IAB NewFronts, March 2026)
+
+TikTok unveiled two new ad formats at the 2026 IAB NewFronts (March 2026), distinct from TopReach (above):
+
+- **Logo Takeover** — places a brand logo beside TikTok's own logo on the app launch screen; a Warner Bros./Supergirl pilot reported +20% ad recall and +11.8% brand awareness.
+- **Prime Time** — delivers up to 3 sequential ads to one user within a 15-minute window, aimed at live events and tentpole moments.
+
+**Access:** business.tiktok.com → Ads Manager; check current availability, as these launched as pilots.
+**Best for:** Launch moments and live/tentpole-event campaigns needing high-frequency or high-visibility placement beyond standard in-feed ads.
+
 ## TikTok Agentic Hub — AI Skills Marketplace (June 30, 2026)
 
 TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and third-party AI Skills built on the TikTok Ads MCP Server, letting AI agents execute advertising workflows directly inside TikTok Ads Manager without manual UI work.
@@ -400,6 +410,19 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 **Performance signal:** LinkedIn internal data shows 20%+ higher CTR for campaigns running 5+ ad variants vs. single-ad campaigns.
 **Best for:** B2B brands running LinkedIn campaigns who want faster variant generation and consistent brand voice without manual design work per variant.
 **Not ideal for:** Consumer / DTC advertising (LinkedIn CPMs are high; use TikTok Symphony or Meta Advantage+ for lower-funnel consumer campaigns).
+
+## Magic Hour — AI UGC Ad Generator (Jan 2026)
+
+Magic Hour (magichour.ai, launched January 12, 2026) generates UGC-style ads up to 60 seconds with 200+ AI actors and adjustable first-frame control (set the actor + product pose that opens the ad), plus script/scene/tone/emotion settings.
+
+1. Go to magichour.ai
+2. Upload a product image and pick an AI actor
+3. Set script, scene, tone, and emotion
+4. Generate and export for TikTok/Reels
+
+**Pricing:** From $10/user/month (Capterra listing); no free trial found.
+**Best for:** Teams wanting a Creatify/Arcads/HeyGen-style UGC workflow with first-frame control.
+**Note:** Most "best overall" claims for this tool trace back to Magic Hour's own blog — treat ranking claims as self-interested; the launch date and core feature set are independently corroborated.
 
 ## Higgsfield — Cinema Studio Platform
 
