@@ -59,6 +59,12 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 |-----|------|-----|------|
 | Open Library | Books, authors, covers — millions of titles from the Internet Archive | openlibrary.org/api | None |
 
+## Calendar & Holidays
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| **Nager.Date** | Public holidays for ~100 countries; endpoints for a given year/country, next upcoming holidays, and "is today a holiday"; open source | date.nager.at/api/v3 (github.com/nager/Nager.Date) | None |
+
 ## Food & Nutrition
 
 | API | What | URL | Auth |
