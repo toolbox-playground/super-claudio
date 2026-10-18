@@ -359,6 +359,37 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 **Access:** business.tiktok.com → Agentic Hub (generally available to all TikTok for Business accounts)
 
+## TikTok Advertising Week 2026 — Smart+ Creative Selection & Agentic Leads (Oct 5, 2026)
+
+At Advertising Week (Oct 5, 2026), TikTok added tools focused on consolidating creative review and capturing high-intent leads automatically:
+- **Smart+ Creative Selection** — brings every creative source (your own uploaded assets, Symphony-generated AI videos, and creator content) into a single approval workflow instead of three separate ones
+- **Search Ads Campaign (Smart+)** — extends Smart+ automation to TikTok Search Ads inventory
+- **AI shopping assistant** — in-app assistant surfaced during the shopping journey on TikTok Shop
+- **Agentic Leads** — an AI-guided conversation in DMs (and on advertiser sites) that qualifies high-intent prospects automatically, without a human rep triaging every inbound message
+
+1. Go to ads.tiktok.com → Smart+ → Creative Selection to review assets from all three sources in one queue
+2. Enable Search Ads Campaign under Smart+ for search inventory
+3. Turn on Agentic Leads under lead-gen objectives to auto-qualify DM conversations
+
+**Access:** ads.tiktok.com → Smart+ (rolling out to TikTok for Business accounts)
+**Best for:** Advertisers juggling Symphony-generated, creator, and self-made assets who want one review queue; lead-gen campaigns with high DM volume.
+**Not ideal for:** One-off single-asset creative generation (use Symphony Creative Studio directly, covered above).
+
+## Meta Advantage+ Creative — Image-to-Video Generation Now GA (Advertising Week, Oct 6, 2026)
+
+Meta announced at Advertising Week 2026 (Oct 6) that Advantage+ Creative's AI video generation — which turns a static product image into a video ad with no filming required — is now generally available across all ad accounts in Ads Manager, after an earlier rollout limited to select partners. Meta also added memory to its AI business assistant inside Ads Manager: it now references historical campaign performance, seasonality patterns, and previously stated advertiser goals when making recommendations, and Meta is testing scheduled recurring performance reports/alerts.
+
+1. Go to Meta Ads Manager → Advantage+ Creative
+2. Upload a static product image
+3. Generate a video ad automatically from the image — no separate video asset needed
+4. Use the AI business assistant (chat) for recommendations informed by your account's own history
+5. (Testing) Opt into scheduled automated performance reports
+
+**Access:** business.facebook.com → Ads Manager → Advantage+ Creative (GA, all ad accounts)
+**Best for:** Advertisers who only have product photography and want video ads without filming or a third-party tool; teams wanting AI recommendations grounded in their own account history rather than generic tips.
+**Not ideal for:** High-production cinematic video (use Higgsfield or Creatify below); UGC-style avatar ads (use Arcads, Creatify, or HeyGen above).
+**Note:** many Advantage+ AI features are on by default for new campaigns — check campaign settings for manual control.
+
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
 Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
