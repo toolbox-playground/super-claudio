@@ -66,9 +66,16 @@ with open("output.mp3", "wb") as f:
 
 `eleven_monolingual_v1`, `eleven_multilingual_v1`, and `scribe_v1` were removed on July 9, 2026. Migrate to `eleven_multilingual_v2` or `eleven_v3` for TTS; `scribe_v2` or `scribe_v2_realtime` for STT.
 
-## ElevenLabs v4 — Previewed at ElevenSummit Warsaw (Not Yet Released)
+## ElevenLabs v4 / v4 Turbo — Released (GA Sept 28, 2026)
 
-ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
+ElevenLabs previewed v4 at ElevenSummit Warsaw (June 2026) and shipped it generally on September 28, 2026, alongside a low-latency **v4 Turbo** variant — replacing the Warsaw preview. ElevenLabs positions v4 as its most emotive model yet, with improved audio-tag reliability (including sound effects) and the return of Professional Voice Clones (unsupported in v3).
+
+- **Model IDs:** `eleven_v4` (max quality) · `eleven_v4_turbo` (real-time; ~100ms inference, ~150ms median time-to-first-speech)
+- **Availability:** ElevenAgents, ElevenCreative, and the API — including the free tier (10,000 credits/month)
+- **Languages:** 90+
+- **Pricing:** Included on every plan; paid plans start at $6/month — check elevenlabs.io/pricing for the current rate
+- **Benchmark claim:** ElevenLabs says v4 ranked #1 on Artificial Analysis's Provider Voice Arena for September 2026 — company-reported, not independently verified here
+- **Note:** SSML tags like `<break>` are disabled in v4 in favor of natural-language audio tags
 
 
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
@@ -142,6 +149,7 @@ Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expres
 - **Elo:** ~1,217 on Artificial Analysis TTS Arena — **~#3 globally** (July 2026; held #1 through May 2026; Inworld TTS-1.5 Max now leads at 1,238)
 - **Best for:** Multilingual voiceovers, free developer experimentation, style-directed narration, Google Cloud / Vertex AI workflows
 - **Not ideal for:** Ultra-low-latency real-time voice agents (use Cartesia Sonic 3.5); self-hosted / offline deployment
+- **Superseded (GA Sept 23, 2026):** Google shipped Gemini 3.8 Flash TTS (flagship, narration/character voices) and Gemini 3.8 Flash-Lite TTS (high-volume dubbing/voice agents) via Google AI Studio, the Gemini API, Gemini Enterprise, and Google Vids — adding a large voice library and voice cloning from a short reference clip (consent-gated). Reports disagree on exact voice counts and pricing, so re-check aistudio.google.com before quoting figures; the Elo/pricing above are for the now-superseded 3.1/3.5 models.
 
 ## Fish Audio S2 Pro — Best Multilingual + Emotion Control
 
@@ -477,7 +485,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Need | Tool |
 |------|------|
 | Quick article summary, personal use | edge-tts (Azure, free) |
-| Professional ad voiceover | ElevenLabs v3 or Inworld TTS-1.5 |
+| Professional ad voiceover | ElevenLabs v4 (released Sept 2026; v3 still available) or Inworld TTS-1.5 |
 | Low-latency voice agent (ElevenLabs ecosystem) | ElevenLabs Flash v2.5 (~75ms, 32 languages) or Flash v2 (English only, ~75ms) |
 | Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
