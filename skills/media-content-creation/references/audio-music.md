@@ -9,12 +9,12 @@
 Generate complete songs (vocals + instruments) from a text prompt.
 
 - URL: suno.com
-- **Latest model:** v5.5 (March 2026) — Voices (clone your singing voice), Custom Models (tune on your catalog), My Taste (personalized generation); v5.5 requires Pro/Premier; free tier capped at v4.5 and below
+- **Latest models:** v6, v6-wild, v6-mini (September 9, 2026) — Suno's first models trained on licensed catalog data (Warner Music Group, BMG, Believe), replacing v5.5. **v6** (flagship, Pro/Premier): reliable, precise, polished output. **v6-wild** (Pro/Premier): exploratory mode, less predictable variations for idea generation. **v6-mini**: free for all users — fastest, lower-fidelity version of the v6 architecture. All three: up to 8 min/generation, plain-language editing of a single section or lyric, mashups from multiple songs, inputs from text/audio/image/video.
 - **Suno Studio (in-browser DAW):** Multi-track view, stem separation (see below), 6-band EQ, Warp Markers (adjust timing post-generation), Remove FX (strip reverb/effects), alternates, and expanded time signature support. Studio 1.2 (February 2026) added warp markers, remove FX, and alternates. Available to Pro/Premier subscribers.
 - **Stem Separation (June 11, 2026 update):** Three modes — **Advanced Split** (NEW, Premier only): choose from ~100 instruments to regenerate each stem from scratch — no separation artifacts; also exports MIDI; 10 credits/extracted track. **Split from Mix** (Updated): pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
 - Free tier: 50 credits/day (~10 songs); non-commercial use only
-- **Important (2026):** Free-tier users can no longer download audio files — tracks can only be streamed/shared within the platform. Download requires a paid plan ($10/month Pro, $30/month Premier).
-- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of June 2026 the transition has not yet occurred — current models remain active — but when it does, all generations made with the old models will eventually become inaccessible. UMG and Sony Music litigation remains active — a fair-use summary judgment hearing in the U.S. case is scheduled for July 2026 (no verdict as of July 11, 2026); a separate German case (GEMA v. Suno) is due July 31, 2026. Users who want to preserve old generations should download them now on a paid plan.
+- **Download limits (updated September 2026):** Free tier now gets 7 lifetime downloads (previously zero — tracks could only stream/share on-platform); Pro: 20/month; Premier: 60/month; Premier + Suno Studio: unlimited. Streaming/sharing within the platform remains unlimited on free regardless of download cap.
+- **Model retirement — resolved (September 2026):** Following the November 2025 settlement with Warner Music Group, Suno launched its first licensed-catalog models — v6, v6-wild, v6-mini (above) — on September 9, 2026, trained with Warner, BMG, and Believe, and is retiring all prior unlicensed-audio models (including v5.5) as the transition completes. **UMG/Sony Music federal litigation (D. Mass.) remains active and unresolved:** fact discovery was extended to September 30, 2026, with fair-use summary judgment motions now due April 2027 — no ruling yet. **GEMA v. Suno (Munich Regional Court) concluded July 31, 2026 in GEMA's favor:** the court found Suno liable for training on and reproducing GEMA-repertoire works without a license, ordered it to stop and disclose infringing revenue; damages are still to be quantified and Suno is weighing an appeal.
 - Input: genre, mood, lyrics (optional), style description
 - Output: full song (streaming on free; downloadable MP3 on paid)
 
@@ -27,6 +27,7 @@ Similar to Suno, strong on musicality and production quality.
 - URL: udio.com
 - **Important (2026):** Udio temporarily disabled all downloads (audio, video, stems) across all plan tiers during a 2025–2026 licensing transition. Tracks can only be streamed/shared on-platform as of May 2026 — no DAW export, no Spotify upload, no use in video.
 - **Licensing deals signed:** Udio reached agreements with Universal Music Group (Oct 2025), Warner Music, Merlin, and Kobalt (Q1 2026). The new licensed platform launched Q2 2026 but operates as a **walled garden** — tracks cannot be downloaded or exported, only streamed/shared within the Udio network. No download capability is expected for the foreseeable future.
+- **Litigation not fully resolved:** Despite the UMG and Warner/Merlin/Kobalt settlements, Sony Music filed an expanded copyright suit against Udio in July 2026 covering 30,000+ recordings — Sony's litigation against Udio remains active.
 - Good for: previewing and sharing music concepts within the platform only; not suitable if you need to use the audio outside Udio
 
 ## Mureka v8 — Developer-Focused AI Music Generation
@@ -42,7 +43,7 @@ Mureka v8 is the go-to for developers and technical producers: native API, stem 
 
 ## ElevenLabs Music v2 — Genre-Switching AI Music with API Access (May 2026)
 
-ElevenLabs launched ElevenMusic as an iOS app on April 1, 2026, then shipped Music v2 on May 26, 2026 — a major upgrade adding mid-track genre switching, chunk-based composition plans, and full API access across ElevenMusic, ElevenCreative, and ElevenAPI.
+ElevenLabs launched ElevenMusic as an iOS app on April 1, 2026, then shipped Music v2 on May 26, 2026 — a major upgrade adding mid-track genre switching, chunk-based composition plans, and full API access across ElevenMusic, ElevenCreative, and ElevenAPI. **Music v2.5 (September 11, 2026)** followed with improved instrumentation and more detailed arrangements, shipped simultaneously across ElevenMusic, ElevenCreative, and the API.
 
 - URL: elevenlabs.io (ElevenMusic iOS, ElevenCreative web app, ElevenAPI)
 - **API model_id:** `music_v2` (on Generate music, Stream music, Generate music detailed, Upload music endpoints)
