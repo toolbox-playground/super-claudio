@@ -86,6 +86,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | **Bluesky API (AT Protocol)** | Read/write posts, timelines, user data, follows; permissive free rate limits; growing developer community after X went paid | atproto.com | Free account |
 | **Threads API (Meta)** | Post, read replies, manage media; free developer access; rate limits generous for indie devs | developers.facebook.com/docs/threads | Free account |
 | **X (Twitter) API** | **⚠️ No longer free (Feb 6, 2026)** — reading a tweet costs $0.005, posting $0.015; full-archive search from $42K/month enterprise. Use Bluesky/Threads instead for social data at no cost. | developer.x.com | Paid only |
+| **Resend** | Transactional email API for developers; 3,000 emails/month free, capped at 100/day, 1 sending domain; React Email templates, webhooks, 30-day log retention | resend.com | Free key |
 
 ## Developer Utilities
 
@@ -105,8 +106,8 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | Groq | Ultra-fast LLM inference (LPU hardware); Llama 4 Scout, Llama 4 Maverick, Kimi K2 (1T MoE), Qwen3 235B, Gemma, Mistral, DeepSeek R1 and more; no credit card required | groq.com | Free key |
 | OpenRouter | Access to 100+ free AI models via one API; notable free models (July 2026): **NVIDIA Nemotron 3 Ultra** (550B MoE, 1M context, `nvidia/nemotron-3-ultra-550b-a55b:free`) and **OpenAI GPT-OSS** (20B Apache 2.0 open-weight, `openai/gpt-oss-20b:free`); 25+ free models total; 50 req/day free, 1,000/day after $10 purchase | openrouter.ai | Free key |
 | GitHub Models | 40+ AI models (GPT-4o, Llama, DeepSeek-R1, Mistral, Phi, xAI, Cohere) via OpenAI-compatible API; uses your GitHub account — no separate key or signup; free tier rate-limited (e.g. GPT-4o: 10 RPM / 50 RPD); opt-in paid tier for higher limits | github.com/features/models | GitHub account (free) |
-| Cerebras Inference | Ultra-fast LLM inference on wafer-scale silicon (2,600+ tok/s); Llama 3.3 70B, Qwen3 32B/235B, and more; 1M tokens/day free, no credit card required; 30 RPM on free tier | inference.cerebras.ai | Free key |
-| Cloudflare Workers AI | Edge AI inference at 300+ global locations; Llama 3.1 8B, Mistral 7B, Phi-2, Gemma, SDXL (image gen), Whisper (ASR), and 40+ models; 10,000 neurons/day free (no credit card required); unique low-latency for globally distributed apps | developers.cloudflare.com/workers-ai | CF account (free) |
+| Cerebras Inference | Ultra-fast LLM inference on wafer-scale silicon (2,600+ tok/s); Llama 3.3 70B, Qwen3 32B/235B, and more. **⚠️ Free tier changed (mid-to-late 2026): the old no-card 1M tokens/day allowance was replaced by a one-time $5 trial credit that requires adding a verified payment method, expiring 30 days after it's granted (~5 RPM / 1M tokens per day while on the trial); after the credit is used it's pay-as-you-go** | inference.cerebras.ai | Free key (card required for trial credit) |
+| Cloudflare Workers AI | Edge AI inference at 300+ global locations; Llama 3.3, Mistral 7B, Phi-2, Gemma, SDXL (image gen), Whisper (ASR), and 40+ models (**note: `@cf/meta/llama-3.1-8b-instruct` was deprecated May 30, 2026 per Cloudflare's changelog — the `-fast` variant remains active**); 10,000 neurons/day free (no credit card required); unique low-latency for globally distributed apps | developers.cloudflare.com/workers-ai | CF account (free) |
 
 ## Security
 
