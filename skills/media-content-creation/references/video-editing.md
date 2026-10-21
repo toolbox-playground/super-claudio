@@ -60,6 +60,12 @@ ffmpeg -i input.mp4 -vf "subtitles=input.srt" output_captioned.mp4
 
 **CapCut** — free desktop app, automatic captions with one click, good for social media.
 
+**ffmpeg's built-in `whisper` filter (ffmpeg 8.0 "Huffman", Aug 2025, merged from a July 2025 patch):** newer ffmpeg builds can transcribe straight from the audio stream without a separate Python install, using a whisper.cpp ggml model:
+```bash
+ffmpeg -i input.mp4 -vn -af "whisper=model=./models/ggml-base.en.bin:language=en:queue=3:destination=output.srt:format=srt" -f null -
+```
+This needs a build compiled with whisper.cpp support and a downloaded `ggml-*.bin` model — not guaranteed on every `brew`/`apt` package, so check with `ffmpeg -h filter=whisper` first. For most setups, the `openai-whisper` pip workflow above is still the simpler, more portable default; the filter is worth knowing about if you want a single-command, no-Python pipeline.
+
 ## Google Video Remix — AI Video Transformations in Google Photos (July 8, 2026)
 
 Google Photos launched Video Remix on July 8, 2026, powered by Gemini Omni. Applies AI-driven visual transformations to existing clips in seconds — not generation from scratch, but style and scene editing.

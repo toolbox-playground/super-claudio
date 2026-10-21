@@ -18,6 +18,13 @@ npx create-video@latest
 - Emoji/motion graphics templates — great for fun WhatsApp/Instagram shares
 - Data visualization templates — animate charts and stats
 
+**Remotion Agent Skills (official, 2026):** Remotion now ships its own Claude Code/Cursor/Codex skills directly from the Remotion team — relevant since this workflow is being driven by Claude Code already:
+```bash
+npx skills add remotion-dev/skills
+# or during project creation: bun create video (offers to add skills)
+```
+This installs skills like `/remotion-best-practices` (umbrella skill), `/remotion-create`, `/remotion-render`, `/remotion-markup`, and others into `.agents/skills` (symlinked to `.claude/skills` for Claude Code compatibility). They encode Remotion's own conventions so the agent writes idiomatic components instead of guessing — useful before generating a Remotion project through Claude Code rather than by hand. Update with `npx remotion skills update`. This supplements, not replaces, the `video-use` skill below.
+
 **Basic structure:**
 ```tsx
 import { AbsoluteFill, useCurrentFrame, interpolate } from 'remotion';
