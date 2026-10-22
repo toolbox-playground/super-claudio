@@ -361,13 +361,15 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
-Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
+Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** video creation (announced at Google Marketing Live, May 20, 2026) now rolling out broadly in English as of August 26, 2026 at no additional cost — generates full video storyboards and motion scenes in 16:9 and 9:16 from brand guidelines plus a website URL:
 
 1. Open Google Ads → Asset Studio
 2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image
-3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images
+3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images; Gemini Omni generates full video storyboards from a URL + brand guidelines
 4. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
-5. Assets go directly into your campaign library — no external tool or re-upload required
+5. **1-Click Testing** (rolling out since August 2026): compare asset variants against a chosen campaign objective directly in Asset Studio before committing budget
+6. **Performance Max auto-fill** (started ~September 2, 2026): Google Ads automatically pre-fills Performance Max asset groups with AI-generated creative pulled straight from Asset Studio — review and edit before launch
+7. Assets go directly into your campaign library — no external tool or re-upload required
 
 Best for: Google Ads-first teams who want AI image and video without third-party subscriptions; especially powerful in Performance Max campaigns where Google's system auto-selects the best asset combinations.
 
@@ -382,7 +384,7 @@ Amazon Ads launched Creative Agent on February 24, 2026, inside Amazon's Creativ
 5. Publish directly to your Amazon campaign (Prime Video, Twitch, display placements)
 
 **Pricing:** No additional cost to advertisers (included with Amazon Ads account)
-**Access:** UK launch February 2026; rolling out to additional markets
+**Access:** Launched US (Nov 2025) → UK/France/Germany/Italy/Spain (Feb 2026, via Amazon unBoxed London) → Canada (Feb 2026) → India (March 2026, alongside companion tool **Ads Agent** for campaign execution and bid/budget optimization)
 **Best for:** Brands selling on Amazon who want AI-generated ad creative (video + display) with Amazon's own retail and shopping signal data baked in — no other platform has access to Amazon's purchase intent signals.
 **Not ideal for:** Non-Amazon campaigns (output is formatted for Amazon media only); use Creatify or AdStellar for TikTok/Meta/Google campaigns.
 
@@ -400,6 +402,20 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 **Performance signal:** LinkedIn internal data shows 20%+ higher CTR for campaigns running 5+ ad variants vs. single-ad campaigns.
 **Best for:** B2B brands running LinkedIn campaigns who want faster variant generation and consistent brand voice without manual design work per variant.
 **Not ideal for:** Consumer / DTC advertising (LinkedIn CPMs are high; use TikTok Symphony or Meta Advantage+ for lower-funnel consumer campaigns).
+
+## Meta Brand Memory — AI That Learns Your Brand's Ad History (Cannes Lions, June 23, 2026)
+
+Meta Brand Memory, unveiled at Cannes Lions 2026, is part of Meta's end-to-end AI creative system: it analyzes a brand's past ad performance and creative to learn its visual identity and tone, then applies that learning to new AI-generated creative so output stays on-brand without manual style guides.
+
+1. Go to Meta Ads Manager → Tools tab (currently limited pilot access)
+2. Connect your ad account — Brand Memory ingests historical ad creative and performance data
+3. Optionally define explicit brand characteristics (colors, tone, do's/don'ts) to reinforce the learned style
+4. Generate new image/video creative — output is automatically aligned to the learned brand identity
+5. Agencies: WPP is the first agency partner integrating Brand Memory into WPP Open for client workflows
+
+**Status:** Limited pilot with select advertisers as of August 2026 — not yet generally available; check Meta Ads Manager for rollout.
+**Best for:** Established brands with ad history wanting on-brand AI creative without re-briefing style guidelines each time.
+**Not ideal for:** New brands with no ad history to learn from; advertisers needing immediate GA access (still pilot-only).
 
 ## Higgsfield — Cinema Studio Platform
 
