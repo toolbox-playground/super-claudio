@@ -66,9 +66,18 @@ with open("output.mp3", "wb") as f:
 
 `eleven_monolingual_v1`, `eleven_multilingual_v1`, and `scribe_v1` were removed on July 9, 2026. Migrate to `eleven_multilingual_v2` or `eleven_v3` for TTS; `scribe_v2` or `scribe_v2_realtime` for STT.
 
-## ElevenLabs v4 — Previewed at ElevenSummit Warsaw (Not Yet Released)
+## ElevenLabs Eleven v4 / v4 Turbo — Released Sept 28, 2026
 
-ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
+ElevenLabs shipped Eleven v4 and Eleven v4 Turbo on September 28, 2026 (previewed at ElevenSummit Warsaw in June). v4 is the quality-focused model; Turbo targets live calls/voice agents (~100ms median inference, ~150ms median time-to-first-speech).
+
+- **URL:** elevenlabs.io
+- **Languages:** 90 (up from 70 in v3)
+- **Voice cloning:** ~10 seconds of reference audio (down from 1 minute)
+- **Expression control:** natural-language inline audio tags (laughs, whispers); SSML break tags disabled in favor of this
+- **Pricing/free tier:** available on every plan including free (10,000 credits/month); paid plans from $6/month
+- **Benchmark claim:** ElevenLabs says v4 ranked #1 on the Artificial Analysis Provider Voice Arena (Sept 2026) — company claim, not independently verified here
+- **Best for:** production voiceover and real-time voice agents on the ElevenLabs stack — supersedes v3 as the default recommendation
+- **Not ideal for:** nothing specific flagged yet; monitor for independent Elo placement on the main Speech Arena
 
 
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
