@@ -42,6 +42,8 @@ edge-tts --list-voices
 
 ## ElevenLabs v3 — Premium Quality, Voice Cloning
 
+> **Superseded by Eleven v4** (Sept 28, 2026, see below) for new projects — v3 remains available for existing integrations.
+
 ElevenLabs v3 produces studio-quality speech with emotionally nuanced voices, 70+ languages (74 officially supported), and voice cloning from 1 minute of audio.
 
 **API usage:**
@@ -66,9 +68,15 @@ with open("output.mp3", "wb") as f:
 
 `eleven_monolingual_v1`, `eleven_multilingual_v1`, and `scribe_v1` were removed on July 9, 2026. Migrate to `eleven_multilingual_v2` or `eleven_v3` for TTS; `scribe_v2` or `scribe_v2_realtime` for STT.
 
-## ElevenLabs v4 — Previewed at ElevenSummit Warsaw (Not Yet Released)
+## ElevenLabs Eleven v4 / v4 Turbo — Released Sept 28, 2026
 
-ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
+ElevenLabs shipped Eleven v4 and Eleven v4 Turbo on September 28, 2026, after previewing v4 at ElevenSummit Warsaw in June. New architecture reads tone, pacing, and context directly from text; inline audio-tag directions (`[laughs]`, `[whispers]`, `[door slams]`) replace SSML `break` tags (now disabled). Supports 90+ languages, multi-speaker dialogue, and voice cloning from just 10 seconds of reference audio — Professional Voice Clones are back after being unavailable in v3 (existing clones need retraining).
+
+- **Eleven v4:** targets produced/published audio — audiobooks, dubbing, character voices
+- **Eleven v4 Turbo:** targets real-time voice agents — bidirectional streaming (audio starts returning before a sentence finishes), ~100ms median inference, ~150ms time-to-first-speech (company-reported)
+- **URL:** elevenlabs.io/v4 | available via ElevenAgents, ElevenCreative, ElevenAPI; included on the free account tier
+- ElevenLabs claims #1 on the Artificial Analysis Provider Voice Arena for September 2026 — self-reported, treat as a vendor claim pending independent confirmation
+- Update: this supersedes Eleven v3 as ElevenLabs' recommended model for new projects; v3 remains available for existing integrations
 
 
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
@@ -82,7 +90,7 @@ ElevenLabs Flash is the speed-optimized sibling of Eleven v3, purpose-built for 
 - **Languages:** Flash v2 — English only; Flash v2.5 — 32 languages
 - **Pricing:** same per-character pricing as the rest of the ElevenLabs API (see elevenlabs.io/pricing)
 - **Best for:** Voice agents, chatbots, real-time assistants where latency trumps emotional range
-- **Not ideal for:** Long-form narration or expressive delivery — use Eleven v3 for those
+- **Not ideal for:** Long-form narration or expressive delivery — use Eleven v4 or v3 for those
 
 ## Inworld Realtime TTS-2 — Closed-Loop Conversational TTS (NEW May 2026)
 
@@ -182,6 +190,8 @@ Hume Octave 2 is the first TTS model built on a language model backbone that tru
 ## Cartesia Sonic 3.5 — #2 Artificial Analysis TTS Arena, Real-Time Conversational TTS
 
 Cartesia Sonic 3.5 (upgraded May 2026) is purpose-built for real-time conversational AI with ~40ms time-to-first-audio — the standard pick for voice agents and chatbots. Sonic 3.5 improves on Sonic 3 with noticeably more natural voices, better stability through long calls, and more consistent pronunciation of difficult words and names. **Ranked #2 on the Artificial Analysis Speech Arena (Elo ~1,211, July 2026)** — a notable rise, combining both fast latency and top-tier quality. The upgrade applies automatically to all existing Cartesia integrations.
+
+**Sonic 3.6 superseded Sonic 3.5** (GA ~Aug 2026): vendor-claimed <90ms TTFA and 40+ languages at the same $49/1M characters pricing. Secondary-source leaderboard rank claims for 3.6 are inconsistent (reports range from #1 to #4–5) — treat as unverified until confirmed on a live Artificial Analysis snapshot.
 
 - URL: cartesia.ai
 - Free tier available
@@ -477,7 +487,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Need | Tool |
 |------|------|
 | Quick article summary, personal use | edge-tts (Azure, free) |
-| Professional ad voiceover | ElevenLabs v3 or Inworld TTS-1.5 |
+| Professional ad voiceover | ElevenLabs Eleven v4 (newest) or v3, or Inworld TTS-1.5 |
 | Low-latency voice agent (ElevenLabs ecosystem) | ElevenLabs Flash v2.5 (~75ms, 32 languages) or Flash v2 (English only, ~75ms) |
 | Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
@@ -487,7 +497,8 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Long-form narration (up to 12 min), zero hallucinations, self-hosted | Hume AI TADA (Apache 2.0, open-source) |
 | Voice cloning, cloud, easiest | ElevenLabs (paid) |
 | Bulk generation (many files) | edge-tts or Chatterbox (no credit limits) |
-| Real-time voice agent / chatbot | Cartesia Sonic 3.5 (~40ms TTFA), Smallest.ai Lightning V3.1 (<100ms), or Inworld Realtime TTS-2 (<200ms, closed-loop, 100+ langs) |
+| Real-time voice agent / chatbot | ElevenLabs Eleven v4 Turbo (~150ms TTFS, bidirectional streaming, Sept 2026), Cartesia Sonic 3.6/3.5 (~40–90ms TTFA), Smallest.ai Lightning V3.1 (<100ms), or Inworld Realtime TTS-2 (<200ms, closed-loop, 100+ langs) |
+| Expressive narration with inline audio-tag direction, no SSML | ElevenLabs Eleven v4 (`[laughs]`, `[whispers]`, 90+ languages, released Sept 28 2026) |
 | Voice agent needing GPT-5-class reasoning in audio (complex tool calls, multi-turn logic) | OpenAI GPT-Realtime-2 ($32/1M in + $64/1M out; 128K context, parallel tool calls, interruption handling — expensive; not a substitute for pure TTS) |
 | Enterprise production (uptime + pricing transparency) | Deepgram Aura-2 ($200 free credits to start) |
 | Natural-sounding conversational voices, 300+ voice options, free start | Rime TTS (rime.ai, 10K chars/month free, Coda model for sub-100ms) |
