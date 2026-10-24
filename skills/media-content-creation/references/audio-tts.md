@@ -42,6 +42,8 @@ edge-tts --list-voices
 
 ## ElevenLabs v3 — Premium Quality, Voice Cloning
 
+> **Note:** ElevenLabs released Eleven v4 / v4 Turbo on September 28, 2026 (see below) — it's now the recommended ElevenLabs model for new projects. v3 remains available and this workflow still applies to it.
+
 ElevenLabs v3 produces studio-quality speech with emotionally nuanced voices, 70+ languages (74 officially supported), and voice cloning from 1 minute of audio.
 
 **API usage:**
@@ -66,10 +68,32 @@ with open("output.mp3", "wb") as f:
 
 `eleven_monolingual_v1`, `eleven_multilingual_v1`, and `scribe_v1` were removed on July 9, 2026. Migrate to `eleven_multilingual_v2` or `eleven_v3` for TTS; `scribe_v2` or `scribe_v2_realtime` for STT.
 
-## ElevenLabs v4 — Previewed at ElevenSummit Warsaw (Not Yet Released)
+## ElevenLabs Eleven v4 / v4 Turbo — Released (NEW Sept 2026)
 
-ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
+ElevenLabs shipped Eleven v4 and the low-latency Eleven v4 Turbo on September 28, 2026 — the GA release of the model previewed at ElevenSummit Warsaw back in June. v4 is built for audio you produce once and publish (audiobooks, video voiceover); v4 Turbo targets live agents. Both are live now across ElevenAgents, ElevenCreative, and the ElevenAPI.
 
+- **URL:** elevenlabs.io (same ElevenAPI; check elevenlabs.io/changelog and elevenlabs.io/pricing for exact model IDs and current rates)
+- **Released:** September 28, 2026
+- **Languages:** 90+ (up from 74 on v3)
+- **Voice cloning:** From as little as 10 seconds of reference audio (down from 1 minute on v3); Professional Voice Clones are supported again (they were unavailable on v3)
+- **Delivery control:** Inline audio tags for emotion, pacing, and accent — positioned by ElevenLabs as "performance acting" rather than plain TTS
+- **Latency (v4 Turbo):** ~100ms median inference, ~150ms median time-to-first-audio — the low-latency sibling for live agents
+- **Benchmark:** ElevenLabs reports Eleven v4 ranked #1 on the Artificial Analysis Provider Voice Arena for September 2026 — a vendor claim, not independently re-verified here
+- **Best for:** Studio-quality narration and voiceover (v4); low-latency conversational agents on the ElevenLabs stack (v4 Turbo) — now supersedes v3 as ElevenLabs' flagship TTS
+- **Not ideal for:** Nothing confirmed cheaper here than v3 — check current per-character pricing before migrating budget-sensitive pipelines
+
+## ElevenLabs Eleven Realtime (v1 Mini / v1 Max) — Speech-to-Speech Agent Family (NEW Oct 2026)
+
+ElevenLabs launched Eleven Realtime on October 20, 2026: not a TTS model but a full speech-to-speech bundle (ASR + voice activity detection/turn-taking + an LLM + TTS) purpose-built for voice agents, in the same vein as OpenAI's GPT-Realtime-2 below. v1 Mini is tuned for fast, low-cost natural conversation; v1 Max reasons before responding for complex, tool-using tasks.
+
+- **URL:** elevenlabs.io (ElevenAgents; OpenAI Realtime-compatible API over WebSocket — no WebRTC at launch)
+- **Released:** October 20, 2026
+- **Latency (vendor-reported):** ~620ms average time-to-first-audio (v1 Mini); ~570ms (v1 Max)
+- **Quality:** v1 Max scores 98.8% on Big Bench Audio per ElevenLabs
+- **Languages:** 90+ (v1 Mini); tool-calling support
+- **Pricing:** reported around $0.20/1M input tokens (Mini) and $1.80/1M input tokens (Max) on third-party listings — confirm on elevenlabs.io/pricing before relying on these figures
+- **Best for:** Teams already on the ElevenLabs stack who want ASR+LLM+TTS bundled behind one OpenAI-Realtime-compatible endpoint
+- **Not ideal for:** Teams needing WebRTC at launch, or needing GPT-5-class reasoning depth (compare against OpenAI GPT-Realtime-2 below)
 
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
 
@@ -127,21 +151,29 @@ Alibaba's Fun-Realtime-TTS briefly held #1 on the Artificial Analysis Speech Are
 - **Best for:** Production TTS needing top-3 quality with streaming; developers in the Alibaba Cloud ecosystem; multilingual content with regional accent fidelity
 - **Not ideal for:** Zero-cost self-hosted deployment (use Kokoro or Chatterbox); on-device mobile (use NeuTTS Air)
 
-## Gemini 3.1 Flash TTS — Free, 70+ Languages, Style-Controllable (NEW Apr 2026)
+## Gemini 3.8 Flash TTS — Free Tier, 2,000+ Voices, Expressive Voice Design (NEW Sept 2026)
 
-Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expressive speech with inline audio tags for style and pacing control — and is currently free in AI Studio during preview. Ranked **~#3 on the Artificial Analysis TTS Arena** (Elo ~1,217; held #1 through May 2026, briefly at #2 in June 2026 when Alibaba's Fun-Realtime-TTS surpassed it, then Inworld TTS-1.5 Max claimed #1 in July 2026 at Elo 1,238).
+Google launched Gemini 3.8 Flash TTS and a lighter Gemini 3.8 Flash-Lite TTS on September 23, 2026, superseding the 3.1/3.5 Flash TTS line below as Google's flagship TTS. Flash TTS targets deep creative work — it can generate entirely new character voices from a natural-language prompt; Flash-Lite targets high-volume, lower-cost use.
 
 - **URL:** aistudio.google.com | Vertex AI | cloud.google.com/text-to-speech
-- **Free tier:** Yes — free in Google AI Studio (preview; rate limited); also accessible in Google Vids
-- **Paid API:** $1.00/1M input tokens (text); $20.00/1M output tokens (audio); batch API: 50% off
-- **Also available:** Gemini 3.5 Flash TTS (June 2026) — same API, $6/1M output tokens (70% cheaper than 3.1; feature parity being confirmed)
-- **Languages:** 70+ (broadest multilingual coverage among top-ranked models)
-- **Multi-speaker:** Up to 2 speakers per generation, each with independent voice and style
-- **Audio tags:** Inline delivery control — `<laugh>`, `<whisper>`, `<excited>`, pacing adjustments — via natural markup in the prompt
+- **Released:** September 23, 2026
+- **Availability:** Google AI Studio, Gemini API, Gemini Enterprise, Gemini Notebook, Google Vids
+- **Free tier:** Yes — free in Google AI Studio
+- **Pricing:** reported around $9/1M audio tokens as a promotional rate through December 31, 2026, roughly doubling January 1, 2027 (third-party-reported; confirm on Google's own pricing page before budgeting)
+- **Voices:** 2,000+ prebuilt production-ready voices, plus voice design from a text description and voice cloning from ~30 seconds of reference audio
+- **Controls:** Turn-level style instructions and inline vocal events (`laugh`, `sigh`, short pause)
+- **Benchmark:** reported to place first and second on Hume AI's Overall Quality Index in blind human evaluations (third-party benchmark, not the Artificial Analysis Speech Arena used elsewhere on this page)
 - **Watermarking:** SynthID — imperceptible watermark embedded in all output audio
-- **Elo:** ~1,217 on Artificial Analysis TTS Arena — **~#3 globally** (July 2026; held #1 through May 2026; Inworld TTS-1.5 Max now leads at 1,238)
-- **Best for:** Multilingual voiceovers, free developer experimentation, style-directed narration, Google Cloud / Vertex AI workflows
-- **Not ideal for:** Ultra-low-latency real-time voice agents (use Cartesia Sonic 3.5); self-hosted / offline deployment
+- **Best for:** Expressive voice design, large voice libraries, creative/narrative work, Google Cloud / Vertex AI workflows
+- **Not ideal for:** Ultra-low-latency real-time voice agents (use Cartesia Sonic 3.5); self-hosted / offline deployment; imperfect prompt adherence has been reported for fine-grained style requests
+
+### Gemini 3.1 / 3.5 Flash TTS — Prior Generation (Apr/Jun 2026)
+
+Still live and still ranked on the Artificial Analysis TTS Arena as of the most recent published leaderboard snapshot below, but now superseded by 3.8 for new projects.
+
+- **Paid API:** $1.00/1M input tokens (text); $20.00/1M output tokens (audio) for 3.1; 3.5 is the same API at $6/1M output tokens (70% cheaper)
+- **Languages:** 70+ broadest multilingual coverage among top-ranked models at the time
+- **Elo:** ~1,217 on Artificial Analysis TTS Arena — **~#3 globally** (July 2026 snapshot; held #1 through May 2026; Inworld TTS-1.5 Max led at 1,238 in July)
 
 ## Fish Audio S2 Pro — Best Multilingual + Emotion Control
 
@@ -477,8 +509,8 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Need | Tool |
 |------|------|
 | Quick article summary, personal use | edge-tts (Azure, free) |
-| Professional ad voiceover | ElevenLabs v3 or Inworld TTS-1.5 |
-| Low-latency voice agent (ElevenLabs ecosystem) | ElevenLabs Flash v2.5 (~75ms, 32 languages) or Flash v2 (English only, ~75ms) |
+| Professional ad voiceover | ElevenLabs v4 (released Sept 2026; v3 still available) or Inworld TTS-1.5 |
+| Low-latency voice agent (ElevenLabs ecosystem) | ElevenLabs Flash v2.5 (~75ms, pure TTS) for just speech; Eleven Realtime v1 Mini/Max (Oct 2026) for a bundled ASR+LLM+TTS agent; v4 Turbo (~150ms) for low-latency one-off narration |
 | Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
 | 80+ languages, emotion control | Fish Audio S2 Pro |
@@ -499,9 +531,10 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Ultra-fast batch TTS, drop-in OpenAI TTS replacement | Kokoro TTS (Apache 2.0, 82M params, 96× real-time, fixed voices) |
 | Human-like conversational naturalness (pauses, ums, breaths) | Sesame CSM-1B (Apache 2.0, English only, CUDA required) |
 | Long-form multi-speaker narration (audiobooks, podcasts) | VibeVoice-TTS-1.5B (MIT, up to 90 min / 4 speakers, research use) |
-| Multilingual style-controllable TTS, free for developers | Gemini 3.1 Flash TTS (70+ languages, audio tags, free in AI Studio); Gemini 3.5 Flash TTS ($6/1M output — cheapest option) |
+| Multilingual style-controllable TTS, free for developers | Gemini 3.8 Flash TTS (NEW Sept 2026 — 2,000+ voices, voice design, free in AI Studio); Gemini 3.1/3.5 Flash TTS (prior gen, still live, $6–20/1M output) |
 | Top quality at minimum cost | Speechify SIMBA 3.2 (**#2 globally** mid-July 2026, Elo 1,234, $10/1M chars; $6/1M at Scale tier) — best price/quality; Qwen-Audio-3.0-TTS-Plus is new #1 (Alibaba DashScope) but has slower throughput (16 chars/sec) |
 | Conversational AI with tone/context awareness across turns | Inworld Realtime TTS-2 (closed-loop, adapts to prior audio, 100+ langs, May 2026) |
+| Bundled ASR+LLM+TTS voice agent on one endpoint | ElevenLabs Eleven Realtime v1 Mini (low-cost, ~620ms) or v1 Max (reasons before responding, 98.8% Big Bench Audio, ~570ms) — Oct 2026, OpenAI Realtime-compatible API |
 | Grok/xAI ecosystem, 20+ languages, format flexibility | xAI Grok TTS ($4.20/1M chars, Elo ~1,194 ~#6 globally July 2026, voice cloning) |
 | Contextual performance TTS, dramatic delivery without tags | StepAudio 2.5 TTS (platform.stepfun.ai, Elo ~1,187 ~#7 globally July 2026, plain-language voice direction) |
 | Multilingual broadcast-quality narration, 40+ languages, emotion+interjections | MiniMax Speech 2.8 HD (minimax.io/audio, Replicate, WaveSpeedAI; HD for quality, Turbo for speed) |
