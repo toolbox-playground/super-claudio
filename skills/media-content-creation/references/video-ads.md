@@ -17,7 +17,7 @@ other performance marketing channels.
 - **Figma Weave** (formerly Weavy AI; acquired by Figma Oct 2025, rebranded May 2026) — takes a static image and adds realistic motion (person walks, model poses, fabric moves); node-based canvas to chain multiple AI models (image → video → effects) in one workflow
   - Great for: fashion, lifestyle products, showing a model wearing/using your product
   - URL: weave.figma.com (legacy weavy.ai still accessible)
-- **Kling "Image to Video"** — similar approach, strong motion quality
+- **Kling "Image to Video"** — similar approach, strong motion quality; now on **Kling 4.0** (launched globally Oct 15, 2026 — native up to 30s clips, up to 15 reference assets; 720p/1080p live, 4K/HDR "coming soon"); Kling 3.0/Turbo still accessible
   - URL: klingai.com → Image to Video
 
 ### Step 3: Add audio/voiceover (optional)
