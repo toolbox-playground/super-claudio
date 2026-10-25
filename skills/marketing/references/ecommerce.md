@@ -25,6 +25,12 @@
    - Write caption with 3-5 relevant hashtags
    - Post during peak hours (7-9pm local time typically)
 
+### TikTok Shop AI Shopping Assistant & Buy Direct (Oct 2026)
+
+TikTok announced a conversational **AI Shopping Assistant** and **Buy Direct** one-click checkout at Advertising Week New York (Oct 5, 2026), rolling out first to the US (global rollout planned). Buy Direct lets viewers purchase straight from the For You feed or brand content without leaving the app or opening a separate TikTok Shop tab; the assistant answers product/shipping/sizing questions and remembers preferences across the conversation. Partners at launch: Salesforce, Shopify, Shoplazza, Stripe. A seller-side **Seller Assistant** chatbot also launched in Sept 2026 to help merchants manage the shop back-end.
+
+**Implication for content:** since purchases can now complete directly in-feed, make the on-screen CTA and product tag placement as frictionless as possible early in the video — don't rely on viewers tapping out to a separate Shop tab.
+
 ## Instagram Shop
 
 - Product tags in feed posts, Reels, and Stories

@@ -166,6 +166,8 @@ HeyGen is the leading AI avatar video platform for brand content and UGC-style t
 **Creator:** $29/month — unlimited videos, 200 credits, 175+ languages, commercial license
 **Pro:** $99/month — more credits, custom avatar training
 
+**Aug 2026 release:** Added **Edit Look** — retouch/restyle an existing avatar's appearance (outfit, setting, style) from a text description or reference image without re-recording a new video; generates 3 variations to choose from. Useful for refreshing the same UGC-style avatar across many ad variants without a full reshoot.
+
 **Best for:** Brand channel content (YouTube Shorts, TikTok, Reels), product demos, multilingual market localization from one source video.
 **Not ideal for:** High-volume ad testing at scale (use Arcads or Creatify for that — HeyGen credits run out faster at volume).
 
@@ -222,9 +224,9 @@ Hyper (hyperfx.ai) runs TikTok, Meta, Google, LinkedIn, and Amazon as one autono
 **Pricing:** $49/month flat (all connected channels; no per-platform fees)
 **Best for:** Teams running TikTok alongside other paid channels who need unified multi-platform optimization; rated 9.4/10 in 2026 TikTok ad automation comparisons. Not a creative generator — use alongside Creatify or Arcads for new video assets.
 
-## Synter — MCP-Native Cross-Platform Ad Generator (14 Platforms in One Workflow)
+## Synter — MCP-Native Cross-Platform Ad Generator (21+ Platforms in One Workflow)
 
-Synter (syntermedia.ai) emerged in 2026 as the first MCP-native ad platform: Claude and other AI agents can generate a full creative suite (image ad, video ad, landing page) from a single prompt and distribute it across 14 ad platforms in one step — no manual uploading or platform switching.
+Synter (syntermedia.ai) emerged in 2026 as the first MCP-native ad platform: Claude and other AI agents can generate a full creative suite (image ad, video ad, landing page) from a single prompt and distribute it across ad platforms in one step — no manual uploading or platform switching. **Platform coverage grew from 14 to 21+ platforms by Aug 2026** (per Synter's own Aug 12, 2026 pricing/platforms post).
 
 1. Go to syntermedia.ai (or connect the MCP server at syntermedia.ai/mcp to Claude)
 2. Describe your product and target audience in a prompt
@@ -300,7 +302,7 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
-- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Video Generation** — powered by Dreamina Seedance 2.0, upgraded to **Seedance 2.5** (rolling out from Aug 2026): native clip length doubled from 15s to 30s, reference uploads increased from 9 to 50, with timeline-specific instructions; rollout initially limited to select paid advertisers (better product consistency, more natural motion, less manual correction post-gen)
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
@@ -386,6 +388,20 @@ Amazon Ads launched Creative Agent on February 24, 2026, inside Amazon's Creativ
 **Best for:** Brands selling on Amazon who want AI-generated ad creative (video + display) with Amazon's own retail and shopping signal data baked in — no other platform has access to Amazon's purchase intent signals.
 **Not ideal for:** Non-Amazon campaigns (output is formatted for Amazon media only); use Creatify or AdStellar for TikTok/Meta/Google campaigns.
 
+## Meta Advantage+ Creative — Image-to-Video Now GA (Advertising Week, Oct 6, 2026)
+
+Meta's native in-platform AI creative suite, built into Ads Manager and Ads Creative Studio. At Advertising Week New York (Oct 6, 2026), Meta announced Advantage+ Creative's **video generation from static images is now generally available** (previously in limited testing): it converts existing product/catalog images into dynamic video ads with auto-added animation, text overlays, and music — no filming or external tool needed. Also announced: broader access to Ads Creative Studio (previously partner-limited), Customer Lifecycle audience strategy opened to all advertisers, and an expanded Meta AI business assistant (memory/context) inside Ads Manager.
+
+1. Go to Meta Ads Manager → create or edit a campaign → enable Advantage+ Creative
+2. Under creative enhancements, turn on image-to-video generation for catalog/product images
+3. Meta generates video variants with motion, text overlays, and music automatically
+4. Review and approve generated variants before they enter rotation
+5. (Optional) Use Ads Creative Studio for more manual control over the same AI creative tools
+
+**Pricing:** Included at no extra cost within standard Meta Ads spend.
+**Best for:** Advertisers already running Meta catalog/DPA campaigns who want video variants without a dedicated video tool; teams wanting creative generation to live inside the same platform where they buy media.
+**Not ideal for:** Advertisers needing UGC-style talking-head avatars (use Arcads, Creatify, or HeyGen) or multi-platform distribution beyond Meta (use Synter or Hyper).
+
 ## LinkedIn Campaign Manager AI Tools — Brand Kit, Draft with AI & Variants (Jul 2026)
 
 LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026, designed to help B2B advertisers produce more creative variants with less manual work:
@@ -403,7 +419,9 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 
 ## Higgsfield — Cinema Studio Platform
 
-Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.0, Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace, with Cinema Studio 3.5 adding 70+ cinematic camera presets and Soul ID for cross-shot character consistency.
+Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.5 (upgraded from 2.0 in Aug 2026 — 30s clips with synced audio, up to 50 references per generation, 4K upscaling), Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace, with Cinema Studio 3.5 adding 70+ cinematic camera presets and Soul ID for cross-shot character consistency.
+
+**Sept–Oct 2026 update:** Higgsfield integrated OpenAI's GPT-6 Astra, extending maximum video length from ~1 minute to 10+ minutes (useful for long-form brand/tutorial content, not just short ad spots), plus GPT-Image-2.5 for image generation and early GPT-Live tooling for voice-directed filmmaking (per OpenAI's official customer-story writeup).
 
 When you need the highest realism (luxury products, fashion):
 1. Prepare a high-quality product/lifestyle image
