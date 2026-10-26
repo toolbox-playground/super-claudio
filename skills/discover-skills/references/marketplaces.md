@@ -17,6 +17,7 @@ Sources to search when looking for Claude Code skills and plugins.
 | Source | URL | Notes |
 |--------|-----|-------|
 | **Claude Marketplaces** | claudemarketplaces.com | 23,400+ skills, 2,500+ aggregated marketplaces, 770+ MCP servers; includes a "Skills Updater" tool to scan local installs and fetch upstream updates |
+| **Awesome Claude Code** (hesreallyhim) | github.com/hesreallyhim/awesome-claude-code | 56,600+ GitHub stars — the most widely referenced hand-picked list of Claude Code resources: skills, agents, status lines, slash commands, hooks, and dev tooling; CC0-1.0 licensed, actively maintained |
 | **There Is A Skill For That** | theresaskillforthat.com | Community directory of Claude skills by use case |
 | **AI Templates** | aitmpl.com/plugins | Plugin and skill templates |
 | **Awesome Claude** | awesomeclaude.ai/code-cheatsheet | Curated Claude Code resources and cheatsheets |
