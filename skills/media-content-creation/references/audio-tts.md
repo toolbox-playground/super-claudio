@@ -66,9 +66,14 @@ with open("output.mp3", "wb") as f:
 
 `eleven_monolingual_v1`, `eleven_multilingual_v1`, and `scribe_v1` were removed on July 9, 2026. Migrate to `eleven_multilingual_v2` or `eleven_v3` for TTS; `scribe_v2` or `scribe_v2_realtime` for STT.
 
-## ElevenLabs v4 — Previewed at ElevenSummit Warsaw (Not Yet Released)
+## Eleven v4 / Eleven v4 Turbo — ElevenLabs' New Flagship (Released Sept 28, 2026)
 
-ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
+ElevenLabs shipped Eleven v4 on September 28, 2026 — previewed earlier at ElevenSummit Warsaw (June 2026), it is now ElevenLabs' most expressive model, supporting 90+ languages (up from 70 on v3) with "performance acting"-style delivery of emotion, intent, and accent. **Eleven v4 Turbo** is the low-latency sibling for voice agents and real-time use (ElevenLabs' own benchmarks claim faster time-to-first-audio than Cartesia Sonic 3.6 and OpenAI's `gpt-4o-mini-tts` — vendor figures, verify independently for latency-critical deployments).
+
+- **URL:** elevenlabs.io (ElevenAgents, ElevenCreative, ElevenAPI)
+- **Availability:** Included on the free tier; full access on paid plans
+- **Best for:** Highest-fidelity ElevenLabs narration/voiceover (v4); ElevenLabs-ecosystem real-time voice agents (v4 Turbo)
+- **Supersedes:** Eleven v3 as ElevenLabs' flagship — v3 remains available and is still a solid choice
 
 
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
@@ -477,7 +482,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Need | Tool |
 |------|------|
 | Quick article summary, personal use | edge-tts (Azure, free) |
-| Professional ad voiceover | ElevenLabs v3 or Inworld TTS-1.5 |
+| Professional ad voiceover | ElevenLabs v4 (or v3) or Inworld TTS-1.5 |
 | Low-latency voice agent (ElevenLabs ecosystem) | ElevenLabs Flash v2.5 (~75ms, 32 languages) or Flash v2 (English only, ~75ms) |
 | Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
