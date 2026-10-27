@@ -401,6 +401,18 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 **Best for:** B2B brands running LinkedIn campaigns who want faster variant generation and consistent brand voice without manual design work per variant.
 **Not ideal for:** Consumer / DTC advertising (LinkedIn CPMs are high; use TikTok Symphony or Meta Advantage+ for lower-funnel consumer campaigns).
 
+## X Lift — URL-to-Campaign Inside X Ads Manager (NEW Oct 2026)
+
+X Lift (launched October 6, 2026 at Advertising Week New York) is X's own AI ad creation tool built directly into X Ads Manager: submit a business URL and it generates ad images, copy, and a full campaign setup — including targeting — trained on X's own ads performance data. Aimed squarely at new and small advertisers getting started on the platform; no confirmed pricing or full rollout scope yet.
+
+1. Go to ads.x.com (X Ads Manager)
+2. Start a campaign with X Lift and paste your business URL
+3. X Lift generates ad images, copy, and suggested targeting from X's own performance data
+4. Review, edit, and launch directly from Ads Manager
+
+**Best for:** Small advertisers and new X advertisers wanting a fast URL-to-campaign flow native to the platform.
+**Not ideal for:** High-volume creative testing across many variants (use Creatify, Arcads, or AdCreative.ai) — X Lift is a quickstart tool, not a batch generator.
+
 ## Higgsfield — Cinema Studio Platform
 
 Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.0, Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace, with Cinema Studio 3.5 adding 70+ cinematic camera presets and Soul ID for cross-shot character consistency.
