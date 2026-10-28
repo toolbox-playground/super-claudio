@@ -14,6 +14,7 @@ Here's everything I can help you with. Just tell me what you need or use the sla
 |---------------|-------------|-----------------|
 | `/super-claudio:media-content-creation` | Create videos, audio, images | "make a video", "text to speech", "generate an image" |
 | `/super-claudio:software-development` | Build APIs, automate, deploy, free APIs, git/GitHub | "build an API", "automate with n8n", "create a PR" |
+| `/super-claudio:revisor-pipeline` | Security + team-standards review of GitHub Actions workflows before merge | "revisa meu pipeline", "esse workflow é seguro?" |
 | `/super-claudio:marketing` | Ad creatives, TikTok/Instagram Shop | "create a TikTok ad", "ecommerce content" |
 | `/super-claudio:writing` | Blog, SEO, captions, copywriting, newsletters | "write a blog post", "Instagram caption" |
 | `/super-claudio:design` | UI/UX inspiration, Figma, v0.dev | "design a website", "UI inspiration" |

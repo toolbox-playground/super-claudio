@@ -10,6 +10,7 @@ to route them to the right skill before responding.
 |-----------------|-----------|
 | Create videos, audio, images, voiceovers, graphics, or animate media | `media-content-creation` |
 | Build APIs, databases, automate workflows, write scripts, use free APIs, deploy | `software-development` |
+| Review, audit or approve a GitHub Actions workflow / pipeline PR for security and team standards | `revisor-pipeline` |
 | Turn a PDF or slide deck into a standalone HTML webpage | `productivity` (routes to `references/webpage-from-slides.md`) |
 | Transform DevOps Mentoria PPTX slides into Carreira Tech beginner slides | `carreira-tech-slides` |
 | Prepare a script + local HTML slides for a self-recorded video (real researched data) | `video-script-and-slides` |
