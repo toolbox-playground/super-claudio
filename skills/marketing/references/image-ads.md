@@ -6,7 +6,7 @@
 
 | Tool | Use | Free |
 |------|-----|------|
-| **Canva** | Banners, carousels, social posts | Yes (free tier) |
+| **Canva** | Banners, carousels, social posts; added **Canva Craft** (~Oct 22, 2026) — Canva's first in-house image model, trained on design templates rather than photos, reportedly strong for people/portrait generation; access tier (free vs. paid-plan-gated) not independently confirmed | Yes (free tier) |
 | **Adobe Express** | Quick resizing, brand kits | Free tier |
 | **Nano Banana 2** | Product in lifestyle scene | Check site |
 | **Flux via fal.ai** | AI-generated product images | API credits |

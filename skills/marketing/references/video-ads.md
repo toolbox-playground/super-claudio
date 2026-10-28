@@ -300,7 +300,7 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
-- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Video Generation** — powered by Dreamina Seedance 2.0, upgraded to **Seedance 2.5 for select paid advertisers starting Aug 3, 2026**: max AI video length doubled (15s → 30s) and multi-modal reference uploads raised from 9 to 50 (better product consistency, more natural motion, less manual correction post-gen)
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
@@ -315,6 +315,7 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **TikTok GO Ads** — travel-focused ad format tied to TikTok GO, TikTok's new in-app travel booking platform (hotels, attractions, tours via Booking.com, Expedia, Viator, GetYourGuide, Trip.com); ads surface within travel discovery videos, search results, and location pages; relevant for travel, hospitality, and experiences verticals
 - **Growth Max** — ad product targeting users engaged with TikTok Mini Series and Mini Games; surfaces brand messages inside long-form vertical content and interactive game experiences
 - **TikTok MCP Server** — AI agents (Claude, GPT, etc.) can now launch and manage TikTok ad campaigns directly via the MCP protocol; no manual Ads Manager UI required; announced for developers at TikTok World 2026
+- **Symphony Avatar upgrade** (previewed July 28, 2026) — folds voiceover, product demos, and virtual try-on into one avatar workflow; Custom Avatars and Video Reference features rolling out in phases to TopReach advertisers and Beta Club agencies, with full release targeted for Q3 2026
 
 Access: business.tiktok.com → Creative Center → Symphony AI (now generally available for all TikTok for Business accounts)
 
