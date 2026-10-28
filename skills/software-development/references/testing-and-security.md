@@ -208,11 +208,16 @@ app.add_middleware(TrustedHostMiddleware, allowed_hosts=["yourdomain.com"])
 
 ```yaml
 # GitHub Actions — test + security scan on every PR
+permissions:
+  contents: read
+
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
       - run: pip install -r requirements.txt
       - run: pytest tests/ --cov=src
       - run: pip-audit
