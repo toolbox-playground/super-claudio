@@ -11,6 +11,7 @@ Sources to search when looking for Claude Code skills and plugins.
 | **Claude Plugins Official** (Anthropic GitHub) | github.com/anthropics/claude-plugins-official | Anthropic-managed, high-quality plugin directory |
 | **Anthropic Skills** (Anthropic GitHub) | github.com/anthropics/skills | Official public Agent Skills repo (May 2026); includes spec, example skills, and skill-creator; all skills available to Claude.ai paid plans |
 | **Claude Plugins Community** (Anthropic GitHub) | github.com/anthropics/claude-plugins-community | Read-only mirror of Anthropic's community plugin marketplace — third-party plugins that passed automated security scanning; add manually: `claude plugin marketplace add anthropics/claude-plugins-community`; submit plugins at clau.de/plugin-directory-submission |
+| **Knowledge Work Plugins** (Anthropic GitHub) | github.com/anthropics/knowledge-work-plugins | Official Anthropic repo (Apache-2.0, 33.7k+ stars) of 11 role-based plugins — sales, support, product, marketing, legal, finance, data, enterprise search, bio-research, productivity, Cowork plugin management — for Claude Cowork and Claude Code; each bundles skills, slash commands, and MCP connectors; install with `claude plugin marketplace add anthropics/knowledge-work-plugins` then `claude plugin install <plugin>@knowledge-work-plugins` |
 
 ## Community Marketplaces
 
@@ -22,7 +23,7 @@ Sources to search when looking for Claude Code skills and plugins.
 | **Awesome Claude** | awesomeclaude.ai/code-cheatsheet | Curated Claude Code resources and cheatsheets |
 | **Claude Marketplaces Community** | claudemarketplaces.com/skills | Browse skills by category |
 | **GitHub: superpowers** | github.com/obra/superpowers | The superpowers skill collection — meta-skills for Claude Code |
-| **ClaudeSkills.info** | claudeskills.info | 658+ free, community-contributed Claude Code skills including official Anthropic skills (PDF, DOCX, XLSX, frontend design, MCP builder); no paid tier, no subscriptions; updated daily |
+| **ClaudeSkills.info** | claudeskills.info | 40,000+ free, community-contributed Claude Code skills (grown sharply from 658+ in mid-2026 — likely broadened to a wider GitHub scrape, not all hand-curated; verify count directly) including official Anthropic skills (PDF, DOCX, XLSX, frontend design, MCP builder); no paid tier, no subscriptions; updated daily |
 | **Claude Directory** | claudedirectory.org | 60+ plugins from Anthropic, partners, and community; semantic search; each plugin installs with one command and integrates automatically; covers frontend, backend, DevOps, security workflows; updated weekly (June 2026) |
 | **ClaudePluginHub** | claudepluginhub.com | Plugin directory ranked by install velocity; semantic AI search across all plugins and components; cherry-pick individual commands, agents, and skills from any plugin and bundle into a single installable package; browse by marketplace category |
 | **Skills.sh** (Vercel Labs) | skills.sh | npm-style CLI package manager for agent skills — `npx skills add <repo>`, `npx skills find`; Vercel-backed; launched January 2026; community-driven with versioning and updates; GitHub: vercel-labs/skills; compatible with Claude Code, Cursor, Codex, and 40+ agents |
@@ -41,7 +42,7 @@ Sources to search when looking for Claude Code skills and plugins.
 | **Awesome Claude Plugins** | github.com/Chat2AnyLLM/awesome-claude-plugins | Curated list of Claude marketplaces and plugins — 76 marketplaces, 1,199 plugins indexed; updated daily |
 | **MCP Market** | mcpmarket.com | Agent Skills directory for Claude Code, ChatGPT, and Codex; 318 MCP servers indexed; 200k+ monthly visitors; searchable by capability (June 2026) |
 | **Cross AI Tools** | crossaitools.com | 21,700+ Claude Code skills, plugins, and MCP servers in one browsable directory; 300,000+ monthly visitors; daily GitHub sync; supports Claude Code, Codex, OpenCode, Cursor, and 40+ agents; search by category (frontend, backend, testing, DevOps, security) |
-| **LobeHub Skills** | lobehub.com/skills | 169K+ agent skills in SKILL.md format — compatible with Claude Code, Codex CLI, ChatGPT; includes security vetting, AI/LLM integration, and developer tooling categories |
+| **LobeHub Skills** | lobehub.com/skills | ~330K+ agent skills in SKILL.md format (up from 169K+; sources on the exact current count conflict, verify directly) — compatible with Claude Code, Codex CLI, ChatGPT; includes security vetting, AI/LLM integration, and developer tooling categories |
 | **There's An AI For That** | theresanaiforthat.com | Broader AI tool discovery (not Claude-specific, but useful for research) |
 
 ## How to Search Each Source
