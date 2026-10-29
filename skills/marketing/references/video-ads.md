@@ -104,7 +104,7 @@ AdCreative.ai generates large batches of ad creatives and assigns each a perform
 3. Generate ad creative variants (images, carousels, short videos)
 4. Sort by performance score → prioritize top-predicted variants for paid spend
 
-**Pricing:** Starts at $39/month (no permanent free tier; trial available). Best for mid-to-large teams running multi-platform campaigns at scale (TikTok, Meta, Google).
+**Pricing:** Starter $39/month (image/static creatives only, no permanent free tier; trial available). Video and UGC-style generation requires the Professional tier (~$249/month) and up. Best for mid-to-large teams running multi-platform campaigns at scale (TikTok, Meta, Google).
 
 ## Pencil — Predictive Scoring Trained on $1B+ in Ad Spend
 
@@ -117,7 +117,7 @@ Pencil generates video and image ads and scores every creative against patterns 
 5. Export top-predicted creatives directly to your ad manager
 
 **Free tier:** 6 ads free (guided creation; no credit card required)
-**Pricing:** ~$99/month (Basic); ~$499/month (Pro — agency seats, unlimited)
+**Pricing (restructured as of ~Sept 2026, down from the previous $99/$499 tiers):** Core ~$14/month (50 generations, 1 workspace); Growth ~$55/month; Pro — custom/quote-based (agency seats, unlimited). Confirm current tiers at trypencil.com/pricing — third-party trackers vary on exact figures.
 **Platforms:** Facebook, Instagram, TikTok, YouTube, Amazon, Pinterest, Snapchat
 **Best for:** DTC brands and agencies that want statistically validated creatives before launch; teams burned by wasting budget on losers during testing.
 **Not ideal for:** Pure video UGC production at volume (use Arcads or Creatify instead); sub-$1K/month spend where predictive value is limited.
@@ -231,7 +231,7 @@ Synter (syntermedia.ai) emerged in 2026 as the first MCP-native ad platform: Cla
 3. Synter generates image ads, video ads, and a matching landing page via 100+ MCP tools
 4. Approve and distribute to any combination of: Google Ads, Meta, LinkedIn, TikTok, Reddit, Pinterest, Snapchat, Microsoft Ads, X Ads, Amazon DSP, Taboola, Spotify Ads, Trade Desk, StackAdapt
 
-**Pricing:** Starts at $199/month. MCP server is open-source at github.com/Synter-Media-AI/mcp-server.
+**Pricing:** Synter's own materials now describe usage-based pricing — a free tier with 1,000 credits/month, then ~$25 per additional 1,000 credits, no mandatory flat fee (this appears to replace an earlier flat $199/month figure; third-party comparison pages still show inconsistent numbers, so confirm at syntermedia.ai/pricing before quoting). MCP server is open-source at github.com/Synter-Media-AI/mcp-server.
 
 **Best for:** Agencies and performance marketers running campaigns across 3+ platforms simultaneously who want to eliminate the copy-paste-upload loop. Not a substitute for creative-specific tools (Creatify, Arcads) for pure video UGC production.
 
@@ -288,19 +288,19 @@ MakeUGC generates talking-head UGC-style ads where AI actors appear to physicall
 3. Select AI actor from the library
 4. Generate product-in-hand video with B-roll, auto-captions, and AI-written script
 
-**Free tier:** None
-**Pricing:** $49/month Startup (5 videos), $69/month Growth (10 videos), $119/month Pro (20 videos)
+**Free tier:** None (3-day trial on paid plans)
+**Pricing (raised from $49/$69/$119; now credit-based):** $59/month Startup (500 credits), $79/month Growth (1,000 credits), $149/month Pro (2,000 credits)
 **Best for:** Beauty, supplement, and consumer-goods brands where product-in-hand authenticity is the creative priority.
 **Not ideal for:** High-volume multi-language campaigns (use Jogg AI or Arcads for those).
 
 ## TikTok Symphony & Ad Formats — TikTok World 2026 (May 13, 2026)
 
-TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by Dreamina Seedance 2.0:
+TikTok's own AI toolset inside Creative Center and Ads Manager. TikTok upgraded Symphony to **Dreamina Seedance 2.5** on August 3, 2026 (up from 2.0), doubling max AI-generated clip length to 30 seconds and raising the multi-modal reference-upload limit from 9 to 50 assets — rolling out first to select paid advertisers before wider availability:
 - **Script Generator** — briefs → ad scripts aligned with trending hooks
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
-- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Video Generation** — powered by Dreamina Seedance 2.5 as of Aug 2026 (30s max clip length, up to 50 reference assets per generation, better product consistency and more natural motion)
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
@@ -361,11 +361,11 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
-Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
+Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. It integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation. **Gemini Omni** (previewed at GML 2026, rolled out from ~Aug 25, 2026) adds full video-ad creation from a brief: feed it brand guidelines, a website URL, or existing static assets, and it generates storyboards and motion scenes in both 16:9 and 9:16, refinable through follow-up prompts; output carries a SynthID watermark. It's free and rolling out globally (not all accounts at once):
 
 1. Open Google Ads → Asset Studio
 2. Select "Generate image" or "Generate video" → enter a text prompt or upload a reference image
-3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images
+3. Veo 3.1 generates production-ready video clips; Nano Banana Pro generates product lifestyle images; Gemini Omni turns a brief or URL into a full storyboard-driven video ad
 4. **AI Outpainting** (2026): expands existing videos beyond their original frames — currently available in App campaigns, expanding to more campaign types; powered by the same model used for "The Wizard of Oz" at Sphere
 5. Assets go directly into your campaign library — no external tool or re-upload required
 
