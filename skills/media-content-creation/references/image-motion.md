@@ -2,9 +2,9 @@
 
 Tools that take a still image and add realistic motion to it.
 
-## Weavy AI — Motion from Photo
+## Figma Weave (formerly Weavy AI) — Motion from Photo
 
-Adds realistic motion to a static photograph (person moves, fabric flows, hair blows).
+Adds realistic motion to a static photograph (person moves, fabric flows, hair blows). Weavy AI was acquired by Figma (Oct 2025) and rebranded to Figma Weave (May 2026); its agent moved from open beta to GA on Oct 6, 2026 and now draws paid Figma AI credits instead of running on a separate free tier — verify current pricing at weave.figma.com/pricing. The legacy weavy.ai URL's live status is unconfirmed as of this scan.
 
 - Great for: fashion images, lifestyle photos, product ads where a model wears/uses the product
 - Input: photo + motion direction prompt
@@ -25,16 +25,16 @@ Kling's image-to-video mode is also excellent for animating photos.
 - Higher quality than many tools
 - Supports longer clips from a single image
 
-## Runway "Act One" / Gen-3
+## Runway Gen-4.5 / Aleph
 
 - URL: runwayml.com
-- Professional-grade animation from images
+- Professional-grade animation from images; Gen-4.5 (with the Aleph post-generation editor) is the current flagship — Act One and Gen-3 are prior generations
 - More control over motion style and duration
 
 ## When to Use Which
 
 | Tool | Best For |
 |------|---------|
-| Weavy AI | Fashion/lifestyle/ecommerce model motion |
-| Kling Image-to-Video | General high-quality animation |
-| Runway | Professional production, fine control |
+| Figma Weave | Fashion/lifestyle/ecommerce model motion |
+| Kling Image-to-Video | General high-quality animation (Kling 4.0, Oct 15 2026, is now the flagship — up to 30s clips, 10 keyframes) |
+| Runway Gen-4.5 | Professional production, fine control |
