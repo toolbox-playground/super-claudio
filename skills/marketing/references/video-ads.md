@@ -300,7 +300,7 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
-- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen); **upgraded to Seedance 2.5 around Aug 3, 2026** — max generated clip length doubled to 30 seconds and the multi-modal reference-image limit rose from 9 to 50, per trade-press coverage (ppc.land); verify current limits in Symphony Creative Studio, as TikTok doesn't publish these in an easily citable changelog
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
@@ -400,6 +400,20 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 **Performance signal:** LinkedIn internal data shows 20%+ higher CTR for campaigns running 5+ ad variants vs. single-ad campaigns.
 **Best for:** B2B brands running LinkedIn campaigns who want faster variant generation and consistent brand voice without manual design work per variant.
 **Not ideal for:** Consumer / DTC advertising (LinkedIn CPMs are high; use TikTok Symphony or Meta Advantage+ for lower-funnel consumer campaigns).
+
+## Meta Advantage+ Creative — Video from Static Images (Advertising Week NY, Oct 6 2026)
+
+At Advertising Week New York (October 6, 2026) Meta announced AI video expansions inside Advantage+ creative tools, aimed at turning existing still images into video ads without a shoot:
+
+1. Open Ads Manager → Advantage+ creative (or Meta Ads Creative Studio)
+2. Upload existing product/brand still images
+3. Generate a video ad from those stills — Meta reports this "image → video" capability as generally available for Advantage+ creative
+4. A related catalog-specific flow (turning catalog product photos into short product videos) is also rolling out, though trade coverage disagrees on whether it's GA or still beta/limited to eligible advertisers — confirm availability in your own Ads Manager before planning a campaign around it
+5. Ads Creative Studio itself (for editing/animating existing assets, distinct from the avatar/UGC tools covered elsewhere in this file) was described as still expanding to more advertisers as of this announcement
+
+**Best for:** Brands with an existing photo library who want quick video variants without new production, already running in Meta Ads Manager.
+**Not ideal for:** Talking-head/avatar UGC (use Arcads, HeyGen, or Pose Video Studio) or TikTok-native formats (use Symphony).
+**Note:** Coverage of this launch comes from trade press (Advertising Week recaps), not a primary Meta changelog link available in this session — verify exact feature names and rollout status in Meta's own Ads Manager "What's New" panel.
 
 ## Higgsfield — Cinema Studio Platform
 
