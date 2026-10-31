@@ -20,6 +20,8 @@ Generate complete songs (vocals + instruments) from a text prompt.
 
 Example prompt: "upbeat Brazilian funk, energetic, no lyrics, good for TikTok ads"
 
+**Suno Speech (beta, launched Oct 1, 2026):** Suno's first product beyond song generation — generates spoken narration and original background music together as one composition (not stitched after the fact) from a script/idea plus a description of the desired voice and musical style. A toggle turns the background score off for clean narration only. Available on web and mobile. Suno itself flags it as early beta: accents can drift and dramatic pauses can be exaggerated. Several details are unconfirmed as of this scan — supported languages, exact max duration (one secondary source cites ~8 minutes, unverified against Suno's own post), whether narration and music can be exported as separate stems, and Speech-specific pricing/credit cost were not published in available launch coverage. Check suno.com/blog/introducing-speech-beta for authoritative details before recommending it for production voiceover work.
+
 ## Udio — High-Quality Music Generation
 
 Similar to Suno, strong on musicality and production quality.
