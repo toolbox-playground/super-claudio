@@ -97,13 +97,19 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | Open Trivia DB | Trivia questions (50+ categories) | opentdb.com/api_config.php | None |
 | Mockerito | 200+ realistic mock REST endpoints across 9 domains (E-Commerce, Finance, Healthcare, Aviation, Meteorology, etc.); full CRUD + filtering/pagination; more varied than JSONPlaceholder | mockerito.com | None |
 
+## Government & Public Data
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| api.data.gov | Free API gateway/key covering 25+ US federal agencies and 450+ APIs (NASA, NPS, NIH, USGS, FDA, GovInfo, and more) via a single signup; key via `x-api-key` header or `api_key` query param; `DEMO_KEY` available for quick testing without signup | api.data.gov | Free key |
+
 ## AI / Machine Learning
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
 | Google Gemini API | LLM inference (Gemini 3.5 Flash free in AI Studio — new default since May 19, 2026; daily Gemini 3.1 Pro allotment for harder reasoning), 1M token context, multimodal | ai.google.dev | Free key (generous limits) |
 | Groq | Ultra-fast LLM inference (LPU hardware); Llama 4 Scout, Llama 4 Maverick, Kimi K2 (1T MoE), Qwen3 235B, Gemma, Mistral, DeepSeek R1 and more; no credit card required | groq.com | Free key |
-| OpenRouter | Access to 100+ free AI models via one API; notable free models (July 2026): **NVIDIA Nemotron 3 Ultra** (550B MoE, 1M context, `nvidia/nemotron-3-ultra-550b-a55b:free`) and **OpenAI GPT-OSS** (20B Apache 2.0 open-weight, `openai/gpt-oss-20b:free`); 25+ free models total; 50 req/day free, 1,000/day after $10 purchase | openrouter.ai | Free key |
+| OpenRouter | Access to 100+ free AI models via one API; the free-model roster (models with a `:free` suffix) changes frequently — check openrouter.ai/models?max_price=0 for the current list rather than relying on specific model names; 50 req/day free, 1,000/day after $10 purchase | openrouter.ai | Free key |
 | GitHub Models | 40+ AI models (GPT-4o, Llama, DeepSeek-R1, Mistral, Phi, xAI, Cohere) via OpenAI-compatible API; uses your GitHub account — no separate key or signup; free tier rate-limited (e.g. GPT-4o: 10 RPM / 50 RPD); opt-in paid tier for higher limits | github.com/features/models | GitHub account (free) |
 | Cerebras Inference | Ultra-fast LLM inference on wafer-scale silicon (2,600+ tok/s); Llama 3.3 70B, Qwen3 32B/235B, and more; 1M tokens/day free, no credit card required; 30 RPM on free tier | inference.cerebras.ai | Free key |
 | Cloudflare Workers AI | Edge AI inference at 300+ global locations; Llama 3.1 8B, Mistral 7B, Phi-2, Gemma, SDXL (image gen), Whisper (ASR), and 40+ models; 10,000 neurons/day free (no credit card required); unique low-latency for globally distributed apps | developers.cloudflare.com/workers-ai | CF account (free) |
