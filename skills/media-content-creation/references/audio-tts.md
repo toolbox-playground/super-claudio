@@ -66,9 +66,16 @@ with open("output.mp3", "wb") as f:
 
 `eleven_monolingual_v1`, `eleven_multilingual_v1`, and `scribe_v1` were removed on July 9, 2026. Migrate to `eleven_multilingual_v2` or `eleven_v3` for TTS; `scribe_v2` or `scribe_v2_realtime` for STT.
 
-## ElevenLabs v4 — Previewed at ElevenSummit Warsaw (Not Yet Released)
+## ElevenLabs v4 / v4 Turbo — Released (NEW Sept 2026)
 
-ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
+ElevenLabs shipped Eleven v4 and Eleven v4 Turbo around September 28, 2026 — the model previewed at ElevenSummit Warsaw in June 2026 is now live, superseding Eleven v3 as the flagship. v4 is positioned as the most emotionally expressive model yet ("performance acting" delivery); v4 Turbo trades some of that range for low latency, aimed at voice agents. ElevenLabs' own materials claim #1 on the Artificial Analysis Provider Voice Arena for September 2026 and ~75% listener preference over v3 in blind tests — both vendor-reported, not independently confirmed as of this scan.
+
+- **URL:** elevenlabs.io (same API; model IDs likely `eleven_v4` / `eleven_v4_turbo` — confirm at elevenlabs.io/docs)
+- **Languages:** 90+ per one report (vs. 70+ for v3) — not yet cross-checked against ElevenLabs' own docs
+- **Voice cloning:** ~10 seconds of reference audio (down from 1 minute for v3)
+- **Latency:** ElevenLabs reports ~150ms median time-to-first-speech (vendor-reported; v4 Turbo is the low-latency variant)
+- **Pricing:** Sources disagree — one cites $0.08/1,000 characters standard ($0.04 Turbo) after an introductory $0.022/1,000 promo rate ended Oct 12, 2026; verify current pricing at elevenlabs.io/pricing before committing budget
+- **Best for:** Teams already on ElevenLabs wanting the newest quality/latency tier; verify exact pricing and language list directly before production use given conflicting third-party reports
 
 
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
@@ -460,6 +467,20 @@ xAI launched its Grok Text-to-Speech API in April 2026, built on the same voice 
 - **Best for:** Developers already in the xAI/Grok ecosystem; multilingual voice agents; production pipelines needing format flexibility
 - **Not ideal for:** Budget-sensitive high-volume use (use Speechmatics $0.011/1K chars or Kokoro at no cost); theatrical emotional range (use Hume Octave 2); top-5 quality ranking (Cartesia Sonic 3.5 and Fun-Realtime-TTS now rank above it)
 
+## Microsoft MAI-Voice-2.1 / Flash — Azure Speech, Ultra-Low-Latency (NEW Oct 2026)
+
+Microsoft released MAI-Voice-2.1 and the faster MAI-Voice-2.1-Flash variant on October 1, 2026 (public preview), alongside a new MAI-Transcribe-2-Streaming ASR model. Flash targets realtime voice agents, assistants, call centers, and IVR flows where latency matters most.
+
+- **URL:** ai.azure.com/catalog/models/MAI-Voice-2.1-Flash (Azure AI Foundry); routed via Azure Speech
+- **Status:** Public preview — Microsoft does not recommend production use yet; access requires approval, no SLA
+- **API model ID:** `mai-voice-2-1-flash` (standard: `mai-voice-2-1`); SSML voice names are model-suffixed, e.g. `en-US-Harper:MAI-Voice-2.1-Flash`
+- **Languages:** Reported as 23 languages / 26 locales by most sources (one Foundry listing says 15 — unresolved discrepancy, check Azure docs)
+- **Latency:** ~45ms model inference reported; ~150ms end-to-end with network/playback
+- **Pricing:** ~$15/1M characters (Flash) vs. ~$22/1M characters (standard MAI-Voice-2.1) per third-party reports — confirm on Azure pricing pages
+- **Voice cloning:** Gated, requires authorized/consented source audio — not open self-service cloning
+- **Best for:** Azure-ecosystem teams building realtime voice agents who want a faster sibling to the standard MAI-Voice-2.1 model
+- **Not ideal for:** Production workloads today (preview status, no SLA); teams needing open self-service voice cloning
+
 ## Speechmatics TTS — Ultra-Cheap Enterprise TTS, 11–27× Below ElevenLabs
 
 Speechmatics launched its own neural TTS in 2026 alongside its industry-leading STT (55+ languages). At $0.011 per 1,000 characters it is 11–27× cheaper than ElevenLabs while delivering comparable neural quality and sub-150ms streaming latency.
@@ -505,4 +526,6 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Grok/xAI ecosystem, 20+ languages, format flexibility | xAI Grok TTS ($4.20/1M chars, Elo ~1,194 ~#6 globally July 2026, voice cloning) |
 | Contextual performance TTS, dramatic delivery without tags | StepAudio 2.5 TTS (platform.stepfun.ai, Elo ~1,187 ~#7 globally July 2026, plain-language voice direction) |
 | Multilingual broadcast-quality narration, 40+ languages, emotion+interjections | MiniMax Speech 2.8 HD (minimax.io/audio, Replicate, WaveSpeedAI; HD for quality, Turbo for speed) |
-| Highest-ranked cloud TTS by Elo, real-time streaming | Qwen-Audio-3.0-TTS-Plus (Alibaba DashScope, Elo 1,236, **#1** mid-July 2026); Speechify SIMBA 3.2 ($10/1M chars, Elo 1,234, **#2**); Gemini 3.1 Flash TTS (free in AI Studio, Elo ~1,214, ~#3); Cartesia Sonic 3.5 (free tier, Elo ~1,207, ~#4, ~40ms latency) |
+| Highest-ranked cloud TTS by Elo, real-time streaming | Qwen-Audio-3.0-TTS-Plus (Alibaba DashScope, Elo 1,236, **#1** mid-July 2026); Speechify SIMBA 3.2 ($10/1M chars, Elo 1,234, **#2**); Gemini 3.1 Flash TTS (free in AI Studio, Elo ~1,214, ~#3); Cartesia Sonic 3.5 (free tier, Elo ~1,207, ~#4, ~40ms latency) — ElevenLabs claims v4 took #1 on Artificial Analysis Provider Voice Arena for Sept 2026 (vendor-reported, unconfirmed independently) |
+| Latest ElevenLabs flagship, most expressive + voice cloning from ~10s | ElevenLabs v4 (released ~Sept 28, 2026) / v4 Turbo (low-latency variant) — verify current pricing, sources conflict |
+| Azure ecosystem, ultra-low-latency realtime voice agent (preview) | Microsoft MAI-Voice-2.1-Flash (ai.azure.com, ~45ms inference, preview status — not production-ready yet) |

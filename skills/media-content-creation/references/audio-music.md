@@ -9,14 +9,15 @@
 Generate complete songs (vocals + instruments) from a text prompt.
 
 - URL: suno.com
-- **Latest model:** v5.5 (March 2026) — Voices (clone your singing voice), Custom Models (tune on your catalog), My Taste (personalized generation); v5.5 requires Pro/Premier; free tier capped at v4.5 and below
-- **Suno Studio (in-browser DAW):** Multi-track view, stem separation (see below), 6-band EQ, Warp Markers (adjust timing post-generation), Remove FX (strip reverb/effects), alternates, and expanded time signature support. Studio 1.2 (February 2026) added warp markers, remove FX, and alternates. Available to Pro/Premier subscribers.
-- **Stem Separation (June 11, 2026 update):** Three modes — **Advanced Split** (NEW, Premier only): choose from ~100 instruments to regenerate each stem from scratch — no separation artifacts; also exports MIDI; 10 credits/extracted track. **Split from Mix** (Updated): pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
-- Free tier: 50 credits/day (~10 songs); non-commercial use only
-- **Important (2026):** Free-tier users can no longer download audio files — tracks can only be streamed/shared within the platform. Download requires a paid plan ($10/month Pro, $30/month Premier).
-- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of June 2026 the transition has not yet occurred — current models remain active — but when it does, all generations made with the old models will eventually become inaccessible. UMG and Sony Music litigation remains active — a fair-use summary judgment hearing in the U.S. case is scheduled for July 2026 (no verdict as of July 11, 2026); a separate German case (GEMA v. Suno) is due July 31, 2026. Users who want to preserve old generations should download them now on a paid plan.
+- **Latest models (NEW — launched Sept 9, 2026):** **v6**, **v6-wild**, and **v6-mini** — Suno's first licensed-catalog model family, built in partnership with Warner Music Group, BMG, and Believe (signed one day before launch); Suno began paying these labels royalties at launch. v6-mini is free for all users; v6 and v6-wild require Pro/Premier. This is the licensed-model transition that was "pending" as of mid-2026 — it has now happened, though Suno has not fully detailed what trained v6 beyond the licensed Warner/BMG/Believe catalogs plus user data (per secondary reporting; confirm with Suno's own announcement). No v6-specific consumer or API pricing had been published as of this scan — rollout is phased, so check suno.com/pricing for current rates before assuming v4.5/v5.5-era pricing still applies.
+- **Previous models:** v5.5 (March 2026) — Voices (clone your singing voice), Custom Models (tune on your catalog), My Taste (personalized generation)
+- **Suno Studio (in-browser DAW):** Multi-track view, stem separation (see below), 6-band EQ, Warp Markers (adjust timing post-generation), Remove FX (strip reverb/effects), alternates, and expanded time signature support. Available to Pro/Premier subscribers.
+- **Stem Separation:** Three modes — **Advanced Split** (Premier only): choose from ~100 instruments to regenerate each stem from scratch — no separation artifacts; also exports MIDI; 10 credits/extracted track. **Split from Mix:** pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
+- Free tier: v6-mini free for all users (unclear if the previous 50 credits/day ~10 songs limit still applies post-v6 — verify on suno.com)
+- **Download restriction (2026):** Free-tier users could not download audio files as of mid-2026 — tracks streamed/shared within the platform only; download required Pro ($10/mo) or Premier ($30/mo). Confirm whether this still applies under v6's licensed model.
+- **Legal status:** Warner settled with Suno in November 2025 (the deal underlying v6's licensing). UMG and Sony Music litigation status is unclear in current reporting — some secondary (non-English) sources claim a further Sony/UMG suit filed shortly after the Warner settlement, but this is unconfirmed in English-language coverage; treat as unverified.
 - Input: genre, mood, lyrics (optional), style description
-- Output: full song (streaming on free; downloadable MP3 on paid)
+- Output: full song (streaming on free; downloadable MP3 on paid, historically)
 
 Example prompt: "upbeat Brazilian funk, energetic, no lyrics, good for TikTok ads"
 
@@ -65,6 +66,19 @@ MiniMax Music 2.5 (released January 29, 2026) adds paragraph-level precision con
 - **Audio fidelity:** Optimized soundstage keeps vocals and instruments in separate spectral regions — the key improvement over Music 2.0
 - Best for: generation where song structure matters (commercial jingles, video scoring with section-to-cut sync, multi-verse songs with distinct parts)
 - Not ideal for: stem export or MIDI (use Mureka v8); on-demand free generation (use Suno free tier)
+
+## MiniMax Music 3.0 — Open-Weight Full Songs, No Territorial Restriction (NEW Aug 2026)
+
+MiniMax shipped Music 3.0 as a hosted API in July 2026, then released the weights open on Hugging Face/GitHub/ModelScope on August 13, 2026 (repo: `MiniMaxAI/MiniMax-Music3`, ~57.4GB). Unlike some prior MiniMax open releases, this one reportedly carries no territorial carve-out. Generates full songs with vocals up to ~5 minutes in a single pass.
+
+- **URL:** huggingface.co/MiniMaxAI/MiniMax-Music3 | API: minimax.io/audio
+- **License:** MiniMax-Music3 Community License — commercial use with attribution per most sources; a separate agreement is required above $20M in project revenue (verify exact terms on the HuggingFace model card, as one source lists the license as unclear)
+- **Architecture:** Condition encoder + language model (reportedly Qwen3-8B-based) + RVQ depth decoder + tokenizer + scheduler + transformer; ComfyUI support shipped same-day
+- **Hardware:** Self-hosting reportedly needs a CUDA GPU with ~8–24GB VRAM (secondary source — verify against the model card)
+- **Free hosted tier:** Conflicting reports — one source says a free `music-3.0-free` API tier exists, another says free API access has closed; check minimax.io directly
+- **Evaluation:** No published MOS scores or head-to-head comparison against Suno/Udio/ACE-Step as of this scan
+- **Best for:** Developers wanting an open-weight, self-hostable alternative to Suno/Udio for full vocal songs; teams needing commercial use without a per-song licensing fee (below the $20M revenue threshold)
+- **Not ideal for:** Teams needing a verified quality benchmark before committing (none published yet); casual users wanting a no-setup hosted experience (use Suno v6-mini or Google Flow Music instead)
 
 ## Google Flow Music (formerly Producer.ai / Riffusion) — Google-Owned, Free, Lyria 3 Powered
 
@@ -124,4 +138,4 @@ For background music without AI generation:
 | Unique branded sound | Speed matters |
 | Need API / stems / MIDI (Mureka) | Budget is zero |
 
-> **Note:** As of June 2026, Udio's licensed platform has launched but operates as a walled garden — audio cannot be downloaded or exported. For any use case where you need to keep or use the generated audio, use Suno (paid), ElevenLabs Music v2 (free for personal; Starter plan+ for commercial), Google Flow Music / flowmusic.app (free, Google), or a royalty-free library instead.
+> **Note:** As of June 2026, Udio's licensed platform has launched but operates as a walled garden — audio cannot be downloaded or exported; this has not been re-verified in this scan (Nov 2026) — check udio.com for current status. For any use case where you need to keep or use the generated audio, use Suno v6/v6-mini (licensed models, paid tiers for download — verify current terms), MiniMax Music 3.0 (open-weight, self-hosted), ElevenLabs Music v2 (free for personal; Starter plan+ for commercial), Google Flow Music / flowmusic.app (free, Google), or a royalty-free library instead.
