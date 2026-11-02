@@ -6,7 +6,7 @@
 
 | Tool | Use | Free |
 |------|-----|------|
-| **Canva** | Banners, carousels, social posts | Yes (free tier) |
+| **Canva** | Banners, carousels, social posts; **Canva AI 2.0** (launched Apr 16, 2026 at Canva Create) adds an orchestration layer that chains image generation, layout, typography, and video tools from one prompt to build a full multi-channel ad campaign, plus persistent brand-style memory | Yes (free tier; AI features in research preview, higher-limit AI Pass add-on planned) |
 | **Adobe Express** | Quick resizing, brand kits | Free tier |
 | **Nano Banana 2** | Product in lifestyle scene | Check site |
 | **Flux via fal.ai** | AI-generated product images | API credits |
