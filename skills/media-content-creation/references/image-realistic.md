@@ -39,9 +39,9 @@
 | **Ideogram 4.0** | ideogram.ai, Together AI | Text in images, posters, signage; first open-weight T2I model from Ideogram (9.3B params, Jun 3 2026); #1 text rendering (0.97 X-Omni OCR — highest among open-weight models); native 2K resolution; bounding-box layout control; color-palette conditioning (up to 16 hex colors); inference code Apache 2.0; model weights: non-commercial license | Free tier (ideogram.ai); API: $0.03 Turbo / $0.06 Default / $0.10 Quality per image |
 | **Google Imagen 4** **(DEPRECATED — Imagen 4 endpoints shut down August 17, 2026; Imagen 3 already shut down June 24–30, 2026; migrate to Nano Banana / Gemini Image models)** | — | — | — |
 
-## Nano Banana 2 — Top Pick for Product & Lifestyle Images
+## Nano Banana 2.1 — Top Pick for Product & Lifestyle Images
 
-Google's Nano Banana 2 (Gemini 3.1 Flash Image) is available free in the Gemini app and across Google products (Search, Lens, AI Studio, Vertex AI). Particularly strong for:
+Google's Nano Banana 2.1 (released Oct 6, 2026, updating Nano Banana 2 / Gemini 3.1 Flash Image) is available free in the Gemini app and across Google products (Search, Lens, AI Studio, Vertex AI, Flow, Stitch). Particularly strong for:
 - Placing products in realistic lifestyle contexts ("product on a kitchen counter", "model holding product")
 - Generating ad-ready images with clean composition
 - Ecommerce and social commerce content
