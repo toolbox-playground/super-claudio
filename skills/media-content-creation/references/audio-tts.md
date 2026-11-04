@@ -66,9 +66,14 @@ with open("output.mp3", "wb") as f:
 
 `eleven_monolingual_v1`, `eleven_multilingual_v1`, and `scribe_v1` were removed on July 9, 2026. Migrate to `eleven_multilingual_v2` or `eleven_v3` for TTS; `scribe_v2` or `scribe_v2_realtime` for STT.
 
-## ElevenLabs v4 — Previewed at ElevenSummit Warsaw (Not Yet Released)
+## ElevenLabs v4 / v4 Turbo — Released Sept 28, 2026
 
-ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
+ElevenLabs shipped Eleven v4 and v4 Turbo on September 28, 2026, following the preview shown at ElevenSummit Warsaw (June 2026). v4 is ElevenLabs' most emotive TTS model to date — expressive delivery with emotion, intent, and accent control, positioned as "performance acting" rather than plain text-to-speech. v4 Turbo is the low-latency sibling (~150ms TTFA) built for voice agents.
+
+- **URL:** elevenlabs.io (ElevenAgents, ElevenCreative, API)
+- **Pricing:** ~$0.08/1,000 characters (unverified against elevenlabs.io/pricing — check before quoting to a client)
+- **Best for:** v4 — premium narration and ad voiceover needing dramatic range; v4 Turbo — real-time voice agents needing ElevenLabs-quality expressiveness at low latency
+- **Not ideal for:** Budget-sensitive bulk generation (use Kokoro, edge-tts, or Chatterbox)
 
 
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
@@ -203,6 +208,10 @@ OpenAI GPT-Realtime-2 (released May 8, 2026) is a speech-to-speech model — not
 - **Reasoning:** adjustable effort levels; runs parallel tool calls during conversation; scores 15.2% higher than GPT-Realtime-1.5 on Big Bench Audio
 - **Best for:** Voice agents needing complex decision-making (booking, enterprise support, multi-tool workflows) where GPT-5-class reasoning outweighs cost concerns
 - **Not ideal for:** Pure TTS use cases, budget-sensitive pipelines, or long-form content narration — the $64/1M output rate is very high vs. dedicated TTS ($10–$27/1M characters)
+
+## OpenAI Legacy TTS Deprecation Notice
+
+OpenAI announced (Oct 1, 2026) it is retiring the classic `tts-1`, `tts-1-hd` endpoints and two `gpt-4o-mini-tts` snapshots on January 6, 2027. If you have scripts calling `/v1/audio/speech` with those model IDs, migrate before the cutoff — as of this scan there is no confirmed drop-in replacement on that same endpoint (`gpt-realtime-2.1-mini` does not support `/v1/audio/speech`); check platform.openai.com/docs/deprecations for the current migration path.
 
 ## OpenAI GPT-Live-1 — Full-Duplex Consumer Voice Model (July 8, 2026)
 
