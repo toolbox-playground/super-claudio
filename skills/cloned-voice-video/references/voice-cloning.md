@@ -150,8 +150,13 @@ word count**, because captions and diagram reveals are aligned by word index.
 Side effect worth knowing: respelling also removed the `exaggeration=0.3` stall, which
 suggests the model was choking on the English tokens themselves.
 
-A respelling attempt to force Brazilian /s/ by writing `ç` or `ss` in place of
-pre-consonantal and final `s` ("eçtado", "oç nôudç") did **not** fix the accent.
+Respelling does **not** generalize to the accent itself. Forcing Brazilian /s/ by
+writing `ç` or `ss` in place of pre-consonantal and final `s` ("eçtado", "oç nôudç")
+moved the sibilant ratio from −4.07 to −3.89 (`ç`) and −2.93 (`ss`), against +1.67 for
+the pt-BR model. The `ç` gain is inside the noise: the *same* text and parameters
+varied by 0.76 dB between two runs, so treat any single-sample comparison below ~1 dB
+as meaningless and re-run before concluding. The chiado lives in learned prosody, not
+in character-level reading.
 
 ## Metrics that misled
 
