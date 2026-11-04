@@ -65,6 +65,8 @@ For full-stack features: start with `databases.md` (schema), then `apis.md` (end
 | GitHub MCP server (Claude reads/writes GitHub directly) | `references/git-and-github.md` |
 | GitHub Actions, CI/CD workflows | `references/git-and-github.md` |
 
+**Reviewing or auditing an existing workflow** ("is this pipeline safe?", "can I merge this workflow PR?") → hand off to `super-claudio:revisor-pipeline`.
+
 ### Testing & Security
 
 | Intent | Reference file |
