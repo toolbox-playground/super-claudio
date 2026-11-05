@@ -77,8 +77,8 @@ in it, on every lesson. And training audio must be spoken, never sung.
 | Eleven Multilingual v2 | 10,000 |
 | Eleven Flash v2.5 | 40,000 |
 
-At ~1,200 characters per minute of pt-BR narration, 10,000 characters is about
-**8 minutes of audio in a single request**. A 2–5 minute lesson is 2,400–6,000
+At ~934 characters per minute of pt-BR narration, 10,000 characters is about
+**10 minutes of audio in a single request**. A 2–5 minute lesson is 1,900–4,700
 characters, so **one lesson is always one request**. There is no need to split a lesson
 for the model's sake, and splitting is undesirable: two requests mean two takes, and
 takes do not match seamlessly.
@@ -156,18 +156,18 @@ the voice goes muffled. Use plain gain if a level change is genuinely needed.
 
 ## Cost, so a course can be budgeted
 
-Credits are charged **per character**, and the measured rate is ~1,200 characters per
+Credits are charged **per character**, and the measured rate is ~934 characters per
 minute of audio. Cost per hour of finished narration, by plan:
 
 | Plan | US$/month | included audio | **US$/hour of audio** |
 |---|---|---|---|
-| Starter | 6 | ~25 min | 14.40 |
-| Creator | 22 | ~101 min | 13.09 |
-| Pro | 99 | ~500 min | 11.88 |
-| Scale | 299 | ~1,500 min | 11.96 |
+| Starter | 6 | ~32 min | 11.21 |
+| Creator | 22 | ~130 min | 10.19 |
+| Pro | 99 | ~642 min | 9.25 |
+| Scale | 299 | ~1,927 min | 9.31 |
 
-A 4-hour course is about **240 minutes of audio**, so roughly US$ 50 of credits spread
-over however many months it is produced in. Professional voice cloning starts on the
+A 4-hour course is about **240 minutes of audio**, or ~224,000 credits — roughly two
+months of the Creator plan, about US$ 41, spread over however long it is produced in. Professional voice cloning starts on the
 Creator plan; instant cloning is available from Starter. Credits are a single pool
 shared across all ElevenLabs products, so generating music or dubbing eats the
 narration budget.

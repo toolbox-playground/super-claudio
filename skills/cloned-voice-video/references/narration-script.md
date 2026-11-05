@@ -151,13 +151,13 @@ rewrite the whole script.
 
 ## Budget
 
-~1,200 characters per minute of finished audio. Check the character count of
-`narration/aula.txt` before generating:
+~934 characters per minute of finished audio, measured on Eleven v4 at speed 1.0.
+Check the character count of `narration/aula.txt` before generating:
 
 ```bash
 tr -d '\n' < narration/aula.txt | wc -c
 ```
 
-A 2–5 minute lesson is 2,400–6,000 characters, comfortably inside Eleven v4's 10,000
-character request limit. If a lesson exceeds ~6,500, split the lesson rather than the
+A 2–5 minute lesson is 1,900–4,700 characters, comfortably inside Eleven v4's 10,000
+character request limit. If a lesson exceeds ~7,000, split the lesson rather than the
 request — a lesson that needs two requests is a lesson with two subjects.

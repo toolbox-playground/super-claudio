@@ -31,12 +31,17 @@ The conversion from script to runtime, measured on real pt-BR narration:
 
 | | characters | runtime |
 |---|---|---|
-| measured rate | **~1,200 characters per minute** of finished audio | — |
-| short lesson | ~2,400 | 2 min |
-| typical lesson | ~3,600 | 3 min |
-| long lesson | ~6,000 | 5 min |
+| measured rate | **~934 characters per minute** of finished audio | — |
+| short lesson | ~1,900 | 2 min |
+| typical lesson | ~2,800 | 3 min |
+| long lesson | ~4,700 | 5 min |
 
-Use this to budget a script *before* generating. A lesson whose script runs to 9,000
+Measured on an ElevenLabs Eleven v4 generation of a real pt-BR lesson at speed 1.0.
+It is slower than it looks: an earlier estimate of 1,200 characters per minute came
+from a different engine and overshot the runtime by 29%. Re-measure after any change
+to the speed setting, and treat the number as a budget, not a guarantee.
+
+Use this to budget a script *before* generating. A lesson whose script runs past ~7,000
 characters is a lesson that should have been two lessons.
 
 Course arithmetic: a 4-hour course is roughly **50 to 70 lessons** at this length.

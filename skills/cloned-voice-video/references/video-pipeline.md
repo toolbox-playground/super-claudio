@@ -69,6 +69,12 @@ stdout and yields `null`.
 
 ## From beats to scenes
 
+**One lesson is one take, so it is usually one scene.** ElevenLabs returns a single
+audio file per lesson, and cutting it at beat boundaries means cutting mid-breath. In
+practice the beats become *reveals inside one scene*, staged by word timing, rather
+than separate `Series.Sequence` entries. Use several scenes only when the lesson's
+audio genuinely arrives as several files.
+
 `script.md` lists the beats; each beat becomes one scene with a `visual` type. Reference
 types: `logo-intro`, `bullets`, `statement`, `diagram`, `code`, `reconcile`, `outro`.
 
@@ -121,5 +127,10 @@ Always:
 - Guard shell globs that delete: `rm -f "${OUT:?}"/*.mp3`, never `"$OUT"/*.mp3`.
 - `volumedetect` and `silencedetect` print at ffmpeg's `info` level. Running with
   `-v error` silently yields no measurements at all.
+- `align-wav.mjs` only reads `.wav`. For an ElevenLabs `.mp3`, convert a throwaway WAV
+  in a temp directory, align there, then copy the `.srt` next to the MP3 — keeping both
+  formats in the public dir makes `build-voice.mjs` see two scenes.
+- A long title overlapping a card is the classic render bug: it looks fine in the
+  config and only shows up in an extracted frame. Check a frame before delivering.
 - A background command piped into `tail` prints nothing until it exits — you lose all
   progress visibility on a long run.
