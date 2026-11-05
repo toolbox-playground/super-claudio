@@ -76,7 +76,13 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 
 | API | What | URL | Auth |
 |-----|------|-----|------|
-| **GoDaddy Developer Platform** | Domain search, availability checking, pricing, purchase, DNS configuration, and domain management APIs; OAuth-based authentication; agent-safe execution controls; CLI included; LLM-optimized docs; launched July 15, 2026 | developer.godaddy.com | Free account (OAuth) |
+| **GoDaddy Developer Platform** | Domain search, availability checking, pricing, purchase, DNS configuration, and domain management APIs via a v3 Domains API; OAuth/personal-access-token auth with granular scopes (11 assignable scopes); agent-safe execution controls (idempotency keys on purchase, no payment details in request body); CLI included; LLM-optimized docs; launched in public beta July 14–15, 2026; **expanded October 15, 2026** with hosting, professional email, and commerce APIs, plus premium and bulk domain support | developer.godaddy.com | Free account (OAuth) |
+
+## Dates & Holidays
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| **Nager.Date** | Public holidays for 90–100+ countries; simple REST endpoints (by country/year, next holidays, long weekends); HTTPS, CORS-enabled | date.nager.at | None |
 
 ## Communication & Social
 
