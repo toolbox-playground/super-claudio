@@ -97,15 +97,17 @@ Read the reference for the stage you are in. Do not load them all:
 | Parameter | Default | Notes |
 |---|---|---|
 | Topic | required | e.g. "Kubernetes", "Terraform", "SRE" |
+| **Output shape** | **ask if ambiguous** | **a course** (many lessons, one video each) or **a single video** (one standalone piece, usually YouTube) — this changes the whole first stage |
 | Source material | none | a PDF, deck, article, repo or recording the creator provides — **read it before anything else** |
 | Level | ask if absent | iniciante / intermediário / avançado — changes the whole roadmap |
 | Delivery mode | **e-learning** for a course | e-learning / conversational (YouTube) / how-to — changes the register and the voice settings |
-| Course length | propose, then confirm | total hours; drives the module count |
+| Course length | propose, then confirm | total hours; drives the module count. A course only |
 | Lesson length | **1–10 min**, usually 2–4 | the teaching decides it, never a target; see `references/course-architecture.md` |
+| Single-video length | **5–10 min** | a standalone video is never a one-minute clip; see `references/course-architecture.md` |
 | Voice | the creator's own cloned ElevenLabs voice | **ask or look it up — never guess one**; see `references/elevenlabs-voiceover.md` |
 | Format | 1920x1080, 30 fps | horizontal for YouTube |
 | Language | pt-BR for Brazilian users | the script language, not a model setting |
-| Output dir | `~/Movies/video-shorts/<curso-slug>/<aula-slug>/` | ask only if the user hints elsewhere |
+| Output dir | `~/Movies/video-shorts/<curso-slug>/<aula-slug>/`, or `<video-slug>/` for a single video | ask only if the creator hints elsewhere |
 
 ## Pipeline — four stages, and the creator approves the boundaries
 
@@ -118,15 +120,23 @@ sixty lessons to re-record.
 If the request arrives with a PDF, a deck, an article, a repo or a recording, **open it
 before proposing anything** and report what you found. See `references/source-material.md`.
 
-### Stage 1 — the ementa  → **approval gate**
+### Stage 1 — the structure  → **approval gate**
 
-From topic + level (+ whatever the material gave you), produce the course ementa:
-modules in teaching order, and inside each module the lesson list with, per lesson, a
-title, a one-line objective, a short summary of what it covers, a target duration and
-**the artefact it will show**. Settle the delivery mode here too.
+First settle **what is being made**, because it changes everything downstream: a
+**course** (many lessons, one video each) or a **single video** (one standalone piece,
+usually for YouTube). Ask if the request does not say. Settle the delivery mode here
+too — a course defaults to e-learning, a standalone video to conversational.
 
-Present it and wait. Expect edits, additions and reordering — that is the point of the
-gate. Only move on once the creator says it is final.
+**For a course: the ementa.** Modules in teaching order, and inside each module the
+lesson list with, per lesson, a title, a one-line objective, a short summary of what it
+covers, a target duration and **the artefact it will show**.
+
+**For a single video: the outline.** One arc, start to finish — the hook, the problem,
+the body in its segments, the payoff, the close — with a target duration per segment
+and the artefact each one shows. Not an ementa, and never a list of one-minute clips.
+
+Either way: present it and wait. Expect edits, additions and reordering — that is the
+point of the gate. Only move on once the creator says it is final.
 See `references/course-architecture.md`.
 
 ### Stage 2 — the scripts, written as a batch  → **approval gate**

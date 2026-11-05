@@ -1,9 +1,62 @@
-# Course Architecture — roadmap, modules, lessons
+# Course Architecture — what is being made, and how it is structured
 
 The input is a topic and a level. The output is an approved structure: modules in
 teaching order, and inside each module a lesson list with an objective and a duration.
 Nothing downstream is worth writing until this is agreed, because a script is cheap to
 write and expensive to re-record.
+
+## First: a course, or a single video?
+
+The same skill makes both, and they are not the same object. Settle this before
+anything else; if the request does not say, ask.
+
+| | A course | A single video |
+|---|---|---|
+| Shape | modules → lessons, one video per lesson | **one video, start to finish** |
+| Total | hours, produced over days or weeks | 5–10 minutes, produced in one pass |
+| Structure | an ementa | an outline: one arc in segments |
+| Register | e-learning by default | conversational by default |
+| Opening | only the first lesson welcomes | every video earns the click in its first seconds |
+| Repetition | callbacks across lessons | everything it needs, it establishes itself |
+
+**A standalone video is never a one-minute clip.** The 1-minute lesson exists inside a
+course, where a module opener can be short because the course around it carries the
+context. A video published on its own has no course around it: it has to hook, set up
+the problem, teach the thing and land the payoff, all by itself. Under five minutes
+that is usually a definition with a soundtrack.
+
+The anti-padding rule still holds, though, and it is the harder half: **do not stretch
+a three-minute idea to seven.** If the outline will not honestly fill five minutes,
+the topic is too narrow for a standalone video — either widen the frame (teach the
+problem around it, not just the answer) or make it part of a course. Padding is more
+visible in a single video than anywhere else, because there is no next lesson to carry
+the viewer.
+
+### The arc of a single video
+
+```
+hook        15–30s   why this matters to you, right now. The click is earned here.
+problema    30–60s   the pain, concretely. The viewer should recognise their own week.
+corpo       3–7 min  2 to 4 segments, each one mechanism, in order
+payoff      30–60s   what is now possible that was not
+fecho       15–30s   what was learned, and where to go next
+```
+
+The storytelling arc in `narration-script.md` applies in full — a standalone video is
+almost always *introducing* a concept, so it is the clearest case for opening with the
+problem rather than the definition.
+
+**Segments are a production unit, not a viewing experience.** Planning the body as
+`inicio / meio / fim` is useful because it lets the narration be generated and checked
+in pieces. The viewer sees one continuous video. `video-pipeline.md` has how the
+segments become one MP4 — and why they are not joined by hand.
+
+### When a "video" is really a course
+
+If the outline grows past four body segments, or past about ten minutes, stop and say
+so. That is a course, or at least a series, and forcing it into one video produces
+something nobody finishes. Splitting it is the creator's call, but the observation is
+yours to make.
 
 ## The level decides the roadmap, not the topic
 
