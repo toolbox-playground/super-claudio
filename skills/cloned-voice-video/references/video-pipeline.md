@@ -146,3 +146,11 @@ Always:
   page* size silently breaks the moment `SHOT_SCALE` changes. Always divide by the page.
 - Rendering a lesson built on 4800px screenshots is several times slower than one built
   on shapes. Run it in the background and do not pipe it into `tail`.
+- `shoot-html.mjs` is given an **absolute** directory. `file://` plus a relative path is
+  `ERR_INVALID_URL`; Chrome exits without writing, and if a PNG from a previous run is
+  still sitting there, the script used to report success and you would debug CSS that
+  was never rendered. It now deletes the output first — the same trap as
+  `npx remotion still`. Whenever a screenshot "ignores" an edit, check its mtime before
+  blaming the CSS.
+- A callout chip at `calloutAt: 'bottom'` can land exactly on the mark it labels. Decide
+  per shot and confirm in a frame.

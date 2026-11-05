@@ -118,7 +118,24 @@ Three decisions in there are worth copying:
 ## Deliverable
 
 Write the structure to `<curso-slug>/roadmap.md` with, per lesson: an id, the title,
-the one-line objective, the target duration and the visual type you expect
-(`diagram`, `code`, `bullets`, `statement`, `reconcile`). Present it to the user and
-get approval before writing scripts. The ids become directory names, so keep them
-stable — `04-3-hpa-kubectl`, not a number that renumbers when a lesson is inserted.
+the one-line objective, the target duration and — this column is not optional — **the
+artefact the lesson shows**.
+
+The artefact is the thing a practitioner actually looks at when they do this: a
+terminal running a specific command, a manifest, a console page, a dashboard panel, a
+PR page. Naming it in the roadmap is what stops a course drifting into sixty lessons
+of animated bullet points. Write `nenhum` only for lessons that genuinely teach
+something with no screen — a mental model, a trade-off, a comparison — and expect
+those to be the minority. `references/realistic-visuals.md` lists the usual artefact
+per domain.
+
+```
+4.4  requests e limits, que o HPA depende   (4 min)
+     objetivo: por que o HPA não escala sem requests definidos
+     artefato: terminal com `kubectl describe hpa` mostrando FailedGetResourceMetric,
+               e o trecho de resources do deployment.yaml
+```
+
+Present it to the user and get approval before writing scripts. The ids become
+directory names, so keep them stable — `04-3-hpa-kubectl`, not a number that
+renumbers when a lesson is inserted.

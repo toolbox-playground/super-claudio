@@ -1,0 +1,147 @@
+/* replica.css -- chrome for the artefacts a technical lesson shows.
+ *
+ * Drop it next to the lesson's HTML pages and shoot them with
+ * scripts/studio/shoot-html.mjs. It draws the furniture: a terminal window, a code
+ * editor, a browser frame, a console shell, a dashboard panel.
+ *
+ * The furniture is a replica. THE CONTENT YOU PUT INSIDE MUST BE REAL -- real command
+ * output, real manifests, real error messages. See references/realistic-visuals.md.
+ *
+ * Authored for a 1600x900 page (16:9), shot at SHOT_SCALE=3.
+ */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1600px; height: 900px; overflow: hidden; }
+body {
+  font-family: -apple-system, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  /* terminal / editor palette, close to a default dark theme */
+  --t-bg: #11161d;  --t-bar: #1b222c;  --t-fg: #d7dde5;  --t-dim: #8792a2;
+  --t-green: #4ec07a; --t-red: #f26d6d; --t-yellow: #e3b341;
+  --t-blue: #6cb6ff;  --t-purple: #c89bf0; --t-cyan: #5ed3d3;
+}
+
+/* Page backdrops. Pick one on <body>. */
+.bg-desk  { background: #f4f2ee; }                                   /* a light OS desktop */
+.bg-dark  { background: #0b1016; }                                   /* a dark desktop */
+.bg-brand { background: #012949; }                                   /* the video's own navy */
+
+/* Centres one artefact on the page with room to breathe around it. */
+.stage { width: 100%; height: 100%; display: flex; align-items: center;
+  justify-content: center; padding: 56px; }
+.stage.top { align-items: flex-start; }
+.stack { display: flex; flex-direction: column; gap: 28px; width: 100%; }
+.row   { display: flex; gap: 28px; width: 100%; align-items: stretch; }
+
+/* ---------------------------------------------------------------- window chrome */
+.win { border-radius: 10px; overflow: hidden; width: 100%;
+  box-shadow: 0 24px 70px rgba(0,0,0,0.35), 0 2px 6px rgba(0,0,0,0.25); }
+.win-bar { height: 38px; display: flex; align-items: center; gap: 8px; padding: 0 14px;
+  background: var(--t-bar); border-bottom: 1px solid rgba(255,255,255,0.06); }
+.dot { width: 12px; height: 12px; border-radius: 50%; }
+.dot.r { background: #ff5f57; } .dot.y { background: #febc2e; } .dot.g { background: #28c840; }
+.win-title { flex: 1; text-align: center; color: var(--t-dim); font-size: 13px;
+  font-family: var(--mono); margin-right: 52px; }
+
+/* ---------------------------------------------------------------------- terminal */
+/* Author at a size a human reads at: 13-15px, ~80-110 columns. Do not inflate it. */
+.term { background: var(--t-bg); padding: 16px 18px 20px;
+  font-family: var(--mono); font-size: 14px; line-height: 1.62; color: var(--t-fg);
+  white-space: pre; tab-size: 2; }
+.term.sm { font-size: 13px; }
+.term.lg { font-size: 16px; }
+/* One line: <span class="ln"><span class="ps1">~ $</span> kubectl get hpa</span> + a real
+   newline in the markup. `.ln` stays INLINE on purpose -- inside `white-space: pre` a
+   block element plus the newline after it produces two line breaks, not one. */
+.ln { display: inline; }
+.ps1 { color: var(--t-green); font-weight: 600; }
+.ps1.root { color: var(--t-red); }
+.cmd { color: #ffffff; }
+.c-dim { color: var(--t-dim); }
+.c-ok { color: var(--t-green); }
+.c-err { color: var(--t-red); }
+.c-warn { color: var(--t-yellow); }
+.c-key { color: var(--t-blue); }
+.c-str { color: var(--t-cyan); }
+.c-hi { color: var(--t-purple); }
+.c-b { font-weight: 700; }
+/* header row of a table-shaped output (kubectl, docker, ls -l) */
+.c-head { color: var(--t-dim); font-weight: 600; }
+/* a blinking-free cursor block for a line being typed */
+.cursor { display: inline-block; width: 8px; height: 1.05em; vertical-align: -0.18em;
+  background: var(--t-fg); opacity: 0.85; }
+
+/* ------------------------------------------------------------------ code editor */
+.editor { background: var(--t-bg); }
+.tabs { display: flex; background: #0d1219; border-bottom: 1px solid rgba(255,255,255,0.06); }
+.tab { padding: 9px 18px; font-size: 13px; font-family: var(--mono); color: var(--t-dim);
+  border-right: 1px solid rgba(255,255,255,0.06); }
+.tab.on { background: var(--t-bg); color: var(--t-fg); box-shadow: inset 0 2px 0 #4a9eff; }
+.code { display: flex; font-family: var(--mono); font-size: 14px; line-height: 1.68;
+  color: var(--t-fg); }
+.gutter { padding: 14px 0 18px; text-align: right; color: #4b5563; user-select: none;
+  background: rgba(0,0,0,0.18); min-width: 52px; padding-right: 12px; }
+.src { padding: 14px 18px 18px; white-space: pre; flex: 1; }
+/* token classes, applied by hand -- there is no highlighter here on purpose */
+.k { color: #ff7b9c; }            /* keyword */
+.s { color: var(--t-cyan); }      /* string */
+.n { color: #f0b36b; }            /* number */
+.cm { color: #6b7684; font-style: italic; }  /* comment */
+.t { color: var(--t-purple); }    /* type / kind */
+.y { color: var(--t-blue); }      /* YAML key */
+/* a changed line, for before/after lessons */
+.add { background: rgba(78,192,122,0.14); box-shadow: inset 3px 0 0 var(--t-green); }
+.del { background: rgba(242,109,109,0.14); box-shadow: inset 3px 0 0 var(--t-red); }
+
+/* --------------------------------------------------------------------- browser */
+.browser { background: #ffffff; }
+.bbar { height: 46px; background: #e9ecef; display: flex; align-items: center; gap: 10px;
+  padding: 0 14px; border-bottom: 1px solid #d7dbdf; }
+.addr { flex: 1; height: 30px; background: #fff; border-radius: 15px; display: flex;
+  align-items: center; padding: 0 14px; font-size: 13px; color: #3c4043;
+  border: 1px solid #d7dbdf; gap: 8px; }
+.lock { width: 11px; height: 9px; border-radius: 2px; background: #5f6368; position: relative; }
+.lock::before { content: ''; position: absolute; left: 2.5px; top: -4px; width: 6px; height: 6px;
+  border: 1.6px solid #5f6368; border-bottom: 0; border-radius: 3px 3px 0 0; }
+.bpage { background: #fff; min-height: 520px; }
+
+/* ------------------------------------------------------- console / app shell */
+/* A generic cloud-console or SaaS layout: top bar, left nav, content. */
+.app { background: #fff; display: grid; grid-template-rows: 52px 1fr;
+  grid-template-columns: 232px 1fr; grid-template-areas: "top top" "side main"; }
+.app-top { grid-area: top; background: #232f3e; color: #fff; display: flex;
+  align-items: center; gap: 18px; padding: 0 18px; font-size: 14px; font-weight: 600; }
+.app-side { grid-area: side; background: #f6f7f8; border-right: 1px solid #e3e6e8;
+  padding: 14px 0; }
+.nav-i { padding: 8px 18px; font-size: 14px; color: #37414b; }
+.nav-i.on { background: #e8f0fe; color: #0b57d0; font-weight: 600;
+  box-shadow: inset 3px 0 0 #0b57d0; }
+.app-main { grid-area: main; padding: 22px 26px; background: #fff; }
+.app-h1 { font-size: 22px; font-weight: 600; margin-bottom: 14px; }
+
+/* data table, the shape most consoles land on */
+.tbl { width: 100%; border-collapse: collapse; font-size: 14px; }
+.tbl th { text-align: left; color: #5f6368; font-weight: 600; padding: 9px 12px;
+  border-bottom: 1px solid #e3e6e8; }
+.tbl td { padding: 11px 12px; border-bottom: 1px solid #eef0f2; color: #202124; }
+.badge { display: inline-block; padding: 2px 9px; border-radius: 10px; font-size: 12px;
+  font-weight: 600; }
+.badge.ok { background: #e4f3e9; color: #11703a; }
+.badge.warn { background: #fdf0d8; color: #8a5a00; }
+.badge.err { background: #fce8e8; color: #a5201f; }
+
+/* ----------------------------------------------------------- dashboard panel */
+.panel { background: #181b1f; border: 1px solid #2c3235; border-radius: 4px;
+  padding: 12px 14px 8px; color: #d8d9da; flex: 1; }
+.panel-title { font-size: 14px; color: #d8d9da; margin-bottom: 10px; }
+.metric { font-size: 44px; font-weight: 300; letter-spacing: -1px; }
+.metric.ok { color: #73bf69; } .metric.warn { color: #ff9830; } .metric.err { color: #f2495c; }
+.unit { font-size: 18px; color: #8e9099; margin-left: 4px; }
+/* bars: <div class="spark"><i style="height:40%"></i>... */
+.spark { display: flex; align-items: flex-end; gap: 3px; height: 96px; margin-top: 10px; }
+.spark i { flex: 1; background: #3274d9; border-radius: 1px 1px 0 0; }
+.spark i.hot { background: #f2495c; }

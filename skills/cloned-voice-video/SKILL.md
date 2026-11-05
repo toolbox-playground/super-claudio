@@ -38,7 +38,7 @@ Read the reference for the stage you are in. Do not load them all:
 | Writing the spoken script | `references/narration-script.md` |
 | Generating and downloading the audio | `references/elevenlabs-voiceover.md` |
 | Scenes, sync, captions, rendering | `references/video-pipeline.md` |
-| Screenshots, replicas, zoom and pan | `references/realistic-visuals.md` |
+| The artefact a lesson shows: replicas, screenshots, zoom and pan | `references/realistic-visuals.md` |
 | Why not a free local model | `references/open-source-alternative.md` |
 
 ## Core Principles
@@ -57,13 +57,17 @@ Read the reference for the stage you are in. Do not load them all:
    written for a paid course, for YouTube, or as a how-to tutorial is three different
    scripts read three different ways — decide the mode before writing a word, see
    `references/narration-script.md`.
-5. **Show the real thing, then draw on it.** If the lesson is about something that
-   exists on a screen — a LinkedIn profile, a cloud console, a terminal, an
-   architecture diagram — the video shows that screen, zoomed and annotated, not a
-   rounded rectangle standing in for it. The viewer has to recognise it when they open
-   their own. Remotion supplies the argument on top: the ring, the red-to-green
-   comparison, the captions. Keep its shapes for what genuinely has no screen — a
-   control loop, a trade-off, a summary. See `references/realistic-visuals.md`.
+5. **Show the real thing, then draw on it. Every course, every technology.** If what
+   the lesson teaches exists on a screen, the video shows that screen — zoomed, marked
+   and narrated. A Kubernetes lesson shows a terminal running `kubectl` and a real
+   manifest; a Terraform lesson shows the `plan` output; a cloud lesson shows the
+   console; a LinkedIn lesson shows a profile. Not a rounded rectangle standing in for
+   it: the viewer has to recognise the thing when they open their own. Remotion
+   supplies the argument on top — the ring, the red-to-green comparison, the captions —
+   and keeps its own shapes for what genuinely has no screen: a control loop, a
+   trade-off, a summary. **Replicate the frame, never fake the facts:** build the
+   chrome in HTML, but the command output, manifests and error messages inside it must
+   be real. See `references/realistic-visuals.md`.
 6. **Display text equals spoken text.** With Eleven v4 you send the real spelling;
    there is no phonetic respelling layer. Captions and reveals index the same words
    the model read. (The respelling hack existed only for a local model that mangled
@@ -108,10 +112,11 @@ Read the reference for the stage you are in. Do not load them all:
    get real character-level times; from a web-app download, `scripts/studio/align-wav.mjs`
    estimates them from the audio. Either way the output is `voice.<name>.json` with
    per-scene durations and per-word times.
-6. **Scene plan** — map the script's beats onto shots and reveals. Build the
-   screenshots the lesson needs first (an HTML replica rendered with
-   `scripts/studio/shoot-html.mjs` is the default), then give every shot, node and
-   panel a `revealWord`, so it lands exactly when the narration names it.
+6. **Scene plan** — map the script's beats onto shots and reveals. Build the lesson's
+   artefacts first: an HTML replica on `templates/replica.css`, rendered with
+   `scripts/studio/shoot-html.mjs`, is the default for anything that exists on a
+   screen. Then give every shot, node and panel a `revealWord`, so it lands exactly
+   when the narration names it.
 7. **Render** — Remotion renders only scenes that have measured audio, so one lesson
    can be previewed before the whole module is committed.
 8. **Verify and deliver** — extract frames at several timestamps and look at them,
@@ -124,8 +129,8 @@ Read the reference for the stage you are in. Do not load them all:
 - Voice settings per mode, model limits, audio tags, what the recording script does to
   the clone, copy-paste vs API vs MCP → `references/elevenlabs-voiceover.md`
 - Scenes, `revealWord`, captions, alignment, render debugging → `references/video-pipeline.md`
-- Screenshots vs. boxes, HTML replicas, zoom/pan shot lists, image sourcing and
-  licensing → `references/realistic-visuals.md`
+- Which artefact a lesson shows, HTML replicas (`templates/replica.css`), zoom/pan
+  shot lists, image sourcing and licensing → `references/realistic-visuals.md`
 - The user wants a *human-recorded* video → stop and use `video-script-and-slides`
 - The user asks for a free/offline voice → `references/open-source-alternative.md`
   carries the measured reasons that route was abandoned

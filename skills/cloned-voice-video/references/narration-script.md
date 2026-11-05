@@ -110,9 +110,15 @@ A beat is one sentence that introduces one visual. Mark them in `script.md`:
 ## Beats
 - b1  statement  "o HPA não olha o Pod, ele olha a métrica"
 - b2  diagram    the HPA control loop: metrics server -> HPA -> Deployment -> replicas
-- b3  code       the kubectl autoscale command, then the YAML it produces
-- b4  reconcile  the loop converging after a traffic spike
+- b3  shot       terminal: `kubectl autoscale deploy/api --cpu-percent=70 --min=2 --max=10`
+                 then the manifest it produced, zoomed on spec.metrics
+- b4  shot       terminal: `kubectl get hpa -w` while the replica count climbs
 ```
+
+Name the **artefact** on a `shot` beat, not just the idea: which command, which file,
+which page. That line is what gets built as an HTML replica before the render — see
+`realistic-visuals.md`. A beat whose artefact you cannot name is usually a beat that
+has not been thought through.
 
 Then, in the narration, make sure the word that should trigger each visual is actually
 spoken, and spoken once in that position. `revealWord` in the video config matches
