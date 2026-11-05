@@ -33,10 +33,51 @@ ask: *what does a practitioner actually look at when they do this?* That is the 
 | Programming | the editor with real syntax highlighting, a REPL, a traceback |
 | Networking | `tcpdump`/`dig` output, a topology diagram |
 | Career / soft skills | the product UI being taught — LinkedIn, a job board, a CV |
-| Architecture, trade-offs, mental models | **nothing** — this is where Remotion's own shapes belong |
+| Architecture, topology | a **rebuilt** reference architecture in HTML — see below, not Remotion boxes |
+| Trade-offs, mental models, one mechanism in close-up | **nothing** — this is where Remotion's own shapes belong |
 
 A lesson that is *all* screenshots is as flat as one that is all boxes. The rhythm is:
 artefact for what exists, shapes for what does not, alternating.
+
+## Research the real thing before drawing anything
+
+Before building any visual, **look at how the real one looks.** Search for the product's
+own screenshots, the vendor's reference architectures, the documentation's diagrams.
+Two or three references are enough. You are not collecting images to paste — you are
+learning the layout, the hierarchy, the colours and the vocabulary the real artefact
+uses, so the replica reads as *that thing* instead of as generic shapes.
+
+Skipping this step is how a replica ends up looking like a wireframe of itself.
+
+## Architecture diagrams: research, then rebuild in HTML
+
+This is where the temptation to fall back on Remotion boxes is strongest, and where
+giving in costs the most. A cluster architecture drawn as five rounded rectangles
+teaches nothing the narration did not already say.
+
+The sequence that works:
+
+1. **Find two or three real reference architectures** for the thing being taught — the
+   vendor's own, the documentation's, a well-regarded one from a conference talk.
+2. **Rebuild one in HTML**, at the fidelity of the references: real component names,
+   the real grouping (control plane vs. nodes, VPC vs. subnet, region boundaries), real
+   iconography drawn in CSS, the dashed boundary boxes and the labelled arrows that
+   real diagrams use. Shoot it with `shoot-html.mjs`.
+3. **Then simplify with Remotion** when the lesson drills into one part of it.
+
+Rebuilding beats copying an image off the internet for the same reasons the UI replica
+does: no licence question, your own brand palette, any resolution you want, and — the
+one that matters most here — **you control which parts exist**. A reference diagram
+shows everything at once; your rebuild can ship as three variants of the same layout,
+each with one more layer present, so the architecture assembles itself as the narration
+explains it.
+
+**Realistic overview, simplified detail.** Establish with the full, real-looking
+architecture so the viewer sees the real shape of the system. Then, when the lesson
+zooms into one mechanism — the reconciliation loop, the request path, one failure mode
+— switch to Remotion's own shapes, because at that depth the simplification *is* the
+teaching. Going the other way round, simple first and real later, leaves the viewer
+unable to place what they learned.
 
 ## Replicate the frame. Never fake the facts.
 

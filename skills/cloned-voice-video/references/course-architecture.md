@@ -24,8 +24,10 @@ model and vocabulary the rest of the course will use without explanation.
 
 ## Sizing
 
-Lessons run **2–5 minutes**. Shorter fragments the course into clips the viewer cannot
-follow; longer loses attention and makes a single bad take expensive to regenerate.
+Lessons run **1 to 6 minutes**, and usually 2 to 4. Shorter than a minute fragments the
+course into clips the viewer cannot follow; longer than six loses attention and makes a
+single bad take expensive to regenerate. Use the short end for a genuinely short answer
+and the long end for a mechanism that cannot be split — not to hit a uniform length.
 
 The conversion from script to runtime, measured on real pt-BR narration:
 
@@ -35,6 +37,7 @@ The conversion from script to runtime, measured on real pt-BR narration:
 | short lesson | ~1,900 | 2 min |
 | typical lesson | ~2,800 | 3 min |
 | long lesson | ~4,700 | 5 min |
+| the ceiling | ~5,600 | 6 min |
 
 Measured on an ElevenLabs Eleven v4 generation of a real pt-BR lesson at speed 1.0.
 It is slower than it looks: an earlier estimate of 1,200 characters per minute came
@@ -43,6 +46,9 @@ to the speed setting, and treat the number as a budget, not a guarantee.
 
 Use this to budget a script *before* generating. A lesson whose script runs past ~7,000
 characters is a lesson that should have been two lessons.
+
+A 6-minute lesson is ~5,600 characters, still inside Eleven v4's 10,000-character
+request limit, so **one lesson is always one request** at any length in this range.
 
 Course arithmetic: a 4-hour course is roughly **50 to 70 lessons** at this length.
 That is a lot of lessons, so the module boundaries carry real weight — they are what
@@ -129,13 +135,22 @@ something with no screen — a mental model, a trade-off, a comparison — and e
 those to be the minority. `references/realistic-visuals.md` lists the usual artefact
 per domain.
 
+Add a two-line **summary** of what the lesson covers, so the creator can judge the
+teaching from the ementa alone rather than from a title.
+
 ```
 4.4  requests e limits, que o HPA depende   (4 min)
      objetivo: por que o HPA não escala sem requests definidos
+     resumo:   o HPA calcula utilização sobre o requests do container. Sem requests,
+               não há denominador, e o autoscaler fica parado reportando <unknown>.
      artefato: terminal com `kubectl describe hpa` mostrando FailedGetResourceMetric,
                e o trecho de resources do deployment.yaml
 ```
 
-Present it to the user and get approval before writing scripts. The ids become
+**This is an approval gate, not a status update.** Present the ementa and stop. Expect
+the creator to cut lessons, add lessons, reorder modules and change the level — that is
+what the gate is for, and all of it is free here and expensive later. Do not start
+writing scripts on a "looks good" for part of it; wait for the whole structure to be
+settled, and say back what changed before moving on. The ids become
 directory names, so keep them stable — `04-3-hpa-kubectl`, not a number that
 renumbers when a lesson is inserted.

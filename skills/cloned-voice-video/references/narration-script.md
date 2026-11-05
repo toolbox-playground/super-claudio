@@ -125,6 +125,46 @@ spoken, and spoken once in that position. `revealWord` in the video config match
 against it. A word that appears three times earlier in the lesson is a bad trigger —
 pick a distinctive one.
 
+## Sounding human without filler — the house rule
+
+A script read perfectly sounds like a script read perfectly. Real teaching speech has
+breaks, restarts and emphasis that written prose does not. The temptation is to add
+verbal tics — "sabe?", "né?", "ó", a hesitating "hum". **Do not reach for those first.**
+
+This was tested on a real lesson. A version with three tics and a version with a
+hesitating "hum" were generated beside the plain original, and the plain one won on
+**clarity** — which is what a course is selling. Filler costs comprehension on every
+sentence it touches, and across sixty lessons it accumulates into a mannerism.
+
+Naturalness comes from punctuation and structure instead. Three moves, in order of how
+often they apply:
+
+**1. Cut the comma that joins a reversal.** A speaker drops the sentence, breathes, and
+restarts on the "mas". A comma there is the clearest tell of reading aloud.
+
+> written: "Parece detalhe, mas é o primeiro elemento que o recrutador lê."
+> spoken:  "Parece detalhe. Mas é o primeiro elemento que o recrutador lê."
+
+**2. Break the long tail.** A subordinate clause that survives on the page collapses in
+the mouth. Split it where the speaker would take breath.
+
+> written: "...e muitas vezes é o único, antes de decidir se clica no seu perfil."
+> spoken:  "...e muitas vezes é o único. Antes de decidir se clica no seu perfil."
+
+**3. Repeat the key word instead of pronominalizing.** Teachers hammer the word they
+want remembered. This reads as emphasis, not as a tic, and it costs no clarity.
+
+> written: "Só que recrutador nenhum busca por cargo."
+> spoken:  "Só que recrutador nenhum busca por cargo. Nenhum."
+
+Applied together these change no vocabulary at all — the rewritten lesson introduced
+**zero** words the original did not have. That is the test: if the "natural" version
+needs new words, it is adding filler, not rhythm.
+
+**Verbal tics are opt-in, never default.** If a creator explicitly wants them, place at
+most one per rhetorical moment — closing a definition, turning the argument, before the
+conclusion — never on a fixed interval, because a fixed interval is audible as a tic.
+
 ## Pacing, inside the text
 
 Eleven v4 has no SSML break tags. Pauses come from punctuation and structure:

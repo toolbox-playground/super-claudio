@@ -6,7 +6,9 @@ description: >
   creator's own cloned voice via ElevenLabs, and a final MP4 whose visuals are
   synchronized to the narration -- realistic screenshots of the interface being taught,
   zoomed and annotated, mixed with technical diagrams animated in Remotion.
-  Works from a bare topic ("Kubernetes avançado") all the way to rendered lessons.
+  Works from a bare topic ("Kubernetes avançado") or from material the creator provides
+  — a PDF, a slide deck, an article, a repo — all the way to rendered lessons, one
+  approved stage at a time.
   Trigger on: "cria um curso de", "monta o roadmap de um curso sobre",
   "quais os módulos de um curso de", "divide esse curso em aulas",
   "cria o roteiro das aulas de", "roteiro para a aula de",
@@ -34,6 +36,7 @@ Read the reference for the stage you are in. Do not load them all:
 
 | Stage | Reference |
 |---|---|
+| Material the creator handed over (PDF, deck, article, video) | `references/source-material.md` |
 | Roadmap, modules, lesson breakdown | `references/course-architecture.md` |
 | Writing the spoken script | `references/narration-script.md` |
 | Generating and downloading the audio | `references/elevenlabs-voiceover.md` |
@@ -72,62 +75,101 @@ Read the reference for the stage you are in. Do not load them all:
    there is no phonetic respelling layer. Captions and reveals index the same words
    the model read. (The respelling hack existed only for a local model that mangled
    English terms — see `references/open-source-alternative.md`.)
-7. **The creator's ear decides.** Integrity checks catch broken audio; they do not
-   judge delivery. Send the first lesson's audio and ask before producing twenty more.
+7. **One stage at a time, with the creator in the loop.** The ementa is approved before
+   a script is written; a script is approved before audio is generated; the audio exists
+   before a frame is designed. Integrity checks catch broken audio, but they do not
+   judge teaching or delivery — only the creator does. Never run ahead of an approval
+   to "save time": redoing twenty lessons costs far more than one question.
+8. **ElevenLabs is the voice, and the creator's own voice is the point.** There is no
+   engine choice to offer. The local open-source route was measured and abandoned —
+   `references/open-source-alternative.md` records why, and exists only so the question
+   is not re-opened. Resolve *whose* voice before generating anything.
 
 ## What the user controls (parse from the request)
 
 | Parameter | Default | Notes |
 |---|---|---|
 | Topic | required | e.g. "Kubernetes", "Terraform", "SRE" |
+| Source material | none | a PDF, deck, article, repo or recording the creator provides — **read it before anything else** |
 | Level | ask if absent | iniciante / intermediário / avançado — changes the whole roadmap |
 | Delivery mode | **e-learning** for a course | e-learning / conversational (YouTube) / how-to — changes the register and the voice settings |
 | Course length | propose, then confirm | total hours; drives the module count |
-| Lesson length | **2–5 min** | shorter fragments the course; longer loses attention |
-| Voice | the user's cloned ElevenLabs voice | see `references/elevenlabs-voiceover.md` |
+| Lesson length | **1–6 min**, usually 2–4 | under 1 min fragments the course; over 6 loses attention and makes a bad take expensive |
+| Voice | the creator's own cloned ElevenLabs voice | **ask or look it up — never guess one**; see `references/elevenlabs-voiceover.md` |
 | Format | 1920x1080, 30 fps | horizontal for YouTube |
 | Language | pt-BR for Brazilian users | the script language, not a model setting |
 | Output dir | `~/Movies/video-shorts/<curso-slug>/<aula-slug>/` | ask only if the user hints elsewhere |
 
-## Pipeline (always in this order)
+## Pipeline — four stages, and the creator approves the boundaries
 
-1. **Course architecture** — from topic + level, produce the roadmap: modules in
-   teaching order, and inside each module the lesson list with a one-line objective
-   and a target duration per lesson. Settle the **delivery mode** here too, since it
-   changes every script that follows. Get this approved before writing any script;
-   it is cheap to change here and expensive to change later.
-2. **Lesson script** — for one lesson, write `script.md` (the plan, with a cited source
-   for every factual claim) and `narration/aula.txt` (the exact words to be spoken, in
-   the register of the chosen delivery mode). Mark the **beats**: which sentence
-   introduces which visual. Those beats become the scene boundaries.
-3. **Voiceover** — send the narration text to ElevenLabs with the validated settings
-   and download the MP3. First lessons go through copy-and-paste in the web app so the
-   user can judge and tune; automate with the API or MCP only once the settings are
-   settled. One lesson fits in one request: Eleven v4 takes 10,000 characters and a
-   5-minute lesson is about 6,000.
-4. **Measure** — ffprobe the MP3 for its real duration, then check integrity: silence
-   holes, truncation mid-sentence, clipping. Never build a video on audio that fails
-   these; regenerate instead.
-5. **Alignment** — derive word timings. With the API's `with-timestamps` endpoint you
-   get real character-level times; from a web-app download, `scripts/studio/align-wav.mjs`
-   estimates them from the audio. Either way the output is `voice.<name>.json` with
-   per-scene durations and per-word times.
-6. **Scene plan** — map the script's beats onto shots and reveals. Build the lesson's
-   artefacts first: an HTML replica on `templates/replica.css`, rendered with
-   `scripts/studio/shoot-html.mjs`, is the default for anything that exists on a
-   screen. Then give every shot, node and panel a `revealWord`, so it lands exactly
+Nothing in a later stage begins before the earlier one is agreed. This is the shape of
+the work, not a formality: a wrong ementa is a sentence to fix and a wrong course is
+sixty lessons to re-record.
+
+### Stage 0 — read what you were given
+
+If the request arrives with a PDF, a deck, an article, a repo or a recording, **open it
+before proposing anything** and report what you found. See `references/source-material.md`.
+
+### Stage 1 — the ementa  → **approval gate**
+
+From topic + level (+ whatever the material gave you), produce the course ementa:
+modules in teaching order, and inside each module the lesson list with, per lesson, a
+title, a one-line objective, a short summary of what it covers, a target duration and
+**the artefact it will show**. Settle the delivery mode here too.
+
+Present it and wait. Expect edits, additions and reordering — that is the point of the
+gate. Only move on once the creator says it is final.
+See `references/course-architecture.md`.
+
+### Stage 2 — the lesson script  → **approval gate**
+
+One lesson at a time. Write `script.md` (the plan: beats, the artefact per beat, a cited
+source per factual claim) and `narration/aula.txt` (the exact words to be spoken,
+nothing else in that file). Keep the register of the chosen delivery mode, and get
+naturalness from punctuation rather than filler.
+See `references/narration-script.md`.
+
+Hand the narration text over and wait for the creator to approve the wording, because
+they are about to spend credits on it.
+
+### Stage 3 — the audio, in ElevenLabs. **Always before any video.**
+
+Resolve whose voice this is, then generate with the validated settings. First lessons
+go through copy-and-paste in the web app so the creator can judge and tune; automate
+only once the settings are settled. One lesson is one request — Eleven v4 takes 10,000
+characters and a 6-minute lesson is about 5,600.
+
+Then measure: ffprobe for the real duration, and check integrity — truncation, silence
+holes, clipping. A lesson that fails is regenerated, not patched.
+See `references/elevenlabs-voiceover.md`.
+
+**The audio is the hard part and the expensive part. The video is cheap and local, so
+it is built on top of finished audio — never the other way round.**
+
+### Stage 4 — the video, synchronized to that audio
+
+1. **Alignment** — derive word timings. The API's `with-timestamps` gives exact
+   character times; from a web-app download, `scripts/studio/align-wav.mjs` estimates
+   them. Either way the output is `voice.<name>.json`.
+2. **Artefacts** — build what the lesson shows, before the composition. Research the
+   real thing, then build an HTML replica on `templates/replica.css` and shoot it with
+   `scripts/studio/shoot-html.mjs`. See `references/realistic-visuals.md`.
+3. **Scene plan** — give every shot, node and panel a `revealWord`, so it lands exactly
    when the narration names it.
-7. **Render** — Remotion renders only scenes that have measured audio, so one lesson
-   can be previewed before the whole module is committed.
-8. **Verify and deliver** — extract frames at several timestamps and look at them,
+4. **Render** — Remotion renders only scenes that have measured audio.
+5. **Verify and deliver** — extract frames at several timestamps and *look at them*,
    confirm the MP4 carries an audio stream of the expected duration, then send it.
 
 ## Routing
 
+- The creator handed over a PDF, deck, article, repo or recording → read it first,
+  `references/source-material.md`
 - Roadmap scope, level differences, module ordering → `references/course-architecture.md`
 - Delivery mode, register, natural-language phrasing, pacing, character budget → `references/narration-script.md`
 - Voice settings per mode, model limits, audio tags, what the recording script does to
-  the clone, copy-paste vs API vs MCP → `references/elevenlabs-voiceover.md`
+  the clone, whose voice to use, and how to connect (web app / hosted MCP / REST API)
+  → `references/elevenlabs-voiceover.md`
 - Scenes, `revealWord`, captions, alignment, render debugging → `references/video-pipeline.md`
 - Which artefact a lesson shows, HTML replicas (`templates/replica.css`), zoom/pan
   shot lists, image sourcing and licensing → `references/realistic-visuals.md`
@@ -140,10 +182,17 @@ Read the reference for the stage you are in. Do not load them all:
 State these before the user discovers them:
 
 - **A cloned voice needs a paid service to sound like the person.** This was measured,
-  not assumed: see `references/open-source-alternative.md`.
+  not assumed: see `references/open-source-alternative.md`. There is no free route that
+  preserves identity, and offering one wastes the creator's day.
+- **The creator needs an ElevenLabs account and their own cloned voice.** Say this at
+  the start, not after the ementa is approved. Never create the account, buy the plan
+  or clone the voice for them.
 - **Visual sync is only as good as the word timings.** Estimated alignment from a
   downloaded MP3 drifts on long pauses; the API's character timestamps do not. If the
-  user cares about tight sync, move to the API.
+  creator cares about tight sync, move to the API.
 - **One lesson at a time, until the first one is approved.** Script register and voice
-  settings are taste calls. Producing a whole module before the user hears one lesson
+  settings are taste calls. Producing a whole module before the creator hears one lesson
   risks redoing all of it.
+- **A replica is only as honest as its content.** The chrome is drawn; the command
+  output, manifests and error messages inside it must be real. Invented output is the
+  one failure this pipeline can produce that looks authoritative while being wrong.

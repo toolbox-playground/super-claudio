@@ -86,21 +86,78 @@ takes do not match seamlessly.
 Eleven v4 does **not** support SSML break tags. Pauses come from punctuation —
 see `narration-script.md`.
 
-## Three ways to generate, in the order to adopt them
+## Whose voice is this?
 
-### 1. Copy and paste in the web app — start here
+**The skill does not know the creator's voice, and must never guess one.** This matters
+because the skill is shared: the person running it today is not the person it was built
+for. Resolve the voice before generating a single lesson.
 
-For the first lessons, the user pastes `narration/aula.txt` into the ElevenLabs web app
-themselves, generates, listens, and downloads the MP3. This is slower per lesson and
-deliberately so: it is how the settings get tuned against the user's own taste before
-any of it is automated. Produce the script, hand it over, and wait for the audio.
+1. **Ask, or look.** If a connection exists (below), list the voices on the account and
+   look for one the creator cloned — a Professional Voice Clone appears alongside the
+   stock voices. On the REST API that is `GET /v1/voices`. Without a connection, ask:
+   *"qual é o nome da sua voz na ElevenLabs?"*
+2. **If they have one**, use it and record its name in the course's `roadmap.md`, so
+   every later lesson uses the same one. Two voices across one course is jarring.
+3. **If they have none**, do not silently fall back. Say what the two options are and
+   let them choose:
+   - **Clone their own voice** — the better result by a wide margin, and the reason this
+     pipeline exists. Professional cloning starts on the Creator plan and wants 30
+     minutes of audio minimum, an hour or more preferably. Point them at the recording
+     script guidance above and wait.
+   - **Use a stock voice** — immediate, free of a cloning step, and fine for a draft or
+     for a course the creator does not want their own voice on. Say plainly that it will
+     not sound like them.
+4. **Never create an account, buy a plan, or clone a voice on their behalf.** Those are
+   theirs to do.
 
-Ask the user to drop the download at `<lesson-dir>/audio/aula.mp3` and tell you when it
-is there. Do not proceed to the video on an assumed filename.
+## Connecting to ElevenLabs
 
-### 2. The API — once the settings are settled
+Three routes. They are not alternatives of equal standing — adopt them in this order,
+and know what each one can and cannot do.
 
-Standard text-to-speech returns audio only. The endpoint worth using instead is
+### 1. The web app, copy and paste — start here, always
+
+The creator pastes `narration/aula.txt` into the ElevenLabs web app, generates, listens,
+and downloads the MP3. No connection, no credentials, nothing to set up.
+
+This is slower per lesson and deliberately so: it is how the settings get tuned against
+the creator's own ear before any of it is automated, and it is the route that works on
+day one for someone who has just been handed this skill. Produce the script, hand it
+over, and wait for the audio.
+
+Ask them to drop the download at `<lesson-dir>/audio/aula.mp3` and tell you when it is
+there. Do not proceed to the video on an assumed filename.
+
+**What it costs you:** no word timings. Alignment has to be estimated from the audio
+(`align-wav.mjs`), which drifts on long pauses.
+
+### 2. The hosted MCP server — generation from inside the conversation
+
+ElevenLabs runs a hosted MCP server at **`https://api.elevenlabs.io/v1/mcp`**. It uses
+OAuth, so no API key is ever copied, pasted or stored. Text to Speech is one of its
+scopes: it generates speech and returns a short-lived download link.
+
+From Claude Code:
+
+```bash
+claude mcp add --transport http elevenlabs https://api.elevenlabs.io/v1/mcp
+```
+
+Then run `/mcp` inside a session to complete the OAuth sign-in. In Claude Desktop it is
+a connector in the connectors directory — connect and sign in there.
+
+Workspaces in an isolated data-residency region use a regional URL instead (EU, India,
+Singapore — for example `https://api.eu.residency.elevenlabs.io/v1/mcp`), and must sign
+in with the account for that region.
+
+**What it costs you:** the documented capabilities centre on agent management plus text
+to speech; **listing or cloning voices is not documented as available**, so voice
+discovery may still need the REST API or a question to the creator. And it returns
+audio, not timings.
+
+### 3. The REST API — the only route that gives exact timings
+
+Standard text-to-speech returns audio only. The endpoint worth using is
 **`POST /v1/text-to-speech/{voice_id}/with-timestamps`**, which returns the audio plus
 character-level timing:
 
@@ -115,23 +172,24 @@ character-level timing:
 }
 ```
 
-This matters more than it looks: those timings are **exact**, so captions and diagram
-reveals land on the right frame. The estimated alignment used for a web-app download
-drifts on long pauses. If the user cares about tight sync — and sync is the product —
-this endpoint is the reason to move off copy-and-paste.
+This matters more than it looks: those timings are **exact**, so captions and reveals
+land on the right frame, where the estimated alignment drifts. Sync is the product, so
+this endpoint is the reason to move off copy-and-paste once the settings are settled.
+`scripts/studio/timestamps-to-srt.mjs` turns that alignment into the SRT the pipeline
+already reads. `GET /v1/voices` on the same key answers the voice question above.
 
-Timestamps are API only; the web app does not expose them.
+Timestamps are API only — neither the web app nor the MCP server exposes them.
 
-### 3. MCP — when the user wants it driven from the conversation
+**Credential handling, not negotiable:** the API key is the creator's. Read it from the
+environment (`ELEVENLABS_API_KEY`), never write it into a file in the repo, never echo
+it, and never ask them to paste it into the conversation. If no key is present, say so
+and stay on route 1 or 2 — do not block a lesson on it.
 
-ElevenLabs ships an MCP server. The hosted endpoint is
-`https://api.elevenlabs.io/v1/mcp` and uses OAuth; the older local server
-(`uvx elevenlabs-mcp`, key in `ELEVENLABS_API_KEY`) is deprecated in favour of it.
+### Not this: the local MCP package
 
-**Credential handling, not negotiable:** the API key is the user's. Read it from the
-environment, never write it into a file in the repo, never echo it, and never ask the
-user to paste it into the conversation. If no key is present in the environment, say so
-and stay on the copy-and-paste route — do not block the lesson on it.
+`uvx elevenlabs-mcp` with an API key in the config is **deprecated by ElevenLabs in
+favour of the hosted server**, and the repository is no longer actively maintained. Do
+not set it up for someone new.
 
 ## After the audio exists
 
