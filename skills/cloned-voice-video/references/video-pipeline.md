@@ -74,8 +74,25 @@ stdout and yields `null`.
 **One lesson is one take, so it is usually one scene.** ElevenLabs returns a single
 audio file per lesson, and cutting it at beat boundaries means cutting mid-breath. In
 practice the beats become *reveals inside one scene*, staged by word timing, rather
-than separate `Series.Sequence` entries. Use several scenes only when the lesson's
-audio genuinely arrives as several files.
+than separate `Series.Sequence` entries. Use several scenes only when the audio
+genuinely arrives as several files.
+
+**A long single video is the case where it does.** A 10-minute video is near the
+character ceiling and is often planned as segments anyway. Each segment is its own
+audio file, its own scene in the `Series`, and its own measured duration — which is
+what this pipeline was built for. Remotion then renders the whole thing as **one MP4**,
+with each segment keeping its own word alignment.
+
+**Do not join finished videos by hand.** Exporting three MP4s and stitching them in
+QuickTime, iMovie or anything similar throws away the per-segment timing work,
+re-encodes everything a second time, and gives you a cut whose position you cannot
+adjust without redoing the export. Put the segments in the composition instead and
+render once. If audio ever genuinely has to be concatenated outside the pipeline,
+ffmpeg's concat demuxer does it without re-encoding — but that is a repair, not the
+route.
+
+Name the segments so they sort in play order (`s01`, `s02`, `s03`), because
+`build-voice.mjs` reads them from the directory in sorted order.
 
 `script.md` lists the beats; each beat becomes a staged visual. Reference types:
 `shot-pan` (a screenshot zoomed and marked — the default whenever the subject exists on

@@ -191,6 +191,28 @@ and stay on route 1 or 2 — do not block a lesson on it.
 favour of the hosted server**, and the repository is no longer actively maintained. Do
 not set it up for someone new.
 
+## When a video needs more than one take
+
+One take per video is always better: a single generation has one continuous energy and
+no seam. Everything up to the 10,000-character request limit — about 10 minutes — fits
+in one, so most work never needs splitting.
+
+When a video genuinely exceeds it, split the **script**, not the request, and split it
+well:
+
+- **Cut at a structural boundary**, between segments of the outline, where the script
+  already has a paragraph break and the delivery already pauses. Never mid-argument,
+  and never mid-paragraph.
+- **Keep every setting identical** across the segments — same voice, same stability,
+  same speed, same model. Changing one between takes makes the seam obvious.
+- **Expect a small discontinuity anyway.** Two generations differ slightly in energy
+  and pace; that is why the cut goes where a pause belongs, so the difference reads as
+  a breath rather than an edit.
+- **Generate them in order, one at a time**, and listen across each join before moving on.
+
+The segments stay separate files all the way to the render — `video-pipeline.md` has
+why they are assembled in the composition rather than stitched by hand afterwards.
+
 ## Generate one lesson at a time
 
 **Never generate a batch of lessons in parallel.** This is a money rule, not a tidiness
