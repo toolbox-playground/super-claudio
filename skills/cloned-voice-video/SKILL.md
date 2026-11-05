@@ -160,7 +160,11 @@ credits.
 
 ### Stage 3 — the audio, in ElevenLabs. **Always before any video.**
 
-Resolve whose voice this is, then generate with the validated settings. First lessons
+**Ask which voice to use before generating anything** — the skill never guesses one,
+and this question comes before the first lesson of every course. Then generate with the
+validated settings: Eleven v4, similarity 100%, stability 75%, clone strength 10% for a
+Professional Voice Clone, language Auto, MP3 44.1 kHz, no audio effects. There is no
+speed or style setting in v4. First lessons
 go through copy-and-paste in the web app so the creator can judge and tune; automate
 only once the settings are settled. One lesson is one request — Eleven v4 takes 10,000
 characters and even a 10-minute lesson is about 9,300.

@@ -291,8 +291,9 @@ Eleven v4 has no SSML break tags. Pauses come from punctuation and structure:
 - Audio tags like `[laughs]` or `[whispers]` exist in v4 but are unreliable and can be
   rendered as a sound effect. Do not use them in course narration.
 
-If the delivery still rushes or drags, change the **speed** setting (0.7–1.2, default
-1.0) rather than rewriting punctuation — see `elevenlabs-voiceover.md`.
+If the delivery rushes or drags, **the punctuation is the only fix**. Eleven v4 has no
+Speed slider and no Style slider, and does not support SSML — there is no setting to
+reach for. Add periods, split sentences, use a paragraph break between movements.
 
 ## Technical terms in English
 
@@ -311,7 +312,7 @@ rewrite the whole script.
 
 ## Budget
 
-~934 characters per minute of finished audio, measured on Eleven v4 at speed 1.0.
+~934 characters per minute of finished audio, measured on Eleven v4.
 Check the character count of `narration/aula.txt` before generating:
 
 ```bash

@@ -6,42 +6,84 @@ free local route was abandoned, with measurements.
 
 ## Validated configuration
 
-These settings were tuned by the creator against their own cloned voice and approved by
-ear. Treat them as the default and change one at a time.
+Tuned by a creator against their own Professional Voice Clone and approved by ear, on
+pt-BR course narration. Treat them as the default and change one at a time.
 
 | Setting | Value | Why |
 |---|---|---|
-| Model | **Eleven v4** (`eleven_v4`) | 10,000 characters per request, 90+ languages |
-| Voice | the user's own cloned voice | ask for the voice name; never guess one |
-| **Similarity** | **100%** | maximum fidelity to the cloned timbre — this is the point |
-| **Stability** | **50%** | keeps delivery varied; higher flattens, lower wanders |
-| Speed | 1.0 | adjustable 0.7–1.2 if the delivery drags or rushes |
-| Language | Auto | the script's own language is detected |
-| Output | MP3 | what the video pipeline loads |
+| Model | **Eleven v4** (`eleven_v4`) | 10,000 characters per request, 90+ languages, the most faithful cloning |
+| Voice | **the creator's own clone — ask, never guess** | the one setting the skill cannot default |
+| **Similarity** | **100% (High)** | maximum fidelity to the cloned timbre — this is the point |
+| **Stability** | **75%** | consistent delivery across dozens of lessons |
+| **Clone Strength** | **10%** | PVC + v4 only; see below — this one is counter-intuitive |
+| Language | Auto | detects the script's language correctly for pt-BR |
+| Output | **MP3, 44.1 kHz** | what the video pipeline loads |
 | Audio effects | none | any effect changes the timbre that similarity 100% is preserving |
 
-**Similarity at 100% is deliberate.** Voice identity is the whole reason for cloning;
-the earlier open-source attempts failed precisely on identity. Do not lower it to
-"clean up" an artifact — fix the text or the speed instead.
+**Eleven v4 has only Stability and Similarity** — plus Clone Strength when the voice is
+a Professional Voice Clone. **There is no Speed and no Style slider in v4, and SSML is
+not supported.** If delivery drags or rushes, fix it in the punctuation
+(`narration-script.md`), because there is no speed knob to reach for.
 
-**Stability at 50% is a middle setting with a real trade-off.** Raising it makes
-delivery more consistent and more monotone; lowering it makes it more expressive and
-less predictable across a 60-lesson course. 50% was chosen for course narration, where
-consistency between lessons matters.
+**Similarity at 100% is deliberate.** Voice identity is the whole reason for cloning;
+the open-source attempts failed precisely on identity. Do not lower it to "clean up" an
+artifact — fix the text instead.
+
+**Stability at 75% buys consistency.** Raising it makes delivery more uniform and more
+monotone; lowering it makes it more expressive and less predictable. 75% was chosen for
+course narration, where sounding the same in lesson 40 as in lesson 1 matters more than
+peak expressiveness.
+
+### Clone Strength, and why low is right
+
+This is the least intuitive setting and the easiest to get wrong, because the name
+suggests more is better. It is the opposite.
+
+ElevenLabs describes it as how closely the output follows the clone's **training
+recordings**: at lower values *"the voice is smoothed slightly and the delivery gains
+more performance flexibility, which often sounds better overall while still sounding
+like the original voice"*; at higher values the output stays closer to the recordings
+**with less smoothing**. Their guidance is to **start at 0%**, and to raise it only for
+voices with distinctive traits or unusual accents.
+
+Measured on a real pt-BR Professional Voice Clone, by ear:
+
+| Value | Result |
+|---|---|
+| 0% | good, but a few details drifted from the real voice |
+| **10%** | **the chosen setting — identity recovered, smoothing kept** |
+| above 10% | degrades quickly, and badly |
+
+The cliff above 10% is explained by the same documentation: v4 reproduces the source
+faithfully *including its flaws*, and ElevenLabs notes that clipping, plosives and
+uneven EQ heard in output "are very likely in the training data". Clone Strength is the
+dial that decides how much of the recording's own imperfection comes through. Low keeps
+the smoothing that hides it.
+
+**So: start at 0%, try 10%, and treat anything above that as a problem to justify.**
+Re-tune per voice — this number came from one voice and one recording session, and a
+voice trained in a different room may want something else.
+
+In the API this is `clone_strength` (0 to 1) inside `voice_settings`, on Text to Speech
+and Text to Dialogue. It applies only to a PVC fine-tuned for a v4 model. Useful
+detail: a v4 request for such a voice uses the voice's **saved** `clone_strength` when
+the request sets neither it nor `use_pvc_as_ivc` — so saving 0.1 on the voice makes
+every later request inherit it.
 
 ## Settings per delivery mode
 
-`narration-script.md` defines the three delivery modes. They want different settings.
-The e-learning row is the measured, approved one; **the other two are starting points
-to tune by ear, not measurements.** Change one value at a time and listen.
+`narration-script.md` defines the three delivery modes. The e-learning row is the
+measured, approved one; **the other two are directions to explore by ear, not
+measurements.** Change one value at a time and listen.
 
-| Mode | Stability | Speed | Why |
-|---|---|---|---|
-| **e-learning** | **50%** (validated) | 1.0 | consistency across dozens of lessons matters more than peak expressiveness |
-| conversational | try 40% | 1.0–1.05 | more variation and a touch more pace reads as talking rather than presenting |
-| how-to | try 60% | 0.95–1.0 | steady and slightly slower, so a viewer can follow along while doing it |
+| Mode | Stability | Why |
+|---|---|---|
+| **e-learning** | **75% (validated)** | consistency across dozens of lessons matters more than peak expressiveness |
+| conversational | try lower, around 60% | more variation reads as talking rather than presenting |
+| how-to | keep 75% or higher | steady and predictable, so a viewer can follow along while doing it |
 
-Similarity stays at 100% in every mode. It is the voice identity, not a delivery knob.
+Similarity stays at 100% and Clone Strength stays where that voice was tuned, in every
+mode. They are voice identity, not delivery knobs.
 
 ## The recording script shapes the clone
 
@@ -90,7 +132,12 @@ see `narration-script.md`.
 
 **The skill does not know the creator's voice, and must never guess one.** This matters
 because the skill is shared: the person running it today is not the person it was built
-for. Resolve the voice before generating a single lesson.
+for.
+
+**This is a hard gate.** Ask before the first generation of a course, every time, even
+when a voice name appears somewhere in the conversation or in an old `roadmap.md`.
+Generating a whole lesson in the wrong voice spends credits on audio nobody can use,
+and the skill has no way to tell a stock voice from the creator's own by listening.
 
 1. **Ask, or look.** If a connection exists (below), list the voices on the account and
    look for one the creator cloned — a Professional Voice Clone appears alongside the
@@ -215,7 +262,7 @@ well:
   already has a paragraph break and the delivery already pauses. Never mid-argument,
   and never mid-paragraph.
 - **Keep every setting identical** across the segments — same voice, same stability,
-  same speed, same model. Changing one between takes makes the seam obvious.
+  same clone strength, same model. Changing one between takes makes the seam obvious.
 - **Carry the prosody across the cut.** On the API, pass the neighbouring segments in
   `previous_text` and `next_text`. The model uses them for context without speaking
   them, so the delivery continues across the join instead of restarting. This is the

@@ -113,10 +113,10 @@ The conversion from script to runtime, measured on real pt-BR narration:
 | long lesson | ~5,600 | 6 min |
 | the ceiling | ~9,300 | 10 min |
 
-Measured on an ElevenLabs Eleven v4 generation of a real pt-BR lesson at speed 1.0.
+Measured on an ElevenLabs Eleven v4 generation of a real pt-BR lesson.
 It is slower than it looks: an earlier estimate of 1,200 characters per minute came
 from a different engine and overshot the runtime by 29%. Re-measure after any change
-to the speed setting, and treat the number as a budget, not a guarantee.
+of voice or settings, and treat the number as a budget, not a guarantee.
 
 Use this to budget a script *before* generating. A lesson whose script runs past ~7,000
 characters is a lesson that should have been two lessons.
