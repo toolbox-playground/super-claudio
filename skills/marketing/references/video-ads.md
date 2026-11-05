@@ -300,7 +300,7 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
-- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Video Generation** — upgraded to Dreamina Seedance 2.5 (rolling out to select paid advertisers starting Aug 3, 2026, across Creative Studio, Ads Manager Automations, and the Symphony API): doubles max AI-generated video length to 30 seconds and raises the multimodal reference-upload ceiling from 9 to 50; was Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen) through mid-2026
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
