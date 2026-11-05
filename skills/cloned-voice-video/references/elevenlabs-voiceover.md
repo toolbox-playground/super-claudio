@@ -232,11 +232,42 @@ Three things to know before using it, each of which costs money if missed:
 - **Never call it again to "retry".** A second call starts and charges a second
   generation; it is not a retry.
 
-**What it costs you:** the tool takes a prompt, a model and a voice — and **no voice
-settings**. Stability, similarity and clone strength cannot be passed through it, so a
-generation uses whatever is **saved on the voice**. Before generating through MCP, save
-the validated settings on the voice in the ElevenLabs web app; then every MCP
-generation inherits them. And, as with the web app, it returns audio, not timings.
+**`creative_generate_speech` ignores your voice settings, and does not inherit the
+voice's saved ones either.** It takes a prompt, a model and a voice — nothing else. A
+generation made with it came back at **stability 0.5 and similarity 0.75**, the
+ElevenLabs stock defaults, on a voice tuned to 0.75 / 1.0. Reading the node back
+confirmed why: it was created with no `voice_settings` at all. Assuming the voice's
+saved values would be used is wrong — this was tested.
+
+**The recipe that does respect the settings**, in order:
+
+1. `creative_create_flow`
+2. `creative_add_flow_node` — a `tts` node with the text and the voice, **without
+   generating**
+3. `creative_update_node` with the settings:
+   ```json
+   {"voice_id": "...", "voice_settings": {"stability": 0.75, "similarity": 1.0}}
+   ```
+4. `creative_run_flow_nodes` with `generations_count: 1`
+
+Use this, not `creative_generate_speech`, for anything that will ship: that tool fires
+a generation at default settings the moment it is called, so fixing the settings
+afterwards means paying for a second take.
+
+`model_parameters` for an `eleven_v4` tts node accepts **only** `language_code`,
+`voice_id` and `voice_settings`. Passing `voice`, `output_format` or
+`pronunciation_dictionary_locators` is rejected, even though the node stores them.
+Output format defaults to `mp3_44100_128` — which is the format this pipeline wants
+anyway.
+
+**Clone strength cannot be set over MCP at all.** The `voice_settings` schema for
+`eleven_v4` exposes `stability` and `similarity` and nothing else. For a Professional
+Voice Clone tuned to a non-default clone strength, MCP output will therefore differ
+from a web-app generation no matter what else is matched. If that difference is
+audible for a given voice, the web app or the REST API is the route for final audio,
+and MCP is for drafts.
+
+And, as with the web app, it returns audio, not timings.
 
 ### 3. The REST API — the only route that gives exact timings
 
