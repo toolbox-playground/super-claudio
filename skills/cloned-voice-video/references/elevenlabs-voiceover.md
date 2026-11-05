@@ -139,10 +139,17 @@ when a voice name appears somewhere in the conversation or in an old `roadmap.md
 Generating a whole lesson in the wrong voice spends credits on audio nobody can use,
 and the skill has no way to tell a stock voice from the creator's own by listening.
 
-1. **Ask, or look.** If a connection exists (below), list the voices on the account and
-   look for one the creator cloned — a Professional Voice Clone appears alongside the
-   stock voices. On the REST API that is `GET /v1/voices`. Without a connection, ask:
-   *"qual é o nome da sua voz na ElevenLabs?"*
+1. **Ask, or look.** If a connection exists (below), list the voices — on the MCP that
+   is `creative_list_voices`, on the REST API `GET /v1/voices`. Without a connection,
+   ask: *"qual é o nome da sua voz na ElevenLabs?"*
+
+   **A name search is not enough to identify the right voice.** A real listing for one
+   creator returned four voices matching their first name, and only two were theirs:
+   the other two were library voices from other workspaces that happened to be named
+   after someone with the same name. Check **`is_library_voice: false`** — that is what
+   distinguishes the creator's own voice from a public one — and confirm the chosen
+   name and id with them before the first generation. `category` then tells you which
+   kind it is: `professional` for a PVC, `cloned` for an instant clone.
 2. **If they have one**, use it and record its name in the course's `roadmap.md`, so
    every later lesson uses the same one. Two voices across one course is jarring.
 3. **If they have none**, do not silently fall back. Say what the two options are and
@@ -208,10 +215,28 @@ Workspaces in an isolated data-residency region use a regional URL instead (EU, 
 Singapore — for example `https://api.eu.residency.elevenlabs.io/v1/mcp`), and must sign
 in with the account for that region.
 
-**What it costs you:** the documented capabilities centre on agent management plus text
-to speech; **listing or cloning voices is not documented as available**, so voice
-discovery may still need the REST API or a question to the creator. And it returns
-audio, not timings.
+**What it actually exposes**, verified against a live connection rather than the docs:
+a large `agents_*` toolset for ElevenLabs Agents, and a `creative_*` toolset that is
+the one this pipeline uses — including **`creative_list_voices`** (so voice discovery
+*is* available here, contrary to what the public docs suggest) and
+**`creative_generate_speech`**.
+
+Three things to know before using it, each of which costs money if missed:
+
+- **`creative_generate_speech` defaults to 2 variations.** `generations_count` defaults
+  to 2 so a user can pick a take. For course narration that is double the spend on
+  every lesson. **Pass `generations_count: 1`** unless the creator asked for options.
+- **Use `estimate_only: true` first** on anything long. It returns the credit cost and
+  any blocking errors without generating, which is how a module's spend gets approved
+  before it happens.
+- **Never call it again to "retry".** A second call starts and charges a second
+  generation; it is not a retry.
+
+**What it costs you:** the tool takes a prompt, a model and a voice — and **no voice
+settings**. Stability, similarity and clone strength cannot be passed through it, so a
+generation uses whatever is **saved on the voice**. Before generating through MCP, save
+the validated settings on the voice in the ElevenLabs web app; then every MCP
+generation inherits them. And, as with the web app, it returns audio, not timings.
 
 ### 3. The REST API — the only route that gives exact timings
 
