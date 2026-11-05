@@ -115,6 +115,17 @@ for. Resolve the voice before generating a single lesson.
 Three routes. They are not alternatives of equal standing — adopt them in this order,
 and know what each one can and cannot do.
 
+**The API does not cost more than the web app.** This is worth stating because people
+reasonably assume the opposite, and that assumption pushes them into a lot of manual
+copy-and-paste for nothing. ElevenLabs is explicit: a request sent to an API endpoint
+with your API key *"will deduct credits from your account"* — the same subscription
+credits the web app spends, at the same rate per character. Most endpoints are
+available on every plan, the free one included. For Flash v2.5 the API is actually
+**cheaper**, at 50% lower price per character than a web generation; Eleven v4, which
+this pipeline uses, is charged the same either way.
+
+So the choice between these routes is about capability and effort, never about cost.
+
 ### 1. The web app, copy and paste — start here, always
 
 The creator pastes `narration/aula.txt` into the ElevenLabs web app, generates, listens,
@@ -205,9 +216,15 @@ well:
   and never mid-paragraph.
 - **Keep every setting identical** across the segments — same voice, same stability,
   same speed, same model. Changing one between takes makes the seam obvious.
-- **Expect a small discontinuity anyway.** Two generations differ slightly in energy
-  and pace; that is why the cut goes where a pause belongs, so the difference reads as
-  a breath rather than an edit.
+- **Carry the prosody across the cut.** On the API, pass the neighbouring segments in
+  `previous_text` and `next_text`. The model uses them for context without speaking
+  them, so the delivery continues across the join instead of restarting. This is the
+  single best mitigation for a seam, and it is **API only** — a web-app split has no
+  equivalent, which is one more reason to connect.
+- **Expect a small discontinuity anyway.** Generation is nondeterministic, so two takes
+  differ slightly in energy and pace even with identical settings. Pass a fixed `seed`
+  for more consistent results, and put the cut where a pause belongs so the difference
+  reads as a breath rather than an edit.
 - **Generate them in order, one at a time**, and listen across each join before moving on.
 
 The segments stay separate files all the way to the render — `video-pipeline.md` has
@@ -226,6 +243,12 @@ written as a batch so the creator can read the course as a whole; audio never is
 
 Before generating a module, tell the creator its total character count, so the spend is
 agreed rather than discovered.
+
+**Regenerating the exact same thing is free, up to twice.** ElevenLabs allows up to two
+free regenerations per generation, but only for *identical content and parameters*.
+Change one word, or nudge stability, and it is a new paid generation. That makes the
+tuning loop more expensive than it looks: trying four stability values on one lesson
+costs four generations, not one. Tune on a short excerpt, not on a full lesson.
 
 ## After the audio exists
 
@@ -250,7 +273,8 @@ the voice goes muffled. Use plain gain if a level change is genuinely needed.
 
 ## Cost, so a course can be budgeted
 
-Credits are charged **per character**, and the measured rate is ~934 characters per
+Credits are charged **per character**, from one pool shared by every ElevenLabs product
+and by both the web app and the API alike. The measured rate is ~934 characters per
 minute of audio. Cost per hour of finished narration, by plan:
 
 | Plan | US$/month | included audio | **US$/hour of audio** |
