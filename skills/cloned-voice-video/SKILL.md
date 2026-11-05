@@ -14,8 +14,9 @@ description: >
   "create a course about", "build the roadmap for a course on",
   "write the narration script for", "clone my voice for a video".
   Also trigger when: the user gives a technology plus a level (iniciante / avançado)
-  and wants teaching material produced, or wants a lesson script turned into a
-  narrated video.
+  and wants teaching material produced, wants a lesson script turned into a narrated
+  video, or asks for narrated content in a particular register — an e-learning course
+  lesson, a conversational YouTube video, or a how-to tutorial.
   Do NOT trigger for: material a human will record themselves (use
   video-script-and-slides), slide decks or webpages (use productivity),
   DevOps Mentoria PPTX conversion (use carreira-tech-slides), editing existing
@@ -49,9 +50,11 @@ Read the reference for the stage you are in. Do not load them all:
    the visuals are scheduled against measured word times, not guessed.
 3. **The script is spoken language, not written prose.** It is what a teacher says out
    loud, contractions and asides included — never a document read aloud.
-4. **Level changes everything.** A beginner course and an advanced course on the same
-   technology share almost no lesson list. An advanced course opens with a recap module
-   and then goes where a beginner course never does.
+4. **Level and delivery mode change everything.** A beginner course and an advanced
+   course on the same technology share almost no lesson list. And the same lesson
+   written for a paid course, for YouTube, or as a how-to tutorial is three different
+   scripts read three different ways — decide the mode before writing a word, see
+   `references/narration-script.md`.
 5. **Diagrams are real.** A Kubernetes lesson shows the actual control plane, the real
    HPA loop, the real Helm release flow — not generic shapes. Technical accuracy is
    the product.
@@ -68,6 +71,7 @@ Read the reference for the stage you are in. Do not load them all:
 |---|---|---|
 | Topic | required | e.g. "Kubernetes", "Terraform", "SRE" |
 | Level | ask if absent | iniciante / intermediário / avançado — changes the whole roadmap |
+| Delivery mode | **e-learning** for a course | e-learning / conversational (YouTube) / how-to — changes the register and the voice settings |
 | Course length | propose, then confirm | total hours; drives the module count |
 | Lesson length | **2–5 min** | shorter fragments the course; longer loses attention |
 | Voice | the user's cloned ElevenLabs voice | see `references/elevenlabs-voiceover.md` |
@@ -79,12 +83,13 @@ Read the reference for the stage you are in. Do not load them all:
 
 1. **Course architecture** — from topic + level, produce the roadmap: modules in
    teaching order, and inside each module the lesson list with a one-line objective
-   and a target duration per lesson. Get this approved before writing any script;
+   and a target duration per lesson. Settle the **delivery mode** here too, since it
+   changes every script that follows. Get this approved before writing any script;
    it is cheap to change here and expensive to change later.
 2. **Lesson script** — for one lesson, write `script.md` (the plan, with a cited source
-   for every factual claim) and `narration/aula.txt` (the exact words to be spoken,
-   in natural spoken register). Mark the **beats**: which sentence introduces which
-   visual. Those beats become the scene boundaries.
+   for every factual claim) and `narration/aula.txt` (the exact words to be spoken, in
+   the register of the chosen delivery mode). Mark the **beats**: which sentence
+   introduces which visual. Those beats become the scene boundaries.
 3. **Voiceover** — send the narration text to ElevenLabs with the validated settings
    and download the MP3. First lessons go through copy-and-paste in the web app so the
    user can judge and tune; automate with the API or MCP only once the settings are
@@ -107,8 +112,9 @@ Read the reference for the stage you are in. Do not load them all:
 ## Routing
 
 - Roadmap scope, level differences, module ordering → `references/course-architecture.md`
-- Register, natural-language phrasing, pacing, character budget → `references/narration-script.md`
-- Voice settings, model limits, audio tags, copy-paste vs API vs MCP → `references/elevenlabs-voiceover.md`
+- Delivery mode, register, natural-language phrasing, pacing, character budget → `references/narration-script.md`
+- Voice settings per mode, model limits, audio tags, what the recording script does to
+  the clone, copy-paste vs API vs MCP → `references/elevenlabs-voiceover.md`
 - Scenes, `revealWord`, captions, alignment, render debugging → `references/video-pipeline.md`
 - The user wants a *human-recorded* video → stop and use `video-script-and-slides`
 - The user asks for a free/offline voice → `references/open-source-alternative.md`

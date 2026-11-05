@@ -29,6 +29,45 @@ delivery more consistent and more monotone; lowering it makes it more expressive
 less predictable across a 60-lesson course. 50% was chosen for course narration, where
 consistency between lessons matters.
 
+## Settings per delivery mode
+
+`narration-script.md` defines the three delivery modes. They want different settings.
+The e-learning row is the measured, approved one; **the other two are starting points
+to tune by ear, not measurements.** Change one value at a time and listen.
+
+| Mode | Stability | Speed | Why |
+|---|---|---|---|
+| **e-learning** | **50%** (validated) | 1.0 | consistency across dozens of lessons matters more than peak expressiveness |
+| conversational | try 40% | 1.0–1.05 | more variation and a touch more pace reads as talking rather than presenting |
+| how-to | try 60% | 0.95–1.0 | steady and slightly slower, so a viewer can follow along while doing it |
+
+Similarity stays at 100% in every mode. It is the voice identity, not a delivery knob.
+
+## The recording script shapes the clone
+
+This is worth knowing before cloning a second voice, because it is not obvious:
+**"the speaking style in the samples you provide will be replicated in the output."**
+ElevenLabs recommends one consistent style per voice, and professional cloning wants
+at least 30 minutes of audio, an hour or more preferably, ideally close to three hours.
+
+Their sample recording scripts are documented in three categories — **narrative,
+conversational and advertising** — and the web UI additionally groups educational use
+cases (how-to, tutorials, e-learning). You can also upload your own script.
+
+The practical consequence:
+
+- A voice cloned from **teaching** audio performs e-learning and how-to narration
+  naturally, and sounds slightly formal when handed a loose conversational script.
+- A voice cloned from **conversational** audio does the opposite.
+- If the user produces both paid course lessons and casual YouTube content and cares
+  about the difference, the highest-fidelity answer is **two cloned voices**, each
+  recorded with the matching script category. One voice plus a register and settings
+  shift is the cheaper answer and is usually good enough — try it first.
+
+Two things the clone copies that are not style: **background noise and recording
+artifacts**. A reference recorded in an untreated room produces a voice with that room
+in it, on every lesson. And training audio must be spoken, never sung.
+
 ## Model limits
 
 | Model | Characters per request |

@@ -13,10 +13,57 @@ Two files per lesson:
 `narration/aula.txt` is pasted or posted verbatim to the TTS. A stray heading, stage
 direction or bracketed note in that file gets read out loud.
 
+## Delivery mode comes first
+
+The same lesson content becomes three different scripts depending on where it will be
+published. Decide the mode before writing, because it changes sentence length, how much
+the narration addresses the viewer, and the voice settings used to generate it.
+
+| Mode | Where it goes | Register | What it sounds like |
+|---|---|---|---|
+| **e-learning** | paid course lessons | structured, signposted, consistent across 60 lessons | a teacher working through a syllabus |
+| **conversational** | YouTube, social, free content | loose, asides, humour, direct address | a person talking to you about something they like |
+| **how-to** | tutorials, walkthroughs, documentation | neutral, precise, step by step | someone narrating exactly what they are doing |
+
+What actually changes between them:
+
+- **Sentence length.** Conversational runs shortest and most fragmented; e-learning is
+  slightly longer and more complete; how-to is short but declarative.
+- **Asides.** Conversational welcomes them ("e olha, isso aqui me pegou na primeira
+  vez"). E-learning uses them sparingly, because across sixty lessons they wear out.
+  How-to avoids them: they break the steps.
+- **Signposting.** E-learning signposts heavily, because the viewer is following a
+  syllabus and needs to know where they are. Conversational signposts loosely. How-to
+  signposts by step number.
+- **Repetition.** E-learning repeats the key idea at the end of the lesson on purpose.
+  Conversational repeating sounds condescending.
+- **Opening.** Conversational earns a greeting. E-learning opens with the question the
+  lesson answers. How-to opens with the goal state: "no final disso aqui você vai ter
+  um HPA funcionando."
+
+The same beat, in all three modes:
+
+| Mode | How it sounds |
+|---|---|
+| e-learning | "O HPA não observa o Pod. Ele observa uma métrica. Guarda essa distinção, porque o resto da aula depende dela." |
+| conversational | "Olha, o HPA não olha o Pod. Ele olha a métrica. E isso confunde todo mundo no começo, inclusive eu." |
+| how-to | "Primeiro entenda o que o HPA observa: a métrica, não o Pod. Isso define o que você vai configurar no próximo passo." |
+
+For a course, default to **e-learning** unless the user says otherwise. For anything
+going to YouTube as standalone content, default to **conversational** — and note that a
+course lesson republished on YouTube keeps the e-learning register rather than being
+rewritten; consistency inside the course matters more.
+
+The voice settings change with the mode too — see the mode table in
+`elevenlabs-voiceover.md`.
+
 ## Register
 
+The rules below are the baseline for **all** modes: spoken Portuguese rather than
+written Portuguese. The mode tunes how loose it gets; it never makes the script sound
+like a document read aloud.
+
 Write how a competent instructor actually speaks to a camera: direct, warm, moving.
-Spoken Portuguese, not written Portuguese.
 
 | Avoid | Prefer |
 |---|---|
