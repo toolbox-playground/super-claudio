@@ -24,7 +24,9 @@ studio/
     narration/aula.txt                 the spoken text (also the caption source)
     voice.<name>.json                  measured durations + word timings
     scenes/                            one component per visual type
-  public/<curso>/<aula>/aula.mp3       the audio Remotion loads
+  public/<slug>/<voice>/aula.mp3       the audio Remotion loads
+  public/<slug>/shots/*.png            screenshots the lesson pans across
+<curso>/assets/*.html                  the replicas those screenshots are rendered from
   scripts/                             align, build-voice, timestamps
 ```
 
@@ -75,8 +77,10 @@ practice the beats become *reveals inside one scene*, staged by word timing, rat
 than separate `Series.Sequence` entries. Use several scenes only when the lesson's
 audio genuinely arrives as several files.
 
-`script.md` lists the beats; each beat becomes one scene with a `visual` type. Reference
-types: `logo-intro`, `bullets`, `statement`, `diagram`, `code`, `reconcile`, `outro`.
+`script.md` lists the beats; each beat becomes a staged visual. Reference types:
+`shot-pan` (a screenshot zoomed and marked — the default whenever the subject exists on
+a screen, see `realistic-visuals.md`), `logo-intro`, `bullets`, `statement`, `diagram`,
+`code`, `reconcile`, `outro`.
 
 A diagram node carries a `revealWord`:
 
@@ -91,7 +95,9 @@ itself when the script changes.
 
 Pick distinctive trigger words. A word spoken five times earlier in the lesson fires
 the reveal on the first occurrence, which is almost never the intended one — see the
-beat guidance in `narration-script.md`.
+beat guidance in `narration-script.md`. When a repeated word is genuinely the right
+trigger for two different moments, `revealMsNth(words, target, nth, fallback)` selects
+which occurrence.
 
 Since the spoken text and the display text are now identical, `revealWord` matches the
 narration file directly. There is no respelling layer to reconcile.
@@ -134,3 +140,9 @@ Always:
   config and only shows up in an extracted frame. Check a frame before delivering.
 - A background command piped into `tail` prints nothing until it exits — you lose all
   progress visibility on a long run.
+- A full-bleed screenshot of a white UI swallows white captions. The bottom scrim in
+  `realistic-visuals.md` is not optional.
+- A focus or mark rectangle measured against the *shot* size instead of the *authored
+  page* size silently breaks the moment `SHOT_SCALE` changes. Always divide by the page.
+- Rendering a lesson built on 4800px screenshots is several times slower than one built
+  on shapes. Run it in the background and do not pipe it into `tail`.
