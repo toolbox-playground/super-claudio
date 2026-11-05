@@ -191,6 +191,20 @@ and stay on route 1 or 2 — do not block a lesson on it.
 favour of the hosted server**, and the repository is no longer actively maintained. Do
 not set it up for someone new.
 
+## Generate one lesson at a time
+
+**Never generate a batch of lessons in parallel.** This is a money rule, not a tidiness
+rule: characters are charged when the request is made, not when the result is approved,
+so every failed, truncated or simply disliked take is paid for. Firing ten lessons at
+once and finding a problem in the first one means paying for nine takes that get
+thrown away.
+
+The loop is: generate one → check its integrity → listen → keep it → next. Scripts are
+written as a batch so the creator can read the course as a whole; audio never is.
+
+Before generating a module, tell the creator its total character count, so the spend is
+agreed rather than discovered.
+
 ## After the audio exists
 
 Measure before building anything on it:

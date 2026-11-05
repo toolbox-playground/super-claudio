@@ -53,8 +53,15 @@ Read the reference for the stage you are in. Do not load them all:
 2. **Sync is the product, not a finish.** If the narration says "autoescalonamento" at
    2:11, the autoscaling diagram appears at 2:11. This is why the audio comes first:
    the visuals are scheduled against measured word times, not guessed.
-3. **The script is spoken language, not written prose.** It is what a teacher says out
-   loud, contractions and asides included — never a document read aloud.
+3. **The script is spoken language, and it teaches.** It is what a teacher says out
+   loud, contractions and asides included — never a document read aloud. And a teacher
+   does not open with a definition: they open with the problem the thing exists to
+   solve, walk the viewer to the breaking point, and let the definition arrive as the
+   answer. Storytelling for an introduction, a one-sentence callback for everything
+   built on it, an analogy when the concept is genuinely hard — and verbosity held at
+   1–3 on a 0–5 dial. Clear and objective, but explanatory: never a concept dropped in
+   ten seconds, never the same idea said three ways. See
+   `references/narration-script.md`.
 4. **Level and delivery mode change everything.** A beginner course and an advanced
    course on the same technology share almost no lesson list. And the same lesson
    written for a paid course, for YouTube, or as a how-to tutorial is three different
@@ -94,7 +101,7 @@ Read the reference for the stage you are in. Do not load them all:
 | Level | ask if absent | iniciante / intermediário / avançado — changes the whole roadmap |
 | Delivery mode | **e-learning** for a course | e-learning / conversational (YouTube) / how-to — changes the register and the voice settings |
 | Course length | propose, then confirm | total hours; drives the module count |
-| Lesson length | **1–6 min**, usually 2–4 | under 1 min fragments the course; over 6 loses attention and makes a bad take expensive |
+| Lesson length | **1–10 min**, usually 2–4 | the teaching decides it, never a target; see `references/course-architecture.md` |
 | Voice | the creator's own cloned ElevenLabs voice | **ask or look it up — never guess one**; see `references/elevenlabs-voiceover.md` |
 | Format | 1920x1080, 30 fps | horizontal for YouTube |
 | Language | pt-BR for Brazilian users | the script language, not a model setting |
@@ -122,23 +129,36 @@ Present it and wait. Expect edits, additions and reordering — that is the poin
 gate. Only move on once the creator says it is final.
 See `references/course-architecture.md`.
 
-### Stage 2 — the lesson script  → **approval gate**
+### Stage 2 — the scripts, written as a batch  → **approval gate**
 
-One lesson at a time. Write `script.md` (the plan: beats, the artefact per beat, a cited
-source per factual claim) and `narration/aula.txt` (the exact words to be spoken,
-nothing else in that file). Keep the register of the chosen delivery mode, and get
-naturalness from punctuation rather than filler.
+Write the scripts for the approved lessons **together**, not one at a time: the creator
+reads through the course as a whole and catches repetition, gaps and a concept
+introduced in the wrong lesson — which only shows up when the scripts sit side by side.
+Writing costs no credits, so there is no reason to drip-feed it.
+
+Per lesson, two files: `script.md` (the plan — beats, the artefact per beat, a cited
+source per factual claim) and `narration/aula.txt` (the exact words to be spoken, and
+nothing else in that file).
+
+Write them as a teacher would: open a concept with the problem it solves rather than
+its definition, call back to what earlier lessons established, use an analogy when a
+concept is genuinely hard, and keep verbosity at 1–3 on the 0–5 dial.
 See `references/narration-script.md`.
 
-Hand the narration text over and wait for the creator to approve the wording, because
-they are about to spend credits on it.
+Hand the scripts over and wait. This is the last free gate — everything after it costs
+credits.
 
 ### Stage 3 — the audio, in ElevenLabs. **Always before any video.**
 
 Resolve whose voice this is, then generate with the validated settings. First lessons
 go through copy-and-paste in the web app so the creator can judge and tune; automate
 only once the settings are settled. One lesson is one request — Eleven v4 takes 10,000
-characters and a 6-minute lesson is about 5,600.
+characters and even a 10-minute lesson is about 9,300.
+
+**One lesson at a time, serially. Never in parallel.** Scripts are written as a batch;
+audio is not. A failed or rejected generation still consumes credits, so a parallel
+batch can burn a module's worth of credits on takes nobody keeps. Generate one, check
+it, keep it — then the next.
 
 Then measure: ffprobe for the real duration, and check integrity — truncation, silence
 holes, clipping. A lesson that fails is regenerated, not patched.
@@ -166,7 +186,8 @@ it is built on top of finished audio — never the other way round.**
 - The creator handed over a PDF, deck, article, repo or recording → read it first,
   `references/source-material.md`
 - Roadmap scope, level differences, module ordering → `references/course-architecture.md`
-- Delivery mode, register, natural-language phrasing, pacing, character budget → `references/narration-script.md`
+- Delivery mode, register, the storytelling arc, callbacks, analogies, the verbosity
+  dial, natural phrasing, pacing, character budget → `references/narration-script.md`
 - Voice settings per mode, model limits, audio tags, what the recording script does to
   the clone, whose voice to use, and how to connect (web app / hosted MCP / REST API)
   → `references/elevenlabs-voiceover.md`

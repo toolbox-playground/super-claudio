@@ -93,14 +93,128 @@ Do **not** write the instructor's name or a fixed persona into the skill's own
 guidance — the register is generic, the identity comes from the user's voice and
 whatever they ask to be said.
 
+## Act like a teacher, not like a dictionary
+
+This is the single biggest difference between a course and a list of definitions, and
+it is where a script most often goes wrong. **Never open a concept with its
+definition.** "Kubernetes é uma plataforma de orquestração de containers" is a correct
+sentence that teaches nobody anything, because the listener has no hook to hang it on.
+
+Open with the **problem the thing exists to solve**, walk the viewer to the point where
+they feel that problem, and let the definition arrive as the answer they were already
+waiting for.
+
+### The arc, when introducing a concept
+
+1. **The need.** What was painful before this existed.
+2. **The short history.** How we got here, in a few sentences — enough to make the need
+   concrete, never a lecture on history for its own sake.
+3. **The breaking point.** What stopped working at scale, which is what forced the thing
+   into existence.
+4. **The name, and only now the definition.** By this point it lands as a conclusion.
+5. **The detail**, technical, once the ground is laid.
+
+Worked example — the opening of a "o que é Kubernetes" lesson:
+
+> O Kubernetes nasceu de uma necessidade: gerenciar muito container.
+>
+> E pra isso fazer sentido, eu preciso te contar uma historinha sobre Docker. O Docker
+> empacota o seu código junto com tudo que ele precisa pra rodar. Aí esse pacote roda
+> igual em qualquer máquina — e acabou aquele "na minha máquina funciona". Isso pegou.
+> Virou padrão da indústria.
+>
+> Só que as empresas passaram a usar tanto, mas tanto, que viraram dezenas de
+> containers. Depois centenas. Depois milhares. E manter todos eles de pé, conversando
+> entre si, distribuídos em máquinas diferentes... isso virou um problema maior do que
+> o que o Docker tinha resolvido.
+>
+> Foi daí que nasceu o Kubernetes. E não é à toa que o símbolo dele é um leme de navio:
+> o nome vem do grego, e quer dizer piloto, timoneiro. É quem conduz o navio carregado
+> de container.
+>
+> Então o Kubernetes é isso: o maestro que orquestra e gerencia os seus containers.
+
+Notice that the definition is the **last** sentence, and by then it is almost
+redundant — which is exactly how it should feel.
+
+The same move outside technology, opening a LinkedIn course:
+
+> Hoje a maior plataforma de recrutamento do mundo é o LinkedIn. No Brasil também.
+>
+> Quem trabalha com tecnologia precisa de um perfil bem estruturado — não bonito,
+> estruturado — pra que o recrutador consiga te achar. Porque existe um mecanismo por
+> trás disso. O recrutador não fica passando perfil por perfil: ele busca.
+>
+> Nesse curso a gente vai te mostrar como esse mecanismo funciona, e como deixar o seu
+> perfil do lado certo dele.
+
+Not "nesta aula você vai colocar foto, headline e resumo".
+
+### After the introduction: callbacks, not another story
+
+**Storytelling is for introducing a concept, once.** Once Kubernetes has been
+introduced, no later lesson re-tells its origin. What later lessons do instead is
+**call back** to what was already established, in one sentence, and build on it:
+
+> Lembra que a gente falou que o Kubernetes orquestra e gerencia os containers? Um dos
+> benefícios disso é alta disponibilidade.
+>
+> E o que é alta disponibilidade? É o sistema ficar de pé. Disponível o tempo todo, ou
+> o máximo de tempo possível, sem cair. Imagina você tentar entrar no YouTube e ele
+> estar fora do ar. Um sistema que cai é um sistema que ninguém confia.
+>
+> Um dos mecanismos que o Kubernetes usa pra entregar isso é o HPA, o escalonamento
+> horizontal. E ele funciona assim...
+
+Two things are happening there. The callback re-establishes the thread for free, and
+the **aside** — "imagina entrar no YouTube e estar fora do ar" — is storytelling in
+quotation marks: one sentence, concrete, and it makes an abstract word land. Those
+asides belong everywhere. The full arc belongs only at an introduction.
+
+### Analogies, for hard concepts only
+
+When a concept is genuinely difficult, say it twice: once technically, once as an
+analogy. "Auto-healing é o Kubernetes recriando sozinho o que morreu — é um poder de
+regeneração." Analogies are cheap and they stick.
+
+But **only when the concept is hard.** Explaining an easy idea two different ways
+sounds like padding, and a course that does it on every concept teaches the viewer to
+stop listening the first time.
+
+### The verbosity dial
+
+Imagine verbosity from 0 to 5, where 5 repeats the same idea in several different
+shapes. **Course narration lives at 1 to 3, and never at 4 or 5.**
+
+| Level | When | What it looks like |
+|---|---|---|
+| **1** | a simple concept, or one already grounded | state it, show it, move on |
+| **2** | the default for most lessons | state it, give one concrete example, move on |
+| **3** | a hard or counter-intuitive concept | the arc or a callback, an example, and one analogy |
+| 4–5 | never | the same idea three ways; the viewer stops listening |
+
+The failure on both sides is real. Compressing the HPA into "HPA é horizontal pod
+autoscaling, o escalonamento horizontal de pods" takes ten seconds, is entirely
+correct, and teaches nobody. Stretching it to five minutes of restatements loses the
+room. The target is the middle: clear, concrete, explained — and then finished.
+
+**Do not rush, and do not pad.** The length of a lesson follows the teaching, never a
+number someone picked. `course-architecture.md` has what each duration is actually for.
+
 ## Shape of a lesson
 
-- **Open with the question the lesson answers,** not with a greeting ritual. One short
-  hook, then straight in. Only the first lesson of a module needs a welcome.
+- **Open with the problem, or with the callback.** A lesson introducing a concept opens
+  with the need, per the arc above. A lesson continuing one opens by calling back to
+  what was established, then asks the question this lesson answers. Neither opens with
+  a greeting ritual — only the first lesson of a course or a module gets a welcome.
 - **Middle: one mechanism, in order.** Follow the beats from `script.md`. When you move
   to a new beat, say so out loud — that sentence is the scene boundary.
 - **Close by naming what was learned and what comes next.** Two sentences. No
-  "não esqueça de curtir e se inscrever" unless the user asks for it.
+  "não esqueça de curtir e se inscrever" unless the creator asks for it.
+
+**The facts inside the story must be real.** A narrative arc is a teaching device, not
+a licence to invent dates, origins or mechanisms. Verify what the story asserts, and
+cite it in `script.md`, exactly as for any other claim.
 
 ## Beats — where the script meets the video
 
@@ -204,6 +318,7 @@ Check the character count of `narration/aula.txt` before generating:
 tr -d '\n' < narration/aula.txt | wc -c
 ```
 
-A 2–5 minute lesson is 1,900–4,700 characters, comfortably inside Eleven v4's 10,000
-character request limit. If a lesson exceeds ~7,000, split the lesson rather than the
-request — a lesson that needs two requests is a lesson with two subjects.
+A 2–4 minute lesson is 1,900–3,700 characters; the 10-minute ceiling is ~9,300, which
+still fits Eleven v4's 10,000-character request in one go. Past ~9,500, split the
+lesson rather than the request — a lesson that needs two requests is a lesson with two
+subjects, and two requests are two takes that will not match seamlessly.

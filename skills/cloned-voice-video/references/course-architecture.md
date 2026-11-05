@@ -24,10 +24,30 @@ model and vocabulary the rest of the course will use without explanation.
 
 ## Sizing
 
-Lessons run **1 to 6 minutes**, and usually 2 to 4. Shorter than a minute fragments the
-course into clips the viewer cannot follow; longer than six loses attention and makes a
-single bad take expensive to regenerate. Use the short end for a genuinely short answer
-and the long end for a mechanism that cannot be split — not to hit a uniform length.
+**Lessons run 1 to 10 minutes, and the length follows the teaching.** There is no
+target duration to hit. Picking a number first and then stretching or compressing the
+content to reach it is the most common way a course turns boring, and it is visible
+immediately.
+
+| Length | What it is for |
+|---|---|
+| **~1 min** | a welcome, a module opener ("o que a gente vai ver nesse módulo"), or one genuinely narrow point |
+| **2–4 min** | the normal lesson: one concept or one mechanism, properly taught |
+| **5–7 min** | a concept that needs the full storytelling arc, or a mechanism with configuration and failure modes |
+| **8–10 min** | a hard subject that genuinely cannot be split without breaking it |
+
+Two mistakes to avoid in both directions:
+
+- **Do not rush a concept into a minute.** "O que é Kubernetes" in sixty seconds is a
+  definition, not a lesson: it has no room for the problem, the history and the
+  breaking point that make the definition land. See the storytelling arc in
+  `narration-script.md`. Introducing a concept is usually 2–4 minutes at minimum.
+- **Do not pad a short answer to look substantial.** "O que é um Helm chart" genuinely
+  is a two-minute answer. Uniform lesson lengths are a smell.
+
+A lesson that reuses ground already covered is legitimately shorter than the one that
+established it — auto-healing after the HPA lesson needs less than the HPA did, because
+the vocabulary is already there.
 
 The conversion from script to runtime, measured on real pt-BR narration:
 
@@ -37,7 +57,8 @@ The conversion from script to runtime, measured on real pt-BR narration:
 | short lesson | ~1,900 | 2 min |
 | typical lesson | ~2,800 | 3 min |
 | long lesson | ~4,700 | 5 min |
-| the ceiling | ~5,600 | 6 min |
+| long lesson | ~5,600 | 6 min |
+| the ceiling | ~9,300 | 10 min |
 
 Measured on an ElevenLabs Eleven v4 generation of a real pt-BR lesson at speed 1.0.
 It is slower than it looks: an earlier estimate of 1,200 characters per minute came
@@ -47,8 +68,10 @@ to the speed setting, and treat the number as a budget, not a guarantee.
 Use this to budget a script *before* generating. A lesson whose script runs past ~7,000
 characters is a lesson that should have been two lessons.
 
-A 6-minute lesson is ~5,600 characters, still inside Eleven v4's 10,000-character
-request limit, so **one lesson is always one request** at any length in this range.
+Even at the ceiling — a 10-minute lesson, ~9,300 characters — this stays inside Eleven
+v4's 10,000-character request limit, so **one lesson is always one request**. The
+headroom at 10 minutes is thin, though: if a script passes ~9,500 characters it is a
+lesson that wanted to be two.
 
 Course arithmetic: a 4-hour course is roughly **50 to 70 lessons** at this length.
 That is a lot of lessons, so the module boundaries carry real weight — they are what
