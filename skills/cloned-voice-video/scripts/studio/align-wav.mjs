@@ -1,7 +1,8 @@
 // Poor-man's forced aligner: distributes known narration words across the speech
 // segments of a WAV (found with ffmpeg silencedetect), weighted by word length.
-// Chatterbox emits no subtitles, so this is what gives its render the same captions
-// and the same narration-synced diagram reveals as the edge-tts render.
+// Use this only for audio downloaded from the ElevenLabs web app, which carries no
+// timings. When the audio came from the API, timestamps-to-srt.mjs gives exact times
+// instead -- these are estimates and they drift on long pauses.
 import {readFileSync, writeFileSync, readdirSync, existsSync} from 'node:fs';
 import {join} from 'node:path';
 import {execFileSync, spawnSync} from 'node:child_process';

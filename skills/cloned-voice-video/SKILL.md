@@ -1,100 +1,128 @@
 ---
 name: super-claudio:cloned-voice-video
 description: >
-  Produces complete narrated educational videos end to end — script, cloned-voice
-  voiceover, real architecture diagrams animated in Remotion, word-by-word captions
-  timed to the narration, and a final MP4. The AI generates everything; nobody records.
-  Built for course theory segments (DevOps, SRE, Kubernetes, Terraform, cloud) in
-  horizontal YouTube format, 1–10 minutes.
-  Trigger on: "cria um vídeo narrado sobre", "vídeo com minha voz clonada",
-  "vídeo canal dark sobre", "clonar minha voz para vídeo", "vídeo de aula sobre",
+  Builds complete narrated course videos end to end: course roadmap, module and lesson
+  breakdown, a natural-spoken-language script for every lesson, voiceover in the
+  creator's own cloned voice via ElevenLabs, real technical diagrams animated in
+  Remotion, and a final MP4 whose visuals are synchronized to the narration.
+  Works from a bare topic ("Kubernetes avançado") all the way to rendered lessons.
+  Trigger on: "cria um curso de", "monta o roadmap de um curso sobre",
+  "quais os módulos de um curso de", "divide esse curso em aulas",
+  "cria o roteiro das aulas de", "roteiro para a aula de",
+  "cria um vídeo narrado sobre", "vídeo com minha voz clonada",
   "gera o áudio e o vídeo de", "narração com minha voz", "vídeo faceless sobre",
-  "create a narrated video about", "clone my voice for a video",
-  "faceless video about", "generate narration and video for".
-  Also trigger when: the user wants a video whose narration is synthesized rather than
-  recorded, or asks to turn course material into a narrated video.
+  "create a course about", "build the roadmap for a course on",
+  "write the narration script for", "clone my voice for a video".
+  Also trigger when: the user gives a technology plus a level (iniciante / avançado)
+  and wants teaching material produced, or wants a lesson script turned into a
+  narrated video.
   Do NOT trigger for: material a human will record themselves (use
   video-script-and-slides), slide decks or webpages (use productivity),
-  editing existing footage, or cinematic/realistic AI video generation.
+  DevOps Mentoria PPTX conversion (use carreira-tech-slides), editing existing
+  footage, or cinematic/realistic AI video generation.
 ---
 
-# Cloned Voice Video — AI-Narrated Educational Videos
+# Cloned Voice Video — AI-Narrated Course Production
 
-You produce a finished MP4: written script, synthesized narration in the user's own
-cloned voice, programmatic visuals with real technical diagrams, captions synchronized
-word by word, and reveals timed to the narration. Nothing is filmed.
+You take a topic and a level and produce finished lessons: a course roadmap, a module
+and lesson breakdown, the exact words to be spoken, narration in the creator's cloned
+voice, and an MP4 whose visuals track what the narration is saying at that second.
 
-Read `references/voice-cloning.md` before touching audio and
-`references/video-pipeline.md` before touching visuals. Both carry measured numbers
-from a production run — use them instead of guessing.
+Read the reference for the stage you are in. Do not load them all:
+
+| Stage | Reference |
+|---|---|
+| Roadmap, modules, lesson breakdown | `references/course-architecture.md` |
+| Writing the spoken script | `references/narration-script.md` |
+| Generating and downloading the audio | `references/elevenlabs-voiceover.md` |
+| Scenes, sync, captions, rendering | `references/video-pipeline.md` |
+| Why not a free local model | `references/open-source-alternative.md` |
 
 ## Core Principles
 
-1. **Audio drives the video.** Never hardcode a scene duration. Synthesize the
-   narration first, measure each file with ffprobe, and derive
-   `durationInFrames = ceil((audioSeconds + 0.35) * FPS)`. A scene whose duration was
-   written by hand will desynchronize the moment the narration changes.
-2. **Spoken text and displayed text are different layers.** The TTS model reads
-   phonetically respelled text ("Êi-pi-ái sârver"); captions show the real spelling
-   ("API server"). Word counts must match exactly or the alignment breaks.
-3. **Diagrams are real.** A Kubernetes video shows the actual control plane and nodes,
-   not generic shapes. Technical accuracy is the product.
-4. **Measure before claiming.** Every generated audio file is checked for silence
-   holes, truncation and clipping before it reaches the user. A metric can reward a
-   defect — see the "metrics that misled" section in `references/voice-cloning.md`.
-5. **The user's ear decides.** Integrity checks catch broken audio; they do not judge
-   accent, pacing or clarity. Send samples and ask what specifically sounds wrong.
+1. **Audio first, always.** The narration is generated and measured before a single
+   frame is designed. Every duration in the composition is derived from the real audio
+   file — `durationInFrames = ceil((audioSeconds + 0.35) * FPS)`. A hand-written scene
+   length desynchronizes the moment the script changes.
+2. **Sync is the product, not a finish.** If the narration says "autoescalonamento" at
+   2:11, the autoscaling diagram appears at 2:11. This is why the audio comes first:
+   the visuals are scheduled against measured word times, not guessed.
+3. **The script is spoken language, not written prose.** It is what a teacher says out
+   loud, contractions and asides included — never a document read aloud.
+4. **Level changes everything.** A beginner course and an advanced course on the same
+   technology share almost no lesson list. An advanced course opens with a recap module
+   and then goes where a beginner course never does.
+5. **Diagrams are real.** A Kubernetes lesson shows the actual control plane, the real
+   HPA loop, the real Helm release flow — not generic shapes. Technical accuracy is
+   the product.
+6. **Display text equals spoken text.** With Eleven v4 you send the real spelling;
+   there is no phonetic respelling layer. Captions and reveals index the same words
+   the model read. (The respelling hack existed only for a local model that mangled
+   English terms — see `references/open-source-alternative.md`.)
+7. **The creator's ear decides.** Integrity checks catch broken audio; they do not
+   judge delivery. Send the first lesson's audio and ask before producing twenty more.
 
 ## What the user controls (parse from the request)
 
 | Parameter | Default | Notes |
 |---|---|---|
-| Topic | required | drives the script and the diagram |
-| Duration | 2 min | ~140 spoken words per minute |
-| Format | 1920x1080 | horizontal for YouTube; 1080x1920 for Reels/Shorts |
-| Voice | cloned from the user's reference clip | falls back to a stock voice — see routing |
-| Language | language of the request | pt-BR assumed for Brazilian users |
-| Output dir | `~/Movies/video-shorts/<slug>/` | ask only if the user hints elsewhere |
+| Topic | required | e.g. "Kubernetes", "Terraform", "SRE" |
+| Level | ask if absent | iniciante / intermediário / avançado — changes the whole roadmap |
+| Course length | propose, then confirm | total hours; drives the module count |
+| Lesson length | **2–5 min** | shorter fragments the course; longer loses attention |
+| Voice | the user's cloned ElevenLabs voice | see `references/elevenlabs-voiceover.md` |
+| Format | 1920x1080, 30 fps | horizontal for YouTube |
+| Language | pt-BR for Brazilian users | the script language, not a model setting |
+| Output dir | `~/Movies/video-shorts/<curso-slug>/<aula-slug>/` | ask only if the user hints elsewhere |
 
 ## Pipeline (always in this order)
 
-1. **Script** — `script.md` with one block per scene, the visual type for each, and a
-   cited source for every factual claim. Then `narration/sNN.txt`, the display text.
-2. **Phonetic layer** — run `scripts/studio/respell.mjs` to produce
-   `narration-tts/sNN.txt`. It aborts if a substitution changes the word count.
-3. **Reference clip** — cut 20–30s of the user's own speech. Selection is measured,
-   not eyeballed: see "choosing the reference clip" in `references/voice-cloning.md`.
-   Peak must stay under −3 dBFS or the model degenerates.
-4. **Synthesis** — run the Docker image over `narration-tts/`. Budget ~16x realtime
-   per core-starved CPU run; check the resource table before promising a deadline.
-5. **Integrity check** — duration, words/second, silence holes, truncation, peak.
-   Never deliver audio that fails these; diagnose instead.
-6. **Alignment** — `scripts/studio/align-wav.mjs` derives word timings from the audio,
-   then `build-voice.mjs` writes `voice.<name>.json` with durations and captions.
-7. **Render** — Remotion renders only the scenes that have measured audio, so a single
-   scene can be previewed before committing to the full video.
-8. **Verify + deliver** — extract frames at several timestamps and confirm the visuals,
-   confirm the MP4 carries an audio stream, then send the file.
+1. **Course architecture** — from topic + level, produce the roadmap: modules in
+   teaching order, and inside each module the lesson list with a one-line objective
+   and a target duration per lesson. Get this approved before writing any script;
+   it is cheap to change here and expensive to change later.
+2. **Lesson script** — for one lesson, write `script.md` (the plan, with a cited source
+   for every factual claim) and `narration/aula.txt` (the exact words to be spoken,
+   in natural spoken register). Mark the **beats**: which sentence introduces which
+   visual. Those beats become the scene boundaries.
+3. **Voiceover** — send the narration text to ElevenLabs with the validated settings
+   and download the MP3. First lessons go through copy-and-paste in the web app so the
+   user can judge and tune; automate with the API or MCP only once the settings are
+   settled. One lesson fits in one request: Eleven v4 takes 10,000 characters and a
+   5-minute lesson is about 6,000.
+4. **Measure** — ffprobe the MP3 for its real duration, then check integrity: silence
+   holes, truncation mid-sentence, clipping. Never build a video on audio that fails
+   these; regenerate instead.
+5. **Alignment** — derive word timings. With the API's `with-timestamps` endpoint you
+   get real character-level times; from a web-app download, `scripts/studio/align-wav.mjs`
+   estimates them from the audio. Either way the output is `voice.<name>.json` with
+   per-scene durations and per-word times.
+6. **Scene plan** — map the script's beats onto scenes and give each diagram node a
+   `revealWord`, so a box appears exactly when the narration names it.
+7. **Render** — Remotion renders only scenes that have measured audio, so one lesson
+   can be previewed before the whole module is committed.
+8. **Verify and deliver** — extract frames at several timestamps and look at them,
+   confirm the MP4 carries an audio stream of the expected duration, then send it.
 
 ## Routing
 
-- Voice work, model choice, parameters, accent problems, reference-clip selection,
-  resource requirements → `references/voice-cloning.md`
-- Scene definitions, diagram components, captions, alignment, rendering, debugging a
-  broken frame → `references/video-pipeline.md`
+- Roadmap scope, level differences, module ordering → `references/course-architecture.md`
+- Register, natural-language phrasing, pacing, character budget → `references/narration-script.md`
+- Voice settings, model limits, audio tags, copy-paste vs API vs MCP → `references/elevenlabs-voiceover.md`
+- Scenes, `revealWord`, captions, alignment, render debugging → `references/video-pipeline.md`
 - The user wants a *human-recorded* video → stop and use `video-script-and-slides`
-- The user wants a stock voice instead of their own → say so plainly; cloning and a
-  neutral accent are in tension, and `references/voice-cloning.md` explains why
+- The user asks for a free/offline voice → `references/open-source-alternative.md`
+  carries the measured reasons that route was abandoned
 
 ## Honest limits
 
-State these up front rather than letting the user discover them after hours of waiting:
+State these before the user discovers them:
 
-- **Local open-source cloning reproduces the speaker's accent, including regional
-  traits.** It cannot be asked for a "neutral" accent — the accent is part of what is
-  cloned. A carioca reference produces carioca-or-worse output.
-- **Hardware buys speed, not quality.** A bigger machine shortens a 40-minute scene to
-  a few minutes; it does not change how the model sounds.
-- **The free route has a quality ceiling.** When voice fidelity is the blocker rather
-  than throughput, a paid cloning service is the honest recommendation. Say it instead
-  of burning days on parameters.
+- **A cloned voice needs a paid service to sound like the person.** This was measured,
+  not assumed: see `references/open-source-alternative.md`.
+- **Visual sync is only as good as the word timings.** Estimated alignment from a
+  downloaded MP3 drifts on long pauses; the API's character timestamps do not. If the
+  user cares about tight sync, move to the API.
+- **One lesson at a time, until the first one is approved.** Script register and voice
+  settings are taste calls. Producing a whole module before the user hears one lesson
+  risks redoing all of it.
