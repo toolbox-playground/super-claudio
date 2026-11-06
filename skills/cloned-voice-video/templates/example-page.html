@@ -1,0 +1,46 @@
+<!doctype html>
+<!--
+  A worked example of replica.css: the artefact a Kubernetes HPA lesson actually shows.
+  Copy this next to a lesson's other pages, keep the chrome, replace the content with
+  output you really ran. The chrome is a replica; the content must be real.
+-->
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="shot-size" content="1600x900">
+<link rel="stylesheet" href="replica.css">
+<title>kubectl get hpa</title></head>
+<body class="bg-dark">
+<div class="stage"><div class="stack">
+
+  <!-- the command and its output -->
+  <div class="win">
+    <div class="win-bar"><span class="dot r"></span><span class="dot y"></span>
+      <span class="dot g"></span><span class="win-title">caio@workstation — kubectl</span></div>
+    <div class="term"><span class="ln"><span class="ps1">~ $</span> <span class="cmd">kubectl get hpa -n loja</span></span>
+<span class="ln c-head">NAME       REFERENCE          TARGETS              MINPODS   MAXPODS   REPLICAS   AGE</span>
+<span class="ln">api-hpa    Deployment/api     <span class="c-err">cpu: &lt;unknown&gt;/70%</span>   2         10        2          4d3h</span>
+<span class="ln"> </span>
+<span class="ln"><span class="ps1">~ $</span> <span class="cmd">kubectl describe hpa api-hpa -n loja | tail -4</span></span>
+<span class="ln c-head">  Type     Reason                        Age   From                       Message</span>
+<span class="ln c-head">  ----     ------                        ----  ----                       -------</span>
+<span class="ln">  <span class="c-warn">Warning</span>  FailedGetResourceMetric       18s   horizontal-pod-autoscaler  <span class="c-err">failed to get cpu utilization:</span></span>
+<span class="ln">           <span class="c-err">missing request for cpu in container api of Pod api-7d9c4f8b6-xk2vn</span></span>
+<span class="ln"><span class="ps1">~ $</span> <span class="cursor"></span></span></div>
+  </div>
+
+  <!-- the manifest that explains it -->
+  <div class="win">
+    <div class="tabs"><div class="tab on">deployment.yaml</div><div class="tab">hpa.yaml</div></div>
+    <div class="code">
+      <div class="gutter">18<br>19<br>20<br>21<br>22<br>23<br>24</div>
+      <div class="src">    <span class="y">containers</span>:
+      - <span class="y">name</span>: <span class="s">api</span>
+        <span class="y">image</span>: <span class="s">registry.example.com/loja/api:1.9.2</span>
+<span class="cm">        # sem requests, o HPA não tem denominador para a conta</span>
+<span class="add">        <span class="y">resources</span>:</span>
+<span class="add">          <span class="y">requests</span>:</span>
+<span class="add">            <span class="y">cpu</span>: <span class="s">"250m"</span></span></div>
+    </div>
+  </div>
+
+</div></div>
+</body></html>
