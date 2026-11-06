@@ -7,7 +7,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | API | What | URL | Auth |
 |-----|------|-----|------|
 | OpenWeather | Current weather, 5-day forecast, air pollution; 1,000 calls/day free | openweathermap.org | Free key |
-| Open-Meteo | Hourly/daily weather forecasts, historical data, **Air Quality API** (PM2.5, PM10, ozone, NO2, UV index, pollen, dust — same no-key, no-rate-limit model), no limits on free tier | open-meteo.com | None |
+| Open-Meteo | Hourly/daily weather forecasts, historical data, **Air Quality API** (PM2.5, PM10, ozone, NO2, UV index, pollen, dust — same no-key model); free tier is non-commercial use only (~10K req/day); commercial use requires a paid plan (~€15/mo) | open-meteo.com | None |
 | **Weather.gov (NWS)** | US National Weather Service data — current conditions, forecasts, hourly data, alerts; GeoJSON API; ~5,000 req/hour free; no key required | api.weather.gov | None |
 
 ## Space & Astronomy
@@ -71,6 +71,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 |-----|------|-----|------|
 | Unsplash | Millions of free high-quality stock photos | api.unsplash.com | Free key |
 | Picsum Photos | Random placeholder images by size | picsum.photos | None |
+| **Pollinations.ai** | Free, no-signup text and image generation API — anonymous tier is rate-limited but requires no key at all | pollinations.ai | None (optional free key for higher limits) |
 
 ## Domains
 
@@ -85,7 +86,8 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | Discord API | Build bots, manage servers, send/read messages, listen to real-time events via WebSocket gateway; no limits on bot creation; well-documented | discord.com/developers | Bot token (free) |
 | **Bluesky API (AT Protocol)** | Read/write posts, timelines, user data, follows; permissive free rate limits; growing developer community after X went paid | atproto.com | Free account |
 | **Threads API (Meta)** | Post, read replies, manage media; free developer access; rate limits generous for indie devs | developers.facebook.com/docs/threads | Free account |
-| **X (Twitter) API** | **⚠️ No longer free (Feb 6, 2026)** — reading a tweet costs $0.005, posting $0.015; full-archive search from $42K/month enterprise. Use Bluesky/Threads instead for social data at no cost. | developer.x.com | Paid only |
+| **Resend** | Transactional email API (React/JSX email templates, deliverability tooling); real free tier for low-volume sending | resend.com | Free key |
+| **X (Twitter) API** | **⚠️ No longer free (Feb 6, 2026)** — pay-per-use pricing (reported figures vary by source/date, roughly $0.001–$0.005/read, ~$0.015–$0.02/write); full-archive search from $42K/month enterprise. Use Bluesky/Threads instead for social data at no cost. | developer.x.com | Paid only |
 
 ## Developer Utilities
 
@@ -95,7 +97,8 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | RandomUser | Random user data | randomuser.me | None |
 | DummyJSON | Mock data (products, users) | dummyjson.com | None |
 | Open Trivia DB | Trivia questions (50+ categories) | opentdb.com/api_config.php | None |
-| Mockerito | 200+ realistic mock REST endpoints across 9 domains (E-Commerce, Finance, Healthcare, Aviation, Meteorology, etc.); full CRUD + filtering/pagination; more varied than JSONPlaceholder | mockerito.com | None |
+| Mockerito | 200+ realistic mock REST endpoints across 9 domains (E-Commerce, Finance, Healthcare, Aviation, Meteorology, etc.); full CRUD + filtering/pagination; more varied than JSONPlaceholder; sources disagree on whether all endpoints are free or a paid tier exists for custom projects — verify current pricing before relying on it | mockerito.com | None (public endpoints) |
+| **Firecrawl** | Web scraping/crawling API — turns any site into clean Markdown/structured data for LLM pipelines; free tier includes starter credits | firecrawl.dev | Free key |
 
 ## AI / Machine Learning
 
