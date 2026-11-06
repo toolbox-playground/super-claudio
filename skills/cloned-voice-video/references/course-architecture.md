@@ -211,6 +211,12 @@ something with no screen — a mental model, a trade-off, a comparison — and e
 those to be the minority. `references/realistic-visuals.md` lists the usual artefact
 per domain.
 
+A lesson that *introduces* a concept also names the **rungs it covers** — where on the
+abstraction ladder it starts and where it ends (`narration-script.md`). This is what
+makes a drift visible at the gate instead of at the render: a lesson whose rungs begin
+at 3 opens on a command, and a module where every lesson stops at rung 1 never gets the
+viewer to anything they can do.
+
 Add a two-line **summary** of what the lesson covers, so the creator can judge the
 teaching from the ementa alone rather than from a title.
 

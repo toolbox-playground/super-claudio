@@ -112,7 +112,8 @@ waiting for.
 3. **The breaking point.** What stopped working at scale, which is what forced the thing
    into existence.
 4. **The name, and only now the definition.** By this point it lands as a conclusion.
-5. **The detail**, technical, once the ground is laid.
+5. **The detail**, technical, once the ground is laid — descending one level at a
+   time, per the ladder below.
 
 Worked example — the opening of a "o que é Kubernetes" lesson:
 
@@ -149,6 +150,46 @@ The same move outside technology, opening a LinkedIn course:
 > perfil do lado certo dele.
 
 Not "nesta aula você vai colocar foto, headline e resumo".
+
+### The abstraction ladder — descend one level at a time
+
+The arc above gets the viewer to *why*. The ladder gets them to *how*, and it is the
+difference between a video that explains a thing and a video that merely covers it.
+
+**Start at the highest level that still says something true, and go down one rung at a
+time.** Never start at the rung where a practitioner works — a command, a field name, a
+flag — because at that altitude the listener has no idea what they are looking at.
+
+| Rung | What it answers | On Pods | On the LinkedIn profile |
+|---|---|---|---|
+| **0 — the problem** | why does this exist at all | two containers that cannot share anything | the recruiter does not browse, they search |
+| **1 — the mental model** | what is it, in one idea | a box holding containers that live and die together | a profile is an entry in an index |
+| **2 — the parts, and how they relate** | what is inside it, what surrounds it | Node, the Pod boundary, one IP, a shared volume | headline, keyword, the search result |
+| **3 — the real world** | where do I see this | `kubectl get pods`, `READY 2/2`, the IP in `-o wide` | the headline field itself, a real search |
+| **4 — declaring it myself** | how do I do it | the manifest, field by field | the words to type |
+
+Not every lesson uses all five rungs. A short conceptual lesson may live on 1 and 2; a
+hands-on lesson on 3 and 4. But the rungs it *does* use come in order, and no sentence
+drops more than one level below the one before it.
+
+**The two failures, and both are common:**
+
+- **Jumping.** Going from "o Pod é a menor unidade" straight to `spec.containers[].name`
+  skips rungs 2 and 3, and the listener is now copying syntax for something they cannot
+  picture. A useful tell: if you need "basicamente" or "ou seja" to glue two sentences
+  together, you probably skipped a rung between them.
+- **Never descending.** A lesson that stays on rung 1 from start to finish sounds wise
+  and teaches nothing anyone can do on Monday. **Every concept lesson ends lower than it
+  started.**
+
+**Climb back up exactly once, at the close.** The last sentences return to rung 1 and
+restate the mental model now that the detail is behind it — "então o Pod é isso: a
+caixa". That is what makes a lesson feel finished. Climbing back up in the middle reads
+as losing the thread.
+
+The visuals ride the same ladder, rung for rung — `realistic-visuals.md` maps each rung
+to the artefact that belongs on screen for it. Keeping the two aligned is what makes the
+narration and the picture feel like one explanation instead of two.
 
 ### After the introduction: callbacks, not another story
 

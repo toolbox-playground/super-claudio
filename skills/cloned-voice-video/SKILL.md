@@ -78,16 +78,28 @@ Read the reference for the stage you are in. Do not load them all:
    trade-off, a summary. **Replicate the frame, never fake the facts:** build the
    chrome in HTML, but the command output, manifests and error messages inside it must
    be real. See `references/realistic-visuals.md`.
-6. **Display text equals spoken text.** With Eleven v4 you send the real spelling;
+6. **Explain from the top down, one level at a time.** Every theme, technology,
+   mechanism or concept is presented at the highest useful level of abstraction first —
+   the problem, then the mental model, with a visual or an example holding it up — and
+   only then descends: the parts and how they relate, then the real world, then the
+   command or the YAML that declares it. One rung at a time, never skipping, and the
+   script and the visuals descend together: the narration drops a level and the camera
+   drops with it, from the whole architecture to a close-up of one box to the terminal.
+   Starting at the bottom — a command, a field, a flag — is the fastest way to make a
+   correct video that teaches nobody, and never leaving the top is the other half of the
+   same failure: a concept lesson ends lower than it started, and climbs back up only
+   once, at the close. The ladder is in `references/narration-script.md`; the artefact
+   that belongs on each rung is in `references/realistic-visuals.md`.
+7. **Display text equals spoken text.** With Eleven v4 you send the real spelling;
    there is no phonetic respelling layer. Captions and reveals index the same words
    the model read. (The respelling hack existed only for a local model that mangled
    English terms — see `references/open-source-alternative.md`.)
-7. **One stage at a time, with the creator in the loop.** The ementa is approved before
+8. **One stage at a time, with the creator in the loop.** The ementa is approved before
    a script is written; a script is approved before audio is generated; the audio exists
    before a frame is designed. Integrity checks catch broken audio, but they do not
    judge teaching or delivery — only the creator does. Never run ahead of an approval
    to "save time": redoing twenty lessons costs far more than one question.
-8. **ElevenLabs is the voice, and the creator's own voice is the point.** There is no
+9. **ElevenLabs is the voice, and the creator's own voice is the point.** There is no
    engine choice to offer. The local open-source route was measured and abandoned —
    `references/open-source-alternative.md` records why, and exists only so the question
    is not re-opened. Resolve *whose* voice before generating anything.
@@ -151,8 +163,9 @@ source per factual claim) and `narration/aula.txt` (the exact words to be spoken
 nothing else in that file).
 
 Write them as a teacher would: open a concept with the problem it solves rather than
-its definition, call back to what earlier lessons established, use an analogy when a
-concept is genuinely hard, and keep verbosity at 1–3 on the 0–5 dial.
+its definition, **descend the abstraction ladder one rung at a time** — mental model,
+parts, real world, declaration — call back to what earlier lessons established, use an
+analogy when a concept is genuinely hard, and keep verbosity at 1–3 on the 0–5 dial.
 See `references/narration-script.md`.
 
 Hand the scripts over and wait. This is the last free gate — everything after it costs
