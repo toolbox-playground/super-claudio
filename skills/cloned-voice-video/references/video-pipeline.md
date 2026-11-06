@@ -176,6 +176,45 @@ beat guidance in `narration-script.md`. When a repeated word is genuinely the ri
 trigger for two different moments, `revealMsNth(words, target, nth, fallback)` selects
 which occurrence.
 
+### Check the reveals before rendering, every time
+
+```bash
+node scripts/studio/check-reveals.mjs <slug>
+```
+
+It reads the composition's `config.ts` and its aligned `voice.*.json`, resolves every
+`revealWord` + `nth` against the measured word times, and prints **the second each shot
+actually lands on** — flagging a trigger that does not exist and any shot that resolves
+*earlier* than the one before it.
+
+**This is not optional and it is not the same as counting occurrences by eye.** Counting
+tells you a word appears twice; it does not tell you which of the two is the moment you
+meant. Only the resolved timestamp does. On a real lesson the output reads:
+
+```
+linkedin-02-1 — 178.9s, 499 words
+
+    10.1s  "cartão" nth 1  (of 3)
+   125.8s  "direita" nth 1  (of 1)
+   132.8s  "Configurações" nth 1  (of 1)
+   115.9s  "personalizada" nth 1  (of 2)  ✗ OUT OF ORDER
+```
+
+That lesson said "personalizada" twice — once in passing a minute earlier, once naming
+the UI block the shot belongs to. `nth: 1` put the settings page on screen 26 seconds
+early and pushed everything after it out of place. The config looked right, the render
+succeeded, and the only other way to find it was watching three minutes of finished
+video.
+
+Two things the output tells you that the config cannot:
+
+- **a shot whose time goes backwards** is a wrong `nth`, nearly always
+- **a shot resolving within a second or two of the end** has no screen time; it is a
+  flash. Move it to an earlier trigger rather than leaving it in.
+
+Run it after alignment and before `remotion render`, on every composition. It costs one
+command and it catches a class of bug that is invisible until the video exists.
+
 Since the spoken text and the display text are now identical, `revealWord` matches the
 narration file directly. There is no respelling layer to reconcile.
 
@@ -198,6 +237,8 @@ Always:
   contradicting its own counter) were found only this way
 - check a frame mid-narration to confirm reveals are still staged progressively, not
   all visible from frame 0
+- run `check-reveals.mjs` on the composition **before** rendering, and again if the
+  narration changed — a reveal that resolves out of order is a wrong `nth`
 - spot-check one reveal against the narration: find the second the word is spoken and
   confirm the matching visual is on screen there
 
@@ -225,9 +266,14 @@ Always:
 - **A repeated trigger word fires on the first occurrence, and the first is rarely the
   one you meant.** A 30-second script said "armazenamento" twice — once listing what a
   Pod shares, once opening the section about it — and the reveal landed 7 seconds early,
-  on a visual that had not been explained yet. Before wiring a `revealWord`, count its
-  occurrences in the narration and pass `nth` when there is more than one. It is a
-  one-line check and it is invisible in the config.
+  on a visual that had not been explained yet.
+
+  This entry used to end with "count its occurrences and pass `nth`". That advice was
+  already here, was read, and the bug still happened **three times in four lessons** of
+  the next course — because counting tells you a word repeats, not which repetition is
+  the moment you meant. Run `check-reveals.mjs` instead: it resolves every trigger
+  against the measured audio and prints the second it lands on. Advice you have to
+  remember to apply is weaker than a command that prints the answer.
 - A full-bleed screenshot of a white UI swallows white captions. The bottom scrim in
   `realistic-visuals.md` is not optional.
 - A focus or mark rectangle measured against the *shot* size instead of the *authored
