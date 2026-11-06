@@ -94,9 +94,12 @@ Read the reference for the stage you are in. Do not load them all:
    there is no phonetic respelling layer. Captions and reveals index the same words
    the model read. (The respelling hack existed only for a local model that mangled
    English terms — see `references/open-source-alternative.md`.)
-8. **One stage at a time, with the creator in the loop.** The ementa is approved before
-   a script is written; a script is approved before audio is generated; the audio exists
-   before a frame is designed. Integrity checks catch broken audio, but they do not
+8. **One stage at a time, with the creator in the loop — and production goes module by
+   module.** The ementa is approved before a script is written; a script is approved
+   before audio is generated; the audio exists before a frame is designed. Then audio
+   and video are produced **one module at a time**, finished lessons handed over at each
+   module boundary: never the whole course's audio up front, and never audio running
+   ahead of the video it was paid for. Integrity checks catch broken audio, but they do not
    judge teaching or delivery — only the creator does. Never run ahead of an approval
    to "save time": redoing twenty lessons costs far more than one question.
 9. **ElevenLabs is the voice, and the creator's own voice is the point.** There is no
@@ -171,6 +174,40 @@ See `references/narration-script.md`.
 Hand the scripts over and wait. This is the last free gate — everything after it costs
 credits.
 
+### Stages 3 and 4 run together, **one module at a time**
+
+Stage 3 is the audio and stage 4 is the video, and they are described separately below
+because they are different work. They are not *scheduled* separately.
+
+**The production unit is the module, not the course and not the lesson.** Generate the
+audio for one module, render that module's videos, hand the finished lessons over, and
+only then start the next module. A course of six modules goes through this loop six
+times, with the creator looking at finished lessons each time.
+
+Two failures this prevents, and both are expensive:
+
+- **Generating the whole course's audio up front.** If anything is wrong — the voice
+  settings, the register, a term the model mangles, a factual error nobody caught — it
+  is wrong in sixty lessons, and every one of them was paid for. The creator finds out
+  at the first render, which is after all the money is spent.
+- **Audio finished and video not.** Narration sitting in a folder is not a lesson; it
+  is credits already spent on something nobody can watch. Keeping the two in step means
+  the course is always some number of *finished lessons* plus some number of *not yet
+  started* ones — never a pile of orphan MP3s.
+
+Inside a module the order still holds, strictly: every lesson's audio before any of that
+module's video, because the frame durations come from the measured audio. The rule is
+about the batch size, not about the order.
+
+**Stop at the module boundary and hand the work over.** That is a gate like any other in
+this skill: the creator watches the finished lessons and says go, or says fix. Never
+roll into the next module to keep momentum — momentum is what spends a course's budget
+on something the creator would have rejected after three lessons.
+
+A module that turns out to be very large is still one unit; if a single module would
+spend more than roughly a quarter of the creator's monthly quota, say so and offer to
+split it in half rather than silently running it.
+
 ### Stage 3 — the audio, in ElevenLabs. **Always before any video.**
 
 **Ask which voice to use before generating anything** — the skill never guesses one,
@@ -192,7 +229,9 @@ holes, clipping. A lesson that fails is regenerated, not patched.
 See `references/elevenlabs-voiceover.md`.
 
 **The audio is the hard part and the expensive part. The video is cheap and local, so
-it is built on top of finished audio — never the other way round.**
+it is built on top of finished audio — never the other way round.** That is why the
+order inside a module is fixed, and why the module is where it stops: see the loop
+above.
 
 ### Stage 4 — the video, synchronized to that audio
 
