@@ -54,6 +54,17 @@ into words on whitespace, take each word's first start and last end, and write t
 caption array directly. These times are exact, so reveals land on the right frame.
 `scripts/studio/timestamps-to-srt.mjs` writes that SRT, which `build-voice.mjs` then reads.
 
+**With no audio at all — drafting the visuals first.** `scripts/studio/draft-timing.mjs`
+spreads the narration across the duration the character count implies (934 chars per
+minute), weighting words by length and by the pauses punctuation buys. It writes the
+same `voice.<name>.json` the renderer reads, so the whole visual layer — shots,
+reveals, captions — can be built, rendered and reviewed **before a single credit is
+spent on audio**. Use it to settle a layout or compare approaches.
+
+It is a draft, and the file says so: `voice: "draft"`. The moment real audio exists,
+re-run the real alignment and re-render. Never deliver a video timed this way as
+finished work.
+
 **From a downloaded MP3 (web-app route).** No timings exist, so
 `scripts/studio/align-wav.mjs` estimates them:
 
@@ -157,6 +168,17 @@ Always:
   config and only shows up in an extracted frame. Check a frame before delivering.
 - A background command piped into `tail` prints nothing until it exits — you lose all
   progress visibility on a long run.
+- **zsh aborts a command chain on a glob that matches nothing.** `rm -f "$OUT"/*.mp4`
+  in an empty directory does not quietly succeed: it fails with `no matches found` and
+  everything after `&&` is skipped. A render loop written that way runs zero renders
+  and still reports exit 0, because the last command on the line succeeded. Delete a
+  known filename (`rm -f "${OUT:?}/name.mp4"`) rather than globbing.
+- **A repeated trigger word fires on the first occurrence, and the first is rarely the
+  one you meant.** A 30-second script said "armazenamento" twice — once listing what a
+  Pod shares, once opening the section about it — and the reveal landed 7 seconds early,
+  on a visual that had not been explained yet. Before wiring a `revealWord`, count its
+  occurrences in the narration and pass `nth` when there is more than one. It is a
+  one-line check and it is invisible in the config.
 - A full-bleed screenshot of a white UI swallows white captions. The bottom scrim in
   `realistic-visuals.md` is not optional.
 - A focus or mark rectangle measured against the *shot* size instead of the *authored

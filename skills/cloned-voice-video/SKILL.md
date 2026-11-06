@@ -185,7 +185,9 @@ it is built on top of finished audio — never the other way round.**
 
 1. **Alignment** — derive word timings. The API's `with-timestamps` gives exact
    character times; from a web-app download, `scripts/studio/align-wav.mjs` estimates
-   them. Either way the output is `voice.<name>.json`.
+   them. With no audio yet, `scripts/studio/draft-timing.mjs` estimates them from the
+   script alone, so a layout can be built and reviewed before any credits are spent —
+   a draft, never a deliverable. Either way the output is `voice.<name>.json`.
 2. **Artefacts** — build what the lesson shows, before the composition. Research the
    real thing, then build an HTML replica on `templates/replica.css` and shoot it with
    `scripts/studio/shoot-html.mjs`. See `references/realistic-visuals.md`.
