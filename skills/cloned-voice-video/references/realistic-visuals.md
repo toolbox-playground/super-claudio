@@ -174,6 +174,12 @@ included — and never a real account id, hostname, internal URL or token.
 
 ### 1. Build an HTML replica and screenshot it — the default
 
+`templates/replica.css` is the stylesheet that draws the chrome, and
+`templates/example-page.html` is a worked page using it — a real `kubectl get hpa`
+session above the manifest that explains it. Copy the example next to the lesson's
+pages and replace the content; it is faster than starting from a blank file, and it
+shows the markup conventions (`shot-size`, the inline `.ln` spans) in use.
+
 Write the artefact as a standalone HTML page, then render it to PNG with headless
 Chrome. `scripts/studio/shoot-html.mjs` does this with no new dependency:
 

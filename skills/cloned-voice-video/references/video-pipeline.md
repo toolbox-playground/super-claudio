@@ -12,6 +12,55 @@ the composition comes from the narration audio that already exists. Nothing is g
 | Output | 1920x1080 h264 + aac, 30 fps |
 | Render cost | ~20s of video in ~1 min on 6 cores — cheap, unlike the narration |
 
+## Bootstrapping the studio — first run on a new machine
+
+There is **one** studio per creator, reused by every course and every video; the
+per-lesson folders live inside it. If `~/Movies/video-shorts/studio` already exists,
+skip this section. If it does not — a colleague's first run — build it before anything
+else, because nothing renders without it.
+
+**Prerequisites, all of them already on a normal dev Mac:**
+
+| Need | Why | Check |
+|---|---|---|
+| Node 20+ | Remotion and every script | `node -v` |
+| `ffprobe` and `ffmpeg` on PATH | `build-voice.mjs` measures the MP3; `align-wav.mjs` finds the pauses | `ffprobe -version` |
+| Chrome or Chromium | `shoot-html.mjs` screenshots the replicas headlessly | it is found automatically at the usual paths, and says so loudly if it is not |
+| **No Docker** | nothing in this pipeline uses it | — |
+
+Remotion renders with its own native compositor, installed as a dependency. There is
+nothing to compile and no container to build.
+
+```bash
+mkdir -p ~/Movies/video-shorts/studio && cd ~/Movies/video-shorts/studio
+npm init -y
+npm i remotion@^4.0.513 @remotion/cli@^4.0.513 react@^19 react-dom@^19
+npm i -D typescript @types/react
+mkdir -p src/videos public scripts
+```
+
+Four files, once:
+
+- `src/index.ts` — `import {registerRoot} from 'remotion';` plus
+  `import {RemotionRoot} from './Root';` and `registerRoot(RemotionRoot);`
+- `src/Root.tsx` — an empty `RemotionRoot` returning a fragment; every lesson adds its
+  own `<Composition>` to it
+- `remotion.config.ts` — `Config.setVideoImageFormat('jpeg')` and
+  `Config.setOverwriteOutput(true)`
+- `tsconfig.json` — `jsx: "react-jsx"`, `moduleResolution: "Bundler"`,
+  `resolveJsonModule: true`, `strict: true`, `noEmit: true`, `include: ["src"]`
+
+Then copy this skill's own assets in — they are not duplicated per lesson:
+
+```bash
+cp <skill>/scripts/studio/*.mjs  ~/Movies/video-shorts/studio/scripts/
+cp <skill>/templates/ShotPan.tsx ~/Movies/video-shorts/studio/src/
+```
+
+`npx remotion compositions` is the check: it prints the (initially empty) list without
+error once the studio is sound. Run it before writing a lesson, not after a render
+fails.
+
 ## Project layout
 
 ```

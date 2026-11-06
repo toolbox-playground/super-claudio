@@ -196,6 +196,11 @@ it is built on top of finished audio — never the other way round.**
 
 ### Stage 4 — the video, synchronized to that audio
 
+**On a machine that has never rendered one of these, build the studio first** — one
+Remotion project at `~/Movies/video-shorts/studio`, reused by every course. The exact
+dependencies, files and the one command that proves it works are in
+`references/video-pipeline.md`. Node, ffmpeg and Chrome, no Docker.
+
 1. **Alignment** — derive word timings. The API's `with-timestamps` gives exact
    character times; from a web-app download, `scripts/studio/align-wav.mjs` estimates
    them. With no audio yet, `scripts/studio/draft-timing.mjs` estimates them from the
