@@ -35,7 +35,7 @@ scripts in full at the bottom. Per lesson in the appendix:
 ## 01-2-o-recrutador-busca
 ### O recrutador não navega, ele busca
 
-`01-2-o-recrutador-busca/narration/aula.txt` — 2.410 bytes · 2.328 caracteres · ~2,6 min
+`01-2-o-recrutador-busca/narration/aula.txt` — 2.328 caracteres · ~2,5 min
 
 ```text
 <o texto exato, copiado do arquivo>
@@ -50,11 +50,13 @@ Three rules for the appendix:
 - **Say so explicitly:** this is the exact text that goes to the TTS, nothing is added
   or reformulated at generation time. The creator needs to know that editing here
   changes the audio.
-- **Report both counts.** `wc -c` returns *bytes*, and an accented character in UTF-8
-  takes two of them, so in Portuguese it overstates the real character count by about
-  3%. The duration estimate uses bytes, because the ~934 per minute rate was measured
-  that way; the ElevenLabs budget and its 10,000-per-request limit count *characters*.
-  Reporting one number as if it were both is how a lesson silently approaches the limit.
+- **Count characters, not bytes.** `wc -c` returns *bytes*, and an accented character
+  in UTF-8 takes two of them, so in Portuguese it overstates the real count by about 3%.
+  **The ~934 per minute rate is characters per minute** — re-measured at 929 on a real
+  pt-BR lesson (1,373 characters → 88.64 s). Both the duration estimate and the
+  ElevenLabs budget, including its 10,000-per-request limit, are in characters.
+  Reporting bytes as if they were characters inflates every duration in the course by
+  3% and hides how close a long lesson is to the request limit.
 
 ## Delivery mode comes first
 
@@ -402,8 +404,11 @@ rewrite the whole script.
 Check the character count of `narration/aula.txt` before generating:
 
 ```bash
-tr -d '\n' < narration/aula.txt | wc -c
+python3 -c "import sys; print(len(sys.stdin.read().replace(chr(10), '')))" < narration/aula.txt
 ```
+
+`wc -c` would return bytes, which in Portuguese runs about 3% above the real character
+count. Use it only if you want that as a safety margin, and say which one you measured.
 
 A 2–4 minute lesson is 1,900–3,700 characters; the 10-minute ceiling is ~9,300, which
 still fits Eleven v4's 10,000-character request in one go. Past ~9,500, split the

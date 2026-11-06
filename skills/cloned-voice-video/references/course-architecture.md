@@ -113,7 +113,13 @@ The conversion from script to runtime, measured on real pt-BR narration:
 | long lesson | ~5,600 | 6 min |
 | the ceiling | ~9,300 | 10 min |
 
-Measured on an ElevenLabs Eleven v4 generation of a real pt-BR lesson.
+Measured on an ElevenLabs Eleven v4 generation of a real pt-BR lesson, and confirmed on
+a second one: 1,373 characters rendered 88.64 s, which is 929 characters per minute.
+
+**Count characters, not bytes.** `wc -c` returns bytes, and in Portuguese accents make
+that about 3% higher than the character count. Use
+`python3 -c "import sys;print(len(sys.stdin.read().replace(chr(10),'')))" < aula.txt`,
+or accept the 3% as a safety margin — but never report bytes as characters.
 It is slower than it looks: an earlier estimate of 1,200 characters per minute came
 from a different engine and overshot the runtime by 29%. Re-measure after any change
 of voice or settings, and treat the number as a budget, not a guarantee.
