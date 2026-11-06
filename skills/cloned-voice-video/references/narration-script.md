@@ -13,6 +13,49 @@ Two files per lesson:
 `narration/aula.txt` is pasted or posted verbatim to the TTS. A stray heading, stage
 direction or bracketed note in that file gets read out loud.
 
+## Hand the creator the words, not a description of the words
+
+**When the scripts are presented for approval, the full text of every
+`narration/aula.txt` goes into the roadmap, as an appendix at the end.** Not a summary,
+not a character count, not a link to a file — the literal text, in a code block, per
+lesson, in course order.
+
+This is not optional and it is not a formatting preference. The approval gate before
+stage 3 is the last free one, and it is specifically the gate on *the words that will be
+spoken*. A creator who is shown "aula 01-1 — boas-vindas — 1.412 caracteres — objetivo:
+abrir o curso" has been shown a promise, not a script. They cannot approve delivery,
+catch a phrase that does not sound like them, or notice a claim they would not make,
+because none of that is on the page. The files exist on disk, but a gate that requires
+opening twenty-one files in a terminal is a gate nobody passes through.
+
+So the roadmap carries two things by the end of stage 2: the ementa at the top, and the
+scripts in full at the bottom. Per lesson in the appendix:
+
+~~~md
+## 01-2-o-recrutador-busca
+### O recrutador não navega, ele busca
+
+`01-2-o-recrutador-busca/narration/aula.txt` — 2.410 bytes · 2.328 caracteres · ~2,6 min
+
+```text
+<o texto exato, copiado do arquivo>
+```
+~~~
+
+Three rules for the appendix:
+
+- **It is a copy, never a retelling.** Generate it from the files themselves, so the two
+  cannot drift. If the creator edits a line, change the file and regenerate the
+  appendix — never only one of them.
+- **Say so explicitly:** this is the exact text that goes to the TTS, nothing is added
+  or reformulated at generation time. The creator needs to know that editing here
+  changes the audio.
+- **Report both counts.** `wc -c` returns *bytes*, and an accented character in UTF-8
+  takes two of them, so in Portuguese it overstates the real character count by about
+  3%. The duration estimate uses bytes, because the ~934 per minute rate was measured
+  that way; the ElevenLabs budget and its 10,000-per-request limit count *characters*.
+  Reporting one number as if it were both is how a lesson silently approaches the limit.
+
 ## Delivery mode comes first
 
 The same lesson content becomes three different scripts depending on where it will be

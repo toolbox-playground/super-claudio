@@ -203,6 +203,10 @@ Write the structure to `<curso-slug>/roadmap.md` with, per lesson: an id, the ti
 the one-line objective, the target duration and — this column is not optional — **the
 artefact the lesson shows**.
 
+The same file grows an appendix at the end of stage 2, carrying the full text of every
+`narration/aula.txt`. That appendix is what the creator actually approves before any
+credit is spent — see `narration-script.md`.
+
 The artefact is the thing a practitioner actually looks at when they do this: a
 terminal running a specific command, a manifest, a console page, a dashboard panel, a
 PR page. Naming it in the roadmap is what stops a course drifting into sixty lessons
