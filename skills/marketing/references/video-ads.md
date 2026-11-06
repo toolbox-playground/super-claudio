@@ -84,16 +84,18 @@ Predis.ai generates content designed to look like organic posts, then runs them 
 
 Best for: brands wanting native-feel TikTok ads with lower CPM through Spark Ads.
 
-## Lapis — Best AI Ad Generator for TikTok (2026)
+## Lapis — Static TikTok Ad Creatives (not video)
 
-Lapis is purpose-built for TikTok, auto-sizing creatives for vertical-first placements (9:16, 1:1) with built-in performance forecasting and visuals tuned to TikTok's native aesthetic.
+> **Correction:** Lapis is a static-image ad generator, not a video tool — trylapis.com's own comparison page positions Creatify, not Lapis, as the video-capable option. Consider it alongside `image-ads.md` tools rather than as a video alternative.
+
+Lapis is purpose-built for TikTok-native static creatives, auto-sizing images for vertical-first placements (9:16, 1:1) with built-in performance forecasting and visuals tuned to TikTok's native aesthetic.
 
 1. Go to trylapis.com
 2. Input product details or URL
 3. Select TikTok ad format
-4. Generate scroll-stopping visuals optimized for the platform algorithm
+4. Generate scroll-stopping static visuals optimized for the platform algorithm
 
-Best for: high-volume TikTok campaigns with creative performance scoring.
+Best for: high-volume TikTok campaigns needing static creative with performance scoring. For actual video generation, use Creatify, Topview AI, or Arcads instead.
 
 ## AdCreative.ai — Predictive Scoring for High-Volume Campaigns
 
@@ -171,7 +173,7 @@ HeyGen is the leading AI avatar video platform for brand content and UGC-style t
 
 ## Arcads — AI UGC Video Actors (1,000+ Actors)
 
-Arcads generates talking-head UGC-style video ads using 1,000+ diverse AI actors — the largest AI actor library in 2026, purpose-built for Meta and TikTok ad testing.
+Arcads generates talking-head UGC-style video ads using a large library of diverse AI actors (independent reviews cite 300+, not the 1,000+ sometimes claimed) — purpose-built for Meta and TikTok ad testing.
 
 1. Go to arcads.ai
 2. Write or paste your ad script (15–60 seconds)
@@ -256,7 +258,7 @@ AdsTurbo (adsturbo.ai, launched March 20, 2026) specializes in high-volume UGC-s
 
 1. Go to adsturbo.ai
 2. Paste a product URL — AI auto-pulls images + description
-3. Select an AI actor from 1,000+ options (trained from real creators)
+3. Select an AI actor from a library independent reviews put at 260+ options (the site's "trained from real creators" claim is not independently verified)
 4. Optionally use Ad Clone to base the video on a winning competitor format
 5. Batch-generate 10–15 hook/CTA/avatar/language variants in one session
 
