@@ -230,7 +230,9 @@ A beat is one sentence that introduces one visual. Mark them in `script.md`:
 ```
 
 Name the **artefact** on a `shot` beat, not just the idea: which command, which file,
-which page. That line is what gets built as an HTML replica before the render — see
+which page. And order them the way the arc runs — the problem drawn, then the
+architecture, then the CLI; never the CLI first. `realistic-visuals.md` has the
+sequence and why a split screen is the wrong answer to it. That line is what gets built as an HTML replica before the render — see
 `realistic-visuals.md`. A beat whose artefact you cannot name is usually a beat that
 has not been thought through.
 

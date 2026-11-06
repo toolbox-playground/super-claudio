@@ -39,6 +39,49 @@ ask: *what does a practitioner actually look at when they do this?* That is the 
 A lesson that is *all* screenshots is as flat as one that is all boxes. The rhythm is:
 artefact for what exists, shapes for what does not, alternating.
 
+## The artefact order follows the storytelling arc
+
+`narration-script.md` says a concept opens with the problem, not the definition. The
+visuals obey the same order, and getting this wrong is the most common way a technical
+video ends up correct and unteachable.
+
+**Never open a concept on a terminal.** A CLI answers *how do I see this*, which is a
+question the viewer does not have yet. It is the payoff, not the premise.
+
+The sequence that works, for any concept:
+
+| Act | Artefact | What it does |
+|---|---|---|
+| **1 — the need** | a diagram of the problem | shows the pain before the thing existed |
+| **2 — the concept** | the rebuilt architecture | names the parts and how they relate |
+| **3 — the real world** | the terminal, the manifest, the console | the same thing, where the viewer will meet it |
+
+**The problem deserves its own artefact.** This is the step most often skipped. A Pods
+lesson that opens on the Pod diagram has already given away the answer; one that opens
+on *two loose containers, each with its own IP and its own disk, and a red line where
+the sharing should be* makes the viewer feel the gap the Pod fills. Build that page
+too — it is the same replica technique pointed at the "before".
+
+**Mark the turn into act 3.** Cutting straight from a diagram to a terminal reads as a
+glitch. A held card — one line of kicker, one word of title, about a second and a half
+over the incoming artefact — tells the viewer the register is changing. Land it on the
+sentence that says so ("agora vamos ver isso no mundo real").
+
+## One artefact on screen at a time
+
+A layout showing the diagram and the terminal side by side was built and **rejected**,
+and the reason generalises: a page authored at 1600px rendered into a 634px pane is
+unreadable, and even when it is legible the viewer does not know which half to read.
+Splitting the frame halves both artefacts and doubles the decision.
+
+Show one, fill the frame with it, then cut. The connection between the diagram and the
+terminal is made by the narration and by **showing them in sequence on the same point**
+— the two containers in the drawing, then `READY 2/2` in the output — not by putting
+them side by side and hoping.
+
+The exception is a genuine before/after of the *same* artefact, where the comparison
+is the content.
+
 ## Research the real thing before drawing anything
 
 Before building any visual, **look at how the real one looks.** Search for the product's
