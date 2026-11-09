@@ -53,6 +53,8 @@ UGC-native output style consistently outperforms polished brand ads on TikTok.
 
 **2026 updates:** 1,500+ AI avatars (up from previous library), 75+ languages, 140+ voices with voice cloning; analytics integration — the AI learns from real ad performance data and auto-adjusts future scripts and visuals. G2 Summer 2026 Leader with 1,500+ reviews at 4.8/5. Pricing: Free ($0, 10 credits), Starter ($39/mo), Pro ($99/mo, includes competitor tracker + ad launcher + custom avatars).
 
+> **Note (Nov 2026 scan):** Multiple third-party pricing trackers report Creatify restructured its plans around Oct 2026 (replacing Starter with new tiers) and discontinued AI Shorts, Product Video, and Video Translation features around end of May 2026. These are third-party trackers, not confirmed directly against creatify.ai — verify current pricing and feature list on the site before quoting specific numbers.
+
 ## aicreator.co — Automated Ad Video (Defunct as Ad Tool)
 
 > **Do not recommend (May 2026):** aicreator.co no longer operates as a product video ad generator — the domain now presents as an AI tutorials and learning blog with no ad creation features. Use Creatify, Predis.ai, AdStellar, or Lapis instead.
@@ -300,7 +302,7 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
-- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Video Generation** — powered by Dreamina Seedance 2.0; reported (single-source, Nov 2026 scan, not independently confirmed) upgrade to Seedance 2.5 around Aug 3, 2026, doubling max clip length to ~30s and raising the multi-modal reference upload cap from 9 to 50; rollout reportedly limited to select paid advertisers/markets, not universal GA
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
