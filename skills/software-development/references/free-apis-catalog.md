@@ -46,6 +46,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | ip-api.com | IP to location | ip-api.com | None (rate limited) |
 | **IPinfo Lite** | IP to country + ASN lookup for IPv4 and IPv6; unlimited requests, no rate limits on free tier; data updated daily; CC BY-SA 4.0 license; requires free account token | ipinfo.io/lite | Free token |
 | REST Countries | Country data | restcountries.com | None |
+| **Nager.Date** | Public holidays by country — `/api/v3/PublicHolidays/{year}/{country}`; 100+ countries; no documented rate limit | date.nager.at | None |
 
 ## Transportation & Aviation
 
@@ -104,7 +105,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | Google Gemini API | LLM inference (Gemini 3.5 Flash free in AI Studio — new default since May 19, 2026; daily Gemini 3.1 Pro allotment for harder reasoning), 1M token context, multimodal | ai.google.dev | Free key (generous limits) |
 | Groq | Ultra-fast LLM inference (LPU hardware); Llama 4 Scout, Llama 4 Maverick, Kimi K2 (1T MoE), Qwen3 235B, Gemma, Mistral, DeepSeek R1 and more; no credit card required | groq.com | Free key |
 | OpenRouter | Access to 100+ free AI models via one API; notable free models (July 2026): **NVIDIA Nemotron 3 Ultra** (550B MoE, 1M context, `nvidia/nemotron-3-ultra-550b-a55b:free`) and **OpenAI GPT-OSS** (20B Apache 2.0 open-weight, `openai/gpt-oss-20b:free`); 25+ free models total; 50 req/day free, 1,000/day after $10 purchase | openrouter.ai | Free key |
-| GitHub Models | 40+ AI models (GPT-4o, Llama, DeepSeek-R1, Mistral, Phi, xAI, Cohere) via OpenAI-compatible API; uses your GitHub account — no separate key or signup; free tier rate-limited (e.g. GPT-4o: 10 RPM / 50 RPD); opt-in paid tier for higher limits | github.com/features/models | GitHub account (free) |
+| **GitHub Models — DEFUNCT (retired July 30, 2026)** | Closed to new customers June 16, 2026; fully retired July 30, 2026 per GitHub's own changelog — playground, model catalog, inference API, and BYOK all shut down for every customer, including existing ones; `models.github.ai` endpoints no longer resolve. No drop-in replacement; GitHub points users to GitHub Copilot or Microsoft Foundry instead. | github.com/features/models (dead) | — |
 | Cerebras Inference | Ultra-fast LLM inference on wafer-scale silicon (2,600+ tok/s); Llama 3.3 70B, Qwen3 32B/235B, and more; 1M tokens/day free, no credit card required; 30 RPM on free tier | inference.cerebras.ai | Free key |
 | Cloudflare Workers AI | Edge AI inference at 300+ global locations; Llama 3.1 8B, Mistral 7B, Phi-2, Gemma, SDXL (image gen), Whisper (ASR), and 40+ models; 10,000 neurons/day free (no credit card required); unique low-latency for globally distributed apps | developers.cloudflare.com/workers-ai | CF account (free) |
 
