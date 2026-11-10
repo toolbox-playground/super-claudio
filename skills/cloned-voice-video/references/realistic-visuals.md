@@ -220,12 +220,32 @@ for their name, email, account id, tokens, internal hostnames and open tabs befo
 goes near a frame — a 4K screenshot zoomed to 40% reveals details nobody noticed at
 full view.
 
-### 3. An image from the internet — last resort
+### 3. An image from the internet — go and find it
 
-Only with a licence that permits reuse, and attributed on screen. The Kubernetes
-documentation diagrams are CC BY 4.0, usable with credit; most vendor blog diagrams
-are not. Downloading a file is an action to ask the creator about first, not to
-assume. Never scrape a real person's profile or a real company's private console.
+Two jobs, and the second is the one that gets forgotten: for what you cannot build
+(a paper's own figure, a vendor's product screenshot), **and to give a long visual a
+second angle** — see the next section. Searching for these is the default for a lesson,
+not something to wait to be asked.
+
+- **Prefer sources you can credit by name.** A figure from the paper that introduced the
+  idea, an official docs diagram, an engineering blog's own illustration. Put the author
+  and the address on screen. The Kubernetes documentation diagrams are CC BY 4.0; most
+  vendor blog diagrams carry no licence, so credit them and say so in the delivery.
+- **Search engines may block you.** An image search will often answer with a captcha.
+  Do not try to solve it: go to the source pages directly (the paper, the docs, the
+  blog) and read the image URLs off them.
+- **Tell the creator what you took.** Downloading these images for the lesson is
+  expected, so it is not a question per file — but the delivery message lists each one
+  and where it came from, so the creator can veto any of them. Images the creator sends
+  themselves are theirs to place; credit them on screen the same way.
+- **Check it before it goes in a frame.** Many web images arrive cropped (a title cut off,
+  half an icon), watermarked, or tiny. Crop to the clean region, and never display one
+  larger than its native pixels allow.
+- Never scrape a real person's profile or a real company's private console.
+- **Never use the creator's own promotional art as an illustration of something else.**
+  A thumbnail of one of their YouTube videos is a poster, not a picture of a product.
+  When a lesson names a tool, show the tool: a screenshot of the CLI, the IDE or the
+  site.
 
 ## Shooting for a zoom
 
@@ -247,6 +267,70 @@ stay valid when the page is re-shot at another scale.
 **Author at the size a human reads it at**, then zoom. A terminal at 13px with 80
 columns, zoomed to 40%, is comfortably readable. A terminal authored at 40px to "make
 it legible" looks like a toy and cannot be zoomed into at all.
+
+## No single visual stays up for more than about 15 seconds
+
+A lesson that holds one drawing, one slide or one screenshot for 25 or 30 seconds,
+with nothing to do but zoom in, zoom out and ring a corner, reads as a slide with a
+voice over it — **even when every shot is on a spoken word and every zoom is correct.**
+The creator rated exactly such a lesson 7 out of 10 and named the cause: the visual
+never changed, only its framing did.
+
+**The rule.** Whatever the visual is — a Remotion composition, an HTML page you built,
+a slide from the creator's deck, a screenshot, an image from the internet — once it has
+been up for about **15 seconds** (the creator's tolerance runs from 10 to 20), the next
+shot is a **different visual**, not another crop of the same one.
+
+**What does not count as a change:** zooming, zooming out, panning, a `mark` ring, a
+`callout` chip. Those are the same picture. A new picture does.
+
+**What to do instead.** Go and find a second visual that explains the same concept a
+different way and spend the last few seconds on it: 15 seconds on yours, 5 on the one
+you found. Good places to look, in order:
+
+1. the creator's own deck, if they handed one over (`references/source-material.md`);
+2. a figure from the primary source — the paper, the official docs, an engineering post;
+3. a real capture of the thing itself (a terminal, a CLI, a console);
+4. an image the creator sent in the conversation.
+
+Two different drawings of the *same* idea are the point — a loop drawn as a row of
+boxes, then the same loop drawn as a cycle with a robot in it. Do not rebuild what you
+already built; do not fill the gap with something that merely looks busy.
+
+**Audit before rendering, not after.** Group consecutive shots that share an image into
+blocks and print each block's duration; anything over about 15 seconds gets a second
+visual. It is a few lines over the shot list and the `voice.<name>.json` that
+`check-reveals.mjs` already reads:
+
+```js
+// blocks.mjs — node blocks.mjs <slug>
+import {readFileSync} from 'node:fs';
+const dir = `src/videos/${process.argv[2]}`;
+const voice = JSON.parse(readFileSync(`${dir}/voice.caio.json`, 'utf8'));
+const words = voice.captions.aula, total = voice.totalFrames / voice.fps;
+const norm = (w) => w.toLowerCase().replace(/[.,!?;:"“”]/g, '');
+const src = readFileSync(`${dir}/config.ts`, 'utf8');
+const shots = [...src.matchAll(/\{img:\s*'([^']+)'(?:,\s*revealWord:\s*'([^']+)')?(?:,\s*nth:\s*(\d+))?/g)]
+  .map((m) => ({img: m[1], word: m[2], nth: m[3] ? +m[3] : 1}));
+const at = (s) => s.word
+  ? words.filter((w) => norm(w.word) === norm(s.word))[s.nth - 1].startMs / 1000 : 0;
+const blocks = []; let cur = {img: shots[0].img, start: 0, shots: 1};
+shots.slice(1).forEach((s) => {
+  if (s.img === cur.img) { cur.shots++; return; }
+  cur.end = at(s); blocks.push(cur); cur = {img: s.img, start: at(s), shots: 1};
+});
+cur.end = total; blocks.push(cur);
+blocks.forEach((b) => console.log(b.img.padEnd(30), (b.end - b.start).toFixed(1).padStart(6) + 's',
+  String(b.shots).padStart(3), b.end - b.start > 15 ? '  <<< needs a second visual' : ''));
+```
+
+**A softer limit for the real thing.** A slide from the creator's deck, or a real
+terminal capture the narration walks through line by line, can hold a little longer than
+a drawing you made: the viewer is reading something real. Still look for a second angle,
+but it is a judgement call, not a defect.
+
+**This is a video fix, never an audio fix.** Adding visuals touches the shot list only.
+The audio is already paid for — do not regenerate it to make room for an image.
 
 ## The shot list — pans land on words, like reveals
 
@@ -281,8 +365,12 @@ A workable grammar for one lesson: establish wide → zoom to the element as the
 narration names it → cut to a second artefact that proves the claim → back to the
 element, now corrected → pull back.
 
-**Three to seven shots in a 3-minute lesson.** Fewer and it is a static image with a
-voice over it; more and it is a slideshow nobody can follow.
+**One shot every 4 to 6 seconds is a healthy rhythm; a block of one image longer than
+about 15 seconds is not** — see the previous section. (Earlier versions of this skill
+said three to seven shots per three minutes. A lesson built that way was rated 7 out
+of 10: too few changes of picture. A four-minute lesson with 59 shots across 32 blocks
+of image was rated well.) More shots is not the failure it looks like, as long as each
+cut is onto something new and lands on a spoken word.
 
 ## Measuring focus rectangles
 

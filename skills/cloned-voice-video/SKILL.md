@@ -77,7 +77,10 @@ Read the reference for the stage you are in. Do not load them all:
    and keeps its own shapes for what genuinely has no screen: a control loop, a
    trade-off, a summary. **Replicate the frame, never fake the facts:** build the
    chrome in HTML, but the command output, manifests and error messages inside it must
-   be real. See `references/realistic-visuals.md`.
+   be real. **And no single visual stays up for more than about 15 seconds:** past that,
+   cut to a *different* picture of the same idea — a figure from the paper, the
+   creator's deck, a real capture, an image found on the web — because zooming and
+   ringing the same drawing is not a change. See `references/realistic-visuals.md`.
 6. **Explain from the top down, one level at a time.** Every theme, technology,
    mechanism or concept is presented at the highest useful level of abstraction first —
    the problem, then the mental model, with a visual or an example holding it up — and
@@ -251,8 +254,11 @@ dependencies, files and the one command that proves it works are in
 3. **Scene plan** — give every shot, node and panel a `revealWord`, so it lands exactly
    when the narration names it.
 4. **Render** — Remotion renders only scenes that have measured audio.
-5. **Verify and deliver** — extract frames at several timestamps and *look at them*,
-   confirm the MP4 carries an audio stream of the expected duration, then send it.
+5. **Audit the blocks, verify and deliver** — before rendering, measure how long each
+   image stays up and give any block over ~15 seconds a second visual
+   (`references/realistic-visuals.md`). After rendering, extract frames at several
+   timestamps and *look at them*, confirm the MP4 carries an audio stream of the
+   expected duration, then send it.
 
 ## Routing
 

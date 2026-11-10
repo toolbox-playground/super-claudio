@@ -229,6 +229,10 @@ preview one beat before rendering a whole lesson.
 Rendering silently produces a valid-looking MP4 even when a scene is visually broken.
 Always:
 
+- **before rendering:** run the block audit in `references/realistic-visuals.md` — no
+  image should be the same picture for more than about 15 seconds; a long block needs a
+  second visual, not another zoom. Fixing it is a shot-list edit and never touches the
+  audio
 - `ffprobe` the output for both streams and the expected duration — it should match the
   narration plus the final pad
 - `volumedetect` the MP4 to confirm the audio is not silent
