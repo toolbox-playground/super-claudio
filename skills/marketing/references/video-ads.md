@@ -300,7 +300,7 @@ TikTok's own AI toolset inside Creative Center and Ads Manager, now powered by D
 - **Digital Avatars** — AI presenters for UGC-style ads without filming
 - **Voiceover Avatars** — licensed actors voice scripts in 30+ languages
 - **Product Avatars** — AI presenter showcases product on-screen during the ad
-- **Video Generation** — powered by Dreamina Seedance 2.0 (better product consistency, more natural motion, less manual correction post-gen)
+- **Video Generation** — upgraded to Dreamina Seedance 2.5 starting Aug 3, 2026 (rolled out to select paid advertisers first, then wider; better product consistency, more natural motion, less manual correction post-gen vs. the prior Seedance 2.0 base)
 - **Reference to Video** — upload specific images/products and pin them to exact moments in the generated video
 - **Multilingual Dubbing** — auto-dub existing videos for new markets
 - **Auto Selection** — centralizes creator content, product assets, and Symphony-generated creative in one pool; automatically assigns each asset to the placement where it's predicted to perform best; comparable to Meta Advantage+ and Google Performance Max
@@ -323,7 +323,7 @@ Access: business.tiktok.com → Creative Center → Symphony AI (now generally a
 Symphony Agent is TikTok's end-to-end agentic workflow for building full campaigns from a single text prompt. Unlike the Symphony creative tools (which generate individual assets), Symphony Agent orchestrates the full creative pipeline: reads performance signals, writes briefs, matches creators, and coordinates across three TikTok surfaces simultaneously.
 
 **Integrated into three TikTok products:**
-1. **Symphony Creative Studio** — AI chat experience that combines brand goals, TikTok platform insights, and performance signals to generate up to 3 videos per request (~3 min for 12s clip; ~5 min for 20s clip); guided workflow: product brief → insight report → storyboard → final video; powered by Seedance 2.0
+1. **Symphony Creative Studio** — AI chat experience that combines brand goals, TikTok platform insights, and performance signals to generate up to 3 videos per request (~3 min for 12s clip; ~5 min for 20s clip); guided workflow: product brief → insight report → storyboard → final video; powered by Seedance 2.5 since Aug 3, 2026 (previously Seedance 2.0)
 2. **Content Suite** — AI Search that scans thousands of creator videos to surface content aligned with the advertiser's brief, enabling brands to repurpose existing creator content at scale
 3. **TikTok One** — Creator brief generation, discovery, and outreach at scale; supports multi-language filtering for multi-market campaigns
 
@@ -403,7 +403,7 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 
 ## Higgsfield — Cinema Studio Platform
 
-Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.0, Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace, with Cinema Studio 3.5 adding 70+ cinematic camera presets and Soul ID for cross-shot character consistency.
+Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.5, Kling 4.0, Veo 3.1, Wan 2.7, and others in one workspace. **Cinema Studio 4.0** (Aug 12, 2026) upgraded its video base to Seedance 2.5 and added a full Chinese-language UI (Oct 2026) alongside the existing 70+ cinematic camera presets and Soul ID for cross-shot character consistency. **Shorts Studio** (new, Nov 4, 2026) is a standalone tool for 9:16 AI-presenter-led product videos with a reusable presenter across generations.
 
 When you need the highest realism (luxury products, fashion):
 1. Prepare a high-quality product/lifestyle image
@@ -411,3 +411,15 @@ When you need the highest realism (luxury products, fashion):
 3. Write a detailed prompt describing the camera movement and mood
 4. Use Soul ID to lock character/product appearance across shots
 5. Generate — Higgsfield produces cinematic results that feel like professional ad shoots
+
+## Meta Advantage+ Creative — Native Video Generation Inside Meta Ads
+
+Meta's Advantage+ Creative suite (the AI creative layer built into Ads Manager, and the default setup for new Sales/Leads/App campaigns since Feb 2026) rolled out a video-generation tool during 2026 that converts static product/catalog images into video ads directly inside the ad flow — alongside existing AI dubbing, AI-generated background music, and persona-based image generation. Specifics (exact GA date, full feature list) are still being finalized by Meta and worth double-checking in Ads Manager, since trade-press reporting on timing has been inconsistent.
+
+1. Open Ads Manager → create or edit an ad → enable Advantage+ Creative
+2. Upload product/catalog images — Meta's AI can generate a video variant automatically alongside image variants
+3. Review AI-suggested dubbing, music, and text overlays per placement
+4. Publish — Meta's delivery system auto-selects the best-performing asset combination per placement (comparable to TikTok's Auto Selection / Smart+)
+
+Best for: Meta-first advertisers who want AI video generation without leaving Ads Manager or paying for a third-party tool.
+Not ideal for: cross-platform campaigns (Meta-only); teams wanting manual control over every creative variant (use Creatify or Arcads for hands-on production).
