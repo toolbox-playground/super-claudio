@@ -227,13 +227,69 @@ Two jobs, and the second is the one that gets forgotten: for what you cannot bui
 second angle** — see the next section. Searching for these is the default for a lesson,
 not something to wait to be asked.
 
+#### "Find an image" means the image search, not a documentation page
+
+This is the mistake that costs the most, and it was made repeatedly. When a lesson
+introduces a **concept** (skills, plugins, subagents, hooks, MCP, RAG, a pull request, a
+CI pipeline), the creator's instruction "look for images on the internet" means exactly
+what he does himself: **open Google (or Bing) Images, type the concept, and pick an
+image that explains it at a glance** — a few boxes and arrows, a flowchart, a small
+architecture, an analogy. He does not mean: open the vendor's documentation and
+screenshot a page.
+
+**Why a documentation screenshot fails.** It is a wall of small English text. The
+audience is Brazilian and is not reading English prose; the shot stays up for 3 to 5
+seconds, so nobody reads it anyway; and the one thing that explains the concept — a
+diagram, if the page has one — is a small part of the page. A page screenshot shows
+where the information *lives*. An explanatory image shows the information. The creator
+rated such a lesson 7 out of 10 and asked for the images to be redone.
+
+**What to do instead.**
+
+1. **Search the concept in the image engines**, in English and in Portuguese
+   (`<concept> AI agents`, `<concept> diagram`, `<concept> architecture`). The English
+   results are the richer ones, and an English label inside a *simple* diagram is fine —
+   what matters is that it explains the concept without needing the narration to read it.
+2. **Pick simple over complete.** Few boxes, short labels, one idea. Skip the dense
+   enterprise architectures with forty boxes, the infographics with paragraphs, and the
+   stock art with no content. The test: could someone who has never heard of the concept
+   get the shape of it in three seconds?
+3. **Prefer the official figure when one exists** (the Model Context Protocol logo-and-
+   hosts diagram on its own site) and the creator's deck and the images he sent — his
+   choices come first. Then well-made third-party diagrams.
+4. **Crop to the diagram.** Never show the page around it, the cookie banner, the site
+   navigation or the article text. Show the image alone, centred on the lesson's own
+   background, with the source named in the credit line.
+5. **The image does not have to be explained by the script.** It is there so that "a
+   picture is worth a thousand words". Do not change the narration or redo the audio to
+   fit an image; choose the image that fits the narration.
+6. **Fetching them.** In a headless browser, the Bing image results page exposes each
+   result's original file address in the `m` attribute of its `a.iusc` links
+   (`JSON.parse(a.getAttribute('m')).murl`) and the host page in `purl`. Number the
+   thumbnails on a screenshot of the results, look at it, pick, then download the
+   original from `murl`. Decline the cookie banner. Google Images often answers with a
+   captcha; do not try to solve it — use Bing Images or another engine instead.
+
+**A documentation screenshot is still right** when the point is the *thing itself*
+rather than the concept: the CLI running, the console, a settings screen, an AI answer
+with its source tag. Those are "show the real thing" (principle 5), not concept images.
+
+**Several images in one beat go on one screen.** When the narration lists items quickly
+("skills, plugins, subagents and hooks" in two seconds), do not cut to one image per
+item: each would be up for half a second and nobody would see it. Put the images on **one
+page, in a grid, with a label each**, hold it for the whole list and for a few seconds
+either side, and use `mark` rings to follow the narration across the grid. The creator's
+rule of thumb: an image that is up for less than about three seconds should not be a
+shot of its own.
+
 - **Prefer sources you can credit by name.** A figure from the paper that introduced the
   idea, an official docs diagram, an engineering blog's own illustration. Put the author
   and the address on screen. The Kubernetes documentation diagrams are CC BY 4.0; most
   vendor blog diagrams carry no licence, so credit them and say so in the delivery.
-- **Search engines may block you.** An image search will often answer with a captcha.
-  Do not try to solve it: go to the source pages directly (the paper, the docs, the
-  blog) and read the image URLs off them.
+- **A search engine may block you.** If an image search answers with a captcha, do not
+  try to solve it: use another engine (Bing Images works in a headless browser) or go to
+  the source pages directly (the paper, the docs, the blog) and read the image URLs off
+  them.
 - **Tell the creator what you took.** Downloading these images for the lesson is
   expected, so it is not a question per file — but the delivery message lists each one
   and where it came from, so the creator can veto any of them. Images the creator sends
