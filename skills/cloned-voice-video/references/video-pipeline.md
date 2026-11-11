@@ -266,6 +266,11 @@ Always:
   image should be the same picture for more than about 15 seconds; a long block needs a
   second visual, not another zoom. Fixing it is a shot-list edit and never touches the
   audio
+- **before rendering, the opposite check:** no image should be up for under about 3
+  seconds (several listed items go in one grid on one screen), and no *concept* should
+  be illustrated by a screenshot of a documentation page — use a simple diagram from the
+  image search (`references/realistic-visuals.md`, "Find an image means the image
+  search")
 - `ffprobe` the output for both streams and the expected duration — it should match the
   narration plus the final pad
 - `volumedetect` the MP4 to confirm the audio is not silent
