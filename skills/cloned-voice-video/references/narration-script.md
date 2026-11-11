@@ -353,6 +353,32 @@ If a specific term comes out wrong on the first generation, fix that one term by
 spelling it as it should sound and keep a note in `script.md` — do not pre-emptively
 rewrite the whole script.
 
+## Symbols, paths and quoted prompts
+
+A symbol is not a word, so there is nothing to "read in its real spelling". A voice model
+asked to say `CLAUDE.md` or `/var/log/nginx` guesses, and guesses differently on each
+take. **Spell the symbol the way a person would say it aloud**, and let the screen show
+the symbol (see *Showing symbols in captions* in `references/video-pipeline.md`).
+
+| On screen | In `narration/aula.txt` |
+|---|---|
+| `CLAUDE.md`, `AGENTS.md` | `CLAUDE ponto M D`, `AGENTS ponto M D` |
+| `/var/log/nginx` | `barra var, barra log, barra nginx` |
+| `docs/plans` | `docs barra plans` |
+
+This is the **opposite** of the rule above, and the difference is the point: do not
+respell a *word* (`Helm chart`, `kubelet`), because the voice already reads it; do spell
+a *symbol*, because it has no reading.
+
+**Put an example prompt or a command the narrator quotes inside quotation marks**, in the
+spoken text: `Pedido bom: “O serviço nginx está fora do ar. Veja os logs…”`. The marks
+keep Eleven from running the quotation into the sentence around it.
+
+Every spelling you introduce needs a line in the lesson's `display.json` (template:
+`templates/display.example.json`), and the creator should see both — the spoken
+text *and* the table — when approving the script. A spelling with no table entry shows up
+in the captions exactly as spelled.
+
 ## Budget
 
 ~934 characters per minute of finished audio, measured on Eleven v4.

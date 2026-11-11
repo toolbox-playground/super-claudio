@@ -1,0 +1,7 @@
+[
+  {"say": "CLAUDE ponto M D", "show": "CLAUDE.md"},
+  {"say": "AGENTS ponto M D", "show": "AGENTS.md"},
+  {"say": "barra var barra log barra nginx", "show": "/var/log/nginx"},
+  {"say": "docs barra plans", "show": "docs/plans"},
+  {"say": "docs barra specs", "show": "docs/specs"}
+]

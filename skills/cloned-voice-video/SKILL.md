@@ -90,10 +90,16 @@ Read the reference for the stage you are in. Do not load them all:
    same failure: a concept lesson ends lower than it started, and climbs back up only
    once, at the close. The ladder is in `references/narration-script.md`; the artefact
    that belongs on each rung is in `references/realistic-visuals.md`.
-7. **Display text equals spoken text.** With Eleven v4 you send the real spelling;
-   there is no phonetic respelling layer. Captions and reveals index the same words
-   the model read. (The respelling hack existed only for a local model that mangled
-   English terms — see `references/open-source-alternative.md`.)
+7. **Display text equals spoken text — with one exception: symbols.** With Eleven v4
+   you send the real spelling of words; there is no phonetic respelling layer. Captions
+   and reveals index the same words the model read. (The respelling hack existed only
+   for a local model that mangled English terms — see
+   `references/open-source-alternative.md`.) A *symbol* is different, because there is
+   no word to read: `CLAUDE.md` and `/var/log/nginx` come out of a voice model badly.
+   Spell it for the voice (`CLAUDE ponto M D`, `barra var, barra log, barra nginx`) and
+   show the symbol on screen through a substitution table applied **after** alignment,
+   so the timings stay exact — `scripts/studio/apply-display.mjs`. See
+   `references/narration-script.md` and `references/video-pipeline.md`.
 8. **One stage at a time, with the creator in the loop.** The ementa is approved before
    a script is written; a script is approved before audio is generated; the audio exists
    before a frame is designed. Integrity checks catch broken audio, but they do not

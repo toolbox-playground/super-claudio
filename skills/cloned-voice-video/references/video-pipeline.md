@@ -71,12 +71,13 @@ studio/
     Main.tsx                           assembles scenes into a Series
     script.md                          the plan: beats, visuals, sources
     narration/aula.txt                 the spoken text (also the caption source)
+    display.json                       spelled-for-the-voice -> shown-on-screen (symbols)
     voice.<name>.json                  measured durations + word timings
     scenes/                            one component per visual type
   public/<slug>/<voice>/aula.mp3       the audio Remotion loads
   public/<slug>/shots/*.png            screenshots the lesson pans across
 <curso>/assets/*.html                  the replicas those screenshots are rendered from
-  scripts/                             align, build-voice, timestamps
+  scripts/                             align, build-voice, timestamps, apply-display
 ```
 
 ## Audio drives the video
@@ -128,6 +129,36 @@ sync matters, move to the API path.
 **ffmpeg writes `silencedetect` output to stderr.** Use
 `spawnSync(..., {encoding:'utf8'})` and read `res.stderr`; `execFileSync` returns only
 stdout and yields `null`.
+
+## Showing symbols in captions
+
+The narration spells symbols for the voice (`CLAUDE ponto M D`), and the captions should
+show the symbol (`CLAUDE.md`). `scripts/studio/apply-display.mjs` does the swap on the
+caption data, **after** alignment, so every timing is the one that was measured:
+
+```bash
+node scripts/align-wav.mjs ...                  # or timestamps-to-srt.mjs
+node scripts/build-voice.mjs <slug> <voice>     # writes voice.<voice>.json
+node scripts/apply-display.mjs src/videos/<slug>/voice.<voice>.json \
+                               src/videos/<slug>/display.json
+```
+
+`display.json` is a list of `{"say": ..., "show": ...}` (template:
+`templates/display.example.json`). The merged word starts where the first spelled word
+started and ends where the last one ended; punctuation around the sequence is kept.
+Matching ignores case, accents and punctuation, the longest entry wins, and a second run
+changes nothing. `--dry` prints the counts without writing; `--selftest` runs the built-in
+cases. A line that matched **0 times** and is not marked *(already applied)* means the
+entry does not match the narration word for word — fix the entry, not the script.
+
+Two things to keep straight:
+
+- **Order.** `build-voice.mjs` rebuilds `voice.<voice>.json` from the SRT and discards the
+  substitutions. Run `apply-display.mjs` after every `build-voice.mjs`.
+- **Reveal anchors.** A `revealWord` is matched against the caption words, and after the
+  swap `ponto` or `barra` no longer exist. Anchor on the shown text — `revealWord:
+  'CLAUDE.md'` matches, because both sides are normalised to letters and digits — or on a
+  word next to the sequence.
 
 ## From beats to scenes
 
@@ -242,3 +273,6 @@ Always:
   blaming the CSS.
 - A callout chip at `calloutAt: 'bottom'` can land exactly on the mark it labels. Decide
   per shot and confirm in a frame.
+- **Captions showing `CLAUDE ponto M D` instead of `CLAUDE.md`** means `apply-display.mjs`
+  did not run after the last `build-voice.mjs`, which rebuilds the JSON from the SRT and
+  drops the substitutions.
