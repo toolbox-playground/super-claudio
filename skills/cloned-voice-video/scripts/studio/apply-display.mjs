@@ -20,7 +20,7 @@
 // wins where two overlap. It is idempotent: a second run finds nothing left to replace.
 //
 // ORDER MATTERS. build-voice.mjs regenerates voice.<name>.json from the SRT and throws the
-// substitutions away, so run this after every build-voice.mjs, before rendering.
+// substitutions away, so run this after every build-voice.mjs, before check-reveals.mjs and before rendering.
 import {readFileSync, writeFileSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 
