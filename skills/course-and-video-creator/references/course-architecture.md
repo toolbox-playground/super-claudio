@@ -19,18 +19,10 @@ anything else; if the request does not say, ask.
 | Opening | only the first lesson welcomes | every video earns the click in its first seconds |
 | Repetition | callbacks across lessons | everything it needs, it establishes itself |
 
-**A standalone video is never a one-minute clip.** The 1-minute lesson exists inside a
-course, where a module opener can be short because the course around it carries the
-context. A video published on its own has no course around it: it has to hook, set up
-the problem, teach the thing and land the payoff, all by itself. Under five minutes
-that is usually a definition with a soundtrack.
-
-The anti-padding rule still holds, though, and it is the harder half: **do not stretch
-a three-minute idea to seven.** If the outline will not honestly fill five minutes,
-the topic is too narrow for a standalone video — either widen the frame (teach the
-problem around it, not just the answer) or make it part of a course. Padding is more
-visible in a single video than anywhere else, because there is no next lesson to carry
-the viewer.
+A standalone video establishes the context it needs because it has no surrounding
+course. That does not require a long narrative opening: the concept, operation and
+intended result can establish that context directly. Keep the agreed scope and
+length; do not add a history, a pain story or repeated explanations to fill time.
 
 ### The arc of a single video
 
@@ -42,9 +34,10 @@ payoff      30–60s   what is now possible that was not
 fecho       15–30s   what was learned, and where to go next
 ```
 
-The storytelling arc in `narration-script.md` applies in full — a standalone video is
-almost always *introducing* a concept, so it is the clearest case for opening with the
-problem rather than the definition.
+The arc above is an optional narrative format, not a requirement for technical
+content. A direct technical video can open with the concept or operation and proceed
+to mechanism, examples and limitations. Do not add history or suspense just to fill
+these segments; follow the creator's register and scope.
 
 **Segments are a production unit, not a viewing experience.** Planning the body as
 `inicio / meio / fim` is useful because it lets the narration be generated and checked
@@ -86,15 +79,14 @@ immediately.
 |---|---|
 | **~1 min** | a welcome, a module opener ("o que a gente vai ver nesse módulo"), or one genuinely narrow point |
 | **2–4 min** | the normal lesson: one concept or one mechanism, properly taught |
-| **5–7 min** | a concept that needs the full storytelling arc, or a mechanism with configuration and failure modes |
+| **5–7 min** | a mechanism requiring configuration, multiple examples or failure modes |
 | **8–10 min** | a hard subject that genuinely cannot be split without breaking it |
 
 Two mistakes to avoid in both directions:
 
-- **Do not rush a concept into a minute.** "O que é Kubernetes" in sixty seconds is a
-  definition, not a lesson: it has no room for the problem, the history and the
-  breaking point that make the definition land. See the storytelling arc in
-  `narration-script.md`. Introducing a concept is usually 2–4 minutes at minimum.
+- **Do not compress away the mechanism.** A short technical lesson is valid when the
+  definition, mechanism and relevant example fit. History and a narrative breaking
+  point are not required. Narrow the scope rather than rushing the speech.
 - **Do not pad a short answer to look substantial.** "O que é um Helm chart" genuinely
   is a two-minute answer. Uniform lesson lengths are a smell.
 
@@ -221,11 +213,9 @@ something with no screen — a mental model, a trade-off, a comparison — and e
 those to be the minority. `references/realistic-visuals.md` lists the usual artefact
 per domain.
 
-A lesson that *introduces* a concept also names the **rungs it covers** — where on the
-abstraction ladder it starts and where it ends (`narration-script.md`). This is what
-makes a drift visible at the gate instead of at the render: a lesson whose rungs begin
-at 3 opens on a command, and a module where every lesson stops at rung 1 never gets the
-viewer to anything they can do.
+Name the prerequisite knowledge and the technical detail the lesson will reach.
+Use that to avoid unexplained syntax or a purely abstract lesson. A command-first
+opening is valid for practitioners; no fixed abstraction ladder is required.
 
 Add a two-line **summary** of what the lesson covers, so the creator can judge the
 teaching from the ementa alone rather than from a title.

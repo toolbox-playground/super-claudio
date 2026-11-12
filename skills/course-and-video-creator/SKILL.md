@@ -53,15 +53,14 @@ Read the reference for the stage you are in. Do not load them all:
 2. **Sync is the product, not a finish.** If the narration says "autoescalonamento" at
    2:11, the autoscaling diagram appears at 2:11. This is why the audio comes first:
    the visuals are scheduled against measured word times, not guessed.
-3. **The script is spoken language, and it teaches.** It is what a teacher says out
-   loud, contractions and asides included — never a document read aloud. And a teacher
-   does not open with a definition: they open with the problem the thing exists to
-   solve, walk the viewer to the breaking point, and let the definition arrive as the
-   answer. Storytelling for an introduction, a one-sentence callback for everything
-   built on it, an analogy when the concept is genuinely hard — and verbosity held at
-   1–3 on a 0–5 dial. Clear and objective, but explanatory: never a concept dropped in
-   ten seconds, never the same idea said three ways. See
-   `references/narration-script.md`.
+3. **Teach directly, in natural spoken language.** For technical lessons, lead with
+   the concept, capability or operation, explain how it works, and give a concrete
+   example. Opening with a definition or a real command is valid. Storytelling,
+   history, analogies and callbacks are optional; use them only when they clarify
+   something for this audience, or when the creator requests that style. Never delay
+   the technical answer to manufacture a problem or a narrative breaking point.
+   Be concise without omitting the mechanism, relevant limits or evidence.
+   The creator's requested register takes precedence. See `references/narration-script.md`.
 4. **Level and delivery mode change everything.** A beginner course and an advanced
    course on the same technology share almost no lesson list. And the same lesson
    written for a paid course, for YouTube, or as a how-to tutorial is three different
@@ -86,18 +85,12 @@ Read the reference for the stage you are in. Do not load them all:
    which is a wall of small English text that stays up for three seconds and teaches
    nothing. And an image should not be a shot of its own for under about three seconds:
    put a quickly-listed set of images on one screen. See `references/realistic-visuals.md`.
-6. **Explain from the top down, one level at a time.** Every theme, technology,
-   mechanism or concept is presented at the highest useful level of abstraction first —
-   the problem, then the mental model, with a visual or an example holding it up — and
-   only then descends: the parts and how they relate, then the real world, then the
-   command or the YAML that declares it. One rung at a time, never skipping, and the
-   script and the visuals descend together: the narration drops a level and the camera
-   drops with it, from the whole architecture to a close-up of one box to the terminal.
-   Starting at the bottom — a command, a field, a flag — is the fastest way to make a
-   correct video that teaches nobody, and never leaving the top is the other half of the
-   same failure: a concept lesson ends lower than it started, and climbs back up only
-   once, at the close. The ladder is in `references/narration-script.md`; the artefact
-   that belongs on each rung is in `references/realistic-visuals.md`.
+6. **Choose the explanation depth for the audience.** Include the prerequisites
+   needed to understand the mechanism, without forcing every lesson through a
+   problem, history, mental model and implementation ladder. Experienced viewers
+   can start with a definition, query, CLI or configuration. Keep narration and
+   visuals on the same technical point; explain unfamiliar fields before relying
+   on them. Abstraction levels are a planning aid, not mandatory narrative stages.
 7. **Display text equals spoken text — with one exception: symbols.** With Eleven v4
    you send the real spelling of words; there is no phonetic respelling layer. Captions
    and reveals index the same words the model read. (The respelling hack existed only
@@ -160,8 +153,8 @@ too — a course defaults to e-learning, a standalone video to conversational.
 lesson list with, per lesson, a title, a one-line objective, a short summary of what it
 covers, a target duration and **the artefact it will show**.
 
-**For a single video: the outline.** One arc, start to finish — the hook, the problem,
-the body in its segments, the payoff, the close — with a target duration per segment
+**For a single video: the outline.** One coherent explanation, from the concept or
+operation through mechanism, examples and relevant limits, with a target duration per segment
 and the artefact each one shows. Not an ementa, and never a list of one-minute clips.
 
 Either way: present it and wait. Expect edits, additions and reordering — that is the
@@ -179,10 +172,10 @@ Per lesson, two files: `script.md` (the plan — beats, the artefact per beat, a
 source per factual claim) and `narration/aula.txt` (the exact words to be spoken, and
 nothing else in that file).
 
-Write them as a teacher would: open a concept with the problem it solves rather than
-its definition, **descend the abstraction ladder one rung at a time** — mental model,
-parts, real world, declaration — call back to what earlier lessons established, use an
-analogy when a concept is genuinely hard, and keep verbosity at 1–3 on the 0–5 dial.
+Write natural, concise spoken explanations. In technical content, start with the
+concept or operation, explain the mechanism and show a relevant example or artefact.
+Respect the audience's existing knowledge. A story, analogy, callback or historical
+introduction is optional, never a prerequisite for a definition or a command.
 See `references/narration-script.md`.
 
 Hand the scripts over and wait. This is the last free gate — everything after it costs
@@ -277,7 +270,7 @@ dependencies, files and the one command that proves it works are in
 - The creator handed over a PDF, deck, article, repo or recording → read it first,
   `references/source-material.md`
 - Roadmap scope, level differences, module ordering → `references/course-architecture.md`
-- Delivery mode, register, the storytelling arc, callbacks, analogies, the verbosity
+- Delivery mode, register, direct technical explanations, optional analogies, the verbosity
   dial, natural phrasing, pacing, character budget → `references/narration-script.md`
 - Voice settings per mode, model limits, audio tags, what the recording script does to
   the clone, whose voice to use, and how to connect (web app / hosted MCP / REST API)
