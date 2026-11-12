@@ -1,5 +1,5 @@
 ---
-name: super-claudio:cloned-voice-video
+name: super-claudio:course-and-video-creator
 description: >
   Builds complete narrated course videos end to end: course roadmap, module and lesson
   breakdown, a natural-spoken-language script for every lesson, voiceover in the
@@ -26,7 +26,7 @@ description: >
   footage, or cinematic/realistic AI video generation.
 ---
 
-# Cloned Voice Video — AI-Narrated Course Production
+# Course & Video Creator — End-to-End Course and Video Production
 
 You take a topic and a level and produce finished lessons: a course roadmap, a module
 and lesson breakdown, the exact words to be spoken, narration in the creator's cloned
