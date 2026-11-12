@@ -39,50 +39,21 @@ ask: *what does a practitioner actually look at when they do this?* That is the 
 A lesson that is *all* screenshots is as flat as one that is all boxes. The rhythm is:
 artefact for what exists, shapes for what does not, alternating.
 
-## The artefact order follows the abstraction ladder
+## The artefact order follows the technical explanation
 
-`narration-script.md` says a concept opens with the problem, not the definition, and
-then descends one level of abstraction at a time. **The visuals ride the same ladder,
-rung for rung.** Getting this wrong is the most common way a technical video ends up
-factually correct and unteachable.
+Choose the first visual for what the narration actually teaches. A definition may
+open on a simple diagram; a CLI or query lesson may open on the real terminal or
+query interface. Do not force an imaginary incident or a separate problem drawing
+before showing the tool.
 
-**Never open a concept on a terminal.** A CLI answers *where do I see this*, which is a
-question the viewer does not have yet. It is the payoff, not the premise.
+Match the level of detail to the audience. Use an overview when needed to locate the
+components, then a close-up for the mechanism or field. Experienced viewers may go
+straight to the relevant query, manifest or result. Explain unfamiliar details as they
+appear; there is no mandatory sequence of narrative or abstraction stages.
 
-Each rung of the script has an artefact that belongs on screen for it:
-
-| Rung | Artefact | What it does |
-|---|---|---|
-| **0 — the problem** | a diagram of the pain, built as its own page | makes the viewer feel the gap before the thing fills it |
-| **1 — the mental model** | the rebuilt architecture, **pulled all the way back** | one picture, whole, so the shape lands before the parts |
-| **2 — the parts** | the same architecture, in close-ups | each part ringed as the narration names it |
-| **3 — the real world** | the terminal, the console, the dashboard | the same thing where the viewer will meet it |
-| **4 — declaring it** | the manifest or config in an editor | the fields, highlighted one at a time |
-
-Two consequences worth stating, because both were learned the hard way:
-
-**The camera descends with the ladder.** Rung 1 is a wide shot of the entire diagram;
-rung 2 crops into it. Reuse one artefact across both rather than drawing two — the pan
-from whole to part *is* the descent, and the viewer keeps their bearings because it is
-visibly the same picture. The arithmetic for how tight a crop can go is under *Shooting
-for a zoom* below.
-
-**Never skip an artefact to save work.** A video that jumps from the architecture
-straight to the manifest leaves the viewer holding syntax for a thing they never saw
-running. If a rung has no artefact yet, build it — that is cheaper than the lesson
-failing.
-
-**The problem deserves its own artefact.** This is the step most often skipped, and
-rung 0 has no equivalent in any vendor's documentation, so it always has to be built. A
-Pods lesson that opens on the Pod diagram has already given away the answer; one that
-opens on *two loose containers, each with its own IP and its own disk, and a red line
-where the sharing should be* makes the viewer feel the gap the Pod fills. Same replica
-technique, pointed at the "before".
-
-**Mark the turn into rung 3.** Cutting straight from a diagram to a terminal reads as a
-glitch. A held card — one line of kicker, one word of title, about a second and a half
-over the incoming artefact — tells the viewer the register is changing. Land it on the
-sentence that says so ("agora vamos ver isso no mundo real").
+Build the artefacts the explanation needs, not a fixed set of rungs. Keep the visuals
+synchronized with the technical point being spoken, and use the real interface where
+one exists. A title or transition card is optional and must not obscure the artefact.
 
 ## One artefact on screen at a time
 
