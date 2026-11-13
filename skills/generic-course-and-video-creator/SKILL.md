@@ -1,5 +1,5 @@
 ---
-name: super-claudio:course-and-video-creator
+name: super-claudio:generic-course-and-video-creator
 description: >
   Builds complete narrated course videos end to end: course roadmap, module and lesson
   breakdown, a natural-spoken-language script for every lesson, voiceover in the
@@ -22,7 +22,7 @@ description: >
   video, or asks for narrated content in a particular register — an e-learning course
   lesson, a conversational YouTube video, or a how-to tutorial.
   Do NOT trigger for: material a human will record themselves (use
-  video-script-and-slides), slide decks or webpages (use productivity),
+  create-script-and-slides-for-videos), slide decks or webpages (use productivity),
   DevOps Mentoria PPTX conversion (use carreira-tech-slides), editing existing
   footage, or cinematic/realistic AI video generation.
 ---
@@ -285,7 +285,7 @@ the HyperFrames CLI. Node, ffmpeg and Chrome, no Docker.
 - Remotion scenes, `revealWord`, captions, alignment, render debugging → `references/video-pipeline.md`
 - Which artefact a lesson shows, HTML replicas (`templates/replica.css`), zoom/pan
   shot lists, image sourcing and licensing → `references/realistic-visuals.md`
-- The user wants a *human-recorded* video → stop and use `video-script-and-slides`
+- The user wants a *human-recorded* video → stop and use `create-script-and-slides-for-videos`
 - The user asks for a free/offline voice → `references/open-source-alternative.md`
   carries the measured reasons that route was abandoned
 

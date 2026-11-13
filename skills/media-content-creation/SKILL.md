@@ -2,7 +2,7 @@
 name: super-claudio:media-content-creation
 description: >
   Media content creation skill. Use when the user wants to create, generate, or produce any kind
-  of video, audio, or image. This is the main skill for all media generation tasks.
+  of video, audio, or image, including standalone media assets and editing existing footage.
   Trigger on video: "I want to make a video", "create a TikTok video", "generate a realistic video",
   "make a promo video", "animate my photo", "create a video ad", "Remotion", "Higgsfield", "Kling",
   "Seedance", "Weavy AI", "Hailuo".
@@ -13,11 +13,18 @@ description: >
   "generate a photo of Y", "make an infographic", "Midjourney", "DALL-E", "Flux", "Napkin.ai",
   "Nano Banana 2", "animate a static image".
   Also triggers for: marketing creatives, social media visuals, product photos, content creator tools.
+  Do NOT trigger for a complete course or standalone educational video with cloned-voice
+  narration and synchronized visuals (use generic-course-and-video-creator), or for a script and
+  slides for a person recording themselves (use create-script-and-slides-for-videos).
 ---
 
 # Media Content Creation
 
 ## Step 1 — Identify the medium and intent
+
+For an educational course or standalone narrated video using the creator's cloned voice,
+use `generic-course-and-video-creator`. For a self-recorded video script and slides, use
+`create-script-and-slides-for-videos`. Use this skill for other media production and individual assets.
 
 Identify which medium the user needs:
 - **Video** — motion, cinematic, animation, or programmatic
