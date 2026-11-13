@@ -1,5 +1,5 @@
 ---
-name: super-claudio:video-script-and-slides
+name: super-claudio:create-script-and-slides-for-videos
 description: >
   Creates a spoken video script (roteiro) plus a local HTML slide presentation for a
   self-recorded talking-head video — the creator records themselves; AI prepares the
@@ -12,12 +12,13 @@ description: >
   Also trigger when: the user gives a content topic/theme (career tips, free courses,
   certifications, tech questions like "vale a pena X em 2026?") and wants material to
   record a video about it.
-  Do NOT trigger for: fully AI-generated videos with narration and rendering (use
-  media-content-creation), webpages from existing slide decks (use productivity),
+  Do NOT trigger for: complete narrated courses or standalone educational videos with
+  cloned voice and synchronized rendering (use generic-course-and-video-creator), other media
+  generation (use media-content-creation), webpages from existing slide decks (use productivity),
   blog posts without a video (use writing).
 ---
 
-# Video Script and Slides — Material for Self-Recorded Videos
+# Create Script and Slides for Videos — Material for Self-Recorded Videos
 
 You prepare everything a person needs to record an authentic talking-head video about a
 topic: a natural spoken script and a local HTML presentation to show on screen.

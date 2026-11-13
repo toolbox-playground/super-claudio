@@ -53,7 +53,9 @@ No slash commands needed (though they work too: `/super-claudio:writing`).
 
 | Category | What it covers | Example triggers |
 |----------|---------------|-----------------|
-| [media-content-creation](#media-content-creation) | Video, audio, image generation | "make a video", "text to speech", "generate an image" |
+| [generic-course-and-video-creator](skills/generic-course-and-video-creator/SKILL.md) | Complete courses or educational videos with cloned voice and synchronized visuals | "create a course", "video with my cloned voice" |
+| [create-script-and-slides-for-videos](skills/create-script-and-slides-for-videos/SKILL.md) | Script and slides for a video you record yourself | "I'll record a video", "script and slides" |
+| [media-content-creation](#media-content-creation) | Media assets, cinematic video, audio, images, and editing | "animate my photo", "text to speech", "generate an image" |
 | [software-development](#software-development) | APIs, databases, automation, deployment, free APIs | "build an API", "automate with n8n", "free weather API" |
 | [marketing](#marketing) | Ad creatives, TikTok/Instagram Shop, ecommerce | "create a TikTok ad", "Instagram Shop content" |
 | [writing](#writing) | Blog, SEO, social captions, copywriting, newsletters | "write a blog post", "TikTok hook", "email newsletter" |

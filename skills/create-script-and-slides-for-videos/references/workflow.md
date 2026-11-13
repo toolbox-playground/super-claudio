@@ -1,4 +1,4 @@
-# Video Script and Slides — Full Workflow
+# Create Script and Slides for Videos — Full Workflow
 
 Output goes to `~/Movies/video-talks/<slug>/`:
 - `script.md` — the spoken script
