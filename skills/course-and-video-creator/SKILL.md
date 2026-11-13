@@ -5,7 +5,8 @@ description: >
   breakdown, a natural-spoken-language script for every lesson, voiceover in the
   creator's own cloned voice via ElevenLabs, and a final MP4 whose visuals are
   synchronized to the narration -- realistic screenshots of the interface being taught,
-  zoomed and annotated, mixed with technical diagrams animated in Remotion.
+  zoomed and annotated, mixed with technical diagrams animated in the creator's chosen
+  engine: Manim by default, Remotion or HyperFrames on request.
   Works from a bare topic ("Kubernetes avançado") or from material the creator provides
   — a PDF, a slide deck, an article, a repo — all the way to rendered lessons, one
   approved stage at a time.
@@ -40,7 +41,8 @@ Read the reference for the stage you are in. Do not load them all:
 | Roadmap, modules, lesson breakdown | `references/course-architecture.md` |
 | Writing the spoken script | `references/narration-script.md` |
 | Generating and downloading the audio | `references/elevenlabs-voiceover.md` |
-| Scenes, sync, captions, rendering | `references/video-pipeline.md` |
+| Choosing the animation engine (Manim / Remotion / HyperFrames) | `references/animation-engines.md` |
+| Scenes, sync, captions, rendering in Remotion | `references/video-pipeline.md` |
 | The artefact a lesson shows: replicas, screenshots, zoom and pan | `references/realistic-visuals.md` |
 | Why not a free local model | `references/open-source-alternative.md` |
 
@@ -71,10 +73,10 @@ Read the reference for the stage you are in. Do not load them all:
    and narrated. A Kubernetes lesson shows a terminal running `kubectl` and a real
    manifest; a Terraform lesson shows the `plan` output; a cloud lesson shows the
    console; a LinkedIn lesson shows a profile. Not a rounded rectangle standing in for
-   it: the viewer has to recognise the thing when they open their own. Remotion
-   supplies the argument on top — the ring, the red-to-green comparison, the captions —
-   and keeps its own shapes for what genuinely has no screen: a control loop, a
-   trade-off, a summary. **Replicate the frame, never fake the facts:** build the
+   it: the viewer has to recognise the thing when they open their own. The animation
+   engine supplies the argument on top — the ring, the red-to-green comparison, the
+   captions — and keeps its own shapes for what genuinely has no screen: a control
+   loop, a trade-off, a summary. **Replicate the frame, never fake the facts:** build the
    chrome in HTML, but the command output, manifests and error messages inside it must
    be real. **And no single visual stays up for more than about 15 seconds:** past that,
    cut to a *different* picture of the same idea — a figure from the paper, the
@@ -127,6 +129,7 @@ Read the reference for the stage you are in. Do not load them all:
 | Lesson length | **1–10 min**, usually 2–4 | the teaching decides it, never a target; see `references/course-architecture.md` |
 | Single-video length | **5–10 min** | a standalone video is never a one-minute clip; see `references/course-architecture.md` |
 | Voice | the creator's own cloned ElevenLabs voice | **ask or look it up — never guess one**; see `references/elevenlabs-voiceover.md` |
+| **Animation engine** | **ask — Manim when no preference** | Manim / Remotion / HyperFrames, once per course; see `references/animation-engines.md` |
 | Format | 1920x1080, 30 fps | horizontal for YouTube |
 | Language | pt-BR for Brazilian users | the script language, not a model setting |
 | Output dir | `~/Movies/video-shorts/<curso-slug>/<aula-slug>/`, or `<video-slug>/` for a single video | ask only if the creator hints elsewhere |
@@ -242,10 +245,11 @@ above.
 
 ### Stage 4 — the video, synchronized to that audio
 
-**On a machine that has never rendered one of these, build the studio first** — one
-Remotion project at `~/Movies/video-shorts/studio`, reused by every course. The exact
-dependencies, files and the one command that proves it works are in
-`references/video-pipeline.md`. Node, ffmpeg and Chrome, no Docker.
+**The engine was chosen at the first render gate** — Manim unless the creator picked
+Remotion or HyperFrames (`references/animation-engines.md`). **On a machine that has
+never rendered one of these, set the engine up first**: a venv with Manim, or the
+Remotion studio at `~/Movies/video-shorts/studio` (`references/video-pipeline.md`), or
+the HyperFrames CLI. Node, ffmpeg and Chrome, no Docker.
 
 1. **Alignment** — derive word timings. The API's `with-timestamps` gives exact
    character times; from a web-app download, `scripts/studio/align-wav.mjs` estimates
@@ -257,7 +261,8 @@ dependencies, files and the one command that proves it works are in
    `scripts/studio/shoot-html.mjs`. See `references/realistic-visuals.md`.
 3. **Scene plan** — give every shot, node and panel a `revealWord`, so it lands exactly
    when the narration names it.
-4. **Render** — Remotion renders only scenes that have measured audio.
+4. **Render** — the chosen engine renders only scenes that have measured audio;
+   per-engine commands and sync mechanics are in `references/animation-engines.md`.
 5. **Audit the blocks, verify and deliver** — before rendering, measure how long each
    image stays up and give any block over ~15 seconds a second visual
    (`references/realistic-visuals.md`), and check that no image is up for under ~3 seconds
@@ -275,7 +280,9 @@ dependencies, files and the one command that proves it works are in
 - Voice settings per mode, model limits, audio tags, what the recording script does to
   the clone, whose voice to use, and how to connect (web app / hosted MCP / REST API)
   → `references/elevenlabs-voiceover.md`
-- Scenes, `revealWord`, captions, alignment, render debugging → `references/video-pipeline.md`
+- Which engine renders the lesson, per-engine setup, sync and trade-offs
+  → `references/animation-engines.md`
+- Remotion scenes, `revealWord`, captions, alignment, render debugging → `references/video-pipeline.md`
 - Which artefact a lesson shows, HTML replicas (`templates/replica.css`), zoom/pan
   shot lists, image sourcing and licensing → `references/realistic-visuals.md`
 - The user wants a *human-recorded* video → stop and use `video-script-and-slides`
