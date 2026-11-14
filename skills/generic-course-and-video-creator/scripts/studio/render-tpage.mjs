@@ -19,7 +19,7 @@
 // Needs Node 22+ (global WebSocket), Chrome and ffmpeg. Nothing to npm install: it talks
 // to Chrome over the DevTools protocol directly.
 import {createServer} from 'node:http';
-import {readFileSync, writeFileSync, existsSync, mkdtempSync, mkdirSync, rmSync, statSync} from 'node:fs';
+import {readFileSync, writeFileSync, existsSync, mkdtempSync, mkdirSync, rmSync, statSync, readdirSync} from 'node:fs';
 import {join, resolve, dirname, extname, relative, sep} from 'node:path';
 import {tmpdir} from 'node:os';
 import {spawn} from 'node:child_process';
@@ -70,11 +70,24 @@ const url = `http://127.0.0.1:${server.address().port}/${PAGE}`;
 // ---- Chrome over the DevTools protocol ------------------------------------------
 // One Chrome per worker. Each opens the page, waits until it is ready and every image is
 // decoded, and hands back a tiny CDP client.
+//
+// Frames never touch the disk: each screenshot goes from Chrome's memory straight into
+// ffmpeg's pipe. What does touch the disk is temporary and removed here: Chrome's
+// throwaway profiles and, with --workers, the segment files before they are joined.
+// A Chrome that is still shutting down can keep its profile alive past this process,
+// so every run also sweeps leftovers older than an hour from earlier runs.
 const chromes = [];
+let SEGDIR = null;
 const cleanup = () => {
   for (const c of chromes) { try { c.proc.kill(); } catch {} try { rmSync(c.profile, {recursive: true, force: true}); } catch {} }
+  if (SEGDIR) try { rmSync(SEGDIR, {recursive: true, force: true}); } catch {}
   server.close();
 };
+for (const d of readdirSync(tmpdir())) {
+  if (!d.startsWith('render-tpage-')) continue;
+  const p = join(tmpdir(), d);
+  try { if (Date.now() - statSync(p).mtimeMs > 3600e3) rmSync(p, {recursive: true, force: true}); } catch {}
+}
 process.on('exit', cleanup);
 const errors = [];
 
@@ -164,7 +177,7 @@ const n = Math.round(secs * FPS);
 const pages = [first, ...(await Promise.all(Array.from({length: Math.min(WORKERS, n) - 1}, openPage)))];
 const encode = (file) => spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-i', '-',
   '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '16', '-r', String(FPS), file], {stdio: ['pipe', 'inherit', 'inherit']});
-const SEGDIR = pages.length > 1 ? mkdtempSync(join(tmpdir(), 'render-tpage-seg-')) : null;
+SEGDIR = pages.length > 1 ? mkdtempSync(join(tmpdir(), 'render-tpage-seg-')) : null;
 let doneFrames = 0;
 const started = Date.now();
 const tick = () => { const s = (Date.now() - started) / 1000; process.stdout.write(`\r${(doneFrames / FPS).toFixed(0)}/${secs.toFixed(0)} s · ${(s / Math.max(1, doneFrames)).toFixed(2)} s/frame`); };
