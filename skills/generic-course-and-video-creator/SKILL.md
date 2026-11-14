@@ -3,7 +3,8 @@ name: super-claudio:generic-course-and-video-creator
 description: >
   Builds complete narrated course videos end to end: course roadmap, module and lesson
   breakdown, a natural-spoken-language script for every lesson, voiceover in the
-  creator's own cloned voice via ElevenLabs, and a final MP4 whose visuals are
+  creator's own cloned voice via ElevenLabs (or, with no ElevenLabs account, cloned
+  locally for free with OmniVoice), and a final MP4 whose visuals are
   synchronized to the narration -- realistic screenshots of the interface being taught,
   zoomed and annotated, mixed with technical diagrams animated in the creator's chosen
   engine: Manim by default, Remotion or HyperFrames on request.
@@ -15,6 +16,7 @@ description: >
   "cria o roteiro das aulas de", "roteiro para a aula de",
   "cria um vídeo narrado sobre", "vídeo com minha voz clonada",
   "gera o áudio e o vídeo de", "narração com minha voz", "vídeo faceless sobre",
+  "clonar minha voz de graça", "narração sem ElevenLabs",
   "create a course about", "build the roadmap for a course on",
   "write the narration script for", "clone my voice for a video".
   Also trigger when: the user gives a technology plus a level (iniciante / avançado)
@@ -44,7 +46,7 @@ Read the reference for the stage you are in. Do not load them all:
 | Choosing the animation engine (Manim / Remotion / HyperFrames) | `references/animation-engines.md` |
 | Scenes, sync, captions, rendering in Remotion | `references/video-pipeline.md` |
 | The artefact a lesson shows: replicas, screenshots, zoom and pan | `references/realistic-visuals.md` |
-| Why not a free local model | `references/open-source-alternative.md` |
+| Free local voice when there is no ElevenLabs account (OmniVoice) | `references/open-source-alternative.md` |
 
 ## Core Principles
 
@@ -95,9 +97,10 @@ Read the reference for the stage you are in. Do not load them all:
    on them. Abstraction levels are a planning aid, not mandatory narrative stages.
 7. **Display text equals spoken text — with one exception: symbols.** With Eleven v4
    you send the real spelling of words; there is no phonetic respelling layer. Captions
-   and reveals index the same words the model read. (The respelling hack existed only
-   for a local model that mangled English terms — see
-   `references/open-source-alternative.md`.) A *symbol* is different, because there is
+   and reveals index the same words the model read. The same holds for the local
+   OmniVoice route. (The respelling hack existed only for an older local model that
+   mangled English terms — see `references/open-source-alternative.md`.) A *symbol* is
+   different, because there is
    no word to read: `CLAUDE.md` and `/var/log/nginx` come out of a voice model badly.
    Spell it for the voice (`CLAUDE ponto M D`, `barra var, barra log, barra nginx`) and
    show the symbol on screen through a substitution table applied **after** alignment,
@@ -111,10 +114,13 @@ Read the reference for the stage you are in. Do not load them all:
    ahead of the video it was paid for. Integrity checks catch broken audio, but they do not
    judge teaching or delivery — only the creator does. Never run ahead of an approval
    to "save time": redoing twenty lessons costs far more than one question.
-9. **ElevenLabs is the voice, and the creator's own voice is the point.** There is no
-   engine choice to offer. The local open-source route was measured and abandoned —
-   `references/open-source-alternative.md` records why, and exists only so the question
-   is not re-opened. Resolve *whose* voice before generating anything.
+9. **ElevenLabs is the voice, and the creator's own voice is the point.** It is the
+   first option, always. **The second option is for a creator with no ElevenLabs account
+   or no wish to pay:** clone the voice locally and free with OmniVoice, using the
+   recipe the creator approved by ear (`references/open-source-alternative.md`). It is
+   close but not identical, and far slower — say both before they choose. Earlier local
+   models (Chatterbox, Qwen3-TTS) were measured and rejected; do not offer them. Resolve
+   *whose* voice, and which route, before generating anything.
 
 ## What the user controls (parse from the request)
 
@@ -129,6 +135,7 @@ Read the reference for the stage you are in. Do not load them all:
 | Lesson length | **1–10 min**, usually 2–4 | the teaching decides it, never a target; see `references/course-architecture.md` |
 | Single-video length | **5–10 min** | a standalone video is never a one-minute clip; see `references/course-architecture.md` |
 | Voice | the creator's own cloned ElevenLabs voice | **ask or look it up — never guess one**; see `references/elevenlabs-voiceover.md` |
+| Voice route | **ElevenLabs** | **OmniVoice (local, free)** only when the creator has no ElevenLabs account or does not want to pay; needs a 5–10 s steady recording of their voice — see `references/open-source-alternative.md` |
 | **Animation engine** | **ask — Manim when no preference** | Manim / Remotion / HyperFrames, once per course; see `references/animation-engines.md` |
 | Format | 1920x1080, 30 fps | horizontal for YouTube |
 | Language | pt-BR for Brazilian users | the script language, not a model setting |
@@ -218,10 +225,19 @@ A module that turns out to be very large is still one unit; if a single module w
 spend more than roughly a quarter of the creator's monthly quota, say so and offer to
 split it in half rather than silently running it.
 
-### Stage 3 — the audio, in ElevenLabs. **Always before any video.**
+### Stage 3 — the audio, in ElevenLabs (or OmniVoice). **Always before any video.**
 
 **Ask which voice to use before generating anything** — the skill never guesses one,
-and this question comes before the first lesson of every course. Then generate with the
+and this question comes before the first lesson of every course. In the same question,
+ask whether the creator has an ElevenLabs account. If not, or if they do not want to
+pay, offer the local OmniVoice route and state its trade-offs: free, close to their
+voice but not identical, and roughly 4–15 min of CPU per 20 s of audio on an Intel Mac.
+On that route, everything below about ElevenLabs settings is replaced by
+`references/open-source-alternative.md`. Choosing the reference clip, the
+`scripts/omnivoice/synth.py` recipe and its transcript check all live there. The
+serial order, the integrity checks and the first-lesson approval still apply.
+
+On the ElevenLabs route, generate with the
 validated settings: Eleven v4, similarity 100%, stability 75%, clone strength 10% for a
 Professional Voice Clone, language Auto, MP3 44.1 kHz, no audio effects. There is no
 speed or style setting in v4. First lessons
@@ -286,19 +302,23 @@ the HyperFrames CLI. Node, ffmpeg and Chrome, no Docker.
 - Which artefact a lesson shows, HTML replicas (`templates/replica.css`), zoom/pan
   shot lists, image sourcing and licensing → `references/realistic-visuals.md`
 - The user wants a *human-recorded* video → stop and use `create-script-and-slides-for-videos`
-- The user asks for a free/offline voice → `references/open-source-alternative.md`
-  carries the measured reasons that route was abandoned
+- No ElevenLabs account, or the user asks for a free/offline voice → OmniVoice, local,
+  `references/open-source-alternative.md` (setup, reference clip, approved recipe,
+  measured trade-offs, and why Chatterbox and Qwen3-TTS were rejected)
 
 ## Honest limits
 
 State these before the user discovers them:
 
-- **A cloned voice needs a paid service to sound like the person.** This was measured,
-  not assumed: see `references/open-source-alternative.md`. There is no free route that
-  preserves identity, and offering one wastes the creator's day.
-- **The creator needs an ElevenLabs account and their own cloned voice.** Say this at
-  the start, not after the ementa is approved. Never create the account, buy the plan
-  or clone the voice for them.
+- **The best cloned voice is still the paid one.** ElevenLabs with the creator's own
+  cloned voice is the first option. Say at the start that it needs an account, not
+  after the ementa is approved. Never create the account, buy the plan or clone the
+  voice for them.
+- **The free local route is close, not identical, and slow.** OmniVoice reached 0.946
+  similarity against a 0.972 real-voice ceiling, and the creator approved it by ear.
+  It costs roughly 4–15 min of CPU per 20 s of audio on an Intel Mac. It depends
+  entirely on a steady 5–10 s reference clip. See
+  `references/open-source-alternative.md`.
 - **Visual sync is only as good as the word timings.** Estimated alignment from a
   downloaded MP3 drifts on long pauses; the API's character timestamps do not. If the
   creator cares about tight sync, move to the API.
