@@ -9,13 +9,13 @@ to route them to the right skill before responding.
 
 | User wants to... | Use skill |
 |-----------------|-----------|
-| Create individual media assets, edit footage, or generate cinematic video, audio, or images | `media-content-creation` |
+| Create individual media assets, edit footage, or generate cinematic video, audio, or images | `generic-media-content-creation` |
 | Build APIs, databases, automate workflows, write scripts, use free APIs, deploy | `software-development` |
 | Review, audit or approve a GitHub Actions workflow / pipeline PR for security and team standards | `revisor-pipeline` |
 | Turn a PDF or slide deck into a standalone HTML webpage | `productivity` (routes to `references/webpage-from-slides.md`) |
 | Transform DevOps Mentoria PPTX slides into Carreira Tech beginner slides | `carreira-tech-slides` |
 | Prepare a script + local HTML slides for a self-recorded video (real researched data) | `create-script-and-slides-for-videos` |
-| Create a course or standalone video: outline, scripts, cloned-voice narration and synced video | `generic-course-and-video-creator` |
+| Create a course or standalone video: outline, scripts, cloned-voice narration and synced video | `course-and-video-creator` |
 | Create ads, TikTok Shop content, ecommerce creatives, marketing campaigns | `marketing` |
 | Write blog posts, social captions, SEO content, ad copy, email newsletters | `writing` |
 | Design a website or app UI, find design inspiration, use design tools | `design` |

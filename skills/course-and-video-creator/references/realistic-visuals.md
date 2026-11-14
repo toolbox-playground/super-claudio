@@ -70,6 +70,12 @@ them side by side and hoping.
 The exception is a genuine before/after of the *same* artefact, where the comparison
 is the content.
 
+The second exception is the **terminal demo** (`references/terminal-demo-and-3d.md`): a
+command on the left and the system it changes on the right, in one window authored at
+1920×1080. It works where the rejected layout failed because nothing is scaled down,
+the terminal font is 22px, and the two halves never move at once. The output lands,
+*then* the diagram answers. Use it when a lesson's commands change a system.
+
 ## Research the real thing before drawing anything
 
 Before building any visual, **look at how the real one looks.** Search for the product's

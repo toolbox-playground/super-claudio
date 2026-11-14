@@ -1,16 +1,21 @@
-# Animation Engines — Manim first, Remotion and HyperFrames as alternatives
+# Animation Engines — HTML by default, Manim, Remotion and HyperFrames as alternatives
 
-The skill renders lessons with one of three measured engines. **Ask the creator which
-one before the first render of every course**: "Gero os vídeos com qual motor — Manim
-(padrão), Remotion ou HyperFrames?" If the creator has no preference or says "qualquer
-um", **use Manim**. Never re-ask inside the same course; the choice holds until the
+The skill renders lessons with one of four engines. **Ask the creator which one before
+the first render of every course**: "Gero os vídeos com qual motor — HTML (padrão),
+Manim, Remotion ou HyperFrames?" If the creator has no preference or says "qualquer
+um", **use HTML**. Never re-ask inside the same course; the choice holds until the
 creator changes it.
+
+**HTML (the default)** is one t-page per lesson, rendered frame-exact by
+`scripts/studio/render-tpage.mjs` from `templates/lesson-tpage.html`. Everything about
+it, including why the creator chose it over HyperFrames on the same lesson, is in
+`references/html-engine.md`. The rest of this file covers the three alternatives.
 
 Whatever the engine, the core principle is untouched: **every duration comes from the
 measured narration audio** (`voice.<name>.json`). The engines differ in how those
 timings are injected, not in whether they are.
 
-## The three engines, measured
+## The three alternative engines, measured
 
 Same 20-second scene, same script, real logos, rendered back to back on the creator's
 Mac (Nov 2026). Numbers are a practical reference for these projects, not a universal
@@ -18,7 +23,7 @@ ranking:
 
 | Engine | Render (real) | Peak memory | Scene code | Language |
 |---|---:|---:|---:|---|
-| **Manim** (default) | 55 s | 407 MB | smallest (~4.7 KB) | Python |
+| **Manim** | 55 s | 407 MB | smallest (~4.7 KB) | Python |
 | **Remotion** | 51 s | 809 MB | ~6.2 KB | TypeScript/React |
 | **HyperFrames** | 61 s | 381 MB | ~5.2 KB | HTML/CSS + GSAP |
 
@@ -26,21 +31,23 @@ Remotion's first render of a session also pays a bundle step (one-off ~90 s extr
 Manim and HyperFrames have no equivalent. Remotion is the only one that needs ~800 MB+;
 on an 8 GB machine under load, prefer Manim or HyperFrames.
 
-## When the default is the wrong call — say so before rendering
+## When to pick an alternative
 
-Manim is the default, but one lesson shape is still Remotion's home turf: **lessons
-built around screenshots and HTML replicas with zoom/pan and word-synced captions**
-(`ShotPan.tsx`, `revealWord`, the caption machinery in
-`references/video-pipeline.md` — none of that exists for the other engines).
-If the approved ementa is replica-heavy and the creator chose Manim or HyperFrames,
-state the trade-off in one line and let them decide: diagrams will be native, but
-screenshot shots become static image sequences timed by ffmpeg, without the animated
-zoom/pan.
+- **Manim** is the best tool for diagram-led conceptual lessons that are mostly
+  mathematical animation: curves, transforms, equations. These render leaner in Manim
+  than anywhere else.
+- **Remotion** is for a course that already runs on it (`ShotPan.tsx`, `revealWord`,
+  the caption machinery in `references/video-pipeline.md`). Check its licence: it is
+  free for teams of up to 3 people; larger companies need a Company License
+  (remotion.dev/license).
+- **HyperFrames** is for a course that already runs on it, or for a creator who wants
+  its block registry.
 
-Diagram-led conceptual lessons — architectures, flows, control loops — are where Manim
-is strongest, and they render leaner there than anywhere else.
+If the creator picks Manim or HyperFrames for a lesson built around real images, state
+the trade-off in one line before rendering: the camera moves that follow the narration
+across an image take far more work there than in the HTML engine.
 
-## Manim — the default
+## Manim
 
 Community edition, in a venv, no LaTeX needed for these lessons:
 
@@ -91,8 +98,10 @@ npx --yes hyperframes@latest render   # output lands in renders/
 
 ## What was tested and rejected for this skill
 
-- **p5.js and plain three.js via Playwright:** work, but need a hand-rolled
-  frame-capture harness per video — more moving parts than the three engines above for
-  no visual gain.
+- **p5.js as a lesson engine:** works, but adds nothing over plain HTML. The
+  frame-capture harness that came out of these tests became
+  `scripts/studio/render-tpage.mjs`, which is now the default engine
+  (`references/html-engine.md`). three.js runs on the same harness for 3D shots, only
+  when the creator asks for 3D (`references/terminal-demo-and-3d.md`).
 - **Motion Canvas:** good output, but rendering drives the editor UI through a
   headless browser; too fragile to automate inside a course loop.

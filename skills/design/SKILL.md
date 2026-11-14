@@ -9,7 +9,7 @@ description: >
   Also trigger when the user mentions: Figma, v0.dev, getdesign.md, Dribbble, Mobbin, Excalidraw,
   or any design tool by name.
   Do NOT trigger for: implementing already-designed UI in code (use software-development skill),
-  generating standalone images (use media-content-creation skill).
+  generating standalone images (use generic-media-content-creation skill).
 ---
 
 # Design

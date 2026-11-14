@@ -8,7 +8,7 @@ description: >
   "social media campaign", "ad for my product", "promote my product", "sales video",
   "ad banner", "product announcement".
   Also trigger when the user mentions: ad creatives, ROAS, ad spend, campaign assets, product page.
-  Do NOT trigger for: general video creation without commercial intent (use media-content-creation),
+  Do NOT trigger for: general video creation without commercial intent (use generic-media-content-creation),
   general writing without marketing intent (use writing skill).
 ---
 
