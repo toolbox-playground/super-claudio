@@ -6,8 +6,10 @@ description: >
   creator's own cloned voice via ElevenLabs (or, with no ElevenLabs account, cloned
   locally for free with OmniVoice), and a final MP4 whose visuals are
   synchronized to the narration -- realistic screenshots of the interface being taught,
-  zoomed and annotated, mixed with technical diagrams animated in the creator's chosen
-  engine: Manim by default, Remotion or HyperFrames on request.
+  zoomed and annotated, terminal demos where the real command and the system it changes
+  share the frame, mixed with technical diagrams animated in the creator's chosen
+  engine: HTML by default (a camera following the narration across real images),
+  Manim, Remotion or HyperFrames on request.
   Works from a bare topic ("Kubernetes avançado") or from material the creator provides
   — a PDF, a slide deck, an article, a repo — all the way to rendered lessons, one
   approved stage at a time.
@@ -43,10 +45,12 @@ Read the reference for the stage you are in. Do not load them all:
 | Roadmap, modules, lesson breakdown | `references/course-architecture.md` |
 | Writing the spoken script | `references/narration-script.md` |
 | Generating and downloading the audio | `references/elevenlabs-voiceover.md` |
-| Choosing the animation engine (Manim / Remotion / HyperFrames) | `references/animation-engines.md` |
+| Choosing the animation engine (HTML by default / Manim / Remotion / HyperFrames) | `references/animation-engines.md` |
+| Building and rendering a lesson in the default HTML engine | `references/html-engine.md` |
 | Scenes, sync, captions, rendering in Remotion | `references/video-pipeline.md` |
 | The artefact a lesson shows: replicas, screenshots, zoom and pan | `references/realistic-visuals.md` |
 | Free local voice when there is no ElevenLabs account (OmniVoice) | `references/open-source-alternative.md` |
+| Commands that change a system (terminal + reacting diagram), or a 3D shot on request | `references/terminal-demo-and-3d.md` |
 
 ## Core Principles
 
@@ -78,7 +82,12 @@ Read the reference for the stage you are in. Do not load them all:
    it: the viewer has to recognise the thing when they open their own. The animation
    engine supplies the argument on top — the ring, the red-to-green comparison, the
    captions — and keeps its own shapes for what genuinely has no screen: a control
-   loop, a trade-off, a summary. **Replicate the frame, never fake the facts:** build the
+   loop, a trade-off, a summary. **When the lesson runs commands that change a system,
+   show both at once with the terminal demo:** the real command typing on the left, the
+   system's diagram answering its output on the right (`references/terminal-demo-and-3d.md`).
+   3D (three.js) only when the creator or the script asks for it, or when the idea is
+   genuinely spatial and you proposed it in the outline.
+   **Replicate the frame, never fake the facts:** build the
    chrome in HTML, but the command output, manifests and error messages inside it must
    be real. **And no single visual stays up for more than about 15 seconds:** past that,
    cut to a *different* picture of the same idea — a figure from the paper, the
@@ -136,7 +145,7 @@ Read the reference for the stage you are in. Do not load them all:
 | Single-video length | **5–10 min** | a standalone video is never a one-minute clip; see `references/course-architecture.md` |
 | Voice | the creator's own cloned ElevenLabs voice | **ask or look it up — never guess one**; see `references/elevenlabs-voiceover.md` |
 | Voice route | **ElevenLabs** | **OmniVoice (local, free)** only when the creator has no ElevenLabs account or does not want to pay; needs a 5–10 s steady recording of their voice — see `references/open-source-alternative.md` |
-| **Animation engine** | **ask — Manim when no preference** | Manim / Remotion / HyperFrames, once per course; see `references/animation-engines.md` |
+| **Animation engine** | **ask — HTML when no preference** | HTML (`templates/lesson-tpage.html`) / Manim / Remotion / HyperFrames, once per course; see `references/animation-engines.md` |
 | Format | 1920x1080, 30 fps | horizontal for YouTube |
 | Language | pt-BR for Brazilian users | the script language, not a model setting |
 | Output dir | `~/Movies/video-shorts/<curso-slug>/<aula-slug>/`, or `<video-slug>/` for a single video | ask only if the creator hints elsewhere |
@@ -261,11 +270,15 @@ above.
 
 ### Stage 4 — the video, synchronized to that audio
 
-**The engine was chosen at the first render gate** — Manim unless the creator picked
-Remotion or HyperFrames (`references/animation-engines.md`). **On a machine that has
-never rendered one of these, set the engine up first**: a venv with Manim, or the
-Remotion studio at `~/Movies/video-shorts/studio` (`references/video-pipeline.md`), or
-the HyperFrames CLI. Node, ffmpeg and Chrome, no Docker.
+**The engine was chosen at the first render gate**: HTML unless the creator picked
+Manim, Remotion or HyperFrames (`references/animation-engines.md`). The HTML engine
+needs only Node 22+, Chrome and ffmpeg (`references/html-engine.md`). **On a machine
+that has never rendered one of the others, set it up first**:
+- Manim: a venv with Manim;
+- Remotion: the studio at `~/Movies/video-shorts/studio` (`references/video-pipeline.md`);
+- HyperFrames: its CLI.
+
+No engine needs Docker.
 
 1. **Alignment** — derive word timings. The API's `with-timestamps` gives exact
    character times; from a web-app download, `scripts/studio/align-wav.mjs` estimates
@@ -274,9 +287,16 @@ the HyperFrames CLI. Node, ffmpeg and Chrome, no Docker.
    a draft, never a deliverable. Either way the output is `voice.<name>.json`.
 2. **Artefacts** — build what the lesson shows, before the composition. Research the
    real thing, then build an HTML replica on `templates/replica.css` and shoot it with
-   `scripts/studio/shoot-html.mjs`. See `references/realistic-visuals.md`.
-3. **Scene plan** — give every shot, node and panel a `revealWord`, so it lands exactly
-   when the narration names it.
+   `scripts/studio/shoot-html.mjs`. See `references/realistic-visuals.md`. For commands
+   that change a system, build a terminal demo (`references/terminal-demo-and-3d.md`):
+   in the HTML engine it is a scene of the lesson page (`terminal()` in
+   `templates/lesson-tpage.html`); in the other engines it is a clip from
+   `templates/terminal-demo.html` rendered with `scripts/studio/render-tpage.mjs --voice`.
+3. **Scene plan** — give every shot, node and panel a word it lands on, so it appears
+   exactly when the narration names it: `at('palavra', n)` in the HTML engine,
+   `revealWord` in Remotion. In the HTML engine, also give every real image the camera
+   keys that take it to each part the narration names. Before the full render, check
+   one still per scene (`render-tpage.mjs --still`).
 4. **Render** — the chosen engine renders only scenes that have measured audio;
    per-engine commands and sync mechanics are in `references/animation-engines.md`.
 5. **Audit the blocks, verify and deliver** — before rendering, measure how long each
@@ -298,9 +318,15 @@ the HyperFrames CLI. Node, ffmpeg and Chrome, no Docker.
   → `references/elevenlabs-voiceover.md`
 - Which engine renders the lesson, per-engine setup, sync and trade-offs
   → `references/animation-engines.md`
+- The default HTML engine: the lesson template, the kit (`at`, `camera`, `terminal`,
+  `ring`), stills, parallel render with `--workers` → `references/html-engine.md`
 - Remotion scenes, `revealWord`, captions, alignment, render debugging → `references/video-pipeline.md`
 - Which artefact a lesson shows, HTML replicas (`templates/replica.css`), zoom/pan
   shot lists, image sourcing and licensing → `references/realistic-visuals.md`
+- Commands that change a system (`kubectl`, `terraform`, `docker`...) → the terminal demo;
+  a 3D picture (asked for, or genuinely spatial and approved in the outline) → three.js on
+  a t-page; a hero shot chased against a target image → the target-image loop. All in
+  `references/terminal-demo-and-3d.md`, self-contained: no third-party skill needed
 - The user wants a *human-recorded* video → stop and use `create-script-and-slides-for-videos`
 - No ElevenLabs account, or the user asks for a free/offline voice → OmniVoice, local,
   `references/open-source-alternative.md` (setup, reference clip, approved recipe,

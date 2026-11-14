@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Aula — motor HTML (t-page)</title>
+<!--
+  A whole lesson as one t-page: every frame is a pure function of t, rendered frame-exact
+  by scripts/studio/render-tpage.mjs. This is the skill's default engine
+  (references/html-engine.md). It was approved on lesson 4.1 of the "IA para Dev/Ops"
+  course (Nov 2026), rated above the same lesson in HyperFrames.
+
+    node scripts/studio/render-tpage.mjs aula/index.html aula/video.mp4 \
+      --voice voice.<name>.json --scene aula --workers 4
+
+  --voice injects the measured word timings as window.WORDS (and the duration as
+  window.DURATION). Without it, the draft script in DRAFT below is timed at ~2.6 words
+  per second, so the layout can be reviewed before any audio exists.
+
+  To make a lesson:
+    1. Copy this file and the assets the lesson needs (images found on the web, the
+       creator's own images) into the lesson folder, under assets/.
+    2. Set LESSON (kicker, title, footer) and replace the scenes in S. Each scene has:
+         word / nth  the n-th time the narration says this word: the scene starts there
+         html        its markup, built with page(), camHTML(), win()
+         draw(t, $)  sets every moving part for time t. Cue everything on at('palavra', n)
+    3. Check stills (one per scene) with --still, then render, then mux the audio.
+
+  The four example scenes show the four moves the creator approved:
+    0. opening: cards that pop on the words that name them
+    1. a real image, with the camera going to the part the narration names
+    2. a terminal typing a real command, and a diagram reacting to its output
+    3. a closing checklist ticked on the words
+  The kubectl output in scene 2 is the same as templates/terminal-demo.html; a real
+  lesson pastes the output of its own run, never trimmed to fit.
+-->
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0b1016}
+#root{position:relative;width:1920px;height:1080px;overflow:hidden;background:#0b1016;font-family:-apple-system,'Helvetica Neue',Helvetica,Arial,sans-serif;color:#e8eef5}
+.shot{position:absolute;inset:0;opacity:0;background:#0b1016;visibility:hidden}
+.page{position:absolute;inset:0;padding:96px 86px 0;transform-origin:50% 40%}
+/* the opening sits below the title card */
+#S0 .page{padding-top:250px}#S0 .stage{top:390px}
+.kick{font-size:21px;text-transform:uppercase;letter-spacing:2.4px;color:#6cb6ff;margin-bottom:14px}
+h1{font-size:50px;line-height:1.15;margin:0 0 30px;font-weight:750}
+.credit{position:absolute;left:86px;right:86px;bottom:178px;font-size:19px;line-height:1.35;color:#93a3b5}
+.stage{position:absolute;left:86px;right:86px;top:236px;height:632px}
+.abs{position:absolute}
+.green{color:#7be3a0}.red{color:#ff9a9a}.dim{color:#7d8a99}.blue{color:#9fd4ff}
+code,.mono{font-family:Menlo,monospace}
+
+/* cards */
+.card{position:absolute;background:#161f2b;border:1px solid #354354;border-radius:14px;padding:26px 28px;overflow:hidden}
+.tag{color:#6cb6ff;font-size:19px;letter-spacing:1.5px;margin-bottom:12px}
+.t{font-size:36px;font-weight:750;margin-bottom:8px}
+.sub{font-size:25px;line-height:1.35;color:#bdcbd9}
+
+/* camera over a real image */
+.cam{position:absolute;overflow:hidden;border-radius:12px;background:#fff;box-shadow:0 30px 70px -30px #000}
+.cam.dark{background:#0d1117}
+.cam-in{position:absolute;left:0;top:0;transform-origin:0 0}
+.cam-in img{display:block;width:100%;height:100%}
+.chip{position:absolute;font-size:22px;font-weight:650;color:#012949;background:#8FCBFF;border-radius:8px;padding:8px 14px;white-space:nowrap}
+
+/* terminal: 22px mono is the floor at 1080p */
+.win{position:absolute;border-radius:12px;border:1px solid #3a4554;overflow:hidden;background:#12151b;box-shadow:0 30px 70px -30px #000}
+.bar{height:44px;background:#252c36;font-size:18px;color:#becbd9;padding:12px 18px;font-family:Menlo,monospace;white-space:nowrap;overflow:hidden}
+.bar i{display:inline-block;width:12px;height:12px;border-radius:50%;background:#4b5563;margin-right:7px}
+.term{font-family:Menlo,monospace;font-size:22px;line-height:1.5;white-space:pre;padding:18px 22px;margin:0;overflow:hidden;font-variant-ligatures:none}
+.term .ps{color:#7be3a0;font-weight:700}
+.caret{display:inline-block;width:11px;height:24px;vertical-align:-5px;background:#e8eef5}
+
+/* the diagram that answers the terminal */
+.box{position:absolute;border-radius:16px;border:2px solid #354354;background:#161f2b;padding:16px 20px}
+.box > b{font-size:24px}.box > span{font-size:20px;color:#93a3b5;margin-left:8px}
+.box.pod{border-color:#16A34A;background:#0f2a1f}
+.st{position:absolute;right:16px;top:14px;font:700 20px Menlo,monospace;padding:4px 10px;border-radius:6px;background:#0b1016}
+
+ul.check{position:absolute;list-style:none;padding:0;margin:0;font-size:40px;line-height:1.4}
+ul.check li{background:#161f2b;border:1px solid #354354;border-left:8px solid #16A34A;border-radius:12px;padding:24px 34px;margin-bottom:24px;display:flex;gap:22px;align-items:center}
+ul.check .bx{width:46px;height:46px;border-radius:10px;border:3px solid #4a5a6e;display:grid;place-items:center;font-size:32px;color:#7be3a0;flex:none}
+
+/* chrome: title, captions, footer */
+#scrim{position:absolute;inset:0;pointer-events:none;background:linear-gradient(to top,rgba(1,21,38,.94) 0%,rgba(1,21,38,.80) 7%,rgba(1,21,38,.22) 15%,rgba(1,21,38,0) 20%)}
+#title{position:absolute;left:86px;top:70px;background:#012949;border-left:6px solid #16A34A;border-radius:10px;padding:24px 50px;max-width:1500px;box-shadow:0 18px 50px rgba(0,0,0,.45);opacity:0}
+#title .k{color:#8FCBFF;font-size:28px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+#title .t{color:#fff;font-size:42px;font-weight:800;line-height:1.15;margin-top:9px}
+#cap{position:absolute;left:0;right:0;bottom:92px;display:flex;gap:42px;justify-content:center}
+#cap span{font-size:42px;font-weight:800;color:#fff;text-transform:uppercase;line-height:1.1;text-shadow:0 4px 16px rgba(0,0,0,.9)}
+#cap span.on{color:#16A34A;transform:scale(1.1)}
+#footer{position:absolute;left:0;right:0;bottom:0;height:67px;display:flex;align-items:center;justify-content:space-between;padding:0 67px;border-top:1px solid rgba(143,203,255,.18);background:rgba(1,21,38,.55)}
+#footer .b{color:#fff;font-size:36px;font-weight:900;letter-spacing:1px}
+#footer .s{color:#8FCBFF;font-size:25px;opacity:.85;margin-left:23px}
+</style>
+</head>
+<body>
+<div id="root">
+  <div id="shots"></div>
+  <div id="scrim"></div>
+  <div id="title"><div class="k"></div><div class="t"></div></div>
+  <div id="cap"></div>
+  <div id="footer"><div><span class="b"></span><span class="s"></span></div><span class="s"></span></div>
+</div>
+<script>
+// ================= the lesson =================
+const LESSON = {
+  kicker: 'Módulo 1 · Aula 1',
+  title: 'Do painel ao comando: o que a aula mostra',
+  pageKicker: 'Nome do curso · tema da aula',
+  footer: {brand: 'Marca', tagline: 'tagline da marca', site: 'site.com.br'}, // null hides it
+  captions: true,
+};
+// Used only when no --voice is passed: the approved script, for layout review.
+const DRAFT = `Nesta aula você vai ver três coisas: a imagem real, o comando e o resumo.
+Primeiro, o painel: a câmera vai até a latência e depois até os erros.
+Agora o comando: o kubectl run cria o Pod, e o diagrama reage quando a saída aparece.
+O get pod mostra o container pronto. Para fechar, o resumo: imagem real, comando real, e cada mudança na palavra certa.`;
+
+// ================= kit: nothing here reads the clock; everything is a function of t =================
+const WORDS = window.WORDS || DRAFT.split(/\s+/).map((w, i) => ({word: w, startMs: Math.round(i * 385), endMs: Math.round(i * 385 + 330)}));
+const DUR = window.DURATION || WORDS[WORDS.length - 1].endMs / 1000 + 0.6;
+window.DURATION = DUR;
+const TRANS = 0.45;
+const clamp = (x) => Math.max(0, Math.min(1, x));
+const ease = (t, a, b) => { const x = clamp((t - a) / (b - a)); return 1 - Math.pow(1 - x, 3); };
+const inout = (t, a, b) => { const x = clamp((t - a) / (b - a)); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+const lerp = (a, b, k) => a + (b - a) * k;
+const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
+// the second the narration says `word` for the nth time; a missing word is a page error
+function at(word, nth = 1) {
+  const hits = WORDS.filter((w) => norm(w.word) === norm(word));
+  if (hits.length < nth) { console.error(`palavra não encontrada: ${word} #${nth}`); return 0; }
+  return hits[nth - 1].startMs / 1000;
+}
+const typed = (s, t, a, cps = 40) => s.slice(0, Math.max(0, Math.floor((t - a) * cps)));
+const typeEnd = (s, a, cps = 40) => a + s.length / cps;
+function show(el, t, a, dist = 18, dur = .4) { const k = ease(t, a, a + dur); el.style.opacity = k; el.style.transform = `translateY(${(1 - k) * dist}px)`; return k; }
+function pop(el, t, a) { const k = ease(t, a, a + .35); el.style.opacity = k; el.style.transform = `scale(${.86 + .14 * k})`; return k; }
+// ring: lights at a, fades at b (or stays)
+function ring(el, t, a, b = Infinity) {
+  const on = ease(t, a, a + .35) * (b === Infinity ? 1 : 1 - ease(t, b, b + .25));
+  el.style.boxShadow = on ? `0 0 0 ${5 * on}px rgba(143,203,255,${on}), 0 0 ${38 * on}px rgba(143,203,255,${.55 * on})` : 'none';
+}
+// camera over an image: keys = [[t, {x,y,w,h}], ...] as fractions of the image; each move lasts `dur`
+function camera(cam, t, keys, dur = .9) {
+  const inn = cam.firstElementChild, W = cam.clientWidth, H = cam.clientHeight;
+  const Wi = W, Hi = W / +cam.dataset.ar;
+  inn.style.width = Wi + 'px'; inn.style.height = Hi + 'px';
+  let r = keys[0][1];
+  for (let i = 1; i < keys.length; i++) {
+    const [ti, ri] = keys[i]; if (t < ti) break;
+    const k = inout(t, ti, ti + dur);
+    r = {x: lerp(r.x, ri.x, k), y: lerp(r.y, ri.y, k), w: lerp(r.w, ri.w, k), h: lerp(r.h, ri.h, k)};
+  }
+  const s = Math.min(W / (r.w * Wi), H / (r.h * Hi));
+  const tx = W / 2 - (r.x + r.w / 2) * Wi * s, ty = H / 2 - (r.y + r.h / 2) * Hi * s;
+  inn.style.transform = `translate(${tx}px,${ty}px) scale(${s})`;
+}
+const FULL = {x: 0, y: 0, w: 1, h: 1};
+// terminal: a session of real commands; out shows `delay` s after the command finishes typing
+function terminal(el, t, session, keep = 16) {
+  const lines = [];
+  for (const s of session) {
+    if (t < s.at) break;
+    const done = typeEnd(s.cmd, s.at, s.cps || 40), typing = t < done + .1;
+    lines.push(`<span class="ps">${s.ps || '$'}</span> ${esc(typed(s.cmd, t, s.at, s.cps || 40))}${typing ? '<i class="caret"></i>' : ''}`);
+    if (t >= done + (s.delay ?? .2)) lines.push(...(typeof s.out === 'function' ? s.out(t) : s.out));
+  }
+  const last = session.findLast((s) => t >= s.at);
+  if (last && t >= typeEnd(last.cmd, last.at, last.cps || 40) + (last.delay ?? .2)) lines.push(`<span class="ps">${last.ps || '$'}</span> <i class="caret"></i>`);
+  const html = lines.slice(-keep).join('\n');
+  if (el.__h !== html) { el.innerHTML = html; el.__h = html; }
+}
+const outAt = (s) => typeEnd(s.cmd, s.at, s.cps || 40) + (s.delay ?? .2);
+const win = (cls, style, bar, body = '') => `<div class="win ${cls}" style="${style}"><div class="bar"><i></i><i></i><i></i>${esc(bar)}</div><pre class="term">${body}</pre></div>`;
+// ar = the image's width / height, so the camera keys stay fractions of the real picture
+const camHTML = (id, src, ar, style, dark = '') => `<div class="cam ${dark}" id="${id}" data-ar="${ar}" style="${style}"><div class="cam-in"><img src="assets/${src}"></div></div>`;
+const page = (title, body, credit = '') => `<div class="kick">${LESSON.pageKicker}</div><h1>${title}</h1><div class="stage">${body}</div><div class="credit">${credit}</div>`;
+
+// ================= the scenes =================
+const S = [];
+
+// 0 · opening: each card pops on the word that names it
+S.push({id: 'abertura', html: page('Três coisas nesta aula', `
+  <div class="card" id="o1" style="left:0;top:40px;width:540px;height:300px"><div class="tag">1 · IMAGEM REAL</div><div class="t">O painel</div><div class="sub">a tela que o aluno vai abrir</div></div>
+  <div class="card" id="o2" style="left:604px;top:40px;width:540px;height:300px"><div class="tag">2 · COMANDO</div><div class="t">O terminal</div><div class="sub">o comando real e a saída real</div></div>
+  <div class="card" id="o3" style="left:1208px;top:40px;width:540px;height:300px"><div class="tag">3 · RESUMO</div><div class="t">O fechamento</div><div class="sub">o que fica da aula</div></div>`),
+  draw(t, $) {
+    pop($('#o1'), t, at('imagem') - .1); pop($('#o2'), t, at('comando') - .1); pop($('#o3'), t, at('resumo') - .1);
+  }});
+
+// 1 · a real image: the camera goes to each part the narration names, and a chip names it
+S.push({id: 'painel', word: 'Primeiro', html: page('O painel: a câmera vai aonde a narração aponta', `
+  ${camHTML('c1', 'figura.png', 1116 / 794, 'left:0;top:0;width:1748px;height:600px', 'dark')}
+  <div class="chip" id="c1l" style="right:20px;top:18px"></div>`,
+  'Fonte: site de onde a imagem veio · licença conferida ou "não confirmada"'),
+  draw(t, $) {
+    const L = at('latência'), E = at('erros');
+    camera($('#c1'), t, [[this.t, FULL], [L - .15, {x: 0, y: .33, w: .67, h: .34}], [E - .15, {x: 0, y: 0, w: .67, h: .34}]], .7);
+    const lab = t >= E - .1 ? 'erros' : t >= L - .1 ? 'latência' : '';
+    $('#c1l').textContent = lab; $('#c1l').style.opacity = lab ? 1 : 0;
+  }});
+
+// 2 · terminal + reacting diagram: one side moves at a time, and the output causes the change
+const RUN = {cmd: 'kubectl run web --image=nginx', cps: 32, out: ['pod/web created']};
+const GET = {cmd: 'kubectl get pod web', cps: 32, out: ['NAME   READY   STATUS    RESTARTS   AGE', 'web    1/1     Running   0          12s']};
+S.push({id: 'comando', word: 'Agora', html: page('O comando e o efeito dele no mesmo quadro', `
+  ${win('', 'left:0;top:0;width:860px;height:600px', 'zsh · kubectl')}
+  <div class="box" style="left:900px;top:0;width:848px;height:600px"><b>Cluster</b><span>kind</span>
+    <div class="box" style="left:24px;top:70px;width:796px;height:500px"><b>Worker node</b><span>kind-worker</span>
+      <div class="box pod" id="pod" style="left:24px;top:70px;width:744px;height:400px;opacity:0"><b>Pod</b><span>web</span><i class="st" id="pst"></i>
+        <div class="box" id="ctr" style="left:24px;top:80px;width:260px;height:140px;background:#e8eef5;color:#012949;text-align:center;padding-top:36px"><b style="font-size:34px">nginx</b><br><span style="color:#035CA2;margin:0">container</span></div>
+      </div>
+    </div>
+  </div>`),
+  draw(t, $) {
+    RUN.at = at('run') - .2; GET.at = at('get') - .2;
+    terminal($('.term'), t, [RUN, GET]);
+    const created = outAt(RUN), ready = outAt(GET);
+    pop($('#pod'), t, created);
+    const st = $('#pst');
+    st.textContent = t >= ready ? 'Running' : 'ContainerCreating';
+    st.style.color = t >= ready ? '#7be3a0' : '#facc15';
+    ring($('#ctr'), t, ready);
+  }});
+
+// 3 · closing checklist, ticked on the words
+S.push({id: 'resumo', word: 'fechar', html: page('Resumo', `
+  <ul class="check" style="left:0;top:0;width:1748px">
+    <li id="k1"><span class="bx" id="k1x"></span>Imagem real, com a câmera no trecho citado</li>
+    <li id="k2"><span class="bx" id="k2x"></span>Comando real, com a saída real</li>
+    <li id="k3"><span class="bx" id="k3x"></span>Cada mudança na palavra certa</li>
+  </ul>`),
+  draw(t, $) {
+    [['imagem', 2], ['comando', 3], ['mudança', 1]].forEach(([w, n], i) => {
+      const a = at(w, n) - .1; show($(`#k${i + 1}`), t, a);
+      const x = $(`#k${i + 1}x`); x.textContent = t >= a + .5 ? '✓' : ''; x.style.borderColor = t >= a + .5 ? '#16A34A' : '#4a5a6e';
+    });
+  }});
+
+// ================= assembly: scene timing, crossfade, title, captions =================
+document.querySelector('#title .k').textContent = LESSON.kicker;
+document.querySelector('#title .t').textContent = LESSON.title;
+const F = LESSON.footer, footEl = document.getElementById('footer');
+if (F) { footEl.querySelector('.b').textContent = F.brand; footEl.querySelector('div .s').textContent = F.tagline; footEl.lastElementChild.textContent = F.site; }
+else footEl.style.display = 'none';
+
+const shotsEl = document.getElementById('shots');
+S.forEach((s, i) => {
+  s.t = i === 0 ? 0 : at(s.word, s.nth || 1);
+  const d = document.createElement('div'); d.className = 'shot'; d.id = 'S' + i;
+  d.innerHTML = `<div class="page">${s.html}</div>`; shotsEl.appendChild(d); s.el = d;
+  s.$ = (q) => d.querySelector(q);
+});
+S.forEach((s, i) => { s.end = i + 1 < S.length ? S[i + 1].t : DUR; });
+
+const capEl = document.getElementById('cap');
+let capK = -2;
+function captions(t) {
+  if (!LESSON.captions) return;
+  let k = -1; for (let i = 0; i < WORDS.length; i++) { if (WORDS[i].startMs / 1000 <= t) k = i; else break; }
+  if (k < 0) k = 0;
+  if (k === capK) return; capK = k;
+  const from = Math.max(0, k - 1);
+  capEl.innerHTML = WORDS.slice(from, from + 4).map((w, j) => `<span${from + j === k ? ' class="on"' : ''}>${esc(w.word)}</span>`).join('');
+}
+
+window.seek = (t) => {
+  for (const s of S) {
+    const vis = t >= s.t && t < s.end + TRANS;
+    s.el.style.visibility = vis ? 'visible' : 'hidden';
+    if (!vis) continue;
+    s.el.style.opacity = s.t === 0 ? 1 : ease(t, s.t, s.t + TRANS);
+    s.el.firstElementChild.style.transform = `scale(${1 + .025 * clamp((t - s.t) / (s.end - s.t + TRANS))})`; // slow push-in
+    s.draw.call(s, t, s.$);
+  }
+  // the title card covers the opening, then leaves before the first cut
+  const tt = document.getElementById('title'), out = Math.min(S[1] ? S[1].t : DUR, 2.6) - .65;
+  const k = ease(t, 0, .45) * (1 - ease(t, out, out + .5));
+  tt.style.opacity = k; tt.style.transform = `translateY(${(1 - k) * -14}px)`;
+  captions(t);
+};
+window.seek(0);
+window.__ready = true;
+// open with ?play in a browser to watch it in real time
+if (location.search.includes('play')) { const t0 = performance.now(); const loop = () => { window.seek((performance.now() - t0) / 1000); requestAnimationFrame(loop); }; loop(); }
+</script>
+</body>
+</html>

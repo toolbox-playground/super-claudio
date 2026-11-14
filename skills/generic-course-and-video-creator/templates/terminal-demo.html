@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Terminal demo — Pod no Kubernetes</title>
+<!--
+  Terminal demo: one window, a terminal on the left typing real commands, and on the
+  right a diagram of the system that reacts to each command the moment its output lands.
+  Every frame is a pure function of t, so scripts/studio/render-tpage.mjs renders it
+  frame-exact and in sync with the narration:
+
+    node scripts/studio/render-tpage.mjs terminal-demo.html out.mp4 --voice voice.aula.json --scene aula
+
+  Copy this file next to the lesson and replace three things:
+    1. SESSION  - the commands and their REAL output (run them, or use the vendor's
+                  documented output; never trim columns to make a line fit -- pick a
+                  command whose real output is narrow: -o jsonpath, -o custom-columns).
+    2. C        - the cues: each one is a word of the narration (cue('palavra', n)).
+                  The number after it is only the draft second used when no voice file
+                  is passed.
+    3. the map  - the HTML of the diagram, and draw()'s lines that move it.
+
+  Sample narration these cues were written for:
+    "Com o kubectl run, a gente cria um Pod chamado web, com a imagem do nginx.
+     O Kubernetes agenda o Pod num worker node e sobe o container.
+     O get pod mostra o container pronto: um de um.
+     E o Pod ganha um IP só dele, que todos os containers do Pod compartilham."
+-->
+<style>
+  :root {
+    --ground: #012949; --ground-2: #035ca2; --accent: #16a34a; --accent-hi: #4ade80;
+    --t-bg: #0b0f14; --t-bar: #161c24; --t-fg: #d7e2ee; --t-dim: #7d8fa3;
+    --hl: #facc15; --ink: #eaf2fa; --dim: #7fb0dc;
+    --mono: "JetBrains Mono", "SF Mono", ui-monospace, Menlo, monospace;
+    --sans: Inter, -apple-system, "Segoe UI", system-ui, sans-serif;
+  }
+  html, body { margin: 0; background: var(--ground); }
+  #stage { position: relative; width: 1920px; height: 1080px; overflow: hidden;
+    background: radial-gradient(1100px 700px at 50% 42%, #04406f 0%, var(--ground) 62%, #001a33 100%);
+    font-family: var(--sans); }
+
+  /* the window: replica chrome, drawn from scratch */
+  .win { position: absolute; left: 120px; top: 70px; width: 1680px; height: 860px; border-radius: 16px;
+    overflow: hidden; background: var(--t-bg); box-shadow: 0 50px 120px -40px rgba(0,0,0,.75), 0 0 0 1px rgba(255,255,255,.06); }
+  .bar { height: 46px; display: flex; align-items: center; gap: 9px; padding: 0 18px; background: var(--t-bar);
+    border-bottom: 1px solid rgba(255,255,255,.06); }
+  .bar i { width: 13px; height: 13px; border-radius: 50%; background: #ff5f57; }
+  .bar i:nth-child(2) { background: #febc2e; } .bar i:nth-child(3) { background: #28c840; }
+  .bar span { flex: 1; text-align: center; margin-right: 60px; color: var(--t-dim); font: 500 16px var(--mono); }
+  .body { display: grid; grid-template-columns: 860px 1fr; height: calc(100% - 46px); }
+
+  /* left: the terminal. 22px mono at 1080p is the floor for legibility. */
+  .term { margin: 0; padding: 28px 30px; font: 500 22px/1.55 var(--mono); color: var(--t-fg);
+    white-space: pre; overflow: hidden; font-variant-ligatures: none; border-right: 1px solid rgba(255,255,255,.07); }
+  .ps { color: var(--accent-hi); font-weight: 700; }
+  .dim { color: var(--t-dim); }
+  .caret { display: inline-block; width: 12px; height: 26px; vertical-align: -5px; margin-left: 2px; background: var(--t-fg); }
+  .hl { background: rgba(250,204,21,.22); color: #fde68a; border-radius: 4px; box-shadow: 0 0 0 3px rgba(250,204,21,.22); }
+
+  /* right: the diagram that answers the command */
+  .map { position: relative; }
+  .cl { position: absolute; inset: 26px; border: 2px solid rgba(127,176,220,.3); border-radius: 20px; background: #0d2236; }
+  .tag { position: absolute; left: 18px; top: 14px; font: 500 19px var(--sans); color: var(--dim); }
+  .tag b { color: var(--ink); font-weight: 650; }
+  .node { position: absolute; left: 26px; right: 26px; top: 62px; bottom: 26px; border-radius: 16px;
+    background: #123554; border: 2px solid rgba(79,143,214,.45); }
+  .pod { position: absolute; left: 26px; right: 26px; top: 62px; bottom: 26px; border: 3px solid var(--accent);
+    border-radius: 14px; background: rgba(22,163,74,.08); }
+  .pod .tag { color: var(--accent-hi); } .pod .tag b { color: #c9f7da; }
+  .st { position: absolute; right: 16px; top: 13px; font: 650 17px/1 var(--mono); padding: 7px 10px; border-radius: 7px;
+    background: #1f2937; color: #fbbf24; }
+  .st.run { background: rgba(22,163,74,.2); color: var(--accent-hi); }
+  .ct { position: absolute; left: 26px; top: 66px; width: 230px; height: 150px; border-radius: 12px; background: #e9f1fb;
+    color: var(--ground); display: grid; place-content: center; text-align: center; font: 750 30px var(--sans); }
+  .ct small { display: block; font: 500 17px/1.5 var(--mono); color: #3d6890; }
+  .ring { position: absolute; inset: -10px; border: 3px solid var(--hl); border-radius: 18px; }
+  .net { position: absolute; left: 26px; right: 26px; bottom: 74px; height: 9px; border-radius: 5px; background: var(--accent);
+    transform-origin: 0 50%; }
+  .ip { position: absolute; left: 26px; bottom: 26px; font: 650 21px/1 var(--mono); color: var(--accent-hi); }
+
+  /* the takeaway: the one sentence a viewer should keep */
+  .take { position: absolute; left: 120px; right: 120px; top: 962px; text-align: center; font: 650 38px/1.2 var(--sans); color: var(--ink); }
+  .take em { font-style: normal; color: var(--accent-hi); }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="win">
+    <div class="bar"><i></i><i></i><i></i><span>zsh — kubectl</span></div>
+    <div class="body">
+      <pre class="term" id="term"></pre>
+      <div class="map"><div class="cl">
+        <span class="tag"><b>Cluster</b> · kind</span>
+        <div class="node"><span class="tag"><b>Worker node</b> · kind-worker</span>
+          <div class="pod" id="pod"><span class="tag"><b>Pod</b> · web</span><span class="st" id="st"></span>
+            <div class="ct" id="ct"><span>nginx</span><small>container</small><i class="ring" id="ring"></i></div>
+            <div class="net" id="net"></div><span class="ip" id="ip"></span>
+          </div>
+        </div>
+      </div></div>
+    </div>
+  </div>
+  <div class="take" id="take"></div>
+</div>
+<script>
+// ---- engine: nothing below this line reads the clock ----------------------------
+const clamp = (x) => Math.max(0, Math.min(1, x));
+const ease = (t, a, b) => { const x = clamp((t - a) / (b - a)); return 1 - Math.pow(1 - x, 3); };   // strong ease-out
+const typed = (s, t, a, b) => s.slice(0, Math.round(s.length * clamp((t - a) / (b - a))));
+const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
+// cue('pod', 2) = the second at which the narration says "pod" for the 2nd time.
+// Without a voice file (window.WORDS) it falls back to the draft second.
+function cue(word, nth, draft) {
+  if (!window.WORDS) return draft;
+  let k = 0;
+  for (const w of window.WORDS) if (norm(w.word) === norm(word) && ++k === nth) return w.startMs / 1000;
+  console.error(`cue not found in the narration: "${word}" #${nth}`);
+  return draft;
+}
+window.DURATION = window.WORDS ? window.WORDS.at(-1).endMs / 1000 + 0.6 : 12;
+
+// ---- 2. cues: a word of the narration each --------------------------------------
+const C = {
+  run:     cue('kubectl', 1, 0.3),    // starts typing `kubectl run`
+  pod:     cue('pod', 1, 1.9),        // the Pod appears in the diagram
+  sobe:    cue('sobe', 1, 4.0),       // container being created
+  getpod:  cue('get', 1, 5.6),        // starts typing `kubectl get pod`
+  pronto:  cue('pronto', 1, 7.0),     // READY 1/1 and the container ringed
+  ip:      cue('ip', 1, 8.4),         // starts typing the jsonpath query
+  share:   cue('compartilham', 1, 10.2),
+};
+
+// ---- 1. the session: real commands, real output ---------------------------------
+// out: lines of HTML, shown `delay` s after the command finishes typing.
+// The values below came from a kind cluster; replace them with your own run's output.
+const SESSION = [
+  { at: C.run, type: 1.1, cmd: 'kubectl run web --image=nginx', out: () => ['pod/web created'] },
+  { at: C.getpod, type: 0.8, cmd: 'kubectl get pod web', out: (t) => [
+      '<span class="dim">NAME   READY   STATUS    RESTARTS   AGE</span>',
+      `web    ${t >= C.pronto ? '<span class="hl">1/1</span>' : '1/1'}     Running   0          12s` ] },
+  { at: C.ip, type: 1.2, cmd: `kubectl get pod web -o jsonpath='{.status.podIP}{"\\n"}'`, out: (t) => [
+      `<span class="${t >= C.share - 0.2 ? 'hl' : ''}">10.244.1.7</span>` ] },
+];
+const KEEP = 20;   // lines kept on screen; older ones scroll off the top
+
+function drawTerminal(t) {
+  const lines = [];
+  for (const s of SESSION) {
+    if (t < s.at) break;
+    const done = s.at + s.type, typing = t < done + 0.15;
+    lines.push(`<span class="ps">~ ❯</span> ${esc(typed(s.cmd, t, s.at, done))}${typing ? '<i class="caret"></i>' : ''}`);
+    if (t >= done + (s.delay ?? 0.25)) lines.push(...s.out(t));
+  }
+  const last = SESSION.findLast((s) => t >= s.at);
+  if (!last || t >= last.at + last.type + (last.delay ?? 0.25)) lines.push('<span class="ps">~ ❯</span> <i class="caret"></i>');
+  document.getElementById('term').innerHTML = lines.slice(-KEEP).join('\n');
+}
+
+// ---- 3. the diagram: each change is caused by an output on the left -------------
+const $ = (id) => document.getElementById(id);
+const RUN_OUT = C.run + SESSION[0].type + 0.25;
+function drawMap(t) {
+  const on = ease(t, Math.max(C.pod, RUN_OUT), Math.max(C.pod, RUN_OUT) + 0.5);
+  $('pod').style.opacity = on; $('pod').style.transform = `translateY(${(1 - on) * 18}px)`;
+  const st = $('st');
+  st.textContent = t >= C.getpod ? 'Running' : t >= C.sobe ? 'ContainerCreating' : 'Pending';
+  st.classList.toggle('run', t >= C.getpod);
+  const c = ease(t, C.sobe, C.sobe + 0.6);
+  $('ct').style.opacity = c; $('ct').style.transform = `scale(${0.95 + 0.05 * c})`;
+  const r = ease(t, C.pronto, C.pronto + 0.35);
+  $('ring').style.opacity = r * (t < C.ip + 0.5 ? 1 : 1 - ease(t, C.ip + 0.5, C.ip + 0.9));
+  $('ring').style.transform = `scale(${1.06 - 0.06 * r})`;
+  const ipOut = C.ip + SESSION[2].type + 0.25;
+  $('net').style.transform = `scaleX(${ease(t, ipOut, ipOut + 0.6)})`;
+  $('ip').textContent = t >= ipOut + 0.3 ? 'IP 10.244.1.7 · um IP para o Pod inteiro' : '';
+  const k = ease(t, C.share, C.share + 0.5);
+  $('take').innerHTML = 'Um Pod agrupa <em>um ou mais containers</em> que compartilham a rede.';
+  $('take').style.opacity = k; $('take').style.transform = `translateY(${(1 - k) * 14}px)`;
+}
+
+window.seek = (t) => { drawTerminal(t); drawMap(t); };
+window.seek(0);
+window.__ready = true;
+</script>
+</body>
+</html>
