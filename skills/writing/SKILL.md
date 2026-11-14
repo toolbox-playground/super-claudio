@@ -8,7 +8,7 @@ description: >
   "write a thread for X", "write marketing copy", "content calendar", "write captions",
   "write an email", "blog article", "landing page copy", "write ad copy", "brand voice",
   "content strategy", "headline", "write a script for a video".
-  Do NOT trigger for: generating images, audio, or videos (use media-content-creation),
+  Do NOT trigger for: generating images, audio, or videos (use generic-media-content-creation),
   writing code (use software-development skill).
 ---
 

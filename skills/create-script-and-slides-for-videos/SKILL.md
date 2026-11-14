@@ -13,8 +13,8 @@ description: >
   certifications, tech questions like "vale a pena X em 2026?") and wants material to
   record a video about it.
   Do NOT trigger for: complete narrated courses or standalone educational videos with
-  cloned voice and synchronized rendering (use generic-course-and-video-creator), other media
-  generation (use media-content-creation), webpages from existing slide decks (use productivity),
+  cloned voice and synchronized rendering (use course-and-video-creator), other media
+  generation (use generic-media-content-creation), webpages from existing slide decks (use productivity),
   blog posts without a video (use writing).
 ---
 

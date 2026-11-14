@@ -10,7 +10,7 @@ description: >
   "best AI for video generation", "best AI for image generation", "best AI for audio",
   "best AI for writing", "find a tool that can generate X", "no-credit-card AI tool",
   "which AI tools are actually free", "free trial without credit card", "AI tools that work for free".
-  Do NOT trigger for: creating media directly (use media-content-creation), writing content
+  Do NOT trigger for: creating media directly (use generic-media-content-creation), writing content
   (use writing), building code (use software-development), finding Claude Code plugins (use discover-skills).
 ---
 
@@ -110,4 +110,4 @@ Output using this exact format:
 
 If they pick a tool and want step-by-step help creating something, note:
 > "I can walk you through using [tool] — just say the word and I'll switch to the
-> media-content-creation skill for the full workflow."
+> generic-media-content-creation skill for the full workflow."

@@ -17,7 +17,7 @@ description: >
   Trigger on git/GitHub: "create a PR", "open a pull request", "GitHub CLI", "gh pr", "gh issue",
   "connect Claude to GitHub", "GitHub MCP", "commit message", "git workflow", "manage issues",
   "review a PR", "GitHub Actions workflow", "release on GitHub".
-  Do NOT trigger for: frontend/UI design (use design skill), media generation (use media-content-creation).
+  Do NOT trigger for: frontend/UI design (use design skill), media generation (use generic-media-content-creation).
 ---
 
 # Software Development

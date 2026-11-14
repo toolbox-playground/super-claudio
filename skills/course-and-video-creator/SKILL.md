@@ -1,5 +1,5 @@
 ---
-name: super-claudio:generic-course-and-video-creator
+name: super-claudio:course-and-video-creator
 description: >
   Builds complete narrated course videos end to end: course roadmap, module and lesson
   breakdown, a natural-spoken-language script for every lesson, voiceover in the
