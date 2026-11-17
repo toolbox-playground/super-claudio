@@ -66,9 +66,9 @@ with open("output.mp3", "wb") as f:
 
 `eleven_monolingual_v1`, `eleven_multilingual_v1`, and `scribe_v1` were removed on July 9, 2026. Migrate to `eleven_multilingual_v2` or `eleven_v3` for TTS; `scribe_v2` or `scribe_v2_realtime` for STT.
 
-## ElevenLabs v4 — Previewed at ElevenSummit Warsaw (Not Yet Released)
+## ElevenLabs v4 / v4 Turbo — Shipped Sept 28, 2026
 
-ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
+ElevenLabs shipped v4 and v4 Turbo on September 28, 2026, following the preview at ElevenSummit Warsaw (June 2026). v4 supports 90+ languages; v4 Turbo targets ~150ms TTFA for low-latency use. ElevenLabs reports #1 on the Artificial Analysis Provider Voice Arena (Sept 2026) and ~75% blind-test preference over prior models. Reported pricing varies by source (a launch promo ran through mid-Oct 2026) — verify current rates at elevenlabs.io/pricing before quoting a number. Positioned as "performance acting" — expressive delivery with emotion, intent, and accent control.
 
 
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
@@ -131,6 +131,8 @@ Alibaba's Fun-Realtime-TTS briefly held #1 on the Artificial Analysis Speech Are
 
 Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expressive speech with inline audio tags for style and pacing control — and is currently free in AI Studio during preview. Ranked **~#3 on the Artificial Analysis TTS Arena** (Elo ~1,217; held #1 through May 2026, briefly at #2 in June 2026 when Alibaba's Fun-Realtime-TTS surpassed it, then Inworld TTS-1.5 Max claimed #1 in July 2026 at Elo 1,238).
 
+> **Update (Sept 22–23, 2026):** Google shipped **Gemini 3.8 Flash TTS**, succeeding 3.1/3.5. Promotional pricing of $0.50/1M text tokens runs through Dec 31, 2026, rising to $1/1M from Jan 2027.
+
 - **URL:** aistudio.google.com | Vertex AI | cloud.google.com/text-to-speech
 - **Free tier:** Yes — free in Google AI Studio (preview; rate limited); also accessible in Google Vids
 - **Paid API:** $1.00/1M input tokens (text); $20.00/1M output tokens (audio); batch API: 50% off
@@ -182,6 +184,8 @@ Hume Octave 2 is the first TTS model built on a language model backbone that tru
 ## Cartesia Sonic 3.5 — #2 Artificial Analysis TTS Arena, Real-Time Conversational TTS
 
 Cartesia Sonic 3.5 (upgraded May 2026) is purpose-built for real-time conversational AI with ~40ms time-to-first-audio — the standard pick for voice agents and chatbots. Sonic 3.5 improves on Sonic 3 with noticeably more natural voices, better stability through long calls, and more consistent pronunciation of difficult words and names. **Ranked #2 on the Artificial Analysis Speech Arena (Elo ~1,211, July 2026)** — a notable rise, combining both fast latency and top-tier quality. The upgrade applies automatically to all existing Cartesia integrations.
+
+> **Update (Aug 27, 2026):** Cartesia shipped **Sonic 3.6** GA — backward-compatible with 3.5 integrations, same API, no migration needed.
 
 - URL: cartesia.ai
 - Free tier available
@@ -267,6 +271,8 @@ Alibaba's Qwen-Audio-3.0-TTS-Plus (distinct from the open-source Qwen3-TTS liste
 ## Speechify SIMBA 3.2 — #2 Artificial Analysis TTS Arena at $10/1M Characters (Mid-July 2026)
 
 Speechify SIMBA 3.2 (July 2026) reached **#1 on the Artificial Analysis TTS Arena** before being narrowly surpassed by Qwen-Audio-3.0-TTS-Plus in mid-July 2026 (now **#2, Elo 1,234**; overlapping confidence intervals — effectively co-equal on quality) — at $10/1M characters ($6/1M at the Scale tier), the lowest price among current global top-5 models. SIMBA 3.0 (May 2026) entered at #7 (Elo 1,159); 3.2 improved emotional control, locale coverage, and streaming latency, rising to #1 by mid-July 2026.
+
+> **Update (Oct 21, 2026):** Speechify shipped **SIMBA 3.5**, reporting #1 on the Artificial Analysis Controlled Voice leaderboard (Elo ~1,192, narrowly ahead of HeyGen Voice at ~1,190 — overlapping confidence intervals). Reported pricing conflicts across sources ($6.58/1M characters per one AA-linked rate vs. tiered $15/$12/$10 pricing on Speechify's own site) — confirm at speechify.com before quoting a number.
 
 - **URL:** speechify.com
 - **Free tier:** No API free tier; Speechify consumer app has a limited free plan
@@ -473,6 +479,8 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 - **Not ideal for:** Multilingual content or theatrical emotional range (use Fish Audio or ElevenLabs for those)
 
 ## Choosing Between Tools
+
+> **Note (Nov 2026):** The table below reflects July 2026 rankings. Since then, ElevenLabs v4/v4 Turbo (Sept 28), Cartesia Sonic 3.6 (Aug 27, GA), Gemini 3.8 Flash TTS (Sept 22–23), and Speechify SIMBA 3.5 (Oct 21) all shipped — current #1 is contested between ElevenLabs v4 and Speechify SIMBA 3.5 depending on source. Verify against the live Artificial Analysis Speech Arena before quoting a specific Elo number or "#1" claim.
 
 | Need | Tool |
 |------|------|
