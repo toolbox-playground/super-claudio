@@ -137,7 +137,7 @@ Read the reference for the stage you are in. Do not load them all:
 |---|---|---|
 | Topic | required | e.g. "Kubernetes", "Terraform", "SRE" |
 | **Output shape** | **ask if ambiguous** | **a course** (many lessons, one video each) or **a single video** (one standalone piece, usually YouTube) — this changes the whole first stage |
-| Source material | none | a PDF, deck, article, repo or recording the creator provides — **read it before anything else** |
+| Source material | none | a PDF, deck, article, repo, recording or video link (YouTube, Instagram, TikTok) the creator provides — **read it before anything else** |
 | Level | ask if absent | iniciante / intermediário / avançado — changes the whole roadmap |
 | Delivery mode | **e-learning** for a course | e-learning / conversational (YouTube) / how-to — changes the register and the voice settings |
 | Course length | propose, then confirm | total hours; drives the module count. A course only |
@@ -160,6 +160,8 @@ sixty lessons to re-record.
 
 If the request arrives with a PDF, a deck, an article, a repo or a recording, **open it
 before proposing anything** and report what you found. See `references/source-material.md`.
+A video, as a link or a file, is read with `scripts/source/read-video.sh`: it downloads
+the video, transcribes it and tiles its frames into contact sheets you can look at.
 
 ### Stage 1 — the structure  → **approval gate**
 
@@ -308,8 +310,8 @@ No engine needs Docker.
 
 ## Routing
 
-- The creator handed over a PDF, deck, article, repo or recording → read it first,
-  `references/source-material.md`
+- The creator handed over a PDF, deck, article, repo, recording or video link → read it
+  first, `references/source-material.md` (videos: `scripts/source/read-video.sh`)
 - Roadmap scope, level differences, module ordering → `references/course-architecture.md`
 - Delivery mode, register, direct technical explanations, optional analogies, the verbosity
   dial, natural phrasing, pacing, character budget → `references/narration-script.md`
