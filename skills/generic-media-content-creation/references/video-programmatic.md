@@ -18,6 +18,10 @@ npx create-video@latest
 - Emoji/motion graphics templates — great for fun WhatsApp/Instagram shares
 - Data visualization templates — animate charts and stats
 
+**2026 updates:**
+- Agent Skills (`npx skills add remotion-dev/skills`, Jan 2026) — AI-agent-assisted Remotion coding support for Claude Code and other coding agents
+- `@remotion/effects` package (June 2026) — ~50 built-in video effects (glitch, chromatic aberration, VHS, etc.) without writing custom shader code
+
 **Basic structure:**
 ```tsx
 import { AbsoluteFill, useCurrentFrame, interpolate } from 'remotion';
