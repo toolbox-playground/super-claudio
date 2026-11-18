@@ -16,6 +16,7 @@ to route them to the right skill before responding.
 | Transform DevOps Mentoria PPTX slides into Carreira Tech beginner slides | `carreira-tech-slides` |
 | Prepare a script + local HTML slides for a self-recorded video (real researched data) | `create-script-and-slides-for-videos` |
 | Create a course or standalone video: outline, scripts, cloned-voice narration and synced video | `course-and-video-creator` |
+| Make an animated storytelling short (Reels/TikTok/Shorts) with an everyday analogy, cartoon, meme and cloned-voice narration | `shorts-video-creator` |
 | Create ads, TikTok Shop content, ecommerce creatives, marketing campaigns | `marketing` |
 | Write blog posts, social captions, SEO content, ad copy, email newsletters | `writing` |
 | Design a website or app UI, find design inspiration, use design tools | `design` |

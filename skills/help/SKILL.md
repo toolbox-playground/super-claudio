@@ -16,6 +16,7 @@ Here's everything I can help you with. Just tell me what you need or use the sla
 | `/super-claudio:software-development` | Build APIs, automate, deploy, free APIs, git/GitHub | "build an API", "automate with n8n", "create a PR" |
 | `/super-claudio:revisor-pipeline` | Security + team-standards review of GitHub Actions workflows before merge | "revisa meu pipeline", "esse workflow é seguro?" |
 | `/super-claudio:course-and-video-creator` | Courses and standalone videos end to end: outline, scripts, your cloned voice, rendered MP4 | "cria um curso de Kubernetes", "vídeo com minha voz clonada" |
+| `/super-claudio:shorts-video-creator` | Animated storytelling shorts: analogy cartoon, de-para, real terminal, meme, your cloned voice | "cria um short sobre DNS", "faz os próximos 5 shorts" |
 | `/super-claudio:create-script-and-slides-for-videos` | Script + local HTML slides for a video you record yourself | "cria um roteiro sobre", "vou gravar um vídeo sobre" |
 | `/super-claudio:carreira-tech-slides` | Turn DevOps Mentoria PPTX into Carreira Tech beginner slides | "adaptar aula para iniciante" |
 | `/super-claudio:tech-career-mentorship` | Mentee diagnosis, roadmap, verified course guide, mentoring PDF | "diagnóstico de carreira", "roadmap do mentorado" |

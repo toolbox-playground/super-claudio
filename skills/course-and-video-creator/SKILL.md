@@ -27,7 +27,8 @@ description: >
   lesson, a conversational YouTube video, or a how-to tutorial.
   Do NOT trigger for: material a human will record themselves (use
   create-script-and-slides-for-videos), slide decks or webpages (use productivity),
-  DevOps Mentoria PPTX conversion (use carreira-tech-slides), editing existing
+  DevOps Mentoria PPTX conversion (use carreira-tech-slides), animated storytelling
+  shorts with an analogy cartoon and memes (use shorts-video-creator), editing existing
   footage, or cinematic/realistic AI video generation.
 ---
 
