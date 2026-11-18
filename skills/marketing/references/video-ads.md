@@ -401,6 +401,20 @@ LinkedIn released five AI creative tools inside Campaign Manager on July 1, 2026
 **Best for:** B2B brands running LinkedIn campaigns who want faster variant generation and consistent brand voice without manual design work per variant.
 **Not ideal for:** Consumer / DTC advertising (LinkedIn CPMs are high; use TikTok Symphony or Meta Advantage+ for lower-funnel consumer campaigns).
 
+## Meta Ads Manager — Brand Memory & End-to-End AI Creative (Cannes Lions, Jun 23 2026)
+
+Meta's AI creative workspace inside Ads Manager combines campaign creation, testing, and launch in one flow. Its flagship feature, **Brand Memory**, ingests a brand's own ad library (~18 months of history) to learn tone and visual identity, then carries that identity into newly generated creatives — reducing the "off-brand AI slop" problem other generators have.
+
+1. Go to business.facebook.com/adsmanager → AI Creative tools
+2. Let Brand Memory ingest your ad library, then refine by stating what the brand stands for
+3. Generate creative variants in your brand's learned voice/style
+4. Test and launch directly from the same workspace
+
+**Rollout status:** Limited testing as of the June 2026 announcement; broader rollout "in the coming months" per Meta, no confirmed general-availability date as of Nov 2026.
+**Also announced:** unified Creator Marketing Hub, expanded AI translation/voiceover support.
+**Best for:** Brands with an existing Meta ad history who want new creative to stay visually/tonally consistent without manual brand-kit setup.
+**Not ideal for:** Brands without substantial ad history on Meta (nothing for Brand Memory to learn from); still in limited rollout, so access may not be available to all advertisers yet.
+
 ## Higgsfield — Cinema Studio Platform
 
 Higgsfield (higgsfield.ai) is a multi-model video platform for professional ad creation — **not** the same as Hailuo (hailuoai.video, which is MiniMax's product). Higgsfield wraps Seedance 2.0, Kling 3.0, Veo 3.1, Wan 2.7, and others in one workspace, with Cinema Studio 3.5 adding 70+ cinematic camera presets and Soul ID for cross-shot character consistency.
