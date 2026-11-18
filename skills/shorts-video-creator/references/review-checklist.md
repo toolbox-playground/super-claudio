@@ -16,7 +16,8 @@ not narrated.
 - [ ] No loose generic noun: software, nuvem, agente, produção, testes, sistema, dados,
       vídeo, pagamento… each one has its full name ("placa de vídeo", "o serviço de pagamento").
 - [ ] Every technical term is defined on first appearance, technically first.
-- [ ] Real names of the tools/services are present (AWS/Google Cloud/Azure, Kubernetes, GitHub…).
+- [ ] Real tools/services are present (AWS/Google Cloud/Azure, Kubernetes, GitHub…), introduced
+      by the problem they solve ("as ferramentas que resolvem isso…"). No "Os nomes reais:".
 - [ ] Every number has a primary source in `script.md`, opened today, with the exact quote.
 - [ ] CTA "Compartilha com aquele colega que…" has a healthy joke tied to the topic.
 - [ ] No reference to another short. No ambiguous pronoun.
