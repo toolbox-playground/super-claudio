@@ -50,7 +50,8 @@ you are in:
 3. **De-para, always with a connector:** "X no [mundo] é como se fosse Y no [código]",
    then explain Y right away. Never "X é Y".
 4. **How it works**, technical and correct, with the full name of every term.
-5. **Real names** (AWS, Kubernetes, GitHub…) and **real terminal output** you ran.
+5. **The tools that solve it**, introduced from the problem ("as ferramentas de segurança que
+   resolvem isso são…"), never a loose "Os nomes reais:"; and **real terminal output** you ran.
 6. **CTA:** "Compartilha com aquele colega que…" with a healthy joke, then the creator's
    catalog/site.
 

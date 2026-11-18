@@ -23,8 +23,12 @@ draft; the review checklist (`review-checklist.md`) re-checks them.
    manager…). Each mapping explains the technical side in the same sentence.
 4. **How it works:** the mechanism, with market vocabulary (commit, git push, build,
    deploy, réplica, contêiner, API, HTTP).
-5. **Real names:** "Na AWS, isso é o Elastic Load Balancing com o Auto Scaling. No
-   Kubernetes, é o Service com o Horizontal Pod Autoscaler."
+5. **The tools that solve it, connected to the story:** introduce real tools through the
+   problem they solve, in the same thread: "Na AWS, quem distribui essa fila de clientes é o
+   Elastic Load Balancing, junto com o Auto Scaling. No Kubernetes, é o Service com o
+   Horizontal Pod Autoscaler." / "As ferramentas de segurança que fazem essa varredura são…" /
+   "Exemplos de bancos de dados que guardam isso…". **Never open the beat with "Os nomes
+   reais:"** — it is a label, not a sentence, and it breaks the story the viewer is following.
 6. **Na prática:** one sentence that the real terminal demo illustrates.
 7. **CTA:** "Compartilha com aquele colega que acha que é só comprar um servidor maior.
    E pra aprender computação em nuvem ou qualquer tema de tecnologia, acessa …"
