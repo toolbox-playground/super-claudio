@@ -54,6 +54,7 @@ No slash commands needed (though they work too: `/super-claudio:writing`).
 | Category | What it covers | Example triggers |
 |----------|---------------|-----------------|
 | [course-and-video-creator](skills/course-and-video-creator/SKILL.md) | Complete courses or educational videos with cloned voice and synchronized visuals | "create a course", "video with my cloned voice" |
+| [shorts-video-creator](skills/shorts-video-creator/SKILL.md) | Animated storytelling shorts: everyday analogy as a cartoon, technical de-para, real terminal output, meme and cloned voice | "make a short explaining DNS", "next 5 shorts of the series" |
 | [create-script-and-slides-for-videos](skills/create-script-and-slides-for-videos/SKILL.md) | Script and slides for a video you record yourself | "I'll record a video", "script and slides" |
 | [generic-media-content-creation](#generic-media-content-creation) | Media assets, cinematic video, audio, images, and editing | "animate my photo", "text to speech", "generate an image" |
 | [software-development](#software-development) | APIs, databases, automation, deployment, free APIs | "build an API", "automate with n8n", "free weather API" |

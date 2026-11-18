@@ -54,6 +54,7 @@ Não precisa de slash commands (mas também funcionam: `/super-claudio:writing`)
 | Categoria | O que cobre | Exemplos de ativação |
 |-----------|-------------|---------------------|
 | [course-and-video-creator](skills/course-and-video-creator/SKILL.md) | Curso ou vídeo educativo completo com voz clonada e vídeo sincronizado | "cria um curso", "vídeo com minha voz clonada" |
+| [shorts-video-creator](skills/shorts-video-creator/SKILL.md) | Shorts animados com storytelling: analogia do dia a dia em desenho animado, de-para técnico, terminal real, meme e voz clonada | "cria um short sobre DNS", "faz os próximos 5 shorts" |
 | [create-script-and-slides-for-videos](skills/create-script-and-slides-for-videos/SKILL.md) | Roteiro e slides para você gravar o vídeo | "vou gravar um vídeo", "roteiro e slides" |
 | [generic-media-content-creation](#generic-media-content-creation) | Peças de vídeo, áudio e imagem; edição e vídeo cinematográfico | "anima minha foto", "texto para áudio", "gera uma imagem" |
 | [software-development](#software-development) | APIs, bancos de dados, automação, deploy, APIs gratuitas | "cria uma API", "automatiza com n8n", "API de clima grátis" |

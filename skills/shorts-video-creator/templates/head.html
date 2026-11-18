@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Short 06 — CI/CD explicado com uma cervejaria</title>
+<!-- t-page vertical (1080x1920) a partir de templates/lesson-tpage.html da skill course-and-video-creator -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=JetBrains+Mono:wght@500;700&display=swap');
+*{box-sizing:border-box}
+body{margin:0;background:#011526}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:'Fredoka',-apple-system,Helvetica,Arial,sans-serif;color:#eef5fc;
+  background:radial-gradient(circle at 70% 25%,#0A4C86 0,#012949 50%,#011526 100%)}
+#grid{position:absolute;inset:0;background-image:linear-gradient(rgba(143,203,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(143,203,255,.06) 1px,transparent 1px);background-size:54px 54px}
+.shot{position:absolute;inset:0;opacity:0;visibility:hidden}
+.page{position:absolute;inset:0;transform-origin:50% 40%}
+.kick{position:absolute;left:60px;top:150px;font-size:26px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#8FCBFF}
+h1{position:absolute;left:60px;right:60px;top:196px;margin:0;font-size:62px;line-height:1.08;font-weight:700}
+h1 em{font-style:normal;color:#4ADE80}
+.stage{position:absolute;left:60px;right:60px;top:400px;height:1000px}
+.credit{position:absolute;left:60px;right:60px;top:1372px;font-size:19px;color:#8fa6bd;line-height:1.3}
+.abs{position:absolute}
+.card{position:absolute;background:rgba(10,30,52,.92);border:2px solid #2F5F8F;border-radius:26px;padding:28px 32px}
+.big{font-size:64px;font-weight:700;line-height:1.05}
+.mid{font-size:42px;font-weight:600;line-height:1.15}
+.small{font-size:30px;color:#b9d3ec;line-height:1.25}
+.emoji{font-family:'Apple Color Emoji';line-height:1}
+.green{color:#4ADE80}.red{color:#FF7B7B}.blue{color:#8FCBFF}.yellow{color:#FACC15}
+.line{position:absolute;height:6px;border-radius:3px;background:repeating-linear-gradient(90deg,#8FCBFF 0 18px,transparent 18px 30px);transform-origin:0 50%}
+.vline{position:absolute;width:6px;border-radius:3px;background:repeating-linear-gradient(180deg,#8FCBFF 0 18px,transparent 18px 30px)}
+.pkt{position:absolute;width:34px;height:34px;border-radius:50%;background:#4ADE80;box-shadow:0 0 26px #4ADE80;opacity:0}
+.cam{position:absolute;overflow:hidden;border-radius:26px;background:#0b1016;box-shadow:0 30px 70px -20px #000;border:2px solid #2F5F8F}
+.cam-in{position:absolute;left:0;top:0;transform-origin:0 0}
+.cam-in img{display:block;width:100%;height:100%}
+.chip{position:absolute;font-size:36px;font-weight:700;color:#012949;background:#8FCBFF;border-radius:14px;padding:10px 22px;white-space:nowrap;opacity:0}
+.chip.g{background:#4ADE80}.chip.r{background:#FF7B7B}.chip.y{background:#FACC15}
+.logo{position:absolute;background:#fff;border-radius:24px;opacity:0;box-shadow:0 20px 50px -20px #000}
+.logo img{position:absolute;left:24px;top:24px;width:calc(100% - 48px);height:calc(100% - 48px);object-fit:contain}
+.x{position:absolute;font-size:150px;font-weight:700;color:#FF5A5A;opacity:0;text-shadow:0 0 30px rgba(255,90,90,.6)}
+/* janelas: notebook, editor, terminal */
+.win{position:absolute;background:#0d1117;border:2px solid #2F5F8F;border-radius:22px;overflow:hidden;box-shadow:0 30px 70px -20px #000}
+.win .bar{height:58px;background:#1b2636;display:flex;align-items:center;gap:12px;padding:0 22px;font-size:26px;color:#b9d3ec}
+.win .bar i{width:16px;height:16px;border-radius:50%;background:#FF5F57}.win .bar i:nth-child(2){background:#FEBC2E}.win .bar i:nth-child(3){background:#28C840}
+.win .bar span{margin-left:14px}
+.mono{font-family:'JetBrains Mono',Menlo,monospace}
+.code{padding:22px 26px;font-size:30px;line-height:1.5;white-space:pre}
+.code .ln{display:block;border-radius:8px;padding:0 8px;margin:0 -8px}
+.code .ln.hi{background:rgba(74,222,128,.18);box-shadow:inset 6px 0 0 #4ADE80}
+.k1{color:#FF7B72}.k2{color:#79C0FF}.k3{color:#A5D6FF}.k4{color:#8b949e}
+.term .ln{opacity:0}
+.st{position:absolute;right:22px;top:12px;font-size:28px;font-weight:700;padding:4px 16px;border-radius:999px;opacity:0}
+/* caixa / contêiner */
+.box{position:absolute;border-radius:16px;border:4px solid #2496ED;background:repeating-linear-gradient(90deg,#0f3f6b 0 26px,#13507f 26px 34px);box-shadow:0 30px 60px -20px #000}
+.box .lid{position:absolute;left:-8px;right:-8px;top:-30px;height:30px;border-radius:12px 12px 0 0;background:#2496ED;transform-origin:0 100%}
+.box .lbl{position:absolute;left:0;right:0;bottom:16px;text-align:center;font-size:34px;font-weight:700}
+.item{position:absolute;z-index:5;font-size:32px;font-weight:700;background:#eef5fc;color:#012949;border-radius:14px;padding:10px 20px;white-space:nowrap;opacity:0}
+/* HUD fixo no topo (ideia: trilha de etapas + contador de estado) */
+#hud{position:absolute;left:60px;right:60px;top:56px;height:70px;display:flex;align-items:center;gap:12px;opacity:0}
+#hud .step{font-size:28px;font-weight:600;padding:8px 20px;border-radius:999px;border:2px solid #2F5F8F;color:#8fa6bd;background:rgba(1,21,38,.6)}
+#hud .step.on{background:#16A34A;border-color:#16A34A;color:#fff}
+#hud .step.done{border-color:#16A34A;color:#4ADE80}
+#hud .sep{color:#2F5F8F;font-size:30px}
+#hud .badge{margin-left:auto;font-size:28px;font-weight:700;padding:8px 20px;border-radius:999px;background:#1b2636;color:#8fa6bd}
+#hud .badge.on{background:#10391f;color:#4ADE80;box-shadow:0 0 0 2px #16A34A}
+/* chrome */
+#title{position:absolute;left:60px;right:60px;top:150px;opacity:0}
+#title .k{display:inline-block;background:#16A34A;color:#fff;font-weight:600;font-size:26px;letter-spacing:2px;padding:8px 20px;border-radius:999px;text-transform:uppercase}
+#title .t{margin-top:22px;font-size:80px;font-weight:700;line-height:1.02;text-transform:uppercase;text-shadow:0 6px 30px rgba(0,0,0,.6)}
+#title .t span{color:#4ADE80}
+#title .s{margin-top:18px;font-size:42px;font-weight:600;color:#8FCBFF}
+#cap{position:absolute;left:40px;right:40px;top:1440px;display:flex;flex-wrap:wrap;gap:6px 40px;justify-content:center}
+#cap span{font-size:66px;font-weight:700;color:#fff;text-transform:uppercase;line-height:1.05;text-shadow:0 5px 18px rgba(0,0,0,.95),0 0 4px #000}
+#cap span.on{color:#4ADE80;transform:scale(1.08)}
+#cap span.url{text-transform:none;font-size:50px}
+#footer{position:absolute;left:0;right:0;bottom:0;height:110px;display:flex;align-items:center;justify-content:center;gap:22px;border-top:1px solid rgba(143,203,255,.18);background:rgba(1,21,38,.7)}
+#footer b{font-size:40px;font-weight:700}#footer b span{color:#8FCBFF}
+#footer .s{color:#8FCBFF;font-size:26px}
+#resp{position:absolute;left:60px;right:60px;top:1000px;height:350px;background:rgba(1,21,38,.85);border:2px solid #2F5F8F;border-radius:24px;padding:14px 26px;opacity:0}
+#resp .rh{font-size:26px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#8FCBFF;margin-bottom:6px}
+#resp .row{display:flex;align-items:center;gap:16px;height:72px;border-top:1px solid rgba(143,203,255,.15)}
+#resp .rc{font-size:32px;font-weight:600;width:260px}
+#resp .rn{font-size:28px;color:#b9d3ec;flex:1}
+#resp .own{font-size:30px;font-weight:700;padding:6px 20px;border-radius:999px;min-width:190px;text-align:center}
+#resp .own.you{background:#F59E0B;color:#012949}#resp .own.svc{background:#16A34A;color:#fff}
+.credit{top:1362px}
+.mach{background:rgba(10,30,52,.92);border:2px solid #2F5F8F;border-radius:20px;padding:14px 18px;opacity:0}
+.mach .mh{font-size:26px;color:#b9d3ec;margin-bottom:10px}
+.mach .mg{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.mach .mg i{display:block;height:46px;border-radius:8px;border:3px solid #2496ED;background:#13507f;opacity:0}
+.pod{position:absolute;width:260px;height:230px;border:4px solid #4ADE80;border-radius:24px;background:rgba(10,30,52,.95);text-align:center;padding-top:12px}
+.pod .pl{font-size:28px;font-weight:700;color:#4ADE80;margin-bottom:6px}
+.pod .ps{font-size:24px;color:#b9d3ec;margin-top:6px}
+.pod.sm{width:130px;height:130px;padding-top:10px}.pod.sm .pl{font-size:22px;margin:0}
+.sc{font-size:40px;font-weight:600;padding:12px 28px;border-radius:999px;background:#1b2636}
+.sc.bad{background:#5c1b1b;color:#FF7B7B;box-shadow:0 0 0 3px #FF5A5A}.sc.ok{background:#10391f;color:#4ADE80;box-shadow:0 0 0 3px #16A34A}
+</style>
+</head>
+<body>
+<div id="root">
+  <div id="grid"></div>
+  <div id="shots"></div>
+  <div id="title"><div class="k"></div><div class="t"></div><div class="s"></div></div>
+  <div id="cap"></div>
+  <div id="footer"><b></b><span class="s"></span></div>
+</div>
+<script>
+const WORDS = window.WORDS;
+const DUR = window.DURATION || WORDS[WORDS.length - 1].endMs / 1000 + .6;
+window.DURATION = DUR;
+const TRANS = .4;
+const clamp = (x) => Math.max(0, Math.min(1, x));
+const ease = (t, a, b) => { const x = clamp((t - a) / (b - a)); return 1 - Math.pow(1 - x, 3); };
+const inout = (t, a, b) => { const x = clamp((t - a) / (b - a)); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+const lerp = (a, b, k) => a + (b - a) * k;
+const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
+function at(word, nth = 1) {
+  const hits = WORDS.filter((w) => norm(w.word) === norm(word));
+  if (hits.length < nth) { console.error(`palavra não encontrada: ${word} #${nth}`); return 0; }
+  return hits[nth - 1].startMs / 1000;
+}
+const typed = (s, t, a, cps = 30) => s.slice(0, Math.max(0, Math.floor((t - a) * cps)));
+function show(el, t, a, dist = 30, dur = .45) { const k = ease(t, a, a + dur); el.style.opacity = k; el.style.transform = `translateY(${(1 - k) * dist}px)`; return k; }
+function pop(el, t, a, base = '') { const k = ease(t, a, a + .4); el.style.opacity = k; el.style.transform = `${base} scale(${.8 + .2 * k})`; return k; }
+function fade(el, t, a, b = Infinity) { const k = ease(t, a, a + .35) * (b === Infinity ? 1 : 1 - ease(t, b, b + .3)); el.style.opacity = k; return k; }
+function ring(el, t, a, b = Infinity, c = '74,222,128') {
+  const on = ease(t, a, a + .35) * (b === Infinity ? 1 : 1 - ease(t, b, b + .25));
+  el.style.boxShadow = on ? `0 0 0 ${6 * on}px rgba(${c},${on}), 0 0 ${44 * on}px rgba(${c},${.55 * on})` : '0 30px 70px -20px #000';
+}
+function camera(cam, t, keys, dur = .9) {
+  const inn = cam.firstElementChild, W = cam.clientWidth, H = cam.clientHeight;
+  const Wi = W, Hi = W / +cam.dataset.ar;
+  inn.style.width = Wi + 'px'; inn.style.height = Hi + 'px';
+  let r = keys[0][1];
+  for (let i = 1; i < keys.length; i++) {
+    const [ti, ri] = keys[i]; if (t < ti) break;
+    const k = inout(t, ti, ti + dur);
+    r = {x: lerp(r.x, ri.x, k), y: lerp(r.y, ri.y, k), w: lerp(r.w, ri.w, k), h: lerp(r.h, ri.h, k)};
+  }
+  const s = Math.max(W / (r.w * Wi), H / (r.h * Hi));
+  const tx = W / 2 - (r.x + r.w / 2) * Wi * s, ty = H / 2 - (r.y + r.h / 2) * Hi * s;
+  inn.style.transform = `translate(${tx}px,${ty}px) scale(${s})`;
+}
+function travel(el, t, a, d, x1, y1, x2, y2, half = 17) {
+  const k = inout(t, a, a + d), vis = t >= a && t <= a + d + .15;
+  el.style.opacity = vis ? 1 : 0;
+  el.style.left = lerp(x1, x2, k) - half + 'px'; el.style.top = lerp(y1, y2, k) - half + 'px';
+}
+const camHTML = (id, src, ar, style) => `<div class="cam" id="${id}" data-ar="${ar}" style="${style}"><div class="cam-in"><img src="assets/${src}"></div></div>`;
+const logo = (id, src, style) => `<div class="logo" id="${id}" style="${style}"><img src="assets/${src}"></div>`;
+const page = (kick, title, body, credit = '') => `<div class="kick">${kick}</div><h1>${title}</h1><div class="stage">${body}</div><div class="credit">${credit}</div>`;
+const win = (id, title, body, style, cls = '') => `<div class="win ${cls}" id="${id}" style="${style}"><div class="bar"><i></i><i></i><i></i><span>${title}</span></div>${body}</div>`;
+const lines = (arr) => arr.map((l, i) => `<span class="ln" data-i="${i}">${l || ' '}</span>`).join('');
