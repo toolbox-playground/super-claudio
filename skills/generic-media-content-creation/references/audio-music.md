@@ -20,6 +20,8 @@ Generate complete songs (vocals + instruments) from a text prompt.
 
 Example prompt: "upbeat Brazilian funk, energetic, no lyrics, good for TikTok ads"
 
+**Suno Visuals (NEW, Nov 17, 2026):** Suno launched a companion tool that generates images and short lip-synced video clips (up to ~10-15s, reports vary) for your songs — lyric videos, album art, and short clips that follow the song's structure. Runs on a new model called H3 Move (built on MiniMax's H3). Live on web now; iOS/Android rolling out in the following weeks. Useful for turning a Suno track directly into a short-form video asset without a separate video tool.
+
 ## Udio — High-Quality Music Generation
 
 Similar to Suno, strong on musicality and production quality.
