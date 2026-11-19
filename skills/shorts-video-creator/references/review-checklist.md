@@ -18,7 +18,8 @@ not narrated.
 - [ ] Every technical term is defined on first appearance, technically first.
 - [ ] Real tools/services are present (AWS/Google Cloud/Azure, Kubernetes, GitHub…), introduced
       by the problem they solve ("as ferramentas que resolvem isso…"). No "Os nomes reais:".
-- [ ] News hook tense matches the posting day: an event that already happened is in the past.
+- [ ] News hook uses the absolute date ("No dia 19 de novembro de 2026"), never "hoje",
+      "nesta quinta-feira" or "esta semana"; an event that already happened is in the past.
 - [ ] Every number has a primary source in `script.md`, opened today, with the exact quote.
 - [ ] CTA "Compartilha com aquele colega que…" has a healthy joke tied to the topic.
 - [ ] No reference to another short. No ambiguous pronoun.
