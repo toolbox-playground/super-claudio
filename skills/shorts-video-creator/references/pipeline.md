@@ -44,7 +44,7 @@ terminal window scene, adding the date in the credit line.
 ## 4. Scenes and build
 
 ```bash
-cat $SK/templates/cartoon-header.js $SK/templates/cartoon-props.js scenes-body.js > scenes.js
+cat $SK/templates/cartoon-header.js $SK/templates/cartoon-props.js $SK/templates/motion-kit.js scenes-body.js > scenes.js
 python3 $SK/scripts/build.py <short> 'Título com <span>destaque</span>' 'subtítulo' '/^(AWS|Kubernetes)$/'
 ```
 

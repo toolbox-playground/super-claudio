@@ -49,6 +49,17 @@ approved short (monolith × microservices) to copy from.
   scanner, register, cashier and an ABERTO/FECHADO plate; a notebook has lid, keyboard and a
   board inside; a PC has motherboard, PCIe/DIMM/M.2 slots and parts that slide in and out.
 
+## Motion kit (templates/motion-kit.js)
+
+- `A(word, t)` — start time of the occurrence of `word` nearest after `t - 3` s, minus .25 s.
+- Real image with life: `IMG(id, src, style, fit)` + `kb(el, t, t0, t1, z0, z1, x0, y0, x1, y1)`
+  (Ken Burns) or `zoomTo(el, t, [[t0, {x, y, z}], …])` to push into the detail being named.
+- Entrances: `slideIn(el, t, a, 'left'|'right'|'up'|'down')`, `stamp(el, t, a)` for a slammed
+  `STAMP('GOLPE')`, `shake`, `pulse` (share button), `CONF`/`conf` confetti.
+- Flows: `DOTS(cls, n)` + `flow(svg, '.cls', t, a, [[x,y],…])` — requests, packets, attackers.
+- Mocks: `BROWSER(id, url, body, style, lockId)` (address bar with 🔒 to zoom into),
+  `PHONE`, `CLOCK`/`clock(g, hours)`, `SWITCH`/`sw(root, id, on)`, `LOGOCARD`, `CREDIT`.
+
 ## Scene patterns
 
 1. **Hook cartoon** — the whole story with continuous action: walks, objects flying, day →
@@ -83,4 +94,9 @@ approved short (monolith × microservices) to copy from.
   (cover art or screenshot from the publisher's site or press kit), credited on screen
   ("Imagens oficiais: <empresa>"), with the hook's facts laid over it. Text-only names
   for a product everyone can picture scored as "ridículo".
+- Finding real images without Google (its image search answers bots with a CAPTCHA, which
+  is never bypassed): DuckDuckGo Images in the built-in browser; click a thumbnail and read
+  the `iai` parameter of the page URL for the original file. Download it, credit the page.
+- When the narration names something on the internet (a fake site, the browser padlock, an
+  app screen), show it: the real screenshot, or an HTML mock with a zoom on the detail.
 - The creator's own material first (decks, lessons, meme bank) when the topic matches.

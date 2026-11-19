@@ -68,7 +68,7 @@ the same style (more "how it works", same hook).
    Over 2:00 → speed up with `atempo` and scale the timestamps; never pay for a re-take.
 5. Real demo: run the commands, save outputs in `demo/`, tear down what you started.
 6. Scenes: `scenes.js` = `templates/cartoon-header.js` + `templates/cartoon-props.js` +
-   your `scenes-body.js`; `scripts/build.py` writes `index.html`.
+   `templates/motion-kit.js` + your `scenes-body.js`; `scripts/build.py` writes `index.html`.
 7. Stills at every beat → contact sheets → look at them → fix → full render → mux →
    phone copy (crf 24, faststart).
 
@@ -80,6 +80,11 @@ checklist on each, then produce **one at a time**: audio → check duration → 
 → stills reviewed → render. A failed step stops that short, not the batch. Hand over a
 summary per short: file, duration, credits, what to look at, any judgement call you made.
 Never generate audio for a script that failed the checklist.
+
+**A batch never lowers the visual density.** An overnight batch of ten came back rated 5–6
+("parada, tosca, só quadradinhos, parece Remotion") and was redone: every block needs a real
+image or a character doing the action, and something moving at every second. Budget the
+same scene work per short as for a single one; if time is short, deliver fewer shorts.
 
 ## Rules that are never negotiable
 

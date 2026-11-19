@@ -36,6 +36,8 @@ not narrated.
 - [ ] Everything the narration names appears on screen at that word (mock, object, people).
 - [ ] Servers are drawn racks; graphs have a title and a time axis.
 - [ ] Terminal output is real and dated; demo containers were torn down.
-- [ ] No drawing static for more than ~15 s.
+- [ ] No drawing static for more than ~15 s, and no second where nothing moves.
+- [ ] Every block has a real image (photo, screenshot, diagram) or a character doing the action;
+      a row of text cards is not a scene.
 - [ ] A short about a real product in the news shows its official image, credited.
 - [ ] Final MP4 has audio, duration ≤ 2:00 (vertical), and a phone copy exists.
