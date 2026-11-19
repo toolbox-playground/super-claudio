@@ -18,6 +18,7 @@ not narrated.
 - [ ] Every technical term is defined on first appearance, technically first.
 - [ ] Real tools/services are present (AWS/Google Cloud/Azure, Kubernetes, GitHub…), introduced
       by the problem they solve ("as ferramentas que resolvem isso…"). No "Os nomes reais:".
+- [ ] News hook tense matches the posting day: an event that already happened is in the past.
 - [ ] Every number has a primary source in `script.md`, opened today, with the exact quote.
 - [ ] CTA "Compartilha com aquele colega que…" has a healthy joke tied to the topic.
 - [ ] No reference to another short. No ambiguous pronoun.
@@ -35,4 +36,5 @@ not narrated.
 - [ ] Servers are drawn racks; graphs have a title and a time axis.
 - [ ] Terminal output is real and dated; demo containers were torn down.
 - [ ] No drawing static for more than ~15 s.
+- [ ] A short about a real product in the news shows its official image, credited.
 - [ ] Final MP4 has audio, duration ≤ 2:00 (vertical), and a phone copy exists.

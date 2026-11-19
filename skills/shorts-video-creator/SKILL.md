@@ -85,7 +85,10 @@ Never generate audio for a script that failed the checklist.
 
 - Never a number or percentage without a citable primary source; open the page and quote it.
 - Never a photo of a real person; cite name + quote as text.
-- Never screenshots or imitations of real games, shows or brands as characters; make an
-  original one (e.g. the game "Cidade Neon").
+- Never real games, shows or brands drawn as cartoon characters or imitated; for an
+  analogy, make an original one (e.g. the game "Cidade Neon"). But when the short is
+  **about** a real product in the news (a game launch, an outage, a leak), show its
+  official images (the publisher's site or press kit) with the credit on screen: a news
+  short about GTA 6 with no picture of GTA 6 looks broken.
 - Terminal output is always real output you produced.
 - Never echo or ask for the API key; read it from the OS keychain.

@@ -74,6 +74,10 @@ No short references another short.
 - Hook facts need a **primary** source: the official blog/doc page, opened, with the exact
   quote and date in `script.md`. Not an e-mail, not Reddit. If you cannot open the source,
   drop the claim and say so.
+- News hooks are written for the **day the creator will see and post the video**, not the
+  day you write them. Before the audio, check the date: an event that has already happened
+  is told in the past ("saiu o GTA 6 nesta quinta-feira, 19 de novembro de 2026"), never as
+  a future one ("sai no dia 19"). In an overnight batch, write for the next morning.
 - Illustrative numbers on screen (a graph's threshold, a mock store's prices) are labelled
   as examples and are never spoken as facts.
 

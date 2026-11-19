@@ -79,4 +79,8 @@ approved short (monolith × microservices) to copy from.
 - A cartoon scene that is only text typing scored 8: put a character doing the action.
 - Real images: Wikimedia logos; simple diagrams from an image search (cropped), never a
   screenshot of an English documentation page; never a photo of a real person.
+- News hook about a real product (game, app, service): open on its **official** image
+  (cover art or screenshot from the publisher's site or press kit), credited on screen
+  ("Imagens oficiais: <empresa>"), with the hook's facts laid over it. Text-only names
+  for a product everyone can picture scored as "ridículo".
 - The creator's own material first (decks, lessons, meme bank) when the topic matches.
