@@ -13,6 +13,8 @@ npx create-video@latest
 # choose a template: Hello World, Blank, or from remotion.dev/templates
 ```
 
+**New (2026):** Remotion shipped an `@remotion/effects` package (~50 built-in video effects) that can be driven by AI coding agents — useful for quickly adding transitions/filters without hand-rolling them in React. Install alongside the core package via `npm i @remotion/effects`. Verify exact current version against remotion.dev/blog before relying on specifics.
+
 **Templates worth knowing:**
 - `remotion.dev/templates` — starter templates including social media formats
 - Emoji/motion graphics templates — great for fun WhatsApp/Instagram shares
