@@ -54,3 +54,4 @@ Render it at: mermaid.live
 - Free tier very capable
 - Templates for Instagram posts, LinkedIn infographics, presentations
 - Good for: polish + export in multiple formats
+- **Canva Craft** (Oct 2026): Canva's first in-house image generation model, built to produce editable, design-ready visuals directly inside the canvas (layers stay editable rather than a flat generated image)
