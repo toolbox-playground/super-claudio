@@ -66,9 +66,18 @@ with open("output.mp3", "wb") as f:
 
 `eleven_monolingual_v1`, `eleven_multilingual_v1`, and `scribe_v1` were removed on July 9, 2026. Migrate to `eleven_multilingual_v2` or `eleven_v3` for TTS; `scribe_v2` or `scribe_v2_realtime` for STT.
 
-## ElevenLabs v4 — Previewed at ElevenSummit Warsaw (Not Yet Released)
+## ElevenLabs v4 / v4 Turbo — New Flagship, Released September 28, 2026
 
-ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
+The v4 model previewed at ElevenSummit Warsaw (June 2026) shipped to general availability on September 28, 2026, alongside a low-latency **v4 Turbo** variant. v4 is now ElevenLabs' flagship expressive model, superseding v3 (below); v4 Turbo adds bidirectional streaming (it can start generating audio from text an LLM is still producing) for voice agents.
+
+- **URL:** elevenlabs.io (same API; new `model_id`s)
+- **Languages:** 90+ (up from v3's 70+)
+- **Voice cloning:** ElevenLabs and launch coverage describe clones from as little as ~10 seconds of reference audio (down from ~1 minute on v3) — confirm current minimum in the docs
+- **Latency (v4 Turbo):** ElevenLabs reports ~100ms median model-inference latency in its own benchmark (excludes app/network time); independent write-ups cite figures up to ~150ms end-to-end — treat exact numbers as vendor-reported until tested yourself
+- **Benchmark claim:** ElevenLabs says v4 ranked #1 on the Artificial Analysis Provider Voice Arena for the September 2026 snapshot (self-reported; verify on artificialanalysis.ai)
+- **Pricing:** check elevenlabs.io/pricing for current per-character rates — they changed at v4's launch and differ from the v3-era rates quoted above
+- **Best for:** Premium expressive voiceovers (replacing v3); voice agents needing more expressiveness than Flash v2.5 with v4 Turbo's streaming
+- **Not ideal for:** Ultra-budget high-volume generation — Flash v2.5 or a cheaper third-party model remain more cost-effective until v4 pricing is fully confirmed
 
 
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
@@ -127,7 +136,21 @@ Alibaba's Fun-Realtime-TTS briefly held #1 on the Artificial Analysis Speech Are
 - **Best for:** Production TTS needing top-3 quality with streaming; developers in the Alibaba Cloud ecosystem; multilingual content with regional accent fidelity
 - **Not ideal for:** Zero-cost self-hosted deployment (use Kokoro or Chatterbox); on-device mobile (use NeuTTS Air)
 
-## Gemini 3.1 Flash TTS — Free, 70+ Languages, Style-Controllable (NEW Apr 2026)
+## Gemini 3.8 Flash TTS / Flash-Lite TTS — Google's Current Flagship TTS (Released Sept 23, 2026)
+
+Google released Gemini 3.8 Flash TTS and Flash-Lite TTS on September 23, 2026, succeeding the 3.1/3.5 Flash TTS generation documented below (that entry is kept for reference since older integrations may still point at it).
+
+- **URL:** aistudio.google.com | Vertex AI | ai.google.dev/gemini-api/docs/models
+- **Model IDs:** `gemini-3.8-flash-tts` (higher quality) · `gemini-3.8-flash-lite-tts` (cost-efficient, high-throughput)
+- **Languages:** 130 (Flash) / 101 (Flash-Lite), with automatic language detection
+- **Voices:** 2,000+ per launch coverage — a large expansion over the 3.1/3.5 generation
+- **Voice cloning:** Reported as cloning from roughly a 30-second sample with consent, plus prompt-based voice design
+- **Multi-speaker:** Native two-speaker dialogue support
+- **Pricing:** Promotional pricing runs through Dec 31, 2026 — reported as $0.50/1M input tokens and $6/1M output tokens for Flash-Lite; rates are expected to rise after the promo window. Check ai.google.dev for current numbers and for Flash (non-Lite) pricing
+- **Best for:** High-throughput, low-cost production dubbing/narration (Flash-Lite); higher-quality multilingual generation (Flash)
+- **Not ideal for:** Ultra-low-latency conversational agents (use Cartesia Sonic 3.5 or AssemblyAI TTS-1, below)
+
+## Gemini 3.1 / 3.5 Flash TTS — Free, 70+ Languages, Style-Controllable (Apr–Jun 2026, superseded by 3.8 above)
 
 Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expressive speech with inline audio tags for style and pacing control — and is currently free in AI Studio during preview. Ranked **~#3 on the Artificial Analysis TTS Arena** (Elo ~1,217; held #1 through May 2026, briefly at #2 in June 2026 when Alibaba's Fun-Realtime-TTS surpassed it, then Inworld TTS-1.5 Max claimed #1 in July 2026 at Elo 1,238).
 
@@ -238,6 +261,22 @@ Deepgram Aura-2 targets enterprises building production voice systems where upti
 - Languages: 7 (English, Spanish + others)
 - Best for: enterprise voice agents, high-volume production systems, call center bots
 - Not ideal for: artistic/emotional content where ElevenLabs or Fish Audio excel
+
+**Deepgram Flux TTS (GA, standard pricing from Sept 13, 2026):** Deepgram also ships Flux TTS, a separate conversation-native model built specifically as the voice side of enterprise voice agents — it keeps context across conversation turns without extra prompting, SSML, or style tags. Deepgram reports latency as low as 80ms under production load. Per-character pricing was not consistently confirmed across sources at time of writing (one report cites $0.045/1,000 characters) — check deepgram.com/pricing before budgeting.
+
+## AssemblyAI TTS-1 — Flat-Rate Developer TTS for Voice Agents (NEW, GA late Oct 2026)
+
+AssemblyAI entered the TTS market with AssemblyAI-TTS-1: a flat $15-per-million-character model with no spend commitment and no concurrency tier to buy — the same per-character price whether you run 10 or 10,000 concurrent calls.
+
+- **URL:** assemblyai.com (announcement: assemblyai.com/blog/text-to-speech-api)
+- **Pricing:** $15 per 1M characters, flat — same rate across voices, languages, cloning, and timestamps
+- **Latency:** AssemblyAI claims audio streaming starts in ~90ms; one secondary write-up measured a 47ms median first-audio. An independent Cekura benchmark instead measured a 159ms median across agent-style sentences, placing it 8th of 19 systems tested — the vendor figure and the independent measurement disagree, so test it yourself before committing
+- **Languages:** 6 at launch — English, Spanish, French, German, Italian, Portuguese (with accent variants); AssemblyAI says more are coming
+- **Voice cloning:** Instant cloning included; fine-tuned ("Pro") cloning not yet available at launch
+- **Voices:** 4,000+ preset voices
+- **Streaming:** WebSocket and HTTP
+- **Best for:** Teams already on AssemblyAI STT wanting predictable flat-rate TTS pricing with no concurrency caps
+- **Not ideal for:** Broad language coverage (only 6 languages at launch); guaranteed sub-100ms latency (independent tests show higher real-world latency than the vendor's own claim)
 
 ## Rime TTS — 300+ Voices, Sociolinguistics-Based, Sub-100ms
 
@@ -477,8 +516,9 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Need | Tool |
 |------|------|
 | Quick article summary, personal use | edge-tts (Azure, free) |
-| Professional ad voiceover | ElevenLabs v3 or Inworld TTS-1.5 |
-| Low-latency voice agent (ElevenLabs ecosystem) | ElevenLabs Flash v2.5 (~75ms, 32 languages) or Flash v2 (English only, ~75ms) |
+| Professional ad voiceover | ElevenLabs v4 (new flagship, Sept 2026) or Inworld TTS-1.5 |
+| Low-latency voice agent (ElevenLabs ecosystem) | ElevenLabs Flash v2.5 (~75ms, 32 languages) or v4 Turbo (90+ languages, more expressive, bidirectional streaming) |
+| Flat-rate / predictable-pricing voice agent TTS | AssemblyAI TTS-1 ($15/1M chars flat, no concurrency tiers; 6 languages at launch) |
 | Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
 | 80+ languages, emotion control | Fish Audio S2 Pro |
@@ -499,7 +539,8 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Ultra-fast batch TTS, drop-in OpenAI TTS replacement | Kokoro TTS (Apache 2.0, 82M params, 96× real-time, fixed voices) |
 | Human-like conversational naturalness (pauses, ums, breaths) | Sesame CSM-1B (Apache 2.0, English only, CUDA required) |
 | Long-form multi-speaker narration (audiobooks, podcasts) | VibeVoice-TTS-1.5B (MIT, up to 90 min / 4 speakers, research use) |
-| Multilingual style-controllable TTS, free for developers | Gemini 3.1 Flash TTS (70+ languages, audio tags, free in AI Studio); Gemini 3.5 Flash TTS ($6/1M output — cheapest option) |
+| Multilingual style-controllable TTS, most languages, current Google flagship | Gemini 3.8 Flash TTS (130 languages, 2,000+ voices, Sept 2026) or Flash-Lite TTS (101 languages, lower cost, high-throughput) |
+| Multilingual style-controllable TTS (older, still free in AI Studio) | Gemini 3.1 Flash TTS (70+ languages, audio tags); Gemini 3.5 Flash TTS ($6/1M output) — both superseded by 3.8 above |
 | Top quality at minimum cost | Speechify SIMBA 3.2 (**#2 globally** mid-July 2026, Elo 1,234, $10/1M chars; $6/1M at Scale tier) — best price/quality; Qwen-Audio-3.0-TTS-Plus is new #1 (Alibaba DashScope) but has slower throughput (16 chars/sec) |
 | Conversational AI with tone/context awareness across turns | Inworld Realtime TTS-2 (closed-loop, adapts to prior audio, 100+ langs, May 2026) |
 | Grok/xAI ecosystem, 20+ languages, format flexibility | xAI Grok TTS ($4.20/1M chars, Elo ~1,194 ~#6 globally July 2026, voice cloning) |
