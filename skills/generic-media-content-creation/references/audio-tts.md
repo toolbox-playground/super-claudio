@@ -309,9 +309,11 @@ MiniMax Speech 2.8 HD is MiniMax's current flagship TTS, replacing Speech 2.6. B
 - **Best for:** Multilingual narration, marketing voiceovers, audiobooks needing emotional range and reliable voice cloning
 - **Not ideal for:** Ultra-low-latency agents (<100ms) — use Cartesia Sonic 3.5 for those
 
-## Chatterbox — Free & Open-Source, No Usage Caps
+## Chatterbox — Free & Open-Source, No Usage Caps (⚠️ RETIRED — code still usable, no longer maintained)
 
 Chatterbox by Resemble AI is MIT-licensed and outperformed ElevenLabs in blind listener tests (65.3% preference for Turbo; 63.8% for standard). Zero-shot voice cloning with a few seconds of reference audio.
+
+> **Status update (confirmed August–November 2026):** Resemble AI retired Chatterbox as a commercial product in August 2026 and shifted its business to AI-deepfake/synthetic-media detection. The GitHub repo (README updated Nov 4, 2026) now states Chatterbox is "retired research and no longer maintained" — **no further updates or support**, but the code, weights, and MIT license remain public and fully usable. Safe to keep using for self-hosted/offline work; don't expect new releases.
 
 ```bash
 pip install chatterbox-tts
@@ -326,12 +328,14 @@ wav = model.generate("Hello, this is a test of Chatterbox TTS.")
 torchaudio.save("output.wav", wav, model.sr)
 ```
 
-**Models:**
+**Models (final release lineup before retirement):**
 - `chatterbox-tts` — English, emotion control, voice cloning
-- `chatterbox-tts[multilingual]` — 23+ languages
+- `chatterbox-tts[multilingual]` — Multilingual V3: 23+ languages, improved speaker similarity, fewer hallucinations (same 0.5B size as earlier multilingual model)
 - `chatterbox-turbo` — 350M params; up to 6× faster than real-time on GPU; sub-200ms latency; paralinguistic prompting tags (`[laugh]`, `[cough]`, `[chuckle]`) for natural-sounding output; MIT license
+- `chatterbox-nano` — 110M params, same architecture as Turbo, CPU/on-device focus; ~3× realtime on 8 CPU cores
+- **Single Language Pack** — six ~500M dedicated finetunes: Chinese, LatAm Spanish, Brazilian Portuguese, Spain Spanish, Portugal Portuguese, Hindi
 
-**Homepage:** resemble.ai/chatterbox | **PyPI:** `pip install chatterbox-tts`
+**Homepage:** resemble.ai/chatterbox | **PyPI:** `pip install chatterbox-tts` | **Not ideal for:** anyone needing active support or future model improvements — use Kokoro, NeuTTS Air, Qwen3-TTS, or Zyphra ZONOS2 for an actively maintained open-source alternative
 
 ## Mistral Voxtral TTS — Open-Weight, Low-Latency, 9 Languages
 
@@ -401,18 +405,18 @@ pip install git+https://github.com/SesameAILabs/csm
 
 ## VibeVoice (Microsoft) — Long-Form Multi-Speaker TTS, MIT License
 
-Microsoft VibeVoice is an open-source family accepted as an Oral at ICLR 2026 — includes TTS (1.5B), a streaming Realtime variant (0.5B), and a long-form ASR model (7B). The TTS model synthesizes up to 90 minutes with up to 4 distinct speakers in one pass — unique among open-source models.
+Microsoft VibeVoice is an open-source family accepted as an Oral at ICLR 2026 — includes TTS (1.5B), a streaming Realtime variant (0.5B), and a long-form ASR line. The TTS model synthesizes up to 90 minutes with up to 4 distinct speakers in one pass — unique among open-source models.
 
-> **Note:** Microsoft explicitly recommends against production/commercial deployment without further testing. Currently best suited for research and development.
+> **Note (updated Nov 2026):** Microsoft pulled the VibeVoice-TTS *code* from the repo in Sept 2025 after finding uses "inconsistent with the stated intent" — the 1.5B weights are still linked on HuggingFace, but the official Quick Try demo is disabled. Development since has focused on the **ASR** side, not TTS: VibeVoice-ASR was fully open-sourced (Jan 2026, 60-min single-pass, vLLM support), reached Azure AI Foundry Labs (Mar 2026), got a CPU-only BitNet variant shrinking it to 1.58 GB (Jul 2026), and gained a streaming variant with custom hotwords (Sep 2026). For long-form multi-speaker **generation**, treat this as a research artifact with no active TTS development — Zyphra ZONOS2 or Qwen3-TTS are better-maintained open alternatives for similar use cases.
 
 - **URL / GitHub:** github.com/microsoft/VibeVoice | **HuggingFace:** `microsoft/VibeVoice-1.5B`
 - **License:** MIT (research/development use recommended; commercial deployment not advised by Microsoft yet)
-- **Models:** VibeVoice-TTS-1.5B (long-form), VibeVoice-Realtime-0.5B (streaming), VibeVoice-ASR-7B (recognition)
-- **Speakers:** up to 4 simultaneous in one generation
-- **Duration:** up to 90 minutes in a single pass
-- **ASR:** 50+ languages, speaker diarization, timestamps
-- **Best for:** Audiobooks, long-form narration, multi-speaker podcast generation, research
-- **Not ideal for:** Production voice agents or commercial apps (use Cartesia/ElevenLabs for those)
+- **Models:** VibeVoice-TTS-1.5B (long-form, demo disabled), VibeVoice-Realtime-0.5B (streaming), VibeVoice-ASR line (recognition — actively developed, includes Streaming and BitNet CPU variants)
+- **Speakers:** up to 4 simultaneous in one generation (TTS)
+- **Duration:** up to 90 minutes in a single pass (TTS); up to 60 min single-pass (ASR)
+- **ASR:** 50+ languages, speaker diarization, timestamps, CPU-capable (BitNet variant)
+- **Best for:** Research reference for long-form multi-speaker TTS architecture; ASR/transcription workloads (the actively maintained half of the project)
+- **Not ideal for:** Production voice agents, commercial apps, or anyone needing ongoing TTS support (use Cartesia/ElevenLabs/Zyphra ZONOS2 for those)
 
 ## Kokoro TTS — Ultra-Lightweight, #1 HuggingFace TTS Arena
 
@@ -483,10 +487,10 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
 | 80+ languages, emotion control | Fish Audio S2 Pro |
 | Best blind-test naturalness (cloud) | Qwen-Audio-3.0-TTS-Plus (Elo 1,236, **#1** mid-July 2026), Speechify SIMBA 3.2 (Elo 1,234, **#2** mid-July 2026), Gemini 3.1 Flash TTS (Elo ~1,214, **~#3**), Cartesia Sonic 3.5 (Elo ~1,207, **~#4**) |
-| Voice cloning, no cost, offline | Chatterbox (open-source) |
+| Voice cloning, no cost, offline | Chatterbox (open-source, MIT — retired/unmaintained since Aug 2026, code still works) or Qwen3-TTS (actively maintained) |
 | Long-form narration (up to 12 min), zero hallucinations, self-hosted | Hume AI TADA (Apache 2.0, open-source) |
 | Voice cloning, cloud, easiest | ElevenLabs (paid) |
-| Bulk generation (many files) | edge-tts or Chatterbox (no credit limits) |
+| Bulk generation (many files) | edge-tts or Kokoro TTS (no credit limits, actively maintained) |
 | Real-time voice agent / chatbot | Cartesia Sonic 3.5 (~40ms TTFA), Smallest.ai Lightning V3.1 (<100ms), or Inworld Realtime TTS-2 (<200ms, closed-loop, 100+ langs) |
 | Voice agent needing GPT-5-class reasoning in audio (complex tool calls, multi-turn logic) | OpenAI GPT-Realtime-2 ($32/1M in + $64/1M out; 128K context, parallel tool calls, interruption handling — expensive; not a substitute for pure TTS) |
 | Enterprise production (uptime + pricing transparency) | Deepgram Aura-2 ($200 free credits to start) |
@@ -498,7 +502,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | On-device, zero API cost, privacy-first | NeuTTS Air (Apache 2.0, CPU-capable) |
 | Ultra-fast batch TTS, drop-in OpenAI TTS replacement | Kokoro TTS (Apache 2.0, 82M params, 96× real-time, fixed voices) |
 | Human-like conversational naturalness (pauses, ums, breaths) | Sesame CSM-1B (Apache 2.0, English only, CUDA required) |
-| Long-form multi-speaker narration (audiobooks, podcasts) | VibeVoice-TTS-1.5B (MIT, up to 90 min / 4 speakers, research use) |
+| Long-form multi-speaker narration (audiobooks, podcasts) | VibeVoice-TTS-1.5B (MIT, up to 90 min / 4 speakers, research use only — TTS demo disabled, no longer actively developed) or Zyphra ZONOS2 (actively maintained, Apache 2.0) |
 | Multilingual style-controllable TTS, free for developers | Gemini 3.1 Flash TTS (70+ languages, audio tags, free in AI Studio); Gemini 3.5 Flash TTS ($6/1M output — cheapest option) |
 | Top quality at minimum cost | Speechify SIMBA 3.2 (**#2 globally** mid-July 2026, Elo 1,234, $10/1M chars; $6/1M at Scale tier) — best price/quality; Qwen-Audio-3.0-TTS-Plus is new #1 (Alibaba DashScope) but has slower throughput (16 chars/sec) |
 | Conversational AI with tone/context awareness across turns | Inworld Realtime TTS-2 (closed-loop, adapts to prior audio, 100+ langs, May 2026) |
