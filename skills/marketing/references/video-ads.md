@@ -359,6 +359,18 @@ TikTok launched its Agentic Hub on June 30, 2026: a marketplace of first- and th
 
 **Access:** business.tiktok.com → Agentic Hub (generally available to all TikTok for Business accounts)
 
+## TikTok Symphony — Seedance 2.5 Upgrade, 30-Second Ads & Symphony API (Aug–Nov 2026)
+
+TikTok upgraded Symphony's video generation to **Dreamina Seedance 2.5** (initial rollout began August 2026, expanded through November 2026) across Symphony Creative Studio, Symphony Automations (in Ads Manager), and the Symphony API:
+
+- **Longer clips:** AI-generated ads now run up to **30 seconds**, up from the previous 15-second cap.
+- **More references per generation:** templates now accept up to **50 reference files** (images, videos, audio), up from 9.
+- **Symphony API:** bundles the Seedance models, Symphony Agent, the Trends Library, and editing tools so advertisers can generate Symphony content inside their own creative management stack instead of only through the Ads Manager UI — available in all markets where Ads Manager and BytePlus operate (excluding the US).
+- **BytePlus tokens:** starting November 9, 2026, advertisers outside North America can purchase BytePlus tokens to access the Seedance models through Symphony (token pricing not published).
+- Rollout remains limited to select paid advertisers in select markets — if these capabilities are missing, the account or market may not be enabled yet.
+
+**Access:** ads.tiktok.com/business → Symphony Creative Studio, Symphony Automations, or the Symphony API (gradual rollout)
+
 ## Google Ads Asset Studio — Veo, Gemini & Nano Banana Inside Google Ads
 
 Google Ads Asset Studio (launched March 2026) centralizes all AI creative tools in one workspace inside Google Ads. As of summer 2026, it integrates Gemini, Veo 3.1, and Nano Banana Pro for image and video generation, with **Gemini Omni** being added later in summer 2026 (#GML2026 announcement):
