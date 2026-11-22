@@ -66,9 +66,16 @@ with open("output.mp3", "wb") as f:
 
 `eleven_monolingual_v1`, `eleven_multilingual_v1`, and `scribe_v1` were removed on July 9, 2026. Migrate to `eleven_multilingual_v2` or `eleven_v3` for TTS; `scribe_v2` or `scribe_v2_realtime` for STT.
 
-## ElevenLabs v4 — Previewed at ElevenSummit Warsaw (Not Yet Released)
+## ElevenLabs v4 / v4 Turbo — Released (Sep 28, 2026)
 
-ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
+ElevenLabs shipped Eleven v4 and Eleven v4 Turbo on September 28, 2026, replacing the Warsaw preview. v4 is pitched as the most expressive/emotive ElevenLabs model yet with better long-form voice consistency; v4 Turbo is the low-latency sibling built for voice agents (~150ms time-to-first-audio claimed).
+
+- **Model ID:** `eleven_v4` (Turbo's API model ID not independently confirmed — check elevenlabs.io for the current identifier)
+- **Languages:** 90+
+- **Availability:** ElevenAgents, ElevenCreative, and ElevenAPI; vendor material describes it as usable on free accounts, though the public pricing page row for "Eleven v4 model" doesn't specify which plans include it — verify before relying on free access
+- **Pricing:** vendor-reported third-party trackers cite ~$0.08/1K characters for v4; figures are unverified against ElevenLabs' own pricing page — check elevenlabs.io/pricing
+- **Best for:** replaces Eleven v3 as the top pick for professional ad voiceover and long-form expressive narration; v4 Turbo replaces Flash v2/v2.5 as the pick for ElevenLabs-ecosystem low-latency voice agents
+- **Note:** performance figures above are vendor-reported; independent Artificial Analysis Speech Arena placement not yet confirmed
 
 
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
@@ -477,8 +484,8 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Need | Tool |
 |------|------|
 | Quick article summary, personal use | edge-tts (Azure, free) |
-| Professional ad voiceover | ElevenLabs v3 or Inworld TTS-1.5 |
-| Low-latency voice agent (ElevenLabs ecosystem) | ElevenLabs Flash v2.5 (~75ms, 32 languages) or Flash v2 (English only, ~75ms) |
+| Professional ad voiceover | ElevenLabs v4 (released Sep 2026, 90+ languages) or Inworld TTS-1.5 |
+| Low-latency voice agent (ElevenLabs ecosystem) | ElevenLabs v4 Turbo (~150ms claimed, released Sep 2026) or Flash v2.5 (~75ms, 32 languages) |
 | Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
 | 80+ languages, emotion control | Fish Audio S2 Pro |
