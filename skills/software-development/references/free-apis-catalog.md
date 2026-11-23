@@ -43,7 +43,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 |-----|------|-----|------|
 | OpenStreetMap / Nominatim | Geocoding, reverse geocoding | nominatim.org | None |
 | Mapbox | Maps, geocoding, directions, static images; 50,000 map loads/month free; JS SDK; DevKit MCP Server available | mapbox.com | Free key |
-| ip-api.com | IP to location | ip-api.com | None (rate limited) |
+| ip-api.com | IP to location; free endpoint is HTTP only (no HTTPS) and non-commercial use only, ~45 req/min — HTTPS/commercial requires paid plan | ip-api.com | None (rate limited) |
 | **IPinfo Lite** | IP to country + ASN lookup for IPv4 and IPv6; unlimited requests, no rate limits on free tier; data updated daily; CC BY-SA 4.0 license; requires free account token | ipinfo.io/lite | Free token |
 | REST Countries | Country data | restcountries.com | None |
 
@@ -113,6 +113,12 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | API | What | URL | Auth |
 |-----|------|-----|------|
 | Have I Been Pwned — Pwned Passwords | Check any password against 800M+ entries from real data breaches using k-anonymity (submit only the first 5 chars of its SHA-1 hash — the server never sees the full hash); no rate limit, no auth; returns matching hash suffixes with breach occurrence counts | haveibeenpwned.com/API/v3 | None |
+
+## Calendar & Holidays
+
+| API | What | URL | Auth |
+|-----|------|-----|------|
+| **Nager.Date** | Public holidays by country — date, local + English name, holiday type (public/bank/school/optional), national vs. regional; 100+ countries; v3 REST API (e.g. `date.nager.at/api/v3/PublicHolidays/2026/US`); no rate limit | date.nager.at | None |
 
 ## Resources for Finding More
 

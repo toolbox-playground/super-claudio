@@ -97,6 +97,26 @@ forecast = get_forecast(-23.5505, -46.6333)  # São Paulo
 print(forecast["daily"])
 ```
 
+## Open-Meteo Geocoding API — City Name to Coordinates
+
+Pairs with the forecast API above when you only have a place name, not lat/lon.
+
+- **Base URL:** https://geocoding-api.open-meteo.com/v1/search
+- **Auth:** None
+
+```python
+import requests
+
+def geocode(name, count=1):
+    url = "https://geocoding-api.open-meteo.com/v1/search"
+    params = {"name": name, "count": count}
+    results = requests.get(url, params=params).json().get("results", [])
+    return results[0] if results else None
+
+place = geocode("São Paulo")
+print(place["latitude"], place["longitude"])  # feed straight into get_forecast()
+```
+
 ## Combined Use Case: Natural Disaster + Weather Tracker
 
 ```python
