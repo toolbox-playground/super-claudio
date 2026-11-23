@@ -9,12 +9,12 @@
 Generate complete songs (vocals + instruments) from a text prompt.
 
 - URL: suno.com
-- **Latest model:** v5.5 (March 2026) — Voices (clone your singing voice), Custom Models (tune on your catalog), My Taste (personalized generation); v5.5 requires Pro/Premier; free tier capped at v4.5 and below
-- **Suno Studio (in-browser DAW):** Multi-track view, stem separation (see below), 6-band EQ, Warp Markers (adjust timing post-generation), Remove FX (strip reverb/effects), alternates, and expanded time signature support. Studio 1.2 (February 2026) added warp markers, remove FX, and alternates. Available to Pro/Premier subscribers.
+- **Latest models (v6, launched Sept 9, 2026):** v6 (flagship) and v6-wild (experimental) require Pro/Premier; **v6-mini is the only model open to free accounts.** Built from the ground up on licensed catalog data from Warner Music Group, BMG, and Believe — Suno's first models developed directly with industry partners, fulfilling the Nov 2025 Warner settlement commitment to retire unlicensed-data models. Older models (including v5.5) are being retired, though previously generated songs remain playable/shareable on every plan.
+- **Suno Studio (in-browser DAW):** Multi-track view, stem separation (see below), 6-band EQ, Warp Markers (adjust timing post-generation), Remove FX (strip reverb/effects), alternates, and expanded time signature support. Studio 1.2 (February 2026) added warp markers, remove FX, and alternates. Available to Pro/Premier subscribers; Premier users generating via Studio have no download limit (see below).
 - **Stem Separation (June 11, 2026 update):** Three modes — **Advanced Split** (NEW, Premier only): choose from ~100 instruments to regenerate each stem from scratch — no separation artifacts; also exports MIDI; 10 credits/extracted track. **Split from Mix** (Updated): pull any instrument or voice out of the mix, get 2 stems; 10 credits/extraction. **Auto Split**: classic mode, splits into 12 stem categories; 50 credits.
-- Free tier: 50 credits/day (~10 songs); non-commercial use only
-- **Important (2026):** Free-tier users can no longer download audio files — tracks can only be streamed/shared within the platform. Download requires a paid plan ($10/month Pro, $30/month Premier).
-- **Model retirement (pending 2026):** Following a November 2025 settlement with Warner Music Group, Suno committed to retiring all current models (trained on unlicensed audio) once new licensed-catalog models launch. As of June 2026 the transition has not yet occurred — current models remain active — but when it does, all generations made with the old models will eventually become inaccessible. UMG and Sony Music litigation remains active — a fair-use summary judgment hearing in the U.S. case is scheduled for July 2026 (no verdict as of July 11, 2026); a separate German case (GEMA v. Suno) is due July 31, 2026. Users who want to preserve old generations should download them now on a paid plan.
+- Free tier: v6-mini only; up to 7 lifetime trial downloads, personal use only (no streaming platforms, no resale, no commercial use)
+- **Download caps (2026 policy):** Pro — 20 downloads/month; Premier — 60 downloads/month (unlimited via Suno Studio). Streaming/sharing songs on-platform is unlimited on every plan, including free.
+- **Litigation:** Warner settled in Nov 2025 and became a v6 data partner; UMG and Sony Music litigation against Suno remains active as of the Sept 2026 v6 launch.
 - Input: genre, mood, lyrics (optional), style description
 - Output: full song (streaming on free; downloadable MP3 on paid)
 
@@ -72,8 +72,11 @@ Riffusion rebranded to Producer.ai in July 2025. Google acquired Producer.ai in 
 
 - URL: flowmusic.app (old URL producer.ai redirects here)
 - Free tier: daily credit top-up; globally available (250+ countries), no waitlist
-- Input: text prompt; also supports image-to-music and audio-to-music inputs; new Replace and Extend features for remixing specific sections of a track
-- Stack: Lyria 3 (audio) + Veo (music video) + Nano Banana (album art) — all Google AI models
+- Input: text prompt; also supports image-to-music and audio-to-music inputs; Replace and Extend features for remixing specific sections of a track
+- **May 2026 update:** Section-by-section song editing, full-track covers, and music-video creation powered by Gemini Omni
+- **Flow Music Spaces (mid-2026):** One workspace to generate/edit songs, split stems, create album art, write lyrics, and generate video without switching apps
+- Stack: Lyria 3 Pro (audio) + Veo (music video) + Nano Banana (album art) — all Google DeepMind/Google AI models
+- Mobile: iOS app in beta (18+); Android not yet released
 - Best for: free music generation with optional music video output; users in the Google/Gemini ecosystem
 
 
