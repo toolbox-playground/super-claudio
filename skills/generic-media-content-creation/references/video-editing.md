@@ -76,6 +76,14 @@ Google Photos launched Video Remix on July 8, 2026, powered by Gemini Omni. Appl
 
 **Availability:** Google AI Plus, Pro, and Ultra subscribers in the US and 13 countries (Argentina, Bangladesh, Brazil, Colombia, Egypt, India, Indonesia, Japan, Mexico, Pakistan, Philippines, South Korea, Turkey). Free users cannot access Video Remix.
 
+## Kling O1 — Unified AI Generation + Editing
+
+Kuaishou's Kling O1 is a single model that handles both video generation and instruction-based editing of existing footage — restyling, adding/removing/swapping elements, extending camera moves, start/end-frame control — from text, image, and video inputs combined in one prompt (e.g. "add a subject and change the background" in one pass).
+
+- Clips run 3–10 seconds
+- Available through third-party platforms: Freepik, VEED, and as a ComfyUI node — no standalone consumer site
+- Good fit when ffmpeg/Whisper-based editing isn't enough and you need AI-driven scene/content changes to real footage (complements, doesn't replace, Google Video Remix below)
+
 ## video-use Skill
 
 If the `video-use` skill is installed, it provides a higher-level interface for common editing

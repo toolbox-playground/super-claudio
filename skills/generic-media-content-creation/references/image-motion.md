@@ -25,11 +25,12 @@ Kling's image-to-video mode is also excellent for animating photos.
 - Higher quality than many tools
 - Supports longer clips from a single image
 
-## Runway "Act One" / Gen-3
+## Runway Act-Two / Gen-4.5
 
 - URL: runwayml.com
-- Professional-grade animation from images
-- More control over motion style and duration
+- **Act-Two** (current motion-capture model, supersedes Act-One): drive a character image or video with your own performance video — tracks head, face, body, and hands; ~5 credits/sec, 3s minimum, 24fps
+- **Gen-4.5** (current flagship, supersedes Gen-3): image-to-video with world-consistent characters and native audio; use for general professional image animation when you don't need a driving performance video
+- More control over motion style and duration than most competitors
 
 ## When to Use Which
 
@@ -37,4 +38,5 @@ Kling's image-to-video mode is also excellent for animating photos.
 |------|---------|
 | Weavy AI | Fashion/lifestyle/ecommerce model motion |
 | Kling Image-to-Video | General high-quality animation |
-| Runway | Professional production, fine control |
+| Runway Gen-4.5 | Professional production, fine control, no driving video needed |
+| Runway Act-Two | Animating a character from your own recorded performance (face/body/hand tracking) |
