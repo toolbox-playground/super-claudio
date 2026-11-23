@@ -73,6 +73,21 @@ Topview AI converts product URLs (Amazon, eBay, Shopify, Etsy, AliExpress) into 
 **Best for:** Ecommerce brands wanting URL-to-TikTok-ad with built-in competitor research and conversion-driven creative refresh. Most direct alternative to Creatify if you want the TikTok Ad Library workflow built in.
 **Not ideal for:** High-volume multi-actor campaigns (use Arcads) or predictive scoring before spend (use Pencil or AdCreative.ai).
 
+## Pippit (CapCut Commerce Pro) — ByteDance's Own URL-to-Video for TikTok Shop & Marketplace Sellers
+
+Pippit (pippit.capcut.com, also at pippit.ai) is CapCut/ByteDance's first-party AI marketing video tool, purpose-built for Shopify, Amazon, and TikTok Shop sellers — paste a product link and get ad-ready vertical video out. Originally marketed narrowly as a TikTok Shop tool, it has since broadened into a general product-to-video platform (CapCut Commerce Pro is the business-facing name for the same product).
+
+1. Go to pippit.capcut.com
+2. Paste your product URL — Pippit pulls images + description automatically
+3. Pick an AI avatar or use UGC Maker for organic-style TikTok video; review/edit the auto-generated script
+4. Generate — batch multiple hook/visual variants for testing
+5. Export directly for TikTok Shop, Shopify, or Amazon listings
+
+**Free tier:** Limited free plan (credit-based, watermarked, capped generations)
+**Pricing:** Credit-based subscriptions distinct from regular CapCut Pro billing; e.g. an annual plan around $289.99/yr (21,600 credits ≈ 360 min video or 10,800 images). Prices vary by region — confirm current tiers on pippit.capcut.com/pricing.
+**Best for:** TikTok Shop, Shopify, and Amazon sellers who want ByteDance's own native tool, tightly integrated with the CapCut ecosystem they may already use for editing.
+**Not ideal for:** Predictive performance scoring before spend (use Pencil or AdCreative.ai) or the largest AI actor library (use Arcads).
+
 ## Predis.ai — TikTok Spark Ads & Organic-First Strategy
 
 Predis.ai generates content designed to look like organic posts, then runs them as Spark Ads — a format that achieves 142% higher engagement than standard In-Feed ads on TikTok.

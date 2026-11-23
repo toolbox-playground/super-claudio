@@ -40,4 +40,4 @@ Running paid ads? Create at least 5 different creative variations to test:
 - Different backgrounds/scenes
 - Same product, different contexts
 
-Use Creatify.ai or the video-ads workflow to generate variations quickly. (Note: aicreator.co is defunct as of May 2026 — do not use.)
+Use Creatify.ai or the video-ads workflow to generate variations quickly. For TikTok Shop specifically, Pippit (pippit.capcut.com) is ByteDance's own first-party product-URL-to-video tool, built directly for TikTok Shop/Shopify/Amazon sellers. (Note: aicreator.co is defunct as of May 2026 — do not use.)
