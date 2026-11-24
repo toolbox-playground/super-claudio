@@ -40,9 +40,9 @@ edge-tts --list-voices
 3. Generate audio: `edge-tts --voice pt-BR-FranciscaNeural --text "..." --write-media summary.mp3`
 4. Play or share: `afplay summary.mp3` (macOS) or `mpg123 summary.mp3` (Linux)
 
-## ElevenLabs v3 — Premium Quality, Voice Cloning
+## ElevenLabs v3 — Premium Quality, Voice Cloning (superseded by v4, see below)
 
-ElevenLabs v3 produces studio-quality speech with emotionally nuanced voices, 70+ languages (74 officially supported), and voice cloning from 1 minute of audio.
+ElevenLabs v3 produces studio-quality speech with emotionally nuanced voices, 70+ languages (74 officially supported), and voice cloning from 1 minute of audio. **ElevenLabs v4 shipped September 28, 2026 and is now the flagship model** — see the v4 section below for new projects; v3 remains available and documented here for existing integrations.
 
 **API usage:**
 ```python
@@ -66,9 +66,17 @@ with open("output.mp3", "wb") as f:
 
 `eleven_monolingual_v1`, `eleven_multilingual_v1`, and `scribe_v1` were removed on July 9, 2026. Migrate to `eleven_multilingual_v2` or `eleven_v3` for TTS; `scribe_v2` or `scribe_v2_realtime` for STT.
 
-## ElevenLabs v4 — Previewed at ElevenSummit Warsaw (Not Yet Released)
+## ElevenLabs v4 / v4 Turbo — Flagship Voice Model (RELEASED September 28, 2026)
 
-ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
+ElevenLabs released Eleven v4 and v4 Turbo on September 28, 2026, replacing v3 as the flagship model previewed at ElevenSummit Warsaw. v4 targets expressive creator work (voiceovers, narration); v4 Turbo targets low-latency voice agents, replacing Flash v2/v2.5 for new low-latency integrations. Reported #1 on Artificial Analysis' Provider Voice Arena at launch (Elo ~1,319) — verify current rank at artificialanalysis.ai since leaderboard snapshots shift and have been inconsistent across caches.
+
+- **Model IDs:** `eleven_v4` · `eleven_v4_turbo`
+- **Languages:** 90+ (up from 70 in v3)
+- **Voice cloning:** from 10 seconds of reference audio (down from 1 minute in v3)
+- **Latency:** ~100ms median inference; ~150ms TTFA for Turbo; bidirectional streaming
+- **Pricing:** $80/1M characters ($0.08/1K) list; launch discount expired ~October 12, 2026
+- **Best for:** Replacing v3 for professional voiceovers; replacing Flash v2.5 for low-latency voice agents
+- Check elevenlabs.io/changelog for further updates.
 
 
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
@@ -477,8 +485,8 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Need | Tool |
 |------|------|
 | Quick article summary, personal use | edge-tts (Azure, free) |
-| Professional ad voiceover | ElevenLabs v3 or Inworld TTS-1.5 |
-| Low-latency voice agent (ElevenLabs ecosystem) | ElevenLabs Flash v2.5 (~75ms, 32 languages) or Flash v2 (English only, ~75ms) |
+| Professional ad voiceover | ElevenLabs v4 (flagship, since Sep 2026) or Inworld TTS-1.5 |
+| Low-latency voice agent (ElevenLabs ecosystem) | ElevenLabs v4 Turbo (~150ms TTFA, since Sep 2026) or Flash v2.5 (~75ms, 32 languages) |
 | Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
 | 80+ languages, emotion control | Fish Audio S2 Pro |
