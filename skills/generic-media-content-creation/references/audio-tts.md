@@ -66,9 +66,9 @@ with open("output.mp3", "wb") as f:
 
 `eleven_monolingual_v1`, `eleven_multilingual_v1`, and `scribe_v1` were removed on July 9, 2026. Migrate to `eleven_multilingual_v2` or `eleven_v3` for TTS; `scribe_v2` or `scribe_v2_realtime` for STT.
 
-## ElevenLabs v4 — Previewed at ElevenSummit Warsaw (Not Yet Released)
+## ElevenLabs v4 / v4 Turbo — Released Sept 28, 2026
 
-ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
+ElevenLabs shipped **Eleven v4** and **Eleven v4 Turbo** on September 28, 2026 (previewed at ElevenSummit Warsaw in June 2026). v4 is ElevenLabs' most emotive/expressive model yet, with inline tags for emotion, pacing, and delivery — "performance acting" rather than plain text-to-speech. v4 Turbo is the real-time variant, with median latency reported as ~100–150ms (sources vary). Both support 90+ languages, multi-speaker dialogue, and voice cloning from as little as 10 seconds of reference audio. ElevenLabs reports #1 on the Artificial Analysis Provider Voice Arena for September 2026 (self-reported, ~75% preference in blind tests). Available via the standard ElevenLabs API/products; v4 Turbo also via ElevenAgents. Check elevenlabs.io/changelog for current model IDs and pricing.
 
 
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
@@ -477,7 +477,7 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Need | Tool |
 |------|------|
 | Quick article summary, personal use | edge-tts (Azure, free) |
-| Professional ad voiceover | ElevenLabs v3 or Inworld TTS-1.5 |
+| Professional ad voiceover | ElevenLabs v4 (released Sept 2026, most expressive yet) or Inworld TTS-1.5 |
 | Low-latency voice agent (ElevenLabs ecosystem) | ElevenLabs Flash v2.5 (~75ms, 32 languages) or Flash v2 (English only, ~75ms) |
 | Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
