@@ -66,9 +66,15 @@ with open("output.mp3", "wb") as f:
 
 `eleven_monolingual_v1`, `eleven_multilingual_v1`, and `scribe_v1` were removed on July 9, 2026. Migrate to `eleven_multilingual_v2` or `eleven_v3` for TTS; `scribe_v2` or `scribe_v2_realtime` for STT.
 
-## ElevenLabs v4 — Previewed at ElevenSummit Warsaw (Not Yet Released)
+## ElevenLabs v4 / v4 Turbo — Released Sept 28, 2026, New Flagship
 
-ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
+ElevenLabs shipped Eleven v4 and the low-latency Eleven v4 Turbo on Sept 28, 2026, superseding v3 (previewed at ElevenSummit Warsaw, June 2026). ElevenLabs reports v4 now ranks #1 on the Artificial Analysis Speech Arena (vendor-cited Elo ~1,341) — treat as vendor-reported pending independent confirmation.
+
+- **URL:** elevenlabs.io/v4 | via ElevenAgents, ElevenCreative, ElevenAPI
+- **Languages:** 90+ (up from 74 on v3)
+- **Latency:** v4 Turbo ~100–150ms time-to-first-audio (sources vary)
+- **Pricing:** ~$80/1M chars (v4), ~$40/1M chars (Turbo) standard — check elevenlabs.io/pricing for current rate
+- **Best for:** Now the default pick for professional voiceovers and low-latency agents in the ElevenLabs ecosystem, ahead of v3 and Flash v2.5
 
 
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
@@ -477,12 +483,12 @@ Speechmatics launched its own neural TTS in 2026 alongside its industry-leading 
 | Need | Tool |
 |------|------|
 | Quick article summary, personal use | edge-tts (Azure, free) |
-| Professional ad voiceover | ElevenLabs v3 or Inworld TTS-1.5 |
+| Professional ad voiceover | ElevenLabs v4 (Sept 2026, 90+ languages) or Inworld TTS-1.5 |
 | Low-latency voice agent (ElevenLabs ecosystem) | ElevenLabs Flash v2.5 (~75ms, 32 languages) or Flash v2 (English only, ~75ms) |
 | Emotional / dramatic narration, acting instructions | Hume Octave 2 (hume.ai, <200ms, 11 languages) |
 | Portuguese/Spanish natural voice | edge-tts Francisca / ElevenLabs multilingual |
 | 80+ languages, emotion control | Fish Audio S2 Pro |
-| Best blind-test naturalness (cloud) | Qwen-Audio-3.0-TTS-Plus (Elo 1,236, **#1** mid-July 2026), Speechify SIMBA 3.2 (Elo 1,234, **#2** mid-July 2026), Gemini 3.1 Flash TTS (Elo ~1,214, **~#3**), Cartesia Sonic 3.5 (Elo ~1,207, **~#4**) |
+| Best blind-test naturalness (cloud) | ElevenLabs v4 (vendor-reported Elo ~1,341, #1, Sept 2026 — verify live leaderboard), then pre-v4 (mid-July 2026) rankings: Qwen-Audio-3.0-TTS-Plus (Elo 1,236), Speechify SIMBA 3.2 (Elo 1,234), Gemini 3.1 Flash TTS (Elo ~1,214), Cartesia Sonic 3.5 (Elo ~1,207) |
 | Voice cloning, no cost, offline | Chatterbox (open-source) |
 | Long-form narration (up to 12 min), zero hallucinations, self-hosted | Hume AI TADA (Apache 2.0, open-source) |
 | Voice cloning, cloud, easiest | ElevenLabs (paid) |
