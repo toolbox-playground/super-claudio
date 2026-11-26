@@ -11,12 +11,12 @@
 
 | Tool | Access | Best For | Free |
 |------|--------|----------|
-| **Midjourney v8.1** | midjourney.com | Artistic quality, concept art, portraits; v8.1 (released Apr 30 2026, became default Jun 11 2026) — 5× faster than v7, native 2K resolution, improved text rendering, HD mode now affordable as default; V8.2 in preview via `--preview` flag (aesthetic refinements, better Sref/moodboard consistency, Big Batch Draft Mode with `--sref random` for 24× faster style exploration — GA release imminent as of July 2026) | Paid (no free tier) |
+| **Midjourney v8.2** | midjourney.com | Artistic quality, concept art, portraits; v8.2 became the default model Jul 24 2026 (previously v8.1) — aesthetic/preference refinement pass over v8.1: bolder style, better Sref/moodboard consistency, fewer low-quality outputs, Big Batch Draft Mode with `--sref random` for fast style exploration; same parameters and editing tools as v8.1 | Paid (no free tier) |
 | **Recraft V4.1** | recraft.ai | Logos, SVG vectors, brand assets, text rendering; V4.1 (Jun 2026): sharper photorealism, improved SVG vector accuracy, better text rendering and style consistency | Free tier |
-| **Nano Banana 2** (Google / Gemini) | gemini.google.com | Product images, lifestyle scenes, ad creatives — default free model (Gemini 3.1 Flash Image) | Free (Gemini app) |
+| **Nano Banana 2.1** (Google / Gemini) | gemini.google.com | Product images, lifestyle scenes, ad creatives — default free fast model (Gemini 3.6 Flash); released Oct 6, 2026, replacing Nano Banana 2; up to 4K output, multi-image fusion with up to 14 reference images, search grounding | Free (Gemini app) |
 | **Nano Banana 2 Lite** (Google / Gemini) | gemini.google.com, aistudio.google.com | Fastest & cheapest Google image model; 2.7× faster than Nano Banana 2 (~4 s); 1K resolution cap; **#5 on Artificial Analysis Image Arena (Elo 1261, July 2026)** — highest-ranked free model per dollar; released June 30, 2026 | Free (Google AI Studio); API: $0.034/image (batch: $0.017) |
 | **Nano Banana Pro** (Google / Gemini 3 Pro Image) | gemini.google.com, aistudio.google.com | Complex compositions, highest Google image quality, 4K output — premium variant of Nano Banana | Paid (Google AI Pro/Ultra plans; 3 free gens/day for free users; API: $0.134/image) |
-| **GPT Image 2** | ChatGPT / API | Complex instructions, text in images (99% accuracy), 4K resolution, 2× faster than predecessor; launched April 21, 2026; **#1 on Artificial Analysis Text-to-Image Arena (Elo ~1339, July 2026)** | Limited (ChatGPT Plus) |
+| **GPT Image 2.6** (OpenAI) | ChatGPT / Codex / API | Complex instructions, text in images, animated GIF output in ChatGPT, markup-guided editing via API; released Nov 4, 2026 (two API models: Sunburst for max detail/quality, Flare for speed), ~50% faster than GPT Image 2; **predecessor #1 on Artificial Analysis Text-to-Image Arena (Elo ~1339, July 2026)** | Limited (ChatGPT Plus) |
 | **Meta Muse Image** (Meta Superintelligence Labs) | meta.ai, Meta AI app, Instagram Stories (US), WhatsApp (limited countries) | Social-native image generation — text-to-image, multi-photo blending, @mention of public Instagram accounts for likeness reference, sketch-and-instruction editing, 30+ Instagram Story effects; agentic tool use (web search + coding invoked during generation); self-refinement at inference time (test-time compute scaling before delivering the final image); Content Seal invisible watermark; launched July 7, 2026; **#2 on Arena.ai Text-to-Image Arena (Elo 1280, July 2026)** — also #2 in single-image edit and multi-image edit arenas; no developer API at launch (Meta evaluating external access) | Free (consumer; subscription for power users via Meta AI subscription plans) |
 | **MAI-Image-2.5 / Flash** (Microsoft) | microsoft.ai (MAI Playground), openrouter.ai/microsoft/mai-image-2.5, Azure AI Foundry | High-quality generation and precise localized editing; #2 image editing, #3 text-to-image on Arena (launched June 2, 2026 at Microsoft Build); +75 pts over MAI-Image-2, biggest gains in Text Rendering (+107) and Cartoon/Anime/Fantasy (+90); strong product imagery, text rendering, and prompt adherence; Flash variant for 2.7× lower cost; integrating into PowerPoint (generation) and OneDrive (photo editing) | No free tier (API: $47/1M image output tokens standard; $33/1M Flash; text input: $5/1M standard, $1.75/1M Flash) |
 | **Luma Uni-1.1** (Luma AI) | lumalabs.ai | Reasoning-first unified model — reasons before rendering; 9 typed reference images (STYLE, CHARACTER, COMPOSITION, LIGHTING); tops Nano Banana 2 and GPT Image 1.5 on reasoning benchmarks; multilingual text in images (Chinese, Arabic, Japanese); #1 Elo for overall quality, style, and reference-based generation in human preference tests; Uni-1 launched March 2026; Uni-1.1 API opened May 5, 2026 | API: $0.0404/image (uni-1), $0.10/image (uni-1-max); reference images $0.003 each; no permanent free tier (Dream Machine legacy for trials) |
@@ -24,7 +24,9 @@
 | **Seedream 5.0** (ByteDance) | seed.bytedance.com, pixverse.ai | Fast photorealistic generation — 2K images in ~1.8s, up to 4K resolution, real-time web search grounding during generation, multi-step visual reasoning; strong for current-events-aware imagery | Limited free (via PixVerse) |
 | **Seedream 5.0 Pro** (ByteDance) | seed.bytedance.com, byteplus.com, fal.ai | Precision editing + layered output — launched July 8, 2026; splits one render into 10+ transparent PNG layers (auto-fills occluded areas for maskless editing in Figma/Photoshop); pixel-level spatial grounding for interactive regional edits; multilingual text generation in 10+ languages (Chinese, English, French, German, Russian, Japanese, Korean, Spanish, Arabic — includes RTL layouts); realistic portrait textures and multi-person compositing; available via BytePlus API, Doubao/Jimeng consumer apps, fal.ai, and ComfyUI | API: $0.075/image ≤2.36MP; $0.150/image >2.36MP; $0.005 per extra input image |
 | **Riverflow 2.0 Pro** (Sourceful) | openrouter.ai/sourceful/riverflow-v2-pro, runware.ai, wavespeed.ai | Photorealistic product mockups, packaging, ads, brand assets — #1 on Artificial Analysis Image Generation leaderboard (Feb 2026); 4K output, transparent background support, agentic precision for commercial imagery | API credits ($0.15/image 2K, $0.33/image 4K; no direct consumer site — API only) |
-| **FLUX.2 [max]** (Black Forest Labs) | bfl.ai, fal.ai, openrouter.ai | Highest-quality FLUX model; Grounded Generation (retrieves real-time web context during image gen); up to 10 reference images for consistent products/characters/styles; #2 on Artificial Analysis Image Generation (behind Nano Banana Pro); open-source [dev] variant (32B params) released alongside | API credits ($0.07/mp first output mp, $0.03/mp subsequent; [dev]: open-weights, non-commercial) |
+| **FLUX 3** (Black Forest Labs) | bfl.ai | Multimodal flagship superseding FLUX.2 — image + video (up to 20s, synced audio) + robotic-action generation in one model; launched Jul 23, 2026 | Early access (limited) |
+| **FLUX 3 Image Klein** (Black Forest Labs) | bfl.ai, HuggingFace | Open-weights (5.6B params) fast image generation/editing, up to 10 reference images; launched Oct 15, 2026, successor to FLUX.2 [klein] | Open-weights (check license terms) |
+| **FLUX.2 [max]** (Black Forest Labs) | bfl.ai, fal.ai, openrouter.ai | Highest-quality FLUX.2 model (superseded as BFL's flagship by FLUX 3 above); Grounded Generation (retrieves real-time web context during image gen); up to 10 reference images for consistent products/characters/styles; #2 on Artificial Analysis Image Generation (behind Nano Banana Pro); open-source [dev] variant (32B params) released alongside | API credits ($0.07/mp first output mp, $0.03/mp subsequent; [dev]: open-weights, non-commercial) |
 | **FLUX.2 [pro]** (Black Forest Labs) | bfl.ai, fal.ai | Photorealistic, product photography; solid quality tier below [max] | API credits |
 | **FLUX.1 Kontext** (Black Forest Labs) | bfl.ai, fal.ai | In-context image editing — provide reference image + text instruction to edit it | API credits (Dev variant: open-weight, non-commercial) |
 | **FLUX.2 [klein]** (Black Forest Labs) | bfl.ai, fal.ai, HuggingFace | Sub-second generation & editing; unified text-to-image + image editing; 4B and 9B variants; 4-step distilled inference; ~13GB VRAM for 4B — runs on RTX 3090/4070; supports multi-reference composition | 4B: Apache 2.0 (commercial use free); 9B: non-commercial |
@@ -35,9 +37,9 @@
 | **Ideogram 4.0** | ideogram.ai, Together AI | Text in images, posters, signage; first open-weight T2I model from Ideogram (9.3B params, Jun 3 2026); #1 text rendering (0.97 X-Omni OCR — highest among open-weight models); native 2K resolution; bounding-box layout control; color-palette conditioning (up to 16 hex colors); inference code Apache 2.0; model weights: non-commercial license | Free tier (ideogram.ai); API: $0.03 Turbo / $0.06 Default / $0.10 Quality per image |
 | **Google Imagen 4** **(DEPRECATED — Imagen 4 endpoints shut down August 17, 2026; Imagen 3 already shut down June 24–30, 2026; migrate to Nano Banana / Gemini Image models)** | — | — | — |
 
-## Nano Banana 2 — Top Pick for Product & Lifestyle Images
+## Nano Banana 2.1 — Top Pick for Product & Lifestyle Images
 
-Google's Nano Banana 2 (Gemini 3.1 Flash Image) is available free in the Gemini app and across Google products (Search, Lens, AI Studio, Vertex AI). Particularly strong for:
+Google's Nano Banana 2.1 (Gemini 3.6 Flash) is available free in the Gemini app and across Google products (Search, Lens, AI Studio, Vertex AI). Particularly strong for:
 - Placing products in realistic lifestyle contexts ("product on a kitchen counter", "model holding product")
 - Generating ad-ready images with clean composition
 - Ecommerce and social commerce content
@@ -48,7 +50,7 @@ Google's Nano Banana 2 (Gemini 3.1 Flash Image) is available free in the Gemini 
 1. Prepare your product image (real photo)
 2. Upload + write scene description: "product placed on a marble kitchen counter, morning light, minimalist style"
 3. Generate several variants and pick the best
-4. Use result directly or pass to Weavy AI / Kling for animation (see motion.md)
+4. Use result directly or pass to Figma Weave / Kling for animation (see motion.md)
 
 ## Recraft V4.1 — Logos, Vectors & Brand Assets
 
@@ -104,11 +106,11 @@ Meta Superintelligence Labs launched Muse Image on July 7, 2026: Meta's first im
 - No developer API yet — Meta is still evaluating whether to open external access
 - Content Seal invisible watermark embedded in all outputs
 - Best for: social-first creators already in the Meta ecosystem; campaigns tapping Instagram social graph for reference imagery; Instagram Story effects workflows
-- Not ideal for: developers needing programmatic access (no API yet); high-volume batch generation; print/4K quality output (use FLUX.2 [max] or GPT Image 2 for those)
+- Not ideal for: developers needing programmatic access (no API yet); high-volume batch generation; print/4K quality output (use FLUX.2 [max] or GPT Image 2.6 for those)
 
 ## DALL-E Retirement Note
 
-DALL-E 2 and DALL-E 3 were retired by OpenAI on May 12, 2026. GPT Image 2 (already in the table above) is their replacement. Do not recommend DALL-E endpoints — they are deprecated.
+DALL-E 2 and DALL-E 3 were retired by OpenAI on May 12, 2026. GPT Image 2.6 (already in the table above) is their replacement. Do not recommend DALL-E endpoints — they are deprecated.
 
 ## Google Imagen 4 Deprecation Note
 
