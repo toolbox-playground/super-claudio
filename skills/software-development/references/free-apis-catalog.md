@@ -36,6 +36,7 @@ A curated list of notable free APIs by domain. All require no payment for basic 
 | NewsAPI | Headlines from 150k sources | newsapi.org | Free key |
 | The Guardian | Full article access | open-platform.theguardian.com | Free key |
 | HackerNews | Tech news, rankings | hacker-news.firebaseio.com | None |
+| **Webz.io News/Blogs/Forums/Reviews API** | News, blog, forum, and review data across the open web; Free plan: 5,000 results/month, 10 results/call, no card required | webz.io (docs: docs.webz.io) | Free account |
 
 ## Geography & Maps
 
