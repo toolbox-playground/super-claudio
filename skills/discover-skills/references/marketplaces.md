@@ -7,10 +7,10 @@ Sources to search when looking for Claude Code skills and plugins.
 | Source | URL | Notes |
 |--------|-----|-------|
 | Claude Code Plugins (official) | code.claude.com/docs/en/discover-plugins | Official Claude Code plugin directory |
-| Claude.ai Plugins + Skills + Connectors (official) | claude.ai/customize | Unified browse surface (launched March 31, 2026) — skills, connectors, and plugins in one place with typed filters and one-click install; Team/Enterprise admins can pin skills workspace-wide |
+| **Claude Marketplace** (official) | claude.com/marketplace | Relaunched Sept 23, 2026 as Anthropic's unified commercial marketplace — 2,000+ plugins/connectors (Atlassian, Google, Microsoft, Notion, Salesforce), purchasable third-party agents/products (CrowdStrike, Cursor, Harvey, Legora, Lovable, Snowflake — billed against committed Anthropic spend), and service partners (Accenture, BCG, Deloitte via the Claude Partner Network). Supersedes the old claude.ai/customize browse surface (skills themselves are a dev standard, not a marketplace category here) |
 | **Claude Plugins Official** (Anthropic GitHub) | github.com/anthropics/claude-plugins-official | Anthropic-managed, high-quality plugin directory |
 | **Anthropic Skills** (Anthropic GitHub) | github.com/anthropics/skills | Official public Agent Skills repo (May 2026); includes spec, example skills, and skill-creator; all skills available to Claude.ai paid plans |
-| **Claude Plugins Community** (Anthropic GitHub) | github.com/anthropics/claude-plugins-community | Read-only mirror of Anthropic's community plugin marketplace — third-party plugins that passed automated security scanning; add manually: `claude plugin marketplace add anthropics/claude-plugins-community`; submit plugins at clau.de/plugin-directory-submission |
+| **Claude Plugins Community** (Anthropic GitHub) | github.com/anthropics/claude-plugins-community | Read-only mirror of Anthropic's community plugin marketplace — third-party plugins that passed automated security scanning; add manually: `claude plugin marketplace add anthropics/claude-plugins-community`; submit plugins at claude.ai/directory/manage (submission path moved off clau.de) |
 
 ## Community Marketplaces
 
