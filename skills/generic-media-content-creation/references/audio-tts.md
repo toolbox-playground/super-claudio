@@ -66,9 +66,9 @@ with open("output.mp3", "wb") as f:
 
 `eleven_monolingual_v1`, `eleven_multilingual_v1`, and `scribe_v1` were removed on July 9, 2026. Migrate to `eleven_multilingual_v2` or `eleven_v3` for TTS; `scribe_v2` or `scribe_v2_realtime` for STT.
 
-## ElevenLabs v4 — Previewed at ElevenSummit Warsaw (Not Yet Released)
+## ElevenLabs Eleven v4 / v4 Turbo — Released Sept 28, 2026
 
-ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
+ElevenLabs shipped Eleven v4 (previewed at ElevenSummit Warsaw, June 2026) on **September 28, 2026**, with a low-latency **v4 Turbo** sibling for voice agents. v4 is ElevenLabs' new flagship, described as its most emotive model to date. 90+ languages (up from 70 on v3), stackable inline expression tags, voice cloning from ~10 seconds of reference audio. ElevenLabs self-reports #1 on the Artificial Analysis Provider Voice Arena for September 2026 — not independently verified, treat as a vendor claim. Launch pricing (reportedly limited-time): ~$22/1M characters (v4), ~$11/1M characters (Turbo) — confirm current pricing at elevenlabs.io/pricing before quoting.
 
 
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
@@ -127,6 +127,10 @@ Alibaba's Fun-Realtime-TTS briefly held #1 on the Artificial Analysis Speech Are
 - **Best for:** Production TTS needing top-3 quality with streaming; developers in the Alibaba Cloud ecosystem; multilingual content with regional accent fidelity
 - **Not ideal for:** Zero-cost self-hosted deployment (use Kokoro or Chatterbox); on-device mobile (use NeuTTS Air)
 
+## Gemini 3.8 Flash TTS / Flash-Lite TTS — Successor (NEW Sept 2026)
+
+Google launched Gemini 3.8 Flash TTS and a Flash-Lite TTS variant on **September 23, 2026**, positioned as the successor to Gemini 3.1/3.5 Flash TTS below — reported as benchmark-topping at launch across multiple outlets, though specific pricing and Elo figures weren't independently confirmed at the time of this scan. Check aistudio.google.com / cloud.google.com/text-to-speech for current model IDs and pricing before migrating from 3.1/3.5 Flash TTS.
+
 ## Gemini 3.1 Flash TTS — Free, 70+ Languages, Style-Controllable (NEW Apr 2026)
 
 Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expressive speech with inline audio tags for style and pacing control — and is currently free in AI Studio during preview. Ranked **~#3 on the Artificial Analysis TTS Arena** (Elo ~1,217; held #1 through May 2026, briefly at #2 in June 2026 when Alibaba's Fun-Realtime-TTS surpassed it, then Inworld TTS-1.5 Max claimed #1 in July 2026 at Elo 1,238).
@@ -142,6 +146,10 @@ Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expres
 - **Elo:** ~1,217 on Artificial Analysis TTS Arena — **~#3 globally** (July 2026; held #1 through May 2026; Inworld TTS-1.5 Max now leads at 1,238)
 - **Best for:** Multilingual voiceovers, free developer experimentation, style-directed narration, Google Cloud / Vertex AI workflows
 - **Not ideal for:** Ultra-low-latency real-time voice agents (use Cartesia Sonic 3.5); self-hosted / offline deployment
+
+## Fish Audio Drama 3 — Successor, Conditional Commercial Open Weights (NEW Oct 2026)
+
+Fish Audio released Drama 3 on **October 13, 2026**, under a conditional commercial open-weights license — successor to S2 Pro below. Introductory API pricing ran at ~$10/1M characters (Oct 13–Nov 12, 2026) against a $50/1M list price; confirm current pricing at fish.audio before quoting.
 
 ## Fish Audio S2 Pro — Best Multilingual + Emotion Control
 
