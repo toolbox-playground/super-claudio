@@ -66,9 +66,9 @@ with open("output.mp3", "wb") as f:
 
 `eleven_monolingual_v1`, `eleven_multilingual_v1`, and `scribe_v1` were removed on July 9, 2026. Migrate to `eleven_multilingual_v2` or `eleven_v3` for TTS; `scribe_v2` or `scribe_v2_realtime` for STT.
 
-## ElevenLabs v4 — Previewed at ElevenSummit Warsaw (Not Yet Released)
+## ElevenLabs v4 / v4 Turbo — Released Sept 28, 2026
 
-ElevenLabs previewed its next-generation v4 voice model at ElevenSummit in Warsaw (June 2026). As of July 2026, v4 has **not been released** — no model ID, API endpoint, or release date announced. Preview samples demonstrated expressive delivery with emotion, intent, and accent — positioning it as "performance acting" rather than text-to-speech. Check elevenlabs.io/changelog for the GA announcement.
+ElevenLabs released v4 and v4 Turbo on September 28, 2026, following the preview shown at ElevenSummit Warsaw (June 2026). **v4** is the most emotive model yet — inline tags for emotion, pauses, and SFX, 90+ languages — positioned as "performance acting" rather than plain text-to-speech. **v4 Turbo** is the low-latency sibling built for voice agents (~150ms vendor-reported median first audio). Both are available via ElevenAgents, ElevenCreative, and ElevenAPI, including free accounts (credit limits apply). Check elevenlabs.io/changelog for exact model IDs and current pricing.
 
 
 ## ElevenLabs Flash v2 / v2.5 — Ultra-Low-Latency Voice Agents
@@ -127,9 +127,17 @@ Alibaba's Fun-Realtime-TTS briefly held #1 on the Artificial Analysis Speech Are
 - **Best for:** Production TTS needing top-3 quality with streaming; developers in the Alibaba Cloud ecosystem; multilingual content with regional accent fidelity
 - **Not ideal for:** Zero-cost self-hosted deployment (use Kokoro or Chatterbox); on-device mobile (use NeuTTS Air)
 
-## Gemini 3.1 Flash TTS — Free, 70+ Languages, Style-Controllable (NEW Apr 2026)
+## Gemini 3.8 Flash TTS / Flash-Lite TTS — Free, 100+ Languages (NEW Sept 2026)
 
-Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expressive speech with inline audio tags for style and pacing control — and is currently free in AI Studio during preview. Ranked **~#3 on the Artificial Analysis TTS Arena** (Elo ~1,217; held #1 through May 2026, briefly at #2 in June 2026 when Alibaba's Fun-Realtime-TTS surpassed it, then Inworld TTS-1.5 Max claimed #1 in July 2026 at Elo 1,238).
+Google released Gemini 3.8 Flash TTS and a Flash-Lite variant on September 23, 2026, superseding Gemini 3.1 / 3.5 Flash TTS below. Supports 100+ languages (up from 70+), 2,000+ voices, and custom voice design directly from a text description of the desired voice. Still free in AI Studio.
+
+- **URL:** aistudio.google.com | Vertex AI | cloud.google.com/text-to-speech
+- **Free tier:** Yes — free in Google AI Studio; also accessible in Google Vids
+- **Best for:** Multilingual voiceovers needing the broadest language/voice coverage of any free option; custom voice design without a preset library
+
+## Gemini 3.1 / 3.5 Flash TTS — Free, 70+ Languages, Style-Controllable (Apr–Jun 2026, now superseded by 3.8 above)
+
+Google's Gemini 3.1 Flash TTS (launched April 15, 2026) delivers natural, expressive speech with inline audio tags for style and pacing control — and is currently free in AI Studio during preview. Ranked **~#3 on the Artificial Analysis TTS Arena** (Elo ~1,217; held #1 through May 2026, briefly at #2 in June 2026 when Alibaba's Fun-Realtime-TTS surpassed it, then Inworld TTS-1.5 Max claimed #1 in July 2026 at Elo 1,238). Prefer Gemini 3.8 Flash TTS above for new work.
 
 - **URL:** aistudio.google.com | Vertex AI | cloud.google.com/text-to-speech
 - **Free tier:** Yes — free in Google AI Studio (preview; rate limited); also accessible in Google Vids
